@@ -6,6 +6,7 @@ import { formRewards } from "./form";
 import { goofyRewards } from "./Goofy";
 import { popupRewards } from "./popup";
 import { simulatedTwilightTownRewards } from "./simulatedTwilightTown";
+import { twilightTownRewards } from "./twilightTown";
 
 export const rewardLocations: Reward[] = [
 	...popupRewards,
@@ -15,4 +16,5 @@ export const rewardLocations: Reward[] = [
 	...formRewards,
 	...criticalRewards,
 	...simulatedTwilightTownRewards,
+	...twilightTownRewards,
 ];
