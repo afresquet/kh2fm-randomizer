@@ -8,6 +8,7 @@ import { donaldRewards } from "./Donald";
 import { formRewards } from "./form";
 import { goofyRewards } from "./Goofy";
 import { hollowBastionRewards } from "./hollowBastion";
+import { landOfDragonsRewards } from "./landOfDragons";
 import { olympusRewards } from "./olympus";
 import { popupRewards } from "./popup";
 import { simulatedTwilightTownRewards } from "./simulatedTwilightTown";
@@ -27,4 +28,5 @@ export const rewardLocations: Reward[] = [
 	...beastsCastleRewards,
 	...olympusRewards,
 	...agrabahRewards,
+	...landOfDragonsRewards,
 ];
