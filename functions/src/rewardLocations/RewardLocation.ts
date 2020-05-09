@@ -1,5 +1,5 @@
+import { RewardType } from "../rewards/RewardType";
 import { RewardLocationType } from "./RewardLocationType";
-import { RewardType } from "./RewardType";
 
 export interface RewardLocation {
 	type: RewardLocationType;

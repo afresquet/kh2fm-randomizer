@@ -1,5 +1,5 @@
-import { Reward } from "../Reward";
-import { RewardType } from "../RewardType";
+import { Reward } from "./Reward";
+import { RewardType } from "./RewardType";
 
 export const agrabahRewards: Reward[] = [
 	{

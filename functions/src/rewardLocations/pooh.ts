@@ -1,6 +1,6 @@
-import { RewardLocation } from "../RewardLocation";
-import { RewardLocationType } from "../RewardLocationType";
-import { RewardType } from "../RewardType";
+import { RewardType } from "../rewards/RewardType";
+import { RewardLocation } from "./RewardLocation";
+import { RewardLocationType } from "./RewardLocationType";
 
 export const poohRewardLocations: RewardLocation[] = [
 	{

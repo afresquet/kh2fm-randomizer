@@ -1,5 +1,5 @@
-import { RewardLocation } from "../RewardLocation";
-import { RewardLocationType } from "../RewardLocationType";
+import { RewardLocation } from "./RewardLocation";
+import { RewardLocationType } from "./RewardLocationType";
 
 export const landOfDragonsRewardLocations: RewardLocation[] = [
 	{
