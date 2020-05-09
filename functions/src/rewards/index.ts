@@ -12,6 +12,7 @@ import { landOfDragonsRewards } from "./landOfDragons";
 import { olympusRewards } from "./olympus";
 import { poohRewards } from "./pooh";
 import { popupRewards } from "./popup";
+import { prideLandsRewards } from "./prideLands";
 import { simulatedTwilightTownRewards } from "./simulatedTwilightTown";
 import { twilightTownRewards } from "./twilightTown";
 
@@ -31,4 +32,5 @@ export const rewardLocations: Reward[] = [
 	...agrabahRewards,
 	...landOfDragonsRewards,
 	...poohRewards,
+	...prideLandsRewards,
 ];
