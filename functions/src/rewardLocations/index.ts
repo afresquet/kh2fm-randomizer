@@ -10,6 +10,7 @@ import { goofyRewardLocations } from "./Goofy";
 import { hollowBastionRewardLocations } from "./hollowBastion";
 import { landOfDragonsRewardLocations } from "./landOfDragons";
 import { olympusRewardLocations } from "./olympus";
+import { poohRewardLocations } from "./pooh";
 import { popupRewardLocations } from "./popup";
 import { simulatedTwilightTownRewardLocations } from "./simulatedTwilightTown";
 import { twilightTownRewardLocations } from "./twilightTown";
@@ -29,4 +30,5 @@ export const rewardLocations: RewardLocation[] = [
 	...olympusRewardLocations,
 	...agrabahRewardLocations,
 	...landOfDragonsRewardLocations,
+	...poohRewardLocations,
 ];
