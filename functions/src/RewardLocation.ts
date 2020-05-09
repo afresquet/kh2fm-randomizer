@@ -6,5 +6,5 @@ export interface RewardLocation {
 	description: string;
 	value: string;
 	priority: number;
-	exclude: RewardType[];
+	exclude?: RewardType[];
 }
