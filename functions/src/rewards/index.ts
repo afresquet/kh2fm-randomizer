@@ -23,7 +23,7 @@ import { timelessRiverRewards } from "./timelessRiver";
 import { twilightTownRewards } from "./twilightTown";
 import { twtnwRewards } from "./twtnw";
 
-export const rewardLocations: Reward[] = [
+export const rewards: Reward[] = [
 	...popupRewards,
 	...levelupRewards,
 	...bonusRewards,
