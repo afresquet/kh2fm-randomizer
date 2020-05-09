@@ -4,6 +4,7 @@ import { beastsCastleRewards } from "./beastsCastle";
 import { bonusRewards } from "./bonus";
 import { cavernOfRememberanceRewards } from "./cavernOfRememberance";
 import { criticalRewards } from "./critical";
+import { disneyCastleRewards } from "./disneyCastle";
 import { donaldRewards } from "./Donald";
 import { formRewards } from "./form";
 import { goofyRewards } from "./Goofy";
@@ -33,4 +34,5 @@ export const rewardLocations: Reward[] = [
 	...landOfDragonsRewards,
 	...poohRewards,
 	...prideLandsRewards,
+	...disneyCastleRewards,
 ];
