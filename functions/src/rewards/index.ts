@@ -11,6 +11,7 @@ import { goofyRewards } from "./Goofy";
 import { halloweenTownRewards } from "./halloweenTown";
 import { hollowBastionRewards } from "./hollowBastion";
 import { landOfDragonsRewards } from "./landOfDragons";
+import { levelupRewards } from "./levelup";
 import { olympusRewards } from "./olympus";
 import { poohRewards } from "./pooh";
 import { popupRewards } from "./popup";
@@ -24,6 +25,7 @@ import { twtnwRewards } from "./twtnw";
 
 export const rewardLocations: Reward[] = [
 	...popupRewards,
+	...levelupRewards,
 	...bonusRewards,
 	...goofyRewards,
 	...donaldRewards,
