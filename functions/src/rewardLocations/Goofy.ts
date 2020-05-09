@@ -10,11 +10,6 @@ export const goofyRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Starting Ability (Goofy)",
-		value: "11D16F62",
-	},
-	{
-		type: RewardLocationType.GOOFY,
-		description: "Starting Ability (Goofy)",
 		value: "11D16F64",
 	},
 	{
