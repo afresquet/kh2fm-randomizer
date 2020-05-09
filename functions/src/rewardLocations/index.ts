@@ -15,6 +15,7 @@ import { poohRewardLocations } from "./pooh";
 import { popupRewardLocations } from "./popup";
 import { prideLandsRewardLocations } from "./prideLands";
 import { simulatedTwilightTownRewardLocations } from "./simulatedTwilightTown";
+import { timelessRiverRewardLocations } from "./timelessRiver";
 import { twilightTownRewardLocations } from "./twilightTown";
 
 export const rewardLocations: RewardLocation[] = [
@@ -35,4 +36,5 @@ export const rewardLocations: RewardLocation[] = [
 	...poohRewardLocations,
 	...prideLandsRewardLocations,
 	...disneyCastleRewardLocations,
+	...timelessRiverRewardLocations,
 ];
