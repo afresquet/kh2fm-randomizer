@@ -1,0 +1,17 @@
+export enum RewardType {
+	KEYBLADE = "keyblade",
+	SHIELD = "shield",
+	STAFF = "staff",
+	ABILITY = "ability",
+	SPELL = "spell",
+	FORM = "form",
+	LIMIT = "limit",
+	SUMMON = "summon",
+	ITEM = "item",
+	ARMOR = "armor",
+	ACCESSORY = "accessory",
+	MAP = "map",
+	TORNPAGE = "tornpage",
+	REPORT = "report",
+	MISCELLANEOUS = "miscellaneous",
+}
