@@ -1,4 +1,5 @@
 import { RewardLocation } from "../RewardLocation";
+import { beastsCastleRewardLocations } from "./beastsCastle";
 import { bonusRewardLocations } from "./bonus";
 import { cavernOfRememberanceRewardLocations } from "./cavernOfRememberance";
 import { criticalRewardLocations } from "./critical";
@@ -21,4 +22,5 @@ export const rewardLocations: RewardLocation[] = [
 	...twilightTownRewardLocations,
 	...hollowBastionRewardLocations,
 	...cavernOfRememberanceRewardLocations,
+	...beastsCastleRewardLocations,
 ];
