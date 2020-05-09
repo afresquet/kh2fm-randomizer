@@ -17,6 +17,7 @@ import { popupRewards } from "./popup";
 import { portRoyalRewards } from "./portRoyal";
 import { prideLandsRewards } from "./prideLands";
 import { simulatedTwilightTownRewards } from "./simulatedTwilightTown";
+import { spaceParanoidsRewards } from "./spaceParanoids";
 import { timelessRiverRewards } from "./timelessRiver";
 import { twilightTownRewards } from "./twilightTown";
 
@@ -41,4 +42,5 @@ export const rewardLocations: Reward[] = [
 	...timelessRiverRewards,
 	...halloweenTownRewards,
 	...portRoyalRewards,
+	...spaceParanoidsRewards,
 ];
