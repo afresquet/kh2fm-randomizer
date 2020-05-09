@@ -6,6 +6,6 @@ export enum RewardLocationType {
 	BONUS = "bonus",
 	GOOFY = "goofy bonus",
 	DONALD = "donald bonus",
-	DRIVE = "drive level up",
+	form = "form level up",
 	CRITICAL = "critical extra",
 }
