@@ -4,6 +4,7 @@ import { criticalRewardLocations } from "./critical";
 import { donaldRewardLocations } from "./Donald";
 import { formRewardLocations } from "./form";
 import { goofyRewardLocations } from "./Goofy";
+import { hollowBastionRewardLocations } from "./hollowBastion";
 import { popupRewardLocations } from "./popup";
 import { simulatedTwilightTownRewardLocations } from "./simulatedTwilightTown";
 import { twilightTownRewardLocations } from "./twilightTown";
@@ -17,4 +18,5 @@ export const rewardLocations: RewardLocation[] = [
 	...criticalRewardLocations,
 	...simulatedTwilightTownRewardLocations,
 	...twilightTownRewardLocations,
+	...hollowBastionRewardLocations,
 ];
