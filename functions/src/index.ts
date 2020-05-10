@@ -1,18 +1,22 @@
 import * as functions from "firebase-functions";
+import seedrandom from "seedrandom";
 import { createLine } from "./helpers/createLine";
 import { levels } from "./levels";
 import { LevelStats } from "./LevelStats";
 import { rewardLocations } from "./rewardLocations";
 import { rewards as originalRewards } from "./rewards";
 
-export const randomizer = functions.https.onRequest(async (_, res) => {
+export const randomizer = functions.https.onRequest(async (req, res) => {
+	const seedVariable = (req.query.seed as string) || Date.now().toString();
+
 	const content = [];
 
 	const rewards = originalRewards.slice();
 
 	const randomizedLocations = rewardLocations
 		.map(location => {
-			const randomIndex = Math.floor(Math.random() * rewards.length);
+			const seed = seedrandom(seedVariable + rewards.length.toString());
+			const randomIndex = Math.floor(seed() * rewards.length);
 			const reward = rewards.splice(randomIndex, 1)[0];
 
 			return { location, reward };
@@ -28,11 +32,16 @@ export const randomizer = functions.https.onRequest(async (_, res) => {
 	const randomizedLevels = levels
 		.filter(level => level.hasAbility)
 		.map(level => {
-			const randomSword = Math.floor(Math.random() * swordCopy.length);
+			const swordSeed = seedrandom(seedVariable + swordCopy.length.toString());
+			const randomSword = Math.floor(swordSeed() * swordCopy.length);
 			const sword = swordCopy.splice(randomSword, 1)[0];
-			const randomStaff = Math.floor(Math.random() * staffCopy.length);
+			const staffSeed = seedrandom(seedVariable + staffCopy.length.toString());
+			const randomStaff = Math.floor(staffSeed() * staffCopy.length);
 			const staff = staffCopy.splice(randomStaff, 1)[0];
-			const randomShield = Math.floor(Math.random() * staffCopy.length);
+			const shieldSeed = seedrandom(
+				seedVariable + shieldCopy.length.toString()
+			);
+			const randomShield = Math.floor(shieldSeed() * shieldCopy.length);
 			const shield = shieldCopy.splice(randomShield, 1)[0];
 
 			return { level, rewards: { sword, staff, shield } };
@@ -49,7 +58,7 @@ export const randomizer = functions.https.onRequest(async (_, res) => {
 
 	const levelStats = new LevelStats();
 	const randomizedStats = levels.reduce((result, level) => {
-		levelStats.levelUp();
+		levelStats.levelUp(seedVariable);
 
 		return result + createLine(level.stats, levelStats.hexCode);
 	}, "");

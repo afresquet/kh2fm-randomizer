@@ -1,11 +1,21 @@
+import seedrandom from "seedrandom";
+
 export class LevelStats {
 	private ability = 0;
 	private defense = 2;
 	private magic = 6;
 	private strength = 2;
 
-	levelUp() {
-		const random = Math.floor(Math.random() * 4);
+	private level = 1;
+
+	levelUp(seedVariable?: string) {
+		this.level += 1;
+
+		const seed = seedVariable
+			? seedrandom(seedVariable + this.level.toString())
+			: Math.random;
+
+		const random = Math.floor(seed() * 4);
 
 		if (random === 0) {
 			this.ability += 2;
