@@ -18,7 +18,12 @@
 		"suppressImplicitAnyIndexErrors": true,
 		"noUnusedLocals": true,
 		"skipLibCheck": true,
-		"allowSyntheticDefaultImports": true
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true
 	},
 	"exclude": [
 		"node_modules",
@@ -28,5 +33,6 @@
 		"webpack",
 		"jest",
 		"src/setupTests.ts"
-	]
+	],
+	"include": ["src"]
 }
