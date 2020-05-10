@@ -73,7 +73,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 				setLoading(true);
 
 				const response = await axios.post<{ seed: string }>(
-					"/randomizer/seed",
+					"https://us-central1-kh2fm-randomizer.cloudfunctions.net/randomizer/seed",
 					{
 						...text,
 						...checkbox,

@@ -56,7 +56,7 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 		(async function () {
 			try {
 				const { data } = await axios.get<Configuration>(
-					`/randomizer/seed/${seed}`
+					`https://us-central1-kh2fm-randomizer.cloudfunctions.net/randomizer/seed/${seed}`
 				);
 
 				setConfiguration(data);
@@ -72,13 +72,14 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 		try {
 			setLoading(true);
 
-			const response = await axios.get<Blob>(`/randomizer/file/${seed}`, {
-				responseType: "blob",
-			});
+			const filename = "F266B00B.pnach";
 
-			const filename = response.headers["content-disposition"].match(
-				/filename=(.+)/
-			)![1];
+			const response = await axios.get<Blob>(
+				`https://us-central1-kh2fm-randomizer.cloudfunctions.net/randomizer/file/${seed}?filename=${filename}`,
+				{
+					responseType: "blob",
+				}
+			);
 
 			downloadjs(response.data, filename, "application/octet-stream");
 		} catch (error) {
