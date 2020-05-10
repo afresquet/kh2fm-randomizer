@@ -26,9 +26,23 @@ app.get("/seed/:seed", (req, res) => {
 			algorithms: [algorithm],
 		});
 
+		res.json(configuration);
+	} catch (error) {
+		res.status(400).json({ error });
+	}
+});
+
+app.get("/file/:seed", (req, res) => {
+	try {
+		const configuration = verify(req.params.seed, secret, {
+			algorithms: [algorithm],
+		});
+
 		const pnach = createPnach(configuration as Configuration);
 
-		res.set({ "Content-Disposition": 'attachment; filename="F266B00B.pnach"' });
+		const filename = req.query.filename || "F266B00B.pnach";
+
+		res.set({ "Content-Disposition": `attachment; filename=${filename}` });
 		res.send(pnach);
 	} catch (error) {
 		res.status(400).json({ error });
