@@ -6,6 +6,7 @@ export interface Level {
 		shield: string;
 		staff: string;
 	};
+	hasAbility?: boolean;
 }
 
 export const levels: Level[] = [
@@ -62,6 +63,7 @@ export const levels: Level[] = [
 			shield: "11D0B712",
 			staff: "11D0B714",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 8,
@@ -80,6 +82,7 @@ export const levels: Level[] = [
 			shield: "11D0B732",
 			staff: "11D0B734",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 10,
@@ -107,6 +110,7 @@ export const levels: Level[] = [
 			shield: "11D0B762",
 			staff: "11D0B764",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 13,
@@ -134,6 +138,7 @@ export const levels: Level[] = [
 			shield: "11D0B792",
 			staff: "11D0B794",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 16,
@@ -152,6 +157,7 @@ export const levels: Level[] = [
 			shield: "11D0B7B2",
 			staff: "11D0B7B4",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 18,
@@ -179,6 +185,7 @@ export const levels: Level[] = [
 			shield: "11D0B7E2",
 			staff: "11D0B7E4",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 21,
@@ -206,6 +213,7 @@ export const levels: Level[] = [
 			shield: "11D0B812",
 			staff: "11D0B814",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 24,
@@ -224,6 +232,7 @@ export const levels: Level[] = [
 			shield: "11D0B832",
 			staff: "11D0B834",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 26,
@@ -251,6 +260,7 @@ export const levels: Level[] = [
 			shield: "11D0B862",
 			staff: "11D0B864",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 29,
@@ -278,6 +288,7 @@ export const levels: Level[] = [
 			shield: "11D0B892",
 			staff: "11D0B894",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 32,
@@ -296,6 +307,7 @@ export const levels: Level[] = [
 			shield: "11D0B8B2",
 			staff: "11D0B8B4",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 34,
@@ -323,6 +335,7 @@ export const levels: Level[] = [
 			shield: "11D0B8E2",
 			staff: "11D0B8E4",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 37,
@@ -350,6 +363,7 @@ export const levels: Level[] = [
 			shield: "11D0B912",
 			staff: "11D0B914",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 40,
@@ -368,6 +382,7 @@ export const levels: Level[] = [
 			shield: "11D0B932",
 			staff: "11D0B934",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 42,
@@ -395,6 +410,7 @@ export const levels: Level[] = [
 			shield: "11D0B962",
 			staff: "11D0B964",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 45,
@@ -413,6 +429,7 @@ export const levels: Level[] = [
 			shield: "11D0B982",
 			staff: "11D0B984",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 47,
@@ -440,6 +457,7 @@ export const levels: Level[] = [
 			shield: "11D0B9B2",
 			staff: "11D0B9B4",
 		},
+		hasAbility: true,
 	},
 	{
 		level: 50,
