@@ -7,4 +7,8 @@ typings/
 
 node_modules/
 
+.env
+
+.runtimeconfig.json
+
 kh2fm-randomizer-firebase-adminsdk.json
