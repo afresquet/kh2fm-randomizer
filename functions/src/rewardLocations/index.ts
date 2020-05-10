@@ -2,11 +2,8 @@ import { agrabahRewardLocations } from "./agrabah";
 import { beastsCastleRewardLocations } from "./beastsCastle";
 import { bonusRewardLocations } from "./bonus";
 import { cavernOfRememberanceRewardLocations } from "./cavernOfRememberance";
-import { criticalRewardLocations } from "./critical";
 import { disneyCastleRewardLocations } from "./disneyCastle";
-import { donaldRewardLocations } from "./donald";
 import { formRewardLocations } from "./form";
-import { goofyRewardLocations } from "./goofy";
 import { halloweenTownRewardLocations } from "./halloweenTown";
 import { hollowBastionRewardLocations } from "./hollowBastion";
 import { landOfDragonsRewardLocations } from "./landOfDragons";
@@ -25,10 +22,7 @@ import { twtnwRewardLocations } from "./twtnw";
 export const rewardLocations: RewardLocation[] = [
 	...popupRewardLocations,
 	...bonusRewardLocations,
-	...goofyRewardLocations,
-	...donaldRewardLocations,
 	...formRewardLocations,
-	...criticalRewardLocations,
 	...simulatedTwilightTownRewardLocations,
 	...twilightTownRewardLocations,
 	...hollowBastionRewardLocations,

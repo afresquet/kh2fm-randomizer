@@ -4,7 +4,13 @@ import { createPnach } from "./logic/createPnach";
 
 export const randomizer = functions.https.onRequest(async (req, res) => {
 	// would get this from the request
-	const configuration: Configuration = { seed: req.query.seed as string };
+	const configuration: Configuration = {
+		seed: req.query.seed as string,
+		stats: true,
+		criticalMode: true,
+		donaldAbilities: true,
+		goofyAbilities: true,
+	};
 
 	const pnach = createPnach({
 		...configuration,
