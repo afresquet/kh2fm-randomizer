@@ -7,8 +7,9 @@ import { Generate } from "./components/Generate";
 import { Header } from "./components/Header";
 import { Seed } from "./components/Seed";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
 	content: {
+		padding: theme.spacing(3),
 		flex: "1 0 auto",
 	},
 }));

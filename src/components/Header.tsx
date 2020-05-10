@@ -21,26 +21,25 @@ export const Header: React.FC = () => {
 					<Link to="/" className={classes.link}>
 						KH2FM Randomizer
 					</Link>
-
-					<Typography variant="subtitle1">
-						by{" "}
-						<a
-							href="https://github.com/afresquet"
-							target="_blank"
-							rel="noopener noreferrer"
-							className={classes.link}
-						>
-							Alvaro
-						</a>{" "}
-						<a
-							href="https://www.twitch.tv/valaxor_"
-							target="_blank"
-							rel="noopener noreferrer"
-							className={classes.link}
-						>
-							(Valaxor)
-						</a>
-					</Typography>
+				</Typography>
+				<Typography variant="subtitle1" align="center">
+					by{" "}
+					<a
+						href="https://github.com/afresquet"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={classes.link}
+					>
+						Alvaro
+					</a>{" "}
+					<a
+						href="https://www.twitch.tv/valaxor_"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={classes.link}
+					>
+						(Valaxor)
+					</a>
 				</Typography>
 			</Container>
 		</header>
