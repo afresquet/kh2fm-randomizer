@@ -1,15 +1,25 @@
 import seedrandom from "seedrandom";
 import { Configuration } from "../Configuration";
-import { rewards as originalRewards } from "../rewards";
+import { bonusRewards } from "../rewards/bonus";
 import { criticalRewards } from "../rewards/critical";
 import { donaldRewards } from "../rewards/donald";
+import { formRewards } from "../rewards/form";
 import { goofyRewards } from "../rewards/goofy";
+import { levelupRewards } from "../rewards/levelup";
+import { popupRewards } from "../rewards/popup";
 import { Reward } from "../rewards/Reward";
+import { worldRewards } from "../rewards/worlds";
 
 export const createShuffledRewards = (
 	configuration: Configuration
 ): Reward[] => {
-	const rewards = originalRewards.slice();
+	const rewards = [
+		...popupRewards,
+		...levelupRewards,
+		...bonusRewards,
+		...formRewards,
+		...worldRewards,
+	];
 
 	// Critical Mode
 	if (configuration.criticalMode) {
@@ -28,7 +38,8 @@ export const createShuffledRewards = (
 
 	const result: Reward[] = [];
 
-	for (let i = 0; i < originalRewards.length; i++) {
+	const length = rewards.length;
+	for (let i = 0; i < length; i++) {
 		const seeder = seedrandom(configuration.seed + i.toString());
 		const index = Math.floor(seeder() * rewards.length);
 
