@@ -1,9 +1,13 @@
 import seedrandom from "seedrandom";
+import { Configuration } from "../Configuration";
 import { createLine } from "../helpers/createLine";
 import { rewardLocations } from "../rewardLocations";
 import { Reward } from "../rewards/Reward";
 
-export const randomizeLocations = (seed: string, rewards: Reward[]) => {
+export const randomizeLocations = (
+	{ seed }: Configuration,
+	rewards: Reward[]
+) => {
 	return rewardLocations
 		.map(location => {
 			const seeder = seedrandom(seed + rewards.length.toString());

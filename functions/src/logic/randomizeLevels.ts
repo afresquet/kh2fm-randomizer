@@ -1,9 +1,10 @@
 import seedrandom from "seedrandom";
+import { Configuration } from "../Configuration";
 import { createLine } from "../helpers/createLine";
 import { levels } from "../levels";
 import { Reward } from "../rewards/Reward";
 
-export const randomizeLevels = (seed: string, rewards: Reward[]) => {
+export const randomizeLevels = ({ seed }: Configuration, rewards: Reward[]) => {
 	const swordCopy = rewards.slice();
 	const staffCopy = rewards.slice();
 	const shieldCopy = rewards.slice();
