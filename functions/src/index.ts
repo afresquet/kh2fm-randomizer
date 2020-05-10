@@ -1,3 +1,4 @@
+import cors from "cors";
 import express from "express";
 import * as functions from "firebase-functions";
 import { sign, verify } from "jsonwebtoken";
@@ -8,6 +9,7 @@ const { secret, algorithm } = functions.config().randomizer;
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.post("/seed", (req, res) => {

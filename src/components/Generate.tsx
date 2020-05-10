@@ -2,6 +2,7 @@ import Button from "@material-ui/core/Button";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import TextField from "@material-ui/core/TextField";
+import axios from "axios";
 import React, { useCallback, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
 import { Configuration } from "../Configuration";
@@ -41,24 +42,26 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 	);
 
 	const onSubmit = useCallback(
-		(event: React.FormEvent<HTMLFormElement>) => {
-			event.preventDefault();
+		async (event: React.FormEvent<HTMLFormElement>) => {
+			try {
+				event.preventDefault();
 
-			setLoading(true);
+				setLoading(true);
 
-			fetch("/randomizer/seed", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ ...text, ...checkbox }),
-			})
-				.then(response => response.json())
-				.then(({ seed }) => {
-					history.push(`/seed/${seed}`);
-				})
-				.catch(error => {
-					console.error(error);
-					setLoading(false);
-				});
+				const response = await axios.post<{ seed: string }>(
+					"/randomizer/seed",
+					{
+						...text,
+						...checkbox,
+					}
+				);
+
+				history.push(`/seed/${response.data.seed}`);
+			} catch (error) {
+				console.error(error);
+
+				setLoading(false);
+			}
 		},
 		[text, checkbox, history]
 	);
