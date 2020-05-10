@@ -8,14 +8,14 @@ export class LevelStats {
 
 	private level = 1;
 
-	levelUp(seedVariable?: string) {
+	levelUp(seed?: string) {
 		this.level += 1;
 
-		const seed = seedVariable
-			? seedrandom(seedVariable + this.level.toString())
+		const seeder = seed
+			? seedrandom(seed + this.level.toString())
 			: Math.random;
 
-		const random = Math.floor(seed() * 4);
+		const random = Math.floor(seeder() * 4);
 
 		if (random === 0) {
 			this.ability += 2;
