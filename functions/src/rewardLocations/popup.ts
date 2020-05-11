@@ -1,4 +1,4 @@
-import { RewardType } from "../rewards/RewardType";
+import { RewardType } from "../rewards/Reward";
 import { RewardLocation } from "./RewardLocation";
 import { RewardLocationType } from "./RewardLocationType";
 
