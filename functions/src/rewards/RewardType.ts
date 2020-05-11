@@ -3,9 +3,9 @@ export enum RewardType {
 	SHIELD = "shield",
 	STAFF = "staff",
 	ABILITY = "ability",
+	LIMIT = "limit",
 	SPELL = "spell",
 	FORM = "form",
-	LIMIT = "limit",
 	SUMMON = "summon",
 	ITEM = "item",
 	ARMOR = "armor",
@@ -13,5 +13,7 @@ export enum RewardType {
 	MAP = "map",
 	TORNPAGE = "tornpage",
 	REPORT = "report",
+	RECIPE = "recipe",
+	PROOF = "proof",
 	MISCELLANEOUS = "miscellaneous",
 }
