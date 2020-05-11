@@ -1,6 +1,6 @@
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 
-export const mapRewards: { [name: string]: Reward } = {
+export const mapRewards = {
 	TWILIGHT_TOWN_MAP: {
 		type: RewardType.MAP,
 		name: "Twilight Town Map",

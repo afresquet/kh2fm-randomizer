@@ -1,6 +1,6 @@
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 
-export const abilitiyRewards: { [name: string]: Reward } = {
+export const abilitiyRewards = {
 	AERIAL_RECOVERY: {
 		type: RewardType.ABILITY,
 		name: "Aerial Recovery",

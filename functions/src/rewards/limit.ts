@@ -1,6 +1,6 @@
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 
-export const limitRewards: { [name: string]: Reward } = {
+export const limitRewards = {
 	TRINITY_LIMIT: {
 		type: RewardType.LIMIT,
 		name: "Trinity Limit",

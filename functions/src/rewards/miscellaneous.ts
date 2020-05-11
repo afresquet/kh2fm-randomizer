@@ -1,6 +1,6 @@
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 
-export const miscellaneousRewards: { [name: string]: Reward } = {
+export const miscellaneousRewards = {
 	MUNNY_POUCH_OLETTE: {
 		type: RewardType.MISCELLANEOUS,
 		name: "Munny Pouch (Olette)",

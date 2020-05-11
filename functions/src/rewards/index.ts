@@ -10,13 +10,13 @@ import { miscellaneousRewards } from "./miscellaneous";
 import { proofRewards } from "./proof";
 import { recipeRewards } from "./recipe";
 import { reportRewards } from "./report";
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 import { shieldRewards } from "./shield";
 import { spellRewards } from "./spell";
 import { staffRewards } from "./staff";
 import { summonRewards } from "./summon";
 
-export const Rewards: { [name: string]: Reward } = {
+export const Rewards = {
 	...keybladeRewards,
 	...shieldRewards,
 	...staffRewards,

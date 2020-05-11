@@ -1,6 +1,6 @@
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 
-export const keybladeRewards: { [name: string]: Reward } = {
+export const keybladeRewards = {
 	STAR_SEEKER: {
 		type: RewardType.KEYBLADE,
 		name: "Star Seeker",

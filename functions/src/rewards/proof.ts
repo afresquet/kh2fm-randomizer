@@ -1,6 +1,6 @@
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 
-export const proofRewards: { [name: string]: Reward } = {
+export const proofRewards = {
 	PROOF_OF_CONNECTION: {
 		type: RewardType.PROOF,
 		name: "Proof of Connection",

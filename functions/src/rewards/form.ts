@@ -1,6 +1,6 @@
-import { Reward, RewardType } from "./Reward";
+import { RewardType } from "./Reward";
 
-export const formRewards: { [name: string]: Reward } = {
+export const formRewards = {
 	VALOR_FORM: {
 		type: RewardType.FORM,
 		name: "Valor Form",
