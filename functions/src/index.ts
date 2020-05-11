@@ -3,7 +3,7 @@ import express from "express";
 import * as functions from "firebase-functions";
 import { sign, verify } from "jsonwebtoken";
 import { Configuration } from "./Configuration";
-import { createPnach } from "./logic/createPnach";
+import { createSeed } from "./logic/createSeed";
 
 const { secret, algorithm } = functions.config().randomizer;
 
@@ -26,26 +26,11 @@ app.get("/seed/:seed", (req, res) => {
 	try {
 		const configuration = verify(req.params.seed, secret, {
 			algorithms: [algorithm],
-		});
+		}) as Configuration;
 
-		res.json(configuration);
-	} catch (error) {
-		res.status(400).json({ error });
-	}
-});
+		const seed = createSeed(configuration);
 
-app.get("/file/:seed", (req, res) => {
-	try {
-		const configuration = verify(req.params.seed, secret, {
-			algorithms: [algorithm],
-		});
-
-		const pnach = createPnach(configuration as Configuration);
-
-		const filename = req.query.filename || "F266B00B.pnach";
-
-		res.set({ "Content-Disposition": `attachment; filename=${filename}` });
-		res.send(pnach);
+		res.json({ configuration, seed });
 	} catch (error) {
 		res.status(400).json({ error });
 	}

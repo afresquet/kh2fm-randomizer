@@ -1,4 +1,4 @@
-import { abilitiyRewards } from "./ability";
+import { abilityRewards } from "./ability";
 import { accessoryReward } from "./accessory";
 import { armorRewards } from "./armor";
 import { formRewards } from "./form";
@@ -20,7 +20,7 @@ export const Rewards = {
 	...keybladeRewards,
 	...shieldRewards,
 	...staffRewards,
-	...abilitiyRewards,
+	...abilityRewards,
 	...limitRewards,
 	...spellRewards,
 	...formRewards,

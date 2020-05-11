@@ -1,6 +1,6 @@
 import { RewardType } from "./Reward";
 
-export const abilitiyRewards = {
+export const abilityRewards = {
 	AERIAL_RECOVERY: {
 		type: RewardType.ABILITY,
 		name: "Aerial Recovery",

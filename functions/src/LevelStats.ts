@@ -1,10 +1,10 @@
 import seedrandom from "seedrandom";
 
 export class LevelStats {
-	private ability = 0;
-	private defense = 2;
-	private magic = 6;
-	private strength = 2;
+	ability = 0;
+	defense = 2;
+	magic = 6;
+	strength = 2;
 
 	private level = 1;
 
