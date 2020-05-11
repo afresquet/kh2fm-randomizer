@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const hollowBastionRewardLocations: RewardLocation[] = [
 	{
@@ -133,5 +133,77 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Hollow Bastion (Heartless Manufactory)",
 		value: "11CE0036",
 		reward: Rewards.COSMIC_CHAIN,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Marketplace Map",
+		value: "11CE068A",
+		reward: Rewards.MARKETPLACE_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Membership Card",
+		value: "11CE0696",
+		reward: Rewards.MEMBERSHIP_CARD,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Blizzard Element (Hollow Bastion 1)",
+		value: "11CE06A2",
+		reward: Rewards.BLIZZARD,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Baseball Charm",
+		value: "11CE0702",
+		reward: Rewards.BASEBALL_CHARM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Master Form",
+		value: "11CE080A",
+		reward: Rewards.MASTER_FORM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Cure Upgrade (Hollow Bastion)",
+		value: "11CE0822",
+		reward: Rewards.CURE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Ice Cream",
+		value: "11CE082E",
+		reward: Rewards.ICE_CREAM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Picture",
+		value: "11CE083A",
+		reward: Rewards.PICTURE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Sleeping Lion",
+		value: "11CE0936",
+		reward: Rewards.SLEEPING_LION,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Fenrir",
+		value: "11CE0942",
+		reward: Rewards.FENRIR,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 1 (1,000 Heartless)",
+		value: "11CE09A2",
+		reward: Rewards.REPORT_ONE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 7 (Bailey Nobodies)",
+		value: "11CE09EA",
+		reward: Rewards.REPORT_SEVEN,
 	},
 ];

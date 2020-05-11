@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const prideLandsRewardLocations: RewardLocation[] = [
 	{
@@ -151,5 +151,17 @@ export const prideLandsRewardLocations: RewardLocation[] = [
 		description: "Pride Lands (Oasis)",
 		value: "11CE0162",
 		reward: Rewards.AP_BOOST,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Circle of Life",
+		value: "11CE07B6",
+		reward: Rewards.CIRCLE_OF_LIFE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Fire Upgrade (Pride Lands)",
+		value: "11CE07C2",
+		reward: Rewards.FIRE,
 	},
 ];

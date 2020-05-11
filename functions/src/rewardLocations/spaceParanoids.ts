@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const spaceParanoidsRewardLocations: RewardLocation[] = [
 	{
@@ -85,5 +85,11 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "Space Paranoids (Central Computer Core)",
 		value: "11CDFD8A",
 		reward: Rewards.CENTRAL_COMPUTER_CORE_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Photon Debugger",
+		value: "11CE0816",
+		reward: Rewards.PHOTON_DEBUGGER,
 	},
 ];

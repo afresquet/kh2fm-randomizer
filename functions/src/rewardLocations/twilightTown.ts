@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const twilightTownRewardLocations: RewardLocation[] = [
 	{
@@ -235,5 +235,65 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Twilight Town (Mansion Basement Corridor)",
 		value: "11CE03F6",
 		reward: Rewards.ULTIMATE_RECIPE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Munny Pouch (Mickey)",
+		value: "11CE065A",
+		reward: Rewards.MUNNY_POUCH_MICKEY,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Crystal Orb",
+		value: "11CE0666",
+		reward: Rewards.CRYSTAL_ORB,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Star Seeker",
+		value: "11CE0672",
+		reward: Rewards.STAR_SEEKER,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Valor Form",
+		value: "11CE067E",
+		reward: Rewards.VALOR_FORM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Seifer's Trophy",
+		value: "11CE07E6",
+		reward: Rewards.SEIFERS_TROPHY,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Oathkeeper",
+		value: "11CE07F2",
+		reward: Rewards.OATHKEEPER,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Limit Form",
+		value: "11CE07FE",
+		reward: Rewards.LIMIT_FORM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Bond of Flame",
+		value: "11CE0966",
+		reward: Rewards.BOND_OF_FLAME,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 2 (Station Plaza Nobodies)",
+		value: "11CE09AE",
+		reward: Rewards.REPORT_TWO,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 10 (Twilight Town 3)",
+		value: "11CE0A0E",
+		reward: Rewards.REPORT_TEN,
 	},
 ];

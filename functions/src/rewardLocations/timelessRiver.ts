@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const timelessRiverRewardLocations: RewardLocation[] = [
 	{
@@ -43,5 +43,23 @@ export const timelessRiverRewardLocations: RewardLocation[] = [
 		description: "Timeless River (Waterway)",
 		value: "11CDF9A6",
 		reward: Rewards.FROST_STONE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Window of Time Map",
+		value: "11CE076E",
+		reward: Rewards.WINDOW_OF_TIME_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Monochrome",
+		value: "11CE0732",
+		reward: Rewards.MONOCHROME,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Wisdom Form",
+		value: "11CE0762",
+		reward: Rewards.WISDOM_FORM,
 	},
 ];

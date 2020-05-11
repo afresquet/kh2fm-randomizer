@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const agrabahRewardLocations: RewardLocation[] = [
 	{
@@ -157,5 +157,23 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Agrabah (Ruined Chamber)",
 		value: "11CDF952",
 		reward: Rewards.RUINS_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Agrabah Map",
+		value: "11CE0792",
+		reward: Rewards.AGRABAH_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Lamp Charm",
+		value: "11CE079E",
+		reward: Rewards.LAMP_CHARM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Wishing Lamp",
+		value: "11CE08B2",
+		reward: Rewards.WISHING_LAMP,
 	},
 ];

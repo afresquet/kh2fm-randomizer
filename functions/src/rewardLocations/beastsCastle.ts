@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const beastsCastleRewardLocations: RewardLocation[] = [
 	{
@@ -127,5 +127,29 @@ export const beastsCastleRewardLocations: RewardLocation[] = [
 		description: "Beast's Castle (The Beast's Room)",
 		value: "11CDFCE2",
 		reward: Rewards.BLAZING_SHARD,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Cure Element (Beast's Castle)",
+		value: "11CE06F6",
+		reward: Rewards.CURE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Rumbling Rose",
+		value: "11CE0852",
+		reward: Rewards.RUMBLING_ROSE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Castle Walls Map",
+		value: "11CE085E",
+		reward: Rewards.CASTLE_WALLS_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 4 (Xaldin)",
+		value: "11CE09C6",
+		reward: Rewards.REPORT_FOUR,
 	},
 ];

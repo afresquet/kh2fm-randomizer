@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const twtnwRewardLocations: RewardLocation[] = [
 	{
@@ -115,5 +115,59 @@ export const twtnwRewardLocations: RewardLocation[] = [
 		description: "TWTNW (Ruin and Creation's Passage)",
 		value: "11CE04DA",
 		reward: Rewards.ORICHALCUM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Two Become One",
+		value: "11CE0972",
+		reward: Rewards.TWO_BECOME_ONE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Oblivion",
+		value: "11CE097E",
+		reward: Rewards.OBLIVION,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Castle That Never Was Map",
+		value: "11CE098A",
+		reward: Rewards.CASTLE_THAT_NEVER_WAS_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 3 (Xigbar)",
+		value: "11CE09BA",
+		reward: Rewards.REPORT_THREE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 8 (Roxas)",
+		value: "11CE09F6",
+		reward: Rewards.REPORT_EIGHT,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 9 (Luxord)",
+		value: "11CE0A02",
+		reward: Rewards.REPORT_NINE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 11 (Before Xemnas 1)",
+		value: "11CE0A1A",
+		reward: Rewards.REPORT_ELEVEN,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 12 (Saix)",
+		value: "11CE0A26",
+		reward: Rewards.REPORT_TWELVE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 13 (Xemnas 1)",
+		value: "11CE0A32",
+		reward: Rewards.REPORT_THIRTEEN,
 	},
 ];

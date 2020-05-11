@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const olympusRewardLocations: RewardLocation[] = [
 	{
@@ -121,5 +121,89 @@ export const olympusRewardLocations: RewardLocation[] = [
 		description: "Olympus Coliseum (The Lock)",
 		value: "11CDFBE6",
 		reward: Rewards.AP_BOOST,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Coliseum Map",
+		value: "11CE070E",
+		reward: Rewards.COLISEUM_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Olympus Stone",
+		value: "11CE071A",
+		reward: Rewards.OLYMPUS_STONE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Hero's Crest",
+		value: "11CE0726",
+		reward: Rewards.HEROS_CREST,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Auron's Statue",
+		value: "11CE0882",
+		reward: Rewards.AURONS_STATUE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Guardian Soul",
+		value: "11CE088E",
+		reward: Rewards.GUARDIAN_SOUL,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Protect Belt (Pain & Panic Cup)",
+		value: "11CE073E",
+		reward: Rewards.PROTECT_BELT,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Serenity Gem (Pain & Panic Cup)",
+		value: "11CE074A",
+		reward: Rewards.SERENITY_GEM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Rising Dragon (Cerberus Cup)",
+		value: "11CE07CE",
+		reward: Rewards.RISING_DRAGON,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Serenity Crystal (Cerberus Cup)",
+		value: "11CE07DA",
+		reward: Rewards.SERENITY_CRYSTAL,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Genji Shield (Titan Cup)",
+		value: "11CE089A",
+		reward: Rewards.GENJI_SHIELD,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Skillfull Ring (Titan Cup)",
+		value: "11CE08A6",
+		reward: Rewards.SKILLFUL_RING,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Fatal Crest (Goddess of Fate Cup)",
+		value: "11CE094E",
+		reward: Rewards.FATAL_CREST,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Orichalcum+ (Goddess of Fate Cup)",
+		value: "11CE095A",
+		reward: Rewards.ORICHALCUM_PLUS,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 5 (OC Demyx)",
+		value: "11CE09D2",
+		reward: Rewards.REPORT_FIVE,
 	},
 ];

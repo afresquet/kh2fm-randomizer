@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const disneyCastleRewardLocations: RewardLocation[] = [
 	{
@@ -49,5 +49,25 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		description: "Disney Castle (Library)",
 		value: "11CDFA06",
 		reward: Rewards.TORN_PAGE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Disney Castle Map",
+		value: "11CE0756",
+		reward: Rewards.DISNEY_CASTLE_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Proof of Connection",
+		value: "11CE0B16",
+		reward: Rewards.PROOF_OF_CONNECTION,
+		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Manifest Illusion (Lingering Will)",
+		value: "11CE0B22",
+		reward: Rewards.MANIFEST_ILLUSION,
+		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 ];

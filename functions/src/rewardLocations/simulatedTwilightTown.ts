@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 	{
@@ -97,5 +97,35 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		description: "Simulated Twilight Town (Mansion Basement Corridor)",
 		value: "11CE0222",
 		reward: Rewards.HI_POTION,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Twilight Town Map",
+		value: "11CE0636",
+		reward: Rewards.TWILIGHT_TOWN_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Munny Pouch (Olette)",
+		value: "11CE0606",
+		reward: Rewards.MUNNY_POUCH_OLETTE,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: '"The Struggle" Trophy',
+		value: "11CE062A",
+		reward: Rewards.STRUGGLE_TROPHY,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Namine's Sketches",
+		value: "11CE0642",
+		reward: Rewards.NAMINE_SKETCHES,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Mansion Map",
+		value: "11CE064E",
+		reward: Rewards.MANSION_MAP,
 	},
 ];

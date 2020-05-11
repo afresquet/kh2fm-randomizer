@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const portRoyalRewardLocations: RewardLocation[] = [
 	{
@@ -127,5 +127,35 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Port Royal (Seadrift Row)",
 		value: "11CDFF2E",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Isla de Muerta Map",
+		value: "11CE077A",
+		reward: Rewards.ISLA_DE_MUERTA_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Follow the Wind",
+		value: "11CE0786",
+		reward: Rewards.FOLLOW_THE_WIND,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Cursed Medallion",
+		value: "11CE086A",
+		reward: Rewards.CURSED_MEDALLION,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Ship Graveyard Map",
+		value: "11CE0876",
+		reward: Rewards.SHIP_GRAVEYARD_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 6 (Grim Reaper 2)",
+		value: "11CE09DE",
+		reward: Rewards.REPORT_SIX,
 	},
 ];

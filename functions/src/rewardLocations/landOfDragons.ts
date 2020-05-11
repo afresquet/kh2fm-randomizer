@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const landOfDragonsRewardLocations: RewardLocation[] = [
 	{
@@ -127,5 +127,29 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Land of Dragons (Throne Room)",
 		value: "11CDF81A",
 		reward: Rewards.ORICHALCUM,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Encampment Area Map",
+		value: "11CE06D2",
+		reward: Rewards.ENCAMPMENT_AREA_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "AP Boost (Missions)",
+		value: "11CE06C6",
+		reward: Rewards.AP_BOOST,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Village Area Map",
+		value: "11CE06DE",
+		reward: Rewards.VILLAGE_AREA_MAP,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Hidden Dragon",
+		value: "11CE06EA",
+		reward: Rewards.HIDDEN_DRAGON,
 	},
 ];

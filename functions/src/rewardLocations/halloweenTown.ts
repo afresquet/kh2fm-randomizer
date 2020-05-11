@@ -1,5 +1,5 @@
-import { Rewards } from "../../rewards";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const halloweenTownRewardLocations: RewardLocation[] = [
 	{
@@ -85,5 +85,29 @@ export const halloweenTownRewardLocations: RewardLocation[] = [
 		description: "Halloween Town (Santa's House)",
 		value: "11CDFE32",
 		reward: Rewards.AP_BOOST,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Magnet Element (Halloween Town)",
+		value: "11CE07AA",
+		reward: Rewards.MAGNET,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Present",
+		value: "11CE08BE",
+		reward: Rewards.PRESENTS,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Decoy Presents",
+		value: "11CE08CA",
+		reward: Rewards.DECOY_PRESENTS,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Decisive Pumpkin",
+		value: "11CE08D6",
+		reward: Rewards.DECISIVE_PUMPKIN,
 	},
 ];

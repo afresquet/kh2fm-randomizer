@@ -1,6 +1,6 @@
-import { Rewards } from "../../rewards";
-import { RewardType } from "../../rewards/Reward";
-import { RewardLocation, RewardLocationType } from "../RewardLocation";
+import { Rewards } from "../rewards";
+import { RewardType } from "../rewards/Reward";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const poohRewardLocations: RewardLocation[] = [
 	{
@@ -139,5 +139,33 @@ export const poohRewardLocations: RewardLocation[] = [
 		value: "11CDFAF6",
 		reward: Rewards.STYLE_RECIPE,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Sweet Memories",
+		value: "11CE0906",
+		reward: Rewards.SWEET_MEMORIES,
+		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Spooky Cave Map",
+		value: "11CE0912",
+		reward: Rewards.SPOOKY_CAVE_MAP,
+		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Cure Upgrade (100 Acre Wood)",
+		value: "11CE091E",
+		reward: Rewards.CURE,
+		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Orichalcum+ (100 Acre Wood)",
+		value: "11CE092A",
+		reward: Rewards.ORICHALCUM_PLUS,
+		exclude: [RewardType.FORM, RewardType.SPELL],
 	},
 ];
