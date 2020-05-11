@@ -1,10 +1,22 @@
-import { RewardType } from "../rewards/Reward";
-import { RewardLocationType } from "./RewardLocationType";
+import { Reward, RewardType } from "../rewards/Reward";
+
+export enum RewardLocationType {
+	POPUP = "popup",
+	CHEST = "chest",
+	BIGCHEST = "big chest",
+	LEVELUP = "level up",
+	BONUS = "bonus",
+	GOOFY = "goofy bonus",
+	DONALD = "donald bonus",
+	form = "form level up",
+	CRITICAL = "critical extra",
+}
 
 export interface RewardLocation {
 	type: RewardLocationType;
 	description: string;
 	value: string;
+	reward: Reward;
 	priority?: number;
 	exclude?: RewardType[];
 }

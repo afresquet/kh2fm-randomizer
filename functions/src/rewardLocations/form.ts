@@ -1,96 +1,111 @@
+import { Rewards } from "../rewards";
 import { RewardType } from "../rewards/Reward";
-import { RewardLocation } from "./RewardLocation";
-import { RewardLocationType } from "./RewardLocationType";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const formRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.form,
 		description: "Valor LV2",
 		value: "11D1A22E",
+		reward: Rewards.AUTO_VALOR,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Valor LV4",
 		value: "11D1A23E",
+		reward: Rewards.COMBO_PLUS,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Valor LV6",
 		value: "11D1A24E",
+		reward: Rewards.COMBO_PLUS,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Wisdom LV2",
 		value: "11D1A266",
+		reward: Rewards.AUTO_WISDOM,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Wisdom LV4",
 		value: "11D1A276",
+		reward: Rewards.MP_RAGE,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Wisdom LV6",
 		value: "11D1A286",
+		reward: Rewards.MP_HASTE,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Limit LV2",
 		value: "11D1A29E",
+		reward: Rewards.AUTO_LIMIT_FORM,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Limit LV4",
 		value: "11D1A2AE",
+		reward: Rewards.DRAW,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Limit LV6",
 		value: "11D1A2BE",
+		reward: Rewards.LUCKY_LUCKY,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Master LV2",
 		value: "11D1A2D6",
+		reward: Rewards.AUTO_MASTER,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Master LV4",
 		value: "11D1A2E6",
+		reward: Rewards.AIR_COMBO_PLUS,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Master LV6",
 		value: "11D1A2F6",
+		reward: Rewards.AIR_COMBO_PLUS,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Final LV2",
 		value: "11D1A30E",
+		reward: Rewards.AUTO_FINAL,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Final LV4",
 		value: "11D1A31E",
+		reward: Rewards.FORM_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.form,
 		description: "Final LV6",
 		value: "11D1A32E",
+		reward: Rewards.FORM_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 ];

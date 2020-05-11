@@ -1,6 +1,11 @@
 import { RewardType } from "./Reward";
 
 export const itemRewards = {
+	POTION: {
+		type: RewardType.ITEM,
+		name: "Potion",
+		value: "0001",
+	},
 	HI_POTION: {
 		type: RewardType.ITEM,
 		name: "Hi-Potion",

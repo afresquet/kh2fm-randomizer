@@ -1,130 +1,155 @@
-import { RewardLocation } from "../RewardLocation";
-import { RewardLocationType } from "../RewardLocationType";
+import { Rewards } from "../../rewards";
+import { RewardLocation, RewardLocationType } from "../RewardLocation";
 
 export const prideLandsRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "Pride Lands (Gorge)",
 		value: "11CE0042",
+		reward: Rewards.SAVANNAH_MAP,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Gorge)",
 		value: "11CE004E",
+		reward: Rewards.DARK_GEM,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Gorge)",
 		value: "11CE005A",
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Elephant Graveyard)",
 		value: "11CE0066",
+		reward: Rewards.FROST_GEM,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Elephant Graveyard)",
 		value: "11CE0072",
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Elephant Graveyard)",
 		value: "11CE007E",
+		reward: Rewards.BRIGHT_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Elephant Graveyard)",
 		value: "11CE008A",
+		reward: Rewards.AP_BOOST,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Elephant Graveyard)",
 		value: "11CE0096",
+		reward: Rewards.MYTHRIL_SHARD,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "Pride Lands (Pride Rock)",
 		value: "11CE00A2",
+		reward: Rewards.PRIDE_ROCK_MAP,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Pride Rock)",
 		value: "11CE00AE",
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Pride Rock)",
 		value: "11CE00BA",
+		reward: Rewards.SERENITY_CRYSTAL,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wildebeest Valley)",
 		value: "11CE00C6",
+		reward: Rewards.ENERGY_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wildebeest Valley)",
 		value: "11CE00D2",
+		reward: Rewards.AP_BOOST,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wildebeest Valley)",
 		value: "11CE00DE",
+		reward: Rewards.MYTHRIL_GEM,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wildebeest Valley)",
 		value: "11CE00EA",
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wildebeest Valley)",
 		value: "11CE00F6",
+		reward: Rewards.LUCID_GEM,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wastelands)",
 		value: "11CE0102",
+		reward: Rewards.MYTHRIL_SHARD,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wastelands)",
 		value: "11CE010E",
+		reward: Rewards.SERENITY_GEM,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Wastelands)",
 		value: "11CE011A",
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Jungle)",
 		value: "11CE0126",
+		reward: Rewards.SERENITY_GEM,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Jungle)",
 		value: "11CE0132",
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Jungle)",
 		value: "11CE013E",
+		reward: Rewards.SERENITY_CRYSTAL,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "Pride Lands (Oasis)",
 		value: "11CE014A",
+		reward: Rewards.OASIS_MAP,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "Pride Lands (Oasis)",
 		value: "11CE0156",
+		reward: Rewards.TORN_PAGE,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Pride Lands (Oasis)",
 		value: "11CE0162",
+		reward: Rewards.AP_BOOST,
 	},
 ];

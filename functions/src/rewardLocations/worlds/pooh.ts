@@ -1,126 +1,143 @@
+import { Rewards } from "../../rewards";
 import { RewardType } from "../../rewards/Reward";
-import { RewardLocation } from "../RewardLocation";
-import { RewardLocationType } from "../RewardLocationType";
+import { RewardLocation, RewardLocationType } from "../RewardLocation";
 
 export const poohRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "100 Acre Wood (Pooh Bear's House)",
 		value: "11CDFA12",
-		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+		reward: Rewards.HUNDRED_ACRE_WOOD_MAP,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Pooh Bear's House)",
 		value: "11CDFA1E",
-		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+		reward: Rewards.AP_BOOST,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Pooh Bear's House)",
 		value: "11CDFA2A",
-		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "100 Acre Wood (Piglet's House)",
 		value: "11CDFA36",
+		reward: Rewards.DEFENSE_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Piglet's House)",
 		value: "11CDFA42",
+		reward: Rewards.AP_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Piglet's House)",
 		value: "11CDFA4E",
+		reward: Rewards.MYTHRIL_GEM,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "100 Acre Wood (Rabbit's House)",
 		value: "11CDFA5A",
+		reward: Rewards.DRAW_RING,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Rabbit's House)",
 		value: "11CDFA66",
+		reward: Rewards.MYTHRIL_CRYSTAL,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Rabbit's House)",
 		value: "11CDFA72",
+		reward: Rewards.AP_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "100 Acre Wood (Kanga's House)",
 		value: "11CDFA7E",
+		reward: Rewards.MAGIC_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Kanga's House)",
 		value: "11CDFA8A",
+		reward: Rewards.AP_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Kanga's House)",
 		value: "11CDFA96",
+		reward: Rewards.ORICHALCUM,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Woods (The Spooky Cave)",
 		value: "11CDFAA2",
+		reward: Rewards.MYTHRIL_GEM,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (The Spooky Cave)",
 		value: "11CDFAAE",
+		reward: Rewards.AP_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (The Spooky Cave)",
 		value: "11CDFABA",
+		reward: Rewards.ORICHALCUM,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (The Spooky Cave)",
 		value: "11CDFAC6",
+		reward: Rewards.GUARD_RECIPE,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (The Spooky Cave)",
 		value: "11CDFAD2",
+		reward: Rewards.MYTHRIL_CRYSTAL,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (The Spooky Cave)",
 		value: "11CDFADE",
+		reward: Rewards.AP_BOOST,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "100 Acre Wood (Starry Hill)",
 		value: "11CDFAEA",
+		reward: Rewards.COSMIC_RING,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "100 Acre Wood (Starry Hill)",
 		value: "11CDFAF6",
+		reward: Rewards.STYLE_RECIPE,
 		exclude: [RewardType.FORM, RewardType.TORNPAGE, RewardType.SPELL],
 	},
 ];

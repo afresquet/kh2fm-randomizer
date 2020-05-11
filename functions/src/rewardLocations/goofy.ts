@@ -1,150 +1,179 @@
-import { RewardLocation } from "./RewardLocation";
-import { RewardLocationType } from "./RewardLocationType";
+import { Rewards } from "../rewards";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const goofyRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Starting Ability (Goofy)",
 		value: "11D16F62",
+		reward: Rewards.GOOFY_BASH,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Starting Ability (Goofy)",
 		value: "11D16F64",
+		reward: Rewards.ITEM_BOOST,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Shan-Yu",
 		value: "21D108E8",
+		reward: Rewards.GOOFY_TURBO,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "The Beast",
 		value: "21D10968",
+		reward: Rewards.DEFENDER,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Pete (Olympus Coliseum)",
 		value: "21D10848",
+		reward: Rewards.HYPER_HEALING,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Pete (Timeless River)",
 		value: "21D109D8",
+		reward: Rewards.GOOFY_TORNADO,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "The Interceptor Barrels",
 		value: "21D10D58",
+		reward: Rewards.SECOND_CHANCE,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Captain Barbossa",
 		value: "11D10AC8",
+		reward: Rewards.GOOFY_TEAMWORK,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Captain Barbossa",
 		value: "11D10ACA",
+		reward: Rewards.AUTO_LIMIT,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Treasure Room Heartless",
 		value: "21D10E78",
+		reward: Rewards.AUTO_HEALING,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Oogie Boogie",
 		value: "21D10A48",
+		reward: Rewards.ONCE_MORE,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Hyenas 1",
 		value: "21D10EC8",
+		reward: Rewards.LUCKY_LUCKY,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Hostile Program",
 		value: "21D10C58",
+		reward: Rewards.JACKPOT,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Storm Rider",
 		value: "21D10928",
+		reward: Rewards.GOOFY_TORNADO_FUSION,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Grim Reaper 1",
 		value: "21D11048",
+		reward: Rewards.DRAW,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Lock/Shock/Barrel",
 		value: "21D10D98",
+		reward: Rewards.GOOFY_AUTO_CHANGE,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Hyenas 2",
 		value: "21D10EF8",
+		reward: Rewards.MP_RAGE,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Zexion",
 		value: "21D11178",
+		reward: Rewards.DAMAGE_CONTROL,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Knight's Shield",
 		value: "11CDF2E6",
+		reward: Rewards.MP_HASTEGA,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Adamant Shield",
 		value: "11CDF2F6",
+		reward: Rewards.ITEM_BOOST,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Chain Gear",
 		value: "11CDF306",
+		reward: Rewards.DAMAGE_CONTROL,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Falling Star",
 		value: "11CDF326",
+		reward: Rewards.GOOFY_PROTECT,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Dreamcloud",
 		value: "11CDF336",
+		reward: Rewards.GOOFY_PROTECTRA,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Knight Defender",
 		value: "11CDF346",
+		reward: Rewards.GOOFY_PROTECTGA,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Ogre Shield",
 		value: "11CDF316",
+		reward: Rewards.DEFENDER,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Genji Shield",
 		value: "11CDF356",
+		reward: Rewards.HYPER_HEALING,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Akashic Record",
 		value: "11CDF366",
+		reward: Rewards.MP_HASTE,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Akashic Record+",
 		value: "11CDF716",
+		reward: Rewards.MP_HASTERA,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Nobody Guard",
 		value: "11CDF376",
+		reward: Rewards.MP_RAGE,
 	},
 ];
