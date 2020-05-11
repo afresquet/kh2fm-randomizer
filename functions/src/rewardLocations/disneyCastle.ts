@@ -1,4 +1,5 @@
 import { Rewards } from "../rewards";
+import { RewardType } from "../rewards/Reward";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const disneyCastleRewardLocations: RewardLocation[] = [
