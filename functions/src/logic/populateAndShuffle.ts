@@ -1,5 +1,4 @@
 import { Configuration } from "../Configuration";
-import { abilityRewardLocations } from "../rewardLocations/ability";
 import { agrabahRewardLocations } from "../rewardLocations/agrabah";
 import { atlanticaRewardLocations } from "../rewardLocations/atlantica";
 import { beastsCastleRewardLocations } from "../rewardLocations/beastsCastle";
@@ -11,6 +10,7 @@ import { formRewardLocations } from "../rewardLocations/form";
 import { halloweenTownRewardLocations } from "../rewardLocations/halloweenTown";
 import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
 import { landOfDragonsRewardLocations } from "../rewardLocations/landOfDragons";
+import { abilityLevels } from "../rewardLocations/levels";
 import { olympusRewardLocations } from "../rewardLocations/olympus";
 import { poohRewardLocations } from "../rewardLocations/pooh";
 import { portRoyalRewardLocations } from "../rewardLocations/portRoyal";
@@ -121,7 +121,7 @@ export const populateAndShuffle = (
 	}
 
 	if (configuration.abilities) {
-		rewards.push(...abilityRewardLocations.map(location => location.reward));
+		rewards.push(...abilityLevels.map(level => level.abilities.sword.reward!));
 		push(bonusRewardLocations);
 	}
 

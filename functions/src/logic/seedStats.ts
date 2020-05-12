@@ -1,6 +1,6 @@
 import { Configuration } from "../Configuration";
-import { levels } from "../levels";
 import { LevelStats } from "../LevelStats";
+import { levels } from "../rewardLocations/levels";
 import { RewardLocationType } from "../rewardLocations/RewardLocation";
 import { Seed } from "./createSeed";
 

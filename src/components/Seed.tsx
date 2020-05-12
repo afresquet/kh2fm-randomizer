@@ -30,7 +30,7 @@ const SpoilerLogRow: React.FC<{ reward: Reward; location: RewardLocation }> = ({
 	reward,
 	location,
 }) => {
-	return (
+	return reward ? (
 		<TableRow>
 			<TableCell>{location.description}</TableCell>
 			<TableCell>{location.type}</TableCell>
@@ -41,7 +41,7 @@ const SpoilerLogRow: React.FC<{ reward: Reward; location: RewardLocation }> = ({
 				<TableCell>{location.reward.name}</TableCell>
 			) : null}
 		</TableRow>
-	);
+	) : null;
 };
 
 const useStyles = makeStyles(theme => {
