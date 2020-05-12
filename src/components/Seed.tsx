@@ -56,8 +56,19 @@ const useStyles = makeStyles(theme => {
 
 	return createStyles({
 		paper,
-		title: {
+		marginBottom: {
 			marginBottom: theme.spacing(3),
+		},
+		chipsWrapper: {
+			marginBottom: theme.spacing(3),
+			display: "flex",
+			justifyContent: "center",
+			flexWrap: "wrap",
+			"& > *": {
+				margin: theme.spacing(0.5),
+				marginLeft: theme.spacing(1.5),
+				marginRight: theme.spacing(1.5),
+			},
 		},
 		button: {
 			marginTop: theme.spacing(3),
@@ -146,84 +157,104 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 	return (
 		<>
 			<Paper variant="outlined" className={classes.paper}>
-				<div className={classes.title}>
+				<div className={classes.marginBottom}>
 					<Typography variant="h4">Seed: {configuration.seed}</Typography>
 					<Typography variant="h6">Game Mode: {gameMode}</Typography>
 				</div>
 
-				<ConfigProperty property={configuration.criticalMode}>
-					Critical Mode
-				</ConfigProperty>
-				<ConfigProperty property={configuration.stats}>
-					Randomize Stats
-				</ConfigProperty>
-				<ConfigProperty property={configuration.abilities}>
-					Randomize Abilities
-				</ConfigProperty>
-				<ConfigProperty property={configuration.level50}>
-					Cap abilities at level 50 (KH3 style)
-				</ConfigProperty>
-				<ConfigProperty property={configuration.donaldAbilities}>
-					Randomize Donald's Abilities
-				</ConfigProperty>
-				<ConfigProperty property={configuration.goofyAbilities}>
-					Randomize Goofy's Abilities
-				</ConfigProperty>
-				<ConfigProperty property={configuration.formAbilities}>
-					Randomize Form Abilities
-				</ConfigProperty>
+				<Typography variant="h6">Randomize</Typography>
 
-				<ConfigProperty property={configuration.simulatedTwilightTown}>
-					Simulated Twilight Town
-				</ConfigProperty>
-				<ConfigProperty property={configuration.twilightTown}>
-					Twilight Town
-				</ConfigProperty>
-				<ConfigProperty property={configuration.hollowBastion}>
-					Hollow Bastion
-				</ConfigProperty>
-				<ConfigProperty property={configuration.cavernOfRemembrance}>
-					Cavern of Remembrance
-				</ConfigProperty>
-				<ConfigProperty property={configuration.beastsCastle}>
-					Beast's Castle
-				</ConfigProperty>
-				<ConfigProperty property={configuration.olympus}>
-					Olympus
-				</ConfigProperty>
-				<ConfigProperty property={configuration.agrabah}>
-					Agrabah
-				</ConfigProperty>
-				<ConfigProperty property={configuration.landOfDragons}>
-					Land of Dragons
-				</ConfigProperty>
-				<ConfigProperty property={configuration.pooh}>
-					100 Acre Wood
-				</ConfigProperty>
-				<ConfigProperty property={configuration.atlantica}>
-					Atlantica
-				</ConfigProperty>
-				<ConfigProperty property={configuration.prideLands}>
-					Pride Lands
-				</ConfigProperty>
-				<ConfigProperty property={configuration.disneyCastle}>
-					Disney Castle
-				</ConfigProperty>
-				<ConfigProperty property={configuration.timelessRiver}>
-					Timeless River
-				</ConfigProperty>
-				<ConfigProperty property={configuration.halloweenTown}>
-					Halloween Town
-				</ConfigProperty>
-				<ConfigProperty property={configuration.portRoyal}>
-					Port Royal
-				</ConfigProperty>
-				<ConfigProperty property={configuration.spaceParanoids}>
-					Space Paranoids
-				</ConfigProperty>
-				<ConfigProperty property={configuration.twtnw}>
-					The World That Never Was
-				</ConfigProperty>
+				<div className={classes.chipsWrapper}>
+					<ConfigProperty property={configuration.criticalMode}>
+						Critical Mode
+					</ConfigProperty>
+					<ConfigProperty property={configuration.stats}>Stats</ConfigProperty>
+					<ConfigProperty property={configuration.abilities}>
+						Abilities
+					</ConfigProperty>
+					<ConfigProperty property={configuration.level50}>
+						Cap abilities at Level 50
+					</ConfigProperty>
+					<ConfigProperty property={configuration.donaldAbilities}>
+						Donald's Abilities
+					</ConfigProperty>
+					<ConfigProperty property={configuration.goofyAbilities}>
+						Goofy's Abilities
+					</ConfigProperty>
+					<ConfigProperty property={configuration.formAbilities}>
+						Form Abilities
+					</ConfigProperty>
+				</div>
+
+				<Typography variant="h6">Worlds</Typography>
+
+				<div className={classes.chipsWrapper}>
+					<ConfigProperty property={configuration.simulatedTwilightTown}>
+						Simulated Twilight Town
+					</ConfigProperty>
+					<ConfigProperty property={configuration.twilightTown}>
+						Twilight Town
+					</ConfigProperty>
+					<ConfigProperty property={configuration.hollowBastion}>
+						Hollow Bastion
+					</ConfigProperty>
+					<ConfigProperty property={configuration.cavernOfRemembrance}>
+						Cavern of Remembrance
+					</ConfigProperty>
+					<ConfigProperty property={configuration.beastsCastle}>
+						Beast's Castle
+					</ConfigProperty>
+					<ConfigProperty property={configuration.olympus}>
+						Olympus
+					</ConfigProperty>
+					<ConfigProperty property={configuration.agrabah}>
+						Agrabah
+					</ConfigProperty>
+					<ConfigProperty property={configuration.landOfDragons}>
+						Land of Dragons
+					</ConfigProperty>
+					<ConfigProperty property={configuration.pooh}>
+						100 Acre Wood
+					</ConfigProperty>
+					<ConfigProperty property={configuration.atlantica}>
+						Atlantica
+					</ConfigProperty>
+					<ConfigProperty property={configuration.prideLands}>
+						Pride Lands
+					</ConfigProperty>
+					<ConfigProperty property={configuration.disneyCastle}>
+						Disney Castle
+					</ConfigProperty>
+					<ConfigProperty property={configuration.timelessRiver}>
+						Timeless River
+					</ConfigProperty>
+					<ConfigProperty property={configuration.halloweenTown}>
+						Halloween Town
+					</ConfigProperty>
+					<ConfigProperty property={configuration.portRoyal}>
+						Port Royal
+					</ConfigProperty>
+					<ConfigProperty property={configuration.spaceParanoids}>
+						Space Paranoids
+					</ConfigProperty>
+					<ConfigProperty property={configuration.twtnw}>
+						The World That Never Was
+					</ConfigProperty>
+				</div>
+
+				<Typography variant="h6">Include</Typography>
+
+				<div className={classes.chipsWrapper}>
+					<ConfigProperty property={configuration.ultimaWeapon}>
+						Ultima Weapon
+					</ConfigProperty>
+					<ConfigProperty property={configuration.finalForm}>
+						Final Form
+					</ConfigProperty>
+					<ConfigProperty property={configuration.synthItems}>
+						Synth Items
+					</ConfigProperty>
+				</div>
 
 				<Button
 					onClick={download}

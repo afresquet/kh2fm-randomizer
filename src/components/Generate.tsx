@@ -1,16 +1,13 @@
 import Button from "@material-ui/core/Button";
 import Chip from "@material-ui/core/Chip";
 import FormControl from "@material-ui/core/FormControl";
-import FormControlLabel, {
-	FormControlLabelProps,
-} from "@material-ui/core/FormControlLabel";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import Paper from "@material-ui/core/Paper";
 import Select from "@material-ui/core/Select";
 import { makeStyles } from "@material-ui/core/styles";
-import Switch from "@material-ui/core/Switch";
 import TextField from "@material-ui/core/TextField";
+import Typography from "@material-ui/core/Typography";
 import axios from "axios";
 import React, { useCallback, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
@@ -18,10 +15,11 @@ import { api } from "../api";
 import { Configuration, GameMode } from "../Configuration";
 import { PickByType } from "../PickByType";
 
-interface TCheckbox extends Omit<FormControlLabelProps, "control"> {
+interface TChip {
 	label: string;
 	name: string;
 	checked: boolean;
+	disabled?: boolean;
 }
 
 const useStyles = makeStyles(theme => ({
@@ -35,7 +33,8 @@ const useStyles = makeStyles(theme => ({
 	marginBottom: {
 		marginBottom: theme.spacing(3),
 	},
-	worldsWrapper: {
+	chipsWrapper: {
+		marginBottom: theme.spacing(3),
 		display: "flex",
 		justifyContent: "center",
 		flexWrap: "wrap",
@@ -47,7 +46,6 @@ const useStyles = makeStyles(theme => ({
 		textAlign: "center",
 	},
 	button: {
-		marginTop: theme.spacing(3),
 		width: "75%",
 	},
 }));
@@ -86,6 +84,10 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		portRoyal: true,
 		spaceParanoids: true,
 		twtnw: true,
+
+		ultimaWeapon: true,
+		finalForm: true,
+		synthItems: true,
 	});
 	const [gameMode, setGameMode] = useState<GameMode>(GameMode.GOA_MOD);
 
@@ -95,26 +97,6 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 				...current,
 				[name]: value,
 			}));
-		},
-		[]
-	);
-
-	const onCheckboxChange = useCallback(
-		({ target: { name, checked } }: React.ChangeEvent<HTMLInputElement>) => {
-			setCheckbox(current => {
-				if (name === "abilities" && !checked) {
-					return {
-						...current,
-						abilities: false,
-						level50: false,
-					};
-				}
-
-				return {
-					...current,
-					[name]: checked,
-				};
-			});
 		},
 		[]
 	);
@@ -133,40 +115,31 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 
 	const onChipClick = useCallback(
 		(name: string) => () => {
-			setCheckbox(current => ({
-				...current,
-				[name]: !current[name],
-			}));
+			setCheckbox(current => {
+				if (name === "abilities" && current.abilities) {
+					return {
+						...current,
+						abilities: false,
+						level50: false,
+					};
+				}
+
+				return {
+					...current,
+					[name]: !current[name],
+				};
+			});
 		},
 		[]
 	);
 
-	const CheckBox = useCallback(
-		({ label, name, checked, ...props }: TCheckbox) => (
-			<div>
-				<FormControlLabel
-					label={label}
-					control={
-						<Switch
-							name={name}
-							checked={checked}
-							onChange={onCheckboxChange}
-							color="primary"
-						/>
-					}
-					{...props}
-				/>
-			</div>
-		),
-		[onCheckboxChange]
-	);
-
-	const WorldChip = useCallback(
-		({ label, name, checked }: TCheckbox) => (
+	const OptionChip = useCallback(
+		({ label, name, checked, disabled }: TChip) => (
 			<Chip
 				label={label}
 				color={checked ? "primary" : "default"}
 				onClick={onChipClick(name)}
+				disabled={disabled}
 			/>
 		),
 		[onChipClick]
@@ -228,152 +201,174 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					</FormControl>
 				</div>
 
-				<div className={classes.marginBottom}>
-					<CheckBox
-						label="Critical Mode"
-						name="criticalMode"
-						checked={checkbox.criticalMode}
-					/>
+				<Typography align="center">Randomize</Typography>
 
-					<CheckBox
-						label="Randomize Stats"
-						name="stats"
-						checked={checkbox.stats}
-					/>
+				<div className={classes.chipsWrapper}>
+					<OptionChip label="Stats" name="stats" checked={checkbox.stats} />
 
-					<CheckBox
-						label="Randomize Abilities"
+					<OptionChip
+						label="Abilities"
 						name="abilities"
 						checked={checkbox.abilities}
 					/>
 
-					<CheckBox
-						label="Cap abilities at level 50 (KH3 style)"
+					<OptionChip
+						label="Cap abilities at Level 50"
 						name="level50"
 						checked={checkbox.level50}
 						disabled={!checkbox.abilities}
 					/>
 
-					<CheckBox
-						label="Randomize Donald's Abilities"
+					<OptionChip
+						label="Donald's Abilities"
 						name="donaldAbilities"
 						checked={checkbox.donaldAbilities}
 					/>
 
-					<CheckBox
-						label="Randomize Goofy's Abilities"
+					<OptionChip
+						label="Goofy's Abilities"
 						name="goofyAbilities"
 						checked={checkbox.goofyAbilities}
 					/>
 
-					<CheckBox
-						label="Randomize Form Abilities"
+					<OptionChip
+						label="Form Abilities"
 						name="formAbilities"
 						checked={checkbox.formAbilities}
 					/>
 				</div>
 
-				<div className={classes.worldsWrapper}>
-					<WorldChip
+				<Typography align="center">Worlds</Typography>
+
+				<div className={classes.chipsWrapper}>
+					<OptionChip
 						label="Simulated Twilight Town"
 						name="simulatedTwilightTown"
 						checked={checkbox.simulatedTwilightTown}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Twilight Town"
 						name="twilightTown"
 						checked={checkbox.twilightTown}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Hollow Bastion"
 						name="hollowBastion"
 						checked={checkbox.hollowBastion}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Cavern of Remembrance"
 						name="cavernOfRemembrance"
 						checked={checkbox.cavernOfRemembrance}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Beast's Castle"
 						name="beastsCastle"
 						checked={checkbox.beastsCastle}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Olympus Colisseum"
 						name="olympus"
 						checked={checkbox.olympus}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Agrabah"
 						name="agrabah"
 						checked={checkbox.agrabah}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Land of Dragons"
 						name="landOfDragons"
 						checked={checkbox.landOfDragons}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="100 Acre Wood"
 						name="pooh"
 						checked={checkbox.pooh}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Atlantica"
 						name="atlantica"
 						checked={checkbox.atlantica}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Pride Lands"
 						name="prideLands"
 						checked={checkbox.prideLands}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Disne's Castle"
 						name="disneyCastle"
 						checked={checkbox.disneyCastle}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Timeless River"
 						name="timelessRiver"
 						checked={checkbox.timelessRiver}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Halloween Town"
 						name="halloweenTown"
 						checked={checkbox.halloweenTown}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Port Royal"
 						name="portRoyal"
 						checked={checkbox.portRoyal}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="Space Paranoids"
 						name="spaceParanoids"
 						checked={checkbox.spaceParanoids}
 					/>
 
-					<WorldChip
+					<OptionChip
 						label="The World That Never Was"
 						name="twtnw"
 						checked={checkbox.twtnw}
+					/>
+				</div>
+
+				<Typography align="center">Include</Typography>
+
+				<div className={classes.chipsWrapper}>
+					<OptionChip
+						label="Critical Mode"
+						name="criticalMode"
+						checked={checkbox.criticalMode}
+					/>
+
+					<OptionChip
+						label="Ultima Weapon"
+						name="ultimaWeapon"
+						checked={checkbox.ultimaWeapon}
+					/>
+
+					<OptionChip
+						label="Final Form"
+						name="finalForm"
+						checked={checkbox.finalForm}
+					/>
+
+					<OptionChip
+						label="Synth Items"
+						name="synthItems"
+						checked={checkbox.synthItems}
 					/>
 				</div>
 

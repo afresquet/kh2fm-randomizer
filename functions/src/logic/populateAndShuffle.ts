@@ -1,3 +1,4 @@
+import seedrandom from "seedrandom";
 import { Configuration } from "../Configuration";
 import { agrabahRewardLocations } from "../rewardLocations/agrabah";
 import { atlanticaRewardLocations } from "../rewardLocations/atlantica";
@@ -21,8 +22,45 @@ import { spaceParanoidsRewardLocations } from "../rewardLocations/spaceParanoids
 import { timelessRiverRewardLocations } from "../rewardLocations/timelessRiver";
 import { twilightTownRewardLocations } from "../rewardLocations/twilightTown";
 import { twtnwRewardLocations } from "../rewardLocations/twtnw";
+import { Rewards } from "../rewards";
 import { Reward } from "../rewards/Reward";
 import { shuffle } from "./shuffle";
+
+const replaceable: Reward[] = [
+	Rewards.BLAZING_SHARD,
+	Rewards.FROST_SHARD,
+	Rewards.LIGHTNING_SHARD,
+	Rewards.DARK_SHARD,
+	Rewards.LUCID_SHARD,
+	Rewards.POWER_SHARD,
+	Rewards.BRIGHT_SHARD,
+	Rewards.ENERGY_SHARD,
+	Rewards.SERENITY_SHARD,
+	Rewards.MYTHRIL_SHARD,
+];
+
+const replace = (
+	rewards: Reward[],
+	reward: Reward,
+	configuration: Configuration,
+	nextIndex?: number
+): void => {
+	let index = nextIndex;
+
+	if (!nextIndex) {
+		const seeder = seedrandom(configuration.seed + reward.value);
+
+		index = Math.floor(seeder() * rewards.length);
+	}
+
+	if (replaceable.includes(rewards[index!])) {
+		rewards[index!] = reward;
+
+		return;
+	}
+
+	return replace(rewards, reward, configuration, (index! + 1) % rewards.length);
+};
 
 export const populateAndShuffle = (
 	configuration: Configuration
@@ -42,6 +80,11 @@ export const populateAndShuffle = (
 			})
 		);
 		locations.push(...locationArray);
+	}
+
+	if (configuration.abilities) {
+		rewards.push(...abilityLevels.map(level => level.abilities.sword.reward!));
+		push(bonusRewardLocations);
 	}
 
 	if (configuration.formAbilities) {
@@ -120,9 +163,41 @@ export const populateAndShuffle = (
 		push(twtnwRewardLocations);
 	}
 
-	if (configuration.abilities) {
-		rewards.push(...abilityLevels.map(level => level.abilities.sword.reward!));
-		push(bonusRewardLocations);
+	if (configuration.donaldAbilities) {
+		[Rewards.CENTURION, Rewards.NOBODY_LANCE, Rewards.SHAMANS_RELIC].forEach(
+			reward => {
+				replace(rewards, reward, configuration);
+			}
+		);
+	}
+
+	if (configuration.goofyAbilities) {
+		[
+			Rewards.FROZEN_PRIDE,
+			Rewards.NOBODY_GUARD,
+			Rewards.AKASHIC_RECORD,
+		].forEach(reward => {
+			replace(rewards, reward, configuration);
+		});
+	}
+
+	if (configuration.ultimaWeapon) {
+		replace(rewards, Rewards.ULTIMA_WEAPON, configuration);
+	}
+
+	if (configuration.finalForm) {
+		replace(rewards, Rewards.FINAL_FORM, configuration);
+	}
+
+	if (configuration.synthItems) {
+		[
+			Rewards.LUCKY_RING,
+			Rewards.SHADOW_ARCHIVE,
+			Rewards.SHOCK_CHARM,
+			Rewards.FULL_BLOOM,
+		].forEach(reward => {
+			replace(rewards, reward, configuration);
+		});
 	}
 
 	return [shuffle(rewards, configuration.seed), locations];

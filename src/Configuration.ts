@@ -36,4 +36,8 @@ export interface Configuration {
 	portRoyal: boolean;
 	spaceParanoids: boolean;
 	twtnw: boolean;
+
+	ultimaWeapon: boolean;
+	finalForm: boolean;
+	synthItems: boolean;
 }
