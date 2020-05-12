@@ -37,7 +37,7 @@ export function* seedAbilities(
 				type: RewardLocationType.LEVELUP,
 				description: `LV${level.level} (Sword)`,
 				value: level.abilities.sword,
-				reward: sword,
+				reward: {} as any,
 			},
 			reward: sword,
 		};
@@ -47,7 +47,7 @@ export function* seedAbilities(
 				type: RewardLocationType.LEVELUP,
 				description: `LV${level.level} (Staff)`,
 				value: level.abilities.staff,
-				reward: staff,
+				reward: {} as any,
 			},
 			reward: staff,
 		};
@@ -57,7 +57,7 @@ export function* seedAbilities(
 				type: RewardLocationType.LEVELUP,
 				description: `LV${level.level} (Shield)`,
 				value: level.abilities.shield,
-				reward: shield,
+				reward: {} as any,
 			},
 			reward: shield,
 		};

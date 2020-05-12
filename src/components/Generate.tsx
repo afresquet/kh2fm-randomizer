@@ -1,14 +1,21 @@
 import Button from "@material-ui/core/Button";
-import Checkbox from "@material-ui/core/Checkbox";
+import Chip from "@material-ui/core/Chip";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
+import Switch from "@material-ui/core/Switch";
 import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import React, { useCallback, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
 import { Configuration } from "../Configuration";
 import { PickByType } from "../PickByType";
+
+type TCheckbox = {
+	label: string;
+	name: string;
+	checked: boolean;
+};
 
 const useStyles = makeStyles(theme => ({
 	paper: {
@@ -20,6 +27,14 @@ const useStyles = makeStyles(theme => ({
 	},
 	seedWrapper: {
 		marginBottom: theme.spacing(3),
+	},
+	worldsWrapper: {
+		display: "flex",
+		justifyContent: "center",
+		flexWrap: "wrap",
+		"& > *": {
+			margin: theme.spacing(0.5),
+		},
 	},
 	buttonWrapper: {
 		textAlign: "center",
@@ -41,8 +56,28 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 	const [checkbox, setCheckbox] = useState<PickByType<Configuration, boolean>>({
 		stats: true,
 		criticalMode: true,
+		abilities: true,
 		donaldAbilities: true,
 		goofyAbilities: true,
+		formAbilities: true,
+
+		simulatedTwilightTown: true,
+		twilightTown: true,
+		hollowBastion: true,
+		cavernOfRemembrance: true,
+		beastsCastle: true,
+		olympus: true,
+		agrabah: true,
+		landOfDragons: true,
+		pooh: true,
+		atlantica: true,
+		prideLands: true,
+		disneyCastle: true,
+		timelessRiver: true,
+		halloweenTown: true,
+		portRoyal: true,
+		spaceParanoids: true,
+		twtnw: true,
 	});
 
 	const onTextChange = useCallback(
@@ -65,6 +100,46 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		[]
 	);
 
+	const onChipClick = useCallback(
+		(name: string) => () => {
+			setCheckbox(current => ({
+				...current,
+				[name]: !current[name],
+			}));
+		},
+		[]
+	);
+
+	const CheckBox = useCallback(
+		({ label, name, checked }: TCheckbox) => (
+			<div>
+				<FormControlLabel
+					label={label}
+					control={
+						<Switch
+							name={name}
+							checked={checked}
+							onChange={onCheckboxChange}
+							color="primary"
+						/>
+					}
+				/>
+			</div>
+		),
+		[onCheckboxChange]
+	);
+
+	const WorldChip = useCallback(
+		({ label, name, checked }: TCheckbox) => (
+			<Chip
+				label={label}
+				color={checked ? "primary" : "default"}
+				onClick={onChipClick(name)}
+			/>
+		),
+		[onChipClick]
+	);
+
 	const onSubmit = useCallback(
 		async (event: React.FormEvent<HTMLFormElement>) => {
 			try {
@@ -72,11 +147,15 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 
 				setLoading(true);
 
+				const enabled = Object.entries(checkbox)
+					.filter(([_, value]) => value)
+					.reduce((result, [key, value]) => ({ ...result, [key]: value }), {});
+
 				const response = await axios.post<{ seed: string }>(
 					"https://us-central1-kh2fm-randomizer.cloudfunctions.net/randomizer/seed",
 					{
 						...text,
-						...checkbox,
+						...enabled,
 					}
 				);
 
@@ -103,55 +182,143 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					/>
 				</div>
 
-				<div>
-					<FormControlLabel
-						label="Critical Mode"
-						control={
-							<Checkbox
-								name="criticalMode"
-								checked={checkbox.criticalMode}
-								onChange={onCheckboxChange}
-							/>
-						}
-					/>
-				</div>
+				<CheckBox
+					label="Critical Mode"
+					name="criticalMode"
+					checked={checkbox.criticalMode}
+				/>
 
-				<div>
-					<FormControlLabel
-						label="Randomize Stats"
-						control={
-							<Checkbox
-								name="stats"
-								checked={checkbox.stats}
-								onChange={onCheckboxChange}
-							/>
-						}
-					/>
-				</div>
+				<CheckBox
+					label="Randomize Stats"
+					name="stats"
+					checked={checkbox.stats}
+				/>
 
-				<div>
-					<FormControlLabel
-						label="Randomize Donald's Abilities"
-						control={
-							<Checkbox
-								name="donaldAbilities"
-								checked={checkbox.donaldAbilities}
-								onChange={onCheckboxChange}
-							/>
-						}
-					/>
-				</div>
+				<CheckBox
+					label="Randomize Abilities"
+					name="abilities"
+					checked={checkbox.abilities}
+				/>
 
-				<div>
-					<FormControlLabel
-						label="Randomize Goofy's Abilities"
-						control={
-							<Checkbox
-								name="goofyAbilities"
-								checked={checkbox.goofyAbilities}
-								onChange={onCheckboxChange}
-							/>
-						}
+				<CheckBox
+					label="Randomize Donald's Abilities"
+					name="donaldAbilities"
+					checked={checkbox.donaldAbilities}
+				/>
+
+				<CheckBox
+					label="Randomize Goofy's Abilities"
+					name="goofyAbilities"
+					checked={checkbox.goofyAbilities}
+				/>
+
+				<CheckBox
+					label="Randomize Form Abilities"
+					name="formAbilities"
+					checked={checkbox.formAbilities}
+				/>
+
+				<div className={classes.worldsWrapper}>
+					<WorldChip
+						label="Simulated Twilight Town"
+						name="simulatedTwilightTown"
+						checked={checkbox.simulatedTwilightTown}
+					/>
+
+					<WorldChip
+						label="Twilight Town"
+						name="twilightTown"
+						checked={checkbox.twilightTown}
+					/>
+
+					<WorldChip
+						label="Hollow Bastion"
+						name="hollowBastion"
+						checked={checkbox.hollowBastion}
+					/>
+
+					<WorldChip
+						label="Cavern of Remembrance"
+						name="cavernOfRemembrance"
+						checked={checkbox.cavernOfRemembrance}
+					/>
+
+					<WorldChip
+						label="Beast's Castle"
+						name="beastsCastle"
+						checked={checkbox.beastsCastle}
+					/>
+
+					<WorldChip
+						label="Olympus Colisseum"
+						name="olympus"
+						checked={checkbox.olympus}
+					/>
+
+					<WorldChip
+						label="Agrabah"
+						name="agrabah"
+						checked={checkbox.agrabah}
+					/>
+
+					<WorldChip
+						label="Land of Dragons"
+						name="landOfDragons"
+						checked={checkbox.landOfDragons}
+					/>
+
+					<WorldChip
+						label="100 Acre Wood"
+						name="pooh"
+						checked={checkbox.pooh}
+					/>
+
+					<WorldChip
+						label="Atlantica"
+						name="atlantica"
+						checked={checkbox.atlantica}
+					/>
+
+					<WorldChip
+						label="Pride Lands"
+						name="prideLands"
+						checked={checkbox.prideLands}
+					/>
+
+					<WorldChip
+						label="Disne's Castle"
+						name="disneyCastle"
+						checked={checkbox.disneyCastle}
+					/>
+
+					<WorldChip
+						label="Timeless River"
+						name="timelessRiver"
+						checked={checkbox.timelessRiver}
+					/>
+
+					<WorldChip
+						label="Halloween Town"
+						name="halloweenTown"
+						checked={checkbox.halloweenTown}
+					/>
+
+					<WorldChip
+						label="Port Royal"
+						name="portRoyal"
+						checked={checkbox.portRoyal}
+					/>
+
+					<WorldChip
+						label="Space Paranoids"
+						name="spaceParanoids"
+						checked={checkbox.spaceParanoids}
+					/>
+
+					<WorldChip
+						label="The World That Never Was"
+						name="twtnw"
+						checked={checkbox.twtnw}
 					/>
 				</div>
 
