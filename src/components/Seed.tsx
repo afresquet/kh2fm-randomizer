@@ -30,7 +30,7 @@ const SpoilerLogRow: React.FC<{ reward: Reward; location: RewardLocation }> = ({
 	reward,
 	location,
 }) => {
-	return reward ? (
+	return location.description && reward ? (
 		<TableRow>
 			<TableCell>{location.description}</TableCell>
 			<TableCell>{location.type}</TableCell>
@@ -160,6 +160,9 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 				<ConfigProperty property={configuration.abilities}>
 					Randomize Abilities
 				</ConfigProperty>
+				<ConfigProperty property={configuration.level50}>
+					Cap abilities at level 50 (KH3 style)
+				</ConfigProperty>
 				<ConfigProperty property={configuration.donaldAbilities}>
 					Randomize Donald's Abilities
 				</ConfigProperty>
@@ -255,7 +258,11 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 
 						<TableBody>
 							{seedArray.map(({ reward, location }) => (
-								<SpoilerLogRow reward={reward} location={location} />
+								<SpoilerLogRow
+									key={location.value}
+									reward={reward}
+									location={location}
+								/>
 							))}
 						</TableBody>
 					</Table>

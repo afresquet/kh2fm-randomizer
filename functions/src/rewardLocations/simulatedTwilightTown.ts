@@ -8,33 +8,18 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		description: "Simulated Twilight Town (Station of Serenity)",
 		value: "11CE016E",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.THUNDER_BOOST },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Simulated Twilight Town (Station of Calling)",
 		value: "11CE017A",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.DEFENDER },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Simulated Twilight Town (Central Station)",
 		value: "11CE0186",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.BERSERK_CHARGE },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -47,11 +32,6 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		description: "Simulated Twilight Town (Central Station)",
 		value: "11CE019E",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.JACKPOT },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -70,22 +50,12 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		description: "Simulated Twilight Town (Sunset Terrace)",
 		value: "11CE01C2",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.SECOND_CHANCE },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Simulated Twilight Town (Sunset Terrace)",
 		value: "11CE01CE",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.DAMAGE_CONTROL },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,

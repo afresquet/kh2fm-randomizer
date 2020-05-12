@@ -1,7 +1,9 @@
 import Button from "@material-ui/core/Button";
 import Chip from "@material-ui/core/Chip";
 import FormControl from "@material-ui/core/FormControl";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormControlLabel, {
+	FormControlLabelProps,
+} from "@material-ui/core/FormControlLabel";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import Paper from "@material-ui/core/Paper";
@@ -16,11 +18,11 @@ import { api } from "../api";
 import { Configuration, GameMode } from "../Configuration";
 import { PickByType } from "../PickByType";
 
-type TCheckbox = {
+interface TCheckbox extends Omit<FormControlLabelProps, "control"> {
 	label: string;
 	name: string;
 	checked: boolean;
-};
+}
 
 const useStyles = makeStyles(theme => ({
 	paper: {
@@ -62,6 +64,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		stats: true,
 		criticalMode: true,
 		abilities: true,
+		level50: false,
 		donaldAbilities: true,
 		goofyAbilities: true,
 		formAbilities: true,
@@ -98,10 +101,20 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 
 	const onCheckboxChange = useCallback(
 		({ target: { name, checked } }: React.ChangeEvent<HTMLInputElement>) => {
-			setCheckbox(current => ({
-				...current,
-				[name]: checked,
-			}));
+			setCheckbox(current => {
+				if (name === "abilities" && !checked) {
+					return {
+						...current,
+						abilities: false,
+						level50: false,
+					};
+				}
+
+				return {
+					...current,
+					[name]: checked,
+				};
+			});
 		},
 		[]
 	);
@@ -129,7 +142,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 	);
 
 	const CheckBox = useCallback(
-		({ label, name, checked }: TCheckbox) => (
+		({ label, name, checked, ...props }: TCheckbox) => (
 			<div>
 				<FormControlLabel
 					label={label}
@@ -141,6 +154,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 							color="primary"
 						/>
 					}
+					{...props}
 				/>
 			</div>
 		),
@@ -231,6 +245,13 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 						label="Randomize Abilities"
 						name="abilities"
 						checked={checkbox.abilities}
+					/>
+
+					<CheckBox
+						label="Cap abilities at level 50 (KH3 style)"
+						name="level50"
+						checked={checkbox.level50}
+						disabled={!checkbox.abilities}
 					/>
 
 					<CheckBox
