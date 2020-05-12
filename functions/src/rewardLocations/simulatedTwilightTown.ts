@@ -92,22 +92,12 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		description: "Simulated Twilight Town (Mansion Foyer)",
 		value: "11CE01DA",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.WINNERS_PROOF },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Simulated Twilight Town (Mansion Foyer)",
 		value: "11CE01E6",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.PROOF_OF_PEACE },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,

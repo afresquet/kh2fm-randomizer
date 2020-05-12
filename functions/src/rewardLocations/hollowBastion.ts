@@ -1,3 +1,4 @@
+import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
@@ -205,5 +206,31 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Secret Ansem's Report 7 (Bailey Nobodies)",
 		value: "11CE09EA",
 		reward: Rewards.REPORT_SEVEN,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Proof of Peace",
+		value: "11CE0B3A",
+		reward: Rewards.PROOF_OF_PEACE,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: {
+					exclude: [Rewards.PROOF_OF_PEACE],
+				},
+			},
+		},
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Winner's Proof",
+		value: "11CE0B2E",
+		reward: Rewards.WINNERS_PROOF,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: {
+					exclude: [Rewards.PROOF_OF_PEACE],
+				},
+			},
+		},
 	},
 ];
