@@ -1,4 +1,5 @@
 import Button from "@material-ui/core/Button";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import Paper from "@material-ui/core/Paper";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
 import { CSSProperties } from "@material-ui/core/styles/withStyles";
@@ -78,6 +79,10 @@ const useStyles = makeStyles(theme => {
 			...paper,
 			width: "auto",
 		},
+		loadingContainer: {
+			paddingTop: theme.spacing(20),
+			textAlign: "center",
+		},
 	});
 });
 
@@ -139,10 +144,14 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 	}, []);
 
 	if (loading && !configuration) {
-		return <div>loading...</div>;
+		return (
+			<div className={classes.loadingContainer}>
+				<CircularProgress size={250} />
+			</div>
+		);
 	} else if (error) {
 		console.error(error);
-		return <div>error</div>;
+		return <Typography>Invalid seed!</Typography>;
 	}
 
 	if (!configuration || !seedArray) return null;
