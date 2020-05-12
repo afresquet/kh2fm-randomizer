@@ -6,7 +6,10 @@ export enum GameMode {
 export interface Configuration {
 	seed: string;
 
-	gameMode: GameMode;
+	gameMode: {
+		mode: GameMode;
+		version: number;
+	};
 
 	stats: boolean;
 	abilities: boolean;

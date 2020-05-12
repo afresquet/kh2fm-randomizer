@@ -12,6 +12,7 @@ import axios from "axios";
 import downloadjs from "downloadjs";
 import React, { useCallback, useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
+import { api } from "../api";
 import { Configuration, GameMode } from "../Configuration";
 import { createPnach } from "../helpers/createPnach";
 import { Reward } from "../Reward";
@@ -92,9 +93,7 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 				const { data } = await axios.get<{
 					configuration: Configuration;
 					seed: SeedArray;
-				}>(
-					`https://us-central1-kh2fm-randomizer.cloudfunctions.net/randomizer/seed/${seed}`
-				);
+				}>(`${api}/seed/${seed}`);
 
 				setConfiguration(data.configuration);
 				setSeedArray(data.seed);
@@ -138,9 +137,9 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 	if (!configuration || !seedArray) return null;
 
 	let gameMode = "";
-	if (configuration.gameMode === GameMode.BASE_GAME) {
+	if (configuration.gameMode.mode === GameMode.BASE_GAME) {
 		gameMode = "Base Game";
-	} else if (configuration.gameMode === GameMode.GOA_MOD) {
+	} else if (configuration.gameMode.mode === GameMode.GOA_MOD) {
 		gameMode = "Garden of Assemblage Mod";
 	}
 
