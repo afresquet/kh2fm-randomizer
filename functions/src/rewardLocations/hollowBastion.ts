@@ -1,6 +1,16 @@
 import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
+import { formRewards } from "../rewards/form";
+import { Reward } from "../rewards/Reward";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
+
+const exclude: Reward[] = [
+	Rewards.PROOF_OF_PEACE,
+	...Object.values(formRewards),
+	Rewards.THUNDER,
+	Rewards.MAGNET,
+	Rewards.TORN_PAGE,
+];
 
 export const hollowBastionRewardLocations: RewardLocation[] = [
 	{
@@ -214,9 +224,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		reward: Rewards.PROOF_OF_PEACE,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
-				0: {
-					exclude: [Rewards.PROOF_OF_PEACE],
-				},
+				0: { exclude },
 			},
 		},
 	},
@@ -227,9 +235,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		reward: Rewards.WINNERS_PROOF,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
-				0: {
-					exclude: [Rewards.PROOF_OF_PEACE],
-				},
+				0: { exclude },
 			},
 		},
 	},

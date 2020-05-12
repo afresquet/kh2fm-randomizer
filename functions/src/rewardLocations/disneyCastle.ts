@@ -1,9 +1,16 @@
 import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
+import { formRewards } from "../rewards/form";
 import { Reward } from "../rewards/Reward";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
-const exclude: Reward[] = [Rewards.PROOF_OF_CONNECTION];
+const exclude: Reward[] = [
+	Rewards.PROOF_OF_CONNECTION,
+	...Object.values(formRewards),
+	Rewards.THUNDER,
+	Rewards.MAGNET,
+	Rewards.TORN_PAGE,
+];
 
 export const disneyCastleRewardLocations: RewardLocation[] = [
 	{
