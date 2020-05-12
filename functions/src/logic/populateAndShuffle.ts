@@ -47,7 +47,7 @@ const replace = (
 ): void => {
 	let index = nextIndex;
 
-	if (!nextIndex) {
+	if (nextIndex === undefined) {
 		const seeder = seedrandom(configuration.seed + reward.value);
 
 		index = Math.floor(seeder() * rewards.length);
