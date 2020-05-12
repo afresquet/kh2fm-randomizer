@@ -1,4 +1,4 @@
-import { Reward, RewardType } from "./Reward";
+import { Reward } from "./Reward";
 
 export enum RewardLocationType {
 	POPUP = "popup",
@@ -17,5 +17,4 @@ export interface RewardLocation {
 	description: string;
 	value: string;
 	reward: Reward;
-	exclude?: RewardType[];
 }
