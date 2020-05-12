@@ -41,11 +41,7 @@ export const populateAndShuffle = (
 				return gameModeReward || location.reward;
 			})
 		);
-		locations.push(
-			...locationArray.map(location => ({
-				...location,
-			}))
-		);
+		locations.push(...locationArray);
 	}
 
 	if (configuration.formAbilities) {

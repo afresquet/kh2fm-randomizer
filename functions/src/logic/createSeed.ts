@@ -1,6 +1,7 @@
 import { Configuration } from "../Configuration";
 import { RewardLocation } from "../rewardLocations/RewardLocation";
 import { Reward } from "../rewards/Reward";
+import { fixSeedExceptions } from "./fixSeedExceptions";
 import { populateAndShuffle } from "./populateAndShuffle";
 import { seedAbilities } from "./seedAbilities";
 import { seedPartyMember } from "./seedPartyMember";
@@ -22,6 +23,8 @@ export const createSeed = (configuration: Configuration): Seed[] => {
 			reward: rewards.shift()!,
 		});
 	}
+
+	fixSeedExceptions(seed, configuration);
 
 	if (configuration.abilities) {
 		seed.push(...seedAbilities(rewards, configuration));
