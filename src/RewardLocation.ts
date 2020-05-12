@@ -1,3 +1,4 @@
+import { GameMode } from "./Configuration";
 import { Reward } from "./Reward";
 
 export enum RewardLocationType {
@@ -17,4 +18,11 @@ export interface RewardLocation {
 	description: string;
 	value: string;
 	reward: Reward;
+	gameMode?: {
+		[K in GameMode]?: {
+			[version: number]: {
+				exclude?: Reward[];
+			};
+		};
+	};
 }

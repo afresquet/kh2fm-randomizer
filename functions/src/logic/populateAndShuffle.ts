@@ -6,6 +6,7 @@ import { beastsCastleRewardLocations } from "../rewardLocations/beastsCastle";
 import { bonusRewardLocations } from "../rewardLocations/bonus";
 import { cavernOfRememberanceRewardLocations } from "../rewardLocations/cavernOfRememberance";
 import { criticalRewardLocations } from "../rewardLocations/critical";
+import { disneyCastleRewardLocations } from "../rewardLocations/disneyCastle";
 import { formRewardLocations } from "../rewardLocations/form";
 import { halloweenTownRewardLocations } from "../rewardLocations/halloweenTown";
 import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
@@ -87,7 +88,7 @@ export const populateAndShuffle = (
 	}
 
 	if (configuration.disneyCastle) {
-		push(agrabahRewardLocations);
+		push(disneyCastleRewardLocations);
 	}
 
 	if (configuration.timelessRiver) {

@@ -1,5 +1,9 @@
+import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
+import { Reward } from "../rewards/Reward";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
+
+const exclude: Reward[] = [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER];
 
 export const agrabahRewardLocations: RewardLocation[] = [
 	{
@@ -151,12 +155,18 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Agrabah (Ruined Chamber)",
 		value: "11CDF946",
 		reward: Rewards.TORN_PAGE,
+		gameMode: {
+			[GameMode.GOA_MOD]: { 0: { exclude } },
+		},
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
 		description: "Agrabah (Ruined Chamber)",
 		value: "11CDF952",
 		reward: Rewards.RUINS_MAP,
+		gameMode: {
+			[GameMode.GOA_MOD]: { 0: { exclude } },
+		},
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -175,5 +185,8 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Wishing Lamp",
 		value: "11CE08B2",
 		reward: Rewards.WISHING_LAMP,
+		gameMode: {
+			[GameMode.GOA_MOD]: { 0: { exclude } },
+		},
 	},
 ];

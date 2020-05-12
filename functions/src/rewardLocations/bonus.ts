@@ -1,3 +1,4 @@
+import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
@@ -175,6 +176,13 @@ export const bonusRewardLocations: RewardLocation[] = [
 		description: "Genie Jafar",
 		value: "21D10978",
 		reward: Rewards.FIRE,
+		gameMode: {
+			0: {
+				[GameMode.GOA_MOD]: {
+					exclude: [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER],
+				},
+			},
+		},
 	},
 	{
 		type: RewardLocationType.BONUS,

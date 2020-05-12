@@ -1,5 +1,9 @@
+import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
+import { Reward } from "../rewards/Reward";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
+
+const exclude: Reward[] = [Rewards.PROOF_OF_CONNECTION];
 
 export const disneyCastleRewardLocations: RewardLocation[] = [
 	{
@@ -61,11 +65,17 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		description: "Proof of Connection",
 		value: "11CE0B16",
 		reward: Rewards.PROOF_OF_CONNECTION,
+		gameMode: {
+			[GameMode.GOA_MOD]: { 0: { exclude } },
+		},
 	},
 	{
 		type: RewardLocationType.POPUP,
 		description: "Manifest Illusion (Lingering Will)",
 		value: "11CE0B22",
 		reward: Rewards.MANIFEST_ILLUSION,
+		gameMode: {
+			[GameMode.GOA_MOD]: { 0: { exclude } },
+		},
 	},
 ];

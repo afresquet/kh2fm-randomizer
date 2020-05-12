@@ -5,7 +5,7 @@ import { sign, verify } from "jsonwebtoken";
 import { Configuration } from "./Configuration";
 import { createSeed } from "./logic/createSeed";
 
-const { secret, algorithm } = functions.config().randomizer;
+const { secret, algorithm, version } = functions.config().randomizer;
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.post("/seed", (req, res) => {
 	const seed = sign(
-		{ ...req.body, seed: req.body.seed || Date.now().toString() },
+		{ ...req.body, seed: req.body.seed || Date.now().toString(), version },
 		secret,
 		{ algorithm }
 	);
