@@ -1,5 +1,5 @@
 import seedrandom from "seedrandom";
-import { Configuration } from "../Configuration";
+import { Configuration, GameMode } from "../Configuration";
 import { agrabahRewardLocations } from "../rewardLocations/agrabah";
 import { atlanticaRewardLocations } from "../rewardLocations/atlantica";
 import { beastsCastleRewardLocations } from "../rewardLocations/beastsCastle";
@@ -198,6 +198,16 @@ export const populateAndShuffle = (
 		].forEach(reward => {
 			replace(rewards, reward, configuration);
 		});
+	}
+
+	if (configuration.gameMode.mode === GameMode.GOA_MOD) {
+		if (!configuration.hollowBastion) {
+			replace(rewards, Rewards.PROOF_OF_PEACE, configuration);
+		}
+
+		if (!configuration.disneyCastle) {
+			replace(rewards, Rewards.PROOF_OF_CONNECTION, configuration);
+		}
 	}
 
 	return [shuffle(rewards, configuration.seed), locations];
