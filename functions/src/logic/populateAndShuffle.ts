@@ -31,8 +31,21 @@ export const populateAndShuffle = (
 	const locations: RewardLocation[] = [];
 
 	function push(locationArray: RewardLocation[]) {
-		rewards.push(...locationArray.map(location => location.reward));
-		locations.push(...locationArray);
+		rewards.push(
+			...locationArray.map(location => {
+				const gameModeReward =
+					location.gameMode?.[configuration.gameMode.mode]?.[
+						configuration.gameMode.version
+					]?.reward;
+
+				return gameModeReward || location.reward;
+			})
+		);
+		locations.push(
+			...locationArray.map(location => ({
+				...location,
+			}))
+		);
 	}
 
 	if (configuration.formAbilities) {
