@@ -177,8 +177,8 @@ export const bonusRewardLocations: RewardLocation[] = [
 		value: "21D10978",
 		reward: Rewards.FIRE,
 		gameMode: {
-			0: {
-				[GameMode.GOA_MOD]: {
+			[GameMode.GOA_MOD]: {
+				0: {
 					exclude: [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER],
 				},
 			},

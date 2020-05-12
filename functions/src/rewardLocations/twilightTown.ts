@@ -1,3 +1,4 @@
+import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
@@ -7,24 +8,44 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Twilight Town (The Old Mansion)",
 		value: "11CE022E",
 		reward: Rewards.POTION,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.ULTIMA_WEAPON },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Twilight Town (The Old Mansion)",
 		value: "11CE023A",
 		reward: Rewards.MYTHRIL_SHARD,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.CHAMPION_BELT },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Twilight Town (The Woods)",
 		value: "11CE0246",
 		reward: Rewards.POTION,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.CENTURION },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Twilight Town (The Woods)",
 		value: "11CE0252",
 		reward: Rewards.MYTHRIL_SHARD,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.MEDAL },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -55,30 +76,55 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Twilight Town (Tram Common)",
 		value: "11CE028E",
 		reward: Rewards.MYTHRIL_SHARD,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.LUCKY_RING },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Twilight Town (Tram Common)",
 		value: "11CE029A",
 		reward: Rewards.POTION,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.FROZEN_PRIDE },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Twilight Town (Tram Common)",
 		value: "11CE02A6",
 		reward: Rewards.MYTHRIL_SHARD,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.SHADOW_ARCHIVE },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Twilight Town (Tram Common)",
 		value: "11CE02B2",
 		reward: Rewards.POTION,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.NOBODY_LANCE },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Twilight Town (Central Station)",
 		value: "11CE02BE",
 		reward: Rewards.TENT,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.SHOCK_CHARM },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -97,6 +143,11 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Twilight Town (The Tower)",
 		value: "11CE02E2",
 		reward: Rewards.POTION,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.SHAMANS_RELIC },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -121,6 +172,11 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Twilight Town (Tower Entryway)",
 		value: "11CE0312",
 		reward: Rewards.MYTHRIL_SHARD,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				0: { reward: Rewards.FULL_BLOOM },
+			},
+		},
 	},
 	{
 		type: RewardLocationType.BIGCHEST,

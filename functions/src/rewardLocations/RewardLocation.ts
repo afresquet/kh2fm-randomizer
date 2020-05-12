@@ -21,6 +21,7 @@ export interface RewardLocation {
 	gameMode?: {
 		[K in GameMode]?: {
 			[version: number]: {
+				reward?: Reward;
 				exclude?: Reward[];
 			};
 		};
