@@ -156,11 +156,19 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 
 	if (!configuration || !seedArray) return null;
 
-	let gameMode = "";
+	let gameMode: string | JSX.Element = "";
 	if (configuration.gameMode.mode === GameMode.BASE_GAME) {
 		gameMode = "Base Game";
 	} else if (configuration.gameMode.mode === GameMode.GOA_MOD) {
-		gameMode = "Garden of Assemblage Mod";
+		gameMode = (
+			<a
+				href="https://docs.google.com/document/d/1GYjEnrM_TIk7qyO75clPLYD-_nP5wTR7K6SE-Wn-QCg"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Garden of Assemblage Mod
+			</a>
+		);
 	}
 
 	return (
