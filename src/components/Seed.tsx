@@ -12,7 +12,7 @@ import axios from "axios";
 import downloadjs from "downloadjs";
 import React, { useCallback, useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
-import { Configuration } from "../Configuration";
+import { Configuration, GameMode } from "../Configuration";
 import { createPnach } from "../helpers/createPnach";
 import { Reward } from "../Reward";
 import { RewardLocation } from "../RewardLocation";
@@ -137,12 +137,20 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 
 	if (!configuration || !seedArray) return null;
 
+	let gameMode = "";
+	if (configuration.gameMode === GameMode.BASE_GAME) {
+		gameMode = "Base Game";
+	} else if (configuration.gameMode === GameMode.GOA_MOD) {
+		gameMode = "Garden of Assemblage Mod";
+	}
+
 	return (
 		<>
 			<Paper variant="outlined" className={classes.paper}>
-				<Typography variant="h4" className={classes.title}>
-					Seed: {configuration.seed}
-				</Typography>
+				<div className={classes.title}>
+					<Typography variant="h4">Seed: {configuration.seed}</Typography>
+					<Typography variant="h6">Game Mode: {gameMode}</Typography>
+				</div>
 
 				<ConfigProperty property={configuration.criticalMode}>
 					Critical Mode

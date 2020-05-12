@@ -1,14 +1,18 @@
 import Button from "@material-ui/core/Button";
 import Chip from "@material-ui/core/Chip";
+import FormControl from "@material-ui/core/FormControl";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
 import Paper from "@material-ui/core/Paper";
+import Select from "@material-ui/core/Select";
 import { makeStyles } from "@material-ui/core/styles";
 import Switch from "@material-ui/core/Switch";
 import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import React, { useCallback, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
-import { Configuration } from "../Configuration";
+import { Configuration, GameMode } from "../Configuration";
 import { PickByType } from "../PickByType";
 
 type TCheckbox = {
@@ -25,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 		padding: theme.spacing(3),
 		width: "50%",
 	},
-	seedWrapper: {
+	marginBottom: {
 		marginBottom: theme.spacing(3),
 	},
 	worldsWrapper: {
@@ -79,6 +83,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		spaceParanoids: true,
 		twtnw: true,
 	});
+	const [gameMode, setGameMode] = useState<GameMode>(GameMode.GOA_MOD);
 
 	const onTextChange = useCallback(
 		({ target: { name, value } }: React.ChangeEvent<HTMLInputElement>) => {
@@ -96,6 +101,18 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 				...current,
 				[name]: checked,
 			}));
+		},
+		[]
+	);
+
+	const onGameModeChange = useCallback(
+		(
+			event: React.ChangeEvent<{
+				name?: string | undefined;
+				value: unknown;
+			}>
+		) => {
+			setGameMode(event.target.value as GameMode);
 		},
 		[]
 	);
@@ -156,6 +173,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					{
 						...text,
 						...enabled,
+						gameMode,
 					}
 				);
 
@@ -166,13 +184,13 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 				setLoading(false);
 			}
 		},
-		[text, checkbox, history]
+		[text, checkbox, gameMode, history]
 	);
 
 	return (
 		<Paper className={classes.paper}>
 			<form noValidate onSubmit={onSubmit}>
-				<div className={classes.seedWrapper}>
+				<div className={classes.marginBottom}>
 					<TextField
 						name="seed"
 						value={text.seed}
@@ -182,41 +200,59 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					/>
 				</div>
 
-				<CheckBox
-					label="Critical Mode"
-					name="criticalMode"
-					checked={checkbox.criticalMode}
-				/>
+				<div className={classes.marginBottom}>
+					<FormControl variant="outlined" fullWidth disabled>
+						<InputLabel>Game Mode</InputLabel>
+						<Select
+							value={gameMode}
+							onChange={onGameModeChange}
+							label="Game Mode"
+						>
+							<MenuItem value={GameMode.BASE_GAME}>Base Game</MenuItem>
+							<MenuItem value={GameMode.GOA_MOD}>
+								Garden of Assemblage Mod
+							</MenuItem>
+						</Select>
+					</FormControl>
+				</div>
 
-				<CheckBox
-					label="Randomize Stats"
-					name="stats"
-					checked={checkbox.stats}
-				/>
+				<div className={classes.marginBottom}>
+					<CheckBox
+						label="Critical Mode"
+						name="criticalMode"
+						checked={checkbox.criticalMode}
+					/>
 
-				<CheckBox
-					label="Randomize Abilities"
-					name="abilities"
-					checked={checkbox.abilities}
-				/>
+					<CheckBox
+						label="Randomize Stats"
+						name="stats"
+						checked={checkbox.stats}
+					/>
 
-				<CheckBox
-					label="Randomize Donald's Abilities"
-					name="donaldAbilities"
-					checked={checkbox.donaldAbilities}
-				/>
+					<CheckBox
+						label="Randomize Abilities"
+						name="abilities"
+						checked={checkbox.abilities}
+					/>
 
-				<CheckBox
-					label="Randomize Goofy's Abilities"
-					name="goofyAbilities"
-					checked={checkbox.goofyAbilities}
-				/>
+					<CheckBox
+						label="Randomize Donald's Abilities"
+						name="donaldAbilities"
+						checked={checkbox.donaldAbilities}
+					/>
 
-				<CheckBox
-					label="Randomize Form Abilities"
-					name="formAbilities"
-					checked={checkbox.formAbilities}
-				/>
+					<CheckBox
+						label="Randomize Goofy's Abilities"
+						name="goofyAbilities"
+						checked={checkbox.goofyAbilities}
+					/>
+
+					<CheckBox
+						label="Randomize Form Abilities"
+						name="formAbilities"
+						checked={checkbox.formAbilities}
+					/>
+				</div>
 
 				<div className={classes.worldsWrapper}>
 					<WorldChip

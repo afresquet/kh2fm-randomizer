@@ -1,5 +1,13 @@
+export enum GameMode {
+	BASE_GAME,
+	GOA_MOD,
+}
+
 export interface Configuration {
 	seed: string;
+
+	gameMode: GameMode;
+
 	stats: boolean;
 	abilities: boolean;
 	donaldAbilities: boolean;
