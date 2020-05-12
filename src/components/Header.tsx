@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => ({
 	link: {
-		color: "black",
+		color: "green",
 		textDecoration: "none",
 	},
 }));
@@ -32,14 +32,16 @@ export const Header: React.FC = () => {
 					>
 						Alvaro
 					</a>{" "}
+					(
 					<a
-						href="https://www.twitch.tv/valaxor_"
+						href="http://twitch.valaxor.com"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={classes.link}
 					>
-						(Valaxor)
+						Valaxor
 					</a>
+					)
 				</Typography>
 			</Container>
 		</header>

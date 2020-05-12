@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => ({
 		flexShrink: 0,
 	},
 	link: {
-		color: "black",
+		color: "green",
 		textDecoration: "none",
 	},
 	left: {
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
 					</a>
 					{" - "}
 					<a
-						href="https://github.com/afresquet/kh2fm-randomizer"
+						href="http://twitter.valaxor.com"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={classes.link}
@@ -45,12 +45,21 @@ export const Footer: React.FC = () => {
 					</a>
 					{" - "}
 					<a
-						href="https://github.com/afresquet/kh2fm-randomizer"
+						href="http://twitch.valaxor.com"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={classes.link}
 					>
 						Twitch
+					</a>
+					{" - "}
+					<a
+						href="http://donate.valaxor.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={classes.link}
+					>
+						Donate
 					</a>
 				</Typography>
 
