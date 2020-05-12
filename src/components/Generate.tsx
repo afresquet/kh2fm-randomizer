@@ -12,6 +12,7 @@ import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import React, { useCallback, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
+import { api } from "../api";
 import { Configuration, GameMode } from "../Configuration";
 import { PickByType } from "../PickByType";
 
@@ -168,14 +169,11 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					.filter(([_, value]) => value)
 					.reduce((result, [key, value]) => ({ ...result, [key]: value }), {});
 
-				const response = await axios.post<{ seed: string }>(
-					"https://us-central1-kh2fm-randomizer.cloudfunctions.net/randomizer/seed",
-					{
-						...text,
-						...enabled,
-						gameMode,
-					}
-				);
+				const response = await axios.post<{ seed: string }>(`${api}/seed`, {
+					...text,
+					...enabled,
+					gameMode,
+				});
 
 				history.push(`/seed/${response.data.seed}`);
 			} catch (error) {
