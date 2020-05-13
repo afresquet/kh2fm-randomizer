@@ -299,7 +299,7 @@ export const abilityRewards = {
 	// GOOFY
 	GOOFY_BASH: {
 		name: "Goofy Bash",
-		value: "11D16F62",
+		value: "01AD",
 		type: RewardType.ABILITY,
 	},
 	GOOFY_TURBO: {
