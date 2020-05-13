@@ -8,7 +8,7 @@ export class LevelStats {
 
 	private level = 1;
 
-	levelUp(seed?: string) {
+	levelUp(seed?: string, doubleStats?: boolean) {
 		this.level += 1;
 
 		const seeder = seed
@@ -17,13 +17,34 @@ export class LevelStats {
 
 		const random = Math.floor(seeder() * 4);
 
-		if (random === 0) {
+		this.increase(random);
+
+		if (doubleStats) {
+			let random2: number = random;
+			let attempts = 0;
+
+			while (random === random2) {
+				const seeder2 = seed
+					? seedrandom(seed + this.level.toString() + attempts.toString())
+					: Math.random;
+
+				random2 = Math.floor(seeder2() * 4);
+
+				attempts++;
+			}
+
+			this.increase(random2);
+		}
+	}
+
+	private increase(stat: number) {
+		if (stat === 0) {
 			this.ability += 2;
-		} else if (random === 1) {
+		} else if (stat === 1) {
 			this.defense += 1;
-		} else if (random === 2) {
+		} else if (stat === 2) {
 			this.magic += 2;
-		} else if (random === 3) {
+		} else if (stat === 3) {
 			this.strength += 2;
 		}
 	}

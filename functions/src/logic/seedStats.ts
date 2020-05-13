@@ -10,7 +10,7 @@ export function* seedStats(
 	const levelStats = new LevelStats();
 
 	for (const level of levels) {
-		levelStats.levelUp(configuration.seed);
+		levelStats.levelUp(configuration.seed, level.doubleIncrease);
 
 		yield {
 			location: {

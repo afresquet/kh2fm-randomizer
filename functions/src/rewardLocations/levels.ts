@@ -4,6 +4,7 @@ import { Reward } from "../rewards/Reward";
 export interface Level {
 	level: number;
 	stats: string;
+	doubleIncrease?: boolean;
 	abilities: {
 		sword: { value: string; reward?: Reward };
 		shield: { value: string; reward?: Reward };
@@ -24,6 +25,7 @@ export const levels: Level[] = [
 	{
 		level: 3,
 		stats: "21D0B6CC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B6D0" },
 			shield: { value: "11D0B6D2" },
@@ -42,6 +44,7 @@ export const levels: Level[] = [
 	{
 		level: 5,
 		stats: "21D0B6EC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B6F0" },
 			shield: { value: "11D0B6F2" },
@@ -51,6 +54,7 @@ export const levels: Level[] = [
 	{
 		level: 6,
 		stats: "21D0B6FC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B700" },
 			shield: { value: "11D0B702" },
@@ -78,6 +82,7 @@ export const levels: Level[] = [
 	{
 		level: 8,
 		stats: "21D0B71C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B720" },
 			shield: { value: "11D0B722" },
@@ -114,6 +119,7 @@ export const levels: Level[] = [
 	{
 		level: 11,
 		stats: "21D0B74C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B750" },
 			shield: { value: "11D0B752" },
@@ -141,6 +147,7 @@ export const levels: Level[] = [
 	{
 		level: 13,
 		stats: "21D0B76C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B770" },
 			shield: { value: "11D0B772" },
@@ -177,6 +184,7 @@ export const levels: Level[] = [
 	{
 		level: 16,
 		stats: "21D0B79C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B7A0" },
 			shield: { value: "11D0B7A2" },
@@ -204,6 +212,7 @@ export const levels: Level[] = [
 	{
 		level: 18,
 		stats: "21D0B7BC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B7C0" },
 			shield: { value: "11D0B7C2" },
@@ -213,6 +222,7 @@ export const levels: Level[] = [
 	{
 		level: 19,
 		stats: "21D0B7CC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B7D0" },
 			shield: { value: "11D0B7D2" },
@@ -240,6 +250,7 @@ export const levels: Level[] = [
 	{
 		level: 21,
 		stats: "21D0B7EC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B7F0" },
 			shield: { value: "11D0B7F2" },
@@ -276,6 +287,7 @@ export const levels: Level[] = [
 	{
 		level: 24,
 		stats: "21D0B81C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B820" },
 			shield: { value: "11D0B822" },
@@ -339,6 +351,7 @@ export const levels: Level[] = [
 	{
 		level: 29,
 		stats: "21D0B86C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B870" },
 			shield: { value: "11D0B872" },
@@ -411,6 +424,7 @@ export const levels: Level[] = [
 	{
 		level: 35,
 		stats: "21D0B8CC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B8D0" },
 			shield: { value: "11D0B8D2" },
@@ -438,6 +452,7 @@ export const levels: Level[] = [
 	{
 		level: 37,
 		stats: "21D0B8EC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B8F0" },
 			shield: { value: "11D0B8F2" },
@@ -474,6 +489,7 @@ export const levels: Level[] = [
 	{
 		level: 40,
 		stats: "21D0B91C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B920" },
 			shield: { value: "11D0B922" },
@@ -537,6 +553,7 @@ export const levels: Level[] = [
 	{
 		level: 45,
 		stats: "21D0B96C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B970" },
 			shield: { value: "11D0B972" },
@@ -609,6 +626,7 @@ export const levels: Level[] = [
 	{
 		level: 51,
 		stats: "21D0B9CC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0B9D0" },
 			shield: { value: "11D0B9D2" },
@@ -654,6 +672,7 @@ export const levels: Level[] = [
 	{
 		level: 55,
 		stats: "21D0BA0C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BA10" },
 			shield: { value: "11D0BA12" },
@@ -672,6 +691,7 @@ export const levels: Level[] = [
 	{
 		level: 57,
 		stats: "21D0BA2C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BA30" },
 			shield: { value: "11D0BA32" },
@@ -717,6 +737,7 @@ export const levels: Level[] = [
 	{
 		level: 61,
 		stats: "21D0BA6C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BA70" },
 			shield: { value: "11D0BA72" },
@@ -735,6 +756,7 @@ export const levels: Level[] = [
 	{
 		level: 63,
 		stats: "21D0BA8C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BA90" },
 			shield: { value: "11D0BA92" },
@@ -780,6 +802,7 @@ export const levels: Level[] = [
 	{
 		level: 67,
 		stats: "21D0BACC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BAD0" },
 			shield: { value: "11D0BAD2" },
@@ -798,6 +821,7 @@ export const levels: Level[] = [
 	{
 		level: 69,
 		stats: "21D0BAEC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BAF0" },
 			shield: { value: "11D0BAF2" },
@@ -816,6 +840,7 @@ export const levels: Level[] = [
 	{
 		level: 71,
 		stats: "21D0BB0C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BB10" },
 			shield: { value: "11D0BB12" },
@@ -861,6 +886,7 @@ export const levels: Level[] = [
 	{
 		level: 75,
 		stats: "21D0BB4C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BB50" },
 			shield: { value: "11D0BB52" },
@@ -879,6 +905,7 @@ export const levels: Level[] = [
 	{
 		level: 77,
 		stats: "21D0BB6C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BB70" },
 			shield: { value: "11D0BB72" },
@@ -897,6 +924,7 @@ export const levels: Level[] = [
 	{
 		level: 79,
 		stats: "21D0BB8C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BB90" },
 			shield: { value: "11D0BB92" },
@@ -915,6 +943,7 @@ export const levels: Level[] = [
 	{
 		level: 81,
 		stats: "21D0BBAC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BBB0" },
 			shield: { value: "11D0BBB2" },
@@ -933,6 +962,7 @@ export const levels: Level[] = [
 	{
 		level: 83,
 		stats: "21D0BBCC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BBD0" },
 			shield: { value: "11D0BBD2" },
@@ -978,6 +1008,7 @@ export const levels: Level[] = [
 	{
 		level: 87,
 		stats: "21D0BC0C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BC10" },
 			shield: { value: "11D0BC12" },
@@ -996,6 +1027,7 @@ export const levels: Level[] = [
 	{
 		level: 89,
 		stats: "21D0BC2C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BC30" },
 			shield: { value: "11D0BC32" },
@@ -1014,6 +1046,7 @@ export const levels: Level[] = [
 	{
 		level: 91,
 		stats: "21D0BC4C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BC50" },
 			shield: { value: "11D0BC52" },
@@ -1050,6 +1083,7 @@ export const levels: Level[] = [
 	{
 		level: 95,
 		stats: "21D0BC8C",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BC90" },
 			shield: { value: "11D0BC92" },
@@ -1068,6 +1102,7 @@ export const levels: Level[] = [
 	{
 		level: 97,
 		stats: "21D0BCAC",
+		doubleIncrease: true,
 		abilities: {
 			sword: { value: "11D0BCB0" },
 			shield: { value: "11D0BCB2" },
