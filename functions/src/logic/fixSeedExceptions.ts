@@ -12,7 +12,7 @@ const getReplaceable = (
 ): Seed => {
 	let index = nextIndex;
 
-	if (!nextIndex) {
+	if (nextIndex === undefined) {
 		const seeder = seedrandom(
 			configuration.seed + "replaceable" + seed.length.toString()
 		);
@@ -47,7 +47,7 @@ const getReplaceableByType = (
 ): Seed => {
 	let index = nextIndex;
 
-	if (!nextIndex) {
+	if (nextIndex === undefined) {
 		const seeder = seedrandom(
 			configuration.seed + "replaceable-type" + seed.length.toString()
 		);
