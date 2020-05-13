@@ -62,7 +62,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		stats: true,
 		criticalMode: true,
 		abilities: true,
-		level50: false,
+		level50: true,
 		donaldAbilities: true,
 		goofyAbilities: true,
 		formAbilities: true,
