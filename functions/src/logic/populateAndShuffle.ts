@@ -82,16 +82,29 @@ export const populateAndShuffle = (
 		locations.push(...locationArray);
 	}
 
-	if (configuration.abilities) {
+	if (configuration.abilities && !configuration.level1) {
 		rewards.push(...abilityLevels.map(level => level.abilities.sword.reward!));
 		push(bonusRewardLocations);
+	} else if (configuration.abilities && configuration.level1) {
+		push(
+			bonusRewardLocations.map(location => {
+				if ([Rewards.SCAN, Rewards.GUARD].includes(location.reward)) {
+					return {
+						...location,
+						reward: Rewards.LUCKY_LUCKY,
+					};
+				}
+
+				return location;
+			})
+		);
 	}
 
 	if (configuration.formAbilities) {
 		push(formRewardLocations);
 	}
 
-	if (configuration.criticalMode) {
+	if (configuration.criticalMode && !configuration.level1) {
 		push(criticalRewardLocations);
 	}
 

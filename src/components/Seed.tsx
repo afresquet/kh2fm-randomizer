@@ -192,6 +192,9 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 					<ConfigProperty property={configuration.level50}>
 						Cap abilities at Level 50
 					</ConfigProperty>
+					<ConfigProperty property={configuration.level1}>
+						Level 1
+					</ConfigProperty>
 					<ConfigProperty property={configuration.donaldAbilities}>
 						Donald's Abilities
 					</ConfigProperty>
