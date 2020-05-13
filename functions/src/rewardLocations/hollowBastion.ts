@@ -6,6 +6,7 @@ import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 const exclude: Reward[] = [
 	Rewards.PROOF_OF_PEACE,
+	Rewards.PROOF_OF_CONNECTION,
 	...Object.values(formRewards),
 	Rewards.THUNDER,
 	Rewards.MAGNET,
