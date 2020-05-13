@@ -272,7 +272,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					/>
 
 					<OptionChip
-						label="Olympus Colisseum"
+						label="Olympus Coliseum"
 						name="olympus"
 						checked={checkbox.olympus}
 					/>
@@ -308,7 +308,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					/>
 
 					<OptionChip
-						label="Disne's Castle"
+						label="Disney Castle"
 						name="disneyCastle"
 						checked={checkbox.disneyCastle}
 					/>
