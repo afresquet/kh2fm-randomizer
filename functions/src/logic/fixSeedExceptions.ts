@@ -40,7 +40,8 @@ const getReplaceable = (
 
 const getReplaceableByType = (
 	seed: Seed[],
-	typeToOmit: RewardLocationType,
+	typesToOmit: RewardType[],
+	locationsTypeToOmit: RewardLocationType[],
 	configuration: Configuration,
 	nextIndex?: number
 ): Seed => {
@@ -56,13 +57,17 @@ const getReplaceableByType = (
 
 	const candidate = seed[index!];
 
-	if (candidate.location.type !== typeToOmit) {
+	if (
+		!typesToOmit.includes(candidate.reward.type) &&
+		!locationsTypeToOmit.includes(candidate.location.type)
+	) {
 		return candidate;
 	}
 
 	return getReplaceableByType(
 		seed,
-		typeToOmit,
+		typesToOmit,
+		locationsTypeToOmit,
 		configuration,
 		(index! + 1) % seed.length
 	);
@@ -87,14 +92,17 @@ export const fixSeedExceptions = (
 		}
 	}
 
+	// Fix abilities on popups
 	for (const iteration of seed) {
 		if (
 			iteration.location.type === RewardLocationType.POPUP &&
-			iteration.reward.type === RewardType.ABILITY
+			(iteration.reward.type === RewardType.ABILITY ||
+				iteration.reward.type === RewardType.LIMIT)
 		) {
 			const replaceable = getReplaceableByType(
 				seed,
-				RewardLocationType.POPUP,
+				[RewardType.ABILITY, RewardType.LIMIT],
+				[RewardLocationType.POPUP],
 				configuration
 			);
 
