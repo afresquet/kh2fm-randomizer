@@ -41,7 +41,7 @@ export const createSeed = (configuration: Configuration): Seed[] => {
 		seed.push(...seedPartyMember("Goofy", configuration));
 	}
 
-	if (configuration.stats) {
+	if (configuration.stats && !configuration.level1) {
 		seed.push(...seedStats(configuration));
 	}
 
