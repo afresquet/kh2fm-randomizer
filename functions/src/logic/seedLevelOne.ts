@@ -18,6 +18,13 @@ export function* seedLevelOne(): IterableIterator<Seed> {
 			}
 
 			continue;
+		} else if (location.reward === Rewards.MP_HASTERA) {
+			yield {
+				location,
+				reward: Rewards.AERIAL_RECOVERY,
+			};
+
+			continue;
 		}
 
 		yield {

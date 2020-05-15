@@ -93,6 +93,11 @@ export const populateAndShuffle = (
 						...location,
 						reward: Rewards.LUCKY_LUCKY,
 					};
+				} else if (location.reward === Rewards.AERIAL_RECOVERY) {
+					return {
+						...location,
+						reward: Rewards.MP_HASTERA,
+					};
 				}
 
 				return location;
