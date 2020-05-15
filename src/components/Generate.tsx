@@ -63,6 +63,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		criticalMode: true,
 		abilities: true,
 		level50: true,
+		level1: false,
 		donaldAbilities: true,
 		goofyAbilities: true,
 		formAbilities: true,
@@ -121,6 +122,20 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 						...current,
 						abilities: false,
 						level50: false,
+					};
+				}
+
+				if (name === "level1" && !current.level1) {
+					return {
+						...current,
+						level50: false,
+						level1: true,
+					};
+				} else if (name === "level50" && !current.level50) {
+					return {
+						...current,
+						level50: true,
+						level1: false,
 					};
 				}
 
@@ -218,6 +233,8 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 						checked={checkbox.level50}
 						disabled={!checkbox.abilities}
 					/>
+
+					<OptionChip label="Level 1" name="level1" checked={checkbox.level1} />
 
 					<OptionChip
 						label="Donald's Abilities"
