@@ -1,21 +1,19 @@
 import seedrandom from "seedrandom";
 import { Configuration } from "../Configuration";
 import { RewardLocationType } from "../rewardLocations/RewardLocation";
-import { Reward, RewardType } from "../rewards/Reward";
+import { RewardType } from "../rewards/Reward";
 import { Seed } from "./createSeed";
 
 const getReplaceable = (
 	seed: Seed[],
-	rewardToOmit: Reward,
+	current: Seed,
 	configuration: Configuration,
 	nextIndex?: number
 ): Seed => {
 	let index = nextIndex;
 
 	if (nextIndex === undefined) {
-		const seeder = seedrandom(
-			configuration.seed + "replaceable" + seed.length.toString()
-		);
+		const seeder = seedrandom(configuration.seed + current.location.value);
 
 		index = Math.floor(seeder() * seed.length);
 	}
@@ -23,17 +21,20 @@ const getReplaceable = (
 	const candidate = seed[index!];
 
 	if (
+		!current.location.gameMode?.[configuration.gameMode.mode]?.[
+			configuration.gameMode.version
+		]?.exclude?.includes(candidate.reward) &&
 		!candidate.location.gameMode?.[configuration.gameMode.mode]?.[
 			configuration.gameMode.version
-		]?.exclude?.includes(rewardToOmit) &&
-		candidate.reward !== rewardToOmit
+		]?.exclude?.includes(current.reward) &&
+		current.reward !== candidate.reward
 	) {
 		return candidate;
 	}
 
 	return getReplaceable(
 		seed,
-		rewardToOmit,
+		current,
 		configuration,
 		(index! + 1) % seed.length
 	);
@@ -41,17 +42,15 @@ const getReplaceable = (
 
 const getReplaceableByType = (
 	seed: Seed[],
+	current: Seed,
 	typesToOmit: RewardType[],
-	locationsTypeToOmit: RewardLocationType[],
 	configuration: Configuration,
 	nextIndex?: number
 ): Seed => {
 	let index = nextIndex;
 
 	if (nextIndex === undefined) {
-		const seeder = seedrandom(
-			configuration.seed + "replaceable-type" + seed.length.toString()
-		);
+		const seeder = seedrandom(configuration.seed + current.location.value);
 
 		index = Math.floor(seeder() * seed.length);
 	}
@@ -60,15 +59,21 @@ const getReplaceableByType = (
 
 	if (
 		!typesToOmit.includes(candidate.reward.type) &&
-		!locationsTypeToOmit.includes(candidate.location.type)
+		!current.location.gameMode?.[configuration.gameMode.mode]?.[
+			configuration.gameMode.version
+		]?.exclude?.includes(candidate.reward) &&
+		!candidate.location.gameMode?.[configuration.gameMode.mode]?.[
+			configuration.gameMode.version
+		]?.exclude?.includes(current.reward) &&
+		current.reward !== candidate.reward
 	) {
 		return candidate;
 	}
 
 	return getReplaceableByType(
 		seed,
+		current,
 		typesToOmit,
-		locationsTypeToOmit,
 		configuration,
 		(index! + 1) % seed.length
 	);
@@ -84,7 +89,7 @@ export const fixSeedExceptions = (
 				configuration.gameMode.version
 			]?.exclude?.includes(iteration.reward)
 		) {
-			const replaceable = getReplaceable(seed, iteration.reward, configuration);
+			const replaceable = getReplaceable(seed, iteration, configuration);
 
 			[iteration.reward, replaceable.reward] = [
 				replaceable.reward,
@@ -102,8 +107,8 @@ export const fixSeedExceptions = (
 		) {
 			const replaceable = getReplaceableByType(
 				seed,
+				iteration,
 				[RewardType.ABILITY, RewardType.LIMIT],
-				[RewardLocationType.POPUP],
 				configuration
 			);
 
