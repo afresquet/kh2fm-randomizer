@@ -62,6 +62,16 @@ const replace = (
 	return replace(rewards, reward, configuration, (index! + 1) % rewards.length);
 };
 
+const replaceMany = (
+	rewards: Reward[],
+	rewardsToInclude: Reward[],
+	configuration: Configuration
+) => {
+	rewardsToInclude.forEach(reward => {
+		replace(rewards, reward, configuration);
+	});
+};
+
 export const populateAndShuffle = (
 	configuration: Configuration
 ): [Reward[], RewardLocation[]] => {
@@ -182,21 +192,19 @@ export const populateAndShuffle = (
 	}
 
 	if (configuration.donaldAbilities) {
-		[Rewards.CENTURION, Rewards.NOBODY_LANCE, Rewards.SHAMANS_RELIC].forEach(
-			reward => {
-				replace(rewards, reward, configuration);
-			}
+		replaceMany(
+			rewards,
+			[Rewards.CENTURION, Rewards.NOBODY_LANCE, Rewards.SHAMANS_RELIC],
+			configuration
 		);
 	}
 
 	if (configuration.goofyAbilities) {
-		[
-			Rewards.FROZEN_PRIDE,
-			Rewards.NOBODY_GUARD,
-			Rewards.AKASHIC_RECORD,
-		].forEach(reward => {
-			replace(rewards, reward, configuration);
-		});
+		replaceMany(
+			rewards,
+			[Rewards.FROZEN_PRIDE, Rewards.NOBODY_GUARD, Rewards.AKASHIC_RECORD],
+			configuration
+		);
 	}
 
 	if (configuration.ultimaWeapon) {
@@ -208,17 +216,25 @@ export const populateAndShuffle = (
 	}
 
 	if (configuration.synthItems) {
-		[
-			Rewards.LUCKY_RING,
-			Rewards.SHADOW_ARCHIVE,
-			Rewards.SHOCK_CHARM,
-			Rewards.FULL_BLOOM,
-		].forEach(reward => {
-			replace(rewards, reward, configuration);
-		});
+		replaceMany(
+			rewards,
+			[
+				Rewards.LUCKY_RING,
+				Rewards.SHADOW_ARCHIVE,
+				Rewards.SHOCK_CHARM,
+				Rewards.FULL_BLOOM,
+			],
+			configuration
+		);
 	}
 
 	if (configuration.gameMode.mode === GameMode.GOA_MOD) {
+		replaceMany(
+			rewards,
+			[Rewards.PROMISE_CHARM, Rewards.CHAMPION_BELT, Rewards.MEDAL],
+			configuration
+		);
+
 		if (!configuration.cavernOfRemembrance) {
 			push([
 				cavernOfRememberanceRewardLocations.find(

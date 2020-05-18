@@ -1,4 +1,3 @@
-import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
@@ -8,33 +7,18 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		description: "Simulated Twilight Town (Station of Serenity)",
 		value: "11CE016E",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.PROMISE_CHARM },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Simulated Twilight Town (Station of Calling)",
 		value: "11CE017A",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.CHAMPION_BELT },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
 		description: "Simulated Twilight Town (Central Station)",
 		value: "11CE0186",
 		reward: Rewards.POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { reward: Rewards.MEDAL },
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
