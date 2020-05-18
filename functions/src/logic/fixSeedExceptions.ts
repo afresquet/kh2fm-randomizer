@@ -25,7 +25,8 @@ const getReplaceable = (
 	if (
 		!candidate.location.gameMode?.[configuration.gameMode.mode]?.[
 			configuration.gameMode.version
-		]?.exclude?.includes(rewardToOmit)
+		]?.exclude?.includes(rewardToOmit) &&
+		candidate.reward !== rewardToOmit
 	) {
 		return candidate;
 	}
