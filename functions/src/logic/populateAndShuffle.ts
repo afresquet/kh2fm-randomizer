@@ -219,12 +219,28 @@ export const populateAndShuffle = (
 	}
 
 	if (configuration.gameMode.mode === GameMode.GOA_MOD) {
+		if (!configuration.cavernOfRemembrance) {
+			push([
+				cavernOfRememberanceRewardLocations.find(
+					location => location.reward === Rewards.PROOF_OF_NONEXISTENCE
+				)!,
+			]);
+		}
+
 		if (!configuration.hollowBastion) {
-			replace(rewards, Rewards.PROOF_OF_PEACE, configuration);
+			push([
+				hollowBastionRewardLocations.find(
+					location => location.reward === Rewards.PROOF_OF_PEACE
+				)!,
+			]);
 		}
 
 		if (!configuration.disneyCastle) {
-			replace(rewards, Rewards.PROOF_OF_CONNECTION, configuration);
+			push([
+				disneyCastleRewardLocations.find(
+					location => location.reward === Rewards.PROOF_OF_CONNECTION
+				)!,
+			]);
 		}
 	}
 
