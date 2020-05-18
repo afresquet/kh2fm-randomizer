@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
 			<Container>
 				<Typography variant="h4" align="center">
 					<Link to="/" className={classes.link}>
-						KH2FM Randomizer
+						KH2FM Randomizer (Beta)
 					</Link>
 				</Typography>
 				<Typography variant="subtitle1" align="center">
