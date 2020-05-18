@@ -14,6 +14,7 @@ export interface Configuration {
 	stats: boolean;
 	abilities: boolean;
 	level50: boolean;
+	level1: boolean;
 	donaldAbilities: boolean;
 	goofyAbilities: boolean;
 	formAbilities: boolean;
