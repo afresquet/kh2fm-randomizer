@@ -65,6 +65,7 @@ const getReplaceableByType = (
 		!candidate.location.gameMode?.[configuration.gameMode.mode]?.[
 			configuration.gameMode.version
 		]?.exclude?.includes(current.reward) &&
+		current.location.type !== candidate.location.type &&
 		current.reward !== candidate.reward
 	) {
 		return candidate;
