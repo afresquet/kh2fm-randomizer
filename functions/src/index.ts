@@ -1,4 +1,5 @@
 import cors from "cors";
+import { randomBytes } from "crypto";
 import express from "express";
 import * as functions from "firebase-functions";
 import { sign, verify } from "jsonwebtoken";
@@ -31,7 +32,11 @@ app.post("/seed", (req, res) => {
 	}
 
 	const seed = sign(
-		{ ...req.body, seed: req.body.seed || Date.now().toString(), gameMode },
+		{
+			...req.body,
+			seed: req.body.seed || randomBytes(8).toString("hex"),
+			gameMode,
+		},
 		secret,
 		{ algorithm }
 	);

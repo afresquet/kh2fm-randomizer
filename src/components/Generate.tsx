@@ -195,7 +195,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 					<TextField
 						name="seed"
 						value={text.seed}
-						label="Seed (defaults to current time)"
+						label="Click to set a seed (defaults to random bytes)"
 						onChange={onTextChange}
 						fullWidth
 					/>
