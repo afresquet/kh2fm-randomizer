@@ -13,6 +13,7 @@ import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
 import { landOfDragonsRewardLocations } from "../rewardLocations/landOfDragons";
 import { abilityLevels } from "../rewardLocations/levels";
 import { olympusRewardLocations } from "../rewardLocations/olympus";
+import { organizationXIIIRewardLocations } from "../rewardLocations/organizationXIII";
 import { poohRewardLocations } from "../rewardLocations/pooh";
 import { portRoyalRewardLocations } from "../rewardLocations/portRoyal";
 import { prideLandsRewardLocations } from "../rewardLocations/prideLands";
@@ -137,6 +138,10 @@ export const populateAndShuffle = (
 
 	if (configuration.cavernOfRemembrance) {
 		push(cavernOfRememberanceRewardLocations);
+	}
+
+	if (configuration.organizationXIII) {
+		push(organizationXIIIRewardLocations);
 	}
 
 	if (configuration.beastsCastle) {

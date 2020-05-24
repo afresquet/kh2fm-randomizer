@@ -182,9 +182,6 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 				<Typography variant="h6">Randomize</Typography>
 
 				<div className={classes.chipsWrapper}>
-					<ConfigProperty property={configuration.criticalMode}>
-						Critical Mode
-					</ConfigProperty>
 					<ConfigProperty property={configuration.stats}>Stats</ConfigProperty>
 					<ConfigProperty property={configuration.abilities}>
 						Abilities
@@ -265,6 +262,12 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 				<Typography variant="h6">Include</Typography>
 
 				<div className={classes.chipsWrapper}>
+					<ConfigProperty property={configuration.criticalMode}>
+						Critical Mode
+					</ConfigProperty>
+					<ConfigProperty property={configuration.organizationXIII}>
+						Data Org/Absent Silhouettes
+					</ConfigProperty>
 					<ConfigProperty property={configuration.ultimaWeapon}>
 						Ultima Weapon
 					</ConfigProperty>

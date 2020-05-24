@@ -24,6 +24,7 @@ export interface Configuration {
 	twilightTown: boolean;
 	hollowBastion: boolean;
 	cavernOfRemembrance: boolean;
+	organizationXIII: boolean;
 	beastsCastle: boolean;
 	olympus: boolean;
 	agrabah: boolean;

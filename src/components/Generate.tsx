@@ -72,6 +72,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		twilightTown: true,
 		hollowBastion: true,
 		cavernOfRemembrance: true,
+		organizationXIII: true,
 		beastsCastle: true,
 		olympus: true,
 		agrabah: true,
@@ -368,6 +369,12 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 						label="Critical Mode"
 						name="criticalMode"
 						checked={checkbox.criticalMode}
+					/>
+
+					<OptionChip
+						label="Data Org/Absent Silhouettes"
+						name="organizationXIII"
+						checked={checkbox.organizationXIII}
 					/>
 
 					<OptionChip
