@@ -27,6 +27,7 @@ export interface Configuration {
 	organizationXIII: boolean;
 	beastsCastle: boolean;
 	olympus: boolean;
+	olympusCups: boolean;
 	agrabah: boolean;
 	landOfDragons: boolean;
 	pooh: boolean;

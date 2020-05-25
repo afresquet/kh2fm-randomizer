@@ -75,6 +75,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		organizationXIII: true,
 		beastsCastle: true,
 		olympus: true,
+		olympusCups: true,
 		agrabah: true,
 		landOfDragons: true,
 		pooh: true,
@@ -375,6 +376,12 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 						label="Data Org/Absent Silhouettes"
 						name="organizationXIII"
 						checked={checkbox.organizationXIII}
+					/>
+
+					<OptionChip
+						label="Olympus Cups"
+						name="olympusCups"
+						checked={checkbox.olympusCups}
 					/>
 
 					<OptionChip

@@ -268,6 +268,9 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 					<ConfigProperty property={configuration.organizationXIII}>
 						Data Org/Absent Silhouettes
 					</ConfigProperty>
+					<ConfigProperty property={configuration.olympusCups}>
+						Olympus Cups
+					</ConfigProperty>
 					<ConfigProperty property={configuration.ultimaWeapon}>
 						Ultima Weapon
 					</ConfigProperty>

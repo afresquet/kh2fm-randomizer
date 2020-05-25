@@ -13,6 +13,7 @@ import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
 import { landOfDragonsRewardLocations } from "../rewardLocations/landOfDragons";
 import { abilityLevels } from "../rewardLocations/levels";
 import { olympusRewardLocations } from "../rewardLocations/olympus";
+import { olympusCupsRewardLocations } from "../rewardLocations/olympusCups";
 import { organizationXIIIRewardLocations } from "../rewardLocations/organizationXIII";
 import { poohRewardLocations } from "../rewardLocations/pooh";
 import { portRoyalRewardLocations } from "../rewardLocations/portRoyal";
@@ -150,6 +151,10 @@ export const populateAndShuffle = (
 
 	if (configuration.olympus) {
 		push(olympusRewardLocations);
+	}
+
+	if (configuration.olympusCups) {
+		push(olympusCupsRewardLocations);
 	}
 
 	if (configuration.agrabah) {
