@@ -18,7 +18,7 @@ export interface Configuration {
 	donaldAbilities: boolean;
 	goofyAbilities: boolean;
 	formAbilities: boolean;
-	criticalMode: boolean;
+	growthAbilities: boolean;
 
 	simulatedTwilightTown: boolean;
 	twilightTown: boolean;
@@ -40,7 +40,9 @@ export interface Configuration {
 	spaceParanoids: boolean;
 	twtnw: boolean;
 
+	criticalMode: boolean;
 	ultimaWeapon: boolean;
+	maxGrowthAbilities: boolean;
 	finalForm: boolean;
 	synthItems: boolean;
 }

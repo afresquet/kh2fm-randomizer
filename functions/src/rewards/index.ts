@@ -2,6 +2,7 @@ import { abilityRewards } from "./ability";
 import { accessoryReward } from "./accessory";
 import { armorRewards } from "./armor";
 import { formRewards } from "./form";
+import { growthAbilityRewards } from "./growthAbility";
 import { itemRewards } from "./item";
 import { keybladeRewards } from "./keyblade";
 import { limitRewards } from "./limit";
@@ -21,6 +22,7 @@ export const Rewards = {
 	...shieldRewards,
 	...staffRewards,
 	...abilityRewards,
+	...growthAbilityRewards,
 	...limitRewards,
 	...spellRewards,
 	...formRewards,

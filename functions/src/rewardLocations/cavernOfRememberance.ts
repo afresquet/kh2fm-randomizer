@@ -1,10 +1,14 @@
 import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
+import { growthAbilityRewards } from "../rewards/growthAbility";
 import { Reward } from "../rewards/Reward";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
-const exclude: Reward[] = Object.values(formRewards);
+const exclude: Reward[] = [
+	...Object.values(formRewards),
+	...Object.values(growthAbilityRewards),
+];
 
 export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 	{

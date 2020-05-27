@@ -67,6 +67,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		donaldAbilities: true,
 		goofyAbilities: true,
 		formAbilities: true,
+		growthAbilities: true,
 
 		simulatedTwilightTown: true,
 		twilightTown: true,
@@ -89,6 +90,7 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 		twtnw: true,
 
 		ultimaWeapon: true,
+		maxGrowthAbilities: true,
 		finalForm: true,
 		synthItems: true,
 	});
@@ -255,6 +257,12 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 						name="formAbilities"
 						checked={checkbox.formAbilities}
 					/>
+
+					<OptionChip
+						label="Growth Abilities"
+						name="growthAbilities"
+						checked={checkbox.growthAbilities}
+					/>
 				</div>
 
 				<Typography align="center">Worlds</Typography>
@@ -388,6 +396,12 @@ export const Generate: React.FC<RouteComponentProps> = ({ history }) => {
 						label="Ultima Weapon"
 						name="ultimaWeapon"
 						checked={checkbox.ultimaWeapon}
+					/>
+
+					<OptionChip
+						label="MAX Growth Abilities"
+						name="maxGrowthAbilities"
+						checked={checkbox.maxGrowthAbilities}
 					/>
 
 					<OptionChip

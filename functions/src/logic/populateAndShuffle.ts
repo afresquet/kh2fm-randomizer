@@ -8,6 +8,7 @@ import { cavernOfRememberanceRewardLocations } from "../rewardLocations/cavernOf
 import { criticalRewardLocations } from "../rewardLocations/critical";
 import { disneyCastleRewardLocations } from "../rewardLocations/disneyCastle";
 import { formRewardLocations } from "../rewardLocations/form";
+import { formGrowthAbilitiesRewardLocations } from "../rewardLocations/formGrowthAbilities";
 import { halloweenTownRewardLocations } from "../rewardLocations/halloweenTown";
 import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
 import { landOfDragonsRewardLocations } from "../rewardLocations/landOfDragons";
@@ -121,6 +122,10 @@ export const populateAndShuffle = (
 		push(formRewardLocations);
 	}
 
+	if (configuration.growthAbilities) {
+		push(formGrowthAbilitiesRewardLocations);
+	}
+
 	if (configuration.criticalMode && !configuration.level1) {
 		push(criticalRewardLocations);
 	}
@@ -219,6 +224,20 @@ export const populateAndShuffle = (
 
 	if (configuration.ultimaWeapon) {
 		replace(rewards, Rewards.ULTIMA_WEAPON, configuration);
+	}
+
+	if (configuration.maxGrowthAbilities) {
+		replaceMany(
+			rewards,
+			[
+				Rewards.HIGH_JUMP_MAX,
+				Rewards.QUICK_RUN_MAX,
+				Rewards.DODGE_ROLL_MAX,
+				Rewards.AERIAL_DODGE_MAX,
+				Rewards.GLIDE_MAX,
+			],
+			configuration
+		);
 	}
 
 	if (configuration.finalForm) {

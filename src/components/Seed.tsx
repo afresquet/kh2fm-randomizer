@@ -201,6 +201,9 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 					<ConfigProperty property={configuration.formAbilities}>
 						Form Abilities
 					</ConfigProperty>
+					<ConfigProperty property={configuration.maxGrowthAbilities}>
+						Growth Abilities
+					</ConfigProperty>
 				</div>
 
 				<Typography variant="h6">Worlds</Typography>
@@ -273,6 +276,9 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 					</ConfigProperty>
 					<ConfigProperty property={configuration.ultimaWeapon}>
 						Ultima Weapon
+					</ConfigProperty>
+					<ConfigProperty property={configuration.maxGrowthAbilities}>
+						MAX Growth Abilities
 					</ConfigProperty>
 					<ConfigProperty property={configuration.finalForm}>
 						Final Form
