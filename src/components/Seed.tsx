@@ -123,13 +123,13 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 
 	const download = useCallback(async () => {
 		try {
-			if (!seedArray) return;
+			if (!seedArray || !configuration) return;
 
 			setLoading(true);
 
 			const filename = "F266B00B.pnach";
 
-			const pnach = createPnach(seedArray);
+			const pnach = createPnach(seedArray, configuration);
 
 			downloadjs(pnach, filename, "application/octet-stream");
 		} catch (error) {
@@ -137,7 +137,7 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 		} finally {
 			setLoading(false);
 		}
-	}, [seedArray]);
+	}, [seedArray, configuration]);
 
 	const toggleSpoiler = useCallback(async () => {
 		setSpoilerLogs(current => !current);

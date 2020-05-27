@@ -118,13 +118,13 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 	},
 	{
 		type: RewardLocationType.CHEST,
-		description: "Land of Dragons (Throne Room)",
+		description: "The Land of Dragons (Throne Room)",
 		value: "11CDF80E",
 		reward: Rewards.MYTHRIL_CRYSTAL,
 	},
 	{
 		type: RewardLocationType.CHEST,
-		description: "Land of Dragons (Throne Room)",
+		description: "The Land of Dragons (Throne Room)",
 		value: "11CDF81A",
 		reward: Rewards.ORICHALCUM,
 	},
