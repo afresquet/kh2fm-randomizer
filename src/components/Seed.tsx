@@ -201,7 +201,7 @@ export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
 					<ConfigProperty property={configuration.formAbilities}>
 						Form Abilities
 					</ConfigProperty>
-					<ConfigProperty property={configuration.maxGrowthAbilities}>
+					<ConfigProperty property={configuration.growthAbilities}>
 						Growth Abilities
 					</ConfigProperty>
 				</div>
