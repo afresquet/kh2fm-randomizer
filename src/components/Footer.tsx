@@ -4,7 +4,7 @@ import React from "react";
 export const Footer: React.FC = () => {
 	return (
 		<Layout.Footer style={{ textAlign: "center" }}>
-			Kingdom Hearts 2 Final Mix Randomizer created by{" "}
+			Kingdom Hearts 2 Final Mix Randomizer <sup>beta</sup> created by{" "}
 			<Typography.Link href="https://github.com/afresquet" target="_blank">
 				Alvaro
 			</Typography.Link>{" "}

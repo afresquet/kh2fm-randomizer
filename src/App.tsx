@@ -5,7 +5,6 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Generate } from "./components/Generate";
 import { Header } from "./components/Header";
-import { Seed } from "./components/Seed";
 
 function App() {
 	return (
@@ -14,8 +13,7 @@ function App() {
 
 			<Layout.Content>
 				<Switch>
-					<Route path="/seed" component={Generate} exact />
-					<Route path="/seed/:seed" component={Seed} exact />
+					<Route path="/seed/:seed?" component={Generate} exact />
 					<Route path="/about" component={() => null} exact />
 					<Route path="/changelogs" component={() => null} exact />
 					<Redirect to="/seed" />
