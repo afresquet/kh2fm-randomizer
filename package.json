@@ -5,6 +5,7 @@
 	"homepage": "http://afresquet.github.io/kh2fm-randomizer",
 	"dependencies": {
 		"@material-ui/core": "^4.9.13",
+		"antd": "^4.3.1",
 		"axios": "^0.19.2",
 		"downloadjs": "^1.4.7",
 		"react": "^16.13.1",

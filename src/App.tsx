@@ -1,39 +1,29 @@
-import Container from "@material-ui/core/Container";
-import { makeStyles } from "@material-ui/core/styles";
+import { Layout } from "antd";
+import "antd/dist/antd.css";
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Generate } from "./components/Generate";
 import { Header } from "./components/Header";
 import { Seed } from "./components/Seed";
 
-const useStyles = makeStyles(theme => ({
-	content: {
-		padding: theme.spacing(3),
-		flex: "1 0 auto",
-	},
-}));
-
 function App() {
-	const classes = useStyles();
-
 	return (
-		<>
-			<div className={classes.content}>
-				<Header />
+		<Layout>
+			<Header />
 
-				<main>
-					<Container>
-						<Switch>
-							<Route path="/" component={Generate} exact />
-							<Route path="/seed/:seed" component={Seed} exact />
-						</Switch>
-					</Container>
-				</main>
-			</div>
+			<Layout.Content>
+				<Switch>
+					<Route path="/seed" component={Generate} exact />
+					<Route path="/seed/:seed" component={Seed} exact />
+					<Route path="/about" component={() => null} exact />
+					<Route path="/changelogs" component={() => null} exact />
+					<Redirect to="/seed" />
+				</Switch>
+			</Layout.Content>
 
 			<Footer />
-		</>
+		</Layout>
 	);
 }
 

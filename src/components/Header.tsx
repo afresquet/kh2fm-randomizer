@@ -1,49 +1,34 @@
-import { Container } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import { Layout, Menu } from "antd";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
-const useStyles = makeStyles(() => ({
-	link: {
-		color: "green",
-		textDecoration: "none",
+const navItems = [
+	{
+		url: "/seed",
+		title: "KH2FM Randomizer",
 	},
-}));
+	{
+		url: "/about",
+		title: "About",
+	},
+	{
+		url: "/changelogs",
+		title: "Changelogs",
+	},
+];
 
 export const Header: React.FC = () => {
-	const classes = useStyles();
+	const { pathname } = useLocation();
 
 	return (
-		<header>
-			<Container>
-				<Typography variant="h4" align="center">
-					<Link to="/" className={classes.link}>
-						KH2FM Randomizer (Beta)
-					</Link>
-				</Typography>
-				<Typography variant="subtitle1" align="center">
-					by{" "}
-					<a
-						href="https://github.com/afresquet"
-						target="_blank"
-						rel="noopener noreferrer"
-						className={classes.link}
-					>
-						Alvaro
-					</a>{" "}
-					(
-					<a
-						href="http://twitch.valaxor.com"
-						target="_blank"
-						rel="noopener noreferrer"
-						className={classes.link}
-					>
-						Valaxor
-					</a>
-					)
-				</Typography>
-			</Container>
-		</header>
+		<Layout.Header>
+			<Menu mode="horizontal" theme="dark" selectedKeys={[pathname]}>
+				{navItems.map(({ url, title }) => (
+					<Menu.Item key={url}>
+						<NavLink to={url}>{title}</NavLink>
+					</Menu.Item>
+				))}
+			</Menu>
+		</Layout.Header>
 	);
 };
