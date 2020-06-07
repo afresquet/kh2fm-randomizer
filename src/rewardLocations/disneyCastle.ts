@@ -1,7 +1,7 @@
-import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
 import { Reward } from "../rewards/Reward";
+import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 const exclude: Reward[] = [
@@ -74,7 +74,7 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		value: "11CE0B16",
 		reward: Rewards.PROOF_OF_CONNECTION,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -83,7 +83,7 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		value: "11CE0B22",
 		reward: Rewards.MANIFEST_ILLUSION,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 ];

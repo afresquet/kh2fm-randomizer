@@ -1,5 +1,5 @@
-import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
+import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const bonusRewardLocations: RewardLocation[] = [
@@ -178,9 +178,7 @@ export const bonusRewardLocations: RewardLocation[] = [
 		reward: Rewards.FIRE,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
-				0: {
-					exclude: [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER],
-				},
+				exclude: [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER],
 			},
 		},
 	},

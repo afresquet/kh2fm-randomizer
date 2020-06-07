@@ -1,7 +1,7 @@
-import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
 import { Reward } from "../rewards/Reward";
+import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 const larxeneExclude: Reward[] = [
@@ -35,9 +35,7 @@ export const organizationXIIIRewardLocations: RewardLocation[] = [
 		value: "11CE0A62",
 		reward: Rewards.CLOAKED_THUNDER,
 		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { exclude: larxeneExclude },
-			},
+			[GameMode.GOA_MOD]: { exclude: larxeneExclude },
 		},
 	},
 	{
@@ -100,9 +98,7 @@ export const organizationXIIIRewardLocations: RewardLocation[] = [
 		value: "11CE0AB6",
 		reward: Rewards.AP_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { exclude: Object.values(formRewards) },
-			},
+			[GameMode.GOA_MOD]: { exclude: Object.values(formRewards) },
 		},
 	},
 	{
@@ -123,9 +119,7 @@ export const organizationXIIIRewardLocations: RewardLocation[] = [
 		value: "11CE0A9E",
 		reward: Rewards.LOST_ILLUSION,
 		gameMode: {
-			[GameMode.GOA_MOD]: {
-				0: { exclude: larxeneExclude },
-			},
+			[GameMode.GOA_MOD]: { exclude: larxeneExclude },
 		},
 	},
 	{

@@ -1,6 +1,6 @@
-import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { Reward } from "../rewards/Reward";
+import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 const exclude: Reward[] = [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER];
@@ -156,7 +156,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		value: "11CDF946",
 		reward: Rewards.TORN_PAGE,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -165,7 +165,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		value: "11CDF952",
 		reward: Rewards.RUINS_MAP,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -186,7 +186,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		value: "11CE08B2",
 		reward: Rewards.WISHING_LAMP,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 ];

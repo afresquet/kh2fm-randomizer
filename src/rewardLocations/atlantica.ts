@@ -1,7 +1,7 @@
-import { GameMode } from "../Configuration";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
 import { Reward } from "../rewards/Reward";
+import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 const exclude: Reward[] = [
@@ -24,7 +24,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		value: "11CE08E2",
 		reward: Rewards.MYSTERIOUS_ABYSS,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -33,7 +33,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		value: "11CE08EE",
 		reward: Rewards.BLIZZARD,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -42,7 +42,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		value: "11CE08FA",
 		reward: Rewards.ORICHALCUM_PLUS,
 		gameMode: {
-			[GameMode.GOA_MOD]: { 0: { exclude } },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 ];
