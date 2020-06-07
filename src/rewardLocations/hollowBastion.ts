@@ -147,6 +147,24 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		reward: Rewards.COSMIC_CHAIN,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Bailey Nobodies",
+		value: "21D10E98",
+		reward: Rewards.FIRE,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Demyx (Hollow Bastion)",
+		value: "21D10BA8",
+		reward: Rewards.BLIZZARD,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "1,000 Heartless",
+		value: "21D11068",
+		reward: Rewards.GUARD_BREAK,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Marketplace Map",
 		value: "11CE068A",

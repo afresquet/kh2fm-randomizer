@@ -99,6 +99,24 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		reward: Rewards.HI_POTION,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Station of Serenity Dusks",
+		value: "21D10FA8",
+		reward: Rewards.AERIAL_RECOVERY,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Twilight Thorn",
+		value: "21D10CB8",
+		reward: Rewards.GUARD,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Axel 1",
+		value: "21D11278",
+		reward: Rewards.SCAN,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Twilight Town Map",
 		value: "11CE0636",

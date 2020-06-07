@@ -123,6 +123,36 @@ export const olympusRewardLocations: RewardLocation[] = [
 		reward: Rewards.AP_BOOST,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Cerberus",
+		value: "21D10808",
+		reward: Rewards.COUNTERGUARD,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Phil's Training (Maniac)",
+		value: "21D10FE8",
+		reward: Rewards.AERIAL_DIVE,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Pete (Olympus Coliseum)",
+		value: "21D10828",
+		reward: Rewards.TRINITY_LIMIT,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Hydra",
+		value: "21D10858",
+		reward: Rewards.THUNDER,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Hades",
+		value: "21D10888",
+		reward: Rewards.MAGNET_BURST,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Coliseum Map",
 		value: "11CE070E",

@@ -87,6 +87,12 @@ export const halloweenTownRewardLocations: RewardLocation[] = [
 		reward: Rewards.AP_BOOST,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Prison Keeper",
+		value: "21D109E8",
+		reward: Rewards.FLASH_STEP,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Magnet Element (Halloween Town)",
 		value: "11CE07AA",

@@ -129,6 +129,30 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		reward: Rewards.MYTHRIL_CRYSTAL,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "The Interceptor Medallion Fight",
+		value: "21D110B8",
+		reward: Rewards.AERIAL_SPIRAL,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Captain Barbossa",
+		value: "21D10AA8",
+		reward: Rewards.AERIAL_FINISH,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Grim Reaper 1",
+		value: "21D11028",
+		reward: Rewards.HORIZONTAL_SLASH,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Grim Reaper 2",
+		value: "21D10AE8",
+		reward: Rewards.MAGNET,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Isla de Muerta Map",
 		value: "11CE077A",

@@ -129,6 +129,24 @@ export const beastsCastleRewardLocations: RewardLocation[] = [
 		reward: Rewards.BLAZING_SHARD,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Thresholder",
+		value: "21D10758",
+		reward: Rewards.UPPER_SLASH,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Dark Thorn",
+		value: "21D10788",
+		reward: Rewards.RETALIATING_SLASH,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Xaldin",
+		value: "21D107C8",
+		reward: Rewards.REFLECT,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Cure Element (Beast's Castle)",
 		value: "11CE06F6",

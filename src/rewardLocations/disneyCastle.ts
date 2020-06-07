@@ -63,6 +63,24 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		reward: Rewards.TORN_PAGE,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Queen Minnie Escort",
+		value: "21D10D28",
+		reward: Rewards.AUTO_SUMMON,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Pete (Steamboat Fight)",
+		value: "21D10988",
+		reward: Rewards.DODGE_SLASH,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Pete (Timeless River)",
+		value: "21D109B8",
+		reward: Rewards.REFLECT,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Disney Castle Map",
 		value: "11CE0756",

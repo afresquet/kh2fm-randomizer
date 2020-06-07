@@ -129,6 +129,24 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		reward: Rewards.ORICHALCUM,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Village Cave Heartless",
+		value: "21D10DF8",
+		reward: Rewards.SLIDE_DASH,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Shan-Yu",
+		value: "21D108C8",
+		reward: Rewards.AERIAL_SWEEP,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Storm Rider",
+		value: "21D10908",
+		reward: Rewards.THUNDER,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Encampment Area Map",
 		value: "11CE06D2",

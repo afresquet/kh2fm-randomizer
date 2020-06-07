@@ -169,6 +169,29 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		},
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Abu Escort",
+		value: "21D10DB8",
+		reward: Rewards.SUMMON_BOOST,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Volcanic Lord & Blizzard Lord",
+		value: "21D10CE8",
+		reward: Rewards.FINISHING_LEAP,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Genie Jafar",
+		value: "21D10978",
+		reward: Rewards.FIRE,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				exclude: [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER],
+			},
+		},
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Agrabah Map",
 		value: "11CE0792",

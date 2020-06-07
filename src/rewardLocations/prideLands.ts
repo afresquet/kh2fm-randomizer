@@ -153,6 +153,12 @@ export const prideLandsRewardLocations: RewardLocation[] = [
 		reward: Rewards.AP_BOOST,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Groundshaker",
+		value: "21D10C18",
+		reward: Rewards.THUNDER,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Circle of Life",
 		value: "11CE07B6",

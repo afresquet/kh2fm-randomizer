@@ -117,6 +117,24 @@ export const twtnwRewardLocations: RewardLocation[] = [
 		reward: Rewards.ORICHALCUM,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Betwixt and Between Nobodies",
+		value: "21D110E8",
+		reward: Rewards.SLAPSHOT,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Roxas",
+		value: "21D111E8",
+		reward: Rewards.COMBO_MASTER,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Luxord",
+		value: "21D10B58",
+		reward: Rewards.MAGNET,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Two Become One",
 		value: "11CE0972",

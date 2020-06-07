@@ -87,6 +87,24 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		reward: Rewards.CENTRAL_COMPUTER_CORE_MAP,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		description: "Hostile Program",
+		value: "21D10C38",
+		reward: Rewards.VICINITY_BREAK,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "Solar Sailer Heartless",
+		value: "21D11078",
+		reward: Rewards.EXPLOSION,
+	},
+	{
+		type: RewardLocationType.BONUS,
+		description: "MCP",
+		value: "21D10C78",
+		reward: Rewards.REFLECT,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		description: "Photon Debugger",
 		value: "11CE0816",
