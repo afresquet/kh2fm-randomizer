@@ -21,6 +21,7 @@ export interface RewardLocation {
 	gameMode?: {
 		[K in GameMode]?: {
 			exclude?: Reward[];
+			forceJunk?: boolean;
 		};
 	};
 }

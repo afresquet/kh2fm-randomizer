@@ -1,4 +1,5 @@
 import { Rewards } from "../rewards";
+import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
@@ -133,12 +134,22 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 		description: "Champion Belt",
 		value: "11CE0612",
 		reward: Rewards.CHAMPION_BELT,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				forceJunk: true,
+			},
+		},
 	},
 	{
 		type: RewardLocationType.POPUP,
 		description: "Medal",
 		value: "11CE061E",
 		reward: Rewards.MEDAL,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				forceJunk: true,
+			},
+		},
 	},
 	{
 		type: RewardLocationType.POPUP,

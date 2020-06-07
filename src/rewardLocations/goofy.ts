@@ -96,7 +96,7 @@ export const goofyRewardLocations: RewardLocation[] = [
 		type: RewardLocationType.GOOFY,
 		description: "Lock/Shock/Barrel",
 		value: "21D10D98",
-		reward: Rewards.GOOFY_AUTO_CHANGE,
+		reward: Rewards.AUTO_CHANGE,
 	},
 	{
 		type: RewardLocationType.GOOFY,
@@ -132,19 +132,19 @@ export const goofyRewardLocations: RewardLocation[] = [
 		type: RewardLocationType.GOOFY,
 		description: "Falling Star",
 		value: "11CDF326",
-		reward: Rewards.GOOFY_PROTECT,
+		reward: Rewards.PROTECT,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Dreamcloud",
 		value: "11CDF336",
-		reward: Rewards.GOOFY_PROTECTRA,
+		reward: Rewards.PROTECTRA,
 	},
 	{
 		type: RewardLocationType.GOOFY,
 		description: "Knight Defender",
 		value: "11CDF346",
-		reward: Rewards.GOOFY_PROTECTGA,
+		reward: Rewards.PROTECTGA,
 	},
 	{
 		type: RewardLocationType.GOOFY,
