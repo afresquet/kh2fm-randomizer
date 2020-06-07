@@ -1,6 +1,31 @@
 import { RewardType } from "./Reward";
 
 export const recipeRewards = {
+	MEGA_RECIPE: {
+		type: RewardType.RECIPE,
+		name: "Mega-Recipe",
+		value: "017E",
+	},
+	STAR_RECIPE: {
+		type: RewardType.RECIPE,
+		name: "Star Recipe",
+		value: "01C1",
+	},
+	RECOVERY_RECIPE: {
+		type: RewardType.RECIPE,
+		name: "Recovery Recipe",
+		value: "01C2",
+	},
+	SKILL_RECIPE: {
+		type: RewardType.RECIPE,
+		name: "Skill Recipe",
+		value: "01C1",
+	},
+	GUARD_RECIPE: {
+		type: RewardType.RECIPE,
+		name: "Guard Recipe",
+		value: "01C3",
+	},
 	ROAD_TO_DISCOVERY: {
 		type: RewardType.RECIPE,
 		name: "Road to Discovery",
@@ -26,45 +51,25 @@ export const recipeRewards = {
 		name: "Eternal Blossom",
 		value: "01D4",
 	},
-	MEGA_RECIPE: {
+	RARE_DOCUMENT: {
 		type: RewardType.RECIPE,
-		name: "Mega-Recipe",
-		value: "017E",
+		name: "Rare Document",
+		value: "01D5",
 	},
-	STAR_RECIPE: {
+	STYLE_RECIPE: {
 		type: RewardType.RECIPE,
-		name: "Star Recipe",
-		value: "01C1",
-	},
-	SKILL_RECIPE: {
-		type: RewardType.RECIPE,
-		name: "Skill Recipe",
-		value: "01C1",
+		name: "Style Recipe",
+		value: "01DB",
 	},
 	MOON_RECIPE: {
 		type: RewardType.RECIPE,
 		name: "Moon Recipe",
 		value: "01DC",
 	},
-	RECOVERY_RECIPE: {
-		type: RewardType.RECIPE,
-		name: "Recovery Recipe",
-		value: "01C2",
-	},
 	QUEEN_RECIPE: {
 		type: RewardType.RECIPE,
 		name: "Queen Recipe",
 		value: "01DD",
-	},
-	GUARD_RECIPE: {
-		type: RewardType.RECIPE,
-		name: "Guard Recipe",
-		value: "01C3",
-	},
-	STYLE_RECIPE: {
-		type: RewardType.RECIPE,
-		name: "Style Recipe",
-		value: "01DB",
 	},
 	KING_RECIPE: {
 		type: RewardType.RECIPE,

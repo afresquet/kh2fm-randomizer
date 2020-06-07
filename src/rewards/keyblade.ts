@@ -1,6 +1,21 @@
 import { RewardType } from "./Reward";
 
 export const keybladeRewards = {
+	KINGDOM_KEY: {
+		type: RewardType.KEYBLADE,
+		name: "Kingdom Key",
+		value: "0029",
+	},
+	OATHKEEPER: {
+		type: RewardType.KEYBLADE,
+		name: "Oathkeeper",
+		value: "002A",
+	},
+	OBLIVION: {
+		type: RewardType.KEYBLADE,
+		name: "Oblivion",
+		value: "002B",
+	},
 	STAR_SEEKER: {
 		type: RewardType.KEYBLADE,
 		name: "Star Seeker",
@@ -31,15 +46,15 @@ export const keybladeRewards = {
 		name: "Circle of Life",
 		value: "01E7",
 	},
-	OATHKEEPER: {
-		type: RewardType.KEYBLADE,
-		name: "Oathkeeper",
-		value: "002A",
-	},
 	PHOTON_DEBUGGER: {
 		type: RewardType.KEYBLADE,
 		name: "Photon Debugger",
 		value: "01E8",
+	},
+	GULL_WING: {
+		type: RewardType.KEYBLADE,
+		name: "Gull Wing",
+		value: "01E9",
 	},
 	RUMBLING_ROSE: {
 		type: RewardType.KEYBLADE,
@@ -61,25 +76,20 @@ export const keybladeRewards = {
 		name: "Decisive Pumpkin",
 		value: "01ED",
 	},
-	MYSTERIOUS_ABYSS: {
-		type: RewardType.KEYBLADE,
-		name: "Mysterious Abyss",
-		value: "01F0",
-	},
 	SWEET_MEMORIES: {
 		type: RewardType.KEYBLADE,
 		name: "Sweet Memories",
 		value: "01EF",
 	},
+	MYSTERIOUS_ABYSS: {
+		type: RewardType.KEYBLADE,
+		name: "Mysterious Abyss",
+		value: "01F0",
+	},
 	SLEEPING_LION: {
 		type: RewardType.KEYBLADE,
 		name: "Sleeping Lion",
 		value: "01EE",
-	},
-	FENRIR: {
-		type: RewardType.KEYBLADE,
-		name: "Fenrir",
-		value: "01F3",
 	},
 	BOND_OF_FLAME: {
 		type: RewardType.KEYBLADE,
@@ -91,29 +101,34 @@ export const keybladeRewards = {
 		name: "Two Become One",
 		value: "021F",
 	},
-	OBLIVION: {
-		type: RewardType.KEYBLADE,
-		name: "Oblivion",
-		value: "002B",
-	},
 	FATAL_CREST: {
 		type: RewardType.KEYBLADE,
 		name: "Fatal Crest",
 		value: "01F1",
 	},
-	GULL_WING: {
+	FENRIR: {
 		type: RewardType.KEYBLADE,
-		name: "Gull Wing",
-		value: "01E9",
+		name: "Fenrir",
+		value: "01F3",
+	},
+	ULTIMA_WEAPON: {
+		type: RewardType.KEYBLADE,
+		name: "Ultima Weapon",
+		value: "01F4",
 	},
 	WINNERS_PROOF: {
 		type: RewardType.KEYBLADE,
 		name: "Winner's Proof",
 		value: "0220",
 	},
-	ULTIMA_WEAPON: {
+	DETECTION_SABER: {
 		type: RewardType.KEYBLADE,
-		name: "Ultima Weapon",
-		value: "01F4",
+		name: "Detection Saber",
+		value: "002C",
+	},
+	EDGE_OF_ULTIMA: {
+		type: RewardType.KEYBLADE,
+		name: "Edge of Ultima",
+		value: "002D",
 	},
 };

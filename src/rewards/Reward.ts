@@ -8,6 +8,7 @@ export enum RewardType {
 	FORM = "Form",
 	SUMMON = "Summon",
 	ITEM = "Item",
+	SYNTH_MATERIAL = "Synthesis Material",
 	ARMOR = "Armor",
 	ACCESSORY = "Accessory",
 	MAP = "Map",
@@ -15,7 +16,7 @@ export enum RewardType {
 	REPORT = "Report",
 	RECIPE = "Recipe",
 	PROOF = "Proof",
-	MISCELLANEOUS = "Miscellaneous",
+	KEY_ITEM = "Key Item",
 }
 
 export interface Reward {

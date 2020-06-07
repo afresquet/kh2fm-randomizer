@@ -5,17 +5,16 @@ import { formRewards } from "./form";
 import { growthAbilityRewards } from "./growthAbility";
 import { itemRewards } from "./item";
 import { keybladeRewards } from "./keyblade";
-import { limitRewards } from "./limit";
+import { keyItemRewards } from "./keyItem";
 import { mapRewards } from "./map";
-import { miscellaneousRewards } from "./miscellaneous";
 import { proofRewards } from "./proof";
 import { recipeRewards } from "./recipe";
 import { reportRewards } from "./report";
-import { RewardType } from "./Reward";
 import { shieldRewards } from "./shield";
 import { spellRewards } from "./spell";
 import { staffRewards } from "./staff";
 import { summonRewards } from "./summon";
+import { synthMaterialRewards } from "./synthMaterial";
 
 export const Rewards = {
 	...keybladeRewards,
@@ -23,21 +22,16 @@ export const Rewards = {
 	...staffRewards,
 	...abilityRewards,
 	...growthAbilityRewards,
-	...limitRewards,
 	...spellRewards,
 	...formRewards,
 	...summonRewards,
 	...itemRewards,
+	...synthMaterialRewards,
 	...armorRewards,
 	...accessoryReward,
 	...mapRewards,
-	TORN_PAGE: {
-		type: RewardType.TORNPAGE,
-		name: "Torn Pages",
-		value: "0020",
-	},
 	...reportRewards,
 	...recipeRewards,
 	...proofRewards,
-	...miscellaneousRewards,
+	...keyItemRewards,
 };
