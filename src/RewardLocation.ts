@@ -1,5 +1,5 @@
-import { GameMode } from "./Configuration";
 import { Reward } from "./Reward";
+import { GameMode } from "./Settings";
 
 export enum RewardLocationType {
 	POPUP = "popup",

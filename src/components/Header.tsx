@@ -24,8 +24,13 @@ export const Header: React.FC = () => {
 	const selected = pathname.startsWith("/seed") ? "/seed" : pathname;
 
 	return (
-		<Layout.Header>
-			<Menu mode="horizontal" theme="dark" selectedKeys={[selected]}>
+		<Layout.Header style={{ padding: 0 }}>
+			<Menu
+				mode="horizontal"
+				theme="dark"
+				selectedKeys={[selected]}
+				style={{ margin: "0 auto", maxWidth: 1200 }}
+			>
 				{navItems.map(({ url, title, sup }) => (
 					<Menu.Item key={url}>
 						<NavLink to={url}>
