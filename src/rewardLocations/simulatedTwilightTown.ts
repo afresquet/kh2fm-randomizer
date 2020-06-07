@@ -130,6 +130,18 @@ export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 	},
 	{
 		type: RewardLocationType.POPUP,
+		description: "Champion Belt",
+		value: "11CE0612",
+		reward: Rewards.CHAMPION_BELT,
+	},
+	{
+		type: RewardLocationType.POPUP,
+		description: "Medal",
+		value: "11CE061E",
+		reward: Rewards.MEDAL,
+	},
+	{
+		type: RewardLocationType.POPUP,
 		description: '"The Struggle" Trophy',
 		value: "11CE062A",
 		reward: Rewards.STRUGGLE_TROPHY,

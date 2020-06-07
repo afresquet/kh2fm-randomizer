@@ -166,6 +166,12 @@ export const olympusRewardLocations: RewardLocation[] = [
 	},
 	{
 		type: RewardLocationType.POPUP,
+		description: "Secret Ansem's Report 8 (OC Demyx)",
+		value: "11CE09D2",
+		reward: Rewards.REPORT_EIGHT,
+	},
+	{
+		type: RewardLocationType.POPUP,
 		description: "Hero's Crest",
 		value: "11CE0726",
 		reward: Rewards.HEROS_CREST,

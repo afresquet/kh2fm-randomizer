@@ -186,9 +186,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		value: "21D10978",
 		reward: Rewards.FIRE,
 		gameMode: {
-			[GameMode.GOA_MOD]: {
-				exclude: [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER],
-			},
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
