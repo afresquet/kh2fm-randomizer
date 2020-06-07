@@ -1,12 +1,13 @@
 import { Button, Dropdown, Menu } from "antd";
-import React from "react";
+import React, { useContext } from "react";
+import { SeedContext } from "../../context/seed";
 import { GoAModModalDownload } from "../GoAMod/GoAModModalDownload";
 
-interface Props {
-	seed: string;
-}
+export const ButtonDownload: React.FC = () => {
+	const {
+		seed: { seed },
+	} = useContext(SeedContext);
 
-export const ButtonDownload: React.FC<Props> = ({ seed }) => {
 	return (
 		<div style={{ display: "flex", margin: "8px 0" }}>
 			<GoAModModalDownload />

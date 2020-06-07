@@ -1,17 +1,12 @@
 import { Button, Input } from "antd";
-import React from "react";
+import React, { useContext } from "react";
+import { SeedContext } from "../../context/seed";
 
-interface Props {
-	seed: string;
-	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	onRandomSeed: () => void;
-}
+export const SeedNameInput: React.FC = () => {
+	const {
+		seed: { seed, onChange, onRandomSeed },
+	} = useContext(SeedContext);
 
-export const SeedNameInput: React.FC<Props> = ({
-	seed,
-	onChange,
-	onRandomSeed,
-}) => {
 	return (
 		<Input
 			id="seed"

@@ -1,12 +1,20 @@
-import React from "react";
+import { SliderValue } from "antd/lib/slider";
+import React, { useContext } from "react";
+import { SeedContext } from "../../context/seed";
+import { useValueMapper } from "../../hooks/useValueMapper";
+import { GoAModSettings } from "../../settings/GoAModSettings";
 import { SettingSlider } from "./SettingSlider";
 
-interface Props {}
+export const TabPaneGameModeSettings: React.FC = () => {
+	const {
+		gameMode: { goa },
+	} = useContext(SeedContext);
 
-export const TabPaneGameModeSettings: React.FC<Props> = () => {
+	const mapValue = useValueMapper<GoAModSettings, SliderValue>(goa);
+
 	return (
 		<div className="tab-pane">
-			<SettingSlider title="Promise Charm" />
+			<SettingSlider title="Promise Charm" {...mapValue("promiseCharm")} />
 		</div>
 	);
 };

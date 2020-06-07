@@ -5,6 +5,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Seed } from "./components/Seed";
+import { SeedContextProvider } from "./context/seed";
 
 function App() {
 	return (
@@ -13,7 +14,9 @@ function App() {
 
 			<Layout.Content style={{ padding: 24 }}>
 				<Switch>
-					<Route path="/seed/:seed?" component={Seed} exact />
+					<SeedContextProvider>
+						<Route path="/seed/:seed?" component={Seed} exact />
+					</SeedContextProvider>
 					<Route path="/about" component={() => null} exact />
 					<Route path="/changelogs" component={() => null} exact />
 					<Redirect to="/seed" />

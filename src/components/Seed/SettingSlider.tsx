@@ -23,13 +23,7 @@ export const SettingSlider: React.FC<SettingSliderProps> = ({
 			<div style={{ textAlign: "center" }}>{title}</div>
 
 			<div style={{ padding: "0 32px" }}>
-				<Slider
-					max={max}
-					marks={marks}
-					tooltipVisible={false}
-					defaultValue={max}
-					{...props}
-				/>
+				<Slider max={max} marks={marks} tooltipVisible={false} {...props} />
 			</div>
 		</div>
 	);

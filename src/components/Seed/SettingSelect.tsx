@@ -18,7 +18,9 @@ export const SettingSelect: React.FC<SettingSelectProps> = ({
 
 			<Select style={{ width: "100%" }} {...props}>
 				{Object.entries(optionsMap).map(([label, value]) => (
-					<Select.Option value={value}>{label}</Select.Option>
+					<Select.Option value={value} key={value}>
+						{label}
+					</Select.Option>
 				))}
 			</Select>
 		</div>

@@ -1,11 +1,12 @@
 import { Button, Popover } from "antd";
-import React from "react";
+import React, { useContext } from "react";
+import { SeedContext } from "../../context/seed";
 
-interface Props {
-	seed: string;
-}
+export const ButtonShare: React.FC = () => {
+	const {
+		seed: { seed },
+	} = useContext(SeedContext);
 
-export const ButtonShare: React.FC<Props> = ({ seed }) => {
 	const button = (
 		<Popover
 			placement="bottomRight"

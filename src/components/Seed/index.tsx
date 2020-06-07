@@ -1,7 +1,6 @@
 import { Tabs } from "antd";
-import React from "react";
-import { RouteComponentProps } from "react-router-dom";
-import { useSeedName } from "../../hooks/useSeedName";
+import React, { useContext } from "react";
+import { SeedContext } from "../../context/seed";
 import { ButtonDownload } from "./ButtonDownload";
 import { ButtonShare } from "./ButtonShare";
 import { ModalHelp } from "./ModalHelp";
@@ -12,31 +11,24 @@ import { TabPaneInclude } from "./TabPaneInclude";
 import { TabPaneSettings } from "./TabPaneSettings";
 import { TabPaneWorlds } from "./TabPaneWorlds";
 
-export const Seed: React.FC<RouteComponentProps<{ seed: string }>> = ({
-	match,
-}) => {
-	const { seed, onChange, onRandomSeed } = useSeedName(match.params.seed);
+export const Seed: React.FC = () => {
+	const {
+		seed: { seed },
+	} = useContext(SeedContext);
 
 	return (
 		<div style={{ margin: "0 auto", maxWidth: 1200 }}>
-			<SeedNameInput
-				seed={seed}
-				onChange={onChange}
-				onRandomSeed={onRandomSeed}
-			/>
+			<SeedNameInput />
 
-			<ButtonDownload seed={seed} />
+			<ButtonDownload />
 
 			<Tabs
 				defaultActiveKey="settings"
 				style={{ padding: "0 16px 16px", backgroundColor: "white" }}
-				tabBarExtraContent={
-					<>
-						<ButtonShare seed={seed} />
-
-						<ModalHelp />
-					</>
-				}
+				tabBarExtraContent={[
+					<ButtonShare key="share" />,
+					<ModalHelp key="help" />,
+				]}
 			>
 				<Tabs.TabPane tab="Settings" key="settings">
 					<TabPaneSettings />
