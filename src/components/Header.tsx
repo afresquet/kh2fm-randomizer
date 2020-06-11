@@ -13,8 +13,8 @@ const navItems = [
 		title: "About",
 	},
 	{
-		url: "/changelogs",
-		title: "Changelogs",
+		url: "/changelog",
+		title: "Changelog",
 	},
 ];
 
