@@ -9,6 +9,7 @@ import React, {
 	useState,
 } from "react";
 import { SeedContext } from "../../context/seed";
+import { analytics } from "../../firebase";
 import { RewardLocationName } from "../../rewardLocations/RewardLocation";
 
 interface Props {
@@ -25,7 +26,15 @@ type T = {
 };
 
 export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
-	const { seed } = useContext(SeedContext);
+	const { seed, configuration } = useContext(SeedContext);
+
+	useEffect(() => {
+		if (configuration.name) {
+			analytics.logEvent("logs_viewed", {
+				seed: configuration.name,
+			});
+		}
+	}, [configuration]);
 
 	const [visible, setVisible] = useState<boolean>(false);
 

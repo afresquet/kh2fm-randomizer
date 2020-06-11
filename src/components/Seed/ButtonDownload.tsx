@@ -3,6 +3,7 @@ import { ClickParam } from "antd/lib/menu";
 import downloadjs from "downloadjs";
 import React, { useCallback, useContext } from "react";
 import { SeedContext } from "../../context/seed";
+import { firebase } from "../../firebase";
 import { createPnach } from "../../helpers/createPnach";
 import { GoAModModalDownload } from "../GoAMod/GoAModModalDownload";
 
@@ -14,6 +15,10 @@ export const ButtonDownload: React.FC = () => {
 			const pnach = createPnach(seed!, configuration);
 
 			downloadjs(pnach, event.key, "application/octet-stream");
+
+			firebase.analytics().logEvent("seed_downloaded", {
+				seed: configuration.name,
+			});
 		},
 		[seed, configuration]
 	);
