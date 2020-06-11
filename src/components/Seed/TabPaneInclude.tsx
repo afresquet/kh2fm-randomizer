@@ -13,12 +13,6 @@ export const TabPaneInclude: React.FC = () => {
 	return (
 		<div className="tab-pane">
 			<SettingSlider
-				title="Level Up Abilities"
-				marks={Marks.randomizing}
-				{...mapValue("abilities")}
-			/>
-
-			<SettingSlider
 				title="Donald's Abilities"
 				{...mapValue("donaldAbilities")}
 			/>
@@ -39,6 +33,12 @@ export const TabPaneInclude: React.FC = () => {
 				marks={Marks.randomizing}
 				{...mapValue("olympusCups")}
 			/>
+
+			<SettingSlider title="Hades Cup" {...mapValue("hadesCup")} />
+
+			<SettingSlider title="Lingering Will (Terra)" {...mapValue("terra")} />
+
+			<SettingSlider title="Sephiroth" {...mapValue("sephiroth")} />
 
 			<SettingSlider title="Ultima Weapon" {...mapValue("ultimaWeapon")} />
 

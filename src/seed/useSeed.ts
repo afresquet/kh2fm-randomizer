@@ -2,13 +2,10 @@ import { message } from "antd";
 import { useEffect, useState } from "react";
 import { shuffle } from "../helpers/shuffle";
 import { Configuration } from "../settings/Configuration";
-import { Leveling, Toggle } from "../settings/enums";
-import { abilities } from "./abilities";
 import { assign } from "./assign";
 import { partyMember } from "./partyMember";
 import { populate } from "./populate";
 import { Seed } from "./Seed";
-import { stats } from "./stats";
 
 type SeedState = { seed: Seed | null; error: any; loading: boolean };
 
@@ -37,21 +34,15 @@ export const useSeed = (configuration: Configuration): SeedState => {
 		});
 
 		try {
-			const seed: Seed = [];
-
 			const [rewards, rewardLocations] = populate(configuration);
 
-			const shuffledRewards = [...shuffle(rewards, configuration.name)];
-
-			assign(seed, shuffledRewards, rewardLocations, configuration);
-
-			if (configuration.settings.leveling !== Leveling.LEVEL_ONE) {
-				seed.push(...abilities(shuffledRewards, configuration));
-
-				if (configuration.settings.stats === Toggle.ON) {
-					seed.push(...stats(configuration));
-				}
-			}
+			const seed = [
+				...assign(
+					[...shuffle(rewards, configuration.name)],
+					rewardLocations,
+					configuration
+				),
+			];
 
 			if (configuration.include.donaldAbilities) {
 				seed.push(...partyMember("Donald", configuration));

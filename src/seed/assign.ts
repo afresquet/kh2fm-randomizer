@@ -1,11 +1,15 @@
 import seedrandom from "seedrandom";
+import { abilityLevels } from "../rewardLocations/levels";
 import {
 	RewardLocation,
 	RewardLocationType,
 } from "../rewardLocations/RewardLocation";
-import { Reward, RewardType } from "../rewards/Reward";
+import { replaceableRewardTypes, Reward, RewardType } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
-import { Seed } from "./Seed";
+import { Leveling, RandomizingAction, Toggle } from "../settings/enums";
+import { abilities } from "./abilities";
+import { SeedItem } from "./Seed";
+import { stats } from "./stats";
 
 const getReward = (
 	location: RewardLocation,
@@ -60,12 +64,28 @@ const getReward = (
 	);
 };
 
-export const assign = (
-	seed: Seed,
+export function* assign(
 	rewards: Reward[],
 	rewardLocations: RewardLocation[],
 	configuration: Configuration
-) => {
+): IterableIterator<SeedItem> {
+	if (
+		configuration.settings.leveling !== Leveling.LEVEL_ONE &&
+		configuration.settings.abilities === RandomizingAction.REPLACE
+	) {
+		const replaceable: Reward[] = [];
+
+		while (replaceable.length < abilityLevels.length) {
+			const reward = rewards.find(r =>
+				replaceableRewardTypes.includes(r.type)
+			)!;
+
+			replaceable.push(rewards.splice(rewards.indexOf(reward), 1)[0]);
+		}
+
+		yield* abilities(replaceable, configuration);
+	}
+
 	// Include
 	for (const location of rewardLocations) {
 		if (
@@ -74,10 +94,10 @@ export const assign = (
 		)
 			continue;
 
-		seed.push({
+		yield {
 			location,
 			reward: getReward(location, rewards, configuration, true),
-		});
+		};
 	}
 
 	// Exclude
@@ -95,10 +115,10 @@ export const assign = (
 		)
 			continue;
 
-		seed.push({
+		yield {
 			location,
 			reward: getReward(location, rewards, configuration),
-		});
+		};
 	}
 
 	// Rest
@@ -109,9 +129,19 @@ export const assign = (
 		)
 			continue;
 
-		seed.push({
+		yield {
 			location,
 			reward: rewards.shift()!,
-		});
+		};
 	}
-};
+
+	if (configuration.settings.leveling !== Leveling.LEVEL_ONE) {
+		if (configuration.settings.abilities === RandomizingAction.RANDOMIZE) {
+			yield* abilities(rewards, configuration);
+		}
+
+		if (configuration.settings.stats === Toggle.ON) {
+			yield* stats(configuration);
+		}
+	}
+}

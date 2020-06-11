@@ -5,7 +5,7 @@ import { useValueMapper } from "../../hooks/useValueMapper";
 import { GameMode } from "../../settings/enums";
 import { Settings } from "../../settings/Settings";
 import { SettingSelect } from "./SettingSelect";
-import { SettingSlider } from "./SettingSlider";
+import { Marks, SettingSlider } from "./SettingSlider";
 
 export const TabPaneSettings: React.FC = () => {
 	const { settings } = useContext(SeedContext);
@@ -24,15 +24,21 @@ export const TabPaneSettings: React.FC = () => {
 				disabled
 			/>
 
+			<SettingSlider title="Critical Mode" {...mapValue("criticalMode")} />
+
 			<SettingSlider
 				title="Leveling"
 				marks={{ 0: "Level\xa01", 1: "Level\xa050", 2: "Level\xa099" }}
 				{...mapValue("leveling")}
 			/>
 
-			<SettingSlider title="Randomize Stats" {...mapValue("stats")} />
+			<SettingSlider
+				title="Level Up Abilities"
+				marks={Marks.randomizing}
+				{...mapValue("abilities")}
+			/>
 
-			<SettingSlider title="Critical Mode" {...mapValue("criticalMode")} />
+			<SettingSlider title="Randomize Stats" {...mapValue("stats")} />
 		</div>
 	);
 };

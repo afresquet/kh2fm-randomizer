@@ -116,7 +116,22 @@ export const populate = (
 	push(twilightTownRewardLocations, configuration.worlds.twilightTown);
 
 	// Hollow Bastion
-	push(hollowBastionRewardLocations, configuration.worlds.hollowBastion);
+	push(
+		hollowBastionRewardLocations.map(location => {
+			if (location.value !== "11CE0942" || configuration.include.sephiroth)
+				return location;
+
+			return {
+				...location,
+				gameMode: {
+					[configuration.gameMode.mode]: {
+						includeType: replaceableRewardTypes,
+					},
+				},
+			};
+		}),
+		configuration.worlds.hollowBastion
+	);
 
 	// Cavern of Remembrance
 	push(
@@ -134,7 +149,22 @@ export const populate = (
 	push(olympusRewardLocations, configuration.worlds.olympus);
 
 	// Olympus Cups
-	push(olympusCupsRewardLocations, configuration.include.olympusCups);
+	push(
+		olympusCupsRewardLocations.map(location => {
+			if (location.value !== "11CE0996" || configuration.include.hadesCup)
+				return location;
+
+			return {
+				...location,
+				gameMode: {
+					[configuration.gameMode.mode]: {
+						includeType: replaceableRewardTypes,
+					},
+				},
+			};
+		}),
+		configuration.include.olympusCups
+	);
 
 	// Agrabah
 	push(agrabahRewardLocations, configuration.worlds.agrabah);
@@ -152,7 +182,25 @@ export const populate = (
 	push(prideLandsRewardLocations, configuration.worlds.prideLands);
 
 	// Disney Castle
-	push(disneyCastleRewardLocations, configuration.worlds.disneyCastle);
+	push(
+		disneyCastleRewardLocations.map(location => {
+			if (
+				!["11CE0B16", "11CE0B22"].includes(location.value) ||
+				configuration.include.terra
+			)
+				return location;
+
+			return {
+				...location,
+				gameMode: {
+					[configuration.gameMode.mode]: {
+						includeType: replaceableRewardTypes,
+					},
+				},
+			};
+		}),
+		configuration.worlds.disneyCastle
+	);
 
 	// Timeless River
 	push(timelessRiverRewardLocations, configuration.worlds.timelessRiver);
