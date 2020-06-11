@@ -1,4 +1,4 @@
-import { Layout } from "antd";
+import { BackTop, Layout } from "antd";
 import "antd/dist/antd.css";
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
@@ -10,28 +10,32 @@ import { SeedContextProvider } from "./context/seed";
 
 function App() {
 	return (
-		<Layout>
-			<Header />
+		<>
+			<Layout>
+				<Header />
 
-			<Layout.Content style={{ padding: 24 }}>
-				<Switch>
-					<Route
-						path="/seed/:seed?"
-						render={props => (
-							<SeedContextProvider>
-								<Seed {...props} />
-							</SeedContextProvider>
-						)}
-						exact
-					/>
-					<Route path="/about" component={() => null} exact />
-					<Route path="/changelog" component={Changelog} exact />
-					<Redirect to="/seed" />
-				</Switch>
-			</Layout.Content>
+				<Layout.Content style={{ padding: 24 }}>
+					<Switch>
+						<Route
+							path="/seed/:seed?"
+							render={props => (
+								<SeedContextProvider>
+									<Seed {...props} />
+								</SeedContextProvider>
+							)}
+							exact
+						/>
+						<Route path="/about" component={() => null} exact />
+						<Route path="/changelog" component={Changelog} exact />
+						<Redirect to="/seed" />
+					</Switch>
+				</Layout.Content>
 
-			<Footer />
-		</Layout>
+				<Footer />
+			</Layout>
+
+			<BackTop />
+		</>
 	);
 }
 
