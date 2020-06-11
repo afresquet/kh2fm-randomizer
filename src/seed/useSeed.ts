@@ -33,45 +33,57 @@ export const useSeed = (configuration: Configuration): SeedState => {
 			loading: true,
 		});
 
-		try {
-			const [rewards, rewardLocations] = populate(configuration);
+		const timeoutId = setTimeout(() => {
+			try {
+				const [rewards, rewardLocations] = populate(configuration);
 
-			const seed = [
-				...assign(
-					[...shuffle(rewards, configuration.name)],
-					rewardLocations,
-					configuration
-				),
-			];
+				const seed = [
+					...assign(
+						[...shuffle(rewards, configuration.name)],
+						rewardLocations,
+						configuration
+					),
+				];
 
-			if (configuration.include.donaldAbilities) {
-				seed.push(...partyMember("Donald", configuration));
+				if (configuration.include.donaldAbilities) {
+					seed.push(...partyMember("Donald", configuration));
+				}
+
+				if (configuration.include.goofyAbilities) {
+					seed.push(...partyMember("Goofy", configuration));
+				}
+
+				setState({
+					seed,
+					error: null,
+					loading: false,
+				});
+			} catch (error) {
+				console.error(error);
+
+				if (error.message === "Maximum call stack size exceeded") {
+					message.error('Too many "Replace" options!', 10);
+				} else {
+					message.error(error.message, 10);
+				}
+
+				setState({
+					seed: null,
+					error,
+					loading: false,
+				});
 			}
+		}, 250);
 
-			if (configuration.include.goofyAbilities) {
-				seed.push(...partyMember("Goofy", configuration));
-			}
-
-			setState({
-				seed,
-				error: null,
-				loading: false,
-			});
-		} catch (error) {
-			console.error(error);
-
-			if (error.message === "Maximum call stack size exceeded") {
-				message.error('Too many "Replace" options!', 10);
-			} else {
-				message.error(error.message, 10);
-			}
+		return () => {
+			clearTimeout(timeoutId);
 
 			setState({
 				seed: null,
-				error,
+				error: null,
 				loading: false,
 			});
-		}
+		};
 	}, [configuration]);
 
 	return state;
