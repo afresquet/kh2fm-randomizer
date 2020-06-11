@@ -1,10 +1,22 @@
 import { Button, Dropdown, Menu } from "antd";
-import React, { useContext } from "react";
+import { ClickParam } from "antd/lib/menu";
+import downloadjs from "downloadjs";
+import React, { useCallback, useContext } from "react";
 import { SeedContext } from "../../context/seed";
+import { createPnach } from "../../helpers/createPnach";
 import { GoAModModalDownload } from "../GoAMod/GoAModModalDownload";
 
 export const ButtonDownload: React.FC = () => {
-	const { seed } = useContext(SeedContext);
+	const { seed, configuration } = useContext(SeedContext);
+
+	const download = useCallback(
+		async (event: ClickParam) => {
+			const pnach = createPnach(seed!, configuration);
+
+			downloadjs(pnach, event.key, "application/octet-stream");
+		},
+		[seed, configuration]
+	);
 
 	return (
 		<div style={{ display: "flex", margin: "8px 0" }}>
@@ -12,7 +24,7 @@ export const ButtonDownload: React.FC = () => {
 
 			<Dropdown
 				overlay={
-					<Menu onClick={console.log}>
+					<Menu onClick={download}>
 						<Menu.Item disabled>Choose a language patch</Menu.Item>
 						<Menu.Item key="F266B00B.pnach">
 							Xeeynamo's Rev 5/Japanese (F266B00B.pnach)

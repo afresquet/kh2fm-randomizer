@@ -17,6 +17,7 @@ interface SeedContextType {
 	seed: Seed | null;
 	error: any;
 	loading: boolean;
+	configuration: Configuration;
 	seedName: {
 		name: string;
 		onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -63,6 +64,7 @@ export const SeedContextProvider: React.FC = ({ children }) => {
 		<SeedContext.Provider
 			value={{
 				...seed,
+				configuration,
 				seedName,
 				settings: [settings, setSettings],
 				worlds: [worlds, setWorld],

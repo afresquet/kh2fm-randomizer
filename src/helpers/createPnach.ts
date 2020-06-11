@@ -1,18 +1,22 @@
-// import { Configuration } from "../Configuration";
-// import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
-// import { SeedArray } from "../SeedArray";
-// import { createLine } from "./createLine";
+import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
+import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
+import { Seed } from "../seed/Seed";
+import { Configuration } from "../settings/Configuration";
+import { Leveling } from "../settings/enums";
+import { createLine } from "./createLine";
 
-// export const createPnach = (seed: SeedArray, configuration: Configuration) => {
-// 	const patches: string[] = [];
+export const createPnach = (seed: Seed, configuration: Configuration) => {
+	const patches: string[] = [];
 
-// 	if (configuration.growthAbilities) {
-// 		patches.push(removeGrowthAbilities);
-// 	}
+	if (configuration.settings.leveling === Leveling.LEVEL_FIFTY) {
+		patches.push(removeLevel99Abilities);
+	}
 
-// 	return seed.reduce((result, item) => {
-// 		return result + createLine(item.location.value, item.reward.value);
-// 	}, patches.join("\n"));
-// };
+	if (configuration.include.growthAbilities) {
+		patches.push(removeGrowthAbilities);
+	}
 
-export const x = "";
+	return seed.reduce((result, item) => {
+		return result + createLine(item.location.value, item.reward.value);
+	}, patches.join("\n"));
+};
