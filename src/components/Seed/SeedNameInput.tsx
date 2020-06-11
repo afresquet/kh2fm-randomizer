@@ -4,14 +4,14 @@ import { SeedContext } from "../../context/seed";
 
 export const SeedNameInput: React.FC = () => {
 	const {
-		seed: { seed, onChange, onRandomSeed },
+		seedName: { name, onChange, onRandomSeed },
 	} = useContext(SeedContext);
 
 	return (
 		<Input
 			id="seed"
 			placeholder="Seed name"
-			value={seed}
+			value={name}
 			onChange={onChange}
 			suffix={
 				<Button

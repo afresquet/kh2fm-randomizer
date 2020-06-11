@@ -1,26 +1,30 @@
-import { Configuration } from "../Configuration";
-import { LevelStats } from "../LevelStats";
 import { levels } from "../rewardLocations/levels";
-import { RewardLocationType } from "../rewardLocations/RewardLocation";
-import { Seed } from "./createSeed";
+import {
+	RewardLocationName,
+	RewardLocationType,
+} from "../rewardLocations/RewardLocation";
+import { Configuration } from "../settings/Configuration";
+import { LevelStats } from "./LevelStats";
+import { SeedItem } from "./Seed";
 
-export function* seedStats(
+export function* stats(
 	configuration: Configuration
-): IterableIterator<Seed> {
+): IterableIterator<SeedItem> {
 	const levelStats = new LevelStats();
 
 	for (const level of levels) {
-		levelStats.levelUp(configuration.seed, level.doubleIncrease);
+		levelStats.levelUp(configuration.name, level.doubleIncrease);
 
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
+				name: RewardLocationName.LEVEL_UP,
 				description: `LV${level.level} (Stats)`,
 				value: level.stats,
 				reward: {} as any,
 			},
 			reward: {
-				type: "stats" as any,
+				type: "Stats" as any,
 				name: `AP${levelStats.ability} DEF${levelStats.defense} MAG${levelStats.magic} STR${levelStats.strength}`,
 				value: levelStats.hexCode,
 			},

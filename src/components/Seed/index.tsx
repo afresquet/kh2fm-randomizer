@@ -1,6 +1,6 @@
 import { Tabs } from "antd";
-import React, { useContext } from "react";
-import { SeedContext } from "../../context/seed";
+import React, { useCallback, useState } from "react";
+import { RouteComponentProps } from "react-router-dom";
 import { ButtonDownload } from "./ButtonDownload";
 import { ButtonShare } from "./ButtonShare";
 import { ModalHelp } from "./ModalHelp";
@@ -9,12 +9,15 @@ import { SeedNameInput } from "./SeedNameInput";
 import { TabPaneGameModeSettings } from "./TabPaneGameModeSettings";
 import { TabPaneInclude } from "./TabPaneInclude";
 import { TabPaneSettings } from "./TabPaneSettings";
+import { TabPaneSpoilerLogs } from "./TabPaneSpoilerLogs";
 import { TabPaneWorlds } from "./TabPaneWorlds";
 
-export const Seed: React.FC = () => {
-	const {
-		seed: { seed },
-	} = useContext(SeedContext);
+export const Seed: React.FC<RouteComponentProps> = () => {
+	const [activeKey, setActiveKey] = useState("settings");
+
+	const onTabClick = useCallback((key: string) => {
+		setActiveKey(key);
+	}, []);
 
 	return (
 		<div style={{ margin: "0 auto", maxWidth: 1200 }}>
@@ -23,7 +26,8 @@ export const Seed: React.FC = () => {
 			<ButtonDownload />
 
 			<Tabs
-				defaultActiveKey="settings"
+				activeKey={activeKey}
+				onTabClick={onTabClick}
 				style={{ padding: "0 16px 16px", backgroundColor: "white" }}
 				tabBarExtraContent={[
 					<ButtonShare key="share" />,
@@ -46,8 +50,8 @@ export const Seed: React.FC = () => {
 					<TabPaneGameModeSettings />
 				</Tabs.TabPane>
 
-				<Tabs.TabPane tab="Spoiler Logs" key="spoilerLogs" disabled={!seed}>
-					spoiler logs
+				<Tabs.TabPane tab="Spoiler Logs" key="spoilerLogs">
+					<TabPaneSpoilerLogs active={activeKey === "spoilerLogs"} />
 				</Tabs.TabPane>
 			</Tabs>
 		</div>

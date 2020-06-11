@@ -1,8 +1,8 @@
 import { RewardType } from "./Reward";
 
 export const keyItemRewards = {
-	TORN_PAGE: {
-		type: RewardType.TORNPAGE,
+	TORN_PAGES: {
+		type: RewardType.TORN_PAGES,
 		name: "Torn Page",
 		value: "0020",
 	},

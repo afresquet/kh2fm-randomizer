@@ -12,7 +12,7 @@ export enum RewardType {
 	ARMOR = "Armor",
 	ACCESSORY = "Accessory",
 	MAP = "Map",
-	TORNPAGE = "Torn Page",
+	TORN_PAGES = "Torn Page",
 	REPORT = "Report",
 	RECIPE = "Recipe",
 	PROOF = "Proof",
@@ -24,3 +24,8 @@ export interface Reward {
 	name: string;
 	value: string;
 }
+
+export const replaceableRewardTypes = [
+	RewardType.SYNTH_MATERIAL,
+	RewardType.MAP,
+];

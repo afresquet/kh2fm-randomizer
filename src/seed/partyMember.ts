@@ -1,14 +1,14 @@
-import { Configuration } from "../Configuration";
+import { shuffle } from "../helpers/shuffle";
 import { donaldRewardLocations } from "../rewardLocations/donald";
 import { goofyRewardLocations } from "../rewardLocations/goofy";
 import { RewardLocation } from "../rewardLocations/RewardLocation";
-import { Seed } from "./createSeed";
-import { shuffle } from "./shuffle";
+import { Configuration } from "../settings/Configuration";
+import { SeedItem } from "./Seed";
 
-export function* seedPartyMember(
+export function* partyMember(
 	partyMember: "Donald" | "Goofy",
 	configuration: Configuration
-): IterableIterator<Seed> {
+): IterableIterator<SeedItem> {
 	let locations: RewardLocation[] = [];
 
 	if (partyMember === "Donald") {
@@ -17,10 +17,12 @@ export function* seedPartyMember(
 		locations = goofyRewardLocations;
 	}
 
-	const rewards = shuffle(
-		locations.map(location => location.reward),
-		configuration.seed
-	);
+	const rewards = [
+		...shuffle(
+			locations.map(location => location.reward),
+			configuration.name
+		),
+	];
 
 	for (const location of locations) {
 		yield {

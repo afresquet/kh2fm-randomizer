@@ -4,9 +4,7 @@ import { SeedContext } from "../../context/seed";
 import { GoAModModalDownload } from "../GoAMod/GoAModModalDownload";
 
 export const ButtonDownload: React.FC = () => {
-	const {
-		seed: { seed },
-	} = useContext(SeedContext);
+	const { seed } = useContext(SeedContext);
 
 	return (
 		<div style={{ display: "flex", margin: "8px 0" }}>

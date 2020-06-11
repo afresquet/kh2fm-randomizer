@@ -14,9 +14,15 @@ function App() {
 
 			<Layout.Content style={{ padding: 24 }}>
 				<Switch>
-					<SeedContextProvider>
-						<Route path="/seed/:seed?" component={Seed} exact />
-					</SeedContextProvider>
+					<Route
+						path="/seed/:seed?"
+						render={props => (
+							<SeedContextProvider>
+								<Seed {...props} />
+							</SeedContextProvider>
+						)}
+						exact
+					/>
 					<Route path="/about" component={() => null} exact />
 					<Route path="/changelogs" component={() => null} exact />
 					<Redirect to="/seed" />

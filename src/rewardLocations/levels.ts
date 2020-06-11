@@ -1144,3 +1144,31 @@ export const abilityLevels: Level[] = levels.filter(
 		level.abilities.staff.reward &&
 		level.abilities.shield.reward
 );
+
+export const level50levels = [
+	2,
+	4,
+	7,
+	9,
+	10,
+	12,
+	14,
+	15,
+	17,
+	20,
+	23,
+	25,
+	28,
+	30,
+	32,
+	34,
+	36,
+	39,
+	41,
+	44,
+	46,
+	48,
+	50,
+];
+
+export const level50delete = [31, 33, 47, 49, 53, 59, 65, 73, 85, 99];

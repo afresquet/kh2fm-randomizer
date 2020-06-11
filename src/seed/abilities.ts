@@ -1,18 +1,26 @@
-import { Configuration } from "../Configuration";
-import { abilityLevels, levels } from "../rewardLocations/levels";
-import { RewardLocationType } from "../rewardLocations/RewardLocation";
+import {
+	abilityLevels,
+	level50levels,
+	levels,
+} from "../rewardLocations/levels";
+import {
+	RewardLocationName,
+	RewardLocationType,
+} from "../rewardLocations/RewardLocation";
 import { Reward } from "../rewards/Reward";
-import { Seed } from "./createSeed";
-import { level50delete, level50levels } from "./level50Abilities";
+import { Configuration } from "../settings/Configuration";
+import { Leveling } from "../settings/enums";
+import { SeedItem } from "./Seed";
 
-export function* seedAbilities(
+export function* abilities(
 	rewards: Reward[],
 	configuration: Configuration
-): IterableIterator<Seed> {
+): IterableIterator<SeedItem> {
 	for (let i = 0; i < rewards.length; i++) {
-		const level = configuration.level50
-			? levels.find(level => level.level === level50levels[i])!
-			: abilityLevels[i];
+		const level =
+			configuration.settings.leveling === Leveling.LEVEL_FIFTY
+				? levels.find(level => level.level === level50levels[i])!
+				: abilityLevels[i];
 
 		let swordReward: any = { value: "0000" };
 		let staffReward: any = { value: "0000" };
@@ -39,6 +47,7 @@ export function* seedAbilities(
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
+				name: RewardLocationName.LEVEL_UP,
 				description: `LV${level.level} (Sword)`,
 				value: level.abilities.sword.value,
 				reward: abilityLevels[i].abilities.sword.reward!,
@@ -49,6 +58,7 @@ export function* seedAbilities(
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
+				name: RewardLocationName.LEVEL_UP,
 				description: `LV${level.level} (Staff)`,
 				value: level.abilities.staff.value,
 				reward: abilityLevels[i].abilities.staff.reward!,
@@ -59,41 +69,12 @@ export function* seedAbilities(
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
+				name: RewardLocationName.LEVEL_UP,
 				description: `LV${level.level} (Shield)`,
 				value: level.abilities.shield.value,
 				reward: abilityLevels[i].abilities.shield.reward!,
 			},
 			reward: shieldReward,
 		};
-	}
-
-	if (configuration.level50) {
-		for (const levelToDelete of level50delete) {
-			const level = levels.find(level => level.level === levelToDelete)!;
-
-			yield {
-				location: {
-					value: level.abilities.sword.value,
-					reward: {} as any,
-				} as any,
-				reward: { value: "00000000" } as any,
-			};
-
-			yield {
-				location: {
-					value: level.abilities.staff.value,
-					reward: {} as any,
-				} as any,
-				reward: { value: "00000000" } as any,
-			};
-
-			yield {
-				location: {
-					value: level.abilities.shield.value,
-					reward: {} as any,
-				} as any,
-				reward: { value: "00000000" } as any,
-			};
-		}
 	}
 }

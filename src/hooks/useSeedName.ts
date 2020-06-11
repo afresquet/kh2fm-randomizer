@@ -7,8 +7,8 @@ const generateRandomSeed = () => {
 	);
 };
 
-export const useSeedName = (name?: string) => {
-	const [seed, setSeed] = useState(name || "");
+export const useSeedName = (seedName?: string) => {
+	const [name, setSeed] = useState(seedName || "");
 
 	const onChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
 		setSeed(event.target.value);
@@ -19,7 +19,7 @@ export const useSeedName = (name?: string) => {
 	}, []);
 
 	return {
-		seed,
+		name,
 		onChange,
 		onRandomSeed,
 	};
