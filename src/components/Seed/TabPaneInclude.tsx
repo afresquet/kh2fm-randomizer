@@ -2,13 +2,17 @@ import { SliderValue } from "antd/lib/slider";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
 import { useValueMapper } from "../../hooks/useValueMapper";
+import { RandomizingAction } from "../../settings/enums";
 import { Include } from "../../settings/Include";
 import { Marks, SettingSlider } from "./SettingSlider";
 
 export const TabPaneInclude: React.FC = () => {
-	const { include } = useContext(SeedContext);
+	const {
+		include: [include, setInclude],
+		worlds: [worlds],
+	} = useContext(SeedContext);
 
-	const mapValue = useValueMapper<Include, SliderValue>(include);
+	const mapValue = useValueMapper<Include, SliderValue>([include, setInclude]);
 
 	return (
 		<div className="tab-pane">
@@ -34,11 +38,23 @@ export const TabPaneInclude: React.FC = () => {
 				{...mapValue("olympusCups")}
 			/>
 
-			<SettingSlider title="Hades Cup" {...mapValue("hadesCup")} />
+			<SettingSlider
+				title="Hades Cup"
+				{...mapValue("hadesCup")}
+				disabled={include.olympusCups !== RandomizingAction.RANDOMIZE}
+			/>
 
-			<SettingSlider title="Lingering Will (Terra)" {...mapValue("terra")} />
+			<SettingSlider
+				title="Lingering Will (Terra)"
+				{...mapValue("terra")}
+				disabled={worlds.disneyCastle !== RandomizingAction.RANDOMIZE}
+			/>
 
-			<SettingSlider title="Sephiroth" {...mapValue("sephiroth")} />
+			<SettingSlider
+				title="Sephiroth"
+				{...mapValue("sephiroth")}
+				disabled={worlds.hollowBastion !== RandomizingAction.RANDOMIZE}
+			/>
 
 			<SettingSlider title="Ultima Weapon" {...mapValue("ultimaWeapon")} />
 
