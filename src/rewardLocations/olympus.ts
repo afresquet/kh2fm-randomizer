@@ -198,9 +198,9 @@ export const olympusRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.POPUP,
 		name: RewardLocationName.OLYMPUS,
-		description: "Secret Ansem's Report 8 (OC Demyx)",
+		description: "Secret Ansem's Report 5 (OC Demyx)",
 		value: "11CE09D2",
-		reward: Rewards.REPORT_EIGHT,
+		reward: Rewards.REPORT_FIVE,
 	},
 	{
 		type: RewardLocationType.POPUP,

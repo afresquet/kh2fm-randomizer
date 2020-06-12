@@ -65,13 +65,6 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.POPUP,
 		name: RewardLocationName.OLYMPUS_CUPS,
-		description: "Orichalcum+ (Goddess of Fate Cup)",
-		value: "11CE095A",
-		reward: Rewards.ORICHALCUM_PLUS,
-	},
-	{
-		type: RewardLocationType.POPUP,
-		name: RewardLocationName.OLYMPUS_CUPS,
 		description: "Hades Cup Trophy (Hades Cup)",
 		value: "11CE0996",
 		reward: Rewards.HADES_CUP_TROPHY,

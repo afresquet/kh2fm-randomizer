@@ -4,6 +4,13 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.1.1",
+		changes: [
+			"Fixed Olympus Demyx's reward",
+			"Fixed Goddess of Fate Cup having three rewards",
+		],
+	},
+	{
 		version: "0.1.0",
 		changes: [
 			"UI Redesign",
@@ -67,6 +74,10 @@ export const Changelog: React.FC = () => {
 										To make sure you are updated, you can force reload with
 										clearing cache by clicking on the button below. Make sure
 										you have an internet connection before doing so.
+									</p>
+									<p>
+										If it doesn't work, search for how to force reload with
+										clearing cache on your browser.
 									</p>
 								</Modal>
 							</>
