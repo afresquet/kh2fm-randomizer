@@ -22,8 +22,15 @@ export const About: React.FC = () => {
 			</p>
 
 			<p>
-				Curretly it supports the Garden of Assemblage mod by Sonicshadowsilver2,
-				support for the base game will come in the future.
+				Currently it supports the{" "}
+				<Typography.Link
+					href="https://docs.google.com/document/d/1GYjEnrM_TIk7qyO75clPLYD-_nP5wTR7K6SE-Wn-QCg/edit"
+					target="_blank"
+				>
+					Garden of Assemblage mod
+				</Typography.Link>{" "}
+				by Sonicshadowsilver2, support for the base game will come in the
+				future.
 			</p>
 
 			<p>

@@ -8,7 +8,7 @@ const versions: { version: string; changes: string[] }[] = [
 		changes: [
 			"UI Redesign",
 			"Option to replace locations with useless rewards",
-			"Extra options (Terra, Sephiroth, Promise Charm, etc)",
+			"Extra options (Terra, Sephiroth, Promise Charm, and others)",
 			"Choose your language patch before downloading the seed.",
 			"Search feature in Spoiler Logs (Ctrl+F)",
 			"Better mobile experience (lanscape mode recommended when viewing the Spoiler Logs)",

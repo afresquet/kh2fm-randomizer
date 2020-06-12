@@ -295,10 +295,16 @@ export const populate = (
 
 	if (configuration.include.synthItems === Toggle.ON) {
 		[
+			Rewards.ELIXIR,
+			Rewards.MEGA_ELIXIR,
+			Rewards.HIGH_DRIVE_RECOVERY,
 			Rewards.LUCKY_RING,
 			Rewards.SHADOW_ARCHIVE,
 			Rewards.SHOCK_CHARM,
 			Rewards.FULL_BLOOM,
+			Rewards.RIBBON,
+			Rewards.SAVE_THE_KING,
+			Rewards.SAVE_THE_QUEEN,
 		].forEach(reward => replaceWith(reward));
 	}
 
