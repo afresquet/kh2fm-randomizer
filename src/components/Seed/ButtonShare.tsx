@@ -29,9 +29,9 @@ export const ButtonShare: React.FC = () => {
 		[diff]
 	);
 
-	const url = `https://afresquet.github.io/kh2fm-randomizer/#/seed/${name}${
-		includeSettings ? params : ""
-	}`;
+	const url = `https://afresquet.github.io/kh2fm-randomizer/#/seed/${encodeURI(
+		name
+	)}${includeSettings ? params : ""}`;
 
 	const button = (
 		<Popover

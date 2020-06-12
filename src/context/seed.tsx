@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react";
-import { useParams } from "react-router-dom";
 import { useConfigQuery } from "../hooks/useConfigQuery";
 import { useSeedName } from "../hooks/useSeedName";
 import { Seed } from "../seed/Seed";
@@ -36,10 +35,9 @@ interface SeedContextType {
 export const SeedContext = React.createContext<SeedContextType>({} as any);
 
 export const SeedContextProvider: React.FC = ({ children }) => {
-	const params = useParams<{ seed: string }>();
 	const query = useConfigQuery();
 
-	const seedName = useSeedName(params.seed);
+	const seedName = useSeedName();
 
 	const [settings, setSettings] = useState<Settings>({
 		...defaultSettings,

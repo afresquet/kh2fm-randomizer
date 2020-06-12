@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const generateRandomSeed = () => {
 	return (
@@ -7,8 +8,10 @@ const generateRandomSeed = () => {
 	);
 };
 
-export const useSeedName = (seedName?: string) => {
-	const [name, setSeed] = useState(seedName || "");
+export const useSeedName = () => {
+	const params = useParams<{ seed: string }>();
+
+	const [name, setSeed] = useState(params.seed || "");
 
 	const onChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
 		setSeed(event.target.value);
