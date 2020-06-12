@@ -1,38 +1,41 @@
-import Container from "@material-ui/core/Container";
-import { makeStyles } from "@material-ui/core/styles";
+import { BackTop, Layout } from "antd";
+import "antd/dist/antd.css";
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
+import { About } from "./components/About";
+import { Changelog } from "./components/Changelog";
 import { Footer } from "./components/Footer";
-import { Generate } from "./components/Generate";
 import { Header } from "./components/Header";
 import { Seed } from "./components/Seed";
-
-const useStyles = makeStyles(theme => ({
-	content: {
-		padding: theme.spacing(3),
-		flex: "1 0 auto",
-	},
-}));
+import { SeedContextProvider } from "./context/seed";
 
 function App() {
-	const classes = useStyles();
-
 	return (
 		<>
-			<div className={classes.content}>
+			<Layout>
 				<Header />
 
-				<main>
-					<Container>
-						<Switch>
-							<Route path="/" component={Generate} exact />
-							<Route path="/seed/:seed" component={Seed} exact />
-						</Switch>
-					</Container>
-				</main>
-			</div>
+				<Layout.Content style={{ padding: 24 }}>
+					<Switch>
+						<Route
+							path="/seed/:seed?"
+							render={props => (
+								<SeedContextProvider>
+									<Seed {...props} />
+								</SeedContextProvider>
+							)}
+							exact
+						/>
+						<Route path="/about" component={About} exact />
+						<Route path="/changelog" component={Changelog} exact />
+						<Redirect to="/seed" />
+					</Switch>
+				</Layout.Content>
 
-			<Footer />
+				<Footer />
+			</Layout>
+
+			<BackTop />
 		</>
 	);
 }
