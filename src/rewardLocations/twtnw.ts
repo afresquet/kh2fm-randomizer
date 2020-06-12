@@ -142,13 +142,6 @@ export const twtnwRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.BONUS,
 		name: RewardLocationName.TWTNW,
-		description: "Betwixt and Between Nobodies",
-		value: "21D110E8",
-		reward: Rewards.SLAPSHOT,
-	},
-	{
-		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWTNW,
 		description: "Roxas",
 		value: "21D111E8",
 		reward: Rewards.COMBO_MASTER,

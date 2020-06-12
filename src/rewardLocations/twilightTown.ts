@@ -280,6 +280,13 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		reward: Rewards.ULTIMATE_RECIPE,
 	},
 	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.TWTNW,
+		description: "Betwixt and Between Nobodies",
+		value: "21D110E8",
+		reward: Rewards.SLAPSHOT,
+	},
+	{
 		type: RewardLocationType.POPUP,
 		name: RewardLocationName.TWILIGHT_TOWN,
 		description: "Munny Pouch (Mickey)",
