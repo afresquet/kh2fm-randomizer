@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
-import { useRouteMatch } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useConfigQuery } from "../hooks/useConfigQuery";
 import { useSeedName } from "../hooks/useSeedName";
 import { Seed } from "../seed/Seed";
 import { useSeed } from "../seed/useSeed";
@@ -35,17 +36,30 @@ interface SeedContextType {
 export const SeedContext = React.createContext<SeedContextType>({} as any);
 
 export const SeedContextProvider: React.FC = ({ children }) => {
-	const { params } = useRouteMatch<{ seed: string }>();
+	const params = useParams<{ seed: string }>();
+	const query = useConfigQuery();
 
 	const seedName = useSeedName(params.seed);
 
-	const [settings, setSettings] = useState<Settings>(defaultSettings);
+	const [settings, setSettings] = useState<Settings>({
+		...defaultSettings,
+		...(query.settings || {}),
+	});
 
-	const [worlds, setWorld] = useState<Worlds>(defaultWorlds);
+	const [worlds, setWorld] = useState<Worlds>({
+		...defaultWorlds,
+		...(query.worlds || {}),
+	});
 
-	const [include, setInclude] = useState<Include>(defaultInclude);
+	const [include, setInclude] = useState<Include>({
+		...defaultInclude,
+		...(query.include || {}),
+	});
 
-	const [goa, setGoA] = useState<GoAModSettings>(defaultGoAModSettings);
+	const [goa, setGoA] = useState<GoAModSettings>({
+		...defaultGoAModSettings,
+		...(query.goa || {}),
+	});
 
 	const configuration = useMemo<Configuration>(
 		() => ({
