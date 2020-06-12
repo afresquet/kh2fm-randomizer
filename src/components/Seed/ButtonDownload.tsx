@@ -8,7 +8,13 @@ import { createPnach } from "../../helpers/createPnach";
 import { GoAModModalDownload } from "../GoAMod/GoAModModalDownload";
 
 export const ButtonDownload: React.FC = () => {
-	const { seed, configuration } = useContext(SeedContext);
+	const {
+		seed,
+		loading,
+		error,
+		seedName: { name },
+		configuration,
+	} = useContext(SeedContext);
 
 	const download = useCallback(
 		async (event: ClickParam) => {
@@ -45,7 +51,10 @@ export const ButtonDownload: React.FC = () => {
 				disabled={!seed}
 			>
 				<Button type="primary" style={{ marginLeft: 4 }} block>
-					Download Seed
+					{!seed && !loading && !error && !name && "Give the Seed a name"}
+					{!seed && loading && !error && name && "Generating Seed..."}
+					{seed && !loading && !error && name && "Download Seed"}
+					{!seed && !loading && error && name && "An error occurred!"}
 				</Button>
 			</Dropdown>
 		</div>

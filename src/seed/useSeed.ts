@@ -73,7 +73,7 @@ export const useSeed = (configuration: Configuration): SeedState => {
 					loading: false,
 				});
 			}
-		}, 250);
+		}, 500);
 
 		return () => {
 			clearTimeout(timeoutId);
