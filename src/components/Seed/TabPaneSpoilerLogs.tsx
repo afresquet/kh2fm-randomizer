@@ -26,7 +26,7 @@ type T = {
 };
 
 export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
-	const { seed, configuration } = useContext(SeedContext);
+	const { seed, loading, configuration } = useContext(SeedContext);
 
 	useEffect(() => {
 		if (configuration.name) {
@@ -92,7 +92,7 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 	}, [seed]);
 
 	return (
-		<Table<T> dataSource={dataSource}>
+		<Table<T> dataSource={dataSource} loading={loading}>
 			<Table.Column<T> title="Location" dataIndex="name" key="key" />
 
 			<Table.Column<T> title="Description" dataIndex="description" key="key" />
