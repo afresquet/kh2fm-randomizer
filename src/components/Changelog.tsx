@@ -1,8 +1,12 @@
-import { Button, Card, Modal } from "antd";
-import React from "react";
+import { Button, Card, Divider, Modal, Space, Switch } from "antd";
+import React, { useCallback } from "react";
 import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
+	{
+		version: "0.1.4",
+		changes: ["Made Offline Mode optional"],
+	},
 	{
 		version: "0.1.3",
 		changes: [
@@ -40,6 +44,16 @@ const versions: { version: string; changes: string[] }[] = [
 export const Changelog: React.FC = () => {
 	const [modalVisible, toggleModalVisible] = useToggle(false);
 
+	const onOfflineMode = useCallback(() => {
+		if (localStorage.getItem("offlineMode")) {
+			localStorage.removeItem("offlineMode");
+		} else {
+			localStorage.setItem("offlineMode", "true");
+		}
+
+		window.location.reload(true);
+	}, []);
+
 	return (
 		<div style={{ margin: "0 auto", maxWidth: 1200 }}>
 			{versions.map(({ version, changes }, index) => (
@@ -49,7 +63,15 @@ export const Changelog: React.FC = () => {
 					key={version}
 					extra={
 						index === 0 ? (
-							<>
+							<Space>
+								<div>Offline Mode</div>
+								<Switch
+									checked={!!localStorage.getItem("offlineMode")}
+									onChange={onOfflineMode}
+								/>
+
+								<Divider type="vertical" />
+
 								<Button onClick={toggleModalVisible} block>
 									How to Update
 								</Button>
@@ -69,31 +91,27 @@ export const Changelog: React.FC = () => {
 											}}
 											key="submit"
 										>
-											Refresh with clearing cache
+											Refresh without cache
 										</Button>,
 									]}
 								>
 									<p>
-										Most of the times, refreshing the website should be enough
-										to ensure you are on the latest version.
+										If you are not using Offline Mode, refreshing the website
+										should give you the latest version.
 									</p>
+
 									<p>
-										However, this app gets cached for offline mode, so it could
-										be reading from cache instead of downloading the latest
-										version.
+										If you are using Offline Mode, you'll have to refresh
+										without cache. The button below attempts to do so but it
+										doesn't always work, so you'll have to search how to refresh
+										without cache on your browser.
 									</p>
+
 									<p>
-										To make sure you are updated, you can force reload with
-										clearing cache by clicking on the button below. Make sure
-										you have an internet connection before doing so.
-									</p>
-									<p>
-										If it doesn't work, search for how to force reload with
-										clearing cache on your browser. Closing and reopening your
-										browser could work too.
+										Make sure you have an internet connection before updating.
 									</p>
 								</Modal>
-							</>
+							</Space>
 						) : null
 					}
 				>
