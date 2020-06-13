@@ -89,7 +89,8 @@ export const Changelog: React.FC = () => {
 									</p>
 									<p>
 										If it doesn't work, search for how to force reload with
-										clearing cache on your browser.
+										clearing cache on your browser. Closing and reopening your
+										browser could work too.
 									</p>
 								</Modal>
 							</>
