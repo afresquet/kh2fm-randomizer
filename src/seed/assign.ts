@@ -46,11 +46,12 @@ const getReward = (
 			configuration.gameMode.mode
 		]?.excludeType?.includes(candidate.type);
 
+		const check = !excludesReward && !excludesRewardType;
+
 		if (
 			location.type === RewardLocationType.POPUP
-				? candidate.type !== RewardType.ABILITY &&
-				  (!excludesReward || !excludesRewardType)
-				: !excludesReward || !excludesRewardType
+				? candidate.type !== RewardType.ABILITY && check
+				: check
 		)
 			return rewards.splice(index, 1)[0];
 	}

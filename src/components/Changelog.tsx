@@ -4,6 +4,12 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.1.3",
+		changes: [
+			"Fixed a bug that included rewards in locations that weren't supposed to contain those rewards",
+		],
+	},
+	{
 		version: "0.1.2",
 		changes: [
 			"Moved Betwixt and Between reward from The World That Never Was to Twilight Town",
