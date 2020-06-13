@@ -110,6 +110,8 @@ export const Changelog: React.FC = () => {
 										without cache on your browser.
 									</p>
 
+									<p>You can also turn off Offline Mode and turn it back on.</p>
+
 									<p>
 										Make sure you have an internet connection before updating.
 									</p>
