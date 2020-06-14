@@ -9,6 +9,8 @@ export const ButtonShare: React.FC = () => {
 	const { seed } = useContext(SeedContext);
 	const { push } = useHistory();
 
+	const [visible, setVisible] = useState(false);
+
 	const [includeSettings, setIncludeSettings] = useState(true);
 
 	const { url, urlWithSettings: urlWithParams } = useSeedURL();
@@ -18,6 +20,8 @@ export const ButtonShare: React.FC = () => {
 	}`;
 
 	const onClick = useCallback(() => {
+		setVisible(false);
+
 		copy(link);
 
 		message.success("Link copied to the clipboard!");
@@ -29,6 +33,8 @@ export const ButtonShare: React.FC = () => {
 		<Popover
 			placement="bottomRight"
 			title="Share seed"
+			visible={visible}
+			onVisibleChange={setVisible}
 			content={
 				<Space style={{ width: 300 }} direction="vertical">
 					<Checkbox
@@ -42,6 +48,7 @@ export const ButtonShare: React.FC = () => {
 
 					<Input
 						value={link}
+						readOnly={true}
 						suffix={
 							<Button type="link" style={{ marginRight: -7 }} onClick={onClick}>
 								COPY
