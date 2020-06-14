@@ -25,7 +25,7 @@ export const olympusRewardLocations: RewardLocation[] = [
 		name: RewardLocationName.OLYMPUS,
 		description: "Passage",
 		value: "11CDFB1A",
-		reward: Rewards.MYTHRIL_SHARD,
+		reward: Rewards.MYTHRIL_STONE,
 	},
 	{
 		type: RewardLocationType.CHEST,

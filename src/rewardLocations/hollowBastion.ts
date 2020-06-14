@@ -58,14 +58,14 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		name: RewardLocationName.HOLLOW_BASTION,
 		description: "Postern",
 		value: "11CDFF76",
-		reward: Rewards.MYTHRIL_GEM,
+		reward: Rewards.CASTLE_PERIMETER_MAP,
 	},
 	{
 		type: RewardLocationType.CHEST,
 		name: RewardLocationName.HOLLOW_BASTION,
 		description: "Postern",
 		value: "11CDFF82",
-		reward: Rewards.AP_BOOST,
+		reward: Rewards.MYTHRIL_GEM,
 	},
 	{
 		type: RewardLocationType.CHEST,
