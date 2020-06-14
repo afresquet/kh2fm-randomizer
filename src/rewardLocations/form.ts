@@ -273,6 +273,16 @@ export const formRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.FORM,
 		name: RewardLocationName.FORM,
+		description: "Final LV4",
+		value: "11D1A31E",
+		reward: Rewards.FORM_BOOST,
+		gameMode: {
+			[GameMode.GOA_MOD]: { excludeType },
+		},
+	},
+	{
+		type: RewardLocationType.FORM,
+		name: RewardLocationName.FORM,
 		description: "Final LV5",
 		value: "11D1A326",
 		reward: Rewards.GLIDE_TWO,
@@ -283,8 +293,8 @@ export const formRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.FORM,
 		name: RewardLocationName.FORM,
-		description: "Final LV4",
-		value: "11D1A31E",
+		description: "Final LV6",
+		value: "11D1A32E",
 		reward: Rewards.FORM_BOOST,
 		gameMode: {
 			[GameMode.GOA_MOD]: { excludeType },
@@ -296,16 +306,6 @@ export const formRewardLocations: RewardLocation[] = [
 		description: "Final LV7",
 		value: "11D1A336",
 		reward: Rewards.GLIDE_THREE,
-		gameMode: {
-			[GameMode.GOA_MOD]: { excludeType },
-		},
-	},
-	{
-		type: RewardLocationType.FORM,
-		name: RewardLocationName.FORM,
-		description: "Final LV6",
-		value: "11D1A32E",
-		reward: Rewards.FORM_BOOST,
 		gameMode: {
 			[GameMode.GOA_MOD]: { excludeType },
 		},

@@ -5,7 +5,10 @@ import { useToggle } from "../hooks/useToggle";
 const versions: { version: string; changes: string[] }[] = [
 	{
 		version: "0.1.5",
-		changes: ["Fixed shared link"],
+		changes: [
+			"Fixed bug where Final Form wouldn't have its rewards properly handled when either Form Abilities/Growth Abilities weren't set to \"Randomize\"",
+			"Fixed shared link",
+		],
 	},
 	{
 		version: "0.1.4",
