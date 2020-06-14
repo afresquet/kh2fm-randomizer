@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.1.5",
+		changes: ["Fixed shared link"],
+	},
+	{
 		version: "0.1.4",
 		changes: [
 			"Made Offline Mode optional",

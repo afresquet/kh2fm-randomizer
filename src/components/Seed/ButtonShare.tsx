@@ -13,7 +13,7 @@ export const ButtonShare: React.FC = () => {
 
 	const { url, urlWithSettings: urlWithParams } = useSeedURL();
 
-	const link = `https://afresquet.github.io/kh2fm-randomizer/#/seed/${
+	const link = `https://afresquet.github.io/kh2fm-randomizer/#${
 		includeSettings ? urlWithParams : url
 	}`;
 
