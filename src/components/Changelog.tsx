@@ -4,6 +4,12 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.1.6",
+		changes: [
+			"Beginner/Standard/Proud now start with 48 AP Boosts to match Critical's 50 starting AP (will change this in the future when it's figured out how to change the starting AP stat)",
+		],
+	},
+	{
 		version: "0.1.5",
 		changes: [
 			"Fixed bug where Final Form wouldn't have its rewards properly handled when either Form Abilities/Growth Abilities weren't set to \"Randomize\"",
