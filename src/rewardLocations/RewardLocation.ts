@@ -49,6 +49,7 @@ export interface RewardLocation {
 	reward: Reward;
 	gameMode?: {
 		[K in GameMode]?: {
+			world?: RewardLocationName;
 			include?: Reward[];
 			includeType?: RewardType[];
 			exclude?: Reward[];

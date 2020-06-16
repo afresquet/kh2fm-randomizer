@@ -20,6 +20,11 @@ export const absentSilhouettesRewardLocations: RewardLocation[] = [
 		description: "Road to Discovery (Vexen)",
 		value: "11CE0A3E",
 		reward: Rewards.ROAD_TO_DISCOVERY,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				world: RewardLocationName.HALLOWEEN_TOWN,
+			},
+		},
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -27,6 +32,11 @@ export const absentSilhouettesRewardLocations: RewardLocation[] = [
 		description: "Strength Beyond Strength (Lexaeus)",
 		value: "11CE0A4A",
 		reward: Rewards.STRENGTH_BEYOND_STRENGTH,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				world: RewardLocationName.AGRABAH,
+			},
+		},
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -34,6 +44,11 @@ export const absentSilhouettesRewardLocations: RewardLocation[] = [
 		description: "Book of Shadows (Zexion)",
 		value: "11CE0A56",
 		reward: Rewards.BOOK_OF_SHADOWS,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				world: RewardLocationName.OLYMPUS,
+			},
+		},
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -42,7 +57,10 @@ export const absentSilhouettesRewardLocations: RewardLocation[] = [
 		value: "11CE0A62",
 		reward: Rewards.CLOAKED_THUNDER,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude: larxeneExclude },
+			[GameMode.GOA_MOD]: {
+				world: RewardLocationName.ATLANTICA,
+				exclude: larxeneExclude,
+			},
 		},
 	},
 	{
@@ -51,5 +69,10 @@ export const absentSilhouettesRewardLocations: RewardLocation[] = [
 		description: "Eternal Blossom (Marluxia)",
 		value: "11CE0A6E",
 		reward: Rewards.ETERNAL_BLOSSOM,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				world: RewardLocationName.DISNEY_CASTLE,
+			},
+		},
 	},
 ];

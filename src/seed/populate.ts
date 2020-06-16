@@ -1,4 +1,5 @@
 import seedrandom from "seedrandom";
+import { filterByWorld } from "../helpers/filterByWorld";
 import { absentSilhouettesRewardLocations } from "../rewardLocations/absentSilhouettes";
 import { agrabahRewardLocations } from "../rewardLocations/agrabah";
 import { atlanticaRewardLocations } from "../rewardLocations/atlantica";
@@ -142,13 +143,13 @@ export const populate = (
 
 	// Absent Silhouettes
 	push(
-		absentSilhouettesRewardLocations,
+		absentSilhouettesRewardLocations.filter(filterByWorld(configuration)),
 		configuration.include.absentSilhouettes
 	);
 
 	// Data Organization XIII
 	push(
-		dataOrganizationXIIIRewardLocations,
+		dataOrganizationXIIIRewardLocations.filter(filterByWorld(configuration)),
 		configuration.include.dataOrganizationXIII
 	);
 
@@ -158,9 +159,9 @@ export const populate = (
 		configuration.include.dataOrganizationXIII === RandomizingAction.VANILLA
 	) {
 		push(
-			dataOrganizationXIIIRewardLocations.filter(
-				location => location.reward === Rewards.LOST_ILLUSION
-			),
+			dataOrganizationXIIIRewardLocations
+				.filter(location => location.reward === Rewards.LOST_ILLUSION)
+				.filter(filterByWorld(configuration)),
 			RandomizingAction.RANDOMIZE
 		);
 	}

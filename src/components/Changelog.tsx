@@ -7,6 +7,7 @@ const versions: { version: string; changes: string[] }[] = [
 		version: "0.1.8",
 		changes: [
 			"Split Absent Silhouette and Data Organization XIII fights as options",
+			'AS/Datas will not be randomized if their world is not set to "Randomize"',
 		],
 	},
 	{
