@@ -27,9 +27,15 @@ export const TabPaneInclude: React.FC = () => {
 			/>
 
 			<SettingSlider
-				title="Data Organization XIII / Absent Silhouettes"
+				title="Absent Silhouettes"
 				marks={Marks.randomizing}
-				{...mapValue("organizationXIII")}
+				{...mapValue("absentSilhouettes")}
+			/>
+
+			<SettingSlider
+				title="Data Organization XIII"
+				marks={Marks.randomizing}
+				{...mapValue("dataOrganizationXIII")}
 			/>
 
 			<SettingSlider
