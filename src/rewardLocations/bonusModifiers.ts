@@ -348,7 +348,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ORGANIZATION_XIII,
+		name: RewardLocationName.ABSENT_SILHOUETTE,
 		description: "Zexion (Absent Silhouette)",
 		values: {
 			stats: "11D11152",
@@ -358,7 +358,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ORGANIZATION_XIII,
+		name: RewardLocationName.ABSENT_SILHOUETTE,
 		description: "Larxene (Absent Silhouette)",
 		values: {
 			stats: "11D111B2",
@@ -368,7 +368,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ORGANIZATION_XIII,
+		name: RewardLocationName.ABSENT_SILHOUETTE,
 		description: "Lexaeus (Absent Silhouette)",
 		values: {
 			stats: "11D11122",
@@ -378,7 +378,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ORGANIZATION_XIII,
+		name: RewardLocationName.ABSENT_SILHOUETTE,
 		description: "Marluxia (Absent Silhouette)",
 		values: {
 			stats: "11D11182",
@@ -388,7 +388,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ORGANIZATION_XIII,
+		name: RewardLocationName.ABSENT_SILHOUETTE,
 		description: "Vexen (Absent Silhouette)",
 		values: {
 			stats: "11D110F2",
