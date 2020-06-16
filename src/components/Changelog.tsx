@@ -4,6 +4,13 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.1.8",
+		changes: [
+			"Split Absent Silhouette and Data Organization XIII fights as options",
+			'AS/Datas will not be randomized if their world is not set to "Randomize"',
+		],
+	},
+	{
 		version: "0.1.7",
 		changes: [
 			"Fixed a bug where the shared link would not be properly encoded",

@@ -29,7 +29,8 @@ export enum RewardLocationName {
 	LEVEL_UP = "Level Up",
 	OLYMPUS = "Olympus Colisseum",
 	OLYMPUS_CUPS = "Olympus Colisseum (Cups)",
-	ORGANIZATION_XIII = "Data Organization XIII",
+	ABSENT_SILHOUETTE = "Absent Silhouette",
+	DATA_ORGANIZATION_XIII = "Data Organization XIII",
 	POOH = "100 Acre Wood",
 	PORT_ROYAL = "Port Royal",
 	PRIDE_LANDS = "Pride Lands",
@@ -48,6 +49,7 @@ export interface RewardLocation {
 	reward: Reward;
 	gameMode?: {
 		[K in GameMode]?: {
+			world?: RewardLocationName;
 			include?: Reward[];
 			includeType?: RewardType[];
 			exclude?: Reward[];

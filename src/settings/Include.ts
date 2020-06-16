@@ -3,7 +3,8 @@ import { RandomizingAction, Toggle } from "./enums";
 export interface Include {
 	donaldAbilities: Toggle;
 	goofyAbilities: Toggle;
-	organizationXIII: RandomizingAction;
+	absentSilhouettes: RandomizingAction;
+	dataOrganizationXIII: RandomizingAction;
 	olympusCups: RandomizingAction;
 	hadesCup: Toggle;
 	terra: Toggle;
@@ -19,7 +20,8 @@ export interface Include {
 export const defaultInclude: Include = {
 	donaldAbilities: Toggle.ON,
 	goofyAbilities: Toggle.ON,
-	organizationXIII: RandomizingAction.RANDOMIZE,
+	absentSilhouettes: RandomizingAction.RANDOMIZE,
+	dataOrganizationXIII: RandomizingAction.RANDOMIZE,
 	olympusCups: RandomizingAction.RANDOMIZE,
 	hadesCup: Toggle.OFF,
 	terra: Toggle.ON,
