@@ -17,7 +17,7 @@ export const useSeedURL = (): { url: string; urlWithSettings: string } => {
 
 				const delimiter = result === "" ? "?" : "&";
 
-				const string = encodeURI(JSON.stringify(values));
+				const string = encodeURIComponent(JSON.stringify(values));
 
 				return `${result}${delimiter}${key}=${string}`;
 			}, ""),
@@ -25,7 +25,7 @@ export const useSeedURL = (): { url: string; urlWithSettings: string } => {
 	);
 
 	return {
-		url: `/seed/${encodeURI(name)}`,
-		urlWithSettings: `/seed/${encodeURI(name)}${params}`,
+		url: `/seed/${encodeURIComponent(name)}`,
+		urlWithSettings: `/seed/${encodeURIComponent(name)}${params}`,
 	};
 };
