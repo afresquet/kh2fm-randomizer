@@ -55,6 +55,13 @@ export const ModalHelp: React.FC = () => {
 					You can check the 'Spoiler Logs' to see where everything was
 					randomized to.
 				</p>
+
+				<p>
+					<b>Experimental</b> features are still in development, so keep that in
+					mind when enabling them. They will always be turned off by default and
+					they will not be added to the Share url, so you'll have to enable them
+					manually.
+				</p>
 			</Modal>
 		</>
 	);
