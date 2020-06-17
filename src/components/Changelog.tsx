@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.0e1",
+		changes: ["Fixed HP/MP modifier values"],
+	},
+	{
 		version: "0.2.0",
 		changes: [
 			"Added Experimental tab",

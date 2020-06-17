@@ -39,7 +39,13 @@ export const bonusModifiers = (configuration: Configuration): string => {
 			const index = Math.floor(seeder() * upgrades.length);
 			const bonus = upgrades.splice(index, 1)[0];
 
-			values[bonus] += 1;
+			if (bonus === BonusModifier.HP) {
+				values[bonus] += 5;
+			} else if (bonus === BonusModifier.MP) {
+				values[bonus] += 10;
+			} else {
+				values[bonus] += 1;
+			}
 		}
 
 		result += createLine(
