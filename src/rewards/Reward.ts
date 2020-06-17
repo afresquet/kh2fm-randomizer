@@ -3,7 +3,6 @@ export enum RewardType {
 	SHIELD = "Shield",
 	STAFF = "Staff",
 	ABILITY = "Ability",
-	LIMIT = "Limit",
 	SPELL = "Spell",
 	FORM = "Form",
 	SUMMON = "Summon",
