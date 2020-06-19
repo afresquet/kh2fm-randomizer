@@ -10,9 +10,15 @@ export const TabPaneExperimental: React.FC = () => {
 
 	const mapValue = useValueMapper<Experimental, SliderValue>(experimental);
 
-	return (
+	const settings: { title: string; key: keyof Experimental }[] = [];
+
+	return settings.length > 0 ? (
 		<div className="tab-pane">
-			<SettingSlider title="Bonus Modifiers" {...mapValue("bonusModifiers")} />
+			{settings.map(({ title, key }) => (
+				<SettingSlider title={title} {...mapValue(key)} key={key} />
+			))}
 		</div>
+	) : (
+		<div>No experimental features currently available.</div>
 	);
 };

@@ -13,27 +13,31 @@ export function* bonusModifiers(
 	configuration: Configuration
 ): IterableIterator<SeedItem> {
 	const filterer = filterByWorld(configuration);
-	const activeLocations = bonusModifiersRewardLocations.filter(location => {
-		if (
-			configuration.include.absentSilhouettes !== RandomizingAction.RANDOMIZE &&
-			location.name === RewardLocationName.ABSENT_SILHOUETTE
-		)
-			return false;
+	const activeLocations = bonusModifiersRewardLocations
 
-		if (
-			configuration.include.terra === Toggle.OFF &&
-			location.description === "Lingering Will"
-		)
-			return false;
+		.filter(location => {
+			if (
+				configuration.include.absentSilhouettes !==
+					RandomizingAction.RANDOMIZE &&
+				location.name === RewardLocationName.ABSENT_SILHOUETTE
+			)
+				return false;
 
-		if (
-			configuration.include.sephiroth === Toggle.OFF &&
-			location.description === "Sephiroth"
-		)
-			return false;
+			if (
+				configuration.include.terra === Toggle.OFF &&
+				location.description === "Lingering Will"
+			)
+				return false;
 
-		return filterer(location as any);
-	});
+			if (
+				configuration.include.sephiroth === Toggle.OFF &&
+				location.description === "Sephiroth"
+			)
+				return false;
+
+			return filterer(location as any);
+		})
+		.reverse();
 
 	const upgrades = [
 		...shuffle(

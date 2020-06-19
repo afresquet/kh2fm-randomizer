@@ -47,7 +47,7 @@ export const useSeed = (configuration: Configuration): SeedState => {
 					),
 				];
 
-				if (configuration.experimental.bonusModifiers === Toggle.ON) {
+				if (configuration.settings.bonusModifiers === Toggle.ON) {
 					seed.push(...bonusModifiers(configuration));
 				}
 
