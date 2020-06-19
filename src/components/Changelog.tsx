@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.1",
+		changes: ["Fixed Level Up Abilities setting not working properly"],
+	},
+	{
 		version: "0.2.0e1",
 		changes: ["Fixed HP/MP modifier values"],
 	},
