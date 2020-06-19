@@ -1,23 +1,49 @@
 import seedrandom from "seedrandom";
+import { filterByWorld } from "../helpers/filterByWorld";
 import { shuffle } from "../helpers/shuffle";
 import { bonusModifiersRewardLocations } from "../rewardLocations/bonusModifiers";
+import { RewardLocationName } from "../rewardLocations/RewardLocation";
 import { Rewards } from "../rewards";
 import { Reward } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
+import { RandomizingAction, Toggle } from "../settings/enums";
 import { SeedItem } from "./Seed";
 
 export function* bonusModifiers(
 	configuration: Configuration
 ): IterableIterator<SeedItem> {
+	const filterer = filterByWorld(configuration);
+	const activeLocations = bonusModifiersRewardLocations.filter(location => {
+		if (
+			configuration.include.absentSilhouettes !== RandomizingAction.RANDOMIZE &&
+			location.name === RewardLocationName.ABSENT_SILHOUETTE
+		)
+			return false;
+
+		if (
+			configuration.include.terra === Toggle.OFF &&
+			location.description === "Lingering Will"
+		)
+			return false;
+
+		if (
+			configuration.include.sephiroth === Toggle.OFF &&
+			location.description === "Sephiroth"
+		)
+			return false;
+
+		return filterer(location as any);
+	});
+
 	const upgrades = [
 		...shuffle(
-			bonusModifiersRewardLocations.reduce<Reward[]>(
+			activeLocations.reduce<Reward[]>(
 				(acc, location) => acc.concat(location.bonuses),
 				[]
 			)
 		),
 	];
-	const locations = bonusModifiersRewardLocations.filter(
+	const locations = activeLocations.filter(
 		location => location.bonuses.length > 0
 	);
 
