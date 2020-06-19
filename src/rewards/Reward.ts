@@ -16,6 +16,7 @@ export enum RewardType {
 	RECIPE = "Recipe",
 	PROOF = "Proof",
 	KEY_ITEM = "Key Item",
+	BONUS_MODIFIER = "Bonus Modifier",
 }
 
 export interface Reward {

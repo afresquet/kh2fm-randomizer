@@ -1,19 +1,17 @@
 import seedrandom from "seedrandom";
-import { createLine } from "../helpers/createLine";
 import { shuffle } from "../helpers/shuffle";
-import {
-	BonusModifier,
-	bonusModifiersRewardLocations,
-} from "../rewardLocations/bonusModifiers";
+import { bonusModifiersRewardLocations } from "../rewardLocations/bonusModifiers";
+import { Rewards } from "../rewards";
+import { Reward } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
+import { SeedItem } from "./Seed";
 
-const hex = (number: number, length: number = 2): string =>
-	number.toString(16).padStart(length, "0");
-
-export const bonusModifiers = (configuration: Configuration): string => {
+export function* bonusModifiers(
+	configuration: Configuration
+): IterableIterator<SeedItem> {
 	const upgrades = [
 		...shuffle(
-			bonusModifiersRewardLocations.reduce<BonusModifier[]>(
+			bonusModifiersRewardLocations.reduce<Reward[]>(
 				(acc, location) => acc.concat(location.bonuses),
 				[]
 			)
@@ -23,45 +21,92 @@ export const bonusModifiers = (configuration: Configuration): string => {
 		location => location.bonuses.length > 0
 	);
 
-	let result = "";
-
 	for (const location of locations) {
 		const values = {
-			[BonusModifier.HP]: 0,
-			[BonusModifier.MP]: 0,
-			[BonusModifier.DRIVE]: 0,
-			[BonusModifier.ACCESSORY]: 0,
-			[BonusModifier.ARMOR]: 0,
-			[BonusModifier.ITEM]: 0,
+			[Rewards.HP_UP.name]: false,
+			[Rewards.MP_UP.name]: false,
+			[Rewards.DRIVE_UP.name]: false,
+			[Rewards.ACCESSORY_UP.name]: false,
+			[Rewards.ARMOR_UP.name]: false,
+			[Rewards.ITEM_UP.name]: false,
 		};
 
 		for (let i = 0; i < location.bonuses.length; i++) {
-			const seeder = seedrandom(
-				configuration.name + location.values.stats + location.values.slots + i
-			);
-			const index = Math.floor(seeder() * upgrades.length);
-			const bonus = upgrades.splice(index, 1)[0];
+			let iteration = 0;
+			let loop = true;
 
-			if (bonus === BonusModifier.HP) {
-				values[bonus] += 5;
-			} else if (bonus === BonusModifier.MP) {
-				values[bonus] += 10;
-			} else {
-				values[bonus] += 1;
+			while (loop) {
+				const seeder = seedrandom(
+					configuration.name +
+						location.values.stats +
+						location.values.slots +
+						i +
+						iteration
+				);
+				const index = Math.floor(seeder() * upgrades.length);
+
+				if (values[upgrades[index].name]) {
+					iteration++;
+					continue;
+				}
+
+				const bonus = upgrades.splice(index, 1)[0];
+
+				values[bonus.name] = true;
+
+				loop = false;
 			}
 		}
 
-		result += createLine(
-			location.values.stats,
-			`${hex(values[BonusModifier.MP])}${hex(values[BonusModifier.HP])}`
-		);
-		result += createLine(
-			location.values.slots,
-			`${hex(values[BonusModifier.ARMOR])}${hex(
-				values[BonusModifier.ACCESSORY]
-			)}${hex(values[BonusModifier.ITEM])}${hex(values[BonusModifier.DRIVE])}`
-		);
-	}
+		const locationRewardName = location.bonuses
+			.map(x => x.name)
+			.reduce((acc, x) => `${acc}, ${x}`);
 
-	return result;
-};
+		const rewardName = [
+			Rewards.HP_UP.name,
+			Rewards.MP_UP.name,
+			Rewards.DRIVE_UP.name,
+			Rewards.ACCESSORY_UP.name,
+			Rewards.ARMOR_UP.name,
+			Rewards.ITEM_UP.name,
+		]
+			.filter(x => values[x])
+			.reduce((acc, x) => (acc === "" ? x : `${acc}, ${x}`), "");
+
+		yield {
+			location: {
+				type: location.type,
+				name: location.name,
+				description: location.description,
+				reward: { name: locationRewardName } as any,
+				value: location.values.stats,
+			},
+			reward: {
+				name: rewardName,
+				value: `0000${values[Rewards.MP_UP.name] ? Rewards.MP_UP.value : "00"}${
+					values[Rewards.HP_UP.name] ? Rewards.HP_UP.value : "00"
+				}`,
+			} as any,
+		};
+
+		yield {
+			location: {
+				type: location.type,
+				name: location.name,
+				description: location.description,
+				reward: { name: locationRewardName } as any,
+				value: location.values.slots,
+			},
+			reward: {
+				name: rewardName,
+				value: `${
+					values[Rewards.ARMOR_UP.name] ? Rewards.ARMOR_UP.value : "00"
+				}${
+					values[Rewards.ACCESSORY_UP.name] ? Rewards.ACCESSORY_UP.value : "00"
+				}${values[Rewards.ITEM_UP.name] ? Rewards.ITEM_UP.value : "00"}${
+					values[Rewards.DRIVE_UP.name] ? Rewards.DRIVE_UP.value : "00"
+				}`,
+			} as any,
+		};
+	}
+}

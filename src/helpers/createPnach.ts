@@ -1,7 +1,6 @@
 import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
 import { startingAP } from "../patches/startingAP";
-import { bonusModifiers } from "../seed/bonusModifiers";
 import { Seed } from "../seed/Seed";
 import { Configuration } from "../settings/Configuration";
 import { Leveling, Toggle } from "../settings/enums";
@@ -20,10 +19,6 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.include.growthAbilities) {
 		patches.push(removeGrowthAbilities);
-	}
-
-	if (configuration.experimental.bonusModifiers === Toggle.ON) {
-		patches.push(bonusModifiers(configuration));
 	}
 
 	return seed.reduce((result, item) => {

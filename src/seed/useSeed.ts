@@ -2,7 +2,9 @@ import { message } from "antd";
 import { useEffect, useState } from "react";
 import { shuffle } from "../helpers/shuffle";
 import { Configuration } from "../settings/Configuration";
+import { Toggle } from "../settings/enums";
 import { assign } from "./assign";
+import { bonusModifiers } from "./bonusModifiers";
 import { partyMember } from "./partyMember";
 import { populate } from "./populate";
 import { Seed } from "./Seed";
@@ -44,6 +46,10 @@ export const useSeed = (configuration: Configuration): SeedState => {
 						configuration
 					),
 				];
+
+				if (configuration.experimental.bonusModifiers === Toggle.ON) {
+					seed.push(...bonusModifiers(configuration));
+				}
 
 				if (configuration.include.donaldAbilities) {
 					seed.push(...partyMember("Donald", configuration));
