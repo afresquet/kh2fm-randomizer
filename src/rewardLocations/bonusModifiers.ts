@@ -19,12 +19,32 @@ export const bonusModifiersRewardLocations: {
 	{
 		type: RewardLocationType.BONUS,
 		name: RewardLocationName.SIMULATED_TWILIGHT_TOWN,
+		description: "Station of Serenity Nobodies",
+		values: {
+			stats: "11D10FA2",
+			slots: "21D10FA4",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Twilight Thorn",
 		values: {
 			stats: "11D10CB2",
 			slots: "21D10CB4",
 		},
 		bonuses: [BonusModifier.HP],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.SIMULATED_TWILIGHT_TOWN,
+		description: "Axel I",
+		values: {
+			stats: "11D11272",
+			slots: "21D11274",
+		},
+		bonuses: [],
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -38,6 +58,26 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
+		name: RewardLocationName.HOLLOW_BASTION,
+		description: "Bailey Nobodies",
+		values: {
+			stats: "11D10E92",
+			slots: "21D10E94",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.LAND_OF_DRAGONS,
+		description: "Village Cave Heartless",
+		values: {
+			stats: "11D10DF2",
+			slots: "21D10DF4",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
 		name: RewardLocationName.LAND_OF_DRAGONS,
 		description: "Shan-Yu",
 		values: {
@@ -45,6 +85,16 @@ export const bonusModifiersRewardLocations: {
 			slots: "21D108C4",
 		},
 		bonuses: [BonusModifier.HP],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.BEASTS_CASTLE,
+		description: "Thresholder",
+		values: {
+			stats: "11D10752",
+			slots: "21D10754",
+		},
+		bonuses: [],
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -69,12 +119,42 @@ export const bonusModifiersRewardLocations: {
 	{
 		type: RewardLocationType.BONUS,
 		name: RewardLocationName.OLYMPUS,
+		description: "Cerberus",
+		values: {
+			stats: "11D10802",
+			slots: "21D10804",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.OLYMPUS,
+		description: "Phil's Training",
+		values: {
+			stats: "11D10FE2",
+			slots: "21D10FE4",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.OLYMPUS,
 		description: "Demyx",
 		values: {
 			stats: "11D10FF2",
 			slots: "21D10FF4",
 		},
 		bonuses: [BonusModifier.HP],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.OLYMPUS,
+		description: "Pete",
+		values: {
+			stats: "11D10822",
+			slots: "21D10824",
+		},
+		bonuses: [],
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -99,12 +179,32 @@ export const bonusModifiersRewardLocations: {
 	{
 		type: RewardLocationType.BONUS,
 		name: RewardLocationName.TIMELESS_RIVER,
+		description: "Steamboat Fight",
+		values: {
+			stats: "11D10982",
+			slots: "21D10984",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.TIMELESS_RIVER,
 		description: "Pete",
 		values: {
 			stats: "11D109B2",
 			slots: "21D109B4",
 		},
 		bonuses: [BonusModifier.HP],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.PORT_ROYAL,
+		description: "The Interceptor Pirates",
+		values: {
+			stats: "11D110B2",
+			slots: "21D110B4",
+		},
+		bonuses: [],
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -129,12 +229,42 @@ export const bonusModifiersRewardLocations: {
 	{
 		type: RewardLocationType.BONUS,
 		name: RewardLocationName.AGRABAH,
+		description: "Escort Abu",
+		values: {
+			stats: "11D10DB2",
+			slots: "21D10DB4",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.AGRABAH,
 		description: "Treasure Room Heartless",
 		values: {
 			stats: "11D10E52",
 			slots: "21D10E54",
 		},
 		bonuses: [BonusModifier.HP],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.AGRABAH,
+		description: "Volcanic Lord & Blizzard Lord",
+		values: {
+			stats: "11D10CE2",
+			slots: "21D10CE4",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.HALLOWEEN_TOWN,
+		description: "Prison Keeper",
+		values: {
+			stats: "11D109E2",
+			slots: "21D109E4",
+		},
+		bonuses: [],
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -198,6 +328,26 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
+		name: RewardLocationName.HOLLOW_BASTION,
+		description: "1,000 Heartless",
+		values: {
+			stats: "11D11062",
+			slots: "21D11064",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.LAND_OF_DRAGONS,
+		description: "Storm Rider",
+		values: {
+			stats: "11D10902",
+			slots: "21D10904",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
 		name: RewardLocationName.BEASTS_CASTLE,
 		description: "Xaldin",
 		values: {
@@ -214,7 +364,37 @@ export const bonusModifiersRewardLocations: {
 			stats: "11D10882",
 			slots: "21D10884",
 		},
-		bonuses: [BonusModifier.MP],
+		bonuses: [BonusModifier.HP],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.PORT_ROYAL,
+		description: "Grim Reaper I",
+		values: {
+			stats: "11D11022",
+			slots: "21D11024",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.PORT_ROYAL,
+		description: "Grim Reaper II",
+		values: {
+			stats: "11D10AE2",
+			slots: "21D10AE4",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.AGRABAH,
+		description: "Genie Jafar",
+		values: {
+			stats: "11D10972",
+			slots: "21D10974",
+		},
+		bonuses: [],
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -259,6 +439,16 @@ export const bonusModifiersRewardLocations: {
 	{
 		type: RewardLocationType.BONUS,
 		name: RewardLocationName.SPACE_PARANOIDS,
+		description: "Solar Sailor Heartless",
+		values: {
+			stats: "11D11072",
+			slots: "21D11074",
+		},
+		bonuses: [],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.SPACE_PARANOIDS,
 		description: "MCP",
 		values: {
 			stats: "11D10C72",
@@ -275,6 +465,16 @@ export const bonusModifiersRewardLocations: {
 			slots: "21D10FB4",
 		},
 		bonuses: [BonusModifier.HP],
+	},
+	{
+		type: RewardLocationType.BONUS,
+		name: RewardLocationName.TWILIGHT_TOWN,
+		description: "Betwixt & Between Nobodies",
+		values: {
+			stats: "11D110E2",
+			slots: "21D110E4",
+		},
+		bonuses: [],
 	},
 	{
 		type: RewardLocationType.BONUS,

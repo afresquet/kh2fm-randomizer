@@ -19,10 +19,13 @@ export const bonusModifiers = (configuration: Configuration): string => {
 			)
 		),
 	];
+	const locations = bonusModifiersRewardLocations.filter(
+		location => location.bonuses.length > 0
+	);
 
 	let result = "";
 
-	for (const location of bonusModifiersRewardLocations) {
+	for (const location of locations) {
 		const values = {
 			[BonusModifier.HP]: 0,
 			[BonusModifier.MP]: 0,
