@@ -1,6 +1,6 @@
 {
 	"name": "kh2fm-randomizer",
-	"version": "0.1.8",
+	"version": "0.2.2",
 	"private": true,
 	"homepage": "http://afresquet.github.io/kh2fm-randomizer",
 	"dependencies": {

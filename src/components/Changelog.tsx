@@ -4,6 +4,27 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.2",
+		changes: [
+			"Released Random Bonus Modifiers (HP/MP/Drive/Accessory/Armor/Item upgrades)",
+		],
+	},
+	{
+		version: "0.2.1",
+		changes: ["Fixed Level Up Abilities setting not working properly"],
+	},
+	{
+		version: "0.2.0e1",
+		changes: ["Fixed HP/MP modifier values"],
+	},
+	{
+		version: "0.2.0",
+		changes: [
+			"Added Experimental tab",
+			"Added Bonus Modifiers (HP/MP/Drive/Accessory/Armor/Item upgrades) as an experimental setting",
+		],
+	},
+	{
 		version: "0.1.8",
 		changes: [
 			"Split Absent Silhouette and Data Organization XIII fights as options",

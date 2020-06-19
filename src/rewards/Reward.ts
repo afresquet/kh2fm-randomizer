@@ -3,7 +3,6 @@ export enum RewardType {
 	SHIELD = "Shield",
 	STAFF = "Staff",
 	ABILITY = "Ability",
-	LIMIT = "Limit",
 	SPELL = "Spell",
 	FORM = "Form",
 	SUMMON = "Summon",
@@ -17,6 +16,7 @@ export enum RewardType {
 	RECIPE = "Recipe",
 	PROOF = "Proof",
 	KEY_ITEM = "Key Item",
+	BONUS_MODIFIER = "Bonus Modifier",
 }
 
 export interface Reward {

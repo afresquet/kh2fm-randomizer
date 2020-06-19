@@ -124,7 +124,7 @@ export const abilityRewards = {
 		value: "0185",
 	},
 	TRINITY_LIMIT: {
-		type: RewardType.LIMIT,
+		type: RewardType.ABILITY,
 		name: "Trinity Limit",
 		value: "00C6",
 	},
@@ -150,12 +150,12 @@ export const abilityRewards = {
 		value: "00A8",
 	},
 	DONALD_FANTASIA: {
-		type: RewardType.LIMIT,
+		type: RewardType.ABILITY,
 		name: "Fantasia (Comet)",
 		value: "00C7",
 	},
 	DONALD_FLARE_FORCE: {
-		type: RewardType.LIMIT,
+		type: RewardType.ABILITY,
 		name: "Flare Force (Duck Flare)",
 		value: "00C8",
 	},
@@ -176,12 +176,12 @@ export const abilityRewards = {
 		value: "01A9",
 	},
 	GOOFY_TORNADO_FUSION: {
-		type: RewardType.LIMIT,
+		type: RewardType.ABILITY,
 		name: "Tornado Fusion (Whirli-Goof)",
 		value: "00C9",
 	},
 	GOOFY_TEAMWORK: {
-		type: RewardType.LIMIT,
+		type: RewardType.ABILITY,
 		name: "Teamwork (Knocksmash)",
 		value: "00CA",
 	},

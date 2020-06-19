@@ -85,6 +85,11 @@ export const TabPaneSettings: React.FC = () => {
 			/>
 
 			<SettingSlider
+				title="Randomize Bonus Modifiers"
+				{...mapValue("bonusModifiers")}
+			/>
+
+			<SettingSlider
 				title="Randomize Stats"
 				disabled={settings.leveling === Leveling.LEVEL_ONE}
 				{...mapValue("stats")}
