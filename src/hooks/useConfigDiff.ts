@@ -22,7 +22,10 @@ function difference<T>(object: T, base: T) {
 	});
 }
 
-export type ConfigDiff = Omit<Configuration, "name" | "gameMode"> & {
+export type ConfigDiff = Omit<
+	Configuration,
+	"name" | "gameMode" | "experimental"
+> & {
 	goa: GoAModSettings;
 };
 

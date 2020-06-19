@@ -276,7 +276,11 @@ export const populate = (
 			});
 		}
 	} else {
-		rewards.push(...abilityLevels.map(level => level.abilities.sword.reward!));
+		if (configuration.settings.abilities !== RandomizingAction.VANILLA) {
+			rewards.push(
+				...abilityLevels.map(level => level.abilities.sword.reward!)
+			);
+		}
 
 		if (configuration.settings.criticalMode === Toggle.ON) {
 			push(criticalRewardLocations);

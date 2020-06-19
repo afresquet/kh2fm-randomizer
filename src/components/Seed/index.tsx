@@ -6,6 +6,7 @@ import { ButtonShare } from "./ButtonShare";
 import { ModalHelp } from "./ModalHelp";
 import "./Seed.css";
 import { SeedNameInput } from "./SeedNameInput";
+import { TabPaneExperimental } from "./TabPaneExperimental";
 import { TabPaneGameModeSettings } from "./TabPaneGameModeSettings";
 import { TabPaneInclude } from "./TabPaneInclude";
 import { TabPaneSettings } from "./TabPaneSettings";
@@ -48,6 +49,10 @@ export const Seed: React.FC<RouteComponentProps> = () => {
 
 				<Tabs.TabPane tab="Game Mode Settings" key="gameModeSettings">
 					<TabPaneGameModeSettings />
+				</Tabs.TabPane>
+
+				<Tabs.TabPane tab="Experimental" key="experimental">
+					<TabPaneExperimental />
 				</Tabs.TabPane>
 
 				<Tabs.TabPane tab="Spoiler Logs" key="spoilerLogs">

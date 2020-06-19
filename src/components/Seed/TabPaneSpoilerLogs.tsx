@@ -64,7 +64,8 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 
 	const dataSource = useMemo<T[] | undefined>(() => {
 		return seed
-			?.map<T>(value => ({
+			?.filter(value => value.reward.value !== "00000000")
+			.map<T>(value => ({
 				key: `${value.location.description}: ${value.location.reward.name} -> ${value.reward.name}`,
 				name: value.location.name,
 				description: value.location.description,

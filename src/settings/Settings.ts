@@ -5,6 +5,7 @@ export interface Settings {
 	leveling: Leveling;
 	abilities: RandomizingAction;
 	stats: Toggle;
+	bonusModifiers: Toggle;
 	criticalMode: Toggle;
 }
 
@@ -13,5 +14,6 @@ export const defaultSettings: Settings = {
 	leveling: Leveling.LEVEL_FIFTY,
 	abilities: RandomizingAction.RANDOMIZE,
 	stats: Toggle.ON,
+	bonusModifiers: Toggle.ON,
 	criticalMode: Toggle.ON,
 };

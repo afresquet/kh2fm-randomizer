@@ -5,6 +5,7 @@ import { Seed } from "../seed/Seed";
 import { useSeed } from "../seed/useSeed";
 import { Configuration } from "../settings/Configuration";
 import { GameMode } from "../settings/enums";
+import { defaultExperimental, Experimental } from "../settings/Experimental";
 import {
 	defaultGoAModSettings,
 	GoAModSettings,
@@ -26,6 +27,10 @@ interface SeedContextType {
 	settings: [Settings, React.Dispatch<React.SetStateAction<Settings>>];
 	worlds: [Worlds, React.Dispatch<React.SetStateAction<Worlds>>];
 	include: [Include, React.Dispatch<React.SetStateAction<Include>>];
+	experimental: [
+		Experimental,
+		React.Dispatch<React.SetStateAction<Experimental>>
+	];
 	gameMode: {
 		mode: GameMode;
 		goa: [GoAModSettings, React.Dispatch<React.SetStateAction<GoAModSettings>>];
@@ -59,15 +64,20 @@ export const SeedContextProvider: React.FC = ({ children }) => {
 		...(query.goa || {}),
 	});
 
+	const [experimental, setExperimental] = useState<Experimental>(
+		defaultExperimental
+	);
+
 	const configuration = useMemo<Configuration>(
 		() => ({
 			name: seedName.name,
 			settings,
 			worlds,
 			include,
+			experimental,
 			gameMode: { mode: settings.gameMode, goa },
 		}),
-		[seedName.name, settings, worlds, include, goa]
+		[seedName.name, settings, worlds, include, experimental, goa]
 	);
 
 	const seed = useSeed(configuration);
@@ -81,6 +91,7 @@ export const SeedContextProvider: React.FC = ({ children }) => {
 				settings: [settings, setSettings],
 				worlds: [worlds, setWorld],
 				include: [include, setInclude],
+				experimental: [experimental, setExperimental],
 				gameMode: { mode: settings.gameMode, goa: [goa, setGoA] },
 			}}
 		>
