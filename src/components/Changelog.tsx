@@ -6,6 +6,7 @@ const versions: { version: string; changes: string[] }[] = [
 	{
 		version: "0.2.3",
 		changes: [
+			"Level 1 is now possible when Critical Mode is disabled, the chests at the Garden of Assemblage will contain Scan, Guard and No Experience.",
 			"Fixed bug where if Leveling was set to Level 1 and Simulated Twilight Town was set to Vanilla there would be three copies of Guard, Scan and Aerial Recovery",
 		],
 	},

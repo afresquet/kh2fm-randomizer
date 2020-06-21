@@ -136,10 +136,47 @@ export const populate = (
 	);
 
 	// Cavern of Remembrance
-	push(
-		cavernOfRememberanceRewardLocations,
-		configuration.worlds.cavernOfRemembrance
-	);
+	if (
+		configuration.settings.criticalMode === Toggle.OFF &&
+		configuration.settings.leveling === Leveling.LEVEL_ONE
+	) {
+		push(
+			cavernOfRememberanceRewardLocations.filter(
+				location => location.description !== "Garden of Assemblage"
+			),
+			configuration.worlds.cavernOfRemembrance
+		);
+
+		const bonuses = [Rewards.SCAN, Rewards.GUARD, Rewards.NO_EXPERIENCE];
+
+		const gardenLocations = cavernOfRememberanceRewardLocations
+			.filter(location => location.description === "Garden of Assemblage")
+			.map((location, index) => ({
+				...location,
+				gameMode: {
+					...(location.gameMode || {}),
+					[configuration.gameMode.mode]: {
+						...(location.gameMode?.[configuration.gameMode.mode] || {}),
+						include: [bonuses[index]],
+					},
+				},
+			}));
+
+		push(gardenLocations, RandomizingAction.RANDOMIZE);
+
+		if (
+			configuration.worlds.simulatedTwilightTown !== RandomizingAction.VANILLA
+		) {
+			replaceWith(Rewards.NO_EXPERIENCE);
+		} else {
+			bonuses.forEach(bonus => replaceWith(bonus));
+		}
+	} else {
+		push(
+			cavernOfRememberanceRewardLocations,
+			configuration.worlds.cavernOfRemembrance
+		);
+	}
 
 	// Absent Silhouettes
 	push(
