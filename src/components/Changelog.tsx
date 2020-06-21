@@ -4,6 +4,12 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.3",
+		changes: [
+			"Fixed bug where if Leveling was set to Level 1 and Simulated Twilight Town was set to Vanilla there would be three copies of Guard, Scan and Aerial Recovery",
+		],
+	},
+	{
 		version: "0.2.2",
 		changes: [
 			"Released Random Bonus Modifiers (HP/MP/Drive/Accessory/Armor/Item upgrades)",

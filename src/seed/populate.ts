@@ -243,20 +243,7 @@ export const populate = (
 
 	// Leveling
 	if (configuration.settings.leveling === Leveling.LEVEL_ONE) {
-		for (const location of criticalRewardLocations) {
-			if (!["11D18DE4", "11D18DE6", "11D18DE0"].includes(location.value))
-				continue;
-
-			let include: Reward[] = [];
-
-			if (location.value === "11D18DE4") {
-				include.push(Rewards.SCAN);
-			} else if (location.value === "11D18DE6") {
-				include.push(Rewards.GUARD);
-			} else if (location.value === "11D18DE0") {
-				include.push(Rewards.AERIAL_RECOVERY);
-			}
-
+		if (configuration.settings.criticalMode === Toggle.ON) {
 			if (
 				configuration.worlds.simulatedTwilightTown === RandomizingAction.VANILLA
 			) {
@@ -265,15 +252,30 @@ export const populate = (
 				);
 			}
 
-			rewards.push(location.reward);
-			locations.push({
-				...location,
-				gameMode: {
-					[configuration.gameMode.mode]: {
-						include,
+			for (const location of criticalRewardLocations) {
+				if (!["11D18DE4", "11D18DE6", "11D18DE0"].includes(location.value))
+					continue;
+
+				let include: Reward[] = [];
+
+				if (location.value === "11D18DE4") {
+					include.push(Rewards.SCAN);
+				} else if (location.value === "11D18DE6") {
+					include.push(Rewards.GUARD);
+				} else if (location.value === "11D18DE0") {
+					include.push(Rewards.AERIAL_RECOVERY);
+				}
+
+				rewards.push(location.reward);
+				locations.push({
+					...location,
+					gameMode: {
+						[configuration.gameMode.mode]: {
+							include,
+						},
 					},
-				},
-			});
+				});
+			}
 		}
 	} else {
 		if (configuration.settings.abilities !== RandomizingAction.VANILLA) {
