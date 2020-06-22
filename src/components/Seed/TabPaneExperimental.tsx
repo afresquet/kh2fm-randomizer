@@ -18,7 +18,7 @@ export const TabPaneExperimental: React.FC = () => {
 		{
 			title: "Keyblade Abilities",
 			key: "keybladeAbilities",
-			marks: { 0: "Vanilla", 1: "Own pool", 2: "Randomize" },
+			marks: { 0: "Vanilla", 1: "Support", 2: "Action/Support" },
 		},
 	];
 

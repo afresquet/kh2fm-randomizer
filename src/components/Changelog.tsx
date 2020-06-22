@@ -4,6 +4,13 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.4e2",
+		changes: [
+			"Prevented Keyblades from getting growth abilities",
+			"Changed from Own pool and Randomize to Support and Action/Support",
+		],
+	},
+	{
 		version: "0.2.4e1",
 		changes: ["Added random Keyblade abilities as an experimental setting"],
 	},

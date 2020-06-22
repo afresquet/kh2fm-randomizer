@@ -1,12 +1,10 @@
 import { message } from "antd";
 import { useEffect, useState } from "react";
-import { filterByWorld } from "../helpers/filterByWorld";
 import { shuffle } from "../helpers/shuffle";
 import { donaldRewardLocations } from "../rewardLocations/donald";
 import { goofyRewardLocations } from "../rewardLocations/goofy";
-import { keybladeAbilitiesRewardLocations } from "../rewardLocations/keyblades";
 import { Configuration } from "../settings/Configuration";
-import { RandomizingAction, Toggle } from "../settings/enums";
+import { Toggle } from "../settings/enums";
 import { assign } from "./assign";
 import { bonusModifiers } from "./bonusModifiers";
 import { populate } from "./populate";
@@ -53,24 +51,6 @@ export const useSeed = (configuration: Configuration): SeedState => {
 
 				if (configuration.settings.bonusModifiers === Toggle.ON) {
 					seed.push(...bonusModifiers(configuration));
-				}
-
-				if (
-					configuration.experimental.keybladeAbilities ===
-					RandomizingAction.REPLACE
-				) {
-					seed.push(
-						...randomizePool(
-							keybladeAbilitiesRewardLocations
-								.map(({ values, ability, ...location }) => ({
-									...location,
-									value: values.ability,
-									reward: ability,
-								}))
-								.filter(filterByWorld(configuration)),
-							configuration
-						)
-					);
 				}
 
 				if (configuration.include.donaldAbilities) {

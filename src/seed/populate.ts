@@ -26,6 +26,8 @@ import { timelessRiverRewardLocations } from "../rewardLocations/timelessRiver";
 import { twilightTownRewardLocations } from "../rewardLocations/twilightTown";
 import { twtnwRewardLocations } from "../rewardLocations/twtnw";
 import { Rewards } from "../rewards";
+import { abilityRewards } from "../rewards/ability";
+import { growthAbilityRewards } from "../rewards/growthAbility";
 import { replaceableRewardTypes, Reward, RewardType } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
 import {
@@ -328,7 +330,7 @@ export const populate = (
 	}
 
 	if (
-		configuration.experimental.keybladeAbilities === RandomizingAction.RANDOMIZE
+		configuration.experimental.keybladeAbilities !== RandomizingAction.VANILLA
 	) {
 		push(
 			keybladeAbilitiesRewardLocations
@@ -339,6 +341,14 @@ export const populate = (
 					gameMode: {
 						[configuration.gameMode.mode]: {
 							includeType: RewardType.ABILITY,
+							exclude:
+								configuration.experimental.keybladeAbilities ===
+								RandomizingAction.RANDOMIZE
+									? Object.values(growthAbilityRewards)
+									: [
+											...Object.values(growthAbilityRewards),
+											...Object.values(abilityRewards).slice(0, 25),
+									  ],
 						},
 					},
 				}))
