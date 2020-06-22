@@ -57,6 +57,15 @@ export const ModalHelp: React.FC = () => {
 				</p>
 
 				<p>
+					If you encounter any issues between the GoA mod and the seed (for
+					example, no abilities on weapons), it's likely that the emulator is
+					overriding the seed with mod settings. To solve this, rename the files
+					in a way that the emulator will prioritize the seed. Can't seem to
+					find a consistent setup for this, so you'll have to see what works for
+					you by trial and error.
+				</p>
+
+				<p>
 					<b>Experimental</b> features are still in development, so keep that in
 					mind when enabling them. They will always be turned off by default and
 					they will not be added to the Share url, so you'll have to enable them
