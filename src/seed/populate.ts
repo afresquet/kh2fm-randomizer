@@ -11,6 +11,7 @@ import { disneyCastleRewardLocations } from "../rewardLocations/disneyCastle";
 import { formRewardLocations } from "../rewardLocations/form";
 import { halloweenTownRewardLocations } from "../rewardLocations/halloweenTown";
 import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
+import { keybladeAbilitiesRewardLocations } from "../rewardLocations/keyblades";
 import { landOfDragonsRewardLocations } from "../rewardLocations/landOfDragons";
 import { abilityLevels } from "../rewardLocations/levels";
 import { olympusRewardLocations } from "../rewardLocations/olympus";
@@ -25,7 +26,7 @@ import { timelessRiverRewardLocations } from "../rewardLocations/timelessRiver";
 import { twilightTownRewardLocations } from "../rewardLocations/twilightTown";
 import { twtnwRewardLocations } from "../rewardLocations/twtnw";
 import { Rewards } from "../rewards";
-import { replaceableRewardTypes, Reward } from "../rewards/Reward";
+import { replaceableRewardTypes, Reward, RewardType } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
 import {
 	GameMode,
@@ -324,6 +325,25 @@ export const populate = (
 		if (configuration.settings.criticalMode === Toggle.ON) {
 			push(criticalRewardLocations);
 		}
+	}
+
+	if (
+		configuration.experimental.keybladeAbilities === RandomizingAction.RANDOMIZE
+	) {
+		push(
+			keybladeAbilitiesRewardLocations
+				.map<RewardLocation>(({ values, ability, ...location }) => ({
+					...location,
+					value: values.ability,
+					reward: ability,
+					gameMode: {
+						[configuration.gameMode.mode]: {
+							includeType: RewardType.ABILITY,
+						},
+					},
+				}))
+				.filter(filterByWorld(configuration))
+		);
 	}
 
 	if (configuration.include.donaldAbilities === Toggle.ON) {

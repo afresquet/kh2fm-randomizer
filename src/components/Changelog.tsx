@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.4e1",
+		changes: ["Added random Keyblade abilities as an experimental setting"],
+	},
+	{
 		version: "0.2.4",
 		changes: [
 			"Removed Save the Queen and Save the King from Synth Rewards",
