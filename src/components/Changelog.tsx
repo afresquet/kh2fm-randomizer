@@ -7,6 +7,7 @@ const versions: { version: string; changes: string[] }[] = [
 		version: "0.2.4",
 		changes: [
 			"Removed Save the Queen and Save the King from Synth Rewards",
+			"Upgraded Synth Rewards to their Plus version",
 			"Added several staffs/shields with abilities to Donald and Goofy's pool (including Save the Queen+ and Save the King+)",
 		],
 	},

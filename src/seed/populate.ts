@@ -375,9 +375,9 @@ export const populate = (
 			Rewards.MEGA_ELIXIR,
 			Rewards.HIGH_DRIVE_RECOVERY,
 			Rewards.LUCKY_RING,
-			Rewards.SHADOW_ARCHIVE,
-			Rewards.FULL_BLOOM,
-			Rewards.SHOCK_CHARM,
+			Rewards.SHADOW_ARCHIVE_PLUS,
+			Rewards.FULL_BLOOM_PLUS,
+			Rewards.SHOCK_CHARM_PLUS,
 			Rewards.RIBBON,
 		].forEach(reward => replaceWith(reward));
 	}
