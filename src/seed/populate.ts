@@ -328,17 +328,26 @@ export const populate = (
 
 	if (configuration.include.donaldAbilities === Toggle.ON) {
 		[
-			Rewards.CENTURION,
-			Rewards.NOBODY_LANCE,
 			Rewards.SHAMANS_RELIC,
+			Rewards.NOBODY_LANCE,
+			Rewards.CENTURION_PLUS,
+			Rewards.SAVE_THE_QUEEN_PLUS,
+			Rewards.PRECIOUS_MUSHROOM,
+			Rewards.PRECIOUS_MUSHROOM_PLUS,
+			Rewards.PREMIUM_MUSHROOM,
 		].forEach(reward => replaceWith(reward));
 	}
 
 	if (configuration.include.goofyAbilities === Toggle.ON) {
 		[
-			Rewards.FROZEN_PRIDE,
+			Rewards.OGRE_SHIELD,
+			Rewards.FROZEN_PRIDE_PLUS,
 			Rewards.NOBODY_GUARD,
 			Rewards.AKASHIC_RECORD,
+			Rewards.SAVE_THE_KING_PLUS,
+			Rewards.MAJESTIC_MUSHROOM,
+			Rewards.MAJESTIC_MUSHROOM_PLUS,
+			Rewards.ULTIMATE_MUSHROOM,
 		].forEach(reward => replaceWith(reward));
 	}
 
@@ -367,11 +376,9 @@ export const populate = (
 			Rewards.HIGH_DRIVE_RECOVERY,
 			Rewards.LUCKY_RING,
 			Rewards.SHADOW_ARCHIVE,
-			Rewards.SHOCK_CHARM,
 			Rewards.FULL_BLOOM,
+			Rewards.SHOCK_CHARM,
 			Rewards.RIBBON,
-			Rewards.SAVE_THE_KING,
-			Rewards.SAVE_THE_QUEEN,
 		].forEach(reward => replaceWith(reward));
 	}
 

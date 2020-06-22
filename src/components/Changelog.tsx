@@ -4,6 +4,13 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.4",
+		changes: [
+			"Removed Save the Queen and Save the King from Synth Rewards",
+			"Added several staffs/shields with abilities to Donald and Goofy's pool (including Save the Queen+ and Save the King+)",
+		],
+	},
+	{
 		version: "0.2.3",
 		changes: [
 			"Level 1 is now possible when Critical Mode is disabled, the chests at the Garden of Assemblage will contain Scan, Guard and No Experience.",
