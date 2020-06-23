@@ -22,9 +22,9 @@ export const formKeybladesAbilities = [
 );
 
 export const formKeybladesStats = ([
-	[fake.values.stats, 4, 2],
-	[detectionSaber.values.stats, 5, 4],
-	[edgeOfUltima.values.stats, 3, 1],
+	[fake.values.stats, 3, 1],
+	[detectionSaber.values.stats, 4, 2],
+	[edgeOfUltima.values.stats, 5, 4],
 ] as [string, number, number][]).reduce(
 	(result, [address, strength, magic]) =>
 		result +

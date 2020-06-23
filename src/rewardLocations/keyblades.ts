@@ -255,7 +255,7 @@ export const keybladeAbilitiesRewardLocations: {
 		description: "FAKE",
 		values: {
 			ability: "11CDF3F6",
-			stats: "21CDF208",
+			stats: "21CDF3F8",
 		},
 		ability: Rewards.DEFENDER,
 	},
@@ -265,7 +265,7 @@ export const keybladeAbilitiesRewardLocations: {
 		description: "Detection Saber",
 		values: {
 			ability: "11CDF206",
-			stats: "21CDF218",
+			stats: "21CDF208",
 		},
 		ability: Rewards.SCAN,
 	},
@@ -275,7 +275,7 @@ export const keybladeAbilitiesRewardLocations: {
 		description: "Edge of Ultima",
 		values: {
 			ability: "11CDF216",
-			stats: "21CDF3F8",
+			stats: "21CDF218",
 		},
 		ability: Rewards.MP_HASTERA,
 	},
