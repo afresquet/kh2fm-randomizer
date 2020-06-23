@@ -2,7 +2,7 @@
 	"name": "kh2fm-randomizer",
 	"version": "0.2.4",
 	"private": true,
-	"homepage": "http://afresquet.github.io/kh2fm-randomizer",
+	"homepage": "https://randomizer.valaxor.com",
 	"dependencies": {
 		"@material-ui/core": "^4.10.2",
 		"antd": "^4.3.3",
