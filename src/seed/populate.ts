@@ -329,9 +329,7 @@ export const populate = (
 		}
 	}
 
-	if (
-		configuration.experimental.keybladeAbilities !== RandomizingAction.VANILLA
-	) {
+	if (configuration.include.keybladeAbilities !== RandomizingAction.VANILLA) {
 		push(
 			keybladeAbilitiesRewardLocations
 				.map<RewardLocation>(({ values, ability, ...location }) => ({
@@ -342,7 +340,7 @@ export const populate = (
 						[configuration.gameMode.mode]: {
 							includeType: RewardType.ABILITY,
 							exclude:
-								configuration.experimental.keybladeAbilities ===
+								configuration.include.keybladeAbilities ===
 								RandomizingAction.RANDOMIZE
 									? Object.values(growthAbilityRewards)
 									: [

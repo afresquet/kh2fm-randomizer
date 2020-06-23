@@ -4,6 +4,13 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.5",
+		changes: [
+			"URL changed to randomizer.valaxor.com",
+			"Random Keyblade abilities released",
+		],
+	},
+	{
 		version: "0.2.4e4",
 		changes: ["Fixed extra form keyblades base abilities"],
 	},

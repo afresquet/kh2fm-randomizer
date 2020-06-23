@@ -27,9 +27,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	patches.push(formKeybladesStats);
 
-	if (
-		configuration.experimental.keybladeAbilities === RandomizingAction.VANILLA
-	) {
+	if (configuration.include.keybladeAbilities === RandomizingAction.VANILLA) {
 		patches.push(formKeybladesAbilities);
 	}
 

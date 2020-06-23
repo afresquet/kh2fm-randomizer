@@ -14,13 +14,7 @@ export const TabPaneExperimental: React.FC = () => {
 
 	const mapValue = useValueMapper<Experimental, SliderValue>(experimental);
 
-	const settings: Setting[] = [
-		{
-			title: "Keyblade Abilities",
-			key: "keybladeAbilities",
-			marks: { 0: "Vanilla", 1: "Support", 2: "Action/Support" },
-		},
-	];
+	const settings: Setting[] = [];
 
 	return settings.length > 0 ? (
 		<div className="tab-pane">
