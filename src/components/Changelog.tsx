@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.4e4",
+		changes: ["Fixed extra form keyblades base abilities"],
+	},
+	{
 		version: "0.2.4e3",
 		changes: ["Added extra form keyblades to the pool"],
 	},
