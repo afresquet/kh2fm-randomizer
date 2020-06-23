@@ -17,6 +17,12 @@ export const TabPaneInclude: React.FC = () => {
 	return (
 		<div className="tab-pane">
 			<SettingSlider
+				title="Keyblade Abilities"
+				{...mapValue("keybladeAbilities")}
+				marks={{ 0: "Vanilla", 1: "Support", 2: "Action/Support" }}
+			/>
+
+			<SettingSlider
 				title="Donald's Abilities"
 				{...mapValue("donaldAbilities")}
 			/>
@@ -83,7 +89,7 @@ export const TabPaneInclude: React.FC = () => {
 				{...mapValue("maxGrowthAbilities")}
 			/>
 
-			<SettingSlider title="Synthesis Items" {...mapValue("synthItems")} />
+			<SettingSlider title="Synthesis Rewards" {...mapValue("synthItems")} />
 		</div>
 	);
 };

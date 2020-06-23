@@ -4,6 +4,47 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.5",
+		changes: [
+			"URL changed to randomizer.valaxor.com",
+			"Random Keyblade abilities released",
+		],
+	},
+	{
+		version: "0.2.4e4",
+		changes: ["Fixed extra form keyblades base abilities"],
+	},
+	{
+		version: "0.2.4e3",
+		changes: ["Added extra form keyblades to the pool"],
+	},
+	{
+		version: "0.2.4e2",
+		changes: [
+			"Prevented Keyblades from getting growth abilities",
+			"Changed from Own pool and Randomize to Support and Action/Support",
+		],
+	},
+	{
+		version: "0.2.4e1",
+		changes: ["Added random Keyblade abilities as an experimental setting"],
+	},
+	{
+		version: "0.2.4",
+		changes: [
+			"Removed Save the Queen and Save the King from Synth Rewards",
+			"Upgraded Synth Rewards to their Plus version",
+			"Added several staffs/shields with abilities to Donald and Goofy's pool (including Save the Queen+ and Save the King+)",
+		],
+	},
+	{
+		version: "0.2.3",
+		changes: [
+			"Level 1 is now possible when Critical Mode is disabled, the chests at the Garden of Assemblage will contain Scan, Guard and No Experience.",
+			"Fixed bug where if Leveling was set to Level 1 and Simulated Twilight Town was set to Vanilla there would be three copies of Guard, Scan and Aerial Recovery",
+		],
+	},
+	{
 		version: "0.2.2",
 		changes: [
 			"Released Random Bonus Modifiers (HP/MP/Drive/Accessory/Armor/Item upgrades)",

@@ -35,8 +35,18 @@ const getReward = (
 		const includesRewardType = location.gameMode?.[
 			configuration.gameMode.mode
 		]?.includeType?.includes(candidate.type);
+		const excludesReward = location.gameMode?.[
+			configuration.gameMode.mode
+		]?.exclude?.includes(candidate);
+		const excludesRewardType = location.gameMode?.[
+			configuration.gameMode.mode
+		]?.excludeType?.includes(candidate.type);
 
-		if (includesReward || includesRewardType)
+		if (
+			(includesReward || includesRewardType) &&
+			!excludesReward &&
+			!excludesRewardType
+		)
 			return rewards.splice(index, 1)[0];
 	} else {
 		const excludesReward = location.gameMode?.[

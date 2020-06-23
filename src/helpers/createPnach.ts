@@ -1,9 +1,13 @@
+import {
+	formKeybladesAbilities,
+	formKeybladesStats,
+} from "../patches/formKeyblades";
 import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
 import { startingAP } from "../patches/startingAP";
 import { Seed } from "../seed/Seed";
 import { Configuration } from "../settings/Configuration";
-import { Leveling, Toggle } from "../settings/enums";
+import { Leveling, RandomizingAction, Toggle } from "../settings/enums";
 import { createLine } from "./createLine";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
@@ -19,6 +23,12 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.include.growthAbilities) {
 		patches.push(removeGrowthAbilities);
+	}
+
+	patches.push(formKeybladesStats);
+
+	if (configuration.include.keybladeAbilities === RandomizingAction.VANILLA) {
+		patches.push(formKeybladesAbilities);
 	}
 
 	return seed.reduce((result, item) => {

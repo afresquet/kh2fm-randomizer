@@ -11,6 +11,7 @@ import { disneyCastleRewardLocations } from "../rewardLocations/disneyCastle";
 import { formRewardLocations } from "../rewardLocations/form";
 import { halloweenTownRewardLocations } from "../rewardLocations/halloweenTown";
 import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
+import { keybladeAbilitiesRewardLocations } from "../rewardLocations/keyblades";
 import { landOfDragonsRewardLocations } from "../rewardLocations/landOfDragons";
 import { abilityLevels } from "../rewardLocations/levels";
 import { olympusRewardLocations } from "../rewardLocations/olympus";
@@ -25,7 +26,9 @@ import { timelessRiverRewardLocations } from "../rewardLocations/timelessRiver";
 import { twilightTownRewardLocations } from "../rewardLocations/twilightTown";
 import { twtnwRewardLocations } from "../rewardLocations/twtnw";
 import { Rewards } from "../rewards";
-import { replaceableRewardTypes, Reward } from "../rewards/Reward";
+import { abilityRewards } from "../rewards/ability";
+import { growthAbilityRewards } from "../rewards/growthAbility";
+import { replaceableRewardTypes, Reward, RewardType } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
 import {
 	GameMode,
@@ -136,10 +139,47 @@ export const populate = (
 	);
 
 	// Cavern of Remembrance
-	push(
-		cavernOfRememberanceRewardLocations,
-		configuration.worlds.cavernOfRemembrance
-	);
+	if (
+		configuration.settings.criticalMode === Toggle.OFF &&
+		configuration.settings.leveling === Leveling.LEVEL_ONE
+	) {
+		push(
+			cavernOfRememberanceRewardLocations.filter(
+				location => location.description !== "Garden of Assemblage"
+			),
+			configuration.worlds.cavernOfRemembrance
+		);
+
+		const bonuses = [Rewards.SCAN, Rewards.GUARD, Rewards.NO_EXPERIENCE];
+
+		const gardenLocations = cavernOfRememberanceRewardLocations
+			.filter(location => location.description === "Garden of Assemblage")
+			.map((location, index) => ({
+				...location,
+				gameMode: {
+					...(location.gameMode || {}),
+					[configuration.gameMode.mode]: {
+						...(location.gameMode?.[configuration.gameMode.mode] || {}),
+						include: [bonuses[index]],
+					},
+				},
+			}));
+
+		push(gardenLocations, RandomizingAction.RANDOMIZE);
+
+		if (
+			configuration.worlds.simulatedTwilightTown !== RandomizingAction.VANILLA
+		) {
+			replaceWith(Rewards.NO_EXPERIENCE);
+		} else {
+			bonuses.forEach(bonus => replaceWith(bonus));
+		}
+	} else {
+		push(
+			cavernOfRememberanceRewardLocations,
+			configuration.worlds.cavernOfRemembrance
+		);
+	}
 
 	// Absent Silhouettes
 	push(
@@ -243,20 +283,7 @@ export const populate = (
 
 	// Leveling
 	if (configuration.settings.leveling === Leveling.LEVEL_ONE) {
-		for (const location of criticalRewardLocations) {
-			if (!["11D18DE4", "11D18DE6", "11D18DE0"].includes(location.value))
-				continue;
-
-			let include: Reward[] = [];
-
-			if (location.value === "11D18DE4") {
-				include.push(Rewards.SCAN);
-			} else if (location.value === "11D18DE6") {
-				include.push(Rewards.GUARD);
-			} else if (location.value === "11D18DE0") {
-				include.push(Rewards.AERIAL_RECOVERY);
-			}
-
+		if (configuration.settings.criticalMode === Toggle.ON) {
 			if (
 				configuration.worlds.simulatedTwilightTown === RandomizingAction.VANILLA
 			) {
@@ -265,15 +292,30 @@ export const populate = (
 				);
 			}
 
-			rewards.push(location.reward);
-			locations.push({
-				...location,
-				gameMode: {
-					[configuration.gameMode.mode]: {
-						include,
+			for (const location of criticalRewardLocations) {
+				if (!["11D18DE4", "11D18DE6", "11D18DE0"].includes(location.value))
+					continue;
+
+				let include: Reward[] = [];
+
+				if (location.value === "11D18DE4") {
+					include.push(Rewards.SCAN);
+				} else if (location.value === "11D18DE6") {
+					include.push(Rewards.GUARD);
+				} else if (location.value === "11D18DE0") {
+					include.push(Rewards.AERIAL_RECOVERY);
+				}
+
+				rewards.push(location.reward);
+				locations.push({
+					...location,
+					gameMode: {
+						[configuration.gameMode.mode]: {
+							include,
+						},
 					},
-				},
-			});
+				});
+			}
 		}
 	} else {
 		if (configuration.settings.abilities !== RandomizingAction.VANILLA) {
@@ -287,19 +329,53 @@ export const populate = (
 		}
 	}
 
+	if (configuration.include.keybladeAbilities !== RandomizingAction.VANILLA) {
+		push(
+			keybladeAbilitiesRewardLocations
+				.map<RewardLocation>(({ values, ability, ...location }) => ({
+					...location,
+					value: values.ability,
+					reward: ability,
+					gameMode: {
+						[configuration.gameMode.mode]: {
+							includeType: RewardType.ABILITY,
+							exclude:
+								configuration.include.keybladeAbilities ===
+								RandomizingAction.RANDOMIZE
+									? Object.values(growthAbilityRewards)
+									: [
+											...Object.values(growthAbilityRewards),
+											...Object.values(abilityRewards).slice(0, 25),
+									  ],
+						},
+					},
+				}))
+				.filter(filterByWorld(configuration))
+		);
+	}
+
 	if (configuration.include.donaldAbilities === Toggle.ON) {
 		[
-			Rewards.CENTURION,
-			Rewards.NOBODY_LANCE,
 			Rewards.SHAMANS_RELIC,
+			Rewards.NOBODY_LANCE,
+			Rewards.CENTURION_PLUS,
+			Rewards.SAVE_THE_QUEEN_PLUS,
+			Rewards.PRECIOUS_MUSHROOM,
+			Rewards.PRECIOUS_MUSHROOM_PLUS,
+			Rewards.PREMIUM_MUSHROOM,
 		].forEach(reward => replaceWith(reward));
 	}
 
 	if (configuration.include.goofyAbilities === Toggle.ON) {
 		[
-			Rewards.FROZEN_PRIDE,
+			Rewards.OGRE_SHIELD,
+			Rewards.FROZEN_PRIDE_PLUS,
 			Rewards.NOBODY_GUARD,
 			Rewards.AKASHIC_RECORD,
+			Rewards.SAVE_THE_KING_PLUS,
+			Rewards.MAJESTIC_MUSHROOM,
+			Rewards.MAJESTIC_MUSHROOM_PLUS,
+			Rewards.ULTIMATE_MUSHROOM,
 		].forEach(reward => replaceWith(reward));
 	}
 
@@ -327,12 +403,10 @@ export const populate = (
 			Rewards.MEGA_ELIXIR,
 			Rewards.HIGH_DRIVE_RECOVERY,
 			Rewards.LUCKY_RING,
-			Rewards.SHADOW_ARCHIVE,
-			Rewards.SHOCK_CHARM,
-			Rewards.FULL_BLOOM,
+			Rewards.SHADOW_ARCHIVE_PLUS,
+			Rewards.FULL_BLOOM_PLUS,
+			Rewards.SHOCK_CHARM_PLUS,
 			Rewards.RIBBON,
-			Rewards.SAVE_THE_KING,
-			Rewards.SAVE_THE_QUEEN,
 		].forEach(reward => replaceWith(reward));
 	}
 

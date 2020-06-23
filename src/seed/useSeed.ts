@@ -1,12 +1,14 @@
 import { message } from "antd";
 import { useEffect, useState } from "react";
 import { shuffle } from "../helpers/shuffle";
+import { donaldRewardLocations } from "../rewardLocations/donald";
+import { goofyRewardLocations } from "../rewardLocations/goofy";
 import { Configuration } from "../settings/Configuration";
 import { Toggle } from "../settings/enums";
 import { assign } from "./assign";
 import { bonusModifiers } from "./bonusModifiers";
-import { partyMember } from "./partyMember";
 import { populate } from "./populate";
+import { randomizePool } from "./randomizePool";
 import { Seed } from "./Seed";
 
 type SeedState = { seed: Seed | null; error: any; loading: boolean };
@@ -52,11 +54,11 @@ export const useSeed = (configuration: Configuration): SeedState => {
 				}
 
 				if (configuration.include.donaldAbilities) {
-					seed.push(...partyMember("Donald", configuration));
+					seed.push(...randomizePool(donaldRewardLocations, configuration));
 				}
 
 				if (configuration.include.goofyAbilities) {
-					seed.push(...partyMember("Goofy", configuration));
+					seed.push(...randomizePool(goofyRewardLocations, configuration));
 				}
 
 				setState({
