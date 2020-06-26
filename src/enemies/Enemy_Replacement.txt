@@ -1,0 +1,1544 @@
+Roxas World
+
+
+11C36D8C | Seifer (Has to be won) | Seifer (Tutorial)
+ 
+11C36EC0 | Seifer I (Boss) | Seifer (Day 1)
+ 
+11C443A4 | Dusk | Dusk (1st Fight with Struggle Bat)
+ 
+11C444D8 | Dusk | Dusk (1st Fight with Kingdom Key)
+ 
+11C36FF4 | Dusk | Dusk (3rd Day; Sandlot)
+ 
+11C58C0C | Dusk | Station of Serenity Nobodies
+11C58C4C | Dusk | Station of Serenity Nobodies
+11C58C8C | Dusk | Station of Serenity Nobodies
+ 
+11C59E24 | Twilight-Thorn | Twilight Thorn Boss Fight
+ 
+11C269AC | Hayner | Hayner (Struggle Tournament)
+ 
+11C26BF0 | Vivi | Vivi (Struggle Tournament)
+ 
+11C26D24 | Dusk | Sandlot (Struggle Tournament) Nobodies
+11C26D64 | Dusk | Sandlot (Struggle Tournament) Nobodies
+11C26DA4 | Dusk | Sandlot (Struggle Tournament) Nobodies
+ 
+11C26ED8 | Axel I | Axel I Boss Fight
+ 
+11C2700C | Setzer | Setzer (Struggle Tournament)
+ 
+11C375E4 | Seifer II (Boss) | Seifer (Day 4)
+ 
+11C58B68 | Vivi I | Vivi Clones
+11C58BA8 | Vivi II | Vivi Clones
+11C58BE8 | Vivi III | Vivi Clones
+11C58C28 | Vivi IV | Vivi Clones
+11C58C68 | Vivi V | Vivi Clones
+11C58CA8 | Vivi VI | Vivi Clones
+11C58CE8 | Vivi VII | Vivi Clones
+11C58D28 | Vivi VIII | Vivi Clones
+11C58D68 | Vivi IX | Vivi Clones
+11C58DA8 | Vivi X | Vivi Clones
+11C58DE8 | Vivi XI | Vivi Clones
+11C58E28 | Vivi XII | Vivi Clones
+11C58E68 | Vivi XIII | Vivi Clones
+11C58EA8 | Vivi XIV | Vivi Clones
+ 
+11C53F9C | Shadow Roxas | Shadow Roxas (7 Wonders)
+ 
+11C509BC | Trash Can 1 | Sunset Hill Bag Mini-Game
+11C509FC | Trash Can 2 | Sunset Hill Bag Mini-Game
+11C50A3C | Trash Can 3 | Sunset Hill Bag Mini-Game
+ 
+11C50104 | Assassin | Back Alley Nobodies
+11C50144 | Dusk | Back Alley Nobodies
+11C50184 | Dusk | Back Alley Nobodies
+ 
+11C55B94 | Dusk | Mansion: Basement Hall Nobodies
+11C55BD4 | Dusk | Mansion: Basement Hall Nobodies
+11C55C14 | Dusk | Mansion: Basement Hall Nobodies
+11C55C54 | Dusk | Mansion: Basement Hall Nobodies
+11C55C94 | Assassin | Mansion: Basement Hall Nobodies
+11C55CD4 | Assassin | Mansion: Basement Hall Nobodies
+ 
+11C5AF88 | Axel II | Axel II Boss Fight
+
+
+Twilight Town - 1st visit
+
+
+11C30808 | Dusk | Station Plaza Nobodies
+11C30848 | Dusk | Station Plaza Nobodies
+11C30888 | Dusk | Station Plaza Nobodies
+11C308C8 | Dusk | Station Plaza Nobodies
+11C30908 | Dusk | Station Plaza Nobodies
+11C30948 | Creeper | Station Plaza Nobodies
+11C30988 | Creeper | Station Plaza Nobodies
+11C309C8 | Creeper | Station Plaza Nobodies
+11C30A08 | Creeper | Station Plaza Nobodies
+11C30A48 | Dusk | Station Plaza Nobodies
+11C30A88 | Dusk | Station Plaza Nobodies
+11C30AC8 | Dusk | Station Plaza Nobodies
+11C30B08 | Dusk | Station Plaza Nobodies
+11C30B08 | Dusk | Station Plaza Nobodies
+11C30B48 | Dusk | Station Plaza Nobodies
+11C30C24 | Creeper | Station Plaza Nobodies
+11C30C64 | Creeper | Station Plaza Nobodies
+11C30CA4 | Creeper | Station Plaza Nobodies
+11C30CE4 | Creeper | Station Plaza Nobodies
+11C30D24 | Creeper | Station Plaza Nobodies
+ 
+11C503D8 | Shadow | The Tower Heartless
+11C50418 | Shadow | The Tower Heartless
+11C50458 | Shadow | The Tower Heartless
+11C50498 | Shadow | The Tower Heartless
+11C50504 | Shadow | The Tower Heartless
+11C50544 | Shadow | The Tower Heartless
+11C50584 | Shadow | The Tower Heartless
+11C505C4 | Shadow | The Tower Heartless
+11C50604 | Shadow | The Tower Heartless
+ 
+11C5B140 | Shadow | Tower: Star Chamber Heartless
+11C5B180 | Shadow | Tower: Star Chamber Heartless
+11C5B1C0 | Shadow | Tower: Star Chamber Heartless
+11C5B200 | Shadow | Tower: Star Chamber Heartless
+11C5B240 | Shadow | Tower: Star Chamber Heartless
+11C5B280 | Shadow | Tower: Star Chamber Heartless
+11C5B2C0 | Shadow | Tower: Star Chamber Heartless
+11C5B300 | Shadow | Tower: Star Chamber Heartless
+11C5B340 | Shadow | Tower: Star Chamber Heartless
+11C5B380 | Shadow | Tower: Star Chamber Heartless
+11C5B3C0 | Shadow | Tower: Star Chamber Heartless
+11C5B400 | Shadow | Tower: Star Chamber Heartless
+ 
+11C5B0E8 | Shadow | Tower: Moon Chamber Heartless
+11C5B128 | Soldier | Tower: Moon Chamber Heartless
+11C5B168 | Shadow | Tower: Moon Chamber Heartless
+11C5B1A8 | Shadow | Tower: Moon Chamber Heartless
+11C5B1E8 | Shadow | Tower: Moon Chamber Heartless
+11C5B228 | Soldier | Tower: Moon Chamber Heartless
+11C5B268 | Soldier | Tower: Moon Chamber Heartless
+11C5B2A8 | Soldier | Tower: Moon Chamber Heartless
+11C5B2E8 | Soldier | Tower: Moon Chamber Heartless
+
+
+Hollow Bastion - 1st Visit
+
+
+11C4C0B4 | Dusk | Borough Nobodies Fight
+11C4C0F4 | Dusk | Borough Nobodies Fight
+11C4C134 | Dusk | Borough Nobodies Fight
+11C4C174 | Samurai | Borough Nobodies Fight
+11C4C1B4 | Dusk | Borough Nobodies Fight
+11C4C1F4 | Dusk | Borough Nobodies Fight
+
+11C459F0 | Dusk | Bailey Nobodies Fight
+11C45A30 | Dusk | Bailey Nobodies Fight
+11C45A70 | Dusk | Bailey Nobodies Fight
+11C45AB0 | Dusk | Bailey Nobodies Fight
+11C45AF0 | Dusk | Bailey Nobodies Fight
+11C45BCC | Samurai | Bailey Nobodies Fight
+11C45C0C | Samurai | Bailey Nobodies Fight
+11C45C4C | Samurai | Bailey Nobodies Fight
+11C45C8C | Samurai | Bailey Nobodies Fight
+11C45CCC | Samurai | Bailey Nobodies Fight
+11C45D0C | Dusk | Bailey Nobodies Fight
+11C45D4C | Dusk | Bailey Nobodies Fight
+11C45E30 | Creeper | Bailey Nobodies Fight
+11C45E70 | Creeper | Bailey Nobodies Fight
+11C45EB0 | Creeper | Bailey Nobodies Fight
+11C45EF0 | Creeper | Bailey Nobodies Fight
+11C45F30 | Creeper | Bailey Nobodies Fight
+11C45F70 | Dusk | Bailey Nobodies Fight
+11C45FB0 | Dusk | Bailey Nobodies Fight
+11C45FF0 | Dusk | Bailey Nobodies Fight
+11C46030 | Dusk | Bailey Nobodies Fight
+11C46070 | Dusk | Bailey Nobodies Fight
+
+
+Land of Dragons - 1st Visit
+
+
+
+11C48CD4 | Shadow | Encampment Heartless
+11C48D14 | Shadow | Encampment Heartless
+11C48D54 | Shadow | Encampment Heartless
+11C48D94 | Shadow | Encampment Heartless
+11C48DD4 | Shadow | Encampment Heartless
+11C49118 | Shadow | Encampment Heartless
+11C491C4 | Shadow | Encampment Heartless
+11C49278 | Nightwalker | Encampment Heartless
+11C492B8 | Nightwalker | Encampment Heartless
+ 
+11C5B09C | Nightwalker | Mission 1: The Surprise Attack
+11C5B0DC | Shadow | Mission 1: The Surprise Attack
+11C5B11C | Nightwalker | Mission 1: The Surprise Attack
+11C5B15C | Nightwalker | Mission 1: The Surprise Attack
+11C5B19C | Nightwalker | Mission 1: The Surprise Attack
+11C5B1DC | Shadow | Mission 1: The Surprise Attack
+11C5B21C | Shadow | Mission 1: The Surprise Attack
+11C5B25C | Shadow | Mission 1: The Surprise Attack
+11C5B29C | Shadow | Mission 1: The Surprise Attack
+11C5B2DC | Shadow | Mission 1: The Surprise Attack
+11C5B31C | Shadow | Mission 1: The Surprise Attack
+11C5B35C | Shadow | Mission 1: The Surprise Attack
+11C5B39C | Shadow | Mission 1: The Surprise Attack
+11C5B3DC | Shadow | Mission 1: The Surprise Attack
+11C5B41C | Nightwalker | Mission 1: The Surprise Attack
+ 
+11C5B760 | Shadow | Mission 2: The Ambush
+11C5B7A0 | Shadow | Mission 2: The Ambush
+11C5B7E0 | Shadow | Mission 2: The Ambush
+11C5B820 | Nightwalker | Mission 2: The Ambush
+11C5B860 | Nightwalker | Mission 2: The Ambush
+11C5B8A0 | Nightwalker | Mission 2: The Ambush
+11C5B8E0 | Shadow | Mission 2: The Ambush
+11C5B920 | Shadow | Mission 2: The Ambush
+11C5B9CC | Nightwalker | Mission 2: The Ambush
+11C5BA0C | Nightwalker | Mission 2: The Ambush
+11C5BA4C | Assault Rider | Mission 2: The Ambush
+11C5BA8C | Assault Rider | Mission 2: The Ambush
+ 
+11C49504 | Shadow | Mission 3: The Search
+11C49544 | Shadow | Mission 3: The Search
+11C49584 | Shadow | Mission 3: The Search
+11C495C4 | Shadow | Mission 3: The Search
+11C49604 | Shadow | Mission 3: The Search
+11C49644 | Nightwalker | Mission 3: The Search
+11C49684 | Nightwalker | Mission 3: The Search
+11C496C4 | Nightwalker | Mission 3: The Search
+ 
+11C58528 | Soldier | Mountain Trail Heartless
+11C58568 | Soldier | Mountain Trail Heartless
+11C585A8 | Nightwalker | Mountain Trail Heartless
+11C58680 | Nightwalker | Mountain Trail Heartless
+11C586C0 | Nightwalker | Mountain Trail Heartless
+11C58700 | Nightwalker | Mountain Trail Heartless
+11C587DC | Assault Rider | Mountain Trail Heartless
+11C5881C | Assault Rider | Mountain Trail Heartless
+11C588F8 | Nightwalker | Mountain Trail Heartless
+11C58938 | Nightwalker | Mountain Trail Heartless
+11C589E4 | Nightwalker | Mountain Trail Heartless
+11C58A24 | Nightwalker | Mountain Trail Heartless
+11C58AD0 | Soldier | Mountain Trail Heartless
+11C58B10 | Soldier | Mountain Trail Heartless
+11C58B50 | Nightwalker | Mountain Trail Heartless
+11C58BFC | Soldier | Mountain Trail Heartless
+11C58C3C | Soldier | Mountain Trail Heartless
+11C58C7C | Soldier | Mountain Trail Heartless
+11C58CBC | Soldier | Mountain Trail Heartless
+ 
+11C5791C | Shadow | Village Cave Heartless
+11C5795C | Shadow | Village Cave Heartless
+11C5799C | Shadow | Village Cave Heartless
+11C579DC | Shadow | Village Cave Heartless
+11C57A1C | Shadow | Village Cave Heartless
+11C57A5C | Shadow | Village Cave Heartless
+11C57A9C | Shadow | Village Cave Heartless
+11C57ADC | Shadow | Village Cave Heartless
+11C57B1C | Shadow | Village Cave Heartless
+11C57B5C | Shadow | Village Cave Heartless
+11C57B9C | Assault Rider | Village Cave Heartless
+11C57BDC | Shadow | Village Cave Heartless
+11C57C1C | Shadow | Village Cave Heartless
+11C57C5C | Shadow | Village Cave Heartless
+11C57C9C | Shadow | Village Cave Heartless
+11C57CDC | Shadow | Village Cave Heartless
+11C57D1C | Shadow | Village Cave Heartless
+11C57D5C | Shadow | Village Cave Heartless
+11C57D9C | Shadow | Village Cave Heartless
+11C57DDC | Shadow | Village Cave Heartless
+11C57E1C | Shadow | Village Cave Heartless
+11C57E5C | Shadow | Village Cave Heartless
+11C57E9C | Shadow | Village Cave Heartless
+11C57EDC | Shadow | Village Cave Heartless
+11C57F1C | Shadow | Village Cave Heartless
+11C57F5C | Shadow | Village Cave Heartless
+11C57F9C | Shadow | Village Cave Heartless
+11C57FDC | Shadow | Village Cave Heartless
+11C5801C | Shadow | Village Cave Heartless
+11C5805C | Shadow | Village Cave Heartless
+11C5809C | Shadow | Village Cave Heartless
+11C580DC | Shadow | Village Cave Heartless
+11C5811C | Shadow | Village Cave Heartless
+11C5815C | Shadow | Village Cave Heartless
+11C5819C | Shadow | Village Cave Heartless
+11C581DC | Shadow | Village Cave Heartless
+11C5821C | Shadow | Village Cave Heartless
+11C5825C | Shadow | Village Cave Heartless
+11C5829C | Shadow | Village Cave Heartless
+11C58348 | Assault Rider | Village Cave Heartless
+11C58388 | Assault Rider | Village Cave Heartless
+ 
+Rapid Thruster Swarm (Land of Dragons; 1st Visit)
+11C32160 0000???? - Bolt Tower (Beginning)
+11C321A0 0000???? - Bolt Tower
+11C321E0 0000???? - Bolt Tower
+11C32220 0000???? - Bolt Tower
+11C32260 0000???? - Bolt Tower
+11C322A0 0000???? - Bolt Tower
+11C32354 0000????
+11C32394 0000????
+11C323D4 0000????
+11C32414 0000????
+11C32454 0000????
+11C32494 0000????
+11C324D4 0000????
+11C32514 0000????
+11C32554 0000????
+11C32594 0000????
+11C325D4 0000????
+11C32614 0000????
+11C32654 0000????
+11C32694 0000????
+11C326D4 0000????
+11C32714 0000????
+11C32754 0000????
+11C32794 0000????
+11C327D4 0000????
+11C32814 0000????
+11C32854 0000????
+11C32894 0000????
+11C328D4 0000????
+11C32914 0000????
+11C32954 0000????
+11C32994 0000????
+11C329D4 0000????
+11C32A14 0000????
+11C32A54 0000????
+11C32A94 0000????
+ 
+11C4CCC4 | Bolt Tower | Imperial Square Heartless Fight (1st Visit)
+11C4CD04 | Bolt Tower | Imperial Square Heartless Fight (1st Visit)
+11C4CD44 | Bolt Tower | Imperial Square Heartless Fight (1st Visit)
+11C4CDF0 | Nightwalker | Imperial Square Heartless Fight (1st Visit)
+11C4CE30 | Nightwalker | Imperial Square Heartless Fight (1st Visit)
+11C4CE70 | Nightwalker | Imperial Square Heartless Fight (1st Visit)
+11C4CEB0 | Nightwalker | Imperial Square Heartless Fight (1st Visit)
+ 
+Hayabusa
+11C4BEB0 | Hayabusa | Shan-Yu Boss Fight
+11C4BE70 | Shan-Yu | Shan-Yu Boss Fight
+11C4BF24 | Nightwalker | Shan-Yu Boss Fight
+11C4BF64 | Nightwalker | Shan-Yu Boss Fight
+11C4BFA4 | Nightwalker | Shan-Yu Boss Fight
+11C4BFE4 | Nightwalker | Shan-Yu Boss Fight
+11C4C024 | Nightwalker | Shan-Yu Boss Fight
+11C4C064 | Nightwalker | Shan-Yu Boss Fight
+11C4C0A4 | Nightwalker | Shan-Yu Boss Fight
+11C4C0E4 | Nightwalker | Shan-Yu Boss Fight
+11C4C124 | Nightwalker | Shan-Yu Boss Fight
+11C4C164 | Nightwalker | Shan-Yu Boss Fight
+11C4C1A4 | Nightwalker | Shan-Yu Boss Fight
+11C4C1E4 | Nightwalker | Shan-Yu Boss Fight
+11C4C224 | Nightwalker | Shan-Yu Boss Fight
+11C4C264 | Nightwalker | Shan-Yu Boss Fight
+11C4C2A4 | Nightwalker | Shan-Yu Boss Fight
+
+
+Beast's Castle - 1st Visit
+
+
+11C504CC | Shadow | Parlor Shadows
+11C5050C | Shadow | Parlor Shadows
+11C5054C | Shadow | Parlor Shadows
+11C5058C | Shadow | Parlor Shadows
+11C505CC | Shadow | Parlor Shadows
+11C5060C | Shadow | Parlor Shadows
+11C5064C | Shadow | Parlor Shadows
+11C5068C | Shadow | Parlor Shadows
+11C506CC | Shadow | Parlor Shadows
+11C5070C | Shadow | Parlor Shadows
+11C5074C | Shadow | Parlor Shadows
+11C5078C | Shadow | Parlor Shadows
+11C507CC | Shadow | Parlor Shadows
+11C5080C | Shadow | Parlor Shadows
+11C5084C | Shadow | Parlor Shadows
+11C5088C | Shadow | Parlor Shadows
+ 
+11C55204 | Thresholder | Thresholder Boss Fight
+11C55244 | Possessor | Thresholder Boss Fight
+11C552B0 | Gargoyle Knight | Thresholder Boss Fight
+11C552F0 | Gargoyle Knight | Thresholder Boss Fight
+11C55330 | Hook Bat | Thresholder Boss Fight
+11C55370 | Hook Bat | Thresholder Boss Fight
+11C553B0 | Hook Bat | Thresholder Boss Fight
+11C553F0 | Hook Bat | Thresholder Boss Fight
+11C55430 | Hook Bat | Thresholder Boss Fight
+11C55470 | Hook Bat | Thresholder Boss Fight
+11C554B0 | Hook Bat | Thresholder Boss Fight
+11C554F0 | Hook Bat | Thresholder Boss Fight
+11C55530 | Hook Bat | Thresholder Boss Fight
+11C55570 | Hook Bat | Thresholder Boss Fight
+ 
+11C4CBA0 | Beast | Beast Boss Fight
+  
+11C59F9C | Chandelier | Shadow Stalker Boss Fight
+11C5A010 | Window | Shadow Stalker Boss Fight
+11C5A3A0 | Pillar | Shadow Stalker Boss Fight
+11C5A360 | Shadow Stalker | Shadow Stalker Boss Fight
+ 
+11C5A16C | Chandelier | Dark Thorn Boss Fight
+11C5A4D4 | Dark Thorn | Dark Thorn Boss Fight
+
+
+Hollow Bastion - 2nd Visit
+
+
+11C4C3C4 | Soldier | Borough Heartless Fight 1
+11C4C404 | Shadow | Borough Heartless Fight 1
+11C4C444 | Soldier | Borough Heartless Fight 1
+11C4C484 | Soldier | Borough Heartless Fight 1
+11C4C4C4 | Shadow | Borough Heartless Fight 1
+11C4C504 | Shadow | Borough Heartless Fight 1
+11C4C544 | Shadow | Borough Heartless Fight 1
+11C4C584 | Shadow | Borough Heartless Fight 1
+11C4C5C4 | Shadow | Borough Heartless Fight 1
+11C4C604 | Shadow | Borough Heartless Fight 1
+
+
+Olympus Colisseum - 1st Visit
+
+
+11C48478 | Hades (Invincible) | Hades Chamber Boss Fight
+ 
+11C591FC | Hades (Invincible) | Hades Escape
+11C59268 | Hook Bat | Hades Escape
+11C592A8 | Hook Bat | Hades Escape
+11C592E8 | Hook Bat | Hades Escape
+11C59328 | Hook Bat | Hades Escape
+11C59368 | Shadow | Hades Escape
+11C593A8 | Shadow | Hades Escape
+11C593E8 | Shadow | Hades Escape
+11C59454 | Lance Soldier | Hades Escape
+11C59494 | Shadow | Hades Escape
+11C594D4 | Shadow | Hades Escape
+11C59514 | Shadow | Hades Escape
+11C59554 | Shadow | Hade s Escape
+11C59594 | Lance Soldier| Hades Escape
+11C59640 | Hook Bat | Hades Escape
+11C59680 | Lance Soldier| Hades Escape
+11C596C0 | Lance Soldier| Hades Escape
+11C59700 | Large Body | Hade s Escape
+11C59740 | Lance Soldier| Hades Escape
+11C59780 | Lance Soldier| Hades Escape
+11C597C0 | Hook Bat | Hades Escape
+11C59800 | Hook Bat | Hades Escape
+11C59840 | Shadow | Hades Escape
+11C59880 | Shadow | Hades Escape
+ 
+11C4EF2C | Boulder | Cerberus Boss Fight
+11C4EF6C | Boulder | Cerberus Boss Fight
+11C4EDF8 | Cerberus | Cerberus Boss Fight
+ 
+11C527FC | Demyx I | Demyx I Boss Fight
+ 
+11C4F4D0 | Pete I OC | Pete I Boss Fight
+ 
+11C4FB08 | Pete | Pete II Boss Fight
+11C4FBB4 | Trick Ghost | Pete II Boss Fight
+11C4FBF4 | Hook Bat | Pete II Boss Fight
+11C4FC34 | Trick Ghost | Pete II Boss Fight
+11C4FC74 | Hook Bat | Pete II Boss Fight
+11C4FCB4 | Hook Bat | Pete II Boss Fight
+11C4FCF4 | Hook Bat | Pete II Boss Fight
+ 
+11C566C4 | Hydra | Hydra Boss Fight
+
+
+Disney Castle
+
+
+11C57670 | Shadow | Escort Queen Minnie Part I
+11C576B0 | Shadow | Escort Queen Minnie Part I
+11C576F0 | Shadow | Escort Queen Minnie Part I
+11C57730 | Minute Bomb | Escort Queen Minnie Part I
+11C57770 | Minute Bomb | Escort Queen Minnie Part I
+11C5781C | Shadow | Escort Queen Minnie Part I
+11C5785C | Shadow | Escort Queen Minnie Part I
+11C5789C | Shadow | Escort Queen Minnie Part I
+11C578DC | Shadow | Escort Queen Minnie Part I
+11C57988 | Minute Bomb | Escort Queen Minnie Part I
+11C579C8 | Minute Bomb | Escort Queen Minnie Part I
+11C57A08 | Minute Bomb | Escort Queen Minnie Part I
+11C57A48 | Minute Bomb | Escort Queen Minnie Part I
+11C57A88 | Minute Bomb | Escort Queen Minnie Part I
+11C57AC8 | Minute Bomb | Escort Queen Minnie Part I
+11C57B08 | Shadow | Escort Queen Minnie Part I
+11C57B48 | Shadow | Escort Queen Minnie Part I
+11C57BF4 | Bolt Tower | Escort Queen Minnie Part I
+11C57C34 | Shadow | Escort Queen Minnie Part I
+11C57C74 | Shadow | Escort Queen Minnie Part I
+11C57CB4 | Shadow | Escort Queen Minnie Part I
+11C57CF4 | Shadow | Escort Queen Minnie Part I
+11C57DA0 | Shadow | Escort Queen Minnie Part I
+11C57DE0 | Shadow | Escort Queen Minnie Part I
+11C57E20 | Shadow | Escort Queen Minnie Part I
+11C57E60 | Shadow | Escort Queen Minnie Part I
+11C57EA0 | Shadow | Escort Queen Minnie Part I
+11C57EE0 | Shadow | Escort Queen Minnie Part I
+11C57F8C | Shadow | Escort Queen Minnie Part I
+11C57FCC | Shadow | Escort Queen Minnie Part I
+11C5800C | Shadow | Escort Queen Minnie Part I
+11C5804C | Shadow | Escort Queen Minnie Part I
+11C5808C | Shadow | Escort Queen Minnie Part I
+11C58138 | Shadow | Escort Queen Minnie Part I
+11C58178 | Shadow | Escort Queen Minnie Part I
+11C581B8 | Shadow | Escort Queen Minnie Part I
+11C581F8 | Shadow | Escort Queen Minnie Part I
+11C58238 | Shadow | Escort Queen Minnie Part I
+11C582E4 | Shadow | Escort Queen Minnie Part I
+11C58324 | Shadow | Escort Queen Minnie Part I
+11C58364 | Shadow | Escort Queen Minnie Part I
+11C583A4 | Shadow | Escort Queen Minnie Part I
+11C583E4 | Shadow | Escort Queen Minnie Part I
+ 
+Escort Queen Minnie (Part II - Audience Chamber; Bolt Tower Swarm)
+11C55860 0000???? - Queen Minnie
+11C55940 0000????
+11C55980 0000????
+11C559C0 0000????
+11C55A00 0000????
+11C55A40 0000????
+11C55A80 0000????
+11C55AC0 0000????
+11C55B00 0000????
+11C55B40 0000????
+11C55B80 0000????
+11C55BC0 0000????
+11C55C00 0000????
+11C55C40 0000????
+11C55C80 0000????
+11C55CC0 0000????
+11C55D00 0000????
+11C55D40 0000????
+11C55D80 0000????
+11C55DC0 0000????
+11C55E00 0000????
+11C55E40 0000????
+11C55E80 0000????
+11C55EC0 0000????
+11C55F00 0000????
+11C55F40 0000????
+11C55F80 0000????
+11C55FC0 0000????
+
+
+Timeless River
+
+
+11C576B4 | Pete (Past) | Pete (Past) Boss Fight
+ 
+11C569D8 | Hammer Frame | Building Site Heartless
+11C56A18 | Hammer Frame | Building Site Heartless
+11C56A58 | Hammer Frame | Building Site Heartless
+11C56A98 | Hammer Frame | Building Site Heartless
+11C56B04 | Minute Bomb | Building Site Heartless
+11C56B44 | Minute Bomb | Building Site Heartless
+11C56B84 | Minute Bomb | Building Site Heartless
+11C56BC4 | Minute Bomb | Building Site Heartless
+11C56C04 | Minute Bomb | Building Site Heartless
+11C56C44 | Minute Bomb | Building Site Heartless
+11C56C84 | Minute Bomb | Building Site Heartless
+11C56CC4 | Minute Bomb | Building Site Heartless
+11C56D04 | Hammer Frame | Building Site Heartless
+11C56D44 | Hammer Frame | Building Site Heartless
+11C56D84 | Hammer Frame | Building Site Heartless
+11C56DC4 | Hammer Frame | Building Site Heartless
+ 
+11C57108 | Aeroplane | Lilliput Heartless
+11C57148 | Aeroplane | Lilliput Heartless
+11C57188 | Aeroplane | Lilliput Heartless
+11C571C8 | Hammer Frame | Lilliput Heartless
+11C57208 | Hammer Frame | Lilliput Heartless
+11C57248 | Hammer Frame | Lilliput Heartless
+11C57288 | Aeroplane | Lilliput Heartless
+11C572C8 | Aeroplane | Lilliput Heartless
+11C57308 | Aeroplane | Lilliput Heartless
+11C57348 | Aeroplane | Lilliput Heartless
+11C57388 | Hammer Frame | Lilliput Heartless
+ 
+11C5734C | Shadow | Scene of the Fire Heartless
+11C5738C | Shadow | Scene of the Fire Heartless
+11C573CC | Shadow | Scene of the Fire Heartless
+11C5740C | Shadow | Scene of the Fire Heartless
+11C5744C | Shadow | Scene of the Fire Heartless
+11C5748C | Shadow | Scene of the Fire Heartless
+11C574CC | Shadow | Scene of the Fire Heartless
+11C57578 | Hot Rod | Scene of the Fire Heartless
+11C575B8 | Shadow | Scene of the Fire Heartless
+11C575F8 | Shadow | Scene of the Fire Heartless
+11C57638 | Shadow | Scene of the Fire Heartless
+11C576EC | Hot Rod | Scene of the Fire Heartless
+11C5772C | Hot Rod | Scene of the Fire Heartless
+ 
+11C577E8 | Rapid Thruster | Mickey's House Heartless
+11C57828 | Rapid Thruster | Mickey's House Heartless
+11C57868 | Rapid Thruster | Mickey's House Heartless
+11C57914 | Shadow | Mickey's House Heartless
+11C57954 | Rapid Thruster | Mickey's House Heartless
+11C57994 | Shadow | Mickey's House Heartless
+11C579D4 | Rapid Thruster | Mickey's House Heartless
+11C57A88 | Rapid Thruster | Mickey's House Heartless
+11C57AC8 | Rapid Thruster | Mickey's House Heartless
+11C57B08 | Rapid Thruster | Mickey's House Heartless
+11C57B48 | Rapid Thruster | Mickey's House Heartless
+11C57B88 | Rapid Thruster | Mickey's House Heartless
+11C57BC8 | Rapid Thruster | Mickey's House Heartless
+11C57C08 | Rapid Thruster | Mickey's House Heartless
+11C57C48 | Rapid Thruster | Mickey's House Heartless
+11C57C88 | Rapid Thruster | Mickey's House Heartless
+ 
+11C55BF0 | Pete (Boss) | Pete Final Boss Fight
+
+
+Port Royal - 1st Visit
+
+
+11C42BB0 | Undead Pirate B | Harbor Pirates (1st Visit; Part I)
+11C42C30 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
+11C42C70 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
+11C42CB0 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
+ 
+11C42DE4 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
+11C42E24 | Undead Pirate B | Harbor Pirates (1st Visit; Part I)
+11C42E64 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
+11C42EA4 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
+ 
+11C56984 | Shadow | Town Heartless
+11C569C4 | Shadow | Town Heartless
+11C56A04 | Shadow | Town Heartless
+11C56A44 | Shadow | Town Heartless
+11C56A84 | Shadow | Town Heartless
+11C56AC4 | Shadow | Town Heartless
+11C56BA0 | Shadow | Town Heartless
+11C56BE0 | Shadow | Town Heartless
+11C56C20 | Shadow | Town Heartless
+11C56C60 | Cannon Gun | Town Heartless
+11C56CA0 | Cannon Gun | Town Heartless
+11C56CE0 | Cannon Gun | Town Heartless
+11C56D20 | Soldier | Town Heartless
+11C56D60 | Soldier | Town Heartless
+ 
+Isla de Muerta: Cave Mouth Pirates (1 Minute Fight)
+11C58104 0000???? - Undead Pirate A (Left)
+11C58084 0000???? - Undead Pirate C (Middle)
+11C580C4 0000???? - Undead Pirate A (Right)
+11C58170 0000????
+11C581B0 0000????
+11C581F0 0000????
+11C58230 0000????
+11C58270 0000????
+ 
+11C4E1E0 | Undead Pirate A | The Interceptor Pirates Fight
+11C4E220 | Undead Pirate C | The Interceptor Pirates Fight
+11C4E260 | Undead Pirate A | The Interceptor Pirates Fight
+11C4E2A0 | Undead Pirate B | The Interceptor Pirates Fight
+11C4E2E0 | Undead Pirate A | The Interceptor Pirates Fight
+11C4E320 | Undead Pirate A | The Interceptor Pirates Fight
+11C4E360 | Undead Pirate B | The Interceptor Pirates Fight
+11C4E3A0 | Undead Pirate A | The Interceptor Pirates Fight
+11C4E3E0 | Undead Pirate A | The Interceptor Pirates Fight
+11C4E420 | Undead Pirate B | The Interceptor Pirates Fight
+11C4E460 | Undead Pirate A | The Interceptor Pirates Fight
+11C4E4A0 | Undead Pirate B | The Interceptor Pirates Fight
+ 
+11C52604 | Air Pirate | The Interceptor Barrels
+11C526E0 | Air Pirate | The Interceptor Barrels
+11C52720 | Air Pirate | The Interceptor Barrels
+11C52760 | Air Pirate | The Interceptor Barrels
+11C5283C | Cannon Gun | The Interceptor Barrels
+11C52918 | Cannon Gun | The Interceptor Barrels
+11C529F4 | Cannon Gun | The Interceptor Barrels
+11C52AD0 | Cannon Gun | The Interceptor Barrels
+ 
+11C43370 | Illuminator | Barbossa Boss Fight
+11C43330 | Barbossa | Barbossa Boss Fight
+
+
+Agrabah - 1st Visit
+
+
+11C3BCC4 | Luna Bandit | Agrabah Heartless
+11C3BD04 | Luna Bandit | Agrabah Heartless
+11C3BD44 | Luna Bandit | Agrabah Heartless
+11C3BD84 | Shadow | Agrabah Heartless
+11C3BDC4 | Shadow | Agrabah Heartless
+11C3BE04 | Shadow | Agrabah Heartless
+11C3BE44 | Shadow | Agrabah Heartless
+11C3BE84 | Shadow | Agrabah Heartless
+11C3BEC4 | Shadow | Agrabah Heartless
+11C3BF04 | Luna Bandit | Agrabah Heartless
+11C3BFF0 | Luna Bandit | Agrabah Heartless
+11C3C030 | Luna Bandit | Agrabah Heartless
+11C3C070 | Luna Bandit | Agrabah Heartless
+11C3C0B0 | Luna Bandit | Agrabah Heartless
+11C3C0F0 | Luna Bandit | Agrabah Heartless
+11C3C130 | Luna Bandit | Agrabah Heartless
+11C3C170 | Luna Bandit | Agrabah Heartless
+11C3C1B0 | Luna Bandit | Agrabah Heartless
+11C3C1F0 | Luna Bandit | Agrabah Heartless
+11C3C230 | Luna Bandit | Agrabah Heartless
+11C3C270 | Luna Bandit | Agrabah Heartless
+11C3C2B0 | Luna Bandit | Agrabah Heartless
+11C3C2F0 | Luna Bandit | Agrabah Heartless
+11C3C330 | Luna Bandit | Agrabah Heartless
+11C3C370 | Luna Bandit | Agrabah Heartless
+11C3C3B0 | Luna Bandit | Agrabah Heartless
+11C3C3F0 | Luna Bandit | Agrabah Heartless
+ 
+ 
+11C5AFA4 | Icy Cube | Chasm of Challenges Heartless
+11C5AFE4 | Icy Cube | Chasm of Challenges Heartless
+11C5B024 | Icy Cube | Chasm of Challenges Heartless
+11C5B064 | Icy Cube | Chasm of Challenges Heartless
+11C5B110 | Icy Cube | Chasm of Challenges Heartless
+11C5B150 | Fiery Cube | Chasm of Challenges Heartless
+11C5B190 | Icy Cube | Chasm of Challenges Heartless
+11C5B1D0 | Fiery Cube | Chasm of Challenges Heartless
+11C5B27C | Fat Bandit | Chasm of Challenges Heartless
+11C5B328 | Fiery Cube | Chasm of Challenges Heartless
+11C5B368 | Fiery Cube | Chasm of Challenges Heartless
+11C5B3A8 | Fiery Cube | Chasm of Challenges Heartless
+11C5B3E8 | Fat Bandit | Chasm of Challenges Heartless
+11C5B494 | Fortuneteller | Chasm of Challenges Heartless
+11C5B4D4 | Fortuneteller | Chasm of Challenges Heartless
+ 
+11C54864 | Silver Rock | The Cave of Wonders: Treasure Room Heartless
+11C548A4 | Silver Rock | The Cave of Wonders: Treasure Room Heartless
+11C548E4 | Silver Rock | The Cave of Wonders: Treasure Room Heartless
+11C54924 | Silver Rock | The Cave of Wonders: Treasure Room Heartless
+11C54964 | Silver Rock | The Cave of Wonders: Treasure Room Heartless
+11C549A4 | Silver Rock | The Cave of Wonders: Treasure Room Heartless
+11C549E4 | Silver Rock | The Cave of Wonders: Treasure Room Heartless
+11C54A24 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54A64 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54AA4 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54AE4 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54B24 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54B64 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54BA4 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54BE4 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54C24 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54C64 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54CA4 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54CE4 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54D24 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54D64 | Ice Cube | The Cave of Wonders: Treasure Room Heartless
+11C54DA4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54DE4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54E24 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54E64 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54EA4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54EE4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54F24 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54F64 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54FA4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C54FE4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55024 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55064 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C550A4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C550E4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55124 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55164 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C551A4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C551E4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55224 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55264 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C552A4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C552E4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55324 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55364 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C553A4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C553E4 | Fiery Cube | The Cave of Wonders: Treasure Room Heartless
+11C55490 | Fat Bandit | The Cave of Wonders: Treasure Room Heartless
+11C554D0 | Fat Bandit | The Cave of Wonders: Treasure Room Heartless
+11C55510 | Fat Bandit | The Cave of Wonders: Treasure Room Heartless
+ 
+11C32934 | Volcanic Lord | Twin Lords Boss Fight
+11C32974 | Blizzard Lord | Twin Lords Boss Fight
+
+
+Halloween Town - 1st Visit
+
+
+
+11C4A528 | Wight Knight | Halloween Town Square Heartless
+11C4A568 | Wight Knight | Halloween Town Square Heartless
+11C4A5A8 | Wight Knight | Halloween Town Square Heartless
+11C4A5E8 | Wight Knight | Halloween Town Square Heartless
+11C4A628 | Wight Knight | Halloween Town Square Heartless
+11C4A668 | Wight Knight | Halloween Town Square Heartless
+11C4A6A8 | Wight Knight | Halloween Town Square Heartless
+11C4A6E8 | Wight Knight | Halloween Town Square Heartless
+11C4A728 | Wight Knight | Halloween Town Square Heartless
+11C4A768 | Wight Knight | Halloween Town Square Heartless
+11C4A7A8 | Wight Knight | Halloween Town Square Heartless
+11C4A7E8 | Shadow | Halloween Town Square Heartless
+11C4A828 | Soldier | Halloween Town Square Heartless
+11C4A868 | Shadow | Halloween Town Square Heartless
+11C4A8A8 | Shadow | Halloween Town Square Heartless
+11C4A8E8 | Shadow | Halloween Town Square Heartless
+11C4A928 | Shadow | Halloween Town Square Heartless
+11C4A968 | Soldier | Halloween Town Square Heartless
+11C4A9A8 | Shadow | Halloween Town Square Heartless
+11C4A9E8 | Shadow | Halloween Town Square Heartless
+ 
+11C4F634 | Driller Mole | Candy Cane Lane Heartless
+11C4F674 | Driller Mole | Candy Cane Lane Heartless
+11C4F6B4 | Toy Soldier | Candy Cane Lane Heartless
+11C4F6F4 | Driller Mole | Candy Cane Lane Heartless
+11C4F734 | Toy Soldier | Candy Cane Lane Heartless
+11C4F774 | Toy Soldier | Candy Cane Lane Heartless
+ 
+11C55570 | Prison Keeper | Prison Keeper Boss Fight
+ 
+11C4C204 | Oogie Boogie | Oogie Boogie Boss Fight
+
+
+Pride Lands - 1st Visit
+
+
+11C4EC14 | Living Bone | Elephant Graveyard Heartless
+11C4EC54 | Living Bone | Elephant Graveyard Heartless
+ 
+11C54C84 | Pumba | Hyenas Fight I
+11C54C44 | Shenzi | Hyenas Fight I
+11C54C04 | Banzai | Hyenas Fight I
+11C54BC4 | Ed | Hyenas Fight I
+ 
+11C5A74C | Scar | Scar Boss Fight
+
+
+Twilight Town - 2nd Visit
+
+
+11C371F0 | Dusk | Sandlot Nobodies Fight
+11C37230 | Dusk | Sandlot Nobodies Fight
+11C37270 | Berserker | Sandlot Nobodies Fight
+11C372B0 | Dusk | Sandlot Nobodies Fight
+11C372F0 | Dusk | Sandlot Nobodies Fight
+11C37330 | Dusk | Sandlot Nobodies Fight
+11C37370 | Dusk | Sandlot Nobodies Fight
+11C373B0 | Dusk | Sandlot Nobodies Fight
+11C373F0 | Berserker | Sandlot Nobodies Fight
+11C37430 | Berserker | Sandlot Nobodies Fight
+11C37470 | Berserker | Sandlot Nobodies Fight
+
+
+Space Paranoids - 1st Visit
+
+
+11C56530 | Hostile Program | Hostile Program Boss Fight
+
+
+Hollow Bastion - 2nd Visit
+
+
+11C5B780 | Armored Knight | Corridors Fight
+11C5B7C0 | Armored Knight | Corridors Fight
+11C5B800 | Armored Knight | Corridors Fight
+11C5B840 | Armored Knight | Corridors Fight
+11C5B880 | Armored Knight | Corridors Fight
+11C5B8C0 | Crimson Jazz | Corridors Fight
+11C5B900 | Armored Knight | Corridors Fight
+11C5B940 | Armored Knight | Corridors Fight
+11C5B980 | Armored Knight | Corridors Fight
+11C5BA5C | Dusk | Corridors Fight
+11C5BA9C | Dusk | Corridors Fight
+11C5BADC | Dancer | Corridors Fight
+11C5BB1C | Dusk | Corridors Fight
+11C5BB5C | Dusk | Corridors Fight
+11C5BB9C | Dusk | Corridors Fight
+11C5BBDC | Dusk | Corridors Fight
+11C5BC1C | Dusk | Corridors Fight
+ 
+11C58BA4 | Dancer | Restoration Site Nobodies Fight
+11C58BE4 | Dancer | Restoration Site Nobodies Fight
+11C58C24 | Dancer | Restoration Site Nobodies Fight
+11C58C64 | Dancer | Restoration Site Nobodies Fight
+11C58CA4 | Dancer | Restoration Site Nobodies Fight
+11C58CE4 | Dancer | Restoration Site Nobodies Fight
+11C58D24 | Dancer | Restoration Site Nobodies Fight
+11C58D64 | Dancer | Restoration Site Nobodies Fight
+11C58DA4 | Dancer | Restoration Site Nobodies Fight
+11C58DE4 | Dancer | Restoration Site Nobodies Fight
+11C58E24 | Creeper | Restoration Site Nobodies Fight
+11C58E64 | Creeper | Restoration Site Nobodies Fight
+11C58EA4 | Creeper | Restoration Site Nobodies Fight
+11C58EE4 | Creeper | Restoration Site Nobodies Fight
+11C58F24 | Dancer | Restoration Site Nobodies Fight
+ 
+11C4CE7C | Demyx II | Demyx II Boss Fight
+ 
+11C4BC4C | Shadow | Ravine Trail Heartless 1
+11C4BC8C | Shadow | Ravine Trail Heartless 1
+11C4BCCC | Shadow | Ravine Trail Heartless 1
+11C4BD0C | Shadow | Ravine Trail Heartless 1
+11C4BD4C | Shadow | Ravine Trail Heartless 1
+11C4BD8C | Shadow | Ravine Trail Heartless 1
+11C4BDCC | Shadow | Ravine Trail Heartless 1
+11C4BE0C | Shadow | Ravine Trail Heartless 1
+11C4BE4C | Shadow | Ravine Trail Heartless 1
+11C4BE8C | Shadow | Ravine Trail Heartless 1
+11C4C044 | Armored Knight | Ravine Trail Heartless 1
+11C4C084 | Soldier | Ravine Trail Heartless 1
+11C4C0C4 | Armored Knight | Ravine Trail Heartless 1
+11C4C104 | Armored Knight | Ravine Trail Heartless 1
+11C4C144 | Armored Knight | Ravine Trail Heartless 1
+11C4C184 | Armored Knight | Ravine Trail Heartless 1
+11C4C1C4 | Armored Knight | Ravine Trail Heartless 1
+11C4C204 | Soldier | Ravine Trail Heartless 1
+11C4C244 | Armored Knight | Ravine Trail Heartless 1
+11C4C284 | Armored Knight | Ravine Trail Heartless 1
+11C4C2C4 | Soldier | Ravine Trail Heartless 1
+11C4C304 | Armored Knight | Ravine Trail Heartless 1
+11C4C344 | Armored Knight | Ravine Trail Heartless 1
+11C4C384 | Soldier | Ravine Trail Heartless 1
+11C4C3C4 | Armored Knight | Ravine Trail Heartless 1
+ 
+11C4C5E8 | Armored Knight | Ravine Trail Heartless 2
+11C4C628 | Armored Knight | Ravine Trail Heartless 2
+11C4C668 | Armored Knight | Ravine Trail Heartless 2
+11C4C6A8 | Armored Knight | Ravine Trail Heartless 2
+11C4C6E8 | Soldier | Ravine Trail Heartless 2
+11C4C728 | Soldier | Ravine Trail Heartless 2
+11C4C768 | Armored Knight | Ravine Trail Heartless 2
+11C4C7A8 | Armored Knight | Ravine Trail Heartless 2
+11C4C7E8 | Armored Knight | Ravine Trail Heartless 2
+11C4C9B0 | Shadow | Ravine Trail Heartless 1
+11C4C9F0 | Shadow | Ravine Trail Heartless 2
+11C4CA30 | Shadow | Ravine Trail Heartless 2
+11C4CA70 | Shadow | Ravine Trail Heartless 2
+11C4CAB0 | Shadow | Ravine Trail Heartless 2
+11C4CAF0 | Shadow | Ravine Trail Heartless 2
+11C4CB30 | Shadow | Ravine Trail Heartless 2
+11C4CB70 | Shadow | Ravine Trail Heartless 2
+11C4CBB0 | Shadow | Ravine Trail Heartless 2
+11C4CBF0 | Shadow | Ravine Trail Heartless 2
+11C4CC30 | Shadow | Ravine Trail Heartless 2
+11C4CC70 | Shadow | Ravine Trail Heartless 2
+11C4CCB0 | Shadow | Ravine Trail Heartless 2
+11C4CCF0 | Shadow | Ravine Trail Heartless 2
+11C4CD30 | Shadow | Ravine Trail Heartless 2
+11C4CD70 | Shadow | Ravine Trail Heartless 2
+11C4CDB0 | Shadow | Ravine Trail Heartless 2
+11C4CDF0 | Shadow | Ravine Trail Heartless 2
+11C4CE30 | Shadow | Ravine Trail Heartless 2
+11C4CE70 | Shadow | Ravine Trail Heartless 2
+11C4CEB0 | Morning Star | Ravine Trail Heartless 1
+11C4CEF0 | Soldier | Ravine Trail Heartless 2
+11C4CF30 | Soldier | Ravine Trail Heartless 2
+11C4CF70 | Soldier | Ravine Trail Heartless 2
+11C4CFB0 | Shadow | Ravine Trail Heartless 2
+11C4CFF0 | Shadow | Ravine Trail Heartless 2
+11C4D030 | Shadow | Ravine Trail Heartless 2
+11C4D070 | Shadow | Ravine Trail Heartless 2
+11C4D0B0 | Shadow | Ravine Trail Heartless 2
+11C4D0F0 | Shadow | Ravine Trail Heartless 2
+11C4D130 | Shadow | Ravine Trail Heartless 2
+11C4D170 | Shadow | Ravine Trail Heartless 2
+11C4D1B0 | Shadow | Ravine Trail Heartless 2
+11C4D1F0 | Shadow | Ravine Trail Heartless 2
+11C4D230 | Shadow | Ravine Trail Heartless 2
+11C4D270 | Shadow | Ravine Trail Heartless 2
+11C4D2B0 | Shadow | Ravine Trail Heartless 2
+11C4D2F0 | Shadow | Ravine Trail Heartless 2
+11C4D330 | Shadow | Ravine Trail Heartless 2
+11C4D370 | Shadow | Ravine Trail Heartless 2
+ 
+11C4D594 | Shadow | Ravine Trail Heartless 3
+11C4D5D4 | Armored Knight | Ravine Trail Heartless 3
+11C4D614 | Armored Knight | Ravine Trail Heartless 3
+11C4D654 | Armored Knight | Ravine Trail Heartless 3
+11C4D694 | Shadow | Ravine Trail Heartless 3
+11C4D6D4 | Shadow | Ravine Trail Heartless 3
+11C4D714 | Shadow | Ravine Trail Heartless 3
+11C4D754 | Shadow | Ravine Trail Heartless 3
+11C4D794 | Armored Knight | Ravine Trail Heartless 3
+11C4D7D4 | Shadow | Ravine Trail Heartless 3
+11C4D814 | Shadow | Ravine Trail Heartless 3
+11C4D854 | Armored Knight | Ravine Trail Heartless 3
+11C4D894 | Armored Knight | Ravine Trail Heartless 3
+11C4D8D4 | Armored Knight | Ravine Trail Heartless 3
+11C4D914 | Morning Star | Ravine Trail Heartless 3
+11C4DADC | Morning Star | Ravine Trail Heartless 3
+11C4DB1C | Morning Star | Ravine Trail Heartless 3
+11C4DB5C | Morning Star | Ravine Trail Heartless 3
+11C4DB9C | Morning Star | Ravine Trail Heartless 3
+11C4DBDC | Morning Star | Ravine Trail Heartless 3
+11C4DC1C | Morning Star | Ravine Trail Heartless 3
+11C4DC5C | Shadow | Ravine Trail Heartless 3
+11C4DC9C | Shadow | Ravine Trail Heartless 3
+11C4DCDC | Shadow | Ravine Trail Heartless 3
+11C4DD1C | Shadow | Ravine Trail Heartless 3
+11C4DD5C | Shadow | Ravine Trail Heartless 3
+11C4DD9C | Shadow | Ravine Trail Heartless 3
+ 
+11C4DFC0 | Shadow | Ravine Trail Heartless 4
+11C4E000 | Shadow | Ravine Trail Heartless 4
+11C4E040 | Shadow | Ravine Trail Heartless 4
+11C4E080 | Shadow | Ravine Trail Heartless 4
+11C4E0C0 | Shadow | Ravine Trail Heartless 4
+11C4E100 | Surveillance Robot | Ravine Trail Heartless 4
+11C4E140 | Surveillance Robot | Ravine Trail Heartless 4
+11C4E180 | Shadow | Ravine Trail Heartless 4
+11C4E1C0 | Surveillance Robot | Ravine Trail Heartless 4
+11C4E200 | Surveillance Robot | Ravine Trail Heartless 4
+11C4E240 | Shadow | Ravine Trail Heartless 4
+11C4E280 | Shadow | Ravine Trail Heartless 4
+11C4E2C0 | Shadow | Ravine Trail Heartless 4
+11C4E300 | Shadow | Ravine Trail Heartless 4
+11C4E340 | Morning Star | Ravine Trail Heartless 4
+11C4E380 | Shadow | Ravine Trail Heartless 4
+11C4E3C0 | Shadow | Ravine Trail Heartless 4
+11C4E400 | Shadow | Ravine Trail Heartless 4
+11C4E440 | Shadow | Ravine Trail Heartless 4
+11C4E480 | Shadow | Ravine Trail Heartless 4
+11C4E4C0 | Shadow | Ravine Trail Heartless 4
+11C4E500 | Shadow | Ravine Trail Heartless 4
+11C4E540 | Shadow | Ravine Trail Heartless 4
+11C4E580 | Shadow | Ravine Trail Heartless 4
+11C4E6A4 | Morning Star | Ravine Trail Heartless 4
+11C4E6E4 | Morning Star | Ravine Trail Heartless 4
+11C4E724 | Morning Star | Ravine Trail Heartless 4
+11C4E808 | Surveillance Robot | Ravine Trail Heartless 4
+11C4E848 | Surveillance Robot | Ravine Trail Heartless 4
+11C4E888 | Surveillance Robot | Ravine Trail Heartless 4
+11C4E8C8 | Morning Star | Ravine Trail Heartless 4
+11C4E908 | Armored Knight | Ravine Trail Heartless 4
+11C4E948 | Armored Knight | Ravine Trail Heartless 4
+11C4E988 | Armored Knight | Ravine Trail Heartless 4
+11C4E9C8 | Armored Knight | Ravine Trail Heartless 4
+11C4EA08 | Armored Knight | Ravine Trail Heartless 4
+11C4EA48 | Armored Knight | Ravine Trail Heartless 4
+11C4EA88 | Armored Knight | Ravine Trail Heartless 4
+11C4EAC8 | Armored Knight | Ravine Trail Heartless 4
+11C4EB08 | Armored Knight | Ravine Trail Heartless 4
+
+
+Land of Dragons - 2nd Visit
+
+
+11C32BB4 | Riku? | Riku? Boss Fight
+
+11C4D024 | Bolt Tower | Imperial Square Heartless Fight (2nd Visit)
+11C4D064 | Bolt Tower | Imperial Square Heartless Fight (2nd Visit)
+11C4D0A4 | Bolt Tower | Imperial Square Heartless Fight (2nd Visit)
+11C4D0E4 | Bolt Tower | Imperial Square Heartless Fight (2nd Visit)
+11C4D1C0 | Assault Rider | Imperial Square Heartless Fight (2nd Visit)
+11C4D200 | Assault Rider | Imperial Square Heartless Fight (2nd Visit)
+11C4D240 | Assault Rider | Imperial Square Heartless Fight (2nd Visit)
+ 
+11C56664 | Sniper | Antechamber Nobodies Fight
+11C566A4 | Sniper | Antechamber Nobodies Fight
+11C566E4 | Sniper | Antechamber Nobodies Fight
+11C56724 | Sniper | Antechamber Nobodies Fight
+11C56764 | Dusk | Antechamber Nobodies Fight
+11C567A4 | Dusk | Antechamber Nobodies Fight
+11C567E4 | Sniper | Antechamber Nobodies Fight
+11C56824 | Sniper | Antechamber Nobodies Fight
+11C56864 | Sniper | Antechamber Nobodies Fight
+11C568A4 | Sniper | Antechamber Nobodies Fight
+11C568E4 | Sniper | Antechamber Nobodies Fight
+11C56924 | Sniper | Antechamber Nobodies Fight
+ 
+11C4D324 | Storm Rider | Storm Rider Boss Fight
+
+
+Beast's Castle - 2nd Visit
+
+
+11C5209C | Dragoon | Ballroom Nobodies Fight
+11C520DC | Dragoon | Ballroom Nobodies Fight
+11C5211C | Dragoon | Ballroom Nobodies Fight
+11C5215C | Dusk | Ballroom Nobodies Fight
+11C5219C | Dusk | Ballroom Nobodies Fight
+ 
+11C500E4 | Dusk | Entrance Hall Nobodies Fight
+11C50124 | Dusk | Entrance Hall Nobodies Fight
+11C50164 | Dragoon | Entrance Hall Nobodies Fight
+11C501A4 | Dragoon | Entrance Hall Nobodies Fight
+11C501E4 | Dragoon | Entrance Hall Nobodies Fight
+11C50290 | Dragoon | Entrance Hall Nobodies Fight
+11C502D0 | Dragoon | Entrance Hall Nobodies Fight
+11C50310 | Dragoon | Entrance Hall Nobodies Fight
+ 
+11C5A0A8 | Xaldin | Xaldin Boss Fight
+
+
+Olympus Colisseum - 2nd Visit
+
+
+11C4BCDC | Mole Driller | Hades Cup - Round 1
+11C4BD1C | Tornado Step | Hades Cup - Round 1
+11C4BD5C | Tornado Step | Hades Cup - Round 1
+11C4BD9C | Morning Star | Hades Cup - Round 1
+11C4BE1C | Mole Driller | Hades Cup - Round 1
+11C4BE5C | Mole Driller | Hades Cup - Round 1
+ 
+11C4BFD0 | Cresendo | Hades Cup - Semifinals
+11C4C010 | Minute Bomb | Hades Cup - Semifinals
+11C4C050 | Minute Bomb | Hades Cup - Semifinals
+11C4C090 | Minute Bomb | Hades Cup - Semifinals
+11C4C0D0 | Minute Bomb | Hades Cup - Semifinals
+11C4C110 | Crimson Jazz | Hades Cup - Semifinals
+11C4C150 | Minute Bomb | Hades Cup - Semifinals
+11C4C190 | Minute Bomb | Hades Cup - Semifinals
+ 
+11C486D8 | Dusk | Hades' Chamber Nobodies Fight
+11C48718 | Dusk | Hades' Chamber Nobodies Fight
+11C48758 | Dusk | Hades' Chamber Nobodies Fight
+11C48798 | Dusk | Hades' Chamber Nobodies Fight
+11C487D8 | Dusk | Hades' Chamber Nobodies Fight
+11C48818 | Dusk | Hades' Chamber Nobodies Fight
+11C48858 | Dusk | Hades' Chamber Nobodies Fight
+11C48898 | Dusk | Hades' Chamber Nobodies Fight
+11C488D8 | Dusk | Hades' Chamber Nobodies Fight
+11C48918 | Dusk | Hades' Chamber Nobodies Fight
+11C48958 | Dusk | Hades' Chamber Nobodies Fight
+
+11C5BF7C | Hades (Invincible) | Hades Boss Phase I
+
+11C5C0B0 | Hades (Boss) |  Hades Boss Phase II
+
+
+Port Royal - 2nd Visit
+
+
+11C42FD8 | Undead Pirate B | Harbor Pirates Fight (2nd Visit)
+11C43018 | Undead Pirate A | Harbor Pirates Fight (2nd Visit)
+11C43058 | Undead Pirate A | Harbor Pirates Fight (2nd Visit)
+ 
+11C5BA78 | Grim Reaper I | Grim Reaper I Boss Fight
+ 
+11C56F38 | Gambler | Gambler (Ship Graveyard: Seadrift Keep; 1st Fight)
+ 
+11C5706C | Gambler | Gambler (Ship Graveyard: Seadrift Keep; 1st Fight)
+ 
+11C5B970 | Gambler | Gambler (From Ship Graveyard: The Interceptor's Hold)
+11C5B9B0 | Gambler | Gambler (Ship Graveyard: Seadrift Row)
+ 
+11C58324 | Gambler | Gambler (Isla de Muerta: Cave Mouth)
+ 
+11C5BC28 | Gambler | Gambler (Isla de Muerta: Powder Store)
+
+11C5BC38 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
+11C5BC78 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
+11C5BCB8 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
+11C5BCF8 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
+11C5BD38 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
+11C5BD78 | Gambler | Gambler (Isla de Muerta: Moonlight Nook)
+ 
+11C433E4 | Gambler | Gambler (Isla de Muerta: Treasure Heap)
+ 
+11C4318C | Grim Reaper II | Grim Reaper II Boss Fight
+
+
+Agrabah - 2nd Visit
+
+
+11C50904 | Rapid Thruster | Sandswept Ruins Heartless Fight 1
+11C50944 | Rapid Thruster | Sandswept Ruins Heartless Fight 1
+11C50984 | Rapid Thruster | Sandswept Ruins Heartless Fight 1
+11C509C4 | Rapid Thruster | Sandswept Ruins Heartless Fight 1
+11C50A04 | Rapid Thruster | Sandswept Ruins Heartless Fight 1
+11C50AC4 | Rapid Thruster | Sandswept Ruins Heartless Fight 1
+11C50B04 | Hook Bat | Sandswept Ruins Heartless Fight 1
+11C50B44 | Hook Bat | Sandswept Ruins Heartless Fight 1
+11C50B84 | Hook Bat | Sandswept Ruins Heartless Fight 1
+11C50BC4 | Fortuneteller | Sandswept Ruins Heartless Fight 1
+11C50C04 | Fortuneteller | Sandswept Ruins Heartless Fight 1
+ 
+11C50D38 | Rapid Thruster | Sandswept Ruins Heartless Fight 2
+11C50D78 | Rapid Thruster | Sandswept Ruins Heartless Fight 2
+11C50DB8 | Rapid Thruster | Sandswept Ruins Heartless Fight 2
+11C50DF8 | Fortuneteller | Sandswept Ruins Heartless Fight 2
+11C50E38 | Fortuneteller | Sandswept Ruins Heartless Fight 2
+11C50E78 | Fortuneteller | Sandswept Ruins Heartless Fight 2
+11C50EB8 | Rapid Thruster | Sandswept Ruins Heartless Fight 2
+11C50EF8 | Crimson Jazz | Sandswept Ruins Heartless Fight 2
+
+11C56A28 | Genie Jafar | Genie Jafar Boss Fight
+
+
+Halloween Town - 2nd Visit
+
+
+11C57570 | Lock | LSB
+11C575B0 | Shock | LSB
+11C575F0 | Barrel | LSB
+ 
+11C4ABB8 | Wight Knight | Present Collecting Fight
+11C4ABF8 | Wight Knight | Present Collecting Fight
+11C4AC38 | Wight Knight | Present Collecting Fight
+11C4AC78 | Wight Knight | Present Collecting Fight
+11C4ACB8 | Graveyard | Present Collecting Fight
+11C4ACF8 | Graveyard | Present Collecting Fight
+11C4AD38 | Wight Knight | Present Collecting Fight
+ 
+11C56120 | Experiment | Experiment Boss Fight
+
+
+Pride Lands - 2nd Visit
+
+
+11C4EDB4 | Shenzi II | Hyenas II
+11C4EE34 | Banzai II | Hyenas II
+11C4EDF4 | Ed II | Hyenas II
+ 
+11C59F80 | Groundshaker | Groundshaker Boss Fight
+
+
+100 Acre Wood - 4th Page
+
+
+11C517AC | Bee | The Expotition
+11C517EC | Bee | The Expotition
+11C5182C | Bee | The Expotition
+11C5186C | Bee | The Expotition
+11C51930 | Bee | The Expotition
+11C51970 | Bee | The Expotition
+11C519B0 | Bee | The Expotition
+11C519F0 | Bee | The Expotition
+11C51A30 | Bee | The Expotition
+11C51A70 | Bee | The Expotition
+11C51B74 | Bee | The Expotition
+11C51BB4 | Bee | The Expotition
+11C51BF4 | Bee | The Expotition
+11C51C34 | Bee | The Expotition
+
+
+Space Paranoids - 2nd Visit
+
+
+11C56184 | Devastator | Game Grid Heartless Fight
+11C561C4 | Devastator | Game Grid Heartless Fight
+11C56204 | Magnum Loader | Game Grid Heartless Fight
+11C56244 | Magnum Loader | Game Grid Heartless Fight
+11C56284 | Magnum Loader | Game Grid Heartless Fight
+11C562C4 | Magnum Loader | Game Grid Heartless Fight
+11C56304 | Magnum Loader | Game Grid Heartless Fight
+11C56344 | Magnum Loader | Game Grid Heartless Fight
+ 
+11C566D0 | Strafer | I/O Tower Heartless Fight
+11C56710 | Strafer | I/O Tower Heartless Fight
+11C56750 | Strafer | I/O Tower Heartless Fight
+11C56790 | Devastator | I/O Tower Heartless Fight
+11C567D0 | Strafer | I/O Tower Heartless Fight
+11C56810 | Strafer | I/O Tower Heartless Fight
+11C56850 | Devastator | I/O Tower Heartless Fight
+11C56890 | Devastator | I/O Tower Heartless Fight
+11C568D0 | Devastator | I/O Tower Heartless Fight
+ 
+11C59864 | Devastator | Solar Sailer Heartless
+11C598A4 | Devastator | Solar Sailer Heartless
+11C598E4 | Magnum Loader | Solar Sailer Heartless
+11C59990 | Strafer | Solar Sailer Heartless
+11C599D0 | Strafer | Solar Sailer Heartless
+11C59A10 | Strafer | Solar Sailer Heartless
+11C59AEC | Strafer | Solar Sailer Heartless
+11C59B2C | Strafer | Solar Sailer Heartless
+11C59B6C | Strafer | Solar Sailer Heartless
+11C59BAC | Magnum Loader | Solar Sailer Heartless
+11C59BEC | Magnum Loader | Solar Sailer Heartless
+11C59C2C | Magnum Loader | Solar Sailer Heartless
+11C59C6C | Magnum Loader | Solar Sailer Heartless
+11C59CAC | Magnum Loader | Solar Sailer Heartless
+11C59CEC | Magnum Loader | Solar Sailer Heartless
+11C59D2C | Magnum Loader | Solar Sailer Heartless
+11C59E10 | Devastator | Solar Sailer Heartless
+11C59E50 | Devastator | Solar Sailer Heartless
+11C59E90 | Devastator | Solar Sailer Heartless
+ 
+11C4FCC4 | Sark (Normal) | Sark Boss Fight
+11C4FD44 | Strafer | Sark Boss Fight
+11C4FD84 | Strafer | Sark Boss Fight
+11C4FDC4 | Strafer | Sark Boss Fight
+11C4FE04 | Strafer | Sark Boss Fight
+ 
+11C4FFB8 | Sark (Giant) | MCP Boss Fight
+11C4FF78 | MCP | MCP Boss Fight
+
+
+Twilight Town - 3rd Visit
+
+
+11C5B7D4 | Dusk | The Old Mansion Nobodies Fight
+11C5B814 | Dusk | The Old Mansion Nobodies Fight
+11C5B854 | Dusk | The Old Mansion Nobodies Fight
+11C5B894 | Dusk | The Old Mansion Nobodies Fight
+11C5B8D4 | Dusk | The Old Mansion Nobodies Fight
+11C5B914 | Dusk | The Old Mansion Nobodies Fight
+11C5B9F0 | Creeper | The Old Mansion Nobodies Fight
+11C5BA30 | Creeper | The Old Mansion Nobodies Fight
+11C5BA70 | Creeper | The Old Mansion Nobodies Fight
+11C5BAB0 | Creeper | The Old Mansion Nobodies Fight
+11C5BAF0 | Creeper | The Old Mansion Nobodies Fight
+11C5BB30 | Creeper | The Old Mansion Nobodies Fight
+11C5BB70 | Samurai | The Old Mansion Nobodies Fight
+11C5BBB0 | Samurai | The Old Mansion Nobodies Fight
+11C5BBF0 | Samurai | The Old Mansion Nobodies Fight
+11C5BC30 | Samurai | The Old Mansion Nobodies Fight
+11C5BC70 | Samurai | The Old Mansion Nobodies Fight
+ 
+11C50364 | Dusk | Between and Betwix Nobodies Fight 1
+11C503A4 | Dusk | Between and Betwix Nobodies Fight 1
+11C503E4 | Dusk | Between and Betwix Nobodies Fight 1
+11C50424 | Dusk | Between and Betwix Nobodies Fight 1
+11C50464 | Dusk | Between and Betwix Nobodies Fight 1
+11C504A4 | Dusk | Between and Betwix Nobodies Fight 1
+ 
+11C50644 | Dusk | Between and Betwix Nobodies Fight 2
+11C50684 | Dusk | Between and Betwix Nobodies Fight 2
+11C506C4 | Assassin | Between and Betwix Nobodies Fight 2
+11C507A0 | Dusk | Between and Betwix Nobodies Fight 2
+11C507E0 | Assassin | Between and Betwix Nobodies Fight 2
+11C50820 | Assassin | Between and Betwix Nobodies Fight 2
+11C508FC | Dusk | Between and Betwix Nobodies Fight 2
+11C5093C | Assassin | Between and Betwix Nobodies Fight 2
+11C5097C | Assassin | Between and Betwix Nobodies Fight 2
+11C50A58 | Dusk | Between and Betwix Nobodies Fight 2
+11C50A98 | Dusk | Between and Betwix Nobodies Fight 2
+11C50AD8 | Dusk | Between and Betwix Nobodies Fight 2
+11C50BB4 | Dusk | Between and Betwix Nobodies Fight 2
+11C50BF4 | Dusk | Between and Betwix Nobodies Fight 2
+11C50C34 | Dusk | Between and Betwix Nobodies Fight 2
+11C50D10 | Dusk | Between and Betwix Nobodies Fight 2
+11C50D50 | Assassin | Between and Betwix Nobodies Fight 2
+11C50D90 | Dusk | Between and Betwix Nobodies Fight 2
+
+
+The World That Never Was - 1st Visit
+
+
+11C4F008 | Roxas | Roxas Boss Fight
+ 
+11C4AB88 | Xigbar | Roxas Boss Fight
+ 
+11C5358C | Luxord | Roxas Boss Fight
+ 
+11C520AC | Saix | Roxas Boss Fight
+ 
+11C5990C | Xemnas | Roxas Boss Fight
+
+
+Final Fights
+
+
+11C5C118 | Nobody from Final Battles | The World of Nothing (Cylinder Lasers) Fight
+11C5C158 | Nobody from Final Battles | The World of Nothing (Cylinder Lasers) Fight
+11C5C198 | Nobody from Final Battles | The World of Nothing (Cylinder Lasers) Fight
+11C5C1D8 | Nobody from Final Battles | The World of Nothing (Cylinder Lasers) Fight
+11C5C218 | Nobody from Final Battles | The World of Nothing (Cylinder Lasers) Fight
+ 
+11C5B890 | Assassin | The World of Nothing (Energy Core) Fight
+11C5B8D0 | Creeper | The World of Nothing (Energy Core) Fight
+11C5B910 | Creeper | The World of Nothing (Energy Core) Fight
+11C5B950 | Creeper | The World of Nothing (Energy Core) Fight
+11C5B990 | Creeper | The World of Nothing (Energy Core) Fight
+11C5B9D0 | Creeper | The World of Nothing (Energy Core) Fight
+11C5BA10 | Creeper | The World of Nothing (Energy Core) Fight
+11C5BA50 | Creeper | The World of Nothing (Energy Core) Fight
+11C5BA90 | Creeper | The World of Nothing (Energy Core) Fight
+11C5BB6C | Berserker | The World of Nothing (Energy Core) Fight
+11C5BBAC | Creeper | The World of Nothing (Energy Core) Fight
+11C5BBEC | Creeper | The World of Nothing (Energy Core) Fight
+11C5BC2C | Creeper | The World of Nothing (Energy Core) Fight
+11C5BC6C | Creeper | The World of Nothing (Energy Core) Fight
+11C5BCAC | Assassin | The World of Nothing (Energy Core) Fight
+11C5BCEC | Assassin | The World of Nothing (Energy Core) Fight
+11C5BD2C | Assassin | The World of Nothing (Energy Core) Fight
+11C5BD6C | Assassin | The World of Nothing (Energy Core) Fight
+
+11C5A9AC | Armor Xemnas I | Armor Xemnas I Boss Fight
+
+11C58840 | Armor Xemnas II | Armor Xemnas II Boss Fight
+
+11C5590C | Twilight Xemnas | Final Xemnas Boss Fight
+
+
+Mushroom XIII
+
+
+11C41CB4 | Mushroom #1 | Mushroom #1
+11C56194 | Mushroom #2 | Mushroom #2
+11C55080 | Mushroom #3 | Mushroom #3
+11C4C358 | Mushroom #4 | Mushroom #4
+11C555CC | Mushroom #5 | Mushroom #5
+11C53DD8 | Mushroom #6 | Mushroom #6
+11C58F8C | Mushroom #7 | Mushroom #7
+11C506B8 | Mushroom #8 | Mushroom #8
+11C4CEF0 | Mushroom #9 | Mushroom #9
+11C5C13C | Mushroom #10 | Mushroom #10
+11C57220 | Mushroom #11 | Mushroom #11
+11C4454C | Mushroom #12 | Mushroom #12
+11C54B7C | Mushroom #13 | Mushroom #13
+
+
+Cavern of Remmebrance
+
+
+11C5B368 | Perplex | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B3A8 | Perplex | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B3E8 | Perplex | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B428 | Magic Phantom | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B468 | Magic Phantom | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B54C | Necromancer | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B58C | Iron Hammer | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B5CC | Iron Hammer | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B60C | Iron Hammer | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B730 | Mad Bumper | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B770 | Necromancer | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B7B0 | Mad Bumper | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B7F0 | Perplex | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B830 | Magic Phantom | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B870 | Perplex | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B8B0 | Iron Hammer | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B8F0 | Necromancer | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B930 | Perplex | Cavern of Remembrance: Mineshaft Heartless Fight 1
+11C5B970 | Mad Bumper | Cavern of Remembrance: Mineshaft Heartless Fight 1
+ 
+11C5BAF8 | Lance Warrior | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BB38 | Air Viking | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BB78 | Air Viking | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BBB8 | Air Viking | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BC9C | Sprint Metal | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BCDC | Rune Master | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BD1C | Sprint Metal | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BD5C | Rune Master | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BD9C | Sprint Metal | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BDDC | Rune Master | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BE1C | Sprint Metal | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BF00 | Rune Master | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BF40 | Lance Warrior | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BF80 | Lance Warrior | Cavern of Remembrance: Mineshaft Heartless Fight 2
+11C5BFC0 | Lance Warrior | Cavern of Remembrance: Mineshaft Heartless Fight 2
+ 
+11C585B0 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C585F0 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C58630 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C58670 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C586B0 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C586F0 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C58730 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C58770 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C587B0 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C587F0 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C58830 | Assassin | Transport to Remembrance Nobodies Fight 1
+11C58870 | Assassin | Transport to Remembrance Nobodies Fight 1
+11C588B0 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C588F0 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C58930 | Assassin | Transport to Remembrance Nobodies Fight 1
+11C58970 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C589B0 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C589F0 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C58A30 | Assassin | Transport to Remembrance Nobodies Fight 1
+11C58A70 | Dusk | Transport to Remembrance Nobodies Fight 1
+11C58AB0 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C58AF0 | Samurai | Transport to Remembrance Nobodies Fight 1
+11C58B30 | Assassin | Transport to Remembrance Nobodies Fight 1
+11C58B70 | Assassin | Transport to Remembrance Nobodies Fight 1
+ 
+11C58D94 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C58DD4 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C58E14 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C58E54 | Berserker | Transport to Remembrance Nobodies Fight 2
+11C58E94 | Berserker | Transport to Remembrance Nobodies Fight 2
+11C58ED4 | Gambler | Transport to Remembrance Nobodies Fight 2
+11C58F14 | Gambler | Transport to Remembrance Nobodies Fight 2
+11C58F54 | Berserker | Transport to Remembrance Nobodies Fight 2
+11C58F94 | Berserker | Transport to Remembrance Nobodies Fight 2
+11C58FD4 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C59014 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C59054 | Gambler | Transport to Remembrance Nobodies Fight 2
+11C59094 | Gambler | Transport to Remembrance Nobodies Fight 2
+11C590D4 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C59114 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C59154 | Gambler | Transport to Remembrance Nobodies Fight 2
+11C59194 | Berserker | Transport to Remembrance Nobodies Fight 2
+11C591D4 | Berserker | Transport to Remembrance Nobodies Fight 2
+11C59214 | Sniper | Transport to Remembrance Nobodies Fight 2
+11C59254 | Gambler | Transport to Remembrance Nobodies Fight 2
+ 
+11C5941C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5945C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5949C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C594DC | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5951C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5955C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5959C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C595DC | Creeper | Transport to Remembrance Nobodies Fight 3
+11C5961C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C5965C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C5969C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C596DC | Dancer | Transport to Remembrance Nobodies Fight 3
+11C5971C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C5975C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C5979C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C597DC | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C5981C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C5985C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C5989C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C598DC | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5991C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5995C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C5999C | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C599DC | Dancer | Transport to Remembrance Nobodies Fight 3
+11C59A1C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C59A5C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C59A9C | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C59ADC | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C59B1C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C59B5C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C59B9C | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C59BDC | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C59C1C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C59C5C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C59C9C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C59CDC | Dancer | Transport to Remembrance Nobodies Fight 3
+11C59D1C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C59D5C | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C59D9C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C59DDC | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C59E1C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C59E5C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C59E9C | Creeper | Transport to Remembrance Nobodies Fight 3
+11C59EDC | Dancer | Transport to Remembrance Nobodies Fight 3
+11C59F1C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C59F5C | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C59F9C | Dragoon | Transport to Remembrance Nobodies Fight 3
+11C59FDC | Creeper | Transport to Remembrance Nobodies Fight 3
+11C5A01C | Dancer | Transport to Remembrance Nobodies Fight 3
+11C5A05C | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C5A09C | Sorcerer | Transport to Remembrance Nobodies Fight 3
+11C5A0DC | Creeper | Transport to Remembrance Nobodies Fight 3
+
+
+Superbosses - Data Fights, Absent Silhouettes, Sephiroth and Terra
+
+11C59BA8 | Xemnas (Data) | Xemnas I Data Fight
+11C55AAC | Twilight Xemnas (Data) | Xemnas II Data Fight
+11C4ACBC | Xigbar (Data) | Xigbar Data Fight
+11C5A1DC | Xaldin (Data) | Xaldin Data Fight
+11C597A0 | Vexen (AS) | Vexen AS Fight
+11C598D4 | Vexen (Data) | Vexen Data Fight
+11C56368 | Lexaeus (AS) | Lexaeus AS Fight
+11C56734 | Lexaeus (Data) | Lexaeus Data Fight
+11C597E0 | Zexion (AS) | Zexion AS Fight
+11C59914 | Zexion (Data) | Zexion Data Fight
+11C521E0 | Saix (Data) | Saix Data Fight
+11C5B0BC | Axel II (Data) | Axel II Data Fight
+11C4D054 | Demyx II (Data) | Demyx II Data Fight
+11C53700 | Luxord (Data) | Luxord Data Fight
+11C58FE0 | Marluxia (AS) | Marluxia AS Fight
+11C59114 | Marluxia (Data) | Marluxia Data Fight
+11C5649C | Larxene (AS) | Larxene AS Fight
+11C56868 | Larxene (Data) | Larxene Data Fight
+11C4F13C | Roxas (Data) | Roxas Data Fight
+
+11C24740 | Sephiroth | Sephiroth Boss Fight
+ 
+11C556E0 | Terra | Terra Boss Fight
