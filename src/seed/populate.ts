@@ -368,7 +368,6 @@ export const populate = (
 
 	if (configuration.include.goofyAbilities === Toggle.ON) {
 		[
-			Rewards.OGRE_SHIELD,
 			Rewards.FROZEN_PRIDE_PLUS,
 			Rewards.NOBODY_GUARD,
 			Rewards.AKASHIC_RECORD,
