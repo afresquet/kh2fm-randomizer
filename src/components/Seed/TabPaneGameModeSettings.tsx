@@ -14,6 +14,11 @@ export const TabPaneGameModeSettings: React.FC = () => {
 
 	return (
 		<div className="tab-pane">
+			<SettingSlider
+				title="Shorter Day 5 (Simulated Twilight Town)"
+				{...mapValue("shorterDay5")}
+			/>
+
 			<SettingSlider title="Promise Charm" {...mapValue("promiseCharm")} />
 		</div>
 	);

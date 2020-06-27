@@ -4,6 +4,7 @@ import {
 } from "../patches/formKeyblades";
 import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
+import { shorterDay5 } from "../patches/shorterDay5";
 import { startingAP } from "../patches/startingAP";
 import { Seed } from "../seed/Seed";
 import { Configuration } from "../settings/Configuration";
@@ -15,6 +16,10 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.settings.criticalMode === Toggle.OFF) {
 		patches.push(startingAP);
+	}
+
+	if (configuration.gameMode.goa.shorterDay5 === Toggle.ON) {
+		patches.push(shorterDay5);
 	}
 
 	if (configuration.settings.leveling === Leveling.LEVEL_FIFTY) {

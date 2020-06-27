@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.6",
+		changes: ["Shorter Day 5 (Simulated Twilight Town) option"],
+	},
+	{
 		version: "0.2.5",
 		changes: [
 			"URL changed to randomizer.valaxor.com",
