@@ -1,9 +1,17 @@
 import { Rewards } from "../rewards";
+import { Reward } from "../rewards/Reward";
+import { GameMode } from "../settings/enums";
 import {
 	RewardLocation,
 	RewardLocationName,
 	RewardLocationType,
 } from "./RewardLocation";
+
+const exclude: Reward[] = [
+	Rewards.GOOFY_TORNADO,
+	Rewards.GOOFY_BASH,
+	Rewards.GOOFY_TURBO,
+];
 
 export const goofyRewardLocations: RewardLocation[] = [
 	{
@@ -208,6 +216,9 @@ export const goofyRewardLocations: RewardLocation[] = [
 		description: "Frozen Pride+",
 		value: "11CDF696",
 		reward: Rewards.MP_HASTEGA,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.GOOFY,
@@ -215,6 +226,9 @@ export const goofyRewardLocations: RewardLocation[] = [
 		description: "Save the King+",
 		value: "11CDF5E6",
 		reward: Rewards.DAMAGE_CONTROL,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.GOOFY,
@@ -222,6 +236,9 @@ export const goofyRewardLocations: RewardLocation[] = [
 		description: "Majestic Mushroom",
 		value: "11CDF6C6",
 		reward: Rewards.PROTECT,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.GOOFY,
@@ -229,6 +246,9 @@ export const goofyRewardLocations: RewardLocation[] = [
 		description: "Majestic Mushroom+",
 		value: "11CDF6D6",
 		reward: Rewards.PROTECTRA,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.GOOFY,
@@ -236,5 +256,8 @@ export const goofyRewardLocations: RewardLocation[] = [
 		description: "Ultimate Mushroom",
 		value: "11CDF6E6",
 		reward: Rewards.PROTECTGA,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 ];

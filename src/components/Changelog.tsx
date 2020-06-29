@@ -4,6 +4,12 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.7",
+		changes: [
+			"Temporarily excluding action abilities of Donald and Goofy to be on Synth and Mushroom weapons",
+		],
+	},
+	{
 		version: "0.2.6",
 		changes: [
 			"Shorter Day 5 (Simulated Twilight Town) option, once you enter Central Station and skip the cutscene during Day 5, you just need to go straight to Sunset Hill for the cutscene, then go straight to the Mansion from there.",
