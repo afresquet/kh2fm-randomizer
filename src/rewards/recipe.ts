@@ -19,12 +19,12 @@ export const recipeRewards = {
 	SKILL_RECIPE: {
 		type: RewardType.RECIPE,
 		name: "Skill Recipe",
-		value: "01C1",
+		value: "01C3",
 	},
 	GUARD_RECIPE: {
 		type: RewardType.RECIPE,
 		name: "Guard Recipe",
-		value: "01C3",
+		value: "01C4",
 	},
 	ROAD_TO_DISCOVERY: {
 		type: RewardType.RECIPE,
