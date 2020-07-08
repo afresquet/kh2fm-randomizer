@@ -1,67 +1,3 @@
-Port Royal - 1st Visit
-
-
-11C42BB0 | Undead Pirate B | Harbor Pirates (1st Visit; Part I)
-11C42C30 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
-11C42C70 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
-11C42CB0 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
- 
-11C42DE4 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
-11C42E24 | Undead Pirate B | Harbor Pirates (1st Visit; Part I)
-11C42E64 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
-11C42EA4 | Undead Pirate C | Harbor Pirates (1st Visit; Part I)
- 
-11C56984 | Shadow | Town Heartless
-11C569C4 | Shadow | Town Heartless
-11C56A04 | Shadow | Town Heartless
-11C56A44 | Shadow | Town Heartless
-11C56A84 | Shadow | Town Heartless
-11C56AC4 | Shadow | Town Heartless
-11C56BA0 | Shadow | Town Heartless
-11C56BE0 | Shadow | Town Heartless
-11C56C20 | Shadow | Town Heartless
-11C56C60 | Cannon Gun | Town Heartless
-11C56CA0 | Cannon Gun | Town Heartless
-11C56CE0 | Cannon Gun | Town Heartless
-11C56D20 | Soldier | Town Heartless
-11C56D60 | Soldier | Town Heartless
- 
-Isla de Muerta: Cave Mouth Pirates (1 Minute Fight)
-11C58104 0000???? - Undead Pirate A (Left)
-11C58084 0000???? - Undead Pirate C (Middle)
-11C580C4 0000???? - Undead Pirate A (Right)
-11C58170 0000????
-11C581B0 0000????
-11C581F0 0000????
-11C58230 0000????
-11C58270 0000????
- 
-11C4E1E0 | Undead Pirate A | The Interceptor Pirates Fight
-11C4E220 | Undead Pirate C | The Interceptor Pirates Fight
-11C4E260 | Undead Pirate A | The Interceptor Pirates Fight
-11C4E2A0 | Undead Pirate B | The Interceptor Pirates Fight
-11C4E2E0 | Undead Pirate A | The Interceptor Pirates Fight
-11C4E320 | Undead Pirate A | The Interceptor Pirates Fight
-11C4E360 | Undead Pirate B | The Interceptor Pirates Fight
-11C4E3A0 | Undead Pirate A | The Interceptor Pirates Fight
-11C4E3E0 | Undead Pirate A | The Interceptor Pirates Fight
-11C4E420 | Undead Pirate B | The Interceptor Pirates Fight
-11C4E460 | Undead Pirate A | The Interceptor Pirates Fight
-11C4E4A0 | Undead Pirate B | The Interceptor Pirates Fight
- 
-11C52604 | Air Pirate | The Interceptor Barrels
-11C526E0 | Air Pirate | The Interceptor Barrels
-11C52720 | Air Pirate | The Interceptor Barrels
-11C52760 | Air Pirate | The Interceptor Barrels
-11C5283C | Cannon Gun | The Interceptor Barrels
-11C52918 | Cannon Gun | The Interceptor Barrels
-11C529F4 | Cannon Gun | The Interceptor Barrels
-11C52AD0 | Cannon Gun | The Interceptor Barrels
- 
-11C43370 | Illuminator | Barbossa Boss Fight
-11C43330 | Barbossa | Barbossa Boss Fight
-
-
 Agrabah - 1st Visit
 
 
@@ -221,36 +157,6 @@ Space Paranoids - 1st Visit
 
 11C56530 | Hostile Program | Hostile Program Boss Fight
 
-Port Royal - 2nd Visit
-
-
-11C42FD8 | Undead Pirate B | Harbor Pirates Fight (2nd Visit)
-11C43018 | Undead Pirate A | Harbor Pirates Fight (2nd Visit)
-11C43058 | Undead Pirate A | Harbor Pirates Fight (2nd Visit)
- 
-11C5BA78 | Grim Reaper I | Grim Reaper I Boss Fight
- 
-11C56F38 | Gambler | Gambler (Ship Graveyard: Seadrift Keep; 1st Fight)
- 
-11C5706C | Gambler | Gambler (Ship Graveyard: Seadrift Keep; 1st Fight)
- 
-11C5B970 | Gambler | Gambler (From Ship Graveyard: The Interceptor's Hold)
-11C5B9B0 | Gambler | Gambler (Ship Graveyard: Seadrift Row)
- 
-11C58324 | Gambler | Gambler (Isla de Muerta: Cave Mouth)
- 
-11C5BC28 | Gambler | Gambler (Isla de Muerta: Powder Store)
-
-11C5BC38 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
-11C5BC78 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
-11C5BCB8 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
-11C5BCF8 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
-11C5BD38 | Undead Pirate C | Gambler (Isla de Muerta: Moonlight Nook)
-11C5BD78 | Gambler | Gambler (Isla de Muerta: Moonlight Nook)
- 
-11C433E4 | Gambler | Gambler (Isla de Muerta: Treasure Heap)
- 
-11C4318C | Grim Reaper II | Grim Reaper II Boss Fight
 
 
 Agrabah - 2nd Visit
