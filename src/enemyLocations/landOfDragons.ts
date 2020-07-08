@@ -936,13 +936,13 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		value: "11C4C2A4",
 		enemy: Enemies.NIGHTWALKER,
 	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.LAND_OF_DRAGONS,
-		description: "Riku? Boss Fight",
-		value: "11C32BB4",
-		enemy: Enemies.RIKU,
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.LAND_OF_DRAGONS,
+	// 	description: "Riku? Boss Fight",
+	// 	value: "11C32BB4",
+	// 	enemy: Enemies.RIKU,
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
