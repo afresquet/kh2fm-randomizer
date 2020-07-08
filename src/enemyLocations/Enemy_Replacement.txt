@@ -1,50 +1,4 @@
-Beast's Castle - 1st Visit
-
-
-11C504CC | Shadow | Parlor Shadows
-11C5050C | Shadow | Parlor Shadows
-11C5054C | Shadow | Parlor Shadows
-11C5058C | Shadow | Parlor Shadows
-11C505CC | Shadow | Parlor Shadows
-11C5060C | Shadow | Parlor Shadows
-11C5064C | Shadow | Parlor Shadows
-11C5068C | Shadow | Parlor Shadows
-11C506CC | Shadow | Parlor Shadows
-11C5070C | Shadow | Parlor Shadows
-11C5074C | Shadow | Parlor Shadows
-11C5078C | Shadow | Parlor Shadows
-11C507CC | Shadow | Parlor Shadows
-11C5080C | Shadow | Parlor Shadows
-11C5084C | Shadow | Parlor Shadows
-11C5088C | Shadow | Parlor Shadows
- 
-11C55204 | Thresholder | Thresholder Boss Fight
-11C55244 | Possessor | Thresholder Boss Fight
-11C552B0 | Gargoyle Knight | Thresholder Boss Fight
-11C552F0 | Gargoyle Knight | Thresholder Boss Fight
-11C55330 | Hook Bat | Thresholder Boss Fight
-11C55370 | Hook Bat | Thresholder Boss Fight
-11C553B0 | Hook Bat | Thresholder Boss Fight
-11C553F0 | Hook Bat | Thresholder Boss Fight
-11C55430 | Hook Bat | Thresholder Boss Fight
-11C55470 | Hook Bat | Thresholder Boss Fight
-11C554B0 | Hook Bat | Thresholder Boss Fight
-11C554F0 | Hook Bat | Thresholder Boss Fight
-11C55530 | Hook Bat | Thresholder Boss Fight
-11C55570 | Hook Bat | Thresholder Boss Fight
- 
-11C4CBA0 | Beast | Beast Boss Fight
-  
-11C59F9C | Chandelier | Shadow Stalker Boss Fight
-11C5A010 | Window | Shadow Stalker Boss Fight
-11C5A3A0 | Pillar | Shadow Stalker Boss Fight
-11C5A360 | Shadow Stalker | Shadow Stalker Boss Fight
- 
-11C5A16C | Chandelier | Dark Thorn Boss Fight
-11C5A4D4 | Dark Thorn | Dark Thorn Boss Fight
-
 Olympus Colisseum - 1st Visit
-
 
 11C48478 | Hades (Invincible) | Hades Chamber Boss Fight
  
@@ -460,27 +414,6 @@ Space Paranoids - 1st Visit
 
 
 11C56530 | Hostile Program | Hostile Program Boss Fight
-
-
-Beast's Castle - 2nd Visit
-
-
-11C5209C | Dragoon | Ballroom Nobodies Fight
-11C520DC | Dragoon | Ballroom Nobodies Fight
-11C5211C | Dragoon | Ballroom Nobodies Fight
-11C5215C | Dusk | Ballroom Nobodies Fight
-11C5219C | Dusk | Ballroom Nobodies Fight
- 
-11C500E4 | Dusk | Entrance Hall Nobodies Fight
-11C50124 | Dusk | Entrance Hall Nobodies Fight
-11C50164 | Dragoon | Entrance Hall Nobodies Fight
-11C501A4 | Dragoon | Entrance Hall Nobodies Fight
-11C501E4 | Dragoon | Entrance Hall Nobodies Fight
-11C50290 | Dragoon | Entrance Hall Nobodies Fight
-11C502D0 | Dragoon | Entrance Hall Nobodies Fight
-11C50310 | Dragoon | Entrance Hall Nobodies Fight
- 
-11C5A0A8 | Xaldin | Xaldin Boss Fight
 
 
 Olympus Colisseum - 2nd Visit
