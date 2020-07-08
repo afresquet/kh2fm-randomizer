@@ -1,10 +1,11 @@
+import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
 import { Reward } from "../rewards/Reward";
-import { RewardLocationName, RewardLocationType } from "./RewardLocation";
+import { RewardLocationType } from "./RewardLocation";
 
 export const keybladeAbilitiesRewardLocations: {
 	type: RewardLocationType;
-	name: RewardLocationName;
+	name: LocationName;
 	description: string;
 	values: { ability: string; stats: string };
 	ability: Reward;
@@ -21,7 +22,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.TWILIGHT_TOWN,
+		name: LocationName.TWILIGHT_TOWN,
 		description: "Oathkeeper",
 		values: {
 			ability: "11CDF1E6",
@@ -31,7 +32,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Oblivion",
 		values: {
 			ability: "11CDF1F6",
@@ -41,7 +42,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.TWILIGHT_TOWN,
+		name: LocationName.TWILIGHT_TOWN,
 		description: "Star Seeker",
 		values: {
 			ability: "11CDF466",
@@ -51,7 +52,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.LAND_OF_DRAGONS,
+		name: LocationName.LAND_OF_DRAGONS,
 		description: "Hidden Dragon",
 		values: {
 			ability: "11CDF476",
@@ -61,7 +62,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "Hero's Crest",
 		values: {
 			ability: "11CDF4A6",
@@ -71,7 +72,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.TIMELESS_RIVER,
+		name: LocationName.TIMELESS_RIVER,
 		description: "Monochrome",
 		values: {
 			ability: "11CDF4B6",
@@ -81,7 +82,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.PORT_ROYAL,
+		name: LocationName.PORT_ROYAL,
 		description: "Follow the Wind",
 		values: {
 			ability: "11CDF4C6",
@@ -91,7 +92,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.PRIDE_LANDS,
+		name: LocationName.PRIDE_LANDS,
 		description: "Circle of Life",
 		values: {
 			ability: "11CDF4D6",
@@ -101,7 +102,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.SPACE_PARANOIDS,
+		name: LocationName.SPACE_PARANOIDS,
 		description: "Photon Debugger",
 		values: {
 			ability: "11CDF4E6",
@@ -111,7 +112,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "Gull Wing",
 		values: {
 			ability: "11CDF4F6",
@@ -121,7 +122,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.BEASTS_CASTLE,
+		name: LocationName.BEASTS_CASTLE,
 		description: "Rumbling Rose",
 		values: {
 			ability: "11CDF506",
@@ -131,7 +132,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "Guardian Soul",
 		values: {
 			ability: "11CDF516",
@@ -141,7 +142,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.AGRABAH,
+		name: LocationName.AGRABAH,
 		description: "Wishing Lamp",
 		values: {
 			ability: "11CDF526",
@@ -151,7 +152,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.HALLOWEEN_TOWN,
+		name: LocationName.HALLOWEEN_TOWN,
 		description: "Decisive Pumpkin",
 		values: {
 			ability: "11CDF536",
@@ -161,7 +162,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.POOH,
+		name: LocationName.POOH,
 		description: "Sweet Memories",
 		values: {
 			ability: "11CDF556",
@@ -171,7 +172,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.ATLANTICA,
+		name: LocationName.ATLANTICA,
 		description: "Mysterious Abyss",
 		values: {
 			ability: "11CDF566",
@@ -181,7 +182,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "Sleeping Lion",
 		values: {
 			ability: "11CDF546",
@@ -191,7 +192,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.TWILIGHT_TOWN,
+		name: LocationName.TWILIGHT_TOWN,
 		description: "Bond of Flame",
 		values: {
 			ability: "11CDF586",
@@ -201,7 +202,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.OLYMPUS_CUPS,
+		name: LocationName.OLYMPUS_CUPS,
 		description: "Fatal Crest",
 		values: {
 			ability: "11CDF576",
@@ -211,7 +212,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Two Become One",
 		values: {
 			ability: "11CDF5F6",
@@ -221,7 +222,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "Fenrir",
 		values: {
 			ability: "11CDF596",
@@ -231,7 +232,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.SYNTHESIS,
+		name: LocationName.SYNTHESIS,
 		description: "Ultima Weapon",
 		values: {
 			ability: "11CDF5A6",
@@ -241,7 +242,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "Winner's Proof",
 		values: {
 			ability: "11CDF606",
@@ -251,7 +252,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.FORM,
+		name: LocationName.FORM,
 		description: "FAKE",
 		values: {
 			ability: "11CDF3F6",
@@ -261,7 +262,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.FORM,
+		name: LocationName.FORM,
 		description: "Detection Saber",
 		values: {
 			ability: "11CDF206",
@@ -271,7 +272,7 @@ export const keybladeAbilitiesRewardLocations: {
 	},
 	{
 		type: RewardLocationType.KEYBLADE,
-		name: RewardLocationName.FORM,
+		name: LocationName.FORM,
 		description: "Edge of Ultima",
 		values: {
 			ability: "11CDF216",

@@ -10,7 +10,7 @@ import React, {
 } from "react";
 import { SeedContext } from "../../context/seed";
 import { analytics } from "../../firebase";
-import { RewardLocationName } from "../../rewardLocations/RewardLocation";
+import { LocationName } from "../../LocationName";
 
 interface Props {
 	active: boolean;
@@ -68,7 +68,7 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			?.filter(value => value.reward.value !== "00000000")
 			.map<T>(value => ({
 				key: `${value.location.description}: ${value.location.reward.name} -> ${value.reward.name}`,
-				name: value.location.name,
+				name: value.location.location,
 				description: value.location.description,
 				type: value.location.type,
 				became: value.reward.name,
@@ -77,7 +77,7 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			.sort((a, b) => {
 				if (a.name !== b.name) {
 					return a.name.localeCompare(b.name);
-				} else if (a.name === RewardLocationName.LEVEL_UP) {
+				} else if (a.name === LocationName.LEVEL_UP) {
 					return 0;
 				}
 

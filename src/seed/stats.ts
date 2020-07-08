@@ -1,8 +1,6 @@
+import { LocationName } from "../LocationName";
 import { levels } from "../rewardLocations/levels";
-import {
-	RewardLocationName,
-	RewardLocationType,
-} from "../rewardLocations/RewardLocation";
+import { RewardLocationType } from "../rewardLocations/RewardLocation";
 import { Configuration } from "../settings/Configuration";
 import { LevelStats } from "./LevelStats";
 import { SeedItem } from "./Seed";
@@ -18,7 +16,7 @@ export function* stats(
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
-				name: RewardLocationName.LEVEL_UP,
+				location: LocationName.LEVEL_UP,
 				description: `LV${level.level} (Stats)`,
 				value: level.stats,
 				reward: {} as any,
