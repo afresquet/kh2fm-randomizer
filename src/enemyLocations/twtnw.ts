@@ -2,7 +2,7 @@ import { Enemies } from "../enemies";
 import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
-export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
+export const twtnwEnemyLocations: EnemyLocation[] = [
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
