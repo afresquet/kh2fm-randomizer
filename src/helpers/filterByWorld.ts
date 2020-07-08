@@ -1,7 +1,5 @@
-import {
-	RewardLocation,
-	RewardLocationName,
-} from "../rewardLocations/RewardLocation";
+import { LocationName } from "../LocationName";
+import { RewardLocation } from "../rewardLocations/RewardLocation";
 import { Configuration } from "../settings/Configuration";
 import { RandomizingAction } from "../settings/enums";
 
@@ -10,45 +8,45 @@ export const filterByWorld = (configuration: Configuration) => (
 ): boolean => {
 	switch (
 		location.gameMode?.[configuration.gameMode.mode]?.world ||
-		location.name
+		location.location
 	) {
-		case RewardLocationName.AGRABAH: {
+		case LocationName.AGRABAH: {
 			if (configuration.worlds.agrabah !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.ATLANTICA: {
+		case LocationName.ATLANTICA: {
 			if (configuration.worlds.atlantica !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.BEASTS_CASTLE: {
+		case LocationName.BEASTS_CASTLE: {
 			if (configuration.worlds.beastsCastle !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.DISNEY_CASTLE: {
+		case LocationName.DISNEY_CASTLE: {
 			if (configuration.worlds.disneyCastle !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.HALLOWEEN_TOWN: {
+		case LocationName.HALLOWEEN_TOWN: {
 			if (configuration.worlds.halloweenTown !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.HOLLOW_BASTION: {
+		case LocationName.HOLLOW_BASTION: {
 			if (configuration.worlds.hollowBastion !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.CAVERN_OF_REMEMBRANCE: {
+		case LocationName.CAVERN_OF_REMEMBRANCE: {
 			if (
 				configuration.worlds.cavernOfRemembrance !== RandomizingAction.RANDOMIZE
 			)
@@ -56,37 +54,37 @@ export const filterByWorld = (configuration: Configuration) => (
 
 			break;
 		}
-		case RewardLocationName.LAND_OF_DRAGONS: {
+		case LocationName.LAND_OF_DRAGONS: {
 			if (configuration.worlds.landOfDragons !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.OLYMPUS: {
+		case LocationName.OLYMPUS: {
 			if (configuration.worlds.olympus !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.POOH: {
+		case LocationName.POOH: {
 			if (configuration.worlds.pooh !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.PORT_ROYAL: {
+		case LocationName.PORT_ROYAL: {
 			if (configuration.worlds.portRoyal !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.PRIDE_LANDS: {
+		case LocationName.PRIDE_LANDS: {
 			if (configuration.worlds.prideLands !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.SIMULATED_TWILIGHT_TOWN: {
+		case LocationName.SIMULATED_TWILIGHT_TOWN: {
 			if (
 				configuration.worlds.simulatedTwilightTown !==
 				RandomizingAction.RANDOMIZE
@@ -95,25 +93,25 @@ export const filterByWorld = (configuration: Configuration) => (
 
 			break;
 		}
-		case RewardLocationName.SPACE_PARANOIDS: {
+		case LocationName.SPACE_PARANOIDS: {
 			if (configuration.worlds.spaceParanoids !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.TIMELESS_RIVER: {
+		case LocationName.TIMELESS_RIVER: {
 			if (configuration.worlds.timelessRiver !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.TWILIGHT_TOWN: {
+		case LocationName.TWILIGHT_TOWN: {
 			if (configuration.worlds.twilightTown !== RandomizingAction.RANDOMIZE)
 				return false;
 
 			break;
 		}
-		case RewardLocationName.TWTNW: {
+		case LocationName.TWTNW: {
 			if (configuration.worlds.twtnw !== RandomizingAction.RANDOMIZE)
 				return false;
 

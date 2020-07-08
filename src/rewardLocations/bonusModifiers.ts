@@ -1,17 +1,18 @@
+import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
 import { Reward } from "../rewards/Reward";
-import { RewardLocationName, RewardLocationType } from "./RewardLocation";
+import { RewardLocationType } from "./RewardLocation";
 
 export const bonusModifiersRewardLocations: {
 	type: RewardLocationType;
-	name: RewardLocationName;
+	name: LocationName;
 	description: string;
 	values: { stats: string; slots: string };
 	bonuses: Reward[];
 }[] = [
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SIMULATED_TWILIGHT_TOWN,
+		name: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Station of Serenity Nobodies",
 		values: {
 			stats: "11D10FA2",
@@ -21,7 +22,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SIMULATED_TWILIGHT_TOWN,
+		name: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Twilight Thorn",
 		values: {
 			stats: "11D10CB2",
@@ -32,7 +33,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SIMULATED_TWILIGHT_TOWN,
+		name: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Axel I",
 		values: {
 			stats: "11D11272",
@@ -42,7 +43,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SIMULATED_TWILIGHT_TOWN,
+		name: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Axel II",
 		values: {
 			stats: "11D10CC2",
@@ -52,7 +53,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "Bailey Nobodies",
 		values: {
 			stats: "11D10E92",
@@ -62,7 +63,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.LAND_OF_DRAGONS,
+		name: LocationName.LAND_OF_DRAGONS,
 		description: "Village Cave Heartless",
 		values: {
 			stats: "11D10DF2",
@@ -72,7 +73,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.LAND_OF_DRAGONS,
+		name: LocationName.LAND_OF_DRAGONS,
 		description: "Shan-Yu",
 		values: {
 			stats: "11D108C2",
@@ -82,7 +83,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.BEASTS_CASTLE,
+		name: LocationName.BEASTS_CASTLE,
 		description: "Thresholder",
 		values: {
 			stats: "11D10752",
@@ -92,7 +93,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.BEASTS_CASTLE,
+		name: LocationName.BEASTS_CASTLE,
 		description: "The Beast",
 		values: {
 			stats: "11D10942",
@@ -102,7 +103,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.BEASTS_CASTLE,
+		name: LocationName.BEASTS_CASTLE,
 		description: "Dark Thorn",
 		values: {
 			stats: "11D10782",
@@ -112,7 +113,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "Cerberus",
 		values: {
 			stats: "11D10802",
@@ -122,7 +123,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "Phil's Training",
 		values: {
 			stats: "11D10FE2",
@@ -132,7 +133,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "Demyx",
 		values: {
 			stats: "11D10FF2",
@@ -142,7 +143,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "Pete",
 		values: {
 			stats: "11D10822",
@@ -152,7 +153,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "The Hydra",
 		values: {
 			stats: "11D10852",
@@ -162,7 +163,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.DISNEY_CASTLE,
+		name: LocationName.DISNEY_CASTLE,
 		description: "Queen Minnie Escort",
 		values: {
 			stats: "11D10D22",
@@ -172,7 +173,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TIMELESS_RIVER,
+		name: LocationName.TIMELESS_RIVER,
 		description: "Steamboat Fight",
 		values: {
 			stats: "11D10982",
@@ -182,7 +183,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TIMELESS_RIVER,
+		name: LocationName.TIMELESS_RIVER,
 		description: "Pete",
 		values: {
 			stats: "11D109B2",
@@ -192,7 +193,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PORT_ROYAL,
+		name: LocationName.PORT_ROYAL,
 		description: "The Interceptor Pirates",
 		values: {
 			stats: "11D110B2",
@@ -202,7 +203,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PORT_ROYAL,
+		name: LocationName.PORT_ROYAL,
 		description: "The Interceptor Barrels",
 		values: {
 			stats: "11D10D32",
@@ -212,7 +213,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PORT_ROYAL,
+		name: LocationName.PORT_ROYAL,
 		description: "Captain Barbossa",
 		values: {
 			stats: "11D10AA2",
@@ -222,7 +223,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.AGRABAH,
+		name: LocationName.AGRABAH,
 		description: "Escort Abu",
 		values: {
 			stats: "11D10DB2",
@@ -232,7 +233,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.AGRABAH,
+		name: LocationName.AGRABAH,
 		description: "Treasure Room Heartless",
 		values: {
 			stats: "11D10E52",
@@ -242,7 +243,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.AGRABAH,
+		name: LocationName.AGRABAH,
 		description: "Volcanic Lord & Blizzard Lord",
 		values: {
 			stats: "11D10CE2",
@@ -252,7 +253,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HALLOWEEN_TOWN,
+		name: LocationName.HALLOWEEN_TOWN,
 		description: "Prison Keeper",
 		values: {
 			stats: "11D109E2",
@@ -263,7 +264,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HALLOWEEN_TOWN,
+		name: LocationName.HALLOWEEN_TOWN,
 		description: "Oogie Boogie",
 		values: {
 			stats: "11D10A22",
@@ -273,7 +274,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PRIDE_LANDS,
+		name: LocationName.PRIDE_LANDS,
 		description: "Hyenas I",
 		values: {
 			stats: "11D10EA2",
@@ -283,7 +284,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PRIDE_LANDS,
+		name: LocationName.PRIDE_LANDS,
 		description: "Scar",
 		values: {
 			stats: "11D10BD2",
@@ -293,7 +294,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SPACE_PARANOIDS,
+		name: LocationName.SPACE_PARANOIDS,
 		description: "Dataspace Computers",
 		values: {
 			stats: "11D10E12",
@@ -303,7 +304,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SPACE_PARANOIDS,
+		name: LocationName.SPACE_PARANOIDS,
 		description: "Hostile Program",
 		values: {
 			stats: "11D10C32",
@@ -313,7 +314,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "Demyx",
 		values: {
 			stats: "11D10BA2",
@@ -323,7 +324,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "1,000 Heartless",
 		values: {
 			stats: "11D11062",
@@ -333,7 +334,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.LAND_OF_DRAGONS,
+		name: LocationName.LAND_OF_DRAGONS,
 		description: "Storm Rider",
 		values: {
 			stats: "11D10902",
@@ -343,7 +344,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.BEASTS_CASTLE,
+		name: LocationName.BEASTS_CASTLE,
 		description: "Xaldin",
 		values: {
 			stats: "11D107C2",
@@ -353,7 +354,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.OLYMPUS,
+		name: LocationName.OLYMPUS,
 		description: "Hades",
 		values: {
 			stats: "11D10882",
@@ -363,7 +364,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PORT_ROYAL,
+		name: LocationName.PORT_ROYAL,
 		description: "Grim Reaper I",
 		values: {
 			stats: "11D11022",
@@ -373,7 +374,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PORT_ROYAL,
+		name: LocationName.PORT_ROYAL,
 		description: "Grim Reaper II",
 		values: {
 			stats: "11D10AE2",
@@ -383,7 +384,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.AGRABAH,
+		name: LocationName.AGRABAH,
 		description: "Genie Jafar",
 		values: {
 			stats: "11D10972",
@@ -393,7 +394,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HALLOWEEN_TOWN,
+		name: LocationName.HALLOWEEN_TOWN,
 		description: "Lock/Shock/Barrel",
 		values: {
 			stats: "11D10D72",
@@ -403,7 +404,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HALLOWEEN_TOWN,
+		name: LocationName.HALLOWEEN_TOWN,
 		description: "The Experiment",
 		values: {
 			stats: "11D10A62",
@@ -413,7 +414,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PRIDE_LANDS,
+		name: LocationName.PRIDE_LANDS,
 		description: "Hyenas II",
 		values: {
 			stats: "11D10ED2",
@@ -423,7 +424,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.PRIDE_LANDS,
+		name: LocationName.PRIDE_LANDS,
 		description: "Groundshaker",
 		values: {
 			stats: "11D10C12",
@@ -433,7 +434,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SPACE_PARANOIDS,
+		name: LocationName.SPACE_PARANOIDS,
 		description: "Solar Sailor Heartless",
 		values: {
 			stats: "11D11072",
@@ -443,7 +444,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.SPACE_PARANOIDS,
+		name: LocationName.SPACE_PARANOIDS,
 		description: "MCP",
 		values: {
 			stats: "11D10C72",
@@ -453,7 +454,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWILIGHT_TOWN,
+		name: LocationName.TWILIGHT_TOWN,
 		description: "The Old Mansion Nobodies",
 		values: {
 			stats: "11D10FB2",
@@ -463,7 +464,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWILIGHT_TOWN,
+		name: LocationName.TWILIGHT_TOWN,
 		description: "Betwixt & Between Nobodies",
 		values: {
 			stats: "11D110E2",
@@ -473,7 +474,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Roxas",
 		values: {
 			stats: "11D111E2",
@@ -483,7 +484,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Xigbar",
 		values: {
 			stats: "11D10B22",
@@ -493,7 +494,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Luxord",
 		values: {
 			stats: "11D10B52",
@@ -503,7 +504,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Saix",
 		values: {
 			stats: "11D10B62",
@@ -513,7 +514,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Xemnas",
 		values: {
 			stats: "11D10B92",
@@ -523,7 +524,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.TWTNW,
+		name: LocationName.TWTNW,
 		description: "Final Xemnas",
 		values: {
 			stats: "11D11222",
@@ -533,7 +534,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.HOLLOW_BASTION,
+		name: LocationName.HOLLOW_BASTION,
 		description: "Sephiroth",
 		values: {
 			stats: "11D10CD2",
@@ -543,7 +544,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ABSENT_SILHOUETTE,
+		name: LocationName.ABSENT_SILHOUETTE,
 		description: "Zexion (Absent Silhouette)",
 		values: {
 			stats: "11D11152",
@@ -553,7 +554,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ABSENT_SILHOUETTE,
+		name: LocationName.ABSENT_SILHOUETTE,
 		description: "Larxene (Absent Silhouette)",
 		values: {
 			stats: "11D111B2",
@@ -563,7 +564,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ABSENT_SILHOUETTE,
+		name: LocationName.ABSENT_SILHOUETTE,
 		description: "Lexaeus (Absent Silhouette)",
 		values: {
 			stats: "11D11122",
@@ -573,7 +574,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ABSENT_SILHOUETTE,
+		name: LocationName.ABSENT_SILHOUETTE,
 		description: "Marluxia (Absent Silhouette)",
 		values: {
 			stats: "11D11182",
@@ -583,7 +584,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.ABSENT_SILHOUETTE,
+		name: LocationName.ABSENT_SILHOUETTE,
 		description: "Vexen (Absent Silhouette)",
 		values: {
 			stats: "11D110F2",
@@ -593,7 +594,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.CAVERN_OF_REMEMBRANCE,
+		name: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Transport to Remembrance Nobodies III",
 		values: {
 			stats: "11D11242",
@@ -603,7 +604,7 @@ export const bonusModifiersRewardLocations: {
 	},
 	{
 		type: RewardLocationType.BONUS,
-		name: RewardLocationName.DISNEY_CASTLE,
+		name: LocationName.DISNEY_CASTLE,
 		description: "Lingering Will",
 		values: {
 			stats: "11D111F2",

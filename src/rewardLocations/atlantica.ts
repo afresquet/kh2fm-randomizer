@@ -1,12 +1,9 @@
+import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
 import { Reward } from "../rewards/Reward";
 import { GameMode } from "../settings/enums";
-import {
-	RewardLocation,
-	RewardLocationName,
-	RewardLocationType,
-} from "./RewardLocation";
+import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 const exclude: Reward[] = [
 	...Object.values(formRewards),
@@ -18,14 +15,14 @@ const exclude: Reward[] = [
 export const atlanticaRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.POPUP,
-		name: RewardLocationName.ATLANTICA,
+		location: LocationName.ATLANTICA,
 		description: "Undersea Kingdom Map",
 		value: "11CE0846",
 		reward: Rewards.UNDERSEA_KINGDOM_MAP,
 	},
 	{
 		type: RewardLocationType.POPUP,
-		name: RewardLocationName.ATLANTICA,
+		location: LocationName.ATLANTICA,
 		description: "Mysterious Abyss",
 		value: "11CE08E2",
 		reward: Rewards.MYSTERIOUS_ABYSS,
@@ -35,7 +32,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 	},
 	{
 		type: RewardLocationType.POPUP,
-		name: RewardLocationName.ATLANTICA,
+		location: LocationName.ATLANTICA,
 		description: "Blizzard",
 		value: "11CE08EE",
 		reward: Rewards.BLIZZARD,
@@ -45,7 +42,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 	},
 	{
 		type: RewardLocationType.POPUP,
-		name: RewardLocationName.ATLANTICA,
+		location: LocationName.ATLANTICA,
 		description: "Orichalcum+",
 		value: "11CE08FA",
 		reward: Rewards.ORICHALCUM_PLUS,

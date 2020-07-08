@@ -1,12 +1,10 @@
+import { LocationName } from "../LocationName";
 import {
 	abilityLevels,
 	level50levels,
 	levels,
 } from "../rewardLocations/levels";
-import {
-	RewardLocationName,
-	RewardLocationType,
-} from "../rewardLocations/RewardLocation";
+import { RewardLocationType } from "../rewardLocations/RewardLocation";
 import { Reward } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
 import { Leveling } from "../settings/enums";
@@ -47,7 +45,7 @@ export function* abilities(
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
-				name: RewardLocationName.LEVEL_UP,
+				location: LocationName.LEVEL_UP,
 				description: `LV${level.level} (Sword)`,
 				value: level.abilities.sword.value,
 				reward: abilityLevels[i].abilities.sword.reward!,
@@ -58,7 +56,7 @@ export function* abilities(
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
-				name: RewardLocationName.LEVEL_UP,
+				location: LocationName.LEVEL_UP,
 				description: `LV${level.level} (Staff)`,
 				value: level.abilities.staff.value,
 				reward: abilityLevels[i].abilities.staff.reward!,
@@ -69,7 +67,7 @@ export function* abilities(
 		yield {
 			location: {
 				type: RewardLocationType.LEVELUP,
-				name: RewardLocationName.LEVEL_UP,
+				location: LocationName.LEVEL_UP,
 				description: `LV${level.level} (Shield)`,
 				value: level.abilities.shield.value,
 				reward: abilityLevels[i].abilities.shield.reward!,
