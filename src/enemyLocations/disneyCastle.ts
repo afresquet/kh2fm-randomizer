@@ -2,7 +2,7 @@ import { Enemies } from "../enemies";
 import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
-export const beastsCastleEnemyLocations: EnemyLocation[] = [
+export const disneyCastleEnemyLocations: EnemyLocation[] = [
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.DISNEY_CASTLE,

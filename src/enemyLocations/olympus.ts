@@ -2,7 +2,7 @@ import { Enemies } from "../enemies";
 import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
-export const beastsCastleEnemyLocations: EnemyLocation[] = [
+export const olympusEnemyLocations: EnemyLocation[] = [
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
