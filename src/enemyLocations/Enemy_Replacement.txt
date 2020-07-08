@@ -1,21 +1,3 @@
-Mushroom XIII
-
-
-11C41CB4 | Mushroom #1 | Mushroom #1
-11C56194 | Mushroom #2 | Mushroom #2
-11C55080 | Mushroom #3 | Mushroom #3
-11C4C358 | Mushroom #4 | Mushroom #4
-11C555CC | Mushroom #5 | Mushroom #5
-11C53DD8 | Mushroom #6 | Mushroom #6
-11C58F8C | Mushroom #7 | Mushroom #7
-11C506B8 | Mushroom #8 | Mushroom #8
-11C4CEF0 | Mushroom #9 | Mushroom #9
-11C5C13C | Mushroom #10 | Mushroom #10
-11C57220 | Mushroom #11 | Mushroom #11
-11C4454C | Mushroom #12 | Mushroom #12
-11C54B7C | Mushroom #13 | Mushroom #13
-
-
 Cavern of Remmebrance
 
 
