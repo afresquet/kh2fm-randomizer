@@ -1487,4 +1487,11 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		value: "11C4EB08",
 		enemy: Enemies.ARMORED_KNIGHT,
 	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.HOLLOW_BASTION,
+		description: "Sephiroth Boss Fight",
+		value: "11C24740",
+		enemy: Enemies.SEPHIROTH,
+	},
 ];
