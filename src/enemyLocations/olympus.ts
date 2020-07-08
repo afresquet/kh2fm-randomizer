@@ -3,20 +3,20 @@ import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
 export const olympusEnemyLocations: EnemyLocation[] = [
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.OLYMPUS,
-		description: "Hades Chamber Boss Fight",
-		value: "11C48478",
-		enemy: Enemies.HADES_I,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.OLYMPUS,
-		description: "Hades Escape",
-		value: "11C591FC",
-		enemy: Enemies.HADES_I,
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.OLYMPUS,
+	// 	description: "Hades Chamber Boss Fight",
+	// 	value: "11C48478",
+	// 	enemy: Enemies.HADES_I,
+	// },
+	// {
+	// 	type: EnemyLocationType.MOB_FIGHT,
+	// 	location: LocationName.OLYMPUS,
+	// 	description: "Hades Escape",
+	// 	value: "11C591FC",
+	// 	enemy: Enemies.HADES_I,
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,
@@ -209,13 +209,13 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 	// 	enemy: Enemies.???,
 	// 	// | Demyx I |
 	// },
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.OLYMPUS,
-		description: "Pete I Boss Fight",
-		value: "11C4F4D0",
-		enemy: Enemies.PETE_OC_I,
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.OLYMPUS,
+	// 	description: "Pete I Boss Fight",
+	// 	value: "11C4F4D0",
+	// 	enemy: Enemies.PETE_OC_I,
+	// },
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
@@ -265,13 +265,13 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		value: "11C4FCF4",
 		enemy: Enemies.HOOK_BAT,
 	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.OLYMPUS,
-		description: "Hydra Boss Fight",
-		value: "11C566C4",
-		enemy: Enemies.HYDRA,
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.OLYMPUS,
+	// 	description: "Hydra Boss Fight",
+	// 	value: "11C566C4",
+	// 	enemy: Enemies.HYDRA,
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,

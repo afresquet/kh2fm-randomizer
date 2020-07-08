@@ -215,13 +215,13 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		value: "11C55570",
 		enemy: Enemies.HOOK_BAT,
 	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.BEASTS_CASTLE,
-		description: "Beast Boss Fight",
-		value: "11C4CBA0",
-		enemy: Enemies.THE_BEAST,
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.BEASTS_CASTLE,
+	// 	description: "Beast Boss Fight",
+	// 	value: "11C4CBA0",
+	// 	enemy: Enemies.THE_BEAST,
+	// },
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
 	// 	location: LocationName.BEASTS_CASTLE,
