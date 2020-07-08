@@ -333,4 +333,11 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 	// 11C55F40 0000????
 	// 11C55F80 0000????
 	// 11C55FC0 0000????
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.DISNEY_CASTLE,
+		description: "Lingering Will Boss Fight",
+		value: "11C556E0",
+		enemy: Enemies.LINGERING_WILL,
+	},
 ];
