@@ -1,53 +1,4 @@
-Olympus Colisseum - 1st Visit
-
-11C48478 | Hades (Invincible) | Hades Chamber Boss Fight
- 
-11C591FC | Hades (Invincible) | Hades Escape
-11C59268 | Hook Bat | Hades Escape
-11C592A8 | Hook Bat | Hades Escape
-11C592E8 | Hook Bat | Hades Escape
-11C59328 | Hook Bat | Hades Escape
-11C59368 | Shadow | Hades Escape
-11C593A8 | Shadow | Hades Escape
-11C593E8 | Shadow | Hades Escape
-11C59454 | Lance Soldier | Hades Escape
-11C59494 | Shadow | Hades Escape
-11C594D4 | Shadow | Hades Escape
-11C59514 | Shadow | Hades Escape
-11C59554 | Shadow | Hade s Escape
-11C59594 | Lance Soldier| Hades Escape
-11C59640 | Hook Bat | Hades Escape
-11C59680 | Lance Soldier| Hades Escape
-11C596C0 | Lance Soldier| Hades Escape
-11C59700 | Large Body | Hade s Escape
-11C59740 | Lance Soldier| Hades Escape
-11C59780 | Lance Soldier| Hades Escape
-11C597C0 | Hook Bat | Hades Escape
-11C59800 | Hook Bat | Hades Escape
-11C59840 | Shadow | Hades Escape
-11C59880 | Shadow | Hades Escape
- 
-11C4EF2C | Boulder | Cerberus Boss Fight
-11C4EF6C | Boulder | Cerberus Boss Fight
-11C4EDF8 | Cerberus | Cerberus Boss Fight
- 
-11C527FC | Demyx I | Demyx I Boss Fight
- 
-11C4F4D0 | Pete I OC | Pete I Boss Fight
- 
-11C4FB08 | Pete | Pete II Boss Fight
-11C4FBB4 | Trick Ghost | Pete II Boss Fight
-11C4FBF4 | Hook Bat | Pete II Boss Fight
-11C4FC34 | Trick Ghost | Pete II Boss Fight
-11C4FC74 | Hook Bat | Pete II Boss Fight
-11C4FCB4 | Hook Bat | Pete II Boss Fight
-11C4FCF4 | Hook Bat | Pete II Boss Fight
- 
-11C566C4 | Hydra | Hydra Boss Fight
-
-
 Disney Castle
-
 
 11C57670 | Shadow | Escort Queen Minnie Part I
 11C576B0 | Shadow | Escort Queen Minnie Part I
@@ -414,43 +365,6 @@ Space Paranoids - 1st Visit
 
 
 11C56530 | Hostile Program | Hostile Program Boss Fight
-
-
-Olympus Colisseum - 2nd Visit
-
-
-11C4BCDC | Mole Driller | Hades Cup - Round 1
-11C4BD1C | Tornado Step | Hades Cup - Round 1
-11C4BD5C | Tornado Step | Hades Cup - Round 1
-11C4BD9C | Morning Star | Hades Cup - Round 1
-11C4BE1C | Mole Driller | Hades Cup - Round 1
-11C4BE5C | Mole Driller | Hades Cup - Round 1
- 
-11C4BFD0 | Cresendo | Hades Cup - Semifinals
-11C4C010 | Minute Bomb | Hades Cup - Semifinals
-11C4C050 | Minute Bomb | Hades Cup - Semifinals
-11C4C090 | Minute Bomb | Hades Cup - Semifinals
-11C4C0D0 | Minute Bomb | Hades Cup - Semifinals
-11C4C110 | Crimson Jazz | Hades Cup - Semifinals
-11C4C150 | Minute Bomb | Hades Cup - Semifinals
-11C4C190 | Minute Bomb | Hades Cup - Semifinals
- 
-11C486D8 | Dusk | Hades' Chamber Nobodies Fight
-11C48718 | Dusk | Hades' Chamber Nobodies Fight
-11C48758 | Dusk | Hades' Chamber Nobodies Fight
-11C48798 | Dusk | Hades' Chamber Nobodies Fight
-11C487D8 | Dusk | Hades' Chamber Nobodies Fight
-11C48818 | Dusk | Hades' Chamber Nobodies Fight
-11C48858 | Dusk | Hades' Chamber Nobodies Fight
-11C48898 | Dusk | Hades' Chamber Nobodies Fight
-11C488D8 | Dusk | Hades' Chamber Nobodies Fight
-11C48918 | Dusk | Hades' Chamber Nobodies Fight
-11C48958 | Dusk | Hades' Chamber Nobodies Fight
-
-11C5BF7C | Hades (Invincible) | Hades Boss Phase I
-
-11C5C0B0 | Hades (Boss) |  Hades Boss Phase II
-
 
 Port Royal - 2nd Visit
 
