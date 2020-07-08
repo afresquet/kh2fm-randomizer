@@ -1,31 +1,7 @@
-Pride Lands - 1st Visit
-
-
-11C4EC14 | Living Bone | Elephant Graveyard Heartless
-11C4EC54 | Living Bone | Elephant Graveyard Heartless
- 
-11C54C84 | Pumba | Hyenas Fight I
-11C54C44 | Shenzi | Hyenas Fight I
-11C54C04 | Banzai | Hyenas Fight I
-11C54BC4 | Ed | Hyenas Fight I
- 
-11C5A74C | Scar | Scar Boss Fight
-
-
 Space Paranoids - 1st Visit
 
 
 11C56530 | Hostile Program | Hostile Program Boss Fight
-
-Pride Lands - 2nd Visit
-
-
-11C4EDB4 | Shenzi II | Hyenas II
-11C4EE34 | Banzai II | Hyenas II
-11C4EDF4 | Ed II | Hyenas II
- 
-11C59F80 | Groundshaker | Groundshaker Boss Fight
-
 
 100 Acre Wood - 4th Page
 
