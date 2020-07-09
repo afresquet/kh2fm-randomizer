@@ -41,4 +41,14 @@ export const miscellaneous = {
 		name: "Anti-Sora",
 		value: "0934",
 	},
+	DEMYX_WATER_CLONE_HB: {
+		type: EnemyType.MISCELLANEOUS,
+		name: "Demyx's Water Clone (Hollow Bastion)",
+		value: "08F6",
+	},
+	HAYABUSA: {
+		type: EnemyType.MISCELLANEOUS,
+		name: "Hayabusa (Shan-Yu's Falcon)",
+		value: "0016",
+	},
 };

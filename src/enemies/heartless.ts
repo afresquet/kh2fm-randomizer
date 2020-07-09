@@ -521,4 +521,14 @@ export const heartless = {
 		name: "Bulky Vendor (Halloween Town)",
 		value: "09CD",
 	},
+	GARGOYLE_WARRIOR: {
+		type: EnemyType.HEARTLESS,
+		name: "Gargoyle Warrior",
+		value: "0070",
+	},
+	GARGOYLE_KNIGHT: {
+		type: EnemyType.HEARTLESS,
+		name: "Gargoyle Knight",
+		value: "006F",
+	},
 };

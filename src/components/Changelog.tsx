@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.11e1",
+		changes: ["Added Random Bosses as an experimental feature"],
+	},
+	{
 		version: "0.2.11",
 		changes: [
 			"Fixed bug where setting Replace on Level Up Abilities wouldn't work",

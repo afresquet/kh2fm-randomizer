@@ -12,8 +12,13 @@ export interface EnemyLocation {
 	type: EnemyLocationType;
 	location: LocationName;
 	description: string;
-	value: string;
-	enemy: Enemy;
+	world: string;
+	room: string;
+	event: string;
+	enemies: {
+		enemy: Enemy;
+		value: string;
+	}[];
 	gameMode?: {
 		[K in GameMode]?: {};
 	};

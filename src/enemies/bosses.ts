@@ -6,11 +6,6 @@ export const bosses = {
 		name: "Shan-Yu",
 		value: "0015",
 	},
-	HAYABUSA: {
-		type: EnemyType.BOSS,
-		name: "Hayabusa (Shan-Yu's Falcon)",
-		value: "0016",
-	},
 	AXEL_II: {
 		type: EnemyType.BOSS,
 		name: "Axel II",
@@ -260,11 +255,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Vivi",
 		value: "0108D0",
-	},
-	DEMYX_WATER_CLONE_HB: {
-		type: EnemyType.BOSS,
-		name: "Demyx's Water Clone (Hollow Bastion)",
-		value: "08F6",
 	},
 	DEMYX_HB: {
 		type: EnemyType.BOSS,

@@ -10,7 +10,12 @@ interface Setting extends SettingSliderProps {
 	key: keyof Experimental;
 }
 
-export const experimentalSettings: Setting[] = [];
+export const experimentalSettings: Setting[] = [
+	{
+		key: "bosses",
+		title: "Randomize Bosses",
+	},
+];
 
 export const TabPaneExperimental: React.FC = () => {
 	const { experimental } = useContext(SeedContext);
