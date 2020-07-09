@@ -7,6 +7,9 @@ export const poohEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.POOH,
 		description: "The Expotition",
+		world: "09",
+		room: "09",
+		event: "3D",
 		enemies: [
 			{
 				enemy: Enemies.BEES_100AC,

@@ -7,6 +7,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "Station Plaza Nobodies",
+		world: "02",
+		room: "08",
+		event: "6C",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -94,6 +97,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "The Tower Heartless",
+		world: "02",
+		room: "19",
+		event: "95",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -137,6 +143,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "Tower: Star Chamber Heartless",
+		world: "02",
+		room: "1D",
+		event: "98",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -192,6 +201,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "Tower: Moon Chamber Heartless",
+		world: "02",
+		room: "1E",
+		event: "99",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -235,6 +247,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "Sandlot Nobodies Fight",
+		world: "02",
+		room: "04",
+		event: "50",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -286,6 +301,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "The Old Mansion Nobodies Fight",
+		world: "02",
+		room: "0E",
+		event: "29",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -361,6 +379,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "Between and Betwix Nobodies Fight 1",
+		world: "02",
+		room: "28",
+		event: "A0",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -392,6 +413,9 @@ export const twilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWILIGHT_TOWN,
 		description: "Between and Betwix Nobodies Fight 2",
+		world: "02",
+		room: "28",
+		event: "A1",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,

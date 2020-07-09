@@ -7,6 +7,9 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TIMELESS_RIVER,
 		description: "Pete (Past) Boss Fight",
+		world: "0D",
+		room: "01",
+		event: "3A",
 		enemies: [
 			{
 				enemy: Enemies.PETE_PAST,
@@ -18,6 +21,9 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TIMELESS_RIVER,
 		description: "Building Site Heartless",
+		world: "0D",
+		room: "05",
+		event: "37",
 		enemies: [
 			{
 				enemy: Enemies.HAMMER_FRAME_TR,
@@ -89,6 +95,9 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TIMELESS_RIVER,
 		description: "Lilliput Heartless",
+		world: "0D",
+		room: "04",
+		event: "36",
 		enemies: [
 			{
 				enemy: Enemies.AEROPLANE_TR,
@@ -140,6 +149,9 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TIMELESS_RIVER,
 		description: "Scene of the Fire Heartless",
+		world: "0D",
+		room: "06",
+		event: "38",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW_TR,
@@ -199,6 +211,9 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TIMELESS_RIVER,
 		description: "Mickey's House Heartless",
+		world: "0D",
+		room: "07",
+		event: "39",
 		enemies: [
 			{
 				enemy: Enemies.RAPID_THRUSTER_TR,
@@ -270,6 +285,9 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TIMELESS_RIVER,
 		description: "Pete Final Boss Fight",
+		world: "0D",
+		room: "03",
+		event: "35",
 		enemies: [
 			{
 				enemy: Enemies.PETE_TR,

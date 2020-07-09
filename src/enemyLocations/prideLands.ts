@@ -7,6 +7,9 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Elephant Graveyard Heartless",
+		world: "0A",
+		room: "05",
+		event: "38",
 		enemies: [
 			{
 				enemy: Enemies.LIVING_BONE,
@@ -30,6 +33,9 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Hyenas Fight I",
+		world: "0A",
+		room: "02",
+		event: "33",
 		enemies: [
 			{
 				enemy: Enemies.SHENZI,
@@ -49,6 +55,9 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Scar Boss Fight",
+		world: "0A",
+		room: "0E",
+		event: "37",
 		enemies: [
 			{
 				enemy: Enemies.SCAR,
@@ -60,6 +69,9 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Hyenas II",
+		world: "0A",
+		room: "05",
+		event: "39",
 		enemies: [
 			{
 				enemy: Enemies.SHENZI,

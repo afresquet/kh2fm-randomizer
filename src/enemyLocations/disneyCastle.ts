@@ -7,6 +7,9 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.DISNEY_CASTLE,
 		description: "Escort Queen Minnie Part I",
+		world: "0C",
+		room: "02",
+		event: "02",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -215,6 +218,9 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.DISNEY_CASTLE,
 		description: "Lingering Will Boss Fight",
+		world: "0A",
+		room: "07",
+		event: "49",
 		enemies: [
 			{
 				enemy: Enemies.LINGERING_WILL,

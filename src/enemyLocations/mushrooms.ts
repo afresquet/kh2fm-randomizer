@@ -7,6 +7,9 @@ export const mushroomsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MISCELLANEOUS,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Mushrooms",
+		world: "",
+		room: "",
+		event: "",
 		enemies: [
 			// {
 			// 	enemy: Enemies.MUSHROOM_1,

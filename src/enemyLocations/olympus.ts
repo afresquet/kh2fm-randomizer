@@ -21,6 +21,9 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Escape",
+		world: "06",
+		room: "05",
+		event: "6F",
 		enemies: [
 			{
 				enemy: Enemies.HOOK_BAT,
@@ -136,6 +139,9 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Cerberus Boss Fight",
+		world: "06",
+		room: "07",
+		event: "72",
 		enemies: [
 			{
 				enemy: Enemies.CERBERUS,
@@ -162,6 +168,9 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Pete II Boss Fight",
+		world: "06",
+		room: "08",
+		event: "74",
 		enemies: [
 			{
 				enemy: Enemies.PETE_OC_II,
@@ -204,6 +213,9 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Cup - Round 1",
+		world: "06",
+		room: "09",
+		event: "7C",
 		enemies: [
 			{
 				enemy: Enemies.DRILLER_MOLE,
@@ -235,6 +247,9 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Cup - Semifinals",
+		world: "06",
+		room: "09",
+		event: "7D",
 		enemies: [
 			{
 				enemy: Enemies.CRESCENDO,
@@ -274,6 +289,9 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades' Chamber Nobodies Fight",
+		world: "06",
+		room: "06",
+		event: "7E",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -332,6 +350,9 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Boss Phase II",
+		world: "06",
+		room: "0D",
+		event: "CA",
 		enemies: [
 			{
 				enemy: Enemies.HADES_II,

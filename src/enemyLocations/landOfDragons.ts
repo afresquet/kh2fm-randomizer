@@ -7,6 +7,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Encampment Heartless",
+		world: "08",
+		room: "01",
+		event: "44",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -50,6 +53,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Mission 1: The Surprise Attack",
+		world: "08",
+		room: "02",
+		event: "45",
 		enemies: [
 			{
 				enemy: Enemies.NIGHTWALKER,
@@ -117,6 +123,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Mission 2: The Ambush",
+		world: "08",
+		room: "02",
+		event: "50",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -172,6 +181,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Mission 3: The Search",
+		world: "08",
+		room: "01",
+		event: "46",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -211,6 +223,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Mountain Trail Heartless",
+		world: "08",
+		room: "03",
+		event: "47",
 		enemies: [
 			{
 				enemy: Enemies.SOLDIER,
@@ -294,6 +309,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Village Cave Heartless",
+		world: "08",
+		room: "05",
+		event: "48",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -502,6 +520,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Imperial Square Heartless Fight (1st Visit)",
+		world: "08",
+		room: "08",
+		event: "4A",
 		enemies: [
 			{
 				enemy: Enemies.BOLT_TOWER,
@@ -537,6 +558,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Shan-Yu Boss Fight",
+		world: "08",
+		room: "09",
+		event: "4B",
 		enemies: [
 			{
 				enemy: Enemies.HAYABUSA,
@@ -619,6 +643,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Imperial Square Heartless Fight (2nd Visit)",
+		world: "08",
+		room: "08",
+		event: "51",
 		enemies: [
 			{
 				enemy: Enemies.BOLT_TOWER,
@@ -654,6 +681,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Antechamber Nobodies Fight",
+		world: "08",
+		room: "0A",
+		event: "4E",
 		enemies: [
 			{
 				enemy: Enemies.SNIPER,
@@ -709,6 +739,9 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Storm Rider Boss Fight",
+		world: "08",
+		room: "08",
+		event: "4F",
 		enemies: [
 			{
 				enemy: Enemies.STORM_RIDER,

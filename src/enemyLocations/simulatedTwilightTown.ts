@@ -14,6 +14,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Seifer (Day 1)",
+		world: "02",
+		room: "04",
+		event: "4E",
 		enemies: [
 			{
 				enemy: Enemies.SEIFER,
@@ -25,11 +28,24 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Dusk (1st Fight with Struggle Bat)",
+		world: "02",
+		room: "0E",
+		event: "7F",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
 				value: "11C443A4",
 			},
+		],
+	},
+	{
+		type: EnemyLocationType.MOB_FIGHT,
+		location: LocationName.SIMULATED_TWILIGHT_TOWN,
+		description: "Dusk (1st Fight with Keyblade)",
+		world: "02",
+		room: "0E",
+		event: "80",
+		enemies: [
 			{
 				enemy: Enemies.DUSK,
 				value: "11C444D8",
@@ -40,6 +56,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Dusk (3rd Day; Sandlot)",
+		world: "02",
+		room: "04",
+		event: "4F",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -51,6 +70,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Station of Serenity Nobodies",
+		world: "02",
+		room: "20",
+		event: "9A",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -91,6 +113,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Sandlot (Struggle Tournament) Nobodies",
+		world: "02",
+		room: "05",
+		event: "56",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -110,6 +135,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Axel I Boss Fight",
+		world: "02",
+		room: "05",
+		event: "57",
 		enemies: [
 			{
 				enemy: Enemies.AXEL_I,
@@ -124,21 +152,24 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 	// 	value: "11C2700C",
 	// 	enemy: Enemies.SETZER,
 	// },
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.SIMULATED_TWILIGHT_TOWN,
-		description: "Seifer (Day 4)",
-		enemies: [
-			{
-				enemy: Enemies.SEIFER,
-				value: "11C375E4",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.SIMULATED_TWILIGHT_TOWN,
+	// 	description: "Seifer (Day 4)",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.SEIFER,
+	// 			value: "11C375E4",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Vivi Clones",
+		world: "02",
+		room: "24",
+		event: "9F",
 		enemies: [
 			{
 				enemy: Enemies.VIVI_CLONE,
@@ -202,6 +233,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Shadow Roxas (7 Wonders)",
+		world: "02",
+		room: "0A",
+		event: "79",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW_ROXAS,
@@ -237,6 +271,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Back Alley Nobodies",
+		world: "02",
+		room: "03",
+		event: "49",
 		enemies: [
 			{
 				enemy: Enemies.ASSASSIN,
@@ -256,6 +293,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Mansion: Basement Hall Nobodies",
+		world: "02",
+		room: "13",
+		event: "86",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -287,6 +327,9 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Axel II Boss Fight",
+		world: "02",
+		room: "14",
+		event: "89",
 		enemies: [
 			{
 				enemy: Enemies.AXEL_II,

@@ -7,6 +7,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Roxas Boss Fight",
+		world: "12",
+		room: "15",
+		event: "41",
 		enemies: [
 			{
 				enemy: Enemies.ROXAS,
@@ -32,6 +35,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Saix Boss Fight",
+		world: "12",
+		room: "0F",
+		event: "38",
 		enemies: [
 			{
 				value: "11C520AC",
@@ -43,6 +49,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Xemnas I Boss Fight",
+		world: "12",
+		room: "13",
+		event: "3B",
 		enemies: [
 			{
 				value: "11C5990C",
@@ -54,6 +63,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWTNW,
 		description: "The World of Nothing (Cylinder Lasers) Fight",
+		world: "12",
+		room: "1A",
+		event: "45",
 		enemies: [
 			{
 				enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
@@ -81,6 +93,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.TWTNW,
 		description: "The World of Nothing (Energy Core) Fight",
+		world: "12",
+		room: "19",
+		event: "46",
 		enemies: [
 			{
 				enemy: Enemies.ASSASSIN,
@@ -160,6 +175,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Armor Xemnas I Boss Fight",
+		world: "12",
+		room: "18",
+		event: "47",
 		enemies: [
 			{
 				value: "11C5A9AC",
@@ -171,6 +189,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Armor Xemnas II Boss Fight",
+		world: "12",
+		room: "17",
+		event: "49",
 		enemies: [
 			{
 				value: "11C58840",
@@ -182,6 +203,9 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Final Xemnas Boss Fight",
+		world: "12",
+		room: "14",
+		event: "4A",
 		enemies: [
 			{
 				value: "11C5590C",

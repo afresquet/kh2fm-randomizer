@@ -7,6 +7,9 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HALLOWEEN_TOWN,
 		description: "Halloween Town Square Heartless",
+		world: "0E",
+		room: "00",
+		event: "33",
 		enemies: [
 			{
 				enemy: Enemies.WIGHT_KNIGHT_HT,
@@ -94,6 +97,9 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HALLOWEEN_TOWN,
 		description: "Candy Cane Lane Heartless",
+		world: "0E",
+		room: "06",
+		event: "35",
 		enemies: [
 			{
 				enemy: Enemies.DRILLER_MOLE_HT,
@@ -125,6 +131,9 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.HALLOWEEN_TOWN,
 		description: "Prison Keeper Boss Fight",
+		world: "0E",
+		room: "03",
+		event: "34",
 		enemies: [
 			{
 				enemy: Enemies.PRISON_KEEPER,
@@ -139,46 +148,49 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 	// 	value: "11C4C204",
 	// 	enemy: Enemies.???,
 	// },
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.HALLOWEEN_TOWN,
-		description: "LSB",
-		enemies: [
-			{
-				enemy: Enemies.LOCK,
-				value: "11C57570",
-			},
-			{
-				enemy: Enemies.SHOCK,
-				value: "11C575B0",
-			},
-			{
-				enemy: Enemies.BARREL,
-				value: "11C575F0",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.HALLOWEEN_TOWN,
+	// 	description: "LSB",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.LOCK,
+	// 			value: "11C57570",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.SHOCK,
+	// 			value: "11C575B0",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.BARREL,
+	// 			value: "11C575F0",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HALLOWEEN_TOWN,
 		description: "Present Collecting Fight",
+		world: "0E",
+		room: "00",
+		event: "3C",
 		enemies: [
-			{
-				enemy: Enemies.WIGHT_KNIGHT_HT,
-				value: "11C4ABB8",
-			},
-			{
-				enemy: Enemies.WIGHT_KNIGHT_HT,
-				value: "11C4ABF8",
-			},
-			{
-				enemy: Enemies.WIGHT_KNIGHT_HT,
-				value: "11C4AC38",
-			},
-			{
-				enemy: Enemies.WIGHT_KNIGHT_HT,
-				value: "11C4AC78",
-			},
+			// {
+			// 	enemy: Enemies.WIGHT_KNIGHT_HT,
+			// 	value: "11C4ABB8",
+			// },
+			// {
+			// 	enemy: Enemies.WIGHT_KNIGHT_HT,
+			// 	value: "11C4ABF8",
+			// },
+			// {
+			// 	enemy: Enemies.WIGHT_KNIGHT_HT,
+			// 	value: "11C4AC38",
+			// },
+			// {
+			// 	enemy: Enemies.WIGHT_KNIGHT_HT,
+			// 	value: "11C4AC78",
+			// },
 			{
 				enemy: Enemies.GRAVEYARD_HT,
 				value: "11C4ACB8",
@@ -197,6 +209,9 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.HALLOWEEN_TOWN,
 		description: "Experiment Boss Fight",
+		world: "0E",
+		room: "07",
+		event: "40",
 		enemies: [
 			{
 				enemy: Enemies.THE_EXPERIMENT,

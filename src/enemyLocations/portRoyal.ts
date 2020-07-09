@@ -71,6 +71,9 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Town Heartless",
+		world: "10",
+		room: "02",
+		event: "37",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -239,6 +242,9 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "The Interceptor Barrels",
+		world: "10",
+		room: "03",
+		event: "38",
 		enemies: [
 			{
 				enemy: Enemies.AIR_PIRATE,
@@ -317,6 +323,9 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Grim Reaper I Boss Fight",
+		world: "10",
+		room: "12",
+		event: "55",
 		enemies: [
 			{
 				enemy: Enemies.GRIM_REAPER,
@@ -328,120 +337,13 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (Ship Graveyard: Seadrift Keep; 1st Fight)",
+		world: "10",
+		room: "0E",
+		event: "3E",
 		enemies: [
 			{
 				enemy: Enemies.GAMBLER,
 				value: "11C56F38",
-			},
-			{
-				enemy: Enemies.GAMBLER,
-				value: "11C5706C",
-			},
-		],
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Gambler (From Ship Graveyard: The Interceptor's Hold)",
-		enemies: [
-			{
-				enemy: Enemies.GAMBLER,
-				value: "11C5B970",
-			},
-		],
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Gambler (Ship Graveyard: Seadrift Row)",
-		enemies: [
-			{
-				enemy: Enemies.GAMBLER,
-				value: "11C5B9B0",
-			},
-		],
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Gambler (Isla de Muerta: Cave Mouth)",
-		enemies: [
-			{
-				enemy: Enemies.GAMBLER,
-				value: "11C58324",
-			},
-		],
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Gambler (Isla de Muerta: Powder Store)",
-		enemies: [
-			{
-				enemy: Enemies.GAMBLER,
-				value: "11C5BC28",
-			},
-		],
-	},
-	// {
-	// 	type: EnemyLocationType.MOB_FIGHT,
-	// 	location: LocationName.PORT_ROYAL,
-	// 	description: "Gambler (Isla de Muerta: Moonlight Nook)",
-	// 	value: "11C5BC38",
-	// 	enemy: Enemies.???,
-	// 	// | Undead Pirate C |
-	// },
-	// {
-	// 	type: EnemyLocationType.MOB_FIGHT,
-	// 	location: LocationName.PORT_ROYAL,
-	// 	description: "Gambler (Isla de Muerta: Moonlight Nook)",
-	// 	value: "11C5BC78",
-	// 	enemy: Enemies.???,
-	// 	// | Undead Pirate C |
-	// },
-	// {
-	// 	type: EnemyLocationType.MOB_FIGHT,
-	// 	location: LocationName.PORT_ROYAL,
-	// 	description: "Gambler (Isla de Muerta: Moonlight Nook)",
-	// 	value: "11C5BCB8",
-	// 	enemy: Enemies.???,
-	// 	// | Undead Pirate C |
-	// },
-	// {
-	// 	type: EnemyLocationType.MOB_FIGHT,
-	// 	location: LocationName.PORT_ROYAL,
-	// 	description: "Gambler (Isla de Muerta: Moonlight Nook)",
-	// 	value: "11C5BCF8",
-	// 	enemy: Enemies.???,
-	// 	// | Undead Pirate C |
-	// },
-	// {
-	// 	type: EnemyLocationType.MOB_FIGHT,
-	// 	location: LocationName.PORT_ROYAL,
-	// 	description: "Gambler (Isla de Muerta: Moonlight Nook)",
-	// 	value: "11C5BD38",
-	// 	enemy: Enemies.???,
-	// 	// | Undead Pirate C |
-	// },
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Gambler (Isla de Muerta: Moonlight Nook)",
-		enemies: [
-			{
-				enemy: Enemies.GAMBLER,
-				value: "11C5BD78",
-			},
-		],
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Gambler (Isla de Muerta: Treasure Heap)",
-		enemies: [
-			{
-				enemy: Enemies.GAMBLER,
-				value: "11C433E4",
 			},
 		],
 	},

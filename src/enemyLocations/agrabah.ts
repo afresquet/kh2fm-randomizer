@@ -7,6 +7,9 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "Agrabah Heartless",
+		world: "07",
+		room: "00",
+		event: "39",
 		enemies: [
 			{
 				enemy: Enemies.LUNA_BANDIT,
@@ -122,6 +125,9 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "Chasm of Challenges Heartless",
+		world: "07",
+		room: "0D",
+		event: "4F",
 		enemies: [
 			{
 				enemy: Enemies.ICY_CUBE,
@@ -189,6 +195,9 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "The Cave of Wonders: Treasure Room Heartless",
+		world: "07",
+		room: "0A",
+		event: "3A",
 		enemies: [
 			{
 				enemy: Enemies.SILVER_ROCK,
@@ -396,6 +405,9 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "Twin Lords Boss Fight",
+		world: "07",
+		room: "03",
+		event: "3B",
 		enemies: [
 			{
 				enemy: Enemies.VOLCANIC_LORD,
@@ -411,6 +423,9 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "Sandswept Ruins Heartless Fight 1",
+		world: "07",
+		room: "0E",
+		event: "56",
 		enemies: [
 			{
 				enemy: Enemies.RAPID_THRUSTER_AGRABAH,
@@ -462,6 +477,9 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "Sandswept Ruins Heartless Fight 2",
+		world: "07",
+		room: "0E",
+		event: "57",
 		enemies: [
 			{
 				enemy: Enemies.RAPID_THRUSTER,

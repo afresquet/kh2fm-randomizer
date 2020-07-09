@@ -12,9 +12,9 @@ export interface EnemyLocation {
 	type: EnemyLocationType;
 	location: LocationName;
 	description: string;
-	// world: string;
-	// room: string;
-	// event: string;
+	world: string;
+	room: string;
+	event: string;
 	enemies: {
 		enemy: Enemy;
 		value: string;

@@ -7,6 +7,9 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Parlor Shadows",
+		world: "05",
+		room: "01",
+		event: "44",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -78,6 +81,9 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Thresholder Boss Fight",
+		world: "05",
+		room: "0B",
+		event: "48",
 		enemies: [
 			// {
 			// 	enemy: Enemies.THRESHOLDER,
@@ -189,6 +195,9 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Dark Thorn Boss Fight",
+		world: "05",
+		room: "05",
+		event: "4F",
 		enemies: [
 			{
 				enemy: Enemies.DARK_THORN,
@@ -200,6 +209,9 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Ballroom Nobodies Fight",
+		world: "05",
+		room: "04",
+		event: "4A",
 		enemies: [
 			{
 				enemy: Enemies.DRAGOON,
@@ -227,6 +239,9 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Entrance Hall Nobodies Fight",
+		world: "05",
+		room: "00",
+		event: "4B",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -266,6 +281,9 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Xaldin Boss Fight",
+		world: "05",
+		room: "0F",
+		event: "52",
 		enemies: [
 			{
 				enemy: Enemies.XALDIN,

@@ -7,6 +7,9 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SPACE_PARANOIDS,
 		description: "Hostile Program Boss Fight",
+		world: "11",
+		room: "04",
+		event: "37",
 		enemies: [
 			{
 				enemy: Enemies.HOSTILE_PROGRAM,
@@ -18,6 +21,9 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SPACE_PARANOIDS,
 		description: "Game Grid Heartless Fight",
+		world: "11",
+		room: "02",
+		event: "35",
 		enemies: [
 			{
 				enemy: Enemies.DEVASTATOR,
@@ -57,6 +63,9 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SPACE_PARANOIDS,
 		description: "I/O Tower Heartless Fight",
+		world: "11",
+		room: "04",
+		event: "38",
 		enemies: [
 			{
 				enemy: Enemies.STRAFER_FORCED_FIGHTS,
@@ -100,6 +109,9 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SPACE_PARANOIDS,
 		description: "Solar Sailer Heartless",
+		world: "11",
+		room: "07",
+		event: "39",
 		enemies: [
 			{
 				enemy: Enemies.DEVASTATOR,
@@ -183,6 +195,9 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SPACE_PARANOIDS,
 		description: "Sark Boss Fight",
+		world: "11",
+		room: "09",
+		event: "3A",
 		enemies: [
 			{
 				enemy: Enemies.SARK,
@@ -206,17 +221,17 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.SPACE_PARANOIDS,
-		description: "MCP Boss Fight",
-		enemies: [
-			{
-				enemy: Enemies.SARK_LARGE,
-				value: "11C4FFB8",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.SPACE_PARANOIDS,
+	// 	description: "MCP Boss Fight",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.SARK_LARGE,
+	// 			value: "11C4FFB8",
+	// 		},
+	// 	],
+	// },
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
 	// 	location: LocationName.SPACE_PARANOIDS,

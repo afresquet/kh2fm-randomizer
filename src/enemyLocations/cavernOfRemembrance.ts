@@ -7,6 +7,9 @@ export const cavernOfRemembranceEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Cavern of Remembrance: Mineshaft Heartless Fight 1",
+		world: "04",
+		room: "18",
+		event: "01",
 		enemies: [
 			{
 				enemy: Enemies.BEFFUDLER,
@@ -90,6 +93,9 @@ export const cavernOfRemembranceEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Cavern of Remembrance: Mineshaft Heartless Fight 2",
+		world: "04",
+		room: "18",
+		event: "02",
 		enemies: [
 			{
 				enemy: Enemies.LANCE_WARRIOR,
@@ -157,6 +163,9 @@ export const cavernOfRemembranceEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Transport to Remembrance Nobodies Fight 1",
+		world: "04",
+		room: "19",
+		event: "01",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -260,6 +269,9 @@ export const cavernOfRemembranceEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Transport to Remembrance Nobodies Fight 2",
+		world: "04",
+		room: "19",
+		event: "02",
 		enemies: [
 			{
 				enemy: Enemies.SNIPER,
@@ -347,6 +359,9 @@ export const cavernOfRemembranceEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Transport to Remembrance Nobodies Fight 3",
+		world: "04",
+		room: "19",
+		event: "03",
 		enemies: [
 			{
 				enemy: Enemies.DRAGOON,

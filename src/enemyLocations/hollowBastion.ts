@@ -7,6 +7,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Borough Nobodies Fight",
+		world: "04",
+		room: "09",
+		event: "33",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -38,6 +41,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Bailey Nobodies Fight",
+		world: "04",
+		room: "08",
+		event: "34",
 		enemies: [
 			{
 				enemy: Enemies.DUSK,
@@ -133,6 +139,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Borough Heartless Fight 1",
+		world: "04",
+		room: "09",
+		event: "3A",
 		enemies: [
 			{
 				enemy: Enemies.SOLDIER,
@@ -180,6 +189,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Corridors Fight",
+		world: "04",
+		room: "14",
+		event: "56",
 		enemies: [
 			{
 				enemy: Enemies.ARMORED_KNIGHT,
@@ -255,6 +267,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Restoration Site Nobodies Fight",
+		world: "04",
+		room: "12",
+		event: "49",
 		enemies: [
 			{
 				enemy: Enemies.DANCER,
@@ -318,21 +333,27 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.HOLLOW_BASTION,
-		description: "Demyx II Boss Fight",
-		enemies: [
-			{
-				enemy: Enemies.DEMYX_HB,
-				value: "11C4CE7C",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.HOLLOW_BASTION,
+	// 	description: "Demyx II Boss Fight",
+	// 	world: "04",
+	// 	room: "04",
+	// 	event: "37",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.DEMYX_HB,
+	// 			value: "11C4CE7C",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Ravine Trail Heartless 1",
+		world: "04",
+		room: "10",
+		event: "3E",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -440,6 +461,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Ravine Trail Heartless 2",
+		world: "04",
+		room: "10",
+		event: "3F",
 		enemies: [
 			{
 				enemy: Enemies.ARMORED_KNIGHT,
@@ -643,6 +667,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Ravine Trail Heartless 3",
+		world: "04",
+		room: "10",
+		event: "40",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -758,6 +785,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Ravine Trail Heartless 4",
+		world: "04",
+		room: "10",
+		event: "41",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -925,6 +955,9 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Sephiroth Boss Fight",
+		world: "04",
+		room: "01",
+		event: "4B",
 		enemies: [
 			{
 				enemy: Enemies.SEPHIROTH,
