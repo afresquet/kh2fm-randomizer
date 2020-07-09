@@ -4,6 +4,13 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.7e1",
+		changes: [
+			"Added Random Enemies (forced fights) and Bosses as an experimental feature",
+			"Note: there is no logic behind it other than randomizing it, expect possible bugs and softlocks",
+		],
+	},
+	{
 		version: "0.2.7",
 		changes: [
 			"Temporarily excluding action abilities of Donald and Goofy to be on Synth and Mushroom weapons",

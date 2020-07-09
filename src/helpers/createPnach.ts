@@ -1,3 +1,4 @@
+import { bosses, enemies } from "../enemyLocations";
 import {
 	formKeybladesAbilities,
 	formKeybladesStats,
@@ -10,6 +11,7 @@ import { Seed } from "../seed/Seed";
 import { Configuration } from "../settings/Configuration";
 import { Leveling, RandomizingAction, Toggle } from "../settings/enums";
 import { createLine } from "./createLine";
+import { shuffle } from "./shuffle";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
 	const patches: string[] = [];
@@ -34,6 +36,32 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.include.keybladeAbilities === RandomizingAction.VANILLA) {
 		patches.push(formKeybladesAbilities);
+	}
+
+	if (configuration.experimental.enemies === Toggle.ON) {
+		const shuffledEnemies = [
+			...shuffle(
+				enemies.map(location => location.enemy),
+				configuration.name
+			),
+		];
+
+		for (const location of enemies) {
+			patches.push(createLine(location.value, shuffledEnemies.shift()!.value));
+		}
+	}
+
+	if (configuration.experimental.bosses === Toggle.ON) {
+		const shuffledBosses = [
+			...shuffle(
+				bosses.map(location => location.enemy),
+				configuration.name
+			),
+		];
+
+		for (const location of bosses) {
+			patches.push(createLine(location.value, shuffledBosses.shift()!.value));
+		}
 	}
 
 	return seed.reduce((result, item) => {

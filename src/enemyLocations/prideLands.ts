@@ -2,7 +2,7 @@ import { Enemies } from "../enemies";
 import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
-export const prideLandsLocations: EnemyLocation[] = [
+export const prideLandsEnemyLocations: EnemyLocation[] = [
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PRIDE_LANDS,
