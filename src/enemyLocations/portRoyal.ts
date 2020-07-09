@@ -71,99 +71,64 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Town Heartless",
-		value: "11C56984",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C569C4",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56A04",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56A44",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56A84",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56AC4",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56BA0",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56BE0",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56C20",
-		enemy: Enemies.SHADOW,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56C60",
-		enemy: Enemies.CANNON_GUN,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56CA0",
-		enemy: Enemies.CANNON_GUN,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56CE0",
-		enemy: Enemies.CANNON_GUN,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56D20",
-		enemy: Enemies.SOLDIER,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Town Heartless",
-		value: "11C56D60",
-		enemy: Enemies.SOLDIER,
+		enemies: [
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56984",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C569C4",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56A04",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56A44",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56A84",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56AC4",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56BA0",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56BE0",
+			},
+			{
+				enemy: Enemies.SHADOW,
+				value: "11C56C20",
+			},
+			{
+				enemy: Enemies.CANNON_GUN,
+				value: "11C56C60",
+			},
+			{
+				enemy: Enemies.CANNON_GUN,
+				value: "11C56CA0",
+			},
+			{
+				enemy: Enemies.CANNON_GUN,
+				value: "11C56CE0",
+			},
+			{
+				enemy: Enemies.SOLDIER,
+				value: "11C56D20",
+			},
+			{
+				enemy: Enemies.SOLDIER,
+				value: "11C56D60",
+			},
+		],
 	},
 	// Isla de Muerta: Cave Mouth Pirates (1 Minute Fight)
 	// 11C58104 0000???? - Undead Pirate A (Left)
@@ -274,57 +239,40 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "The Interceptor Barrels",
-		value: "11C52604",
-		enemy: Enemies.AIR_PIRATE,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "The Interceptor Barrels",
-		value: "11C526E0",
-		enemy: Enemies.AIR_PIRATE,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "The Interceptor Barrels",
-		value: "11C52720",
-		enemy: Enemies.AIR_PIRATE,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "The Interceptor Barrels",
-		value: "11C52760",
-		enemy: Enemies.AIR_PIRATE,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "The Interceptor Barrels",
-		value: "11C5283C",
-		enemy: Enemies.CANNON_GUN,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "The Interceptor Barrels",
-		value: "11C52918",
-		enemy: Enemies.CANNON_GUN,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "The Interceptor Barrels",
-		value: "11C529F4",
-		enemy: Enemies.CANNON_GUN,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "The Interceptor Barrels",
-		value: "11C52AD0",
-		enemy: Enemies.CANNON_GUN,
+		enemies: [
+			{
+				enemy: Enemies.AIR_PIRATE,
+				value: "11C52604",
+			},
+			{
+				enemy: Enemies.AIR_PIRATE,
+				value: "11C526E0",
+			},
+			{
+				enemy: Enemies.AIR_PIRATE,
+				value: "11C52720",
+			},
+			{
+				enemy: Enemies.AIR_PIRATE,
+				value: "11C52760",
+			},
+			{
+				enemy: Enemies.CANNON_GUN,
+				value: "11C5283C",
+			},
+			{
+				enemy: Enemies.CANNON_GUN,
+				value: "11C52918",
+			},
+			{
+				enemy: Enemies.CANNON_GUN,
+				value: "11C529F4",
+			},
+			{
+				enemy: Enemies.CANNON_GUN,
+				value: "11C52AD0",
+			},
+		],
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -369,50 +317,71 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Grim Reaper I Boss Fight",
-		value: "11C5BA78",
-		enemy: Enemies.GRIM_REAPER,
+		enemies: [
+			{
+				enemy: Enemies.GRIM_REAPER,
+				value: "11C5BA78",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (Ship Graveyard: Seadrift Keep; 1st Fight)",
-		value: "11C56F38",
-		enemy: Enemies.GAMBLER,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PORT_ROYAL,
-		description: "Gambler (Ship Graveyard: Seadrift Keep; 1st Fight)",
-		value: "11C5706C",
-		enemy: Enemies.GAMBLER,
+		enemies: [
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C56F38",
+			},
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C5706C",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (From Ship Graveyard: The Interceptor's Hold)",
-		value: "11C5B970",
-		enemy: Enemies.GAMBLER,
+		enemies: [
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C5B970",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (Ship Graveyard: Seadrift Row)",
-		value: "11C5B9B0",
-		enemy: Enemies.GAMBLER,
+		enemies: [
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C5B9B0",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (Isla de Muerta: Cave Mouth)",
-		value: "11C58324",
-		enemy: Enemies.GAMBLER,
+		enemies: [
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C58324",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (Isla de Muerta: Powder Store)",
-		value: "11C5BC28",
-		enemy: Enemies.GAMBLER,
+		enemies: [
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C5BC28",
+			},
+		],
 	},
 	// {
 	// 	type: EnemyLocationType.MOB_FIGHT,
@@ -458,15 +427,23 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (Isla de Muerta: Moonlight Nook)",
-		value: "11C5BD78",
-		enemy: Enemies.GAMBLER,
+		enemies: [
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C5BD78",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Gambler (Isla de Muerta: Treasure Heap)",
-		value: "11C433E4",
-		enemy: Enemies.GAMBLER,
+		enemies: [
+			{
+				enemy: Enemies.GAMBLER,
+				value: "11C433E4",
+			},
+		],
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,

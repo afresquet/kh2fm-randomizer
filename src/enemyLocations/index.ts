@@ -8,7 +8,6 @@ import { EnemyLocation } from "./EnemyLocation";
 import { halloweenTownEnemyLocations } from "./halloweenTown";
 import { hollowBastionEnemyLocations } from "./hollowBastion";
 import { landOfDragonsEnemyLocations } from "./landOfDragons";
-import { mushroomsEnemyLocations } from "./mushrooms";
 import { olympusEnemyLocations } from "./olympus";
 import { organizationXIIIEnemyLocations } from "./organizationXIII";
 import { poohEnemyLocations } from "./pooh";
@@ -29,7 +28,7 @@ export const enemyLocations: EnemyLocation[] = [
 	...halloweenTownEnemyLocations,
 	...hollowBastionEnemyLocations,
 	...landOfDragonsEnemyLocations,
-	...mushroomsEnemyLocations,
+	// ...mushroomsEnemyLocations,
 	...olympusEnemyLocations,
 	...organizationXIIIEnemyLocations,
 	...poohEnemyLocations,

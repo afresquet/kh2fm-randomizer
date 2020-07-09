@@ -7,15 +7,16 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Elephant Graveyard Heartless",
-		value: "11C4EC14",
-		enemy: Enemies.LIVING_BONE,
-	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.PRIDE_LANDS,
-		description: "Elephant Graveyard Heartless",
-		value: "11C4EC54",
-		enemy: Enemies.LIVING_BONE,
+		enemies: [
+			{
+				enemy: Enemies.LIVING_BONE,
+				value: "11C4EC14",
+			},
+			{
+				enemy: Enemies.LIVING_BONE,
+				value: "11C4EC54",
+			},
+		],
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -29,50 +30,50 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Hyenas Fight I",
-		value: "11C54C44",
-		enemy: Enemies.SHENZI,
-	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.PRIDE_LANDS,
-		description: "Hyenas Fight I",
-		value: "11C54C04",
-		enemy: Enemies.BANZAI,
-	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.PRIDE_LANDS,
-		description: "Hyenas Fight I",
-		value: "11C54BC4",
-		enemy: Enemies.ED,
+		enemies: [
+			{
+				enemy: Enemies.SHENZI,
+				value: "11C54C44",
+			},
+			{
+				enemy: Enemies.BANZAI,
+				value: "11C54C04",
+			},
+			{
+				enemy: Enemies.ED,
+				value: "11C54BC4",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Scar Boss Fight",
-		value: "11C5A74C",
-		enemy: Enemies.SCAR,
+		enemies: [
+			{
+				enemy: Enemies.SCAR,
+				value: "11C5A74C",
+			},
+		],
 	},
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Hyenas II",
-		value: "11C4EDB4",
-		enemy: Enemies.SHENZI,
-	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.PRIDE_LANDS,
-		description: "Hyenas II",
-		value: "11C4EE34",
-		enemy: Enemies.BANZAI,
-	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.PRIDE_LANDS,
-		description: "Hyenas II",
-		value: "11C4EDF4",
-		enemy: Enemies.ED,
+		enemies: [
+			{
+				enemy: Enemies.SHENZI,
+				value: "11C4EDB4",
+			},
+			{
+				enemy: Enemies.BANZAI,
+				value: "11C4EE34",
+			},
+			{
+				enemy: Enemies.ED,
+				value: "11C4EDF4",
+			},
+		],
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
