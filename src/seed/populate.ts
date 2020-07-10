@@ -350,7 +350,12 @@ export const populate = (
 						},
 					},
 				}))
-				.filter(filterByWorld(configuration))
+				.filter(
+					filterByWorld(
+						configuration,
+						world => world === RandomizingAction.VANILLA
+					)
+				)
 		);
 	}
 

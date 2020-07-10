@@ -4,6 +4,12 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.8",
+		changes: [
+			"Fixed Keyblade abilities not being randomized if the world of a keyblade was set to Replace",
+		],
+	},
+	{
 		version: "0.2.7",
 		changes: [
 			"Temporarily excluding action abilities of Donald and Goofy to be on Synth and Mushroom weapons",
