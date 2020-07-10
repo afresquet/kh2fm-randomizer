@@ -1,4 +1,4 @@
-import { EnemyType } from "../enemies/Enemy";
+import { Enemy, EnemyType } from "../enemies/Enemy";
 import { absentSilhouettesEnemyLocations } from "./absentSilhouettes";
 import { agrabahEnemyLocations } from "./agrabah";
 import { beastsCastleEnemyLocations } from "./beastsCastle";
@@ -8,6 +8,7 @@ import { EnemyLocation } from "./EnemyLocation";
 import { halloweenTownEnemyLocations } from "./halloweenTown";
 import { hollowBastionEnemyLocations } from "./hollowBastion";
 import { landOfDragonsEnemyLocations } from "./landOfDragons";
+import { mushroomsEnemyLocations } from "./mushrooms";
 import { olympusEnemyLocations } from "./olympus";
 import { organizationXIIIEnemyLocations } from "./organizationXIII";
 import { poohEnemyLocations } from "./pooh";
@@ -28,7 +29,7 @@ export const enemyLocations: EnemyLocation[] = [
 	...halloweenTownEnemyLocations,
 	...hollowBastionEnemyLocations,
 	...landOfDragonsEnemyLocations,
-	// ...mushroomsEnemyLocations,
+	...mushroomsEnemyLocations,
 	...olympusEnemyLocations,
 	...organizationXIIIEnemyLocations,
 	...poohEnemyLocations,
@@ -41,9 +42,28 @@ export const enemyLocations: EnemyLocation[] = [
 	...twtnwEnemyLocations,
 ];
 
-export const enemies = enemyLocations.filter(
-	location => location.enemy.type !== EnemyType.BOSS
-);
-export const bosses = enemyLocations.filter(
-	location => location.enemy.type === EnemyType.BOSS
-);
+export const enemies = enemyLocations
+	.map(location => ({
+		...location,
+		enemies: location.enemies.filter(
+			({ enemy }) => enemy.type !== EnemyType.BOSS
+		),
+	}))
+	.filter(location => location.enemies.length > 0);
+export const enemiesMap = new Map<string, Enemy>();
+for (const location of enemyLocations) {
+	for (const { enemy } of location.enemies) {
+		if (enemy.type !== EnemyType.BOSS) {
+			enemiesMap.set(enemy.value, enemy);
+		}
+	}
+}
+
+export const bosses = enemyLocations
+	.map(location => ({
+		...location,
+		enemies: location.enemies.filter(
+			({ enemy }) => enemy.type === EnemyType.BOSS
+		),
+	}))
+	.filter(location => location.enemies.length > 0);

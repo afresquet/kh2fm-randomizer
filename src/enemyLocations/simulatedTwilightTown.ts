@@ -24,20 +24,20 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.SIMULATED_TWILIGHT_TOWN,
-		description: "Dusk (1st Fight with Struggle Bat)",
-		world: "02",
-		room: "0E",
-		event: "7F",
-		enemies: [
-			{
-				enemy: Enemies.DUSK,
-				value: "11C443A4",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.MOB_FIGHT,
+	// 	location: LocationName.SIMULATED_TWILIGHT_TOWN,
+	// 	description: "Dusk (1st Fight with Struggle Bat)",
+	// 	world: "02",
+	// 	room: "0E",
+	// 	event: "7F",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.DUSK,
+	// 			value: "11C443A4",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
@@ -163,72 +163,72 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 	// 		},
 	// 	],
 	// },
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.SIMULATED_TWILIGHT_TOWN,
-		description: "Vivi Clones",
-		world: "02",
-		room: "24",
-		event: "9F",
-		enemies: [
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58B68",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58BA8",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58BE8",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58C28",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58C68",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58CA8",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58CE8",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58D28",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58D68",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58DA8",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58DE8",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58E28",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58E68",
-			},
-			{
-				enemy: Enemies.VIVI_CLONE,
-				value: "11C58EA8",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.MOB_FIGHT,
+	// 	location: LocationName.SIMULATED_TWILIGHT_TOWN,
+	// 	description: "Vivi Clones",
+	// 	world: "02",
+	// 	room: "24",
+	// 	event: "9F",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58B68",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58BA8",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58BE8",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58C28",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58C68",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58CA8",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58CE8",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58D28",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58D68",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58DA8",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58DE8",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58E28",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58E68",
+	// 		},
+	// 		{
+	// 			enemy: Enemies.VIVI_CLONE,
+	// 			value: "11C58EA8",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,

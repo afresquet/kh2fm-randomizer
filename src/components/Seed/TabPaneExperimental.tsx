@@ -28,19 +28,6 @@ export const TabPaneExperimental: React.FC = () => {
 
 	return settings.length > 0 ? (
 		<div>
-			<div className="tab-pane">
-				{settings.map(({ title, key, ...props }) => (
-					<SettingSlider
-						title={title}
-						{...mapValue(key)}
-						key={key}
-						{...props}
-					/>
-				))}
-			</div>
-
-			<Divider />
-
 			<p>Thank you for testing the experimental features!</p>
 
 			<p>
@@ -61,6 +48,19 @@ export const TabPaneExperimental: React.FC = () => {
 				</Typography.Link>
 				.
 			</p>
+
+			<Divider />
+
+			<div className="tab-pane">
+				{settings.map(({ title, key, ...props }) => (
+					<SettingSlider
+						title={title}
+						{...mapValue(key)}
+						key={key}
+						{...props}
+					/>
+				))}
+			</div>
 		</div>
 	) : (
 		<div>No experimental features currently available.</div>

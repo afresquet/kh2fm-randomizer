@@ -562,10 +562,10 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		room: "09",
 		event: "4B",
 		enemies: [
-			{
-				enemy: Enemies.HAYABUSA,
-				value: "11C4BEB0",
-			},
+			// {
+			// 	enemy: Enemies.HAYABUSA,
+			// 	value: "11C4BEB0",
+			// },
 			{
 				enemy: Enemies.SHAN_YU,
 				value: "11C4BE70",

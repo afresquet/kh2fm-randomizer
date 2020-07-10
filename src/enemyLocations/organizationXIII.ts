@@ -3,20 +3,20 @@ import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
 export const organizationXIIIEnemyLocations: EnemyLocation[] = [
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.CAVERN_OF_REMEMBRANCE,
-		description: "Xemnas I Data Fight",
-		world: "12",
-		room: "13",
-		event: "61",
-		enemies: [
-			{
-				enemy: Enemies.XEMNAS_DATA,
-				value: "11C59BA8",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.CAVERN_OF_REMEMBRANCE,
+	// 	description: "Xemnas I Data Fight",
+	// 	world: "12",
+	// 	room: "13",
+	// 	event: "61",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.XEMNAS_DATA,
+	// 			value: "11C59BA8",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,

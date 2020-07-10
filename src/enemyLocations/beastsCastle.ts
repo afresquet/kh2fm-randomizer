@@ -93,16 +93,14 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 			// 	enemy: Enemies.POSSESSOR,
 			// 	value: "11C55244",
 			// },
-			// {
-			// 	enemy: Enemies.???,
-			// 	value: "11C552B0",
-			// 	// | Gargoyle Knight |
-			// },
-			// {
-			// 	enemy: Enemies.???,
-			// 	value: "11C552F0",
-			// 	// | Gargoyle Knight |
-			// },
+			{
+				enemy: Enemies.GARGOYLE_WARRIOR,
+				value: "11C552B0",
+			},
+			{
+				enemy: Enemies.GARGOYLE_KNIGHT,
+				value: "11C552F0",
+			},
 			{
 				enemy: Enemies.HOOK_BAT,
 				value: "11C55330",
