@@ -3,7 +3,7 @@ import React, { useCallback, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
 import { ButtonDownload } from "./ButtonDownload";
 import { ButtonShare } from "./ButtonShare";
-import { ModalHelp } from "./ModalHelp";
+import { TabPaneHelp } from "./ModalHelp";
 import "./Seed.css";
 import { SeedNameInput } from "./SeedNameInput";
 import { TabPaneExperimental } from "./TabPaneExperimental";
@@ -30,11 +30,12 @@ export const Seed: React.FC<RouteComponentProps> = () => {
 				activeKey={activeKey}
 				onTabClick={onTabClick}
 				style={{ padding: "0 16px 16px", backgroundColor: "white" }}
-				tabBarExtraContent={[
-					<ButtonShare key="share" />,
-					<ModalHelp key="help" />,
-				]}
+				tabBarExtraContent={[<ButtonShare key="share" />]}
 			>
+				<Tabs.TabPane tab="Help" key="help">
+					<TabPaneHelp />
+				</Tabs.TabPane>
+
 				<Tabs.TabPane tab="Settings" key="settings">
 					<TabPaneSettings />
 				</Tabs.TabPane>
