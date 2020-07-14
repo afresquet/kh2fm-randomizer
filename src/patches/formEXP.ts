@@ -6,10 +6,10 @@ import { FormEXP } from "../settings/enums";
 export const formEXPPatch = (configuration: Configuration): string => {
 	const codes: string[] = [];
 
-	if (configuration.experimental.valorEXP !== FormEXP.ONE) {
+	if (configuration.settings.valorEXP !== FormEXP.ONE) {
 		for (const level of formEXP.VALOR) {
 			const exp = Math.ceil(
-				level.required / (configuration.experimental.valorEXP + 1)
+				level.required / (configuration.settings.valorEXP + 1)
 			);
 			const hex = exp.toString(16);
 
@@ -17,10 +17,10 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.experimental.wisdomEXP !== FormEXP.ONE) {
+	if (configuration.settings.wisdomEXP !== FormEXP.ONE) {
 		for (const level of formEXP.WISDOM) {
 			const exp = Math.ceil(
-				level.required / (configuration.experimental.wisdomEXP + 1)
+				level.required / (configuration.settings.wisdomEXP + 1)
 			);
 			const hex = exp.toString(16);
 
@@ -28,10 +28,10 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.experimental.limitEXP !== FormEXP.ONE) {
+	if (configuration.settings.limitEXP !== FormEXP.ONE) {
 		for (const level of formEXP.LIMIT) {
 			const exp = Math.ceil(
-				level.required / (configuration.experimental.limitEXP + 1)
+				level.required / (configuration.settings.limitEXP + 1)
 			);
 			const hex = exp.toString(16);
 
@@ -39,10 +39,10 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.experimental.masterEXP !== FormEXP.ONE) {
+	if (configuration.settings.masterEXP !== FormEXP.ONE) {
 		for (const level of formEXP.MASTER) {
 			const exp = Math.ceil(
-				level.required / (configuration.experimental.masterEXP + 1)
+				level.required / (configuration.settings.masterEXP + 1)
 			);
 			const hex = exp.toString(16);
 
@@ -50,10 +50,10 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.experimental.finalEXP !== FormEXP.ONE) {
+	if (configuration.settings.finalEXP !== FormEXP.ONE) {
 		for (const level of formEXP.FINAL) {
 			const exp = Math.ceil(
-				level.required / (configuration.experimental.finalEXP + 1)
+				level.required / (configuration.settings.finalEXP + 1)
 			);
 			const hex = exp.toString(16);
 

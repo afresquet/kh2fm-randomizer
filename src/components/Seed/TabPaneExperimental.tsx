@@ -10,40 +10,12 @@ interface Setting extends SettingSliderProps {
 	key: keyof Experimental;
 }
 
-const formEXPMarks = { 0: "1x", 1: "2x", 2: "3x", 3: "4x", 4: "5x" };
-
 export const TabPaneExperimental: React.FC = () => {
 	const { experimental } = useContext(SeedContext);
 
 	const mapValue = useValueMapper<Experimental, SliderValue>(experimental);
 
-	const settings: Setting[] = [
-		{
-			key: "valorEXP",
-			title: "Valor Form EXP Multiplier",
-			marks: formEXPMarks,
-		},
-		{
-			key: "wisdomEXP",
-			title: "Wisdom Form EXP Multiplier",
-			marks: formEXPMarks,
-		},
-		{
-			key: "limitEXP",
-			title: "Limit Form EXP Multiplier",
-			marks: formEXPMarks,
-		},
-		{
-			key: "masterEXP",
-			title: "Master Form EXP Multiplier",
-			marks: formEXPMarks,
-		},
-		{
-			key: "finalEXP",
-			title: "Final Form EXP Multiplier",
-			marks: formEXPMarks,
-		},
-	];
+	const settings: Setting[] = [];
 
 	return (
 		<div>
@@ -70,22 +42,16 @@ export const TabPaneExperimental: React.FC = () => {
 
 			<Divider />
 
-			{settings.length > 0 ? (
-				<div className="tab-pane">
-					{settings.map(({ title, key, ...props }) => (
-						<SettingSlider
-							title={title}
-							{...mapValue(key)}
-							key={key}
-							{...props}
-						/>
-					))}
-				</div>
-			) : (
-				<div>
-					There are no experimental features currently available, check later!
-				</div>
-			)}
+			<div className="tab-pane">
+				{settings.map(({ title, key, ...props }) => (
+					<SettingSlider
+						title={title}
+						{...mapValue(key)}
+						key={key}
+						{...props}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };
