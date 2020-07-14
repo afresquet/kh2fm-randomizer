@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.8e1",
+		changes: ["Added Form EXP Multipliers as an experimental feature"],
+	},
+	{
 		version: "0.2.8",
 		changes: [
 			"Fixed Keyblade abilities not being randomized if the world of a keyblade was set to Replace",

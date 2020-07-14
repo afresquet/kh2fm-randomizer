@@ -1,3 +1,4 @@
+import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
 	formKeybladesStats,
@@ -35,6 +36,8 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 	if (configuration.include.keybladeAbilities === RandomizingAction.VANILLA) {
 		patches.push(formKeybladesAbilities);
 	}
+
+	patches.push(formEXPPatch(configuration));
 
 	return seed.reduce((result, item) => {
 		return result + createLine(item.location.value, item.reward.value);
