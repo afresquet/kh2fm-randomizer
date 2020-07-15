@@ -16,6 +16,10 @@ const navItems = [
 		url: "/changelog",
 		title: "Changelog",
 	},
+	{
+		url: "/support",
+		title: "Support the Project",
+	},
 ];
 
 export const Header: React.FC = () => {

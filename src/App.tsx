@@ -7,6 +7,7 @@ import { Changelog } from "./components/Changelog";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Seed } from "./components/Seed";
+import { Support } from "./components/Support";
 import { SeedContextProvider } from "./context/seed";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 						/>
 						<Route path="/about" component={About} exact />
 						<Route path="/changelog" component={Changelog} exact />
+						<Route path="/support" component={Support} exact />
 						<Redirect to="/seed" />
 					</Switch>
 				</Layout.Content>
