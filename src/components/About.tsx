@@ -76,7 +76,7 @@ export const About: React.FC = () => {
 
 			<p>
 				Join the{" "}
-				<Typography.Link href="https://discord.gg/352TyvK" target="_blank">
+				<Typography.Link href="https://discord.gg/GcJR7Fv" target="_blank">
 					KH Rando Discord!
 				</Typography.Link>
 			</p>

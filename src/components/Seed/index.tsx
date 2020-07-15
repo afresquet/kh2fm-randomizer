@@ -52,7 +52,7 @@ export const Seed: React.FC<RouteComponentProps> = () => {
 					<TabPaneGameModeSettings />
 				</Tabs.TabPane>
 
-				<Tabs.TabPane tab="Experimental" key="experimental">
+				<Tabs.TabPane tab="Experimental" key="experimental" disabled>
 					<TabPaneExperimental />
 				</Tabs.TabPane>
 
