@@ -3,11 +3,13 @@ import { SliderValue } from "antd/lib/slider";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
 import { useValueMapper } from "../../hooks/useValueMapper";
+import { Leveling, Toggle } from "../../settings/enums";
 import { GoAModSettings } from "../../settings/GoAModSettings";
 import { SettingSlider } from "./SettingSlider";
 
 export const TabPaneGameModeSettings: React.FC = () => {
 	const {
+		configuration,
 		gameMode: { goa },
 	} = useContext(SeedContext);
 
@@ -21,6 +23,7 @@ export const TabPaneGameModeSettings: React.FC = () => {
 					help="The Promise Charm let's you skip TWTNW if you have all 3 proofs"
 					{...mapValue("promiseCharm")} 
 				/>
+
 
 				<SettingSlider 
 					title="Go Mode" 
