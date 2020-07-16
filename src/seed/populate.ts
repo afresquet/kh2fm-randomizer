@@ -142,7 +142,7 @@ export const populate = (
 	if (
 		(configuration.settings.criticalMode === Toggle.OFF &&
 			configuration.settings.leveling === Leveling.LEVEL_ONE) ||
-		configuration.experimental.goMode
+		configuration.gameMode.goa.goMode
 	) {
 		push(
 			cavernOfRememberanceRewardLocations.filter(
@@ -157,7 +157,7 @@ export const populate = (
 			configuration.settings.leveling === Leveling.LEVEL_ONE
 		) {
 			rewards.push(Rewards.SCAN, Rewards.GUARD, Rewards.NO_EXPERIENCE);
-		} else if (configuration.experimental.goMode) {
+		} else if (configuration.gameMode.goa.goMode) {
 			rewards.push(
 				Rewards.PROOF_OF_CONNECTION,
 				Rewards.PROOF_OF_PEACE,

@@ -26,8 +26,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B6C4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B6B8",
+			required: 40,
+			value: "21D0B6A8",
 		},
 	},
 	{
@@ -40,8 +40,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B6D4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B6C8",
+			required: 100,
+			value: "21D0B6B8",
 		},
 	},
 	{
@@ -53,8 +53,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B6E4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B6D8",
+			required: 184,
+			value: "21D0B6C8",
 		},
 	},
 	{
@@ -67,8 +67,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B6F4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B6E8",
+			required: 296,
+			value: "21D0B6D8",
 		},
 	},
 	{
@@ -81,8 +81,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B704" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B6F8",
+			required: 440,
+			value: "21D0B6E8",
 		},
 	},
 	{
@@ -103,8 +103,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B708",
+			required: 620,
+			value: "21D0B6F8",
 		},
 	},
 	{
@@ -117,8 +117,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B724" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B718",
+			required: 840,
+			value: "21D0B708",
 		},
 	},
 	{
@@ -139,8 +139,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B728",
+			required: 1128,
+			value: "21D0B718",
 		},
 	},
 	{
@@ -152,8 +152,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B744" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B738",
+			required: 1492,
+			value: "21D0B728",
 		},
 	},
 	{
@@ -166,8 +166,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B754" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B748",
+			required: 1940,
+			value: "21D0B738",
 		},
 	},
 	{
@@ -188,8 +188,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B758",
+			required: 2480,
+			value: "21D0B748",
 		},
 	},
 	{
@@ -202,8 +202,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B774" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B768",
+			required: 3120,
+			value: "21D0B758",
 		},
 	},
 	{
@@ -215,8 +215,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B784" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B778",
+			required: 3902,
+			value: "21D0B768",
 		},
 	},
 	{
@@ -237,8 +237,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B788",
+			required: 4838,
+			value: "21D0B778",
 		},
 	},
 	{
@@ -251,8 +251,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B7A4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B798",
+			required: 5940,
+			value: "21D0B788",
 		},
 	},
 	{
@@ -273,8 +273,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B7A8",
+			required: 7260,
+			value: "21D0B798",
 		},
 	},
 	{
@@ -287,8 +287,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B7C4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B7B8",
+			required: 8814,
+			value: "21D0B7A8",
 		},
 	},
 	{
@@ -301,8 +301,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B7D4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B7C8",
+			required: 10618,
+			value: "21D0B7B8",
 		},
 	},
 	{
@@ -323,8 +323,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B7D8",
+			required: 12688,
+			value: "21D0B7C8",
 		},
 	},
 	{
@@ -337,8 +337,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B7F4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B7E8",
+			required: 15088,
+			value: "21D0B7D8",
 		},
 	},
 	{
@@ -350,8 +350,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B804" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B7F8",
+			required: 17838,
+			value: "21D0B7E8",
 		},
 	},
 	{
@@ -372,8 +372,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B808",
+			required: 20949,
+			value: "21D0B7F8",
 		},
 	},
 	{
@@ -386,8 +386,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B824" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B818",
+			required: 24433,
+			value: "21D0B808",
 		},
 	},
 	{
@@ -408,8 +408,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B828",
+			required: 28302,
+			value: "21D0B818",
 		},
 	},
 	{
@@ -421,8 +421,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B844" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B838",
+			required: 32622,
+			value: "21D0B828",
 		},
 	},
 	{
@@ -434,8 +434,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B854" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B848",
+			required: 37407,
+			value: "21D0B838",
 		},
 	},
 	{
@@ -456,8 +456,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B858",
+			required: 42671,
+			value: "21D0B848",
 		},
 	},
 	{
@@ -470,8 +470,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B874" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B868",
+			required: 48485,
+			value: "21D0B858",
 		},
 	},
 	{
@@ -483,8 +483,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B884" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B878",
+			required: 54865,
+			value: "21D0B868",
 		},
 	},
 	{
@@ -505,8 +505,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B888",
+			required: 61886,
+			value: "21D0B878",
 		},
 	},
 	{
@@ -518,8 +518,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B8A4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B898",
+			required: 69566,
+			value: "21D0B888",
 		},
 	},
 	{
@@ -540,8 +540,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B8A8",
+			required: 77984,
+			value: "21D0B898",
 		},
 	},
 	{
@@ -553,8 +553,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B8C4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B8B8",
+			required: 87160,
+			value: "21D0B8A8",
 		},
 	},
 	{
@@ -567,8 +567,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B8D4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B8C8",
+			required: 97177,
+			value: "21D0B8B8",
 		},
 	},
 	{
@@ -589,8 +589,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B8D8",
+			required: 108057,
+			value: "21D0B8C8",
 		},
 	},
 	{
@@ -603,8 +603,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B8F4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B8E8",
+			required: 119887,
+			value: "21D0B8D8",
 		},
 	},
 	{
@@ -616,8 +616,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B904" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B8F8",
+			required: 132691,
+			value: "21D0B8E8",
 		},
 	},
 	{
@@ -638,8 +638,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B908",
+			required: 146560,
+			value: "21D0B8F8",
 		},
 	},
 	{
@@ -652,8 +652,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B924" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B918",
+			required: 161520,
+			value: "21D0B908",
 		},
 	},
 	{
@@ -674,8 +674,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B928",
+			required: 177666,
+			value: "21D0B918",
 		},
 	},
 	{
@@ -687,8 +687,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B944" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B938",
+			required: 195026,
+			value: "21D0B928",
 		},
 	},
 	{
@@ -700,8 +700,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B954" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B948",
+			required: 213699,
+			value: "21D0B938",
 		},
 	},
 	{
@@ -722,8 +722,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B958",
+			required: 233715,
+			value: "21D0B948",
 		},
 	},
 	{
@@ -736,8 +736,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B974" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B968",
+			required: 255177,
+			value: "21D0B958",
 		},
 	},
 	{
@@ -749,8 +749,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B984" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B978",
+			required: 278117,
+			value: "21D0B968",
 		},
 	},
 	{
@@ -771,8 +771,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B988",
+			required: 302642,
+			value: "21D0B978",
 		},
 	},
 	{
@@ -784,8 +784,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B9A4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B998",
+			required: 328786,
+			value: "21D0B988",
 		},
 	},
 	{
@@ -806,8 +806,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B9A8",
+			required: 356660,
+			value: "21D0B998",
 		},
 	},
 	{
@@ -819,8 +819,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B9C4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B9B8",
+			required: 386660,
+			value: "21D0B9A8",
 		},
 	},
 	{
@@ -833,8 +833,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B9D4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B9C8",
+			required: 417978,
+			value: "21D0B9B8",
 		},
 	},
 	{
@@ -846,8 +846,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0B9E4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B9D8",
+			required: 450378,
+			value: "21D0B9C8",
 		},
 	},
 	{
@@ -868,8 +868,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0B9E8",
+			required: 483578,
+			value: "21D0B9D8",
 		},
 	},
 	{
@@ -881,8 +881,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA04" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0B9F8",
+			required: 517578,
+			value: "21D0B9E8",
 		},
 	},
 	{
@@ -895,8 +895,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA14" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA08",
+			required: 552378,
+			value: "21D0B9F8",
 		},
 	},
 	{
@@ -908,8 +908,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA24" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA18",
+			required: 587978,
+			value: "21D0BA08",
 		},
 	},
 	{
@@ -922,8 +922,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA34" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA28",
+			required: 624378,
+			value: "21D0BA18",
 		},
 	},
 	{
@@ -935,8 +935,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA44" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA38",
+			required: 661578,
+			value: "21D0BA28",
 		},
 	},
 	{
@@ -957,8 +957,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA48",
+			required: 699578,
+			value: "21D0BA38",
 		},
 	},
 	{
@@ -970,8 +970,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA64" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA58",
+			required: 738378,
+			value: "21D0BA48",
 		},
 	},
 	{
@@ -984,8 +984,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA74" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA68",
+			required: 777978,
+			value: "21D0BA58",
 		},
 	},
 	{
@@ -997,8 +997,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA84" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA78",
+			required: 818378,
+			value: "21D0BA68",
 		},
 	},
 	{
@@ -1011,8 +1011,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BA94" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA88",
+			required: 859578,
+			value: "21D0BA78",
 		},
 	},
 	{
@@ -1024,8 +1024,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BAA4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BA98",
+			required: 901578,
+			value: "21D0BA88",
 		},
 	},
 	{
@@ -1046,8 +1046,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0BAA8",
+			required: 944378,
+			value: "21D0BA98",
 		},
 	},
 	{
@@ -1059,8 +1059,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BAC4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BAB8",
+			required: 987987,
+			value: "21D0BAA8",
 		},
 	},
 	{
@@ -1073,8 +1073,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BAD4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BAC8",
+			required: 1032378,
+			value: "21D0BAB8",
 		},
 	},
 	{
@@ -1086,8 +1086,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BAE4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BAD8",
+			required: 1077578,
+			value: "21D0BAC8",
 		},
 	},
 	{
@@ -1100,8 +1100,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BAF4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BAE8",
+			required: 1123578,
+			value: "21D0BAD8",
 		},
 	},
 	{
@@ -1113,8 +1113,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB04" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BAF8",
+			required: 1170378,
+			value: "21D0BAE8",
 		},
 	},
 	{
@@ -1127,8 +1127,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB14" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB08",
+			required: 1217978,
+			value: "21D0BAF8",
 		},
 	},
 	{
@@ -1140,8 +1140,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB24" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB18",
+			required: 1266378,
+			value: "21D0BB08",
 		},
 	},
 	{
@@ -1162,8 +1162,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB28",
+			required: 1315578,
+			value: "21D0BB18",
 		},
 	},
 	{
@@ -1175,8 +1175,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB44" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB38",
+			required: 1365578,
+			value: "21D0BB28",
 		},
 	},
 	{
@@ -1189,8 +1189,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB54" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB48",
+			required: 1416378,
+			value: "21D0BB38",
 		},
 	},
 	{
@@ -1202,8 +1202,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB64" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB58",
+			required: 1467978,
+			value: "21D0BB48",
 		},
 	},
 	{
@@ -1216,8 +1216,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB74" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB68",
+			required: 1520378,
+			value: "21D0BB58",
 		},
 	},
 	{
@@ -1229,8 +1229,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB84" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB78",
+			required: 1573578,
+			value: "21D0BB68",
 		},
 	},
 	{
@@ -1243,8 +1243,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BB94" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB88",
+			required: 1627578,
+			value: "21D0BB78",
 		},
 	},
 	{
@@ -1256,8 +1256,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BBA4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BB98",
+			required: 1682378,
+			value: "21D0BB88",
 		},
 	},
 	{
@@ -1270,8 +1270,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BBB4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BBA8",
+			required: 1737978,
+			value: "21D0BB98",
 		},
 	},
 	{
@@ -1283,8 +1283,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BBC4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BBB8",
+			required: 1794378,
+			value: "21D0BBA8",
 		},
 	},
 	{
@@ -1297,8 +1297,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BBD4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BBC8",
+			required: 1851578,
+			value: "21D0BBB8",
 		},
 	},
 	{
@@ -1310,8 +1310,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BBE4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BBD8",
+			required: 1909578,
+			value: "21D0BBC8",
 		},
 	},
 	{
@@ -1332,8 +1332,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0BBE8",
+			required: 1968378,
+			value: "21D0BBD8",
 		},
 	},
 	{
@@ -1345,8 +1345,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC04" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BBF8",
+			required: 2027978,
+			value: "21D0BBE8",
 		},
 	},
 	{
@@ -1359,8 +1359,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC14" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC08",
+			required: 2088378,
+			value: "21D0BBF8",
 		},
 	},
 	{
@@ -1372,8 +1372,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC24" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC18",
+			required: 2149578,
+			value: "21D0BC08",
 		},
 	},
 	{
@@ -1386,8 +1386,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC34" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC28",
+			required: 2211578,
+			value: "21D0BC18",
 		},
 	},
 	{
@@ -1399,8 +1399,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC44" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC38",
+			required: 2274378,
+			value: "21D0BC28",
 		},
 	},
 	{
@@ -1413,8 +1413,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC54" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC48",
+			required: 2337978,
+			value: "21D0BC38",
 		},
 	},
 	{
@@ -1426,8 +1426,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC64" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC58",
+			required: 2402378,
+			value: "21D0BC48",
 		},
 	},
 	{
@@ -1439,8 +1439,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC74" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC68",
+			required: 2467578,
+			value: "21D0BC58",
 		},
 	},
 	{
@@ -1452,8 +1452,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC84" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC78",
+			required: 2553578,
+			value: "21D0BC68",
 		},
 	},
 	{
@@ -1466,8 +1466,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BC94" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC88",
+			required: 2600378,
+			value: "21D0BC78",
 		},
 	},
 	{
@@ -1479,8 +1479,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BCA4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BC98",
+			required: 2667978,
+			value: "21D0BC88",
 		},
 	},
 	{
@@ -1493,8 +1493,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BCB4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BCA8",
+			required: 2736378,
+			value: "21D0BC98",
 		},
 	},
 	{
@@ -1506,8 +1506,8 @@ export const levels: Level[] = [
 			staff: { value: "11D0BCC4" },
 		},
 		exp: {
-			required: 0,
-			value: "21D0BCB8",
+			required: 2805578,
+			value: "21D0BCA8",
 		},
 	},
 	{
@@ -1528,8 +1528,8 @@ export const levels: Level[] = [
 			},
 		},
 		exp: {
-			required: 0,
-			value: "21D0BCC8",
+			required: 2875578,
+			value: "21D0BCB8",
 		},
 	},
 ];

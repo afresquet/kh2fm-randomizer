@@ -1,3 +1,4 @@
+import { expMultiplier } from "../patches/expMultiplier";
 import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
@@ -9,7 +10,12 @@ import { shorterDay5 } from "../patches/shorterDay5";
 import { startingAP } from "../patches/startingAP";
 import { Seed } from "../seed/Seed";
 import { Configuration } from "../settings/Configuration";
-import { Leveling, RandomizingAction, Toggle } from "../settings/enums";
+import {
+	Leveling,
+	Multiplier,
+	RandomizingAction,
+	Toggle,
+} from "../settings/enums";
 import { createLine } from "./createLine";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
@@ -35,6 +41,10 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.include.keybladeAbilities === RandomizingAction.VANILLA) {
 		patches.push(formKeybladesAbilities);
+	}
+
+	if (configuration.settings.expMultiplier !== Multiplier.ONE) {
+		patches.push(...expMultiplier(configuration));
 	}
 
 	patches.push(formEXPPatch(configuration));

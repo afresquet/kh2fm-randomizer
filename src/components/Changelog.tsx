@@ -4,8 +4,11 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
-		version: "0.2.9e1",
-		changes: ["Added Go Mode as an experimental feature"],
+		version: "0.2.10",
+		changes: [
+			"Added EXP Multipliers",
+			'Added "Go Mode" for the Garden of Assemblage game mode',
+		],
 	},
 	{
 		version: "0.2.9",

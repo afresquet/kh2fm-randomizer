@@ -14,6 +14,7 @@ export interface Settings {
 	bonusModifiers: Toggle;
 	criticalMode: Toggle;
 
+	expMultiplier: Multiplier;
 	valorEXP: Multiplier;
 	wisdomEXP: Multiplier;
 	limitEXP: Multiplier;
@@ -29,6 +30,7 @@ export const defaultSettings: Settings = {
 	bonusModifiers: Toggle.ON,
 	criticalMode: Toggle.ON,
 
+	expMultiplier: Multiplier.ONE,
 	valorEXP: Multiplier.ONE,
 	wisdomEXP: Multiplier.ONE,
 	limitEXP: Multiplier.ONE,

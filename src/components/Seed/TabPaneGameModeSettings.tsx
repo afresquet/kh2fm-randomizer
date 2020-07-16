@@ -1,3 +1,4 @@
+import { Divider } from "antd";
 import { SliderValue } from "antd/lib/slider";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
@@ -13,13 +14,21 @@ export const TabPaneGameModeSettings: React.FC = () => {
 	const mapValue = useValueMapper<GoAModSettings, SliderValue>(goa);
 
 	return (
-		<div className="tab-pane">
-			<SettingSlider
-				title="Shorter Day 5 (Simulated Twilight Town)"
-				{...mapValue("shorterDay5")}
-			/>
+		<>
+			<div className="tab-pane">
+				<SettingSlider title="Promise Charm" {...mapValue("promiseCharm")} />
 
-			<SettingSlider title="Promise Charm" {...mapValue("promiseCharm")} />
-		</div>
+				<SettingSlider title="Go Mode" {...mapValue("goMode")} />
+			</div>
+
+			<Divider />
+
+			<div className="tab-pane">
+				<SettingSlider
+					title="Shorter Day 5 (Simulated Twilight Town)"
+					{...mapValue("shorterDay5")}
+				/>
+			</div>
+		</>
 	);
 };

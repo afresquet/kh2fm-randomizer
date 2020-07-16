@@ -62,7 +62,19 @@ export const TabPaneSettings: React.FC = () => {
 
 			<Divider />
 
+			<p style={{ textAlign: "center" }}>
+				Take the word "multiplier" with a grain of salt. You will be getting the
+				same EXP as usual, but the requirements to reach the next level are
+				reduced.
+			</p>
+
 			<div className="tab-pane">
+				<SettingSlider
+					title="EXP Multiplier"
+					marks={{ 0: "1x", 1: "1.5x", 2: "2x", 3: "2.5x", 4: "3x" }}
+					{...mapValue("expMultiplier")}
+				/>
+
 				<SettingSlider
 					title="Valor Form EXP Multiplier"
 					marks={formEXPMarks}

@@ -10,17 +10,7 @@ interface Setting extends SettingSliderProps {
 	key: keyof Experimental;
 }
 
-export const experimentalSettings: Setting[] = [
-	{
-		title: "EXP Multiplier",
-		key: "expMultiplier",
-		marks: { 0: "1x", 1: "2x", 2: "3x", 3: "4x", 4: "5x" },
-	},
-	{
-		title: "Go Mode",
-		key: "goMode",
-	},
-];
+export const experimentalSettings: Setting[] = [];
 
 export const TabPaneExperimental: React.FC = () => {
 	const { experimental } = useContext(SeedContext);
