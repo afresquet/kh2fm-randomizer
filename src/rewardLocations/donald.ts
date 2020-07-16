@@ -1,9 +1,18 @@
 import { Rewards } from "../rewards";
+import { Reward } from "../rewards/Reward";
+import { GameMode } from "../settings/enums";
 import {
 	RewardLocation,
 	RewardLocationName,
 	RewardLocationType,
 } from "./RewardLocation";
+
+const exclude: Reward[] = [
+	Rewards.DONALD_FIRE,
+	Rewards.DONALD_BLIZZARD,
+	Rewards.DONALD_THUNDER,
+	Rewards.DONALD_CURE,
+];
 
 export const donaldRewardLocations: RewardLocation[] = [
 	{
@@ -201,6 +210,9 @@ export const donaldRewardLocations: RewardLocation[] = [
 		description: "Centurion+",
 		value: "11CDF626",
 		reward: Rewards.DAMAGE_CONTROL,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.DONALD,
@@ -208,6 +220,9 @@ export const donaldRewardLocations: RewardLocation[] = [
 		description: "Save the Queen+",
 		value: "11CDF5D6",
 		reward: Rewards.MP_RAGE,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.DONALD,
@@ -215,6 +230,9 @@ export const donaldRewardLocations: RewardLocation[] = [
 		description: "Precious Mushroom",
 		value: "11CDF656",
 		reward: Rewards.MP_HASTE,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.DONALD,
@@ -222,6 +240,9 @@ export const donaldRewardLocations: RewardLocation[] = [
 		description: "Precious Mushroom+",
 		value: "11CDF666",
 		reward: Rewards.MP_HASTERA,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 	{
 		type: RewardLocationType.DONALD,
@@ -229,5 +250,8 @@ export const donaldRewardLocations: RewardLocation[] = [
 		description: "Premium Mushroom",
 		value: "11CDF676",
 		reward: Rewards.MP_HASTEGA,
+		gameMode: {
+			[GameMode.GOA_MOD]: { exclude },
+		},
 	},
 ];

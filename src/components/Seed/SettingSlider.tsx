@@ -1,4 +1,5 @@
-import { Slider } from "antd";
+import { QuestionCircleOutlined } from "@ant-design/icons";
+import { Slider, Tooltip } from "antd";
 import { SliderProps } from "antd/lib/slider";
 import React from "react";
 
@@ -9,10 +10,13 @@ export const Marks = {
 
 export interface SettingSliderProps extends SliderProps {
 	title: string;
+	help?: string;
 }
 
 export const SettingSlider: React.FC<SettingSliderProps> = ({
+	children,
 	title,
+	help,
 	marks = Marks.onOff,
 	...props
 }) => {
@@ -20,11 +24,24 @@ export const SettingSlider: React.FC<SettingSliderProps> = ({
 
 	return (
 		<div>
-			<div style={{ textAlign: "center" }}>{title}</div>
+			<div style={{ textAlign: "center" }}>
+				{help ? (
+					<Tooltip title={help}>
+						<span>
+							{title}
+							<QuestionCircleOutlined style={{ padding: "0 4px" }} />
+						</span>
+					</Tooltip>
+				) : (
+					title
+				)}
+			</div>
 
 			<div style={{ padding: "0 32px" }}>
 				<Slider max={max} marks={marks} tooltipVisible={false} {...props} />
 			</div>
+
+			{children}
 		</div>
 	);
 };

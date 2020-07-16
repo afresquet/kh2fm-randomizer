@@ -1,6 +1,7 @@
 import { shuffle } from "../helpers/shuffle";
 import { RewardLocation } from "../rewardLocations/RewardLocation";
 import { Configuration } from "../settings/Configuration";
+import { assign } from "./assign";
 import { SeedItem } from "./Seed";
 
 export function* randomizePool(
@@ -14,10 +15,5 @@ export function* randomizePool(
 		),
 	];
 
-	for (const location of locations) {
-		yield {
-			location,
-			reward: rewards.shift()!,
-		};
-	}
+	yield* assign(rewards, locations, configuration);
 }

@@ -19,3 +19,11 @@ export enum Toggle {
 	OFF,
 	ON,
 }
+
+export enum Multiplier {
+	ONE,
+	TWO,
+	THREE,
+	FOUR,
+	FIVE,
+}

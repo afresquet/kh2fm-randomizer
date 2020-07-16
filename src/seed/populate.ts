@@ -140,8 +140,9 @@ export const populate = (
 
 	// Cavern of Remembrance
 	if (
-		configuration.settings.criticalMode === Toggle.OFF &&
-		configuration.settings.leveling === Leveling.LEVEL_ONE
+		(configuration.settings.criticalMode === Toggle.OFF &&
+			configuration.settings.leveling === Leveling.LEVEL_ONE) ||
+		configuration.gameMode.goa.goMode
 	) {
 		push(
 			cavernOfRememberanceRewardLocations.filter(
@@ -150,7 +151,19 @@ export const populate = (
 			configuration.worlds.cavernOfRemembrance
 		);
 
-		const bonuses = [Rewards.SCAN, Rewards.GUARD, Rewards.NO_EXPERIENCE];
+		const rewards: Reward[] = [];
+		if (
+			configuration.settings.criticalMode === Toggle.OFF &&
+			configuration.settings.leveling === Leveling.LEVEL_ONE
+		) {
+			rewards.push(Rewards.SCAN, Rewards.GUARD, Rewards.NO_EXPERIENCE);
+		} else if (configuration.gameMode.goa.goMode) {
+			rewards.push(
+				Rewards.PROOF_OF_CONNECTION,
+				Rewards.PROOF_OF_PEACE,
+				Rewards.PROOF_OF_NONEXISTENCE
+			);
+		}
 
 		const gardenLocations = cavernOfRememberanceRewardLocations
 			.filter(location => location.description === "Garden of Assemblage")
@@ -160,7 +173,7 @@ export const populate = (
 					...(location.gameMode || {}),
 					[configuration.gameMode.mode]: {
 						...(location.gameMode?.[configuration.gameMode.mode] || {}),
-						include: [bonuses[index]],
+						include: [rewards[index]],
 					},
 				},
 			}));
@@ -168,11 +181,16 @@ export const populate = (
 		push(gardenLocations, RandomizingAction.RANDOMIZE);
 
 		if (
-			configuration.worlds.simulatedTwilightTown !== RandomizingAction.VANILLA
+			configuration.settings.criticalMode === Toggle.OFF &&
+			configuration.settings.leveling === Leveling.LEVEL_ONE
 		) {
-			replaceWith(Rewards.NO_EXPERIENCE);
-		} else {
-			bonuses.forEach(bonus => replaceWith(bonus));
+			if (
+				configuration.worlds.simulatedTwilightTown !== RandomizingAction.VANILLA
+			) {
+				replaceWith(Rewards.NO_EXPERIENCE);
+			} else {
+				rewards.forEach(bonus => replaceWith(bonus));
+			}
 		}
 	} else {
 		push(
@@ -350,7 +368,12 @@ export const populate = (
 						},
 					},
 				}))
-				.filter(filterByWorld(configuration))
+				.filter(
+					filterByWorld(
+						configuration,
+						world => world === RandomizingAction.VANILLA
+					)
+				)
 		);
 	}
 
@@ -368,7 +391,6 @@ export const populate = (
 
 	if (configuration.include.goofyAbilities === Toggle.ON) {
 		[
-			Rewards.OGRE_SHIELD,
 			Rewards.FROZEN_PRIDE_PLUS,
 			Rewards.NOBODY_GUARD,
 			Rewards.AKASHIC_RECORD,

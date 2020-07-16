@@ -1,4 +1,10 @@
-import { GameMode, Leveling, RandomizingAction, Toggle } from "./enums";
+import {
+	GameMode,
+	Leveling,
+	Multiplier,
+	RandomizingAction,
+	Toggle,
+} from "./enums";
 
 export interface Settings {
 	gameMode: GameMode;
@@ -7,6 +13,13 @@ export interface Settings {
 	stats: Toggle;
 	bonusModifiers: Toggle;
 	criticalMode: Toggle;
+
+	expMultiplier: Multiplier;
+	valorEXP: Multiplier;
+	wisdomEXP: Multiplier;
+	limitEXP: Multiplier;
+	masterEXP: Multiplier;
+	finalEXP: Multiplier;
 }
 
 export const defaultSettings: Settings = {
@@ -16,4 +29,11 @@ export const defaultSettings: Settings = {
 	stats: Toggle.ON,
 	bonusModifiers: Toggle.ON,
 	criticalMode: Toggle.ON,
+
+	expMultiplier: Multiplier.ONE,
+	valorEXP: Multiplier.ONE,
+	wisdomEXP: Multiplier.ONE,
+	limitEXP: Multiplier.ONE,
+	masterEXP: Multiplier.ONE,
+	finalEXP: Multiplier.ONE,
 };

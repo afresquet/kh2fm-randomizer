@@ -39,46 +39,27 @@ export const About: React.FC = () => {
 				folder.
 			</p>
 
+			<Divider />
+
 			<p>
+				This project is open source, here's the{" "}
 				<Typography.Link
 					href="https://github.com/afresquet/kh2fm-randomizer"
 					target="_blank"
 				>
 					GitHub repo
 				</Typography.Link>{" "}
-				of the project.
+				of the project. Contributions are welcome!
 			</p>
 
 			<Divider />
 
 			<p>
-				If you encounter any problems with the randomizer feel free to contact
-				me through{" "}
-				<Typography.Link href="http://twitter.valaxor.com" target="_blank">
-					Twitter
-				</Typography.Link>
-				. I also ocasionally stream on{" "}
-				<Typography.Link href="http://twitch.valaxor.com" target="_blank">
-					Twitch
+				<Typography.Link href="https://discord.gg/GcJR7Fv" target="_blank">
+					Join the KH Rando Discord!
 				</Typography.Link>{" "}
-				so feel free to stop by anytime!
-			</p>
-
-			<p>
-				This randomizer is 100% free to use, but if you wish to you can{" "}
-				<Typography.Link href="http://donate.valaxor.com" target="_blank">
-					donate to me via this link
-				</Typography.Link>
-				.
-			</p>
-
-			<Divider />
-
-			<p>
-				Join the{" "}
-				<Typography.Link href="https://discord.gg/352TyvK" target="_blank">
-					KH Rando Discord!
-				</Typography.Link>
+				It's a great place if you wanna hang out with other players, and ask for
+				help!
 			</p>
 
 			<Divider />

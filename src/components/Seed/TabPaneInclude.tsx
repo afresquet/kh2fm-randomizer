@@ -18,6 +18,7 @@ export const TabPaneInclude: React.FC = () => {
 		<div className="tab-pane">
 			<SettingSlider
 				title="Keyblade Abilities"
+				help="Support means the green abilities, action means the blue abilities."
 				{...mapValue("keybladeAbilities")}
 				marks={{ 0: "Vanilla", 1: "Support", 2: "Action/Support" }}
 			/>

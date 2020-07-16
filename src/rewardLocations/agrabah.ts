@@ -118,7 +118,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.CHEST,
 		name: RewardLocationName.AGRABAH,
-		description: "The Caver of Wonders Entrance",
+		description: "The Cave of Wonders Entrance",
 		value: "11CDF8DA",
 		reward: Rewards.MYTHRIL_SHARD,
 	},
