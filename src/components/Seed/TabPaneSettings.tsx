@@ -37,7 +37,7 @@ export const TabPaneSettings: React.FC = () => {
 
 				<SettingSlider
 					title="Leveling"
-					help="Set Max Level (regardless of difficulty)."
+					help="Max level that can contain a check"
 					marks={{ 0: "Level\xa01", 1: "Level\xa050", 2: "Level\xa099" }}
 					{...mapValue("leveling")}
 				/>

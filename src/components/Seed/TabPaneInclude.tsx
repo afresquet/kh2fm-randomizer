@@ -18,7 +18,7 @@ export const TabPaneInclude: React.FC = () => {
 		<div className="tab-pane">
 			<SettingSlider
 				title="Keyblade Abilities"
-				help="Support: Keyblade abilities are randomized in their own pool.    Action/Support: Keyblade and Sora's abilities are randomized together."
+				help="Support means the green abilities, action means the blue abilities."
 				{...mapValue("keybladeAbilities")}
 				marks={{ 0: "Vanilla", 1: "Support", 2: "Action/Support" }}
 			/>

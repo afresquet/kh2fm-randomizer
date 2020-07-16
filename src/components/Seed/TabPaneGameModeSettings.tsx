@@ -18,17 +18,20 @@ export const TabPaneGameModeSettings: React.FC = () => {
 	return (
 		<>
 			<div className="tab-pane">
-				<SettingSlider 
-					title="Promise Charm" 
-					help="The Promise Charm let's you skip TWTNW if you have all 3 proofs"
-					{...mapValue("promiseCharm")} 
+				<SettingSlider
+					title="Promise Charm"
+					help="Item that lets you skip TWTNW if you have all 3 proofs"
+					{...mapValue("promiseCharm")}
 				/>
 
-
-				<SettingSlider 
-					title="Go Mode" 
-					help="Notifies you when you can start the final fights"
-					{...mapValue("goMode")} 
+				<SettingSlider
+					title="Go Mode"
+					help="You start with Gold Crown"
+					{...mapValue("goMode")}
+					disabled={
+						configuration.settings.criticalMode === Toggle.OFF &&
+						configuration.settings.leveling === Leveling.LEVEL_ONE
+					}
 				/>
 			</div>
 
