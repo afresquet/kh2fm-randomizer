@@ -1,7 +1,7 @@
 import {
-	FormEXP,
 	GameMode,
 	Leveling,
+	Multiplier,
 	RandomizingAction,
 	Toggle,
 } from "./enums";
@@ -14,11 +14,11 @@ export interface Settings {
 	bonusModifiers: Toggle;
 	criticalMode: Toggle;
 
-	valorEXP: FormEXP;
-	wisdomEXP: FormEXP;
-	limitEXP: FormEXP;
-	masterEXP: FormEXP;
-	finalEXP: FormEXP;
+	valorEXP: Multiplier;
+	wisdomEXP: Multiplier;
+	limitEXP: Multiplier;
+	masterEXP: Multiplier;
+	finalEXP: Multiplier;
 }
 
 export const defaultSettings: Settings = {
@@ -29,9 +29,9 @@ export const defaultSettings: Settings = {
 	bonusModifiers: Toggle.ON,
 	criticalMode: Toggle.ON,
 
-	valorEXP: FormEXP.ONE,
-	wisdomEXP: FormEXP.ONE,
-	limitEXP: FormEXP.ONE,
-	masterEXP: FormEXP.ONE,
-	finalEXP: FormEXP.ONE,
+	valorEXP: Multiplier.ONE,
+	wisdomEXP: Multiplier.ONE,
+	limitEXP: Multiplier.ONE,
+	masterEXP: Multiplier.ONE,
+	finalEXP: Multiplier.ONE,
 };

@@ -12,6 +12,11 @@ interface Setting extends SettingSliderProps {
 
 export const experimentalSettings: Setting[] = [
 	{
+		title: "EXP Multiplier",
+		key: "expMultiplier",
+		marks: { 0: "1x", 1: "2x", 2: "3x", 3: "4x", 4: "5x" },
+	},
+	{
 		title: "Go Mode",
 		key: "goMode",
 	},

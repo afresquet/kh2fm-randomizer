@@ -20,7 +20,7 @@ export enum Toggle {
 	ON,
 }
 
-export enum FormEXP {
+export enum Multiplier {
 	ONE,
 	TWO,
 	THREE,

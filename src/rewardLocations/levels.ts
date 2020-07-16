@@ -10,6 +10,10 @@ export interface Level {
 		shield: { value: string; reward?: Reward };
 		staff: { value: string; reward?: Reward };
 	};
+	exp: {
+		required: number;
+		value: string;
+	};
 }
 
 export const levels: Level[] = [
@@ -21,6 +25,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B6C2" },
 			staff: { value: "11D0B6C4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B6B8",
+		},
 	},
 	{
 		level: 3,
@@ -31,6 +39,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B6D2" },
 			staff: { value: "11D0B6D4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B6C8",
+		},
 	},
 	{
 		level: 4,
@@ -39,6 +51,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B6E0" },
 			shield: { value: "11D0B6E2" },
 			staff: { value: "11D0B6E4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B6D8",
 		},
 	},
 	{
@@ -50,6 +66,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B6F2" },
 			staff: { value: "11D0B6F4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B6E8",
+		},
 	},
 	{
 		level: 6,
@@ -59,6 +79,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B700" },
 			shield: { value: "11D0B702" },
 			staff: { value: "11D0B704" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B6F8",
 		},
 	},
 	{
@@ -78,6 +102,10 @@ export const levels: Level[] = [
 				reward: Rewards.EXPERIENCE_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B708",
+		},
 	},
 	{
 		level: 8,
@@ -87,6 +115,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B720" },
 			shield: { value: "11D0B722" },
 			staff: { value: "11D0B724" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B718",
 		},
 	},
 	{
@@ -106,6 +138,10 @@ export const levels: Level[] = [
 				reward: Rewards.ITEM_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B728",
+		},
 	},
 	{
 		level: 10,
@@ -114,6 +150,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B740" },
 			shield: { value: "11D0B742" },
 			staff: { value: "11D0B744" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B738",
 		},
 	},
 	{
@@ -124,6 +164,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B750" },
 			shield: { value: "11D0B752" },
 			staff: { value: "11D0B754" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B748",
 		},
 	},
 	{
@@ -143,6 +187,10 @@ export const levels: Level[] = [
 				reward: Rewards.MAGIC_LOCK_ON,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B758",
+		},
 	},
 	{
 		level: 13,
@@ -153,6 +201,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B772" },
 			staff: { value: "11D0B774" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B768",
+		},
 	},
 	{
 		level: 14,
@@ -161,6 +213,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B780" },
 			shield: { value: "11D0B782" },
 			staff: { value: "11D0B784" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B778",
 		},
 	},
 	{
@@ -180,6 +236,10 @@ export const levels: Level[] = [
 				reward: Rewards.FIRE_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B788",
+		},
 	},
 	{
 		level: 16,
@@ -189,6 +249,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B7A0" },
 			shield: { value: "11D0B7A2" },
 			staff: { value: "11D0B7A4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B798",
 		},
 	},
 	{
@@ -208,6 +272,10 @@ export const levels: Level[] = [
 				reward: Rewards.COMBO_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B7A8",
+		},
 	},
 	{
 		level: 18,
@@ -218,6 +286,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B7C2" },
 			staff: { value: "11D0B7C4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B7B8",
+		},
 	},
 	{
 		level: 19,
@@ -227,6 +299,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B7D0" },
 			shield: { value: "11D0B7D2" },
 			staff: { value: "11D0B7D4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B7C8",
 		},
 	},
 	{
@@ -246,6 +322,10 @@ export const levels: Level[] = [
 				reward: Rewards.LEAF_BRACER,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B7D8",
+		},
 	},
 	{
 		level: 21,
@@ -256,6 +336,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B7F2" },
 			staff: { value: "11D0B7F4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B7E8",
+		},
 	},
 	{
 		level: 22,
@@ -264,6 +348,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B800" },
 			shield: { value: "11D0B802" },
 			staff: { value: "11D0B804" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B7F8",
 		},
 	},
 	{
@@ -283,6 +371,10 @@ export const levels: Level[] = [
 				reward: Rewards.DAMAGE_DRIVE,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B808",
+		},
 	},
 	{
 		level: 24,
@@ -292,6 +384,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B820" },
 			shield: { value: "11D0B822" },
 			staff: { value: "11D0B824" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B818",
 		},
 	},
 	{
@@ -311,6 +407,10 @@ export const levels: Level[] = [
 				reward: Rewards.DRAW,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B828",
+		},
 	},
 	{
 		level: 26,
@@ -320,6 +420,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B842" },
 			staff: { value: "11D0B844" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B838",
+		},
 	},
 	{
 		level: 27,
@@ -328,6 +432,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B850" },
 			shield: { value: "11D0B852" },
 			staff: { value: "11D0B854" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B848",
 		},
 	},
 	{
@@ -347,6 +455,10 @@ export const levels: Level[] = [
 				reward: Rewards.ONCE_MORE,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B858",
+		},
 	},
 	{
 		level: 29,
@@ -357,6 +469,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B872" },
 			staff: { value: "11D0B874" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B868",
+		},
 	},
 	{
 		level: 30,
@@ -365,6 +481,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B880" },
 			shield: { value: "11D0B882" },
 			staff: { value: "11D0B884" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B878",
 		},
 	},
 	{
@@ -384,6 +504,10 @@ export const levels: Level[] = [
 				reward: Rewards.BLIZZARD_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B888",
+		},
 	},
 	{
 		level: 32,
@@ -392,6 +516,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B8A0" },
 			shield: { value: "11D0B8A2" },
 			staff: { value: "11D0B8A4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B898",
 		},
 	},
 	{
@@ -411,6 +539,10 @@ export const levels: Level[] = [
 				reward: Rewards.REACTION_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B8A8",
+		},
 	},
 	{
 		level: 34,
@@ -419,6 +551,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B8C0" },
 			shield: { value: "11D0B8C2" },
 			staff: { value: "11D0B8C4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B8B8",
 		},
 	},
 	{
@@ -429,6 +565,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B8D0" },
 			shield: { value: "11D0B8D2" },
 			staff: { value: "11D0B8D4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B8C8",
 		},
 	},
 	{
@@ -448,6 +588,10 @@ export const levels: Level[] = [
 				reward: Rewards.NEGATIVE_COMBO,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B8D8",
+		},
 	},
 	{
 		level: 37,
@@ -458,6 +602,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B8F2" },
 			staff: { value: "11D0B8F4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B8E8",
+		},
 	},
 	{
 		level: 38,
@@ -466,6 +614,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B900" },
 			shield: { value: "11D0B902" },
 			staff: { value: "11D0B904" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B8F8",
 		},
 	},
 	{
@@ -485,6 +637,10 @@ export const levels: Level[] = [
 				reward: Rewards.DEFENDER,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B908",
+		},
 	},
 	{
 		level: 40,
@@ -494,6 +650,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B920" },
 			shield: { value: "11D0B922" },
 			staff: { value: "11D0B924" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B918",
 		},
 	},
 	{
@@ -513,6 +673,10 @@ export const levels: Level[] = [
 				reward: Rewards.THUNDER_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B928",
+		},
 	},
 	{
 		level: 42,
@@ -522,6 +686,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B942" },
 			staff: { value: "11D0B944" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B938",
+		},
 	},
 	{
 		level: 43,
@@ -530,6 +698,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B950" },
 			shield: { value: "11D0B952" },
 			staff: { value: "11D0B954" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B948",
 		},
 	},
 	{
@@ -549,6 +721,10 @@ export const levels: Level[] = [
 				reward: Rewards.JACKPOT,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B958",
+		},
 	},
 	{
 		level: 45,
@@ -559,6 +735,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B972" },
 			staff: { value: "11D0B974" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B968",
+		},
 	},
 	{
 		level: 46,
@@ -567,6 +747,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B980" },
 			shield: { value: "11D0B982" },
 			staff: { value: "11D0B984" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B978",
 		},
 	},
 	{
@@ -586,6 +770,10 @@ export const levels: Level[] = [
 				reward: Rewards.DRIVE_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B988",
+		},
 	},
 	{
 		level: 48,
@@ -594,6 +782,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B9A0" },
 			shield: { value: "11D0B9A2" },
 			staff: { value: "11D0B9A4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B998",
 		},
 	},
 	{
@@ -613,6 +805,10 @@ export const levels: Level[] = [
 				reward: Rewards.BERSERK_CHARGE,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B9A8",
+		},
 	},
 	{
 		level: 50,
@@ -621,6 +817,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B9C0" },
 			shield: { value: "11D0B9C2" },
 			staff: { value: "11D0B9C4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B9B8",
 		},
 	},
 	{
@@ -632,6 +832,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0B9D2" },
 			staff: { value: "11D0B9D4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0B9C8",
+		},
 	},
 	{
 		level: 52,
@@ -640,6 +844,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0B9E0" },
 			shield: { value: "11D0B9E2" },
 			staff: { value: "11D0B9E4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B9D8",
 		},
 	},
 	{
@@ -659,6 +867,10 @@ export const levels: Level[] = [
 				reward: Rewards.DAMAGE_CONTROL,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0B9E8",
+		},
 	},
 	{
 		level: 54,
@@ -667,6 +879,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BA00" },
 			shield: { value: "11D0BA02" },
 			staff: { value: "11D0BA04" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0B9F8",
 		},
 	},
 	{
@@ -678,6 +894,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BA12" },
 			staff: { value: "11D0BA14" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BA08",
+		},
 	},
 	{
 		level: 56,
@@ -686,6 +906,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BA20" },
 			shield: { value: "11D0BA22" },
 			staff: { value: "11D0BA24" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BA18",
 		},
 	},
 	{
@@ -697,6 +921,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BA32" },
 			staff: { value: "11D0BA34" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BA28",
+		},
 	},
 	{
 		level: 58,
@@ -705,6 +933,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BA40" },
 			shield: { value: "11D0BA42" },
 			staff: { value: "11D0BA44" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BA38",
 		},
 	},
 	{
@@ -724,6 +956,10 @@ export const levels: Level[] = [
 				reward: Rewards.COMBINATION_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0BA48",
+		},
 	},
 	{
 		level: 60,
@@ -732,6 +968,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BA60" },
 			shield: { value: "11D0BA62" },
 			staff: { value: "11D0BA64" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BA58",
 		},
 	},
 	{
@@ -743,6 +983,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BA72" },
 			staff: { value: "11D0BA74" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BA68",
+		},
 	},
 	{
 		level: 62,
@@ -751,6 +995,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BA80" },
 			shield: { value: "11D0BA82" },
 			staff: { value: "11D0BA84" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BA78",
 		},
 	},
 	{
@@ -762,6 +1010,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BA92" },
 			staff: { value: "11D0BA94" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BA88",
+		},
 	},
 	{
 		level: 64,
@@ -770,6 +1022,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BAA0" },
 			shield: { value: "11D0BAA2" },
 			staff: { value: "11D0BAA4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BA98",
 		},
 	},
 	{
@@ -789,6 +1045,10 @@ export const levels: Level[] = [
 				reward: Rewards.SECOND_CHANCE,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0BAA8",
+		},
 	},
 	{
 		level: 66,
@@ -797,6 +1057,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BAC0" },
 			shield: { value: "11D0BAC2" },
 			staff: { value: "11D0BAC4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BAB8",
 		},
 	},
 	{
@@ -808,6 +1072,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BAD2" },
 			staff: { value: "11D0BAD4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BAC8",
+		},
 	},
 	{
 		level: 68,
@@ -816,6 +1084,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BAE0" },
 			shield: { value: "11D0BAE2" },
 			staff: { value: "11D0BAE4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BAD8",
 		},
 	},
 	{
@@ -827,6 +1099,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BAF2" },
 			staff: { value: "11D0BAF4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BAE8",
+		},
 	},
 	{
 		level: 70,
@@ -835,6 +1111,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BB00" },
 			shield: { value: "11D0BB02" },
 			staff: { value: "11D0BB04" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BAF8",
 		},
 	},
 	{
@@ -846,6 +1126,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BB12" },
 			staff: { value: "11D0BB14" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BB08",
+		},
 	},
 	{
 		level: 72,
@@ -854,6 +1138,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BB20" },
 			shield: { value: "11D0BB22" },
 			staff: { value: "11D0BB24" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BB18",
 		},
 	},
 	{
@@ -873,6 +1161,10 @@ export const levels: Level[] = [
 				reward: Rewards.AIR_COMBO_BOOST,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0BB28",
+		},
 	},
 	{
 		level: 74,
@@ -881,6 +1173,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BB40" },
 			shield: { value: "11D0BB42" },
 			staff: { value: "11D0BB44" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BB38",
 		},
 	},
 	{
@@ -892,6 +1188,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BB52" },
 			staff: { value: "11D0BB54" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BB48",
+		},
 	},
 	{
 		level: 76,
@@ -900,6 +1200,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BB60" },
 			shield: { value: "11D0BB62" },
 			staff: { value: "11D0BB64" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BB58",
 		},
 	},
 	{
@@ -911,6 +1215,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BB72" },
 			staff: { value: "11D0BB74" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BB68",
+		},
 	},
 	{
 		level: 78,
@@ -919,6 +1227,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BB80" },
 			shield: { value: "11D0BB82" },
 			staff: { value: "11D0BB84" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BB78",
 		},
 	},
 	{
@@ -930,6 +1242,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BB92" },
 			staff: { value: "11D0BB94" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BB88",
+		},
 	},
 	{
 		level: 80,
@@ -938,6 +1254,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BBA0" },
 			shield: { value: "11D0BBA2" },
 			staff: { value: "11D0BBA4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BB98",
 		},
 	},
 	{
@@ -949,6 +1269,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BBB2" },
 			staff: { value: "11D0BBB4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BBA8",
+		},
 	},
 	{
 		level: 82,
@@ -957,6 +1281,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BBC0" },
 			shield: { value: "11D0BBC2" },
 			staff: { value: "11D0BBC4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BBB8",
 		},
 	},
 	{
@@ -968,6 +1296,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BBD2" },
 			staff: { value: "11D0BBD4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BBC8",
+		},
 	},
 	{
 		level: 84,
@@ -976,6 +1308,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BBE0" },
 			shield: { value: "11D0BBE2" },
 			staff: { value: "11D0BBE4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BBD8",
 		},
 	},
 	{
@@ -995,6 +1331,10 @@ export const levels: Level[] = [
 				reward: Rewards.FINISHING_PLUS,
 			},
 		},
+		exp: {
+			required: 0,
+			value: "21D0BBE8",
+		},
 	},
 	{
 		level: 86,
@@ -1003,6 +1343,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BC00" },
 			shield: { value: "11D0BC02" },
 			staff: { value: "11D0BC04" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BBF8",
 		},
 	},
 	{
@@ -1014,6 +1358,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BC12" },
 			staff: { value: "11D0BC14" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BC08",
+		},
 	},
 	{
 		level: 88,
@@ -1022,6 +1370,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BC20" },
 			shield: { value: "11D0BC22" },
 			staff: { value: "11D0BC24" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BC18",
 		},
 	},
 	{
@@ -1033,6 +1385,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BC32" },
 			staff: { value: "11D0BC34" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BC28",
+		},
 	},
 	{
 		level: 90,
@@ -1041,6 +1397,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BC40" },
 			shield: { value: "11D0BC42" },
 			staff: { value: "11D0BC44" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BC38",
 		},
 	},
 	{
@@ -1052,6 +1412,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BC52" },
 			staff: { value: "11D0BC54" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BC48",
+		},
 	},
 	{
 		level: 92,
@@ -1060,6 +1424,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BC60" },
 			shield: { value: "11D0BC62" },
 			staff: { value: "11D0BC64" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BC58",
 		},
 	},
 	{
@@ -1070,6 +1438,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BC72" },
 			staff: { value: "11D0BC74" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BC68",
+		},
 	},
 	{
 		level: 94,
@@ -1078,6 +1450,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BC80" },
 			shield: { value: "11D0BC82" },
 			staff: { value: "11D0BC84" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BC78",
 		},
 	},
 	{
@@ -1089,6 +1465,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BC92" },
 			staff: { value: "11D0BC94" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BC88",
+		},
 	},
 	{
 		level: 96,
@@ -1097,6 +1477,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BCA0" },
 			shield: { value: "11D0BCA2" },
 			staff: { value: "11D0BCA4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BC98",
 		},
 	},
 	{
@@ -1108,6 +1492,10 @@ export const levels: Level[] = [
 			shield: { value: "11D0BCB2" },
 			staff: { value: "11D0BCB4" },
 		},
+		exp: {
+			required: 0,
+			value: "21D0BCA8",
+		},
 	},
 	{
 		level: 98,
@@ -1116,6 +1504,10 @@ export const levels: Level[] = [
 			sword: { value: "11D0BCC0" },
 			shield: { value: "11D0BCC2" },
 			staff: { value: "11D0BCC4" },
+		},
+		exp: {
+			required: 0,
+			value: "21D0BCB8",
 		},
 	},
 	{
@@ -1134,6 +1526,10 @@ export const levels: Level[] = [
 				value: "11D0BCD4",
 				reward: Rewards.DRIVE_CONVERTER,
 			},
+		},
+		exp: {
+			required: 0,
+			value: "21D0BCC8",
 		},
 	},
 ];

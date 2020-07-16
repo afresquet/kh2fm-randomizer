@@ -1,12 +1,12 @@
 import { createLine } from "../helpers/createLine";
 import { formEXP } from "../miscellaneous/formEXP";
 import { Configuration } from "../settings/Configuration";
-import { FormEXP } from "../settings/enums";
+import { Multiplier } from "../settings/enums";
 
 export const formEXPPatch = (configuration: Configuration): string => {
 	const codes: string[] = [];
 
-	if (configuration.settings.valorEXP !== FormEXP.ONE) {
+	if (configuration.settings.valorEXP !== Multiplier.ONE) {
 		for (const level of formEXP.VALOR) {
 			const exp = Math.ceil(
 				level.required / (configuration.settings.valorEXP + 1)
@@ -17,7 +17,7 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.settings.wisdomEXP !== FormEXP.ONE) {
+	if (configuration.settings.wisdomEXP !== Multiplier.ONE) {
 		for (const level of formEXP.WISDOM) {
 			const exp = Math.ceil(
 				level.required / (configuration.settings.wisdomEXP + 1)
@@ -28,7 +28,7 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.settings.limitEXP !== FormEXP.ONE) {
+	if (configuration.settings.limitEXP !== Multiplier.ONE) {
 		for (const level of formEXP.LIMIT) {
 			const exp = Math.ceil(
 				level.required / (configuration.settings.limitEXP + 1)
@@ -39,7 +39,7 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.settings.masterEXP !== FormEXP.ONE) {
+	if (configuration.settings.masterEXP !== Multiplier.ONE) {
 		for (const level of formEXP.MASTER) {
 			const exp = Math.ceil(
 				level.required / (configuration.settings.masterEXP + 1)
@@ -50,7 +50,7 @@ export const formEXPPatch = (configuration: Configuration): string => {
 		}
 	}
 
-	if (configuration.settings.finalEXP !== FormEXP.ONE) {
+	if (configuration.settings.finalEXP !== Multiplier.ONE) {
 		for (const level of formEXP.FINAL) {
 			const exp = Math.ceil(
 				level.required / (configuration.settings.finalEXP + 1)
