@@ -1,3 +1,9 @@
-export interface Experimental {}
+import { Toggle } from "./enums";
 
-export const defaultExperimental: Experimental = {};
+export interface Experimental {
+	goMode: Toggle;
+}
+
+export const defaultExperimental: Experimental = {
+	goMode: Toggle.OFF,
+};

@@ -4,6 +4,10 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.9e1",
+		changes: ["Added Go Mode as an experimental feature"],
+	},
+	{
 		version: "0.2.9",
 		changes: ["Added Form EXP Multipliers"],
 	},

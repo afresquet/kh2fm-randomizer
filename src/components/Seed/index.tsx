@@ -6,7 +6,10 @@ import { ButtonShare } from "./ButtonShare";
 import { TabPaneHelp } from "./ModalHelp";
 import "./Seed.css";
 import { SeedNameInput } from "./SeedNameInput";
-import { TabPaneExperimental } from "./TabPaneExperimental";
+import {
+	experimentalSettings,
+	TabPaneExperimental,
+} from "./TabPaneExperimental";
 import { TabPaneGameModeSettings } from "./TabPaneGameModeSettings";
 import { TabPaneInclude } from "./TabPaneInclude";
 import { TabPaneSettings } from "./TabPaneSettings";
@@ -52,7 +55,11 @@ export const Seed: React.FC<RouteComponentProps> = () => {
 					<TabPaneGameModeSettings />
 				</Tabs.TabPane>
 
-				<Tabs.TabPane tab="Experimental" key="experimental" disabled>
+				<Tabs.TabPane
+					tab="Experimental"
+					key="experimental"
+					disabled={experimentalSettings.length === 0}
+				>
 					<TabPaneExperimental />
 				</Tabs.TabPane>
 

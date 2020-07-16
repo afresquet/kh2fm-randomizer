@@ -10,12 +10,17 @@ interface Setting extends SettingSliderProps {
 	key: keyof Experimental;
 }
 
+export const experimentalSettings: Setting[] = [
+	{
+		title: "Go Mode",
+		key: "goMode",
+	},
+];
+
 export const TabPaneExperimental: React.FC = () => {
 	const { experimental } = useContext(SeedContext);
 
 	const mapValue = useValueMapper<Experimental, SliderValue>(experimental);
-
-	const settings: Setting[] = [];
 
 	return (
 		<div>
@@ -43,7 +48,7 @@ export const TabPaneExperimental: React.FC = () => {
 			<Divider />
 
 			<div className="tab-pane">
-				{settings.map(({ title, key, ...props }) => (
+				{experimentalSettings.map(({ title, key, ...props }) => (
 					<SettingSlider
 						title={title}
 						{...mapValue(key)}
