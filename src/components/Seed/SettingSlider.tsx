@@ -12,6 +12,7 @@ export interface SettingSliderProps extends SliderProps {
 }
 
 export const SettingSlider: React.FC<SettingSliderProps> = ({
+	children,
 	title,
 	marks = Marks.onOff,
 	...props
@@ -25,6 +26,8 @@ export const SettingSlider: React.FC<SettingSliderProps> = ({
 			<div style={{ padding: "0 32px" }}>
 				<Slider max={max} marks={marks} tooltipVisible={false} {...props} />
 			</div>
+
+			{children}
 		</div>
 	);
 };
