@@ -16,9 +16,17 @@ export const TabPaneGameModeSettings: React.FC = () => {
 	return (
 		<>
 			<div className="tab-pane">
-				<SettingSlider title="Promise Charm" {...mapValue("promiseCharm")} />
+				<SettingSlider 
+					title="Promise Charm" 
+					help="The Promise Charm let's you skip TWTNW if you have all 3 proofs"
+					{...mapValue("promiseCharm")} 
+				/>
 
-				<SettingSlider title="Go Mode" {...mapValue("goMode")} />
+				<SettingSlider 
+					title="Go Mode" 
+					help="Notifies you when you can start the final fights"
+					{...mapValue("goMode")} 
+				/>
 			</div>
 
 			<Divider />
@@ -26,6 +34,7 @@ export const TabPaneGameModeSettings: React.FC = () => {
 			<div className="tab-pane">
 				<SettingSlider
 					title="Shorter Day 5 (Simulated Twilight Town)"
+					help="Let's you skip the 'Wonders missions' on Roxas' Day 5"
 					{...mapValue("shorterDay5")}
 				/>
 			</div>
