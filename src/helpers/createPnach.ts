@@ -4,6 +4,7 @@ import {
 	formKeybladesAbilities,
 	formKeybladesStats,
 } from "../patches/formKeyblades";
+import { levelOneEXP } from "../patches/levelOneEXP";
 import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
 import { shorterDay5 } from "../patches/shorterDay5";
@@ -27,6 +28,10 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.gameMode.goa.shorterDay5 === Toggle.ON) {
 		patches.push(shorterDay5);
+	}
+
+	if (configuration.settings.leveling === Leveling.LEVEL_ONE) {
+		patches.push(levelOneEXP);
 	}
 
 	if (configuration.settings.leveling === Leveling.LEVEL_FIFTY) {
