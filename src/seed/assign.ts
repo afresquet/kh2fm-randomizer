@@ -78,9 +78,11 @@ const getReward = (
 export function* assign(
 	rewards: Reward[],
 	rewardLocations: RewardLocation[],
-	configuration: Configuration
+	configuration: Configuration,
+	pool = false
 ): IterableIterator<SeedItem> {
 	if (
+		!pool &&
 		configuration.settings.leveling !== Leveling.LEVEL_ONE &&
 		configuration.settings.abilities === RandomizingAction.REPLACE
 	) {
@@ -146,7 +148,7 @@ export function* assign(
 		};
 	}
 
-	if (configuration.settings.leveling !== Leveling.LEVEL_ONE) {
+	if (!pool && configuration.settings.leveling !== Leveling.LEVEL_ONE) {
 		if (configuration.settings.abilities === RandomizingAction.RANDOMIZE) {
 			yield* abilities(rewards, configuration);
 		}

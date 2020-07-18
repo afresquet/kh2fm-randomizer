@@ -4,6 +4,12 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.11",
+		changes: [
+			"Fixed bug where setting Replace on Level Up Abilities wouldn't work",
+		],
+	},
+	{
 		version: "0.2.10",
 		changes: [
 			"Added EXP Multipliers",

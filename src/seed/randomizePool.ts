@@ -15,5 +15,5 @@ export function* randomizePool(
 		),
 	];
 
-	yield* assign(rewards, locations, configuration);
+	yield* assign(rewards, locations, configuration, true);
 }
