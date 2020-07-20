@@ -31,20 +31,20 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.CAVERN_OF_REMEMBRANCE,
-		description: "Xigbar Data Fight",
-		world: "12",
-		room: "0A",
-		event: "64",
-		enemies: [
-			{
-				enemy: Enemies.XIGBAR_DATA,
-				value: "11C4ACBC",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.CAVERN_OF_REMEMBRANCE,
+	// 	description: "Xigbar Data Fight",
+	// 	world: "12",
+	// 	room: "0A",
+	// 	event: "64",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.XIGBAR_DATA,
+	// 			value: "11C4ACBC",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,

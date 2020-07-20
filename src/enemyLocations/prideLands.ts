@@ -37,18 +37,18 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		room: "02",
 		event: "33",
 		enemies: [
-			{
-				enemy: Enemies.SHENZI,
-				value: "11C54C44",
-			},
-			{
-				enemy: Enemies.BANZAI,
-				value: "11C54C04",
-			},
-			{
-				enemy: Enemies.ED,
-				value: "11C54BC4",
-			},
+			// {
+			// 	enemy: Enemies.SHENZI,
+			// 	value: "11C54C44",
+			// },
+			// {
+			// 	enemy: Enemies.BANZAI,
+			// 	value: "11C54C04",
+			// },
+			// {
+			// 	enemy: Enemies.ED,
+			// 	value: "11C54BC4",
+			// },
 		],
 	},
 	{
@@ -73,18 +73,18 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		room: "05",
 		event: "39",
 		enemies: [
-			{
-				enemy: Enemies.SHENZI,
-				value: "11C4EDB4",
-			},
-			{
-				enemy: Enemies.BANZAI,
-				value: "11C4EE34",
-			},
-			{
-				enemy: Enemies.ED,
-				value: "11C4EDF4",
-			},
+			// {
+			// 	enemy: Enemies.SHENZI,
+			// 	value: "11C4EDB4",
+			// },
+			// {
+			// 	enemy: Enemies.BANZAI,
+			// 	value: "11C4EE34",
+			// },
+			// {
+			// 	enemy: Enemies.ED,
+			// 	value: "11C4EDF4",
+			// },
 		],
 	},
 	// {
