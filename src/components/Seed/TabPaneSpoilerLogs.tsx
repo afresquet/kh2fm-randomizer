@@ -10,7 +10,10 @@ import React, {
 } from "react";
 import { SeedContext } from "../../context/seed";
 import { analytics } from "../../firebase";
-import { RewardLocationName } from "../../rewardLocations/RewardLocation";
+import {
+	RewardLocationName,
+	RewardLocationType,
+} from "../../rewardLocations/RewardLocation";
 
 interface Props {
 	active: boolean;
@@ -68,7 +71,10 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			?.filter(value => value.reward.value !== "00000000")
 			.map<T>(value => ({
 				key: `${value.location.description}: ${value.location.reward.name} -> ${value.reward.name}`,
-				name: value.location.name,
+				name:
+					value.location.type === RewardLocationType.KEYBLADE
+						? RewardLocationType.KEYBLADE
+						: value.location.name,
 				description: value.location.description,
 				type: value.location.type,
 				became: value.reward.name,

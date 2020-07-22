@@ -1,3 +1,9 @@
-export interface Experimental {}
+import { RandomizingAction } from "./enums";
 
-export const defaultExperimental: Experimental = {};
+export interface Experimental {
+	keybladeStats: RandomizingAction;
+}
+
+export const defaultExperimental: Experimental = {
+	keybladeStats: RandomizingAction.VANILLA,
+};
