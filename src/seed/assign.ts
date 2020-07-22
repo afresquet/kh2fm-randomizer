@@ -9,7 +9,7 @@ import { Configuration } from "../settings/Configuration";
 import { Leveling, RandomizingAction, Toggle } from "../settings/enums";
 import { abilities } from "./abilities";
 import { SeedItem } from "./Seed";
-import { stats } from "./stats";
+import { keybladeStats, stats } from "./stats";
 
 const getReward = (
 	location: RewardLocation,
@@ -155,6 +155,10 @@ export function* assign(
 
 		if (configuration.settings.stats === Toggle.ON) {
 			yield* stats(configuration);
+		}
+
+		if (configuration.settings.keybladeStats === Toggle.ON) {
+			yield* keybladeStats(configuration);
 		}
 	}
 }

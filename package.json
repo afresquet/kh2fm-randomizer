@@ -1,6 +1,6 @@
 {
 	"name": "kh2fm-randomizer",
-	"version": "0.2.11",
+	"version": "0.2.12",
 	"private": true,
 	"homepage": "https://randomizer.valaxor.com",
 	"dependencies": {
