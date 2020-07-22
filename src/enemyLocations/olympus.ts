@@ -201,6 +201,8 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				value: "11C4FCF4",
 			},
 		],
+		// Remove timer
+		// patch=1,EE,20349DEC,extended,00000001
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -346,18 +348,18 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 	// 	value: "11C5BF7C",
 	// 	enemy: Enemies.HADES_I,
 	// },
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.OLYMPUS,
-		description: "Hades Boss Phase II",
-		world: "06",
-		room: "0D",
-		event: "CA",
-		enemies: [
-			{
-				enemy: Enemies.HADES_II,
-				value: "11C5C0B0",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.OLYMPUS,
+	// 	description: "Hades Boss Phase II",
+	// 	world: "06",
+	// 	room: "0D",
+	// 	event: "CA",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.HADES_II,
+	// 			value: "11C5C0B0",
+	// 		},
+	// 	],
+	// },
 ];

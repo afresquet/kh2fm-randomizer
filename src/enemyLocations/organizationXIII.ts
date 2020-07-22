@@ -122,20 +122,20 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.CAVERN_OF_REMEMBRANCE,
-		description: "Demyx II Data Fight",
-		world: "04",
-		room: "04",
-		event: "72",
-		enemies: [
-			{
-				enemy: Enemies.DEMYX_DATA,
-				value: "11C4D054",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.BOSS_FIGHT,
+	// 	location: LocationName.CAVERN_OF_REMEMBRANCE,
+	// 	description: "Demyx II Data Fight",
+	// 	world: "04",
+	// 	room: "04",
+	// 	event: "72",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.DEMYX_DATA,
+	// 			value: "11C4D054",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,

@@ -115,19 +115,21 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			];
 
 			for (const location of bosses) {
-				const one = `patch=1,EE,E0${(location.enemies.length + 3)
+				const lines = location.enemies.length * 2;
+
+				const one = `patch=1,EE,E0${(lines + 3)
 					.toString(16)
 					.padStart(2, "0")
 					.toUpperCase()}${location.room}${location.world},extended,0032BAE0\n`;
-				const two = `patch=1,EE,E0${(location.enemies.length + 2)
+				const two = `patch=1,EE,E0${(lines + 2)
 					.toString(16)
 					.padStart(2, "0")
 					.toUpperCase()}00${location.event},extended,0032BAE4\n`;
-				const three = `patch=1,EE,E0${(location.enemies.length + 1)
+				const three = `patch=1,EE,E0${(lines + 1)
 					.toString(16)
 					.padStart(2, "0")
 					.toUpperCase()}00${location.event},extended,0032BAE6\n`;
-				const four = `patch=1,EE,E0${location.enemies.length
+				const four = `patch=1,EE,E0${lines
 					.toString(16)
 					.padStart(2, "0")
 					.toUpperCase()}00${location.event},extended,0032BAE8\n`;
@@ -141,10 +143,15 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 						enemy = enemySeed.get(curr.enemy.value)!;
 					}
 
+					const modifierAddress = (parseInt(curr.value, 16) + 32).toString(16);
+					const modifier =
+						enemy.value.length === 6 ? enemy.value.substring(0, 2) : "";
+
 					return (
 						prev +
 						createLine(curr.value, enemy.value, false) +
-						` // ${enemy.name}\n`
+						` // ${enemy.name} (was ${curr.enemy.name})\n` +
+						createLine(modifierAddress, modifier)
 					);
 				}, one + two + three + four);
 

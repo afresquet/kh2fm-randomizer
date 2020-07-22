@@ -39,10 +39,10 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 		room: "22",
 		event: "97",
 		enemies: [
-			{
-				value: "11C597E0",
-				enemy: Enemies.ZEXION_AS,
-			},
+			// {
+			// 	value: "11C597E0",
+			// 	enemy: Enemies.ZEXION_AS,
+			// },
 		],
 	},
 	{

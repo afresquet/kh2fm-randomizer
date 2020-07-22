@@ -289,10 +289,10 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		room: "03",
 		event: "35",
 		enemies: [
-			{
-				enemy: Enemies.PETE_TR,
-				value: "11C55BF0",
-			},
+			// {
+			// 	enemy: Enemies.PETE_TR,
+			// 	value: "11C55BF0",
+			// },
 		],
 	},
 ];

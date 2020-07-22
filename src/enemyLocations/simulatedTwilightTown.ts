@@ -18,10 +18,10 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		room: "04",
 		event: "4E",
 		enemies: [
-			{
-				enemy: Enemies.SEIFER,
-				value: "11C36EC0",
-			},
+			// {
+			// 	enemy: Enemies.SEIFER,
+			// 	value: "11C36EC0",
+			// },
 		],
 	},
 	// {
@@ -237,10 +237,10 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		room: "0A",
 		event: "79",
 		enemies: [
-			{
-				enemy: Enemies.SHADOW_ROXAS,
-				value: "11C53F9C",
-			},
+			// {
+			// 	enemy: Enemies.SHADOW_ROXAS,
+			// 	value: "11C53F9C",
+			// },
 		],
 	},
 	// {
