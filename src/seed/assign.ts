@@ -157,9 +157,7 @@ export function* assign(
 			yield* stats(configuration);
 		}
 
-		if (
-			configuration.experimental.keybladeStats !== RandomizingAction.VANILLA
-		) {
+		if (configuration.settings.keybladeStats === Toggle.ON) {
 			yield* keybladeStats(configuration);
 		}
 	}

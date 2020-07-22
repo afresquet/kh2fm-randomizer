@@ -10,15 +10,7 @@ interface Setting extends SettingSliderProps {
 	key: keyof Experimental;
 }
 
-export const experimentalSettings: Setting[] = [
-	{
-		key: "keybladeStats",
-		title: "Randomize Keyblade Stats",
-		marks: { 0: "Vanilla", 1: "Positive", 2: "Positive/Negative" },
-		help:
-			"Positive: Values from 0 to 10. Positive/Negative: Values from -10 to 10.",
-	},
-];
+export const experimentalSettings: Setting[] = [];
 
 export const TabPaneExperimental: React.FC = () => {
 	const { experimental } = useContext(SeedContext);

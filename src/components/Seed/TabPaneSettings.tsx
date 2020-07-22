@@ -59,6 +59,11 @@ export const TabPaneSettings: React.FC = () => {
 					disabled={settings.leveling === Leveling.LEVEL_ONE}
 					{...mapValue("stats")}
 				/>
+
+				<SettingSlider
+					title="Randomize Keyblade Stats"
+					{...mapValue("keybladeStats")}
+				/>
 			</div>
 
 			<Divider />

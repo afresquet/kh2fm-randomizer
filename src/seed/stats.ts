@@ -6,7 +6,6 @@ import {
 	RewardLocationType,
 } from "../rewardLocations/RewardLocation";
 import { Configuration } from "../settings/Configuration";
-import { RandomizingAction } from "../settings/enums";
 import { LevelStats } from "./LevelStats";
 import { SeedItem } from "./Seed";
 
@@ -35,17 +34,17 @@ export function* stats(
 	}
 }
 
+const possibilities = [
+	...[0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4],
+	...[5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 8, 9, 10],
+];
+
 const randomStat = (
 	configuration: Configuration,
 	modifier: string
 ): { value: number; hex: string } => {
 	const seeder = seedrandom(configuration.name + modifier);
-	const positive = seeder() > 1 / 3 ? 1 : -1;
-	const multiplier =
-		configuration.experimental.keybladeStats === RandomizingAction.REPLACE
-			? 1
-			: positive;
-	const value = Math.floor(seeder() * 11) * multiplier;
+	const value = possibilities[Math.floor(seeder() * possibilities.length)];
 
 	return { value, hex: value.toString(16).toUpperCase().padStart(2, "0") };
 };
