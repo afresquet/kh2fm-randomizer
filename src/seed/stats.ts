@@ -1,6 +1,6 @@
-import seedrandom from "seedrandom";
+import { shuffle } from "../helpers/shuffle";
 import { LocationName } from "../LocationName";
-import { keybladeAbilitiesRewardLocations } from "../rewardLocations/keyblades";
+import { keybladeRewardLocations } from "../rewardLocations/keyblades";
 import { levels } from "../rewardLocations/levels";
 import { RewardLocationType } from "../rewardLocations/RewardLocation";
 import { Configuration } from "../settings/Configuration";
@@ -31,31 +31,22 @@ export function* stats(
 		};
 	}
 }
-const possibilities = [
-	...[0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4],
-	...[5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 8, 9, 10],
-];
-
-const randomStat = (
-	configuration: Configuration,
-	modifier: string
-): { value: number; hex: string } => {
-	const seeder = seedrandom(configuration.name + modifier);
-	const value = possibilities[Math.floor(seeder() * possibilities.length)];
-
-	return { value, hex: value.toString(16).toUpperCase().padStart(2, "0") };
-};
+const statsPool = keybladeRewardLocations.reduce<number[]>(
+	(prev, curr) => prev.concat(curr.stats),
+	[]
+);
 
 export function* keybladeStats(
 	configuration: Configuration
 ): IterableIterator<SeedItem> {
-	for (const keyblade of keybladeAbilitiesRewardLocations) {
-		const strength = randomStat(
-			configuration,
-			keyblade.values.stats + "strength"
-		);
+	const shuffled = [...shuffle(statsPool, configuration.name)];
 
-		const magic = randomStat(configuration, keyblade.values.stats + "magic");
+	for (const keyblade of keybladeRewardLocations) {
+		const strength = shuffled.pop()!;
+		const strengthHEX = strength.toString(16).toUpperCase().padStart(2, "0");
+
+		const magic = shuffled.pop()!;
+		const magicHEX = magic.toString(16).toUpperCase().padStart(2, "0");
 
 		yield {
 			location: {
@@ -67,8 +58,8 @@ export function* keybladeStats(
 			},
 			reward: {
 				type: "Stats" as any,
-				name: `STR${strength.value} MAG${magic.value}`,
-				value: `0000${magic.hex}${strength.hex}`,
+				name: `STR${strength} MAG${magic}`,
+				value: `0000${magicHEX}${strengthHEX}`,
 			},
 		};
 	}

@@ -11,7 +11,7 @@ import { disneyCastleRewardLocations } from "../rewardLocations/disneyCastle";
 import { formRewardLocations } from "../rewardLocations/form";
 import { halloweenTownRewardLocations } from "../rewardLocations/halloweenTown";
 import { hollowBastionRewardLocations } from "../rewardLocations/hollowBastion";
-import { keybladeAbilitiesRewardLocations } from "../rewardLocations/keyblades";
+import { keybladeRewardLocations } from "../rewardLocations/keyblades";
 import { landOfDragonsRewardLocations } from "../rewardLocations/landOfDragons";
 import { abilityLevels } from "../rewardLocations/levels";
 import { olympusRewardLocations } from "../rewardLocations/olympus";
@@ -349,7 +349,7 @@ export const populate = (
 
 	if (configuration.include.keybladeAbilities !== RandomizingAction.VANILLA) {
 		push(
-			keybladeAbilitiesRewardLocations
+			keybladeRewardLocations
 				.map<RewardLocation>(({ values, ability, ...location }) => ({
 					...location,
 					value: values.ability,

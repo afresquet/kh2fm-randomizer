@@ -45,7 +45,9 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(removeGrowthAbilities);
 	}
 
-	patches.push(formKeybladesStats);
+	if (configuration.settings.keybladeStats === Toggle.OFF) {
+		patches.push(formKeybladesStats);
+	}
 
 	if (configuration.include.keybladeAbilities === RandomizingAction.VANILLA) {
 		patches.push(formKeybladesAbilities);
