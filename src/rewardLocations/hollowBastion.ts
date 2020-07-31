@@ -3,15 +3,33 @@ import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
 import { Reward } from "../rewards/Reward";
 import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import {
+	LocationDependency,
+	RewardLocation,
+	RewardLocationType,
+} from "./RewardLocation";
 
 const exclude: Reward[] = [
 	Rewards.PROOF_OF_PEACE,
-	Rewards.PROOF_OF_CONNECTION,
 	...Object.values(formRewards),
 	Rewards.THUNDER,
 	Rewards.MAGNET,
 	Rewards.TORN_PAGES,
+];
+
+const dependencies: LocationDependency[] = [
+	{
+		candidate: Rewards.PROOF_OF_CONNECTION,
+		name: "Proof of Connection",
+		address: "11CE0B16",
+		conflict: [Rewards.PROOF_OF_PEACE],
+	},
+	{
+		candidate: Rewards.PROOF_OF_CONNECTION,
+		name: "Manifest Illusion (Lingering Will)",
+		address: "11CE0B22",
+		conflict: [Rewards.PROOF_OF_PEACE],
+	},
 ];
 
 export const hollowBastionRewardLocations: RewardLocation[] = [
@@ -281,7 +299,10 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		value: "11CE0B3A",
 		reward: Rewards.PROOF_OF_PEACE,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
+			[GameMode.GOA_MOD]: {
+				exclude,
+				dependencies,
+			},
 		},
 	},
 	{
@@ -291,7 +312,10 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		value: "11CE0B2E",
 		reward: Rewards.WINNERS_PROOF,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
+			[GameMode.GOA_MOD]: {
+				exclude,
+				dependencies,
+			},
 		},
 	},
 ];

@@ -8,10 +8,11 @@ import { replaceableRewardTypes, Reward, RewardType } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
 import { Leveling, RandomizingAction, Toggle } from "../settings/enums";
 import { abilities } from "./abilities";
-import { SeedItem } from "./Seed";
+import { Seed } from "./Seed";
 import { keybladeStats, stats } from "./stats";
 
 const getReward = (
+	seed: Seed,
 	location: RewardLocation,
 	rewards: Reward[],
 	configuration: Configuration,
@@ -27,6 +28,20 @@ const getReward = (
 	}
 
 	const candidate = rewards[index];
+
+	const dependencyConflict = location.gameMode?.[
+		configuration.gameMode.mode
+	]?.dependencies?.some(depency => {
+		if (candidate !== depency.candidate) return false;
+
+		const other = seed.find(item => item.location.value === depency.address);
+
+		if (!other) return false;
+
+		if (depency.conflict.includes(other.reward)) return true;
+
+		return false;
+	});
 
 	if (include) {
 		const includesReward = location.gameMode?.[
@@ -45,7 +60,8 @@ const getReward = (
 		if (
 			(includesReward || includesRewardType) &&
 			!excludesReward &&
-			!excludesRewardType
+			!excludesRewardType &&
+			!dependencyConflict
 		)
 			return rewards.splice(index, 1)[0];
 	} else {
@@ -56,7 +72,7 @@ const getReward = (
 			configuration.gameMode.mode
 		]?.excludeType?.includes(candidate.type);
 
-		const check = !excludesReward && !excludesRewardType;
+		const check = !excludesReward && !excludesRewardType && !dependencyConflict;
 
 		if (
 			location.type === RewardLocationType.POPUP
@@ -67,6 +83,7 @@ const getReward = (
 	}
 
 	return getReward(
+		seed,
 		location,
 		rewards,
 		configuration,
@@ -75,12 +92,14 @@ const getReward = (
 	);
 };
 
-export function* assign(
+export function assign(
 	rewards: Reward[],
 	rewardLocations: RewardLocation[],
 	configuration: Configuration,
 	pool = false
-): IterableIterator<SeedItem> {
+): Seed {
+	const seed: Seed = [];
+
 	if (
 		!pool &&
 		configuration.settings.leveling !== Leveling.LEVEL_ONE &&
@@ -96,7 +115,7 @@ export function* assign(
 			replaceable.push(rewards.splice(rewards.indexOf(reward), 1)[0]);
 		}
 
-		yield* abilities(replaceable, configuration);
+		seed.push(...abilities(replaceable, configuration));
 	}
 
 	// Include
@@ -107,10 +126,10 @@ export function* assign(
 		)
 			continue;
 
-		yield {
+		seed.push({
 			location,
-			reward: getReward(location, rewards, configuration, true),
-		};
+			reward: getReward(seed, location, rewards, configuration, true),
+		});
 	}
 
 	// Exclude
@@ -128,10 +147,10 @@ export function* assign(
 		)
 			continue;
 
-		yield {
+		seed.push({
 			location,
-			reward: getReward(location, rewards, configuration),
-		};
+			reward: getReward(seed, location, rewards, configuration),
+		});
 	}
 
 	// Rest
@@ -142,23 +161,25 @@ export function* assign(
 		)
 			continue;
 
-		yield {
+		seed.push({
 			location,
 			reward: rewards.shift()!,
-		};
+		});
 	}
 
 	if (!pool && configuration.settings.leveling !== Leveling.LEVEL_ONE) {
 		if (configuration.settings.abilities === RandomizingAction.RANDOMIZE) {
-			yield* abilities(rewards, configuration);
+			seed.push(...abilities(rewards, configuration));
 		}
 
 		if (configuration.settings.stats === Toggle.ON) {
-			yield* stats(configuration);
+			seed.push(...stats(configuration));
 		}
 
 		if (configuration.settings.keybladeStats !== RandomizingAction.VANILLA) {
-			yield* keybladeStats(configuration);
+			seed.push(...keybladeStats(configuration));
 		}
 	}
+
+	return seed;
 }

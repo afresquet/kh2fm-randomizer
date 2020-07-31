@@ -3,15 +3,33 @@ import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
 import { Reward } from "../rewards/Reward";
 import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import {
+	LocationDependency,
+	RewardLocation,
+	RewardLocationType,
+} from "./RewardLocation";
 
 const exclude: Reward[] = [
 	Rewards.PROOF_OF_CONNECTION,
-	Rewards.PROOF_OF_PEACE,
 	...Object.values(formRewards),
 	Rewards.THUNDER,
 	Rewards.MAGNET,
 	Rewards.TORN_PAGES,
+];
+
+const dependencies: LocationDependency[] = [
+	{
+		candidate: Rewards.PROOF_OF_PEACE,
+		name: "Proof of Peace",
+		address: "11CE0B3A",
+		conflict: [Rewards.PROOF_OF_CONNECTION],
+	},
+	{
+		candidate: Rewards.PROOF_OF_PEACE,
+		name: "Winner's Proof",
+		address: "11CE0B2E",
+		conflict: [Rewards.PROOF_OF_CONNECTION],
+	},
 ];
 
 export const disneyCastleRewardLocations: RewardLocation[] = [
@@ -92,7 +110,10 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		value: "11CE0B16",
 		reward: Rewards.PROOF_OF_CONNECTION,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
+			[GameMode.GOA_MOD]: {
+				exclude,
+				dependencies,
+			},
 		},
 	},
 	{
@@ -102,7 +123,10 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		value: "11CE0B22",
 		reward: Rewards.MANIFEST_ILLUSION,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
+			[GameMode.GOA_MOD]: {
+				exclude,
+				dependencies,
+			},
 		},
 	},
 ];

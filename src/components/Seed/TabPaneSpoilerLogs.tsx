@@ -64,7 +64,6 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 	}, [active, visible, handleVisible]);
 
 	const dataSource = useMemo<T[] | undefined>(() => {
-		console.log(seed?.find(x => !x.reward));
 		return seed
 			?.filter(value => value.reward.value !== "00000000")
 			.map<T>(value => ({
@@ -72,7 +71,6 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 				name:
 					value.location.type === RewardLocationType.KEYBLADE
 						? RewardLocationType.KEYBLADE
-
 						: value.location.location,
 				description: value.location.description,
 				type: value.location.type,

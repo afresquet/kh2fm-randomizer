@@ -15,6 +15,13 @@ export enum RewardLocationType {
 	CRITICAL = "Critical Extra",
 }
 
+export interface LocationDependency {
+	candidate: Reward;
+	name: string;
+	address: string;
+	conflict: Reward[];
+}
+
 export interface RewardLocation {
 	type: RewardLocationType;
 	location: LocationName;
@@ -28,6 +35,7 @@ export interface RewardLocation {
 			includeType?: RewardType[];
 			exclude?: Reward[];
 			excludeType?: RewardType[];
+			dependencies?: LocationDependency[];
 		};
 	};
 }

@@ -4,6 +4,12 @@ import { useToggle } from "../hooks/useToggle";
 
 const versions: { version: string; changes: string[] }[] = [
 	{
+		version: "0.2.13",
+		changes: [
+			"It is now possible for Proof of Connection to be behind the Mushroom XIII checks, and for Proof of Peace to be behind the Terra checks, but never at the same time.",
+		],
+	},
+	{
 		version: "0.2.12",
 		changes: ["Added random keyblade stats"],
 	},
