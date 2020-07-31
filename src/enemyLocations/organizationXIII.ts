@@ -25,10 +25,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 		room: "14",
 		event: "62",
 		enemies: [
-			{
-				enemy: Enemies.FINAL_XEMNAS_DATA,
-				value: "11C55AAC",
-			},
+			// {
+			// 	enemy: Enemies.FINAL_XEMNAS_DATA,
+			// 	value: "11C55AAC",
+			// },
 		],
 	},
 	// {
@@ -144,10 +144,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 		room: "0E",
 		event: "65",
 		enemies: [
-			{
-				enemy: Enemies.LUXORD_DATA,
-				value: "11C53700",
-			},
+			// {
+			// 	enemy: Enemies.LUXORD_DATA,
+			// 	value: "11C53700",
+			// },
 		],
 	},
 	{
@@ -172,10 +172,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 		room: "21",
 		event: "94",
 		enemies: [
-			{
-				enemy: Enemies.LARXENE_DATA,
-				value: "11C56868",
-			},
+			// {
+			// 	enemy: Enemies.LARXENE_DATA,
+			// 	value: "11C56868",
+			// },
 		],
 	},
 	{

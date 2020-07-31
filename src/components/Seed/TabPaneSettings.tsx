@@ -63,6 +63,7 @@ export const TabPaneSettings: React.FC = () => {
 				<SettingSlider
 					title="Randomize Keyblade Stats"
 					{...mapValue("keybladeStats")}
+					marks={{ 0: "Vanilla", 1: "Balanced", 2: "Boosted" }}
 				/>
 			</div>
 

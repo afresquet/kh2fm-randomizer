@@ -278,7 +278,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 	},
 	{
 		type: RewardLocationType.BONUS,
-		location: LocationName.TWTNW,
+		location: LocationName.TWILIGHT_TOWN,
 		description: "Betwixt and Between Nobodies",
 		value: "21D110E8",
 		reward: Rewards.SLAPSHOT,

@@ -6,6 +6,7 @@ import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 const larxeneExclude: Reward[] = [
+	...Object.values(formRewards),
 	Rewards.THUNDER,
 	Rewards.MAGNET,
 	Rewards.TORN_PAGES,

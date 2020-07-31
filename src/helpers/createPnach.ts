@@ -23,7 +23,7 @@ import { createLine } from "./createLine";
 import { shuffle } from "./shuffle";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
-	const patches: string[] = [];
+	const patches: string[] = [`// ${configuration.name}`];
 
 	if (configuration.settings.criticalMode === Toggle.OFF) {
 		patches.push(startingAP);
@@ -45,7 +45,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(removeGrowthAbilities);
 	}
 
-	if (configuration.settings.keybladeStats === Toggle.OFF) {
+	if (configuration.settings.keybladeStats === RandomizingAction.VANILLA) {
 		patches.push(formKeybladesStats);
 	}
 

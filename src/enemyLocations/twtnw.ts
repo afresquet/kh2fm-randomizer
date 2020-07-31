@@ -207,10 +207,10 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		room: "14",
 		event: "4A",
 		enemies: [
-			{
-				value: "11C5590C",
-				enemy: Enemies.FINAL_XEMNAS,
-			},
+			// {
+			// 	value: "11C5590C",
+			// 	enemy: Enemies.FINAL_XEMNAS,
+			// },
 		],
 	},
 ];

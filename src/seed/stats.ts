@@ -4,6 +4,7 @@ import { keybladeRewardLocations } from "../rewardLocations/keyblades";
 import { levels } from "../rewardLocations/levels";
 import { RewardLocationType } from "../rewardLocations/RewardLocation";
 import { Configuration } from "../settings/Configuration";
+import { RandomizingAction } from "../settings/enums";
 import { LevelStats } from "./LevelStats";
 import { SeedItem } from "./Seed";
 
@@ -39,7 +40,11 @@ const statsPool = keybladeRewardLocations.reduce<number[]>(
 export function* keybladeStats(
 	configuration: Configuration
 ): IterableIterator<SeedItem> {
-	const shuffled = [...shuffle(statsPool, configuration.name)];
+	const shuffled = [...shuffle(statsPool, configuration.name)].map(stat =>
+		configuration.settings.keybladeStats === RandomizingAction.REPLACE
+			? stat
+			: stat + Math.max(1, Math.floor(stat * 0.5))
+	);
 
 	for (const keyblade of keybladeRewardLocations) {
 		const strength = shuffled.pop()!;

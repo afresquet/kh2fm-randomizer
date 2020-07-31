@@ -11,7 +11,7 @@ export interface Settings {
 	leveling: Leveling;
 	abilities: RandomizingAction;
 	stats: Toggle;
-	keybladeStats: Toggle;
+	keybladeStats: RandomizingAction;
 	bonusModifiers: Toggle;
 	criticalMode: Toggle;
 
@@ -28,7 +28,7 @@ export const defaultSettings: Settings = {
 	leveling: Leveling.LEVEL_FIFTY,
 	abilities: RandomizingAction.RANDOMIZE,
 	stats: Toggle.ON,
-	keybladeStats: Toggle.ON,
+	keybladeStats: RandomizingAction.REPLACE,
 	bonusModifiers: Toggle.ON,
 	criticalMode: Toggle.ON,
 

@@ -139,10 +139,10 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		room: "05",
 		event: "57",
 		enemies: [
-			{
-				enemy: Enemies.AXEL_I,
-				value: "11C26ED8",
-			},
+			// {
+			// 	enemy: Enemies.AXEL_I,
+			// 	value: "11C26ED8",
+			// },
 		],
 	},
 	// {
