@@ -10,6 +10,7 @@ export interface Settings {
 	gameMode: GameMode;
 	leveling: Leveling;
 	abilities: RandomizingAction;
+	keybladeStats: Toggle;
 	stats: Toggle;
 	keybladeStats: RandomizingAction;
 	bonusModifiers: Toggle;

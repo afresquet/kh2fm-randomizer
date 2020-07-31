@@ -32,6 +32,7 @@ export function* stats(
 		};
 	}
 }
+
 const statsPool = keybladeRewardLocations.reduce<number[]>(
 	(prev, curr) => prev.concat(curr.stats),
 	[]
