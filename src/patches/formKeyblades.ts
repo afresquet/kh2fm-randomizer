@@ -1,13 +1,13 @@
 import { createLine } from "../helpers/createLine";
-import { keybladeAbilitiesRewardLocations } from "../rewardLocations/keyblades";
+import { keybladeRewardLocations } from "../rewardLocations/keyblades";
 
-const fake = keybladeAbilitiesRewardLocations.find(
+const fake = keybladeRewardLocations.find(
 	location => location.description === "FAKE"
 )!;
-const detectionSaber = keybladeAbilitiesRewardLocations.find(
+const detectionSaber = keybladeRewardLocations.find(
 	location => location.description === "Detection Saber"
 )!;
-const edgeOfUltima = keybladeAbilitiesRewardLocations.find(
+const edgeOfUltima = keybladeRewardLocations.find(
 	location => location.description === "Edge of Ultima"
 )!;
 
@@ -22,9 +22,9 @@ export const formKeybladesAbilities = [
 );
 
 export const formKeybladesStats = ([
-	[fake.values.stats, 3, 1],
-	[detectionSaber.values.stats, 4, 2],
-	[edgeOfUltima.values.stats, 5, 4],
+	[fake.values.stats, ...fake.stats],
+	[detectionSaber.values.stats, ...detectionSaber.stats],
+	[edgeOfUltima.values.stats, ...edgeOfUltima.stats],
 ] as [string, number, number][]).reduce(
 	(result, [address, strength, magic]) =>
 		result +

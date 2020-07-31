@@ -10,10 +10,8 @@ import React, {
 } from "react";
 import { SeedContext } from "../../context/seed";
 import { analytics } from "../../firebase";
-import {
-	RewardLocationName,
-	RewardLocationType,
-} from "../../rewardLocations/RewardLocation";
+import { LocationName } from "../../LocationName";
+import { RewardLocationType } from "../../rewardLocations/RewardLocation";
 
 interface Props {
 	active: boolean;
@@ -74,7 +72,8 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 				name:
 					value.location.type === RewardLocationType.KEYBLADE
 						? RewardLocationType.KEYBLADE
-						: value.location.name,
+
+						: value.location.location,
 				description: value.location.description,
 				type: value.location.type,
 				became: value.reward.name,
@@ -83,7 +82,7 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			.sort((a, b) => {
 				if (a.name !== b.name) {
 					return a.name.localeCompare(b.name);
-				} else if (a.name === RewardLocationName.LEVEL_UP) {
+				} else if (a.name === LocationName.LEVEL_UP) {
 					return 0;
 				}
 

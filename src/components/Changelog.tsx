@@ -8,6 +8,10 @@ const versions: { version: string; changes: string[] }[] = [
 		changes: ["Added random keyblade stats"],
 	},
 	{
+		version: "0.2.11e2",
+		changes: ["Added Random Bosses as an experimental feature"],
+	},
+	{
 		version: "0.2.11",
 		changes: [
 			"Fixed bug where setting Replace on Level Up Abilities wouldn't work",

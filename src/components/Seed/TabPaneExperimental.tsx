@@ -2,6 +2,7 @@ import { Divider, Typography } from "antd";
 import { SliderValue } from "antd/lib/slider";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
+import { bosses } from "../../enemyLocations";
 import { useValueMapper } from "../../hooks/useValueMapper";
 import { Experimental } from "../../settings/Experimental";
 import { SettingSlider, SettingSliderProps } from "./SettingSlider";
@@ -10,7 +11,12 @@ interface Setting extends SettingSliderProps {
 	key: keyof Experimental;
 }
 
-export const experimentalSettings: Setting[] = [];
+export const experimentalSettings: Setting[] = [
+	{
+		key: "bosses",
+		title: "Randomize Bosses",
+	},
+];
 
 export const TabPaneExperimental: React.FC = () => {
 	const { experimental } = useContext(SeedContext);
@@ -34,7 +40,7 @@ export const TabPaneExperimental: React.FC = () => {
 					tweet at me
 				</Typography.Link>{" "}
 				or{" "}
-				<Typography.Link href="https://discord.gg/352TyvK" target="_blank">
+				<Typography.Link href="https://discord.gg/GcJR7Fv" target="_blank">
 					join the Rando Discord server
 				</Typography.Link>
 				.
@@ -51,6 +57,18 @@ export const TabPaneExperimental: React.FC = () => {
 						{...props}
 					/>
 				))}
+			</div>
+
+			<Divider />
+
+			<div>
+				<Typography>Current boss fights in the pool:</Typography>
+
+				<ul>
+					{bosses.map(boss => (
+						<li key={boss.description}>{boss.description}</li>
+					))}
+				</ul>
 			</div>
 		</div>
 	);

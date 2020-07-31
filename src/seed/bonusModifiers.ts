@@ -1,8 +1,8 @@
 import seedrandom from "seedrandom";
 import { filterByWorld } from "../helpers/filterByWorld";
 import { shuffle } from "../helpers/shuffle";
+import { LocationName } from "../LocationName";
 import { bonusModifiersRewardLocations } from "../rewardLocations/bonusModifiers";
-import { RewardLocationName } from "../rewardLocations/RewardLocation";
 import { Rewards } from "../rewards";
 import { Reward } from "../rewards/Reward";
 import { Configuration } from "../settings/Configuration";
@@ -19,7 +19,7 @@ export function* bonusModifiers(
 			if (
 				configuration.include.absentSilhouettes !==
 					RandomizingAction.RANDOMIZE &&
-				location.name === RewardLocationName.ABSENT_SILHOUETTE
+				location.name === LocationName.ABSENT_SILHOUETTE
 			)
 				return false;
 
@@ -106,7 +106,7 @@ export function* bonusModifiers(
 		yield {
 			location: {
 				type: location.type,
-				name: location.name,
+				location: location.name,
 				description: location.description,
 				reward: { name: locationRewardName } as any,
 				value: location.values.stats,
@@ -122,7 +122,7 @@ export function* bonusModifiers(
 		yield {
 			location: {
 				type: location.type,
-				name: location.name,
+				location: location.name,
 				description: location.description,
 				reward: { name: locationRewardName } as any,
 				value: location.values.slots,
