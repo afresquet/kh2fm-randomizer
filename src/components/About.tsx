@@ -93,6 +93,13 @@ export const About: React.FC = () => {
 				also teaching me a lot about cheat codes.{" "}
 				<Typography.Link href="https://twitter.com/desa3579" target="_blank">
 					Follow him on Twitter
+				</Typography.Link>{" "}
+				and{" "}
+				<Typography.Link
+					href="https://streamlabs.com/desa3579/tip"
+					target="_blank"
+				>
+					donate to him
 				</Typography.Link>
 				.
 			</p>

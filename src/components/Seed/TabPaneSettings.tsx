@@ -78,7 +78,7 @@ export const TabPaneSettings: React.FC = () => {
 			<div className="tab-pane">
 				<SettingSlider
 					title="EXP Multiplier"
-					marks={{ 0: "1x", 1: "1.5x", 2: "2x", 3: "2.5x", 4: "3x" }}
+					marks={{ 0: "1x", 1: "1.5x", 2: "2x", 3: "3x", 4: "5x" }}
 					{...mapValue("expMultiplier")}
 				/>
 
