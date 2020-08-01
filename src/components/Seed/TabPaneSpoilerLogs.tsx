@@ -1,5 +1,9 @@
+import { SearchOutlined } from "@ant-design/icons";
 import { Button, Input, Space, Table } from "antd";
-import { FilterDropdownProps } from "antd/lib/table/interface";
+import {
+	ColumnFilterItem,
+	FilterDropdownProps,
+} from "antd/lib/table/interface";
 import React, {
 	useCallback,
 	useContext,
@@ -96,9 +100,32 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			});
 	}, [seed]);
 
+	const locations = useMemo<ColumnFilterItem[] | undefined>(() => {
+		const locations = new Set<string>();
+
+		seed?.forEach(value => {
+			locations.add(value.location.location);
+		});
+
+		const result: ColumnFilterItem[] = [];
+
+		for (const location of locations) {
+			result.push({ text: location, value: location });
+		}
+
+		return result;
+	}, [seed]);
+
 	return (
 		<Table<T> dataSource={dataSource} loading={loading}>
-			<Table.Column<T> title="Location" dataIndex="name" key="key" />
+			<Table.Column<T>
+				title="Location"
+				dataIndex="name"
+				key="key"
+				filterIcon={<SearchOutlined />}
+				filters={locations}
+				onFilter={(value, record) => record.name === value}
+			/>
 
 			<Table.Column<T> title="Description" dataIndex="description" key="key" />
 
@@ -108,6 +135,7 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 				title="Became"
 				dataIndex="became"
 				key="key"
+				filterIcon={<SearchOutlined />}
 				filterDropdown={({
 					setSelectedKeys,
 					selectedKeys,
