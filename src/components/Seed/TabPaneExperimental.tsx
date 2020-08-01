@@ -16,6 +16,12 @@ export const experimentalSettings: Setting[] = [
 		key: "bosses",
 		title: "Randomize Bosses",
 	},
+	{
+		key: "superbossRetry",
+		help:
+			"After dying, hold L2+R2+Select while pressing on Continue to load back into the fight",
+		title: "Retry on Superbosses",
+	},
 ];
 
 export const TabPaneExperimental: React.FC = () => {

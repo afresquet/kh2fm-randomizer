@@ -1,16 +1,22 @@
 import { Enemy, EnemyType } from "../enemies/Enemy";
 import { bosses, enemies, enemiesMap } from "../enemyLocations";
+import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
+import { fasterOogie } from "../patches/fasterOogie";
+import { fasterPresents } from "../patches/fasterPresents";
 import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
 	formKeybladesStats,
 } from "../patches/formKeyblades";
+import { inGameSettings } from "../patches/inGameSettings";
 import { levelOneEXP } from "../patches/levelOneEXP";
 import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
 import { shorterDay5 } from "../patches/shorterDay5";
+import { skipDragon } from "../patches/skipDragon";
 import { startingAP } from "../patches/startingAP";
+import { superbossRetry } from "../patches/superbossRetry";
 import { Seed } from "../seed/Seed";
 import { Configuration } from "../settings/Configuration";
 import {
@@ -31,6 +37,22 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.gameMode.goa.shorterDay5 === Toggle.ON) {
 		patches.push(shorterDay5);
+	}
+
+	if (configuration.gameMode.goa.fasterOogie === Toggle.ON) {
+		patches.push(fasterOogie);
+	}
+
+	if (configuration.gameMode.goa.fasterPresents === Toggle.ON) {
+		patches.push(fasterPresents);
+	}
+
+	if (configuration.gameMode.goa.earlyLionDash === Toggle.ON) {
+		patches.push(earlyLionDash);
+	}
+
+	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {
+		patches.push(skipDragon);
 	}
 
 	if (configuration.settings.leveling === Leveling.LEVEL_ONE) {
@@ -58,6 +80,8 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 	}
 
 	patches.push(formEXPPatch(configuration));
+
+	patches.push(inGameSettings(configuration));
 
 	if (
 		configuration.experimental.enemies === Toggle.ON ||
@@ -160,6 +184,10 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 				patches.push(content);
 			}
 		}
+	}
+
+	if (configuration.experimental.superbossRetry === Toggle.ON) {
+		patches.push(superbossRetry);
 	}
 
 	return seed.reduce((result, item) => {

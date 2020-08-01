@@ -7,7 +7,10 @@ const versions: { version: string; changes: string[] }[] = [
 		version: "0.2.13",
 		changes: [
 			"It is now possible for Proof of Connection to be behind the Mushroom XIII checks, and for Proof of Peace to be behind the Terra checks, but never both cases at the same time.",
+			"Added in-game settings options",
+			"Added toggles for skips (Dragon Xemnas, Oogie phases, and new ones)",
 			"Replaced 2.5x EXP Multiplier with 5x",
+			"Added Retry on Superbosses as an experimental feature",
 		],
 	},
 	{
