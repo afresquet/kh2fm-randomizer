@@ -2,7 +2,11 @@ import { Button, Card, Divider, Modal, Space, Switch } from "antd";
 import React, { useCallback } from "react";
 import { useToggle } from "../hooks/useToggle";
 
-const versions: { version: string; changes: string[] }[] = [
+const versions: {
+	version: string;
+	changes: string[];
+	hotfixes?: string[];
+}[] = [
 	{
 		version: "0.2.13",
 		changes: [
@@ -11,7 +15,9 @@ const versions: { version: string; changes: string[] }[] = [
 			"Added toggles for skips (Dragon Xemnas, Oogie phases, and new ones)",
 			"Replaced 2.5x EXP Multiplier with 5x",
 			"Added Retry on Superbosses as an experimental feature",
+			"This update requires version 1.28 of the Garden of Assemblage mod",
 		],
+		hotfixes: ["Fixed Standard/Proud not getting 48 AP at the beginning"],
 	},
 	{
 		version: "0.2.12",
@@ -200,7 +206,7 @@ export const Changelog: React.FC = () => {
 
 	return (
 		<div style={{ margin: "0 auto", maxWidth: 1200 }}>
-			{versions.map(({ version, changes }, index) => (
+			{versions.map(({ version, changes, hotfixes }, index) => (
 				<Card
 					title={version}
 					style={{ width: "100%", marginBottom: 24 }}
@@ -266,6 +272,14 @@ export const Changelog: React.FC = () => {
 							<li key={change}>{change}</li>
 						))}
 					</ul>
+
+					{hotfixes && (
+						<ul>
+							{hotfixes.map(hotfix => (
+								<li key={hotfix}>(Hotfix) {hotfix}</li>
+							))}
+						</ul>
+					)}
 				</Card>
 			))}
 		</div>
