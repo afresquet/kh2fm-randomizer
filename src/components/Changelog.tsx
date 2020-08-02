@@ -9,7 +9,11 @@ const versions: {
 }[] = [
 	{
 		version: "0.2.14",
-		changes: ["Spoiler logs can now be filtered by location"],
+		changes: [
+			"Spoiler logs can now be filtered by location",
+			"All Donald and Goofy's weapons are now able to get action abilities",
+			"This update requires version 1.29 of the Garden of Assemblage mod, since party member weapons' logic has been optimized and moved here",
+		],
 	},
 	{
 		version: "0.2.13",

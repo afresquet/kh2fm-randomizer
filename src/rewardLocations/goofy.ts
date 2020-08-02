@@ -1,14 +1,6 @@
 import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { Reward } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
-
-const exclude: Reward[] = [
-	Rewards.GOOFY_TORNADO,
-	Rewards.GOOFY_BASH,
-	Rewards.GOOFY_TURBO,
-];
 
 export const goofyRewardLocations: RewardLocation[] = [
 	{
@@ -168,93 +160,78 @@ export const goofyRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.GOOFY,
 		location: LocationName.GOOFY,
-		description: "Dreamcloud",
+		description: "Dream Cloud",
 		value: "11CDF336",
 		reward: Rewards.PROTECTRA,
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Knight Defender",
 		value: "11CDF346",
 		reward: Rewards.PROTECTGA,
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Ogre Shield",
 		value: "11CDF316",
 		reward: Rewards.DEFENDER,
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Genji Shield",
 		value: "11CDF356",
 		reward: Rewards.HYPER_HEALING,
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Akashic Record",
 		value: "11CDF366",
 		reward: Rewards.MP_HASTE,
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Nobody Guard",
 		value: "11CDF376",
 		reward: Rewards.MP_RAGE,
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Frozen Pride+",
 		value: "11CDF696",
 		reward: Rewards.MP_HASTEGA,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Save the King+",
 		value: "11CDF5E6",
 		reward: Rewards.DAMAGE_CONTROL,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Majestic Mushroom",
 		value: "11CDF6C6",
 		reward: Rewards.PROTECT,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Majestic Mushroom+",
 		value: "11CDF6D6",
 		reward: Rewards.PROTECTRA,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.GOOFY,
+		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
 		description: "Ultimate Mushroom",
 		value: "11CDF6E6",
 		reward: Rewards.PROTECTGA,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 ];

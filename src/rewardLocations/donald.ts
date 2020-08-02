@@ -1,15 +1,6 @@
 import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { Reward } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
-
-const exclude: Reward[] = [
-	Rewards.DONALD_FIRE,
-	Rewards.DONALD_BLIZZARD,
-	Rewards.DONALD_THUNDER,
-	Rewards.DONALD_CURE,
-];
 
 export const donaldRewardLocations: RewardLocation[] = [
 	{
@@ -132,123 +123,108 @@ export const donaldRewardLocations: RewardLocation[] = [
 		reward: Rewards.LUCKY_LUCKY,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Mage's Staff",
 		value: "11CDF236",
 		reward: Rewards.DAMAGE_CONTROL,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Hammer Staff",
 		value: "11CDF246",
 		reward: Rewards.HYPER_HEALING,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Victory Bell",
 		value: "11CDF256",
 		reward: Rewards.MP_RAGE,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Comet Staff",
 		value: "11CDF276",
 		reward: Rewards.MP_HASTE,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Lord's Broom",
 		value: "11CDF286",
 		reward: Rewards.MP_HASTERA,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Wisdom Wand",
 		value: "11CDF296",
 		reward: Rewards.MP_HASTEGA,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Meteor Staff",
 		value: "11CDF266",
 		reward: Rewards.THUNDER_BOOST,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Rising Dragon",
 		value: "11CDF2A6",
 		reward: Rewards.FIRE_BOOST,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Shaman's Relic",
 		value: "11CDF2C6",
 		reward: Rewards.BLIZZARD_BOOST,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Nobody Lance",
 		value: "11CDF2B6",
 		reward: Rewards.ITEM_BOOST,
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Centurion+",
 		value: "11CDF626",
 		reward: Rewards.DAMAGE_CONTROL,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Save the Queen+",
 		value: "11CDF5D6",
 		reward: Rewards.MP_RAGE,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Precious Mushroom",
 		value: "11CDF656",
 		reward: Rewards.MP_HASTE,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Precious Mushroom+",
 		value: "11CDF666",
 		reward: Rewards.MP_HASTERA,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 	{
-		type: RewardLocationType.DONALD,
+		type: RewardLocationType.STAFF,
 		location: LocationName.DONALD,
 		description: "Premium Mushroom",
 		value: "11CDF676",
 		reward: Rewards.MP_HASTEGA,
-		gameMode: {
-			[GameMode.GOA_MOD]: { exclude },
-		},
 	},
 ];

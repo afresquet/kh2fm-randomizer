@@ -13,7 +13,7 @@ export const shieldRewards = {
 	},
 	CHAIN_SHIELD: {
 		type: RewardType.SHIELD,
-		name: "Chain Shield",
+		name: "Chain Gear",
 		value: "008C",
 	},
 	FALLING_STAR: {

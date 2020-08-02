@@ -11,6 +11,7 @@ import {
 } from "../patches/formKeyblades";
 import { inGameSettings } from "../patches/inGameSettings";
 import { levelOneEXP } from "../patches/levelOneEXP";
+import { partyMemberActionAbilities } from "../patches/partyMemberActionAbilities";
 import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
 import { shorterDay5 } from "../patches/shorterDay5";
@@ -82,6 +83,8 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 	patches.push(formEXPPatch(configuration));
 
 	patches.push(inGameSettings(configuration));
+
+	patches.push(...partyMemberActionAbilities(seed));
 
 	if (
 		configuration.experimental.enemies === Toggle.ON ||
