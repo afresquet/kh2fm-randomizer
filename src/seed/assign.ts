@@ -175,10 +175,10 @@ export function assign(
 		if (configuration.settings.stats === Toggle.ON) {
 			seed.push(...stats(configuration));
 		}
+	}
 
-		if (configuration.settings.keybladeStats !== RandomizingAction.VANILLA) {
-			seed.push(...keybladeStats(configuration));
-		}
+	if (configuration.settings.keybladeStats !== RandomizingAction.VANILLA) {
+		seed.push(...keybladeStats(configuration));
 	}
 
 	return seed;

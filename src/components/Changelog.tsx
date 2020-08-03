@@ -14,6 +14,7 @@ const versions: {
 			"All Donald and Goofy's weapons are now able to get action abilities",
 			"This update requires version 1.29 of the Garden of Assemblage mod, since party member weapons' logic has been optimized and moved here",
 		],
+		hotfixes: ["Fixed Random Keyblade Stats not working on Level 1"],
 	},
 	{
 		version: "0.2.13",
