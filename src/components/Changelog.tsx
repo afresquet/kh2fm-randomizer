@@ -14,7 +14,10 @@ const versions: {
 			"All Donald and Goofy's weapons are now able to get action abilities",
 			"This update requires version 1.29 of the Garden of Assemblage mod, since party member weapons' logic has been optimized and moved here",
 		],
-		hotfixes: ["Fixed Random Keyblade Stats not working on Level 1"],
+		hotfixes: [
+			"Fixed Random Keyblade Stats not working on Level 1",
+			"Excluded Torn Pages from being at Hollow Bastion - Borough",
+		],
 	},
 	{
 		version: "0.2.13",
