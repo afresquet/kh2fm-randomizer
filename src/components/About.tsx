@@ -62,26 +62,64 @@ export const About: React.FC = () => {
 				help!
 			</p>
 
+			<Typography.Title type="secondary" style={{ marginTop: 8 * 5 }}>
+				Credits
+			</Typography.Title>
+
 			<Divider />
 
 			<p>
-				Special thanks to{" "}
+				<b>Sonicshadowsilver2:</b> for creating the Garden of Assemblage mod,
+				without it the randomizer wouldn't be nearly as cool, and for being
+				super helpful with cheat codes.{" "}
 				<Typography.Link
 					href="https://twitter.com/Sonicshadowsil2"
 					target="_blank"
 				>
-					Sonicshadowsilver2
-				</Typography.Link>
-				,{" "}
-				<Typography.Link href="https://twitter.com/desa3579" target="_blank">
-					Desa3579
+					Follow him on Twitter
 				</Typography.Link>{" "}
 				and{" "}
-				<Typography.Link href="https://twitter.com/Bizkit047" target="_blank">
-					Bizkit047
+				<Typography.Link
+					href="https://streamlabs.com/sonicshadowsilver2/tip"
+					target="_blank"
+				>
+					donate to him
+				</Typography.Link>
+				.
+			</p>
+
+			<p>
+				<b>Desa3579:</b> for encouraging me into making this randomizer, and
+				also teaching me a lot about cheat codes.{" "}
+				<Typography.Link href="https://twitter.com/desa3579" target="_blank">
+					Follow him on Twitter
 				</Typography.Link>{" "}
-				for their work and help on HEX codes. This project wouldn't have been
-				possible without it.
+				and{" "}
+				<Typography.Link
+					href="https://streamlabs.com/desa3579/tip"
+					target="_blank"
+				>
+					donate to him
+				</Typography.Link>
+				.
+			</p>
+
+			<p>
+				<b>Xaddgx Absol Brasse:</b> for being incredibly knowledgeable and
+				helpful with cheat codes.{" "}
+				<Typography.Link href="https://twitter.com/xaddgx" target="_blank">
+					Follow them on Twitter
+				</Typography.Link>
+				.
+			</p>
+
+			<p>
+				<b>Bizkit047:</b> for creating his own randomizer a long time ago and
+				getting my attention into it.{" "}
+				<Typography.Link href="https://twitter.com/Bizkit047" target="_blank">
+					Follow him on Twitter
+				</Typography.Link>
+				.
 			</p>
 		</div>
 	);

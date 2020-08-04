@@ -2,7 +2,46 @@ import { Button, Card, Divider, Modal, Space, Switch } from "antd";
 import React, { useCallback } from "react";
 import { useToggle } from "../hooks/useToggle";
 
-const versions: { version: string; changes: string[] }[] = [
+const versions: {
+	version: string;
+	changes: string[];
+	hotfixes?: string[];
+}[] = [
+	{
+		version: "0.2.14",
+		changes: [
+			"Spoiler logs can now be filtered by location",
+			"All Donald and Goofy's weapons are now able to get action abilities",
+			"This update requires version 1.29 of the Garden of Assemblage mod, since party member weapons' logic has been optimized and moved here",
+		],
+		hotfixes: ["Fixed Random Keyblade Stats not working on Level 1"],
+	},
+	{
+		version: "0.2.13",
+		changes: [
+			"It is now possible for Proof of Connection to be behind the Mushroom XIII checks, and for Proof of Peace to be behind the Terra checks, but never both cases at the same time.",
+			"Added in-game settings options",
+			"Added toggles for skips (Dragon Xemnas, Oogie phases, and new ones)",
+			"Replaced 2.5x EXP Multiplier with 5x",
+			"Added Retry on Superbosses as an experimental feature",
+			"This update requires version 1.28 of the Garden of Assemblage mod",
+		],
+		hotfixes: ["Fixed Standard/Proud not getting 48 AP at the beginning"],
+	},
+	{
+		version: "0.2.12",
+		changes: ["Added random keyblade stats"],
+	},
+	{
+		version: "0.2.11e2",
+		changes: ["Added Random Bosses as an experimental feature"],
+	},
+	{
+		version: "0.2.11",
+		changes: [
+			"Fixed bug where setting Replace on Level Up Abilities wouldn't work",
+		],
+	},
 	{
 		version: "0.2.10",
 		changes: [
@@ -176,7 +215,7 @@ export const Changelog: React.FC = () => {
 
 	return (
 		<div style={{ margin: "0 auto", maxWidth: 1200 }}>
-			{versions.map(({ version, changes }, index) => (
+			{versions.map(({ version, changes, hotfixes }, index) => (
 				<Card
 					title={version}
 					style={{ width: "100%", marginBottom: 24 }}
@@ -242,6 +281,14 @@ export const Changelog: React.FC = () => {
 							<li key={change}>{change}</li>
 						))}
 					</ul>
+
+					{hotfixes && (
+						<ul>
+							{hotfixes.map(hotfix => (
+								<li key={hotfix}>(Hotfix) {hotfix}</li>
+							))}
+						</ul>
+					)}
 				</Card>
 			))}
 		</div>

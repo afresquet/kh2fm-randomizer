@@ -1,5 +1,9 @@
+import { SearchOutlined } from "@ant-design/icons";
 import { Button, Input, Space, Table } from "antd";
-import { FilterDropdownProps } from "antd/lib/table/interface";
+import {
+	ColumnFilterItem,
+	FilterDropdownProps,
+} from "antd/lib/table/interface";
 import React, {
 	useCallback,
 	useContext,
@@ -10,7 +14,8 @@ import React, {
 } from "react";
 import { SeedContext } from "../../context/seed";
 import { analytics } from "../../firebase";
-import { RewardLocationName } from "../../rewardLocations/RewardLocation";
+import { LocationName } from "../../LocationName";
+import { RewardLocationType } from "../../rewardLocations/RewardLocation";
 
 interface Props {
 	active: boolean;
@@ -67,7 +72,10 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			?.filter(value => value.reward.value !== "00000000")
 			.map<T>(value => ({
 				key: `${value.location.description}: ${value.location.reward.name} -> ${value.reward.name}`,
-				name: value.location.name,
+				name:
+					value.location.type === RewardLocationType.KEYBLADE
+						? RewardLocationType.KEYBLADE
+						: value.location.location,
 				description: value.location.description,
 				type: value.location.type,
 				became: value.reward.name,
@@ -76,7 +84,7 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			.sort((a, b) => {
 				if (a.name !== b.name) {
 					return a.name.localeCompare(b.name);
-				} else if (a.name === RewardLocationName.LEVEL_UP) {
+				} else if (a.name === LocationName.LEVEL_UP) {
 					return 0;
 				}
 
@@ -92,9 +100,32 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			});
 	}, [seed]);
 
+	const locations = useMemo<ColumnFilterItem[] | undefined>(() => {
+		const locations = new Set<string>();
+
+		seed?.forEach(value => {
+			locations.add(value.location.location);
+		});
+
+		const result: ColumnFilterItem[] = [];
+
+		for (const location of locations) {
+			result.push({ text: location, value: location });
+		}
+
+		return result;
+	}, [seed]);
+
 	return (
 		<Table<T> dataSource={dataSource} loading={loading}>
-			<Table.Column<T> title="Location" dataIndex="name" key="key" />
+			<Table.Column<T>
+				title="Location"
+				dataIndex="name"
+				key="key"
+				filterIcon={<SearchOutlined />}
+				filters={locations}
+				onFilter={(value, record) => record.name === value}
+			/>
 
 			<Table.Column<T> title="Description" dataIndex="description" key="key" />
 
@@ -104,6 +135,7 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 				title="Became"
 				dataIndex="became"
 				key="key"
+				filterIcon={<SearchOutlined />}
 				filterDropdown={({
 					setSelectedKeys,
 					selectedKeys,

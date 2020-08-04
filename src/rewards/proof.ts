@@ -7,12 +7,12 @@ export const proofRewards = {
 		value: "0251",
 	},
 	PROOF_OF_NONEXISTENCE: {
-		type: RewardType.ITEM,
+		type: RewardType.PROOF,
 		name: "Proof of Nonexistence",
 		value: "0252",
 	},
 	PROOF_OF_PEACE: {
-		type: RewardType.ITEM,
+		type: RewardType.PROOF,
 		name: "Proof of Peace",
 		value: "0253",
 	},

@@ -40,8 +40,50 @@ export const TabPaneGameModeSettings: React.FC = () => {
 			<div className="tab-pane">
 				<SettingSlider
 					title="Shorter Day 5 (Simulated Twilight Town)"
-					help="Let's you skip the 'Wonders missions' on Roxas' Day 5"
+					help="Lets you skip the 'Wonders missions' on Roxas' Day 5"
 					{...mapValue("shorterDay5")}
+				/>
+
+				<SettingSlider
+					title="Faster Oogie Boogie"
+					{...mapValue("fasterOogie")}
+				/>
+
+				<SettingSlider
+					title="Faster Presents"
+					{...mapValue("fasterPresents")}
+				/>
+
+				<SettingSlider title="Early Lion Dash" {...mapValue("earlyLionDash")} />
+
+				<SettingSlider title="Skip Dragon Xemnas" {...mapValue("skipDragon")} />
+			</div>
+
+			<Divider />
+
+			<div className="tab-pane">
+				<SettingSlider
+					title="Field Camera"
+					{...mapValue("fieldCamera")}
+					marks={{ 0: "Auto", 1: "Manual" }}
+				/>
+
+				<SettingSlider
+					title="Camera Up/Down"
+					{...mapValue("cameraUpDown")}
+					marks={{ 0: "Original", 1: "Reverse" }}
+				/>
+
+				<SettingSlider
+					title="Camera Left/Right"
+					{...mapValue("cameraLeftRight")}
+					marks={{ 0: "Original", 1: "Reverse" }}
+				/>
+
+				<SettingSlider
+					title="Summon Effects"
+					{...mapValue("summonEffects")}
+					marks={{ 0: "Auto", 1: "None" }}
 				/>
 			</div>
 		</>

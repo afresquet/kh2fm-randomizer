@@ -12,13 +12,10 @@ export const Support: React.FC = () => {
 			}}
 		>
 			<Typography.Title>Support the Project</Typography.Title>
-
 			<Divider />
-
 			<p>
 				This randomizer is 100% free to use and will <b>always</b> be.
 			</p>
-
 			<p>
 				If you would like to financially support my work, you can{" "}
 				<Typography.Link href="http://donate.valaxor.com" target="_blank">
@@ -30,13 +27,11 @@ export const Support: React.FC = () => {
 				</Typography.Link>
 				. Thank you very much :)
 			</p>
-
 			<p>
 				You can still support the project without spending any money. You are
 				supporting it already by playing/streaming it and you can let others
 				know about it. Thank you as well :)
 			</p>
-
 			<p>
 				You can also follow me on{" "}
 				<Typography.Link href="http://twitter.valaxor.com" target="_blank">
@@ -48,7 +43,6 @@ export const Support: React.FC = () => {
 				</Typography.Link>
 				.
 			</p>
-
 			<p>
 				Please also consider supporting{" "}
 				<Typography.Link
@@ -57,12 +51,26 @@ export const Support: React.FC = () => {
 				>
 					Sonicshadowsilver2
 				</Typography.Link>{" "}
-				and{" "}
+				(
+				<Typography.Link
+					href="https://streamlabs.com/sonicshadowsilver2/tip"
+					target="_blank"
+				>
+					donation link
+				</Typography.Link>
+				) and{" "}
 				<Typography.Link href="https://twitter.com/desa3579" target="_blank">
 					Desa3579
+				</Typography.Link>{" "}
+				(
+				<Typography.Link
+					href="https://streamlabs.com/desa3579/tip"
+					target="_blank"
+				>
+					donation link
 				</Typography.Link>
-				, they were huge help for the project and without them it wouldn't have
-				been possible.
+				) , they were huge help for the project and without them it wouldn't
+				have been possible.
 			</p>
 		</div>
 	);

@@ -3,12 +3,14 @@ import { levels } from "../rewardLocations/levels";
 import { Configuration } from "../settings/Configuration";
 import { Multiplier } from "../settings/enums";
 
+const dividers = [1, 1.5, 2, 3, 5];
+
 export function* expMultiplier(
 	configuration: Configuration
 ): IterableIterator<string> {
 	if (configuration.settings.expMultiplier === Multiplier.ONE) return "";
 
-	const divider = 1 + configuration.settings.expMultiplier * 0.5;
+	const divider = dividers[configuration.settings.expMultiplier];
 
 	for (const level of levels) {
 		const exp = Math.ceil(level.exp.required / divider);
