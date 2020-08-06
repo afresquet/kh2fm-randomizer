@@ -18,6 +18,7 @@ const versions: {
 			"Fixed Random Keyblade Stats not working on Level 1",
 			"Excluded Torn Pages from being at Hollow Bastion - Borough",
 			"Beginner/Standard/Proud now properly start with 50AP instead of 48 extra AP Boosts",
+			"Fixed an issue where certain seeds wouldn't be able to be downloaded",
 		],
 	},
 	{
