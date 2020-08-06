@@ -12,7 +12,10 @@ import {
 import { inGameSettings } from "../patches/inGameSettings";
 import { levelOneEXP } from "../patches/levelOneEXP";
 import { partyMemberActionAbilities } from "../patches/partyMemberActionAbilities";
-import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
+import {
+	removeGrowthAbilities,
+	removeMaxGrowthAbilities,
+} from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
 import { shorterDay5 } from "../patches/shorterDay5";
 import { skipDragon } from "../patches/skipDragon";
@@ -64,8 +67,12 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(removeLevel99Abilities);
 	}
 
-	if (configuration.include.growthAbilities) {
+	if (configuration.include.growthAbilities !== RandomizingAction.VANILLA) {
 		patches.push(removeGrowthAbilities);
+	}
+
+	if (configuration.include.maxGrowthAbilities === Toggle.ON) {
+		patches.push(removeMaxGrowthAbilities);
 	}
 
 	if (configuration.settings.keybladeStats === RandomizingAction.VANILLA) {
