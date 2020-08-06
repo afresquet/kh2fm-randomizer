@@ -19,6 +19,7 @@ const versions: {
 			"Excluded Torn Pages from being at Hollow Bastion - Borough",
 			"Beginner/Standard/Proud now properly start with 50AP instead of 48 extra AP Boosts",
 			"Fixed an issue where certain seeds wouldn't be able to be downloaded",
+			"Fixed issue where dying after getting a form level up would eat your form growth ability increase.",
 		],
 	},
 	{
