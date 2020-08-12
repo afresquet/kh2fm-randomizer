@@ -35,7 +35,7 @@ patch=1,EE,1032EE64,extended,00008063
 patch=1,EE,1032EE74,extended,00000000
 //Remove Quick Run LV3 1
 patch=1,EE,E0010104,extended,0032EE5E
-patch=1,EE,1036E5B0,extended,00000065
+patch=1,EE,1036E5B0,extended,00000064
 //Remove Quick Run LV3 2
 patch=1,EE,E0030105,extended,0032EE5E
 patch=1,EE,1036E5B0,extended,00000000

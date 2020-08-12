@@ -17,9 +17,9 @@ const versions: {
 		hotfixes: [
 			"Fixed Random Keyblade Stats not working on Level 1",
 			"Excluded Torn Pages from being at Hollow Bastion - Borough",
-			"Beginner/Standard/Proud now properly start with 50AP instead of 48 extra AP Boosts",
 			"Fixed an issue where certain seeds wouldn't be able to be downloaded",
 			"Fixed issue where dying after getting a form level up would eat your form growth ability increase.",
+			"Reverted Beginner/Standard/Proud starting with 50AP back to starting with 48 extra AP Boosts, until a consistent code is found",
 		],
 	},
 	{
