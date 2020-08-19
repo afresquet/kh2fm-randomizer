@@ -44,7 +44,8 @@ export function* bonusModifiers(
 			activeLocations.reduce<Reward[]>(
 				(acc, location) => acc.concat(location.bonuses),
 				[]
-			)
+			),
+			configuration.name
 		),
 	];
 	const locations = activeLocations.filter(
