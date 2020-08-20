@@ -8,6 +8,13 @@ const versions: {
 	hotfixes?: string[];
 }[] = [
 	{
+		version: "0.3.0",
+		changes: [
+			"Larxene is now behind Space Paranoids as of Garden of Assemblage mod version 1.33",
+			"Atlantica is now set to Replace by default",
+		],
+	},
+	{
 		version: "0.2.14",
 		changes: [
 			"Spoiler logs can now be filtered by location",
