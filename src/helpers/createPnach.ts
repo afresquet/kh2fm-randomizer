@@ -4,6 +4,7 @@ import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
 import { fasterOogie } from "../patches/fasterOogie";
 import { fasterPresents } from "../patches/fasterPresents";
+import { fastHyenasTwo } from "../patches/fastHyenasTwo";
 import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
@@ -53,6 +54,10 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.gameMode.goa.earlyLionDash === Toggle.ON) {
 		patches.push(earlyLionDash);
+	}
+
+	if (configuration.gameMode.goa.fastHyenasTwo === Toggle.ON) {
+		patches.push(fastHyenasTwo);
 	}
 
 	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {

@@ -12,6 +12,8 @@ const versions: {
 		changes: [
 			"Larxene is now behind Space Paranoids as of Garden of Assemblage mod version 1.33",
 			"Atlantica is now set to Replace by default",
+			"Added Fast Hyenas II option",
+			"This update requires version 1.33 of the Garden of Assemblage mod",
 		],
 	},
 	{
