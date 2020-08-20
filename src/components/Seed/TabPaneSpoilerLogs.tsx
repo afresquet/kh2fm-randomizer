@@ -113,7 +113,9 @@ export const TabPaneSpoilerLogs: React.FC<Props> = ({ active }) => {
 			result.push({ text: location, value: location });
 		}
 
-		return result;
+		return result.sort((a, b) =>
+			(a.value as string).localeCompare(b.value as string)
+		);
 	}, [seed]);
 
 	return (
