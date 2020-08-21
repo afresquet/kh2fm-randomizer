@@ -218,7 +218,7 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.DISNEY_CASTLE,
 		description: "Lingering Will Boss Fight",
-		world: "0A",
+		world: "0C",
 		room: "07",
 		event: "49",
 		enemies: [
