@@ -68,6 +68,15 @@ export const TabPaneExperimental: React.FC = () => {
 			<Divider />
 
 			<div>
+
+				<Typography>Known issues with Boss Randomizer:</Typography>
+
+				<ul>
+					<li>In many locations some complicated bosses will cause the game to go OOM, in which it is common to see drives/mickey t-pose</li>
+					<li>Bosses wait a different amount of time before their first attack, so in some cases you will get attacked before gaining control</li>
+					<li>When Scar hits non-lion Sora with his lunge attack it will put Sora in a tpose.</li>
+				</ul>
+
 				<Typography>Current boss fights in the pool:</Typography>
 
 				<ul>
