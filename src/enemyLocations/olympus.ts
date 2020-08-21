@@ -3,20 +3,34 @@ import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
 export const olympusEnemyLocations: EnemyLocation[] = [
-	// {
-	// 	type: EnemyLocationType.BOSS_FIGHT,
-	// 	location: LocationName.OLYMPUS,
-	// 	description: "Hades Chamber Boss Fight",
-	// 	value: "11C48478",
-	// 	enemy: Enemies.HADES_I,
-	// },
-	// {
-	// 	type: EnemyLocationType.MOB_FIGHT,
-	// 	location: LocationName.OLYMPUS,
-	// 	description: "Hades Escape",
-	// 	value: "11C591FC",
-	// 	enemy: Enemies.HADES_I,
-	// },
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Chamber Boss Fight",
+		world: "06",
+		room: "06",
+		event: "70",
+		enemies: [
+			{
+				enemy: Enemies.HADES_I,
+				value: "11C48478"
+			}
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Escape",
+		world: "06",
+		room: "05",
+		event: "6F",
+		enemies: [
+			{
+				enemy: Enemies.HADES_ESCAPE,
+				value: "11C591FC"
+			}
+		]
+	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,

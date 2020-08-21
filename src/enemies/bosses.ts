@@ -35,6 +35,17 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Hades (1st Visit - Hades' Chamber)",
 		value: "015D",
+		rules: {
+			useWhenReplacing: "HADES_II"
+		}
+	},
+	HADES_ESCAPE: {
+		type: EnemyType.BOSS,
+		name: "Hades (Escape)",
+		value: "0812",
+		rules: {
+			useWhenReplacing: "HADES_II"
+		}
 	},
 	HADES_II: {
 		type: EnemyType.BOSS,
@@ -145,6 +156,11 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Hostile Program",
 		value: "04B8",
+		rules: {
+			bannedFrom: [
+				"Shan-Yu Boss Fight"
+			]
+		}
 	},
 	HAYNER: {
 		type: EnemyType.BOSS,
@@ -155,11 +171,22 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Prison Keeper",
 		value: "05CE",
+		rules: {
+			bannedFrom: [
+				"Vexen AS Fight",
+				"Vexen Data Fight"
+			]
+		}
 	},
 	THE_EXPERIMENT: {
 		type: EnemyType.BOSS,
 		name: "The Experiment",
 		value: "05D0",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight"
+			]
+		}
 	},
 	GRIM_REAPER: {
 		type: EnemyType.BOSS,
@@ -200,6 +227,11 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Saix",
 		value: "06C9",
+		rules: {
+			bannedFrom: [
+				"Shan-Yu Boss Fight"
+			]
+		}
 	},
 	THE_EXPERIMENT_HEAD: {
 		type: EnemyType.BOSS,
@@ -260,6 +292,18 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Demyx (Hollow Bastion)",
 		value: "08F7",
+		// patches: {
+		// 	all: [
+		// 		{
+		// 			name: "No Water Clones Minigame",
+		// 			codes: ["20C60358 00000074",
+		// 					"20C6035C 00000000",
+		// 					"20C60360 00000000",
+		// 					"20C60374 00000000",
+		// 					"20C60378 00000000"]
+		// 		}
+		// 	] 
+		// }
 	},
 	LEON: {
 		type: EnemyType.BOSS,
@@ -310,31 +354,69 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Vexen (Absent Silhouette)",
 		value: "000933",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight",
+				"Shan-Yu Boss Fight",
+				"Dark Thorn Boss Fight",
+				"Armor Xemnas II Boss Fight",
+				"Grim Reaper I Boss Fight"
+			]
+		}
 	},
 	VEXEN_DATA: {
 		type: EnemyType.BOSS,
 		name: "Vexen (Data)",
 		value: "010933",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight",
+				"Shan-Yu Boss Fight",
+				"Dark Thorn Boss Fight",
+				"Armor Xemnas II Boss Fight",
+				"Grim Reaper I Boss Fight"
+			]
+		}
 	},
 	LEXAEUS_AS: {
 		type: EnemyType.BOSS,
 		name: "Lexaeus (Absent Silhouette)",
 		value: "000935",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight"
+			]
+		}
 	},
 	LEXAUS_DATA: {
 		type: EnemyType.BOSS,
 		name: "Lexaus (Data)",
 		value: "010935",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight"
+			]
+		}
 	},
 	ROXAS: {
 		type: EnemyType.BOSS,
 		name: "Roxas",
 		value: "000951",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight"
+			]
+		}
 	},
 	ROXAS_DATA: {
 		type: EnemyType.BOSS,
 		name: "Roxas (Data)",
 		value: "010951",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight"
+			]
+		}
 	},
 	LARXENE_AS: {
 		type: EnemyType.BOSS,
@@ -350,6 +432,13 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Lingering Will (Terra)",
 		value: "096F",
+		rules: {
+			bannedFrom: [
+				"Pete II Boss Fight",
+				"Twin Lords Boss Fight",
+				"Armor Xemnas I Boss Fight"
+			]
+		}
 	},
 	ZEXION_AS: {
 		type: EnemyType.BOSS,
@@ -361,15 +450,39 @@ export const bosses = {
 		name: "Axel (Data)",
 		value: "09C4",
 	},
+	XIGBAR: {
+		type: EnemyType.BOSS,
+		name: "Xigbar",
+		value: "0622",
+		rules: {
+			bannedFrom: [
+				"Roxas Boss Fight",
+				"Scar Boss Fight",
+				"Hades Escape"
+			]
+		}
+	},
 	XIGBAR_DATA: {
 		type: EnemyType.BOSS,
 		name: "Xigbar (Data)",
 		value: "09C5",
+		rules: {
+			bannedFrom: [
+				"Roxas Boss Fight",
+				"Scar Boss Fight",
+				"Hades Escape"
+			]
+		}
 	},
 	SAIX_DATA: {
 		type: EnemyType.BOSS,
 		name: "Saïx (Data)",
 		value: "09C6",
+		rules: {
+			bannedFrom: [
+				"Shan-Yu Boss Fight"
+			]
+		}
 	},
 	LUXORD_DATA: {
 		type: EnemyType.BOSS,

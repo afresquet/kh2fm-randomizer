@@ -17,13 +17,20 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	// {
-	// 	type: EnemyLocationType.BOSS_FIGHT,
-	// 	location: LocationName.TWTNW,
-	// 	description: "Xigbar Boss Fight",
-	// 	value: "11C4AB88",
-	// 	enemy: Enemies.???,
-	// },
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.TWTNW,
+		description: "Xigbar Boss Fight",
+		world: "12",
+		room: "0A",
+		event: "39",
+		enemies: [
+			{
+				enemy: Enemies.XIGBAR,
+				value: "11C4AB88",
+			},
+		],
+	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
 	// 	location: LocationName.TWTNW,

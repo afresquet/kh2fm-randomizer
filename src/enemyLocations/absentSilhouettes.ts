@@ -53,10 +53,10 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 		room: "26",
 		event: "91",
 		enemies: [
-			{
-				value: "11C58FE0",
-				enemy: Enemies.MARLUXIA_AS,
-			},
+			// {
+			// 	value: "11C58FE0",
+			// 	enemy: Enemies.MARLUXIA_AS,
+			// },
 		],
 	},
 	{
