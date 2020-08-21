@@ -27,6 +27,7 @@ import {
 	Toggle,
 } from "../settings/enums";
 import { createLine } from "./createLine";
+import { createJoker } from "./createJoker";
 import { shuffle } from "./shuffle";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
@@ -144,26 +145,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			];
 
 			for (const location of bosses) {
-				const lines = location.enemies.length * 2;
-
-				const one = `patch=1,EE,E0${(lines + 3)
-					.toString(16)
-					.padStart(2, "0")
-					.toUpperCase()}${location.room}${location.world},extended,0032BAE0\n`;
-				const two = `patch=1,EE,E0${(lines + 2)
-					.toString(16)
-					.padStart(2, "0")
-					.toUpperCase()}00${location.event},extended,0032BAE4\n`;
-				const three = `patch=1,EE,E0${(lines + 1)
-					.toString(16)
-					.padStart(2, "0")
-					.toUpperCase()}00${location.event},extended,0032BAE6\n`;
-				const four = `patch=1,EE,E0${lines
-					.toString(16)
-					.padStart(2, "0")
-					.toUpperCase()}00${location.event},extended,0032BAE8\n`;
-
-				const content = location.enemies.reduce((prev, curr) => {
+				const replacements = location.enemies.reduce((prev, curr) => {
 					let enemy: Enemy;
 
 					if (curr.enemy.type === EnemyType.BOSS) {
@@ -177,12 +159,16 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 						enemy.value.length === 6 ? enemy.value.substring(0, 2) : "";
 
 					return (
-						prev +
+						prev + 
 						createLine(curr.value, enemy.value, false) +
 						` // ${enemy.name} (was ${curr.enemy.name})\n` +
 						createLine(modifierAddress, modifier)
 					);
-				}, one + two + three + four);
+				}, '').split("\n");
+
+				replacements.pop()
+
+				const content = createJoker(replacements, location.world, location.room, location.event).join("\n") + "\n";
 
 				patches.push(content);
 			}
