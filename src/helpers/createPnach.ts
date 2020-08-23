@@ -181,20 +181,65 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 			// const starttime = (new Date()).getUTCMilliseconds()
 
-			const replacementMapping: any = placeBosses(availableLocations, shuffledBosses);
+			var replacementMapping: any = placeBosses(availableLocations, shuffledBosses);
 
 			// console.log( ( ((new Date()).getUTCMilliseconds()) - starttime) / 1000 )
 			// console.log(replacementMapping)
 
-			// make sure the volcano/blizzard lord are handled right (just 1 joker)
-			
+
+
+			// apply volcano/blizzard lord replacements first, as they are the only room currently randomized with 2+ bosses
+			var agrabahbosses = replacementMapping.filter((rep: any) => rep.old.world == "07" &&
+																 rep.old.room == "03" &&
+																 rep.old.event == "3B")
+			var comment = "// "
+			var codes = []
+
+			for (var index = 0; index < agrabahbosses.length; index++) {
+				const replacement = agrabahbosses[index]
+				const oldenemy = replacement.old
+				const newenemy = replacement.new
+				comment += `${newenemy.enemy.name} (was ${oldenemy.enemy.name}), `
+				if (oldenemy != newenemy) {
+					var newValue = newenemy.enemy.value
+
+					if (newenemy.enemy.rules) {
+						if (newenemy.enemy.rules.useWhenReplacing) {
+							newValue = newenemy.enemy.rules.useWhenReplacing
+						}
+					}
+					const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
+					const modifier =
+						newValue.length === 6 ? newValue.substring(0, 2) : "";
+					codes.push(createLine(oldenemy.value, newValue, false))
+					codes.push(createLine(modifierAddress, modifier, false))
+					const sourcePatches = oldenemy.patches
+					if (sourcePatches) {
+						if (sourcePatches.all) {
+							for (const patch of sourcePatches.all) {
+								// code += "\n //" + patch.name + "\n"/
+								for (const line of patch.codes) {
+									codes.push(createLine(line.split(" ")[0], line.split(" ")[1], false))
+								}
+							}
+						}
+					}
+				}
+			}
+			content = comment + "\n" + createJoker(codes, "07", "03", "3B").join("\n") + "\n"
+			patches.push(content)
+
+			replacementMapping = replacementMapping.filter((rep: any) => !(rep.old.world == "07" &&
+																		   rep.old.room == "03" &&
+																		   rep.old.event == "3B"))
+
 			for (var index = 0; index < replacementMapping.length; index++) {
 				const replacement = replacementMapping[index]
 				const oldenemy = replacement.old
 				const newenemy = replacement.new
 				var content
 				if (oldenemy == newenemy) {
-					// Waste of resources to apply any codes in this instance
+					// Waste of resources to apply any codes when it's a right replacement
 					// Add comment to record what happened though
 					content = ` // ${newenemy.enemy.name} (was ${oldenemy.enemy.name})\n`
 				} else {
@@ -207,7 +252,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 					}
 					const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
 					const modifier =
-					newValue.length === 6 ? newValue.substring(0, 2) : "";
+						newValue.length === 6 ? newValue.substring(0, 2) : "";
 					
 					var code = 
 						createLine(oldenemy.value, newValue, false) +
