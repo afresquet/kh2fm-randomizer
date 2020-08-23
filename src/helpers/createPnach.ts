@@ -1,5 +1,5 @@
 import { Enemy } from "../enemies/Enemy";
-import { bosses, enemies, enemiesMap } from "../enemyLocations";
+import { enemies, enemiesMap } from "../enemyLocations";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
 import { fasterOogie } from "../patches/fasterOogie";
@@ -112,7 +112,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			enemySeed.set(enemy.value, shuffledEnemies.shift()!);
 		}
 
-		if (configuration.experimental.enemies === Toggle.ON || true) {
+		if (configuration.experimental.enemies === Toggle.ON) {
 			for (const location of enemies) {
 				const one = `patch=1,EE,E0${(location.enemies.length + 3)
 					.toString(16)
@@ -147,61 +147,33 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			}
 		}
 
-		if (configuration.experimental.bosses === Toggle.ON ||true) {
-			const shuffledBosses = [
-				...shuffle(
-					bosses
-						.map(location => {
-							return location.enemies.map(enemy  => {
-								enemy.world = location.world
-								enemy.room = location.room
-								enemy.event = location.event
-								return enemy
-							})
-						})
-						.reduce((prev, curr) => prev.concat(curr)),
-					configuration.name
-				),
-			];
+		if (configuration.experimental.bosses === Toggle.ON) {
 
 
-			
-			const availableLocations = shuffledBosses.map(newboss => {
-				return {
-					boss: newboss,
-					available: [...shuffle(shuffledBosses.filter(oldboss => {
-						if (!newboss.enemy.rules)
-							return true
-						if (!newboss.enemy.rules.bannedFrom)
-							return true
-						return !newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name)
-					}), configuration.name)]
+			const starttime = (new Date()).getUTCMilliseconds()
+
+			var replacementMapping: any = placeBosses(configuration.name);
+
+			console.log( ( ((new Date()).getUTCMilliseconds()) - starttime) / 1000 )
+			console.log(replacementMapping)
+
+
+			if (replacementMapping) {
+				// apply volcano/blizzard lord replacements first, as they are the only room currently randomized with 2+ bosses
+				var agrabahbosses = replacementMapping.filter((rep: any) => rep.old.world == "07" &&
+																	rep.old.room == "03" &&
+																	rep.old.event == "3B")
+
+				patches.push(patchEnemies(agrabahbosses, "07", "03", "3B"))
+				
+				replacementMapping = replacementMapping.filter((rep: any) => !(rep.old.world == "07" &&
+																			rep.old.room == "03" &&
+																			rep.old.event == "3B"))
+
+				for (var index = 0; index < replacementMapping.length; index++) {
+					const replacement = replacementMapping[index]
+					patches.push(patchEnemies([replacement], replacement.old.world, replacement.old.room, replacement.old.event))
 				}
-			})
-
-			// const starttime = (new Date()).getUTCMilliseconds()
-
-			var replacementMapping: any = placeBosses(availableLocations, shuffledBosses);
-
-			// console.log( ( ((new Date()).getUTCMilliseconds()) - starttime) / 1000 )
-			// console.log(replacementMapping)
-
-
-
-			// apply volcano/blizzard lord replacements first, as they are the only room currently randomized with 2+ bosses
-			var agrabahbosses = replacementMapping.filter((rep: any) => rep.old.world == "07" &&
-																 rep.old.room == "03" &&
-																 rep.old.event == "3B")
-
-			patches.push(patchEnemies(agrabahbosses, "07", "03", "3B"))
-			
-			replacementMapping = replacementMapping.filter((rep: any) => !(rep.old.world == "07" &&
-																		   rep.old.room == "03" &&
-																		   rep.old.event == "3B"))
-
-			for (var index = 0; index < replacementMapping.length; index++) {
-				const replacement = replacementMapping[index]
-				patches.push(patchEnemies([replacement], replacement.old.world, replacement.old.room, replacement.old.event))
 			}
 		}
 	}

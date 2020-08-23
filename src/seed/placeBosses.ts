@@ -1,6 +1,7 @@
 import { shuffle } from "src/helpers/shuffle";
+import { bosses } from "../enemyLocations";
 
-export const placeBosses = (availableLocations: any[], availableBosses: any[]) => {
+export const placeBosses = (seed: string) => {
 	const attemptPlacing = (availableLocations: any[], availableBosses: any[]) => {
 		// given x available bosses and a mapping of available locations to place each boss
 		// recursively return a mapping of available bosses to random available locations
@@ -44,28 +45,51 @@ export const placeBosses = (availableLocations: any[], availableBosses: any[]) =
 		return false
 	};
 
+	const unignoredBosses = [
+		...shuffle(
+			bosses
+				.map(location => {
+					return location.enemies.map(enemy  => {
+						enemy.world = location.world
+						enemy.room = location.room
+						enemy.event = location.event
+						return enemy
+					})
+				})
+				.reduce((prev, curr) => prev.concat(curr)),
+				seed
+		),
+	];
+
 	var ignored: any[] = []
-	for (var b = 0; b < availableBosses.length; b++) {
+	for (var b = 0; b < bosses.length; b++) {
 
 		// Try multiple times to find a correct placing for the bosses	
 		const NATTEMPTS = 3
 		for (var i = 0; i < NATTEMPTS; i++) {
-			console.log("attempting" + i)
-			const replacementMapping = attemptPlacing(JSON.parse(JSON.stringify(availableLocations)), JSON.parse(JSON.stringify(availableBosses)))
-			console.log(replacementMapping)
+			const shuffledBosses = unignoredBosses.map(boss => boss)
+			const availableLocations = shuffledBosses.map(newboss => {
+				return {
+					boss: newboss,
+					available: [...shuffle(unignoredBosses.filter(oldboss => {
+						if (!newboss.enemy.rules)
+							return true
+						if (!newboss.enemy.rules.bannedFrom)
+							return true
+						return !newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name)
+					}), seed+i)]
+				}
+			})
+			const replacementMapping = attemptPlacing(availableLocations, shuffledBosses)
 			if (replacementMapping !== false)
 				return replacementMapping.concat(ignored)
-			// Reshuffle and try placing again
-			availableLocations.forEach(loc => {
-				loc.available = [...shuffle(loc.available)]
-			})
 		}
 		// After a few retries, pick one of the bosses to be randomized to itself, and try again
 		// probably in the future toignore should be randomly chosen among the bosses with the least possible places to go
-		var toignore = availableBosses.pop()
+		var toignore = unignoredBosses.pop()
 		ignored.push({old: toignore, new: toignore})
 
 	}
 	// worst case returns a seed that has no boss randomization, which is unlikely.
-	return false
+	return ignored
 };
