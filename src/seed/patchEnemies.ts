@@ -10,7 +10,7 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
         const oldenemy = replacement.old
         const newenemy = replacement.new
         comment += `${newenemy.enemy.name} (was ${oldenemy.enemy.name}), `
-        if (oldenemy != newenemy) {
+        if (oldenemy !== newenemy) {
             var newValue = newenemy.enemy.value
 
             if (newenemy.enemy.rules) {

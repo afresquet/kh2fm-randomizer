@@ -4,7 +4,7 @@ export const createJoker = (
 	room: string,
 	event: string
 ): string[] => {
-	if (codes.length == 0)
+	if (codes.length === 0)
 		return []
 	return [`patch=1,EE,E0${(codes.length + 3)
 			.toString(16)

@@ -5,17 +5,15 @@ export const placeBosses = (seed: string) => {
 	const attemptPlacing = (availableLocations: any[], availableBosses: any[]) => {
 		// given x available bosses and a mapping of available locations to place each boss
 		// recursively return a mapping of available bosses to random available locations
-		if (availableBosses.length == 0)
+		if (availableBosses.length === 0)
 			return [] // base case
 		
 		// try doing something for every available boss, or return false if the seed can't be completed
-		for (var index = 0; index < availableBosses.length; index++) {
-			// current boss being looped through
-			var newenemy = availableBosses[index]
+		for (const newenemy of availableBosses) {
 			// available locations for the current boss being looped through
-			const possibleLocations = availableLocations.find(loc => loc.boss.enemy.name == newenemy.enemy.name && loc.boss.room == newenemy.room)
+			const possibleLocations = availableLocations.find(loc => loc.boss.enemy.name === newenemy.enemy.name && loc.boss.room === newenemy.room)
 			// if the available locations have no possible spot, return false because this combination results in unplaceable bosses
-			if (possibleLocations.available.length == 0) 
+			if (possibleLocations.available.length === 0) 
 				return false
 
 			// loop through each enemies available locations
@@ -24,11 +22,11 @@ export const placeBosses = (seed: string) => {
 				const location = possibleLocations.available[locindex]
 				// take this location out of the available pool for everybody else
 				const newLocations = availableLocations.map(enemy => {
-					enemy.available = enemy.available.filter((loc: any) => loc != location)
+					enemy.available = enemy.available.filter((loc: any) => loc !== location)
 					return enemy
 				});
 				// take this boss out of the available pool for everybody else
-				const newBosses = availableBosses.filter(boss => boss != newenemy)
+				const newBosses = availableBosses.filter(boss => boss !== newenemy)
 
 				// get a mapping for the rest of the bosses
 				const bossMapping: any = attemptPlacing(newLocations, newBosses)
@@ -77,7 +75,7 @@ export const placeBosses = (seed: string) => {
 						if (!newboss.enemy.rules.bannedFrom)
 							return true
 						return !newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name)
-					}), seed+i)]
+					}), seed)]
 				}
 			})
 			const replacementMapping = attemptPlacing(availableLocations, shuffledBosses)
