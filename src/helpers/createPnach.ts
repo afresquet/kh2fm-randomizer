@@ -31,7 +31,7 @@ import {
 	Toggle,
 } from "../settings/enums";
 import { createLine } from "./createLine";
-import { createJoker } from "./createJoker";
+import { patchEnemies } from "../seed/patchEnemies";
 import { shuffle } from "./shuffle";
 import { placeBosses } from "../seed/placeBosses";
 
@@ -192,89 +192,16 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			var agrabahbosses = replacementMapping.filter((rep: any) => rep.old.world == "07" &&
 																 rep.old.room == "03" &&
 																 rep.old.event == "3B")
-			var comment = "// "
-			var codes = []
 
-			for (var index = 0; index < agrabahbosses.length; index++) {
-				const replacement = agrabahbosses[index]
-				const oldenemy = replacement.old
-				const newenemy = replacement.new
-				comment += `${newenemy.enemy.name} (was ${oldenemy.enemy.name}), `
-				if (oldenemy != newenemy) {
-					var newValue = newenemy.enemy.value
-
-					if (newenemy.enemy.rules) {
-						if (newenemy.enemy.rules.useWhenReplacing) {
-							newValue = newenemy.enemy.rules.useWhenReplacing
-						}
-					}
-					const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
-					const modifier =
-						newValue.length === 6 ? newValue.substring(0, 2) : "";
-					codes.push(createLine(oldenemy.value, newValue, false))
-					codes.push(createLine(modifierAddress, modifier, false))
-					const sourcePatches = oldenemy.patches
-					if (sourcePatches) {
-						if (sourcePatches.all) {
-							for (const patch of sourcePatches.all) {
-								// code += "\n //" + patch.name + "\n"/
-								for (const line of patch.codes) {
-									codes.push(createLine(line.split(" ")[0], line.split(" ")[1], false))
-								}
-							}
-						}
-					}
-				}
-			}
-			content = comment + "\n" + createJoker(codes, "07", "03", "3B").join("\n") + "\n"
-			patches.push(content)
-
+			patches.push(patchEnemies(agrabahbosses, "07", "03", "3B"))
+			
 			replacementMapping = replacementMapping.filter((rep: any) => !(rep.old.world == "07" &&
 																		   rep.old.room == "03" &&
 																		   rep.old.event == "3B"))
 
 			for (var index = 0; index < replacementMapping.length; index++) {
 				const replacement = replacementMapping[index]
-				const oldenemy = replacement.old
-				const newenemy = replacement.new
-				var content
-				if (oldenemy == newenemy) {
-					// Waste of resources to apply any codes when it's a right replacement
-					// Add comment to record what happened though
-					content = ` // ${newenemy.enemy.name} (was ${oldenemy.enemy.name})\n`
-				} else {
-					var newValue = newenemy.enemy.value
-
-					if (newenemy.enemy.rules) {
-						if (newenemy.enemy.rules.useWhenReplacing) {
-							newValue = newenemy.enemy.rules.useWhenReplacing
-						}
-					}
-					const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
-					const modifier =
-						newValue.length === 6 ? newValue.substring(0, 2) : "";
-					
-					var code = 
-						createLine(oldenemy.value, newValue, false) +
-						` // ${newenemy.enemy.name} (was ${oldenemy.enemy.name})\n` +
-						createLine(modifierAddress, modifier)
-					const sourcePatches = oldenemy.patches
-					if (sourcePatches) {
-						if (sourcePatches.all) {
-							for (const patch of sourcePatches.all) {
-								// code += "\n //" + patch.name + "\n"/
-								for (const line of patch.codes) {
-									code += createLine(line.split(" ")[0], line.split(" ")[1])
-								}
-							}
-						}
-					}
-					var splitCode: string[] = code.split("\n");
-					splitCode.pop()
-
-					content = createJoker(splitCode, oldenemy.world, oldenemy.room, oldenemy.event).join("\n") + "\n";
-				}
-				patches.push(content)
+				patches.push(patchEnemies([replacement], replacement.old.world, replacement.old.room, replacement.old.event))
 			}
 		}
 	}
