@@ -11,17 +11,18 @@ export const placeBosses = (availableLocations: any[], availableBosses: any[]) =
 		// available locations for the current boss being looped through
 		const possibleLocations = availableLocations.find(loc => loc.boss.enemy.name == newenemy.enemy.name && loc.boss.room == newenemy.room)
 		// if the available locations have no possible spot, return false because this combination results in unplaceable bosses
-		if (possibleLocations.available.length == 0)
+		if (possibleLocations.available.length == 0) 
 			return false
 
 		// loop through each enemies available locations
-		for (var locindex = 0; locindex < possibleLocations.available.length; locindex ++ ) {
+		for (var locindex = 0; locindex < possibleLocations.available.length; locindex++ ) {
 			// current locations being looped through
 			const location = possibleLocations.available[locindex]
 			// take this location out of the available pool for everybody else
 			const newLocations = availableLocations.map(enemy => {
-				enemy.available = enemy.available.filter((loc: any) => loc != location)
-				return enemy
+				var newenemy = JSON.parse(JSON.stringify(enemy));
+				newenemy.available = newenemy.available.filter((loc: any) => loc != location)
+				return newenemy
 			});
 			// take this boss out of the available pool for everybody else
 			const newBosses = availableBosses.filter(boss => boss != newenemy)

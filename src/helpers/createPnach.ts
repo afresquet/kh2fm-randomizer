@@ -112,7 +112,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			enemySeed.set(enemy.value, shuffledEnemies.shift()!);
 		}
 
-		if (configuration.experimental.enemies === Toggle.ON) {
+		if (configuration.experimental.enemies === Toggle.ON || true) {
 			for (const location of enemies) {
 				const one = `patch=1,EE,E0${(location.enemies.length + 3)
 					.toString(16)
@@ -147,7 +147,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			}
 		}
 
-		if (configuration.experimental.bosses === Toggle.ON) {
+		if (configuration.experimental.bosses === Toggle.ON ||true) {
 			const shuffledBosses = [
 				...shuffle(
 					bosses
@@ -179,11 +179,11 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 				}
 			})
 
-			const startdeb = (new Date()).getUTCMilliseconds()
+			// const starttime = (new Date()).getUTCMilliseconds()
 
 			const replacementMapping: any = placeBosses(availableLocations, shuffledBosses);
 
-			// console.log( ( ((new Date()).getUTCMilliseconds()) - startdeb) / 1000 )
+			// console.log( ( ((new Date()).getUTCMilliseconds()) - starttime) / 1000 )
 			// console.log(replacementMapping)
 
 			// make sure the volcano/blizzard lord are handled right (just 1 joker)
