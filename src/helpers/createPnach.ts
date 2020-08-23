@@ -1,4 +1,4 @@
-import { Enemy, EnemyType } from "../enemies/Enemy";
+import { Enemy } from "../enemies/Enemy";
 import { bosses, enemies, enemiesMap } from "../enemyLocations";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
@@ -29,6 +29,7 @@ import {
 import { createLine } from "./createLine";
 import { createJoker } from "./createJoker";
 import { shuffle } from "./shuffle";
+import { placeBosses } from "../seed/placeBosses";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
 	const patches: string[] = [`// ${configuration.name}`];
@@ -138,39 +139,85 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 			const shuffledBosses = [
 				...shuffle(
 					bosses
-						.map(location => location.enemies)
+						.map(location => {
+							return location.enemies.map(enemy  => {
+								enemy.world = location.world
+								enemy.room = location.room
+								enemy.event = location.event
+								return enemy
+							})
+						})
 						.reduce((prev, curr) => prev.concat(curr)),
 					configuration.name
 				),
 			];
 
-			for (const location of bosses) {
-				const replacements = location.enemies.reduce((prev, curr) => {
-					let enemy: Enemy;
 
-					if (curr.enemy.type === EnemyType.BOSS) {
-						enemy = shuffledBosses.shift()!.enemy;
-					} else {
-						enemy = enemySeed.get(curr.enemy.value)!;
+			
+			const availableLocations = shuffledBosses.map(newboss => {
+				return {
+					boss: newboss,
+					available: [...shuffle(shuffledBosses.filter(oldboss => {
+						if (!newboss.enemy.rules)
+							return true
+						if (!newboss.enemy.rules.bannedFrom)
+							return true
+						return !newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name)
+					}), configuration.name)]
+				}
+			})
+
+			const startdeb = (new Date()).getUTCMilliseconds()
+
+			const replacementMapping: any = placeBosses(availableLocations, shuffledBosses);
+
+			// console.log( ( ((new Date()).getUTCMilliseconds()) - startdeb) / 1000 )
+			// console.log(replacementMapping)
+
+			// make sure the volcano/blizzard lord are handled right (just 1 joker)
+			
+			for (var index = 0; index < replacementMapping.length; index++) {
+				const replacement = replacementMapping[index]
+				const oldenemy = replacement.old
+				const newenemy = replacement.new
+				var content
+				if (oldenemy == newenemy) {
+					// Waste of resources to apply any codes in this instance
+					// Add comment to record what happened though
+					content = ` // ${newenemy.enemy.name} (was ${oldenemy.enemy.name})\n`
+				} else {
+					var newValue = newenemy.enemy.value
+
+					if (newenemy.enemy.rules) {
+						if (newenemy.enemy.rules.useWhenReplacing) {
+							newValue = newenemy.enemy.rules.useWhenReplacing
+						}
 					}
-
-					const modifierAddress = (parseInt(curr.value, 16) + 32).toString(16);
+					const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
 					const modifier =
-						enemy.value.length === 6 ? enemy.value.substring(0, 2) : "";
-
-					return (
-						prev + 
-						createLine(curr.value, enemy.value, false) +
-						` // ${enemy.name} (was ${curr.enemy.name})\n` +
+					newValue.length === 6 ? newValue.substring(0, 2) : "";
+					
+					var code = 
+						createLine(oldenemy.value, newValue, false) +
+						` // ${newenemy.enemy.name} (was ${oldenemy.enemy.name})\n` +
 						createLine(modifierAddress, modifier)
-					);
-				}, '').split("\n");
+					const sourcePatches = oldenemy.patches
+					if (sourcePatches) {
+						if (sourcePatches.all) {
+							for (const patch of sourcePatches.all) {
+								// code += "\n //" + patch.name + "\n"/
+								for (const line of patch.codes) {
+									code += createLine(line.split(" ")[0], line.split(" ")[1])
+								}
+							}
+						}
+					}
+					var splitCode: string[] = code.split("\n");
+					splitCode.pop()
 
-				replacements.pop()
-
-				const content = createJoker(replacements, location.world, location.room, location.event).join("\n") + "\n";
-
-				patches.push(content);
+					content = createJoker(splitCode, oldenemy.world, oldenemy.room, oldenemy.event).join("\n") + "\n";
+				}
+				patches.push(content)
 			}
 		}
 	}

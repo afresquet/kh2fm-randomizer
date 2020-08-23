@@ -18,14 +18,17 @@ export interface EnemyLocation {
 	enemies: {
 		enemy: Enemy;
 		value: string;
+		world?: string;
+		room?: string;
+		event?: string;
+		patches?: {
+			// patches which are applied to every boss that is placed here (ie marluxia's room)
+			all: {
+				name: string;
+				codes: string[];
+			}[]
+		};
 	}[];
-	patches?: {
-		// patches which are applied to every boss that is placed here (ie marluxia's room)
-		all: {
-			name: string;
-			codes: string[]
-		}[]
-	};
 	gameMode?: {
 		[K in GameMode]?: {};
 	};

@@ -36,7 +36,7 @@ export const bosses = {
 		name: "Hades (1st Visit - Hades' Chamber)",
 		value: "015D",
 		rules: {
-			useWhenReplacing: "HADES_II"
+			useWhenReplacing: "015E"
 		}
 	},
 	HADES_ESCAPE: {
@@ -44,7 +44,7 @@ export const bosses = {
 		name: "Hades (Escape)",
 		value: "0812",
 		rules: {
-			useWhenReplacing: "HADES_II"
+			useWhenReplacing: "015E"
 		}
 	},
 	HADES_II: {
@@ -158,7 +158,7 @@ export const bosses = {
 		value: "04B8",
 		rules: {
 			bannedFrom: [
-				"Shan-Yu Boss Fight"
+				"Shan-Yu"
 			]
 		}
 	},
@@ -173,8 +173,8 @@ export const bosses = {
 		value: "05CE",
 		rules: {
 			bannedFrom: [
-				"Vexen AS Fight",
-				"Vexen Data Fight"
+				"Vexen (Absent Silhouette)",
+				"Vexen (Data)"
 			]
 		}
 	},
@@ -184,7 +184,7 @@ export const bosses = {
 		value: "05D0",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight"
+				"Pete (Olympus Coliseum; Part II)"
 			]
 		}
 	},
@@ -229,7 +229,7 @@ export const bosses = {
 		value: "06C9",
 		rules: {
 			bannedFrom: [
-				"Shan-Yu Boss Fight"
+				"Shan-Yu"
 			]
 		}
 	},
@@ -356,11 +356,11 @@ export const bosses = {
 		value: "000933",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight",
-				"Shan-Yu Boss Fight",
-				"Dark Thorn Boss Fight",
-				"Armor Xemnas II Boss Fight",
-				"Grim Reaper I Boss Fight"
+				"Pete (Olympus Coliseum; Part II)",
+				"Shan-Yu",
+				"Dark Thorn",
+				"Armor Xemnas",
+				"Grim Reaper"
 			]
 		}
 	},
@@ -370,11 +370,11 @@ export const bosses = {
 		value: "010933",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight",
-				"Shan-Yu Boss Fight",
-				"Dark Thorn Boss Fight",
-				"Armor Xemnas II Boss Fight",
-				"Grim Reaper I Boss Fight"
+				"Pete (Olympus Coliseum; Part II)",
+				"Shan-Yu",
+				"Dark Thorn",
+				"Armor Xemnas",
+				"Grim Reaper"
 			]
 		}
 	},
@@ -384,7 +384,7 @@ export const bosses = {
 		value: "000935",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight"
+				"Pete (Olympus Coliseum; Part II)"
 			]
 		}
 	},
@@ -394,7 +394,7 @@ export const bosses = {
 		value: "010935",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight"
+				"Pete (Olympus Coliseum; Part II)"
 			]
 		}
 	},
@@ -404,7 +404,9 @@ export const bosses = {
 		value: "000951",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight"
+				"Pete (Olympus Coliseum; Part II)",
+				"Grim Reaper"
+
 			]
 		}
 	},
@@ -414,7 +416,8 @@ export const bosses = {
 		value: "010951",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight"
+				"Pete (Olympus Coliseum; Part II)",
+				"Grim Reaper"
 			]
 		}
 	},
@@ -434,9 +437,10 @@ export const bosses = {
 		value: "096F",
 		rules: {
 			bannedFrom: [
-				"Pete II Boss Fight",
-				"Twin Lords Boss Fight",
-				"Armor Xemnas I Boss Fight"
+				"Pete (Olympus Coliseum; Part II)",
+				"Volcanic Lord",
+				"Blizzard Lord",
+				"Armor Xemnas"
 			]
 		}
 	},
@@ -456,9 +460,9 @@ export const bosses = {
 		value: "0622",
 		rules: {
 			bannedFrom: [
-				"Roxas Boss Fight",
-				"Scar Boss Fight",
-				"Hades Escape"
+				"Roxas",
+				"Scar",
+				"Hades (Escape)"
 			]
 		}
 	},
@@ -468,9 +472,9 @@ export const bosses = {
 		value: "09C5",
 		rules: {
 			bannedFrom: [
-				"Roxas Boss Fight",
-				"Scar Boss Fight",
-				"Hades Escape"
+				"Roxas",
+				"Scar",
+				"Hades (Escape)"
 			]
 		}
 	},
@@ -480,7 +484,7 @@ export const bosses = {
 		value: "09C6",
 		rules: {
 			bannedFrom: [
-				"Shan-Yu Boss Fight"
+				"Shan-Yu"
 			]
 		}
 	},

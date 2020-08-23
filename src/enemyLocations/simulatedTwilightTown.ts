@@ -330,21 +330,21 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		world: "02",
 		room: "14",
 		event: "89",
-		patches: {
-			all: [
-				{
-					name: "Roxas can use RCs",
-					codes: [
-						"01C9F62F 00000001",
-						"01C9572F 00000001"
-					]
-				}
-			] 
-		},
 		enemies: [
 			{
 				enemy: Enemies.AXEL_II,
 				value: "11C5AF88",
+				patches: {
+					all: [
+						{
+							name: "Roxas can use RCs",
+							codes: [
+								"01C9F62F 00000001",
+								"01C9572F 00000001"
+							]
+						}
+					] 
+				},
 			},
 		],
 	},
