@@ -4,6 +4,7 @@ import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
 import { fasterOogie } from "../patches/fasterOogie";
 import { fasterPresents } from "../patches/fasterPresents";
+import { fastHyenasTwo } from "../patches/fastHyenasTwo";
 import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
@@ -12,7 +13,10 @@ import {
 import { inGameSettings } from "../patches/inGameSettings";
 import { levelOneEXP } from "../patches/levelOneEXP";
 import { partyMemberActionAbilities } from "../patches/partyMemberActionAbilities";
-import { removeGrowthAbilities } from "../patches/removeGrowthAbilities";
+import {
+	removeGrowthAbilities,
+	removeMaxGrowthAbilities,
+} from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
 import { shorterDay5 } from "../patches/shorterDay5";
 import { skipDragon } from "../patches/skipDragon";
@@ -54,6 +58,10 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(earlyLionDash);
 	}
 
+	if (configuration.gameMode.goa.fastHyenasTwo === Toggle.ON) {
+		patches.push(fastHyenasTwo);
+	}
+
 	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {
 		patches.push(skipDragon);
 	}
@@ -66,8 +74,12 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(removeLevel99Abilities);
 	}
 
-	if (configuration.include.growthAbilities) {
+	if (configuration.include.growthAbilities !== RandomizingAction.VANILLA) {
 		patches.push(removeGrowthAbilities);
+	}
+
+	if (configuration.include.maxGrowthAbilities === Toggle.ON) {
+		patches.push(removeMaxGrowthAbilities);
 	}
 
 	if (configuration.settings.keybladeStats === RandomizingAction.VANILLA) {

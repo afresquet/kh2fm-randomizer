@@ -209,7 +209,7 @@ export const goofyRewardLocations: RewardLocation[] = [
 	{
 		type: RewardLocationType.SHIELD,
 		location: LocationName.GOOFY,
-		description: "Save the King+",
+		description: "Save The King+",
 		value: "11CDF5E6",
 		reward: Rewards.DAMAGE_CONTROL,
 	},

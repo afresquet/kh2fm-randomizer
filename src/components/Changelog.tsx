@@ -8,13 +8,30 @@ const versions: {
 	hotfixes?: string[];
 }[] = [
 	{
+		version: "0.3.0",
+		changes: [
+			"Larxene is now behind Space Paranoids as of Garden of Assemblage mod version 1.33",
+			"Atlantica is now set to Replace by default",
+			"Added Fast Hyenas II option",
+			"Fixed bug where Keyblade stats were being set 3 times",
+			"This update requires version 1.33 of the Garden of Assemblage mod",
+		],
+	},
+	{
 		version: "0.2.14",
 		changes: [
 			"Spoiler logs can now be filtered by location",
 			"All Donald and Goofy's weapons are now able to get action abilities",
 			"This update requires version 1.29 of the Garden of Assemblage mod, since party member weapons' logic has been optimized and moved here",
 		],
-		hotfixes: ["Fixed Random Keyblade Stats not working on Level 1"],
+		hotfixes: [
+			"Fixed Random Keyblade Stats not working on Level 1",
+			"Excluded Torn Pages from being at Hollow Bastion - Borough",
+			"Fixed an issue where certain seeds wouldn't be able to be downloaded",
+			"Fixed issue where dying after getting a form level up would eat your form growth ability increase.",
+			"Readded 50 starting AP over 48 Boosts on Beginner/Standard/Proud",
+			"Fixed Bonus Modifiers not being properly seeded",
+		],
 	},
 	{
 		version: "0.2.13",

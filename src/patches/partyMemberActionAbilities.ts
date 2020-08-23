@@ -63,7 +63,7 @@ export function* partyMemberActionAbilities(
 		const ap = abilities[weapon.reward.name].ap;
 
 		const weaponDigit = weaponRewards.find(
-			w => w.name === weapon.location.description
+			w => w.name.toLowerCase() === weapon.location.description.toLowerCase()
 		)!.value;
 		const weaponAbilityAddress = weapon.location.value.substring(1);
 

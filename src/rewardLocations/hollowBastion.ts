@@ -39,6 +39,11 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF3A",
 		reward: Rewards.DRIVE_RECOVERY,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				exclude: [Rewards.TORN_PAGES],
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -46,6 +51,11 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF46",
 		reward: Rewards.AP_BOOST,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				exclude: [Rewards.TORN_PAGES],
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -53,6 +63,11 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF52",
 		reward: Rewards.HI_POTION,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				exclude: [Rewards.TORN_PAGES],
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -60,6 +75,11 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF5E",
 		reward: Rewards.MYTHRIL_SHARD,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				exclude: [Rewards.TORN_PAGES],
+			},
+		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -67,6 +87,11 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF6A",
 		reward: Rewards.DARK_SHARD,
+		gameMode: {
+			[GameMode.GOA_MOD]: {
+				exclude: [Rewards.TORN_PAGES],
+			},
+		},
 	},
 	{
 		type: RewardLocationType.BIGCHEST,

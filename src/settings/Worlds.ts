@@ -30,7 +30,7 @@ export const defaultWorlds: Worlds = {
 	agrabah: RandomizingAction.RANDOMIZE,
 	landOfDragons: RandomizingAction.RANDOMIZE,
 	pooh: RandomizingAction.RANDOMIZE,
-	atlantica: RandomizingAction.RANDOMIZE,
+	atlantica: RandomizingAction.REPLACE,
 	prideLands: RandomizingAction.RANDOMIZE,
 	disneyCastle: RandomizingAction.RANDOMIZE,
 	timelessRiver: RandomizingAction.RANDOMIZE,
