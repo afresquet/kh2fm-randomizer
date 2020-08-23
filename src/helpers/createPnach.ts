@@ -150,12 +150,12 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		if (configuration.experimental.bosses === Toggle.ON) {
 
 
-			const starttime = (new Date()).getUTCMilliseconds()
+			// const starttime = (new Date()).getUTCMilliseconds()
 
 			var replacementMapping: any = placeBosses(configuration.name);
 
-			console.log( ( ((new Date()).getUTCMilliseconds()) - starttime) / 1000 )
-			console.log(replacementMapping)
+			// console.log( ( ((new Date()).getUTCMilliseconds()) - starttime) / 1000 )
+			// console.log(replacementMapping)
 
 
 			if (replacementMapping) {
