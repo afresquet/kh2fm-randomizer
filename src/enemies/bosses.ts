@@ -36,7 +36,7 @@ export const bosses = {
 		name: "Hades (1st Visit - Hades' Chamber)",
 		value: "015D",
 		rules: {
-			useWhenReplacing: "015E"
+			useWhenReplacing: "090E"
 		}
 	},
 	HADES_ESCAPE: {
@@ -44,13 +44,16 @@ export const bosses = {
 		name: "Hades (Escape)",
 		value: "0812",
 		rules: {
-			useWhenReplacing: "015E"
+			useWhenReplacing: "090E"
 		}
 	},
 	HADES_II: {
 		type: EnemyType.BOSS,
 		name: "Hades (2nd Visit & Hades Paradox Cup Battle)",
 		value: "015E",
+		rules: {
+			useWhenReplacing: "090E"
+		}
 	},
 	CERBERUS: {
 		type: EnemyType.BOSS,
