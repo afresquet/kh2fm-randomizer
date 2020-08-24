@@ -1,6 +1,6 @@
 import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { formRewards } from "../rewards/form";
+import { RewardType } from "../rewards/Reward";
 import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
@@ -110,7 +110,7 @@ export const dataOrganizationXIIIRewardLocations: RewardLocation[] = [
 		gameMode: {
 			[GameMode.GOA_MOD]: {
 				world: LocationName.HOLLOW_BASTION,
-				exclude: Object.values(formRewards),
+				excludeType: [RewardType.FORM],
 			},
 		},
 	},

@@ -34,13 +34,17 @@ const getReward = (
 	]?.dependencies?.some(depency => {
 		if (candidate !== depency.candidate) return false;
 
-		const other = seed.find(item => item.location.value === depency.address);
+		const locations = seed.filter(item =>
+			depency.locations.some(
+				location => location.address === item.location.value
+			)
+		);
 
-		if (!other) return false;
+		const conflicts = locations.filter(location =>
+			depency.conflict.includes(location.reward)
+		);
 
-		if (depency.conflict.includes(other.reward)) return true;
-
-		return false;
+		return conflicts.length >= (depency.maxAmount || 1);
 	});
 
 	if (include) {
