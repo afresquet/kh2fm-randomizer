@@ -59,7 +59,7 @@ export const ButtonShare: React.FC = () => {
 			}
 			trigger="click"
 		>
-			<Button style={{ marginLeft: 16, marginRight: -8 }}>Share</Button>
+			<Button style={{ marginLeft: 8, marginRight: -8 }}>Share</Button>
 		</Popover>
 	);
 

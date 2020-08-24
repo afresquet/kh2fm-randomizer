@@ -158,10 +158,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 		room: "26",
 		event: "96",
 		enemies: [
-			{
-				enemy: Enemies.MARLUXIA_DATA,
-				value: "11C59114",
-			},
+			// {
+			// 	enemy: Enemies.MARLUXIA_DATA,
+			// 	value: "11C59114",
+			// },
 		],
 	},
 	{

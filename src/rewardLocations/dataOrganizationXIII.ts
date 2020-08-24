@@ -1,16 +1,8 @@
 import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
-import { Reward } from "../rewards/Reward";
 import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
-
-const larxeneExclude: Reward[] = [
-	...Object.values(formRewards),
-	Rewards.THUNDER,
-	Rewards.MAGNET,
-	Rewards.TORN_PAGES,
-];
 
 export const dataOrganizationXIIIRewardLocations: RewardLocation[] = [
 	{
@@ -154,8 +146,7 @@ export const dataOrganizationXIIIRewardLocations: RewardLocation[] = [
 		reward: Rewards.LOST_ILLUSION,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
-				world: LocationName.ATLANTICA,
-				exclude: larxeneExclude,
+				world: LocationName.SPACE_PARANOIDS,
 			},
 		},
 	},

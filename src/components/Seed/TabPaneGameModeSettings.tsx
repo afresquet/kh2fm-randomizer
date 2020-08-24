@@ -56,6 +56,8 @@ export const TabPaneGameModeSettings: React.FC = () => {
 
 				<SettingSlider title="Early Lion Dash" {...mapValue("earlyLionDash")} />
 
+				<SettingSlider title="Fast Hyenas II" {...mapValue("fastHyenasTwo")} />
+
 				<SettingSlider title="Skip Dragon Xemnas" {...mapValue("skipDragon")} />
 			</div>
 

@@ -177,7 +177,10 @@ export function assign(
 		}
 	}
 
-	if (configuration.settings.keybladeStats !== RandomizingAction.VANILLA) {
+	if (
+		!pool &&
+		configuration.settings.keybladeStats !== RandomizingAction.VANILLA
+	) {
 		seed.push(...keybladeStats(configuration));
 	}
 
