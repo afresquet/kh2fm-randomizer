@@ -8,6 +8,10 @@ const versions: {
 	hotfixes?: string[];
 }[] = [
 	{
+		version: "0.4.0 (WIP)",
+		changes: ["Added presets", "More changes in development"],
+	},
+	{
 		version: "0.3.0",
 		changes: [
 			"Larxene is now behind Space Paranoids as of Garden of Assemblage mod version 1.33",

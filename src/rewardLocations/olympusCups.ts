@@ -1,7 +1,5 @@
 import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { RewardType } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
 export const olympusCupsRewardLocations: RewardLocation[] = [
@@ -67,15 +65,5 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Hades Cup Trophy (Hades Cup)",
 		value: "11CE0996",
 		reward: Rewards.HADES_CUP_TROPHY,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				excludeType: [
-					RewardType.FORM,
-					RewardType.TORN_PAGES,
-					RewardType.SUMMON,
-					RewardType.SPELL,
-				],
-			},
-		},
 	},
 ];
