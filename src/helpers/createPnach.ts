@@ -163,13 +163,13 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		
 					if (
 						configuration.include.terra === Toggle.OFF &&
-						boss.description === "Lingering Will"
+						boss.description === "Lingering Will Boss Fight"
 					)
 						return false;
 		
 					if (
 						configuration.include.sephiroth === Toggle.OFF &&
-						boss.description === "Sephiroth"
+						boss.description === "Sephiroth Boss Fight"
 					)
 						return false;
 		
