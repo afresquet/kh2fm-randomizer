@@ -10,6 +10,11 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Axel II",
 		value: "0051",
+		rules: {
+			bannedFrom: [
+				"Prison Keeper" // He teleports into the hill
+			]
+		}
 	},
 	LOCK: {
 		type: EnemyType.BOSS,
@@ -161,7 +166,7 @@ export const bosses = {
 		value: "04B8",
 		rules: {
 			bannedFrom: [
-				"Shan-Yu"
+				"Shan-Yu" // His meter messes with the door meter
 			]
 		}
 	},
@@ -176,8 +181,8 @@ export const bosses = {
 		value: "05CE",
 		rules: {
 			bannedFrom: [
-				"Vexen (Absent Silhouette)",
-				"Vexen (Data)"
+				"Vexen (Absent Silhouette)", // crash reported
+				"Vexen (Data)" // crash reported
 			]
 		}
 	},
@@ -187,7 +192,7 @@ export const bosses = {
 		value: "05D0",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)"
+				"Pete (Olympus Coliseum; Part II)" // crash reported
 			]
 		}
 	},
@@ -232,7 +237,7 @@ export const bosses = {
 		value: "06C9",
 		rules: {
 			bannedFrom: [
-				"Shan-Yu"
+				"Shan-Yu" // meter messes with door meter
 			]
 		}
 	},
@@ -359,11 +364,11 @@ export const bosses = {
 		value: "000933",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)",
-				"Shan-Yu",
-				"Dark Thorn",
-				"Armor Xemnas",
-				"Grim Reaper"
+				"Pete (Olympus Coliseum; Part II)", // crash reported
+				"Shan-Yu", // meter messes with door meter
+				"Dark Thorn", // crash reported
+				"Armor Xemnas", // crash reported
+				"Grim Reaper" // crash reported
 			]
 		}
 	},
@@ -373,11 +378,11 @@ export const bosses = {
 		value: "010933",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)",
-				"Shan-Yu",
-				"Dark Thorn",
-				"Armor Xemnas",
-				"Grim Reaper"
+				"Pete (Olympus Coliseum; Part II)", // crash reported
+				"Shan-Yu", // meter messes with door meter
+				"Dark Thorn", // crash reported
+				"Armor Xemnas", // crash reported
+				"Grim Reaper" // crash reported
 			]
 		}
 	},
@@ -387,7 +392,7 @@ export const bosses = {
 		value: "000935",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)"
+				"Pete (Olympus Coliseum; Part II)" // hard to beat in time constraint
 			]
 		}
 	},
@@ -397,7 +402,7 @@ export const bosses = {
 		value: "010935",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)"
+				"Pete (Olympus Coliseum; Part II)" // hard to beat in time constraint
 			]
 		}
 	},
@@ -407,9 +412,9 @@ export const bosses = {
 		value: "000951",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)",
-				"Grim Reaper"
-
+				"Pete (Olympus Coliseum; Part II)", // crash reported
+				"Grim Reaper", // DM goes OOB
+				"Shan-Yu" // Crash reported on death
 			]
 		}
 	},
@@ -419,8 +424,9 @@ export const bosses = {
 		value: "010951",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)",
-				"Grim Reaper"
+				"Pete (Olympus Coliseum; Part II)", // crash reported
+				"Grim Reaper", // DM goes OOB
+				"Shan-Yu" // crash reported on death
 			]
 		}
 	},
@@ -428,11 +434,21 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Larxene (Absent Silhouette)",
 		value: "000962",
+		rules: {
+			bannedFrom: [
+				"Armor Xemnas", // reported as unkillable/tposed
+			]
+		}
 	},
 	LARXENE_DATA: {
 		type: EnemyType.BOSS,
 		name: "Larxene (Data)",
 		value: "010962",
+		rules: {
+			bannedFrom: [
+				"Armor Xemnas" // reported as unkillable/tposed
+			]
+		}
 	},
 	LINGERING_WILL: {
 		type: EnemyType.BOSS,
@@ -440,10 +456,10 @@ export const bosses = {
 		value: "096F",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)",
-				"Volcanic Lord",
-				"Blizzard Lord",
-				"Armor Xemnas"
+				"Pete (Olympus Coliseum; Part II)", // crashes
+				"Volcanic Lord", // likely to crash
+				"Blizzard Lord", // likely to crash
+				"Armor Xemnas" // crash reported
 			]
 		}
 	},
@@ -456,6 +472,11 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Axel (Data)",
 		value: "09C4",
+		rules: {
+			bannedFrom: [
+				"Prison Keeper" // can teleport into hill
+			]
+		}
 	},
 	XIGBAR: {
 		type: EnemyType.BOSS,
@@ -463,9 +484,9 @@ export const bosses = {
 		value: "0622",
 		rules: {
 			bannedFrom: [
-				"Roxas",
-				"Scar",
-				"Hades (Escape)"
+				"Roxas", // room transformations get rid of ground
+				"Scar", // lion sora can't get out of initial attack
+				"Hades (Escape)" // room transformation puts you in center of room unable to leave
 			]
 		}
 	},
@@ -475,9 +496,9 @@ export const bosses = {
 		value: "09C5",
 		rules: {
 			bannedFrom: [
-				"Roxas",
-				"Scar",
-				"Hades (Escape)"
+				"Roxas", // room transformations get rid of ground
+				"Scar", // lion sora can't get out of initial attack
+				"Hades (Escape)" // room transformation puts you in center of room unable to leave
 			]
 		}
 	},
@@ -487,7 +508,7 @@ export const bosses = {
 		value: "09C6",
 		rules: {
 			bannedFrom: [
-				"Shan-Yu"
+				"Shan-Yu" // meter messes with door
 			]
 		}
 	},
