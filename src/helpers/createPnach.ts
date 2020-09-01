@@ -159,16 +159,28 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 
 			if (replacementMapping) {
-				// apply volcano/blizzard lord replacements first, as they are the only room currently randomized with 2+ bosses
+				// apply volcano/blizzard lord replacements first, as they are one of two rooms currently randomized with 2+ bosses
 				var agrabahbosses = replacementMapping.filter((rep: any) => rep.old.world === "07" &&
 																	rep.old.room === "03" &&
 																	rep.old.event === "3B")
 
 				patches.push(patchEnemies(agrabahbosses, "07", "03", "3B"))
+
+				// apply leon/yuffie replacements second. 
+				var leonyuffie = replacementMapping.filter((rep: any) => rep.old.world === "06" &&
+																	rep.old.room === "BD" &&
+																	rep.old.event === "0A")
+
+				patches.push(patchEnemies(leonyuffie, "06", "BD", "0A"))
 				
+				//filter out the rooms with two replacements and replace the rest
 				replacementMapping = replacementMapping.filter((rep: any) => !(rep.old.world === "07" &&
 																			rep.old.room === "03" &&
 																			rep.old.event === "3B"))
+
+				replacementMapping = replacementMapping.filter((rep: any) => !(rep.old.world === "06" &&
+																			rep.old.room === "BD" &&
+																			rep.old.event === "0A"))
 
 				for (var index = 0; index < replacementMapping.length; index++) {
 					const replacement = replacementMapping[index]

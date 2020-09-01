@@ -376,4 +376,72 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Pain/Panic Round 10",
+		world: "06",
+		room: "BD",
+		event: "0A",
+		enemies: [
+			{
+				enemy: Enemies.LEON,
+				value: "11C4DAC4"
+			},
+			{
+				enemy: Enemies.YUFFIE,
+				value: "11C4DA84"
+			}
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Titan Round 10",
+		world: "06",
+		room: "BF",
+		event: "0A",
+		enemies: [
+			{
+				enemy: Enemies.HERCULES_CUPS,
+				value: "11C4FCD4"
+			}
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Paradox Round 10",
+		world: "06",
+		room: "C4",
+		event: "0A",
+		enemies: [
+			{
+				enemy: Enemies.TIFA,
+				value: "11C5265C"
+			},
+			// {
+			// 	enemy: Enemies.YUFFIE,
+			// 	value: "11C4DA84"?????
+			// }
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Paradox Round 25",
+		world: "06",
+		room: "C4",
+		event: "19",
+		enemies: [
+			// {
+			// 	enemy: Enemies.TIFA,
+			// 	value: "11C5265C"
+			// },
+			{
+				enemy: Enemies.CLOUD,
+				value: "11C53FF8"
+			}
+		]
+	}
 ];
