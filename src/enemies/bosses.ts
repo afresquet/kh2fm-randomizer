@@ -316,22 +316,22 @@ export const bosses = {
 	LEON: {
 		type: EnemyType.BOSS,
 		name: "Leon",
-		value: "08F8",
+		value: "0108F8",
 	},
 	CLOUD: {
 		type: EnemyType.BOSS,
 		name: "Cloud",
-		value: "08F9",
+		value: "0108F9",
 	},
 	TIFA: {
 		type: EnemyType.BOSS,
 		name: "Tifa",
-		value: "08FA",
+		value: "0108FA",
 	},
 	YUFFIE: {
 		type: EnemyType.BOSS,
 		name: "Yuffie",
-		value: "08FB",
+		value: "0108FB",
 	},
 	HADES_CUPS: {
 		type: EnemyType.BOSS,
