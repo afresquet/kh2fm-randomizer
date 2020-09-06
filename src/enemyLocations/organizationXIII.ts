@@ -158,10 +158,21 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 		room: "26",
 		event: "96",
 		enemies: [
-			// {
-			// 	enemy: Enemies.MARLUXIA_DATA,
-			// 	value: "11C59114",
-			// },
+			{
+				enemy: Enemies.MARLUXIA_DATA,
+				value: "11C59114",
+				patches: {
+					all: [
+						{
+							name: "Don't turn off player control",
+							codes: [
+								"204fa564 00000089",
+								"204fa568 00600000"
+							]
+						}
+					] 
+				},
+			},
 		],
 	},
 	{
