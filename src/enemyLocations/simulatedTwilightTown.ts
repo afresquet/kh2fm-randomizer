@@ -52,20 +52,20 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	{
-		type: EnemyLocationType.MOB_FIGHT,
-		location: LocationName.SIMULATED_TWILIGHT_TOWN,
-		description: "Dusk (3rd Day; Sandlot)",
-		world: "02",
-		room: "04",
-		event: "4F",
-		enemies: [
-			{
-				enemy: Enemies.DUSK,
-				value: "11C36FF4",
-			},
-		],
-	},
+	// {
+	// 	type: EnemyLocationType.MOB_FIGHT,
+	// 	location: LocationName.SIMULATED_TWILIGHT_TOWN,
+	// 	description: "Dusk (3rd Day; Sandlot)",
+	// 	world: "02",
+	// 	room: "04",
+	// 	event: "4F",
+	// 	enemies: [
+	// 		{
+	// 			enemy: Enemies.DUSK,
+	// 			value: "11C36FF4",
+	// 		},
+	// 	],
+	// },
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
