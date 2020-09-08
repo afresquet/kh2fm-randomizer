@@ -33,7 +33,10 @@ export const TabPaneSettings: React.FC = () => {
 					disabled
 				/>
 
-				<SettingSlider title="Critical Mode" {...mapValue("criticalMode")} />
+				<SettingSlider 
+					title="Critical Mode"
+					help="Randomizes abilities normally received at the start of Critical Mode. Disable this when you're not playing on Critical Mode."
+					{...mapValue("criticalMode")} />
 
 				<SettingSlider
 					title="Leveling"
