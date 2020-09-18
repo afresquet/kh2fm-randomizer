@@ -230,6 +230,11 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Pete (Olympus Coliseum; Part II)",
 		value: "06BC",
+		rules: {
+			bannedFrom: [
+				"Armor Xemnas" // Gets stuck in infinite loop
+			]
+		}
 	},
 	SAIX: {
 		type: EnemyType.BOSS,
