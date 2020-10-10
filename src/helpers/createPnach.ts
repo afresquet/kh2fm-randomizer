@@ -34,6 +34,7 @@ import { createLine } from "./createLine";
 import { patchEnemies } from "../seed/patchEnemies";
 import { shuffle } from "./shuffle";
 import { placeBosses } from "../seed/placeBosses";
+import { spawnlimiter } from "src/patches/spawnlimiter";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
 	const patches: string[] = [`// ${configuration.name}`];
@@ -113,23 +114,42 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		}
 
 		if (configuration.experimental.enemies === Toggle.ON) {
+			// spawn limiter needs to be low so forced fights will spawn all the enemies
+			patches.push(spawnlimiter);
+
 			for (const location of enemies) {
+
+				// Sometimes the conditionals need to reference multiple events (example: escort minnie I)
+				var event1;
+				var event2;
+				var event3;
+				if (location.eventGroup) {
+					event1 = location.eventGroup[0]
+					event2 = location.eventGroup[1]
+					event3 = location.eventGroup[2]
+				}
+				else {
+					event1 = location.event
+					event2 = location.event
+					event3 = location.event
+				}
+
 				const one = `patch=1,EE,E0${(location.enemies.length + 3)
 					.toString(16)
 					.padStart(2, "0")
-					.toUpperCase()}${location.room}${location.world},extended,0032BAE0\n`;
+					.toUpperCase()}${location.room}${location.world},extended,0032BAE0 // ${location.description}\n`;
 				const two = `patch=1,EE,E0${(location.enemies.length + 2)
 					.toString(16)
 					.padStart(2, "0")
-					.toUpperCase()}00${location.event},extended,0032BAE4\n`;
+					.toUpperCase()}00${event1},extended,0032BAE4\n`;
 				const three = `patch=1,EE,E0${(location.enemies.length + 1)
 					.toString(16)
 					.padStart(2, "0")
-					.toUpperCase()}00${location.event},extended,0032BAE6\n`;
+					.toUpperCase()}00${event2},extended,0032BAE6\n`;
 				const four = `patch=1,EE,E0${location.enemies.length
 					.toString(16)
 					.padStart(2, "0")
-					.toUpperCase()}00${location.event},extended,0032BAE8\n`;
+					.toUpperCase()}00${event3},extended,0032BAE8\n`;
 
 				const content = location.enemies.reduce(
 					(prev, curr) =>

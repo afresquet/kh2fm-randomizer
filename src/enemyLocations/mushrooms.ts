@@ -1,4 +1,4 @@
-import { Enemies } from "../enemies";
+// import { Enemies } from "../enemies";
 import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
@@ -9,7 +9,7 @@ export const mushroomsEnemyLocations: EnemyLocation[] = [
 		description: "Mushrooms",
 		world: "04",
 		room: "02",
-		event: "00",
+		eventGroup: ["02","00","00"],
 		enemies: [
 			// {
 			// 	enemy: Enemies.MUSHROOM_1,
@@ -23,10 +23,10 @@ export const mushroomsEnemyLocations: EnemyLocation[] = [
 			// 	enemy: Enemies.MUSHROOM_3,
 			// 	value: "11C55080",
 			// },
-			{
-				enemy: Enemies.MUSHROOM_4,
-				value: "11C4C358",
-			},
+			// {
+			// 	enemy: Enemies.MUSHROOM_4,
+			// 	value: "11C4C358",
+			// },
 			// {
 			// 	enemy: Enemies.MUSHROOM_5,
 			// 	value: "11C555CC",
@@ -35,14 +35,14 @@ export const mushroomsEnemyLocations: EnemyLocation[] = [
 			// 	enemy: Enemies.MUSHROOM_6,
 			// 	value: "11C53DD8",
 			// },
-			{
-				enemy: Enemies.MUSHROOM_7,
-				value: "11C58F8C",
-			},
-			{
-				enemy: Enemies.MUSHROOM_8,
-				value: "11C506B8",
-			},
+			// {
+			// 	enemy: Enemies.MUSHROOM_7,
+			// 	value: "11C58F8C",
+			// },
+			// {
+			// 	enemy: Enemies.MUSHROOM_8,
+			// 	value: "11C506B8",
+			// },
 			// {
 			// 	enemy: Enemies.MUSHROOM_9,
 			// 	value: "11C4CEF0",
@@ -51,10 +51,10 @@ export const mushroomsEnemyLocations: EnemyLocation[] = [
 			// 	enemy: Enemies.MUSHROOM_10,
 			// 	value: "11C5C13C",
 			// },
-			{
-				enemy: Enemies.MUSHROOM_11,
-				value: "11C57220",
-			},
+			// {
+			// 	enemy: Enemies.MUSHROOM_11,
+			// 	value: "11C57220",
+			// },
 			// {
 			// 	enemy: Enemies.MUSHROOM_12,
 			// 	value: "11C4454C",

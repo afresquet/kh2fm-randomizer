@@ -9,7 +9,7 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		description: "Escort Queen Minnie Part I",
 		world: "0C",
 		room: "02",
-		event: "02",
+		eventGroup: ["02","02","01"],
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,

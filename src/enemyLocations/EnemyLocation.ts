@@ -14,7 +14,8 @@ export interface EnemyLocation {
 	description: string;
 	world: string;
 	room: string;
-	event: string;
+	event?: string;
+	eventGroup?: string[];
 	enemies: {
 		enemy: Enemy;
 		value: string;

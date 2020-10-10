@@ -74,26 +74,26 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		room: "1A",
 		event: "45",
 		enemies: [
-			{
-				enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
-				value: "11C5C118",
-			},
-			{
-				enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
-				value: "11C5C158",
-			},
-			{
-				enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
-				value: "11C5C198",
-			},
-			{
-				enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
-				value: "11C5C1D8",
-			},
-			{
-				enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
-				value: "11C5C218",
-			},
+			// {
+			// 	enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
+			// 	value: "11C5C118",
+			// },
+			// {
+			// 	enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
+			// 	value: "11C5C158",
+			// },
+			// {
+			// 	enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
+			// 	value: "11C5C198",
+			// },
+			// {
+			// 	enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
+			// 	value: "11C5C1D8",
+			// },
+			// {
+			// 	enemy: Enemies.NOBODY_FROM_FINAL_BATTLE_V1,
+			// 	value: "11C5C218",
+			// },
 		],
 	},
 	{
