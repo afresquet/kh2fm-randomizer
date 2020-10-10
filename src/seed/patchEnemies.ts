@@ -34,6 +34,16 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
                     }
                 }
             }
+            const newPatches = newenemy.enemy.patches
+            if (newPatches) {
+                if (newPatches.all) {
+                    for (const patch of newPatches.all) {
+                        for (const line of patch.codes) {
+                            codes.push(createLine(line.split(" ")[0], line.split(" ")[1], false))
+                        }
+                    }
+                }
+            }
         }
     }
     return comment.substr(0,comment.length-2) + "\n" + createJoker(codes, world, room, event).join("\n") + "\n"

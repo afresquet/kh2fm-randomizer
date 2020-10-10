@@ -369,12 +369,16 @@ export const bosses = {
 		value: "000933",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)", // crash reported
-				"Shan-Yu", // meter messes with door meter
-				"Dark Thorn", // crash reported
-				"Armor Xemnas", // crash reported
-				"Grim Reaper" // crash reported
-			]
+				"Shan-Yu" // meter messes with door meter
+			],
+		},
+		patches: {
+			all: [
+				{
+					name: "Don't Load Anti-Sora",
+					codes: ["11CBC360 00000000"]
+				}
+			] 
 		}
 	},
 	VEXEN_DATA: {
@@ -383,12 +387,16 @@ export const bosses = {
 		value: "010933",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)", // crash reported
 				"Shan-Yu", // meter messes with door meter
-				"Dark Thorn", // crash reported
-				"Armor Xemnas", // crash reported
-				"Grim Reaper" // crash reported
 			]
+		},
+		patches: {
+			all: [
+				{
+					name: "Don't Load Anti-Sora",
+					codes: ["11CBC360 00000000"]
+				}
+			] 
 		}
 	},
 	LEXAEUS_AS: {
