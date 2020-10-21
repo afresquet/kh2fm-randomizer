@@ -1,6 +1,8 @@
 import { shuffle } from "src/helpers/shuffle";
 import { bosses } from "../enemyLocations";
 
+const maxSize = 5154638
+
 export const placeBosses = (seed: string) => {
 	const attemptPlacing = (availableLocations: any[], availableBosses: any[]) => {
 		// given x available bosses and a mapping of available locations to place each boss
@@ -51,6 +53,7 @@ export const placeBosses = (seed: string) => {
 						enemy.world = location.world
 						enemy.room = location.room
 						enemy.event = location.event
+						enemy.size = location.size
 						return enemy
 					})
 				})
@@ -74,10 +77,41 @@ export const placeBosses = (seed: string) => {
 							return true
 						if (!newboss.enemy.rules.bannedFrom)
 							return true
-						return !newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name)
+						if (newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name))
+							return false
+						// Compare size to max size
+						if (oldboss.size)
+							if (newboss.enemy.size)
+								if (oldboss.size+newboss.enemy.size > maxSize)
+									return false
+						return true
 					}), seed)]
 				}
 			})
+			// Debug Only, showing bosses
+			for (const loc of availableLocations) {
+				console.log(loc.boss.enemy.name);
+				console.log("\t" + loc.available.length)
+			}
+			console.log(availableLocations)
+
+			// creating an object to print out the number of avilable bosses at each location
+			// since the object used in the randomizer is the opposite
+			var locs = {}
+			for (const oldboss of availableLocations) {
+				for (const newboss of oldboss.available) {
+					if (newboss.enemy.name in locs) {
+						locs[newboss.enemy.name] = locs[newboss.enemy.name] + 1
+					}
+					else {
+						locs[newboss.enemy.name] = 1
+					}
+				}
+			}
+
+			console.log(locs)
+
+			return []
 			const replacementMapping = attemptPlacing(availableLocations, shuffledBosses)
 			if (replacementMapping !== false)
 				return replacementMapping.concat(ignored)

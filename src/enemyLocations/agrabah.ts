@@ -405,6 +405,7 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "Twin Lords Boss Fight",
+		size: 2757748,
 		world: "07",
 		room: "03",
 		event: "3B",

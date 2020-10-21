@@ -12,12 +12,14 @@ export interface EnemyLocation {
 	type: EnemyLocationType;
 	location: LocationName;
 	description: string;
+	size?: number;
 	world: string;
 	room: string;
 	event?: string;
 	eventGroup?: string[];
 	enemies: {
 		enemy: Enemy;
+		size?: number;
 		value: string;
 		world?: string;
 		room?: string;
