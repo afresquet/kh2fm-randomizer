@@ -77,6 +77,7 @@ export const TabPaneExperimental: React.FC = () => {
 				<Typography>Known issues with Boss Randomizer:</Typography>
 
 				<ul>
+					<li>Sometimes the seed can take 4-5 seconds to be made after hitting the download button. In this case it's likely a lot of the bosses won't be randomized, so it's suggested to make a new seed in this case</li>
 					<li>Bosses wait a different amount of time before their first attack, so in some cases you will get attacked before gaining control</li>
 					<li>When Scar hits non-lion Sora with his lunge attack it will temporarily put Sora in a tpose.</li>
 					<li>The game will softlock if Mickey is summoned against Marluxia and the doom counter hits 0.</li>
