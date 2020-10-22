@@ -1,12 +1,15 @@
 import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
+import { formRewards } from "../rewards/form";
 import { growthAbilityRewards } from "../rewards/growthAbility";
-import { Reward, RewardType } from "../rewards/Reward";
+import { Reward } from "../rewards/Reward";
 import { GameMode } from "../settings/enums";
 import { RewardLocation, RewardLocationType } from "./RewardLocation";
 
-const exclude: Reward[] = Object.values(growthAbilityRewards);
-const excludeType: RewardType[] = [RewardType.FORM];
+const exclude: Reward[] = [
+	...Object.values(formRewards),
+	...Object.values(growthAbilityRewards),
+];
 
 export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 	{
@@ -16,7 +19,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE04E6",
 		reward: Rewards.AP_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -26,7 +29,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE04F2",
 		reward: Rewards.POWER_CRYSTAL,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -36,7 +39,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE04FE",
 		reward: Rewards.FROST_CRYSTAL,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -46,7 +49,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE050A",
 		reward: Rewards.MANIFEST_ILLUSION,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -56,7 +59,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE0516",
 		reward: Rewards.AP_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -66,7 +69,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE0522",
 		reward: Rewards.REMEMBRANCE_GEM,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -76,7 +79,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE052E",
 		reward: Rewards.SERENITY_GEM,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -86,7 +89,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE053A",
 		reward: Rewards.AP_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -96,7 +99,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE0546",
 		reward: Rewards.SERENITY_CRYSTAL,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -106,7 +109,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE0552",
 		reward: Rewards.MANIFEST_ILLUSION,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -116,7 +119,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE055E",
 		reward: Rewards.SERENITY_GEM,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -126,7 +129,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE056A",
 		reward: Rewards.DARK_REMEMBRANCE_MAP,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -136,7 +139,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE0576",
 		reward: Rewards.SERENITY_CRYSTAL,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -146,7 +149,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE0582",
 		reward: Rewards.REMEMBRANCE_CRYSTAL,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -156,7 +159,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE058E",
 		reward: Rewards.AP_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -166,7 +169,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE059A",
 		reward: Rewards.MANIFEST_ILLUSION,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -176,7 +179,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE05A6",
 		reward: Rewards.AP_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -186,7 +189,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE05B2",
 		reward: Rewards.AP_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -196,7 +199,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE05BE",
 		reward: Rewards.DEPTHS_OF_REMEMBRANCE_MAP,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -206,7 +209,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE05CA",
 		reward: Rewards.POWER_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{
@@ -216,7 +219,7 @@ export const cavernOfRememberanceRewardLocations: RewardLocation[] = [
 		value: "11CE05D6",
 		reward: Rewards.MAGIC_BOOST,
 		gameMode: {
-			[GameMode.GOA_MOD]: { exclude, excludeType },
+			[GameMode.GOA_MOD]: { exclude },
 		},
 	},
 	{

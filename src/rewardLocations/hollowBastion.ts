@@ -20,17 +20,15 @@ const exclude: Reward[] = [
 const dependencies: LocationDependency[] = [
 	{
 		candidate: Rewards.PROOF_OF_CONNECTION,
+		name: "Proof of Connection",
+		address: "11CE0B16",
 		conflict: [Rewards.PROOF_OF_PEACE],
-		locations: [
-			{
-				name: "Proof of Connection",
-				address: "11CE0B16",
-			},
-			{
-				name: "Manifest Illusion (Lingering Will)",
-				address: "11CE0B22",
-			},
-		],
+	},
+	{
+		candidate: Rewards.PROOF_OF_CONNECTION,
+		name: "Manifest Illusion (Lingering Will)",
+		address: "11CE0B22",
+		conflict: [Rewards.PROOF_OF_PEACE],
 	},
 ];
 

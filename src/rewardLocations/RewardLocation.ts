@@ -19,12 +19,9 @@ export enum RewardLocationType {
 
 export interface LocationDependency {
 	candidate: Reward;
+	name: string;
+	address: string;
 	conflict: Reward[];
-	maxAmount?: number;
-	locations: {
-		name: string;
-		address: string;
-	}[];
 }
 
 export interface RewardLocation {
