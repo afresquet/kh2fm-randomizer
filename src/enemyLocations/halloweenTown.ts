@@ -131,7 +131,7 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.HALLOWEEN_TOWN,
 		description: "Prison Keeper Boss Fight",
-		size: 1938304, // unknown just a guess
+		maxSize: 4443212, // Larxene
 		world: "0E",
 		room: "03",
 		event: "34",
@@ -210,7 +210,7 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.HALLOWEEN_TOWN,
 		description: "Experiment Boss Fight",
-		size: 1938304,
+		maxSize: 4443212, // Larxene
 		world: "0E",
 		room: "07",
 		event: "40",

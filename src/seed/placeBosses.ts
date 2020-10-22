@@ -1,8 +1,6 @@
 import { shuffle } from "src/helpers/shuffle";
 import { bosses } from "../enemyLocations";
 
-const maxSize = 6154638
-
 export const placeBosses = (seed: string) => {
 	const attemptPlacing = (availableLocations: any[], availableBosses: any[]) => {
 		// given x available bosses and a mapping of available locations to place each boss
@@ -53,7 +51,7 @@ export const placeBosses = (seed: string) => {
 						enemy.world = location.world
 						enemy.room = location.room
 						enemy.event = location.event
-						enemy.size = location.size
+						enemy.maxSize = location.maxSize
 						return enemy
 					})
 				})
@@ -73,16 +71,13 @@ export const placeBosses = (seed: string) => {
 				return {
 					boss: newboss,
 					available: [...shuffle(unignoredBosses.filter(oldboss => {
-						if (!newboss.enemy.rules)
-							return true
-						if (!newboss.enemy.rules.bannedFrom)
-							return true
-						if (newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name))
-							return false
-						// Compare size to max size
-						if (oldboss.size)
+						if (newboss.enemy.rules)
+							if (newboss.enemy.rules.bannedFrom)
+								if (newboss.enemy.rules.bannedFrom.includes(oldboss.enemy.name))
+									return false
+						if (oldboss.maxSize)
 							if (newboss.enemy.size)
-								if (oldboss.size+newboss.enemy.size > maxSize)
+								if (newboss.enemy.size > oldboss.maxSize) 
 									return false
 						return true
 					}), seed)]

@@ -7,7 +7,7 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Vexen AS Fight",
-		size: 1953498,
+		maxSize: 4443212, // Larxene
 		world: "04",
 		room: "20",
 		event: "73",
@@ -22,7 +22,7 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Lexaeus AS Fight",
-		size: 1366446,
+		maxSize: 4443212, // Larxene
 		world: "04",
 		room: "21",
 		event: "8E",
@@ -51,7 +51,7 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Marluxia AS Fight",
-		size: 932358,
+		maxSize: 4443212, // Larxene
 		world: "04",
 		room: "26",
 		event: "91",
@@ -77,7 +77,7 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.CAVERN_OF_REMEMBRANCE,
 		description: "Larxene AS Fight",
-		size: 1303514,
+		maxSize: 4443212, // Larxene
 		world: "04",
 		room: "21",
 		event: "8F",

@@ -7,7 +7,7 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Roxas Boss Fight",
-		size: 1833586,
+		maxSize: 4443212, // Larxene
 		world: "12",
 		room: "15",
 		event: "41",
@@ -22,7 +22,7 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Xigbar Boss Fight",
-		size: 4280342,
+		maxSize: 2351052, // Hades II
 		world: "12",
 		room: "0A",
 		event: "39",
@@ -44,7 +44,7 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Saix Boss Fight",
-		size: 3411870,
+		maxSize: 3557686, // Saix
 		world: "12",
 		room: "0F",
 		event: "38",
@@ -185,7 +185,7 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Armor Xemnas I Boss Fight",
-		size: 2602772,
+		maxSize: 1720178, // Volcano Lord
 		world: "12",
 		room: "18",
 		event: "47",
@@ -200,7 +200,7 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TWTNW,
 		description: "Armor Xemnas II Boss Fight",
-		size: 1846780,
+		maxSize: 4443212, // Larxene
 		world: "12",
 		room: "17",
 		event: "49",

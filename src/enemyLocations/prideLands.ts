@@ -55,7 +55,7 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PRIDE_LANDS,
 		description: "Scar Boss Fight",
-		size: 935252,
+		maxSize: 4443212, // Larxene
 		world: "0A",
 		room: "0E",
 		event: "37",

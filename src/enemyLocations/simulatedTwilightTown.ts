@@ -327,7 +327,7 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SIMULATED_TWILIGHT_TOWN,
 		description: "Axel II Boss Fight",
-		size: 1834704,
+		maxSize: 4443212, // Larxene
 		world: "02",
 		room: "14",
 		event: "89",

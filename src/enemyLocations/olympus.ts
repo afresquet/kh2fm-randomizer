@@ -7,7 +7,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Chamber Boss Fight",
-		size: 3015476,
+		maxSize: 4443212, // Larxene
 		world: "06",
 		room: "06",
 		event: "70",
@@ -22,7 +22,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Escape",
-		size: 2925282,
+		maxSize: 2280296, // Hercules
 		world: "06",
 		room: "05",
 		event: "6F",
@@ -155,7 +155,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Cerberus Boss Fight",
-		size: 2509200,
+		maxSize: 4443212, // Larxene
 		world: "06",
 		room: "07",
 		event: "72",
@@ -185,7 +185,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Pete II Boss Fight",
-		size: 1575418,
+		maxSize: 1642502, // Cloud
 		world: "06",
 		room: "08",
 		event: "74",
@@ -370,7 +370,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Boss Phase II",
-		size: 1893126,
+		maxSize: 2631800, // Shan-Yu
 		world: "06",
 		room: "0D",
 		event: "CA",
@@ -385,7 +385,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Pain/Panic Round 10",
-		size: 2671752,
+		maxSize: 2314684, // Prison Keeper
 		world: "06",
 		room: "BD",
 		event: "0A",
@@ -404,7 +404,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Titan Round 10",
-		size: 2671688,
+		maxSize: 4443212, // Larxene
 		world: "06",
 		room: "BF",
 		event: "0A",
@@ -419,7 +419,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Paradox Round 10",
-		size: 2671752,
+		maxSize: 2314684, // Prison Keeper
 		world: "06",
 		room: "C4",
 		event: "0A",
@@ -438,7 +438,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Paradox Round 25",
-		size: 2671752,
+		maxSize: 2314684, // Prison Keeper
 		world: "06",
 		room: "C4",
 		event: "19",

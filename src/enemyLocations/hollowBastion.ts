@@ -955,7 +955,7 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.HOLLOW_BASTION,
 		description: "Sephiroth Boss Fight",
-		size: 2769670,
+		maxSize: 4443212, // Larxene
 		world: "04",
 		room: "01",
 		event: "4B",

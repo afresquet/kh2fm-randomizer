@@ -193,7 +193,7 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Dark Thorn Boss Fight",
-		size: 2413534,
+		maxSize: 2314684, // Prison Keeper
 		world: "05",
 		room: "05",
 		event: "4F",
@@ -280,7 +280,7 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Xaldin Boss Fight",
-		size: 2616504,
+		maxSize: 2854684, // Terra
 		world: "05",
 		room: "0F",
 		event: "52",

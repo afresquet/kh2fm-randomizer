@@ -43,7 +43,7 @@ export const bosses = {
 		value: "0133",
 	},
 	HADES_I: {
-		size: 929856,
+		size: 2351052,
 		type: EnemyType.BOSS,
 		name: "Hades (1st Visit - Hades' Chamber)",
 		value: "015D",
@@ -52,7 +52,7 @@ export const bosses = {
 		}
 	},
 	HADES_ESCAPE: {
-		size: 1422564,
+		size: 2351052,
 		type: EnemyType.BOSS,
 		name: "Hades (Escape)",
 		value: "0812",
@@ -220,12 +220,7 @@ export const bosses = {
 		size: 3549978,
 		type: EnemyType.BOSS,
 		name: "The Experiment",
-		value: "05D0",
-		rules: {
-			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)" // crash reported
-			]
-		}
+		value: "05D0"
 	},
 	GRIM_REAPER: {
 		size: 1499488,
@@ -424,7 +419,7 @@ export const bosses = {
 		value: "010923",
 	},
 	VEXEN_AS: {
-		size: 3042840,
+		size: 2708244,
 		type: EnemyType.BOSS,
 		name: "Vexen (Absent Silhouette)",
 		value: "000933",
@@ -443,7 +438,7 @@ export const bosses = {
 		}
 	},
 	VEXEN_DATA: {
-		size: 3042840,
+		size: 2708244,
 		type: EnemyType.BOSS,
 		name: "Vexen (Data)",
 		value: "010933",
@@ -490,9 +485,7 @@ export const bosses = {
 		value: "000951",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)", // crash reported
 				"Grim Reaper", // DM goes OOB
-				"Shan-Yu" // Crash reported on death
 			]
 		}
 	},
@@ -503,7 +496,6 @@ export const bosses = {
 		value: "010951",
 		rules: {
 			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)", // crash reported
 				"Grim Reaper", // DM goes OOB
 				"Shan-Yu" // crash reported on death
 			]
@@ -517,6 +509,7 @@ export const bosses = {
 		rules: {
 			bannedFrom: [
 				"Armor Xemnas", // reported as unkillable/tposed
+				"Prison Keeper" // teleports into the hill
 			]
 		}
 	},
@@ -527,7 +520,8 @@ export const bosses = {
 		value: "010962",
 		rules: {
 			bannedFrom: [
-				"Armor Xemnas" // reported as unkillable/tposed
+				"Armor Xemnas", // reported as unkillable/tposed
+				"Prison Keeper" // Teleports into the hill
 			]
 		}
 	},
@@ -535,15 +529,7 @@ export const bosses = {
 		size: 2854684,
 		type: EnemyType.BOSS,
 		name: "Lingering Will (Terra)",
-		value: "096F",
-		rules: {
-			bannedFrom: [
-				"Pete (Olympus Coliseum; Part II)", // crashes
-				"Volcanic Lord", // likely to crash
-				"Blizzard Lord", // likely to crash
-				"Armor Xemnas" // crash reported
-			]
-		}
+		value: "096F"
 	},
 	ZEXION_AS: {
 		size: 2415886,

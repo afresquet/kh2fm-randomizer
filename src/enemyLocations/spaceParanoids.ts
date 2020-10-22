@@ -7,7 +7,7 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SPACE_PARANOIDS,
 		description: "Hostile Program Boss Fight",
-		size: 2292720,
+		maxSize: 4443212, // Larxene
 		world: "11",
 		room: "04",
 		event: "37",
@@ -196,7 +196,7 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.SPACE_PARANOIDS,
 		description: "Sark Boss Fight",
-		size: 1908520,
+		maxSize: 2742180, // Data Axel
 		world: "11",
 		room: "09",
 		event: "3A",

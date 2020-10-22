@@ -323,7 +323,7 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.PORT_ROYAL,
 		description: "Grim Reaper I Boss Fight",
-		size: 2978976,
+		maxSize: 2314684, // Prison Keeper
 		world: "10",
 		room: "12",
 		event: "55",

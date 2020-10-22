@@ -558,7 +558,7 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Shan-Yu Boss Fight",
-		size: 2661264,
+		maxSize: 2631800, // Shan-Yu
 		world: "08",
 		room: "09",
 		event: "4B",
@@ -740,7 +740,7 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Storm Rider Boss Fight",
-		size: 1857352,
+		maxSize: 4443212, // Larxene
 		world: "08",
 		room: "08",
 		event: "4F",
