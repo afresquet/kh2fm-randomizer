@@ -1,6 +1,11 @@
 export const spawnlimiter = `
+// The CND for the first 3 fixes a bug where Ambush won't be beatable
+patch=1,EE,E0040208,extended,1032BAE0// If NOT in LoD at Checkpiont
+patch=1,EE,E0030050,extended,1032BAE8// If NOT in Mission 2: Ambush
+patch=1,EE,11CB0F5C,extended,0B000104 // Shadow NM have spawn limiter of 04
+patch=1,EE,11C9445C,extended,0B010104 // Assault Rider have spawn limiter of 04
+patch=1,EE,11C944BC,extended,0B010104 // Nightwalker have spawn limiter of 04
 patch=1,EE,11C9457C,extended,0B010104 // Luna Bandit have spawn limiter of 04
-patch=1,EE,11C98B9C,extended,0B000104 // Shadow have spawn limiter of 04
 patch=1,EE,11C9547C,extended,0B010104 // Icy Cube have spawn limiter of 04
 patch=1,EE,11C9541C,extended,0B010104 // Fiery Globe have spawn limiter of 04
 patch=1,EE,11C9415C,extended,0B010104 // Fat Bandit have spawn limiter of 04
@@ -45,8 +50,6 @@ patch=1,EE,11C98CBC,extended,0B010104 // Armored Knight have spawn limiter of 04
 patch=1,EE,11C952FC,extended,0B010104 // Crimson Jazz have spawn limiter of 04
 patch=1,EE,11C9637C,extended,0B020104 // Morning Star have spawn limiter of 04
 patch=1,EE,11C98D1C,extended,0B010104 // Surveillance Robot have spawn limiter of 04
-patch=1,EE,11C944BC,extended,0B010104 // Nightwalker have spawn limiter of 04
-patch=1,EE,11C9445C,extended,0B010104 // Assault Rider have spawn limiter of 04
 patch=1,EE,11CABCDC,extended,0B010104 // Bolt Tower have spawn limiter of 04
 patch=1,EE,11C9475C,extended,0B010104 // Lance Soldier have spawn limiter of 04
 patch=1,EE,11C98BFC,extended,0B020104 // Large Body have spawn limiter of 04
