@@ -22,6 +22,12 @@ export const experimentalSettings: Setting[] = [
 			"After dying, hold L2+R2+Select while pressing on Continue to load back into the fight",
 		title: "Retry on Superbosses",
 	},
+	{
+		key: "advancedLogic",
+		help:
+			"Less restricted item placement logic (should always be possible to get all items)",
+		title: "Advanced Seed Generation Logic",
+	},
 ];
 
 export const TabPaneExperimental: React.FC = () => {

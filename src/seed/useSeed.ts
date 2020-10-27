@@ -6,6 +6,7 @@ import { goofyRewardLocations } from "../rewardLocations/goofy";
 import { Configuration } from "../settings/Configuration";
 import { Toggle } from "../settings/enums";
 import { assign } from "./assign";
+import { advancedAssign } from "./advancedAssign";
 import { bonusModifiers } from "./bonusModifiers";
 import { populate } from "./populate";
 import { randomizePool } from "./randomizePool";
@@ -41,13 +42,28 @@ export const useSeed = (configuration: Configuration): SeedState => {
 			try {
 				const [rewards, rewardLocations] = populate(configuration);
 
-				const seed = [
-					...assign(
-						[...shuffle(rewards, configuration.name)],
-						rewardLocations,
-						configuration
-					),
-				];
+				var seed: Seed;
+
+				if (configuration.experimental.superbossRetry === Toggle.ON) {
+					seed = [
+						...advancedAssign(
+							[...shuffle(rewards, configuration.name)],
+							rewardLocations,
+							configuration
+						),
+					];
+				}
+				else
+				{
+					seed = [
+						...assign(
+							[...shuffle(rewards, configuration.name)],
+							rewardLocations,
+							configuration
+						),
+					];
+
+				}
 
 				if (configuration.settings.bonusModifiers === Toggle.ON) {
 					seed.push(...bonusModifiers(configuration));
