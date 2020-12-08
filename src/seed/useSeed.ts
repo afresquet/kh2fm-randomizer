@@ -44,7 +44,7 @@ export const useSeed = (configuration: Configuration): SeedState => {
 
 				var seed: Seed;
 
-				if (configuration.experimental.superbossRetry === Toggle.ON) {
+				if (configuration.experimental.advancedLogic === Toggle.ON) {
 					seed = [
 						...advancedAssign(
 							[...shuffle(rewards, configuration.name)],
