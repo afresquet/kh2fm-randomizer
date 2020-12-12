@@ -65,6 +65,12 @@ export const TabPaneSettings: React.FC = () => {
 					{...mapValue("keybladeStats")}
 					marks={{ 0: "Vanilla", 1: "Balanced", 2: "Boosted" }}
 				/>
+
+				<SettingSlider
+					title="Ansem Reports (hints) depth"
+					{...mapValue("reportDepth")}
+					marks={{ 0: "First Visits", 1: "Second Visits", 2: "Datas" }}
+				/>
 			</div>
 
 			<Divider />
