@@ -1,6 +1,7 @@
 import { Layout, Menu } from "antd";
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { Ads } from "./Ads/Ads";
 
 const navItems = [
 	{
@@ -28,21 +29,25 @@ export const Header: React.FC = () => {
 	const selected = pathname.startsWith("/seed") ? "/seed" : pathname;
 
 	return (
-		<Layout.Header style={{ padding: 0 }}>
-			<Menu
-				mode="horizontal"
-				theme="dark"
-				selectedKeys={[selected]}
-				style={{ margin: "0 auto", maxWidth: 1200 }}
-			>
-				{navItems.map(({ url, title, sup }) => (
-					<Menu.Item key={url}>
-						<NavLink to={url}>
-							{title} {sup ? <sup>{sup}</sup> : null}
-						</NavLink>
-					</Menu.Item>
-				))}
-			</Menu>
-		</Layout.Header>
+		<>
+			<Layout.Header style={{ padding: 0 }}>
+				<Menu
+					mode="horizontal"
+					theme="dark"
+					selectedKeys={[selected]}
+					style={{ margin: "0 auto", maxWidth: 1200 }}
+				>
+					{navItems.map(({ url, title, sup }) => (
+						<Menu.Item key={url}>
+							<NavLink to={url}>
+								{title} {sup ? <sup>{sup}</sup> : null}
+							</NavLink>
+						</Menu.Item>
+					))}
+				</Menu>
+			</Layout.Header>
+
+			<Ads style={{ display: "block" }} format="auto" responsive="true" />
+		</>
 	);
 };

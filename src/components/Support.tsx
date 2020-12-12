@@ -17,13 +17,10 @@ export const Support: React.FC = () => {
 				This randomizer is 100% free to use and will <b>always</b> be.
 			</p>
 			<p>
-				If you would like to financially support my work, you can{" "}
+				If you would like to financially support my work, you can disable
+				adblockers on this website or{" "}
 				<Typography.Link href="http://donate.valaxor.com" target="_blank">
 					donate to me
-				</Typography.Link>{" "}
-				or{" "}
-				<Typography.Link href="https://www.patreon.com/valaxor" target="_blank">
-					become a Patreon
 				</Typography.Link>
 				. Thank you very much :)
 			</p>
