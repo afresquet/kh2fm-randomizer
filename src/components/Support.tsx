@@ -1,6 +1,28 @@
 import { Divider, Typography } from "antd";
 import React from "react";
 
+const supporters = [
+	{ name: "James Faherty", amount: "50.00" },
+	{ name: "ShibuyaGato", amount: "40.00" },
+	{ name: "Smithsville", amount: "30.33" },
+	{ name: "Nja09", amount: "25.00" },
+	{ name: "Cole T.", amount: "25.00" },
+	{ name: "Rory McGuinness", amount: "25.00" },
+	{ name: "KZ", amount: "25.00" },
+	{ name: "Luis Flores", amount: "20.00" },
+	{ name: "Dylan Shwan", amount: "20.00" },
+	{ name: "Sam Stevens", amount: "20.00" },
+	{ name: "ViolinGamer", amount: "20.00" },
+	{ name: "Ashley-Rahne MacGabhann", amount: "20.00" },
+	{ name: "Jake Lorimer", amount: "20.00" },
+	{ name: "DJPRS", amount: "20.00" },
+	{ name: "Star", amount: "15.00" },
+	{ name: "Joseph Radoff", amount: "10.16" },
+	{ name: "Heufneutje", amount: "10.00" },
+	{ name: "DutchPotato", amount: "10.00" },
+	{ name: "Brandon Martinez", amount: "5.00" },
+];
+
 export const Support: React.FC = () => {
 	return (
 		<div
@@ -69,6 +91,18 @@ export const Support: React.FC = () => {
 				) , they were huge help for the project and without them it wouldn't
 				have been possible.
 			</p>
+
+			<p>
+				Thank you to all the Patreons that supported while the Patreon was
+				active!
+			</p>
+			<ul>
+				{supporters.map(({ name, amount }) => (
+					<li>
+						{name}: €{amount}
+					</li>
+				))}
+			</ul>
 		</div>
 	);
 };
