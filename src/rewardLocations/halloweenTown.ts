@@ -121,6 +121,7 @@ export const halloweenTownRewardLocations: RewardLocation[] = [
 		description: "Present",
 		value: "11CE08BE",
 		reward: Rewards.PRESENTS,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -128,6 +129,7 @@ export const halloweenTownRewardLocations: RewardLocation[] = [
 		description: "Decoy Presents",
 		value: "11CE08CA",
 		reward: Rewards.DECOY_PRESENTS,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -135,5 +137,6 @@ export const halloweenTownRewardLocations: RewardLocation[] = [
 		description: "Decisive Pumpkin",
 		value: "11CE08D6",
 		reward: Rewards.DECISIVE_PUMPKIN,
+		secondVisit: true,
 	},
 ];

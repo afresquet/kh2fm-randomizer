@@ -34,6 +34,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Piglet's House",
 		value: "11CDFA36",
 		reward: Rewards.DEFENSE_BOOST,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -44,6 +45,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Piglet's House",
 		value: "11CDFA42",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -54,6 +56,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Piglet's House",
 		value: "11CDFA4E",
 		reward: Rewards.MYTHRIL_GEM,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -64,6 +67,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Rabbit's House",
 		value: "11CDFA5A",
 		reward: Rewards.DRAW_RING,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -74,6 +78,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Rabbit's House",
 		value: "11CDFA66",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -84,6 +89,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Rabbit's House",
 		value: "11CDFA72",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -94,6 +100,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Kanga's House",
 		value: "11CDFA7E",
 		reward: Rewards.MAGIC_BOOST,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -104,6 +111,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Kanga's House",
 		value: "11CDFA8A",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -114,6 +122,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Kanga's House",
 		value: "11CDFA96",
 		reward: Rewards.ORICHALCUM,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -124,6 +133,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "The Spooky Cave",
 		value: "11CDFAA2",
 		reward: Rewards.MYTHRIL_GEM,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -134,6 +144,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "The Spooky Cave",
 		value: "11CDFAAE",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -144,6 +155,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "The Spooky Cave",
 		value: "11CDFABA",
 		reward: Rewards.ORICHALCUM,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -154,6 +166,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "The Spooky Cave",
 		value: "11CDFAC6",
 		reward: Rewards.GUARD_RECIPE,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -164,6 +177,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "The Spooky Cave",
 		value: "11CDFAD2",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -174,6 +188,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "The Spooky Cave",
 		value: "11CDFADE",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -184,6 +199,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Starry Hill",
 		value: "11CDFAEA",
 		reward: Rewards.COSMIC_RING,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -194,6 +210,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Starry Hill",
 		value: "11CDFAF6",
 		reward: Rewards.STYLE_RECIPE,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -204,6 +221,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Sweet Memories",
 		value: "11CE0906",
 		reward: Rewards.SWEET_MEMORIES,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -214,6 +232,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Spooky Cave Map",
 		value: "11CE0912",
 		reward: Rewards.SPOOKY_CAVE_MAP,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -224,6 +243,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Cure",
 		value: "11CE091E",
 		reward: Rewards.CURE,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -234,6 +254,7 @@ export const poohRewardLocations: RewardLocation[] = [
 		description: "Orichalcum+",
 		value: "11CE092A",
 		reward: Rewards.ORICHALCUM_PLUS,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},

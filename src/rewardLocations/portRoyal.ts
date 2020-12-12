@@ -107,6 +107,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "The Interceptor's Hold",
 		value: "11CDFEE6",
 		reward: Rewards.FEATHER_CHARM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -114,6 +115,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Seadrift Keep",
 		value: "11CDFEF2",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -121,6 +123,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Seadrift Keep",
 		value: "11CDFEFE",
 		reward: Rewards.ORICHALCUM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -128,6 +131,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Seadrift Keep",
 		value: "11CDFF0A",
 		reward: Rewards.METEOR_STAFF,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -135,6 +139,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Seadrift Row",
 		value: "11CDFF16",
 		reward: Rewards.SERENITY_GEM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -142,6 +147,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Seadrift Row",
 		value: "11CDFF22",
 		reward: Rewards.KING_RECIPE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -149,6 +155,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Seadrift Row",
 		value: "11CDFF2E",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -170,6 +177,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Grim Reaper 1",
 		value: "21D11028",
 		reward: Rewards.HORIZONTAL_SLASH,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -177,6 +185,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Grim Reaper 2",
 		value: "21D10AE8",
 		reward: Rewards.MAGNET,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -184,6 +193,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Isla de Muerta Map",
 		value: "11CE077A",
 		reward: Rewards.ISLA_DE_MUERTA_MAP,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -191,6 +201,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Follow the Wind",
 		value: "11CE0786",
 		reward: Rewards.FOLLOW_THE_WIND,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -198,6 +209,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Cursed Medallion",
 		value: "11CE086A",
 		reward: Rewards.CURSED_MEDALLION,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -205,6 +217,7 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Ship Graveyard Map",
 		value: "11CE0876",
 		reward: Rewards.SHIP_GRAVEYARD_MAP,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -212,5 +225,6 @@ export const portRoyalRewardLocations: RewardLocation[] = [
 		description: "Secret Ansem's Report 6 (Grim Reaper 2)",
 		value: "11CE09DE",
 		reward: Rewards.REPORT_SIX,
+		secondVisit: true,
 	},
 ];

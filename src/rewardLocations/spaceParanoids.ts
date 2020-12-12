@@ -79,6 +79,7 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "Central Computer Core",
 		value: "11CDFD66",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -86,6 +87,7 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "Central Computer Core",
 		value: "11CDFD72",
 		reward: Rewards.ORICHALCUM_PLUS,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -93,6 +95,7 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "Central Computer Core",
 		value: "11CDFD7E",
 		reward: Rewards.COSMIC_ARTS,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -100,6 +103,7 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "Central Computer Core",
 		value: "11CDFD8A",
 		reward: Rewards.CENTRAL_COMPUTER_CORE_MAP,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -114,6 +118,7 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "Solar Sailer Heartless",
 		value: "21D11078",
 		reward: Rewards.EXPLOSION,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -121,6 +126,7 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "MCP",
 		value: "21D10C78",
 		reward: Rewards.REFLECT,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -128,5 +134,6 @@ export const spaceParanoidsRewardLocations: RewardLocation[] = [
 		description: "Photon Debugger",
 		value: "11CE0816",
 		reward: Rewards.PHOTON_DEBUGGER,
+		secondVisit: true,
 	},
 ];

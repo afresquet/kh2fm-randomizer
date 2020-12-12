@@ -8,8 +8,15 @@ const versions: {
 	hotfixes?: string[];
 }[] = [
 	{
-		version: "0.4.0 (WIP)",
-		changes: ["Added presets", "More changes in development"],
+		version: "0.4.1",
+		changes: [
+			"Option to limit Reports from being on Datas and/or second visits",
+			"Allowing Torn Pages to be placed at Hollow Bastion - Borough",
+		],
+	},
+	{
+		version: "0.4.0",
+		changes: ["Added presets"],
 	},
 	{
 		version: "0.3.0",
