@@ -109,6 +109,7 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		description: "Proof of Connection",
 		value: "11CE0B16",
 		reward: Rewards.PROOF_OF_CONNECTION,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
 				exclude,
@@ -122,6 +123,7 @@ export const disneyCastleRewardLocations: RewardLocation[] = [
 		description: "Manifest Illusion (Lingering Will)",
 		value: "11CE0B22",
 		reward: Rewards.MANIFEST_ILLUSION,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
 				exclude,

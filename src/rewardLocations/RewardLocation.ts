@@ -30,6 +30,7 @@ export interface RewardLocation {
 	description: string;
 	value: string;
 	reward: Reward;
+	secondVisit?: boolean;
 	gameMode?: {
 		[K in GameMode]?: {
 			world?: LocationName;

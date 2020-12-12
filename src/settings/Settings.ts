@@ -14,6 +14,7 @@ export interface Settings {
 	keybladeStats: RandomizingAction;
 	bonusModifiers: Toggle;
 	criticalMode: Toggle;
+	reportDepth: RandomizingAction;
 
 	expMultiplier: Multiplier;
 	valorEXP: Multiplier;
@@ -31,6 +32,7 @@ export const defaultSettings: Settings = {
 	keybladeStats: RandomizingAction.REPLACE,
 	bonusModifiers: Toggle.ON,
 	criticalMode: Toggle.ON,
+	reportDepth: RandomizingAction.RANDOMIZE,
 
 	expMultiplier: Multiplier.ONE,
 	valorEXP: Multiplier.ONE,

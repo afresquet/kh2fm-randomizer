@@ -86,6 +86,14 @@ export const populate = (
 									?.includeType || []),
 								...replaceableRewardTypes,
 							],
+							excludeType: [
+								...(location.gameMode?.[configuration.gameMode.mode]
+									?.excludeType || []),
+								...(configuration.settings.reportDepth ===
+									RandomizingAction.VANILLA && location.secondVisit
+									? [RewardType.REPORT]
+									: []),
+							],
 						},
 					},
 				}))
@@ -94,7 +102,25 @@ export const populate = (
 			return;
 		}
 
-		locations.push(...locationArray);
+		locations.push(
+			...locationArray.map<RewardLocation>(location => ({
+				...location,
+				gameMode: {
+					...(location.gameMode || {}),
+					[configuration.gameMode.mode]: {
+						...(location.gameMode?.[configuration.gameMode.mode] || {}),
+						excludeType: [
+							...(location.gameMode?.[configuration.gameMode.mode]
+								?.excludeType || []),
+							...(configuration.settings.reportDepth ===
+								RandomizingAction.VANILLA && location.secondVisit
+								? [RewardType.REPORT]
+								: []),
+						],
+					},
+				},
+			}))
+		);
 	}
 
 	const replaceWith = createReplacer(rewards, configuration);
@@ -201,13 +227,49 @@ export const populate = (
 
 	// Absent Silhouettes
 	push(
-		absentSilhouettesRewardLocations.filter(filterByWorld(configuration)),
+		absentSilhouettesRewardLocations
+			.filter(filterByWorld(configuration))
+			.map<RewardLocation>(location => ({
+				...location,
+				gameMode: {
+					...(location.gameMode || {}),
+					[configuration.gameMode.mode]: {
+						...(location.gameMode?.[configuration.gameMode.mode] || {}),
+						excludeType: [
+							...(location.gameMode?.[configuration.gameMode.mode]
+								?.excludeType || []),
+							...(configuration.settings.reportDepth ===
+								RandomizingAction.REPLACE && location.secondVisit
+								? [RewardType.REPORT]
+								: []),
+						],
+					},
+				},
+			})),
 		configuration.include.absentSilhouettes
 	);
 
 	// Data Organization XIII
 	push(
-		dataOrganizationXIIIRewardLocations.filter(filterByWorld(configuration)),
+		dataOrganizationXIIIRewardLocations
+			.filter(filterByWorld(configuration))
+			.map<RewardLocation>(location => ({
+				...location,
+				gameMode: {
+					...(location.gameMode || {}),
+					[configuration.gameMode.mode]: {
+						...(location.gameMode?.[configuration.gameMode.mode] || {}),
+						excludeType: [
+							...(location.gameMode?.[configuration.gameMode.mode]
+								?.excludeType || []),
+							...(configuration.settings.reportDepth ===
+								RandomizingAction.REPLACE && location.secondVisit
+								? [RewardType.REPORT]
+								: []),
+						],
+					},
+				},
+			})),
 		configuration.include.dataOrganizationXIII
 	);
 

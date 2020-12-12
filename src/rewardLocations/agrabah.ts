@@ -181,6 +181,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Ruined Chamber",
 		value: "11CDF946",
 		reward: Rewards.TORN_PAGES,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -191,6 +192,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Ruined Chamber",
 		value: "11CDF952",
 		reward: Rewards.RUINS_MAP,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -215,6 +217,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Genie Jafar",
 		value: "21D10978",
 		reward: Rewards.FIRE,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -239,6 +242,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Wishing Lamp",
 		value: "11CE08B2",
 		reward: Rewards.WISHING_LAMP,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},

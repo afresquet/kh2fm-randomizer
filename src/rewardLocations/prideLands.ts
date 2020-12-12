@@ -184,6 +184,7 @@ export const prideLandsRewardLocations: RewardLocation[] = [
 		description: "Groundshaker",
 		value: "21D10C18",
 		reward: Rewards.THUNDER,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
