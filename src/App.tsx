@@ -18,7 +18,16 @@ function App() {
 				<Header />
 
 				<Layout.Content style={{ padding: 24 }}>
-					<Ads style={{ display: "block" }} format="auto" responsive="true" />
+					<Ads
+						style={{
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+							marginBottom: 24,
+						}}
+						format="auto"
+						responsive="true"
+					/>
 
 					<Switch>
 						<Route
@@ -36,7 +45,16 @@ function App() {
 						<Redirect to="/seed" />
 					</Switch>
 
-					<Ads style={{ display: "block" }} format="auto" responsive="true" />
+					<Ads
+						style={{
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+							marginTop: 24,
+						}}
+						format="auto"
+						responsive="true"
+					/>
 				</Layout.Content>
 
 				<Footer />
