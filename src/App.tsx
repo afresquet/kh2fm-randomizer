@@ -3,6 +3,7 @@ import "antd/dist/antd.css";
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { About } from "./components/About";
+import { Ads } from "./components/Ads/Ads";
 import { Changelog } from "./components/Changelog";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -17,6 +18,8 @@ function App() {
 				<Header />
 
 				<Layout.Content style={{ padding: 24 }}>
+					<Ads style={{ display: "block" }} format="auto" responsive="true" />
+
 					<Switch>
 						<Route
 							path="/seed/:seed?"
@@ -32,6 +35,8 @@ function App() {
 						<Route path="/support" component={Support} exact />
 						<Redirect to="/seed" />
 					</Switch>
+
+					<Ads style={{ display: "block" }} format="auto" responsive="true" />
 				</Layout.Content>
 
 				<Footer />
