@@ -5,11 +5,14 @@ export interface GoAModSettings {
 	goMode: Toggle;
 
 	shorterDay5: Toggle;
+	fasterTwilightThorn: Toggle;
 	fasterOogie: Toggle;
 	fasterPresents: Toggle;
 	earlyLionDash: Toggle;
 	fastHyenasTwo: Toggle;
 	fasterMCP: Toggle;
+	fasterABlusteryRescue: Toggle;
+	fasterHunnySlider: Toggle;
 	skipDragon: Toggle;
 
 	fieldCamera: Toggle;
@@ -23,11 +26,14 @@ export const defaultGoAModSettings: GoAModSettings = {
 	goMode: Toggle.OFF,
 
 	shorterDay5: Toggle.ON,
+	fasterTwilightThorn: Toggle.ON,
 	fasterOogie: Toggle.ON,
 	fasterPresents: Toggle.ON,
 	earlyLionDash: Toggle.ON,
 	fastHyenasTwo: Toggle.ON,
 	fasterMCP: Toggle.ON,
+	fasterABlusteryRescue: Toggle.ON,
+	fasterHunnySlider: Toggle.ON,
 	skipDragon: Toggle.ON,
 
 	fieldCamera: Toggle.OFF,
