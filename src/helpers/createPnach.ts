@@ -5,6 +5,7 @@ import { expMultiplier } from "../patches/expMultiplier";
 import { fasterOogie } from "../patches/fasterOogie";
 import { fasterPresents } from "../patches/fasterPresents";
 import { fastHyenasTwo } from "../patches/fastHyenasTwo";
+import { fasterMCP } from "../patches/fasterMCP";
 import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
