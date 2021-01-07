@@ -9,6 +9,7 @@ export interface GoAModSettings {
 	fasterPresents: Toggle;
 	earlyLionDash: Toggle;
 	fastHyenasTwo: Toggle;
+	fasterMCP: Toggle;
 	skipDragon: Toggle;
 
 	fieldCamera: Toggle;
@@ -26,6 +27,7 @@ export const defaultGoAModSettings: GoAModSettings = {
 	fasterPresents: Toggle.ON,
 	earlyLionDash: Toggle.ON,
 	fastHyenasTwo: Toggle.ON,
+	fasterMCP: Toggle.ON,
 	skipDragon: Toggle.ON,
 
 	fieldCamera: Toggle.OFF,

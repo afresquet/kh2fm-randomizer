@@ -9,7 +9,7 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		description: "Escort Queen Minnie Part I",
 		world: "0C",
 		room: "02",
-		event: "02",
+		eventGroup: ["02","02","01"],
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -218,7 +218,23 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.DISNEY_CASTLE,
 		description: "Lingering Will Boss Fight",
-		world: "0A",
+		maxSize: 4443212, // Larxene
+		world: "0C",
+		room: "07",
+		event: "43",
+		enemies: [
+			{
+				enemy: Enemies.LINGERING_WILL,
+				value: "11C556E0",
+			},
+		],
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.DISNEY_CASTLE,
+		description: "Lingering Will Boss Fight",
+		maxSize: 4443212, // Larxene
+		world: "0C",
 		room: "07",
 		event: "49",
 		enemies: [
