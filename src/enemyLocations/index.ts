@@ -10,7 +10,7 @@ import { hollowBastionEnemyLocations } from "./hollowBastion";
 import { landOfDragonsEnemyLocations } from "./landOfDragons";
 import { mushroomsEnemyLocations } from "./mushrooms";
 import { olympusEnemyLocations } from "./olympus";
-import { organizationXIIIEnemyLocations } from "./organizationXIII";
+import { dataOrganizationXIIIEnemyLocations } from "./dataOrganizationXIII";
 import { poohEnemyLocations } from "./pooh";
 import { portRoyalEnemyLocations } from "./portRoyal";
 import { prideLandsEnemyLocations } from "./prideLands";
@@ -31,7 +31,7 @@ export const enemyLocations: EnemyLocation[] = [
 	...landOfDragonsEnemyLocations,
 	...mushroomsEnemyLocations,
 	...olympusEnemyLocations,
-	...organizationXIIIEnemyLocations,
+	...dataOrganizationXIIIEnemyLocations,
 	...poohEnemyLocations,
 	...portRoyalEnemyLocations,
 	...prideLandsEnemyLocations,

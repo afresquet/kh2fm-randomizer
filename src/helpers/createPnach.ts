@@ -146,9 +146,38 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		}
 
 		if (configuration.experimental.bosses === Toggle.ON) {
+			const bossPool = bosses
+				.filter(boss => {
+					if (
+						configuration.include.absentSilhouettes !==
+							RandomizingAction.RANDOMIZE &&
+						boss.description.includes("AS Fight")
+					)
+						return false;
+					if (
+						configuration.include.dataOrganizationXIII !==
+							RandomizingAction.RANDOMIZE &&
+						boss.description.includes("Data Fight")
+					)
+						return false;
+		
+					if (
+						configuration.include.terra === Toggle.OFF &&
+						boss.description === "Lingering Will Boss Fight"
+					)
+						return false;
+		
+					if (
+						configuration.include.sephiroth === Toggle.OFF &&
+						boss.description === "Sephiroth Boss Fight"
+					)
+						return false;
+		
+					return boss;
+				})
 			const shuffledBosses = [
 				...shuffle(
-					bosses
+					bossPool
 						.map(location => location.enemies)
 						.reduce((prev, curr) => prev.concat(curr)),
 					configuration.name

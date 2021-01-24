@@ -2,7 +2,7 @@ import { Enemies } from "../enemies";
 import { LocationName } from "../LocationName";
 import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
 
-export const organizationXIIIEnemyLocations: EnemyLocation[] = [
+export const dataOrganizationXIIIEnemyLocations: EnemyLocation[] = [
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
 	// 	location: LocationName.CAVERN_OF_REMEMBRANCE,
