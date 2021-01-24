@@ -1,5 +1,6 @@
 import seedrandom from "seedrandom";
 import { filterByWorld } from "../helpers/filterByWorld";
+import { LocationName } from "../LocationName";
 import { absentSilhouettesRewardLocations } from "../rewardLocations/absentSilhouettes";
 import { agrabahRewardLocations } from "../rewardLocations/agrabah";
 import { atlanticaRewardLocations } from "../rewardLocations/atlantica";
@@ -86,14 +87,6 @@ export const populate = (
 									?.includeType || []),
 								...replaceableRewardTypes,
 							],
-							excludeType: [
-								...(location.gameMode?.[configuration.gameMode.mode]
-									?.excludeType || []),
-								...(configuration.settings.reportDepth ===
-									RandomizingAction.VANILLA && location.secondVisit
-									? [RewardType.REPORT]
-									: []),
-							],
 						},
 					},
 				}))
@@ -103,23 +96,39 @@ export const populate = (
 		}
 
 		locations.push(
-			...locationArray.map<RewardLocation>(location => ({
-				...location,
-				gameMode: {
-					...(location.gameMode || {}),
-					[configuration.gameMode.mode]: {
-						...(location.gameMode?.[configuration.gameMode.mode] || {}),
-						excludeType: [
-							...(location.gameMode?.[configuration.gameMode.mode]
-								?.excludeType || []),
-							...(configuration.settings.reportDepth ===
-								RandomizingAction.VANILLA && location.secondVisit
-								? [RewardType.REPORT]
-								: []),
-						],
+			...locationArray.map<RewardLocation>(location => {
+				const excludeType: RewardType[] = [
+					...(location.gameMode?.[configuration.gameMode.mode]?.excludeType ||
+						[]),
+				];
+
+				if (
+					configuration.settings.reportDepth === RandomizingAction.VANILLA &&
+					location.secondVisit
+				) {
+					excludeType.push(RewardType.REPORT);
+				} else if (
+					configuration.settings.reportDepth === RandomizingAction.REPLACE &&
+					[
+						LocationName.ABSENT_SILHOUETTE,
+						LocationName.DATA_ORGANIZATION_XIII,
+					].includes(location.location) &&
+					location.secondVisit
+				) {
+					excludeType.push(RewardType.REPORT);
+				}
+
+				return {
+					...location,
+					gameMode: {
+						...(location.gameMode || {}),
+						[configuration.gameMode.mode]: {
+							...(location.gameMode?.[configuration.gameMode.mode] || {}),
+							excludeType: excludeType.length ? excludeType : undefined,
+						},
 					},
-				},
-			}))
+				};
+			})
 		);
 	}
 
@@ -227,49 +236,14 @@ export const populate = (
 
 	// Absent Silhouettes
 	push(
-		absentSilhouettesRewardLocations
-			.filter(filterByWorld(configuration))
-			.map<RewardLocation>(location => ({
-				...location,
-				gameMode: {
-					...(location.gameMode || {}),
-					[configuration.gameMode.mode]: {
-						...(location.gameMode?.[configuration.gameMode.mode] || {}),
-						excludeType: [
-							...(location.gameMode?.[configuration.gameMode.mode]
-								?.excludeType || []),
-							...(configuration.settings.reportDepth ===
-								RandomizingAction.REPLACE && location.secondVisit
-								? [RewardType.REPORT]
-								: []),
-						],
-					},
-				},
-			})),
+		absentSilhouettesRewardLocations.filter(filterByWorld(configuration)),
+
 		configuration.include.absentSilhouettes
 	);
 
 	// Data Organization XIII
 	push(
-		dataOrganizationXIIIRewardLocations
-			.filter(filterByWorld(configuration))
-			.map<RewardLocation>(location => ({
-				...location,
-				gameMode: {
-					...(location.gameMode || {}),
-					[configuration.gameMode.mode]: {
-						...(location.gameMode?.[configuration.gameMode.mode] || {}),
-						excludeType: [
-							...(location.gameMode?.[configuration.gameMode.mode]
-								?.excludeType || []),
-							...(configuration.settings.reportDepth ===
-								RandomizingAction.REPLACE && location.secondVisit
-								? [RewardType.REPORT]
-								: []),
-						],
-					},
-				},
-			})),
+		dataOrganizationXIIIRewardLocations.filter(filterByWorld(configuration)),
 		configuration.include.dataOrganizationXIII
 	);
 

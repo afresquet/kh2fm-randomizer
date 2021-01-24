@@ -8,6 +8,10 @@ const versions: {
 	hotfixes?: string[];
 }[] = [
 	{
+		version: "0.4.2",
+		changes: ["Fixed bug that caused generation to fail"],
+	},
+	{
 		version: "0.4.1",
 		changes: [
 			"Option to limit Reports from being on Datas and/or second visits",

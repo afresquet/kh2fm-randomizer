@@ -156,7 +156,10 @@ export function assign(
 	// Rest
 	for (const location of rewardLocations) {
 		if (
-			location.gameMode?.[configuration.gameMode.mode] ||
+			location.gameMode?.[configuration.gameMode.mode]?.include ||
+			location.gameMode?.[configuration.gameMode.mode]?.includeType ||
+			location.gameMode?.[configuration.gameMode.mode]?.exclude ||
+			location.gameMode?.[configuration.gameMode.mode]?.excludeType ||
 			location.type === RewardLocationType.POPUP
 		)
 			continue;
