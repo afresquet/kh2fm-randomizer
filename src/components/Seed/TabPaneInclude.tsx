@@ -1,8 +1,7 @@
+import { Include, RandomizingAction } from "kh2fm-randomizer";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
 import { useValueMapper } from "../../hooks/useValueMapper";
-import { RandomizingAction } from "../../settings/enums";
-import { Include } from "../../settings/Include";
 import { Marks, SettingSlider } from "./SettingSlider";
 
 export const TabPaneInclude: React.FC = () => {

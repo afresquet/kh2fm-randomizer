@@ -1,7 +1,7 @@
+import { Worlds } from "kh2fm-randomizer";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
 import { useValueMapper } from "../../hooks/useValueMapper";
-import { Worlds } from "../../settings/Worlds";
 import { Marks, SettingSlider } from "./SettingSlider";
 
 export const TabPaneWorlds: React.FC = () => {

@@ -1,12 +1,12 @@
 import { Button, Dropdown, Menu } from "antd";
 import { MenuProps } from "antd/lib/menu";
 import downloadjs from "downloadjs";
+import { createPnach } from "kh2fm-randomizer";
 import React, { useCallback, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { SeedContext } from "../../context/seed";
 import { firebase } from "../../firebase";
-import { createPnach } from "../../helpers/createPnach";
-import { useSeedURL } from "../../seed/useSeedURL";
+import { useSeedURL } from "../../hooks/useSeedURL";
 import { GoAModModalDownload } from "../GoAMod/GoAModModalDownload";
 
 export const ButtonDownload: React.FC = () => {

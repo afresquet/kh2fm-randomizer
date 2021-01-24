@@ -1,9 +1,8 @@
 import { Divider } from "antd";
+import { GameMode, Leveling, Settings } from "kh2fm-randomizer";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
 import { useValueMapper } from "../../hooks/useValueMapper";
-import { GameMode, Leveling } from "../../settings/enums";
-import { Settings } from "../../settings/Settings";
 import { SettingSelect } from "./SettingSelect";
 import { Marks, SettingSlider } from "./SettingSlider";
 

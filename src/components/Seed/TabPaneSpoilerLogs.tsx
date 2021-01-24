@@ -4,6 +4,8 @@ import {
 	ColumnFilterItem,
 	FilterDropdownProps,
 } from "antd/lib/table/interface";
+import { LocationName } from "kh2fm-randomizer/dist/types/LocationName";
+import { RewardLocationType } from "kh2fm-randomizer/dist/types/RewardLocation";
 import React, {
 	useCallback,
 	useContext,
@@ -14,8 +16,6 @@ import React, {
 } from "react";
 import { SeedContext } from "../../context/seed";
 import { analytics } from "../../firebase";
-import { LocationName } from "../../LocationName";
-import { RewardLocationType } from "../../rewardLocations/RewardLocation";
 
 interface Props {
 	active: boolean;

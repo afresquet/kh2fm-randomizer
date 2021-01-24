@@ -1,8 +1,8 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
 import { growthAbilityRewards } from "../rewards/growthAbility";
-import { GameMode } from "../settings/enums";
+import { GameMode } from "../types/configuration/enums";
+import { LocationName } from "../types/LocationName";
 import { Reward } from "../types/Reward";
 import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 

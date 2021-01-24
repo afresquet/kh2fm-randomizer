@@ -3,7 +3,7 @@ import copy from "copy-to-clipboard";
 import React, { useCallback, useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { SeedContext } from "../../context/seed";
-import { useSeedURL } from "../../seed/useSeedURL";
+import { useSeedURL } from "../../hooks/useSeedURL";
 
 export const ButtonShare: React.FC = () => {
 	const { seed } = useContext(SeedContext);

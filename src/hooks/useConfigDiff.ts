@@ -1,14 +1,14 @@
+import {
+	Configuration,
+	defaultGoAModSettings,
+	defaultInclude,
+	defaultSettings,
+	defaultWorlds,
+	GoAModSettings,
+} from "kh2fm-randomizer";
 import _ from "lodash";
 import { useContext, useMemo } from "react";
 import { SeedContext } from "../context/seed";
-import { Configuration } from "../settings/Configuration";
-import {
-	defaultGoAModSettings,
-	GoAModSettings,
-} from "../settings/GoAModSettings";
-import { defaultInclude } from "../settings/Include";
-import { defaultSettings } from "../settings/Settings";
-import { defaultWorlds } from "../settings/Worlds";
 
 function difference<T>(object: T, base: T) {
 	// as any cause I have no idea why it's wrong but it works

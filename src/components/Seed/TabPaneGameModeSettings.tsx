@@ -1,9 +1,8 @@
 import { Divider } from "antd";
+import { GoAModSettings, Leveling, Toggle } from "kh2fm-randomizer";
 import React, { useContext } from "react";
 import { SeedContext } from "../../context/seed";
 import { useValueMapper } from "../../hooks/useValueMapper";
-import { Leveling, Toggle } from "../../settings/enums";
-import { GoAModSettings } from "../../settings/GoAModSettings";
 import { SettingSlider } from "./SettingSlider";
 
 export const TabPaneGameModeSettings: React.FC = () => {
