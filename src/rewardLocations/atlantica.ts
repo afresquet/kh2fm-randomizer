@@ -26,6 +26,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		description: "Mysterious Abyss",
 		value: "11CE08E2",
 		reward: Rewards.MYSTERIOUS_ABYSS,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -36,6 +37,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		description: "Blizzard",
 		value: "11CE08EE",
 		reward: Rewards.BLIZZARD,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -46,6 +48,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		description: "Orichalcum+",
 		value: "11CE08FA",
 		reward: Rewards.ORICHALCUM_PLUS,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},

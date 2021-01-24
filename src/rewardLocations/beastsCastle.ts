@@ -170,6 +170,7 @@ export const beastsCastleRewardLocations: RewardLocation[] = [
 		description: "Xaldin",
 		value: "21D107C8",
 		reward: Rewards.REFLECT,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -184,6 +185,7 @@ export const beastsCastleRewardLocations: RewardLocation[] = [
 		description: "Rumbling Rose",
 		value: "11CE0852",
 		reward: Rewards.RUMBLING_ROSE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -191,6 +193,7 @@ export const beastsCastleRewardLocations: RewardLocation[] = [
 		description: "Castle Walls Map",
 		value: "11CE085E",
 		reward: Rewards.CASTLE_WALLS_MAP,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -198,5 +201,6 @@ export const beastsCastleRewardLocations: RewardLocation[] = [
 		description: "Secret Ansem's Report 4 (Xaldin)",
 		value: "11CE09C6",
 		reward: Rewards.REPORT_FOUR,
+		secondVisit: true,
 	},
 ];

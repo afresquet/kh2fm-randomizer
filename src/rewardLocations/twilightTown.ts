@@ -163,6 +163,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Underground Concourse",
 		value: "11CE0336",
 		reward: Rewards.MYTHRIL_GEM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -170,6 +171,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Underground Concourse",
 		value: "11CE0342",
 		reward: Rewards.ORICHALCUM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -177,6 +179,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Underground Concourse",
 		value: "11CE034E",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -184,6 +187,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Underground Concourse",
 		value: "11CE035A",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -191,6 +195,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Tunnelway",
 		value: "11CE0366",
 		reward: Rewards.ORICHALCUM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -198,6 +203,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Tunnelway",
 		value: "11CE0372",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -205,6 +211,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Sunset Terrace",
 		value: "11CE037E",
 		reward: Rewards.ORICHALCUM_PLUS,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -212,6 +219,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Sunset Terrace",
 		value: "11CE038A",
 		reward: Rewards.MYTHRIL_SHARD,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -219,6 +227,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Sunset Terrace",
 		value: "11CE0396",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -226,6 +235,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Sunset Terrace",
 		value: "11CE03A2",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -233,6 +243,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Mansion Foyer",
 		value: "11CE03AE",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -240,6 +251,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Mansion Foyer",
 		value: "11CE03BA",
 		reward: Rewards.MYTHRIL_STONE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -247,6 +259,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Mansion Foyer",
 		value: "11CE03C6",
 		reward: Rewards.SERENITY_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -254,6 +267,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Mansion Dining Room",
 		value: "11CE03D2",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -261,6 +275,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Mansion Dining Room",
 		value: "11CE03DE",
 		reward: Rewards.MYTHRIL_STONE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -268,6 +283,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Mansion Library",
 		value: "11CE03EA",
 		reward: Rewards.ORICHALCUM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -275,6 +291,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Mansion Basement Corridor",
 		value: "11CE03F6",
 		reward: Rewards.ULTIMATE_RECIPE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -282,6 +299,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Betwixt and Between Nobodies",
 		value: "21D110E8",
 		reward: Rewards.SLAPSHOT,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -317,6 +335,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Seifer's Trophy",
 		value: "11CE07E6",
 		reward: Rewards.SEIFERS_TROPHY,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -324,6 +343,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Oathkeeper",
 		value: "11CE07F2",
 		reward: Rewards.OATHKEEPER,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -331,6 +351,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Limit Form",
 		value: "11CE07FE",
 		reward: Rewards.LIMIT_FORM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -338,6 +359,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Bond of Flame",
 		value: "11CE0966",
 		reward: Rewards.BOND_OF_FLAME,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -345,6 +367,7 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Secret Ansem's Report 2 (Station Plaza Nobodies)",
 		value: "11CE09AE",
 		reward: Rewards.REPORT_TWO,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -352,5 +375,6 @@ export const twilightTownRewardLocations: RewardLocation[] = [
 		description: "Secret Ansem's Report 10 (Twilight Town 3)",
 		value: "11CE0A0E",
 		reward: Rewards.REPORT_TEN,
+		secondVisit: true,
 	},
 ];

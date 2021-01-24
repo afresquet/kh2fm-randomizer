@@ -11,6 +11,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Protect Belt (Pain & Panic Cup)",
 		value: "11CE073E",
 		reward: Rewards.PROTECT_BELT,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -18,6 +19,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Serenity Gem (Pain & Panic Cup)",
 		value: "11CE074A",
 		reward: Rewards.SERENITY_GEM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -25,6 +27,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Rising Dragon (Cerberus Cup)",
 		value: "11CE07CE",
 		reward: Rewards.RISING_DRAGON,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -32,6 +35,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Serenity Crystal (Cerberus Cup)",
 		value: "11CE07DA",
 		reward: Rewards.SERENITY_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -39,6 +43,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Genji Shield (Titan Cup)",
 		value: "11CE089A",
 		reward: Rewards.GENJI_SHIELD,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -46,6 +51,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Skillfull Ring (Titan Cup)",
 		value: "11CE08A6",
 		reward: Rewards.SKILLFUL_RING,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -53,6 +59,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Fatal Crest (Goddess of Fate Cup)",
 		value: "11CE094E",
 		reward: Rewards.FATAL_CREST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -60,6 +67,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Orichalcum+ (Goddess of Fate Cup)",
 		value: "11CE095A",
 		reward: Rewards.ORICHALCUM_PLUS,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -67,6 +75,7 @@ export const olympusCupsRewardLocations: RewardLocation[] = [
 		description: "Hades Cup Trophy (Hades Cup)",
 		value: "11CE0996",
 		reward: Rewards.HADES_CUP_TROPHY,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
 				excludeType: [

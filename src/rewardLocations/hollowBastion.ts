@@ -39,11 +39,6 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF3A",
 		reward: Rewards.DRIVE_RECOVERY,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				exclude: [Rewards.TORN_PAGES],
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -51,11 +46,6 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF46",
 		reward: Rewards.AP_BOOST,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				exclude: [Rewards.TORN_PAGES],
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -63,11 +53,6 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF52",
 		reward: Rewards.HI_POTION,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				exclude: [Rewards.TORN_PAGES],
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -75,11 +60,6 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF5E",
 		reward: Rewards.MYTHRIL_SHARD,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				exclude: [Rewards.TORN_PAGES],
-			},
-		},
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -87,11 +67,6 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Borough",
 		value: "11CDFF6A",
 		reward: Rewards.DARK_SHARD,
-		gameMode: {
-			[GameMode.GOA_MOD]: {
-				exclude: [Rewards.TORN_PAGES],
-			},
-		},
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -99,6 +74,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Postern",
 		value: "11CDFF76",
 		reward: Rewards.CASTLE_PERIMETER_MAP,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -106,6 +82,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Postern",
 		value: "11CDFF82",
 		reward: Rewards.MYTHRIL_GEM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -113,6 +90,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Postern",
 		value: "11CDFF8E",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -120,6 +98,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Corridors",
 		value: "11CDFF9A",
 		reward: Rewards.MYTHRIL_STONE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -127,6 +106,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Corridors",
 		value: "11CDFFA6",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -134,6 +114,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Corridors",
 		value: "11CDFFB2",
 		reward: Rewards.DARK_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -141,6 +122,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Corridors",
 		value: "11CDFFBE",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -148,6 +130,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Ansem's Study",
 		value: "11CDFFCA",
 		reward: Rewards.SKILL_RECIPE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -155,6 +138,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Ansem's Study",
 		value: "11CDFFD6",
 		reward: Rewards.UKELELE_CHARM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -162,6 +146,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Restoration Site",
 		value: "11CDFFE2",
 		reward: Rewards.MOON_RECIPE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -169,6 +154,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Restoration Site",
 		value: "11CDFFEE",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -176,6 +162,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Crystal Fissure",
 		value: "11CDFFFA",
 		reward: Rewards.TORN_PAGES,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -183,6 +170,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Crystal Fissure",
 		value: "11CE0006",
 		reward: Rewards.THE_GREAT_MAW_MAP,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -190,6 +178,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Crystal Fissure",
 		value: "11CE0012",
 		reward: Rewards.ENERGY_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -197,6 +186,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Crystal Fissure",
 		value: "11CE001E",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -204,6 +194,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Postern",
 		value: "11CE002A",
 		reward: Rewards.GULL_WING,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -211,6 +202,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Heartless Manufactory",
 		value: "11CE0036",
 		reward: Rewards.COSMIC_CHAIN,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -225,6 +217,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Demyx (Hollow Bastion)",
 		value: "21D10BA8",
 		reward: Rewards.BLIZZARD,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -232,6 +225,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "1000 Heartless",
 		value: "21D11068",
 		reward: Rewards.GUARD_BREAK,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -267,6 +261,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Master Form",
 		value: "11CE080A",
 		reward: Rewards.MASTER_FORM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -274,6 +269,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Cure",
 		value: "11CE0822",
 		reward: Rewards.CURE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -281,6 +277,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Ice Cream",
 		value: "11CE082E",
 		reward: Rewards.ICE_CREAM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -288,6 +285,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Picture",
 		value: "11CE083A",
 		reward: Rewards.PICTURE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -295,6 +293,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Sleeping Lion",
 		value: "11CE0936",
 		reward: Rewards.SLEEPING_LION,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -302,6 +301,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Fenrir",
 		value: "11CE0942",
 		reward: Rewards.FENRIR,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -309,6 +309,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Secret Ansem's Report 1 (1,000 Heartless)",
 		value: "11CE09A2",
 		reward: Rewards.REPORT_ONE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -316,6 +317,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Secret Ansem's Report 7 (Bailey Nobodies)",
 		value: "11CE09EA",
 		reward: Rewards.REPORT_SEVEN,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -323,6 +325,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Proof of Peace",
 		value: "11CE0B3A",
 		reward: Rewards.PROOF_OF_PEACE,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
 				exclude,
@@ -336,6 +339,7 @@ export const hollowBastionRewardLocations: RewardLocation[] = [
 		description: "Winner's Proof",
 		value: "11CE0B2E",
 		reward: Rewards.WINNERS_PROOF,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
 				exclude,

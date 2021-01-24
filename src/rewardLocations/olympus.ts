@@ -177,6 +177,7 @@ export const olympusRewardLocations: RewardLocation[] = [
 		description: "Hades",
 		value: "21D10888",
 		reward: Rewards.MAGNET_BURST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -212,6 +213,7 @@ export const olympusRewardLocations: RewardLocation[] = [
 		description: "Auron's Statue",
 		value: "11CE0882",
 		reward: Rewards.AURONS_STATUE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
@@ -219,5 +221,6 @@ export const olympusRewardLocations: RewardLocation[] = [
 		description: "Guardian Soul",
 		value: "11CE088E",
 		reward: Rewards.GUARDIAN_SOUL,
+		secondVisit: true,
 	},
 ];

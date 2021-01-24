@@ -100,6 +100,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF7C6",
 		reward: Rewards.TORN_PAGES,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BIGCHEST,
@@ -107,6 +108,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF7D2",
 		reward: Rewards.PALACE_MAP,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -114,6 +116,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF7DE",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -121,6 +124,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF7EA",
 		reward: Rewards.QUEEN_RECIPE,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -128,6 +132,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF7F6",
 		reward: Rewards.AP_BOOST,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -135,6 +140,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF802",
 		reward: Rewards.OGRE_SHIELD,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -142,6 +148,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF80E",
 		reward: Rewards.MYTHRIL_CRYSTAL,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.CHEST,
@@ -149,6 +156,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Throne Room",
 		value: "11CDF81A",
 		reward: Rewards.ORICHALCUM,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.BONUS,
@@ -170,6 +178,7 @@ export const landOfDragonsRewardLocations: RewardLocation[] = [
 		description: "Storm Rider",
 		value: "21D10908",
 		reward: Rewards.THUNDER,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
