@@ -5,6 +5,7 @@ export interface Experimental {
 	bosses: Toggle;
 
 	superbossRetry: Toggle;
+	advancedLogic: Toggle;
 }
 
 export const defaultExperimental: Experimental = {
@@ -12,4 +13,5 @@ export const defaultExperimental: Experimental = {
 	bosses: Toggle.OFF,
 
 	superbossRetry: Toggle.OFF,
+	advancedLogic: Toggle.OFF,
 };
