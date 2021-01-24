@@ -11,6 +11,7 @@
 		"copy-to-clipboard": "^3.3.1",
 		"downloadjs": "^1.4.7",
 		"firebase": "^8.2.4",
+		"kh2fm-randomizer": "file:lib\\kh2fm-randomizer",
 		"lodash": "^4.17.20",
 		"query-string": "^6.13.8",
 		"react": "^17.0.1",
@@ -42,7 +43,8 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d build",
+		"refresh-lib": "npm uninstall kh2fm-randomizer && npm i ./lib/kh2fm-randomizer"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
