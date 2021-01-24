@@ -1,9 +1,9 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"outDir": "build/dist",
-		"module": "esnext",
-		"target": "es5",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
 		"lib": ["es6", "dom", "esnext.asynciterable"],
 		"sourceMap": true,
 		"allowJs": true,
@@ -24,16 +24,17 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
-		"downlevelIteration": true
-	},
-	"exclude": [
-		"node_modules",
-		"build",
-		"scripts",
-		"acceptance-tests",
-		"webpack",
-		"jest",
-		"src/setupTests.ts"
-	],
+    "downlevelIteration": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ],
 	"include": ["src"]
 }
