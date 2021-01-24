@@ -1,7 +1,7 @@
 export { bosses, enemies, enemiesMap, enemyLocations } from "./enemyLocations";
 export { createLine } from "./helpers/createLine";
 export { createPnach } from "./helpers/createPnach";
-export { useSeed } from "./logic/useSeed";
+export { createSeed } from "./logic/createSeed";
 export * as patches from "./patches";
 export type { Configuration } from "./types/configuration/Configuration";
 export {
