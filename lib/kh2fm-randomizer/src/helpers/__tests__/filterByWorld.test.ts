@@ -1,82 +1,108 @@
 import { GameMode, RandomizingAction } from "../../types/configuration/enums";
 import { defaultWorlds } from "../../types/configuration/Worlds";
 import { LocationName } from "../../types/LocationName";
-import { filterByWorld } from "../filterByWorld";
+import { filterByWorld, worlds } from "../filterByWorld";
 
 describe("filterByWorld", () => {
-	const mockConfiguration: any = {
-		gameMode: { mode: GameMode.GOA_MOD },
-		worlds: { ...defaultWorlds, atlantica: RandomizingAction.RANDOMIZE },
-	};
-	const mockRewardLocations: any[] = [
-		{ location: LocationName.AGRABAH },
-		{ location: LocationName.ATLANTICA },
-		{ location: LocationName.BEASTS_CASTLE },
-		{ location: LocationName.DISNEY_CASTLE },
-		{ location: LocationName.HALLOWEEN_TOWN },
-		{ location: LocationName.HOLLOW_BASTION },
-		{ location: LocationName.CAVERN_OF_REMEMBRANCE },
-		{ location: LocationName.LAND_OF_DRAGONS },
-		{ location: LocationName.OLYMPUS },
-		{ location: LocationName.POOH },
-		{ location: LocationName.PORT_ROYAL },
-		{ location: LocationName.PRIDE_LANDS },
-		{ location: LocationName.SIMULATED_TWILIGHT_TOWN },
-		{ location: LocationName.SPACE_PARANOIDS },
-		{ location: LocationName.TIMELESS_RIVER },
-		{ location: LocationName.TWILIGHT_TOWN },
-		{ location: LocationName.TWTNW },
-	];
-	const mockRewardLocationsGameMode: any = mockRewardLocations.map(
-		({ location }) => ({
+	test("doesn't remove if set to Randomize", () => {
+		const mockConfiguration: any = {
+			gameMode: { mode: GameMode.GOA_MOD },
+			worlds: { ...defaultWorlds, atlantica: RandomizingAction.RANDOMIZE },
+		};
+		const mockRewardLocations: any[] = worlds.map(([, location]) => ({
+			location,
+		}));
+		const mockRewardLocationsGameMode: any[] = worlds.map(([, location]) => ({
 			gameMode: {
 				[mockConfiguration.gameMode.mode]: {
 					world: location,
 				},
 			},
-		})
-	);
+		}));
 
-	test("doesn't remove if set to Randomize", () => {
-		expect(
-			mockRewardLocations.filter(filterByWorld(mockConfiguration))
-		).toHaveLength(mockRewardLocations.length);
-		expect(
-			mockRewardLocationsGameMode.filter(filterByWorld(mockConfiguration))
-		).toHaveLength(mockRewardLocationsGameMode.length);
+		const result = mockRewardLocations.filter(filterByWorld(mockConfiguration));
+		expect(result).toHaveLength(mockRewardLocations.length);
+
+		const resultWithGameMode = mockRewardLocationsGameMode.filter(
+			filterByWorld(mockConfiguration)
+		);
+		expect(resultWithGameMode).toHaveLength(mockRewardLocationsGameMode.length);
 	});
 
-	const worlds = [
-		["agrabah", LocationName.AGRABAH],
-		["simulatedTwilightTown", LocationName.SIMULATED_TWILIGHT_TOWN],
-		["twilightTown", LocationName.TWILIGHT_TOWN],
-		["hollowBastion", LocationName.HOLLOW_BASTION],
-		["cavernOfRemembrance", LocationName.CAVERN_OF_REMEMBRANCE],
-		["beastsCastle", LocationName.BEASTS_CASTLE],
-		["olympus", LocationName.OLYMPUS],
-		["landOfDragons", LocationName.LAND_OF_DRAGONS],
-		["pooh", LocationName.POOH],
-		["atlantica", LocationName.ATLANTICA],
-		["prideLands", LocationName.PRIDE_LANDS],
-		["disneyCastle", LocationName.DISNEY_CASTLE],
-		["timelessRiver", LocationName.TIMELESS_RIVER],
-		["halloweenTown", LocationName.HALLOWEEN_TOWN],
-		["portRoyal", LocationName.PORT_ROYAL],
-		["spaceParanoids", LocationName.SPACE_PARANOIDS],
-		["twtnw", LocationName.TWTNW],
-	];
-	const cases = worlds.map(([name, location]) => ({
-		configuration: {
+	const cases = worlds.map(([name, location]) => {
+		const configuration = {
 			worlds: {
 				[name]: RandomizingAction.REPLACE,
 			},
-		},
-		locations: [{ location }],
-	}));
+		};
+		const locations = [{ location }];
+
+		return [location, locations, configuration];
+	});
 	test.each(cases)(
-		"test",
-		({ locations, configuration }: { locations: any; configuration: any }) => {
-			expect(locations.filter(filterByWorld(configuration)));
+		"removes %s if not set to Randomize",
+		(name, locations: any, configuration: any) => {
+			const result = locations.filter(filterByWorld(configuration));
+			expect(result).toHaveLength(0);
 		}
 	);
+
+	test("removes if world doesn't match", () => {
+		const mockRewardLocations: any[] = [
+			{ location: "The World That Never Matches" },
+		];
+
+		const result = mockRewardLocations.filter(filterByWorld({} as any));
+		expect(result).toHaveLength(0);
+	});
+
+	describe("works with custom reject callback", () => {
+		test("rejects if world is set to Replace", () => {
+			const rejectCallback = (world: RandomizingAction) =>
+				world === RandomizingAction.REPLACE;
+			const mockConfiguration: any = {
+				worlds: {
+					agrabah: RandomizingAction.VANILLA,
+					atlantica: RandomizingAction.REPLACE,
+					pooh: RandomizingAction.RANDOMIZE,
+				},
+			};
+			const mockRewardLocations: any[] = [
+				{ location: LocationName.AGRABAH },
+				{ location: LocationName.ATLANTICA },
+				{ location: LocationName.POOH },
+			];
+
+			const result = mockRewardLocations.filter(
+				filterByWorld(mockConfiguration, rejectCallback)
+			);
+			expect(result).toContain(mockRewardLocations[0]);
+			expect(result).not.toContain(mockRewardLocations[1]);
+			expect(result).toContain(mockRewardLocations[2]);
+		});
+
+		test("rejects if world is not set to Vanilla", () => {
+			const rejectCallback = (world: RandomizingAction) =>
+				world !== RandomizingAction.VANILLA;
+			const mockConfiguration: any = {
+				worlds: {
+					agrabah: RandomizingAction.VANILLA,
+					atlantica: RandomizingAction.REPLACE,
+					pooh: RandomizingAction.RANDOMIZE,
+				},
+			};
+			const mockRewardLocations: any[] = [
+				{ location: LocationName.AGRABAH },
+				{ location: LocationName.ATLANTICA },
+				{ location: LocationName.POOH },
+			];
+
+			const result = mockRewardLocations.filter(
+				filterByWorld(mockConfiguration, rejectCallback)
+			);
+			expect(result).toContain(mockRewardLocations[0]);
+			expect(result).not.toContain(mockRewardLocations[1]);
+			expect(result).not.toContain(mockRewardLocations[2]);
+		});
+	});
 });
