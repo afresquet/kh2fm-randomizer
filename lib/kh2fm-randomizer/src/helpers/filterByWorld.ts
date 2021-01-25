@@ -3,15 +3,21 @@ import { RandomizingAction } from "../types/configuration/enums";
 import { LocationName } from "../types/LocationName";
 import { RewardLocation } from "../types/RewardLocation";
 
+const defaultRejectCallback = (world: RandomizingAction) =>
+	world !== RandomizingAction.RANDOMIZE;
+
+/**
+ * @description Returns a filter function for arrays of RewardLocations, which filters them by world based off the rejectCallback that is passed, by default it rejects if it's not set to Randomize.
+ */
 export const filterByWorld = (
 	configuration: Configuration,
-	rejectCallback: (world: RandomizingAction) => boolean = world =>
-		world !== RandomizingAction.RANDOMIZE
+	rejectCallback = defaultRejectCallback
 ) => (location: RewardLocation): boolean => {
-	switch (
+	const world =
 		location.gameMode?.[configuration.gameMode.mode]?.world ||
-		location.location
-	) {
+		location.location;
+
+	switch (world) {
 		case LocationName.AGRABAH: {
 			if (rejectCallback(configuration.worlds.agrabah)) return false;
 
