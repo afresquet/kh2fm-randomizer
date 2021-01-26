@@ -43,21 +43,13 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(shorterDay5);
 	}
 
-	if (configuration.gameMode.goa.fasterOogie === Toggle.ON) {
-		patches.push(fasterOogie);
-	}
+	patches.push(fasterOogie({ seed, configuration }));
 
-	if (configuration.gameMode.goa.fasterPresents === Toggle.ON) {
-		patches.push(fasterPresents);
-	}
+	patches.push(fasterPresents({ seed, configuration }));
 
-	if (configuration.gameMode.goa.earlyLionDash === Toggle.ON) {
-		patches.push(earlyLionDash);
-	}
+	patches.push(earlyLionDash({ seed, configuration }));
 
-	if (configuration.gameMode.goa.fastHyenasTwo === Toggle.ON) {
-		patches.push(fastHyenasTwo);
-	}
+	patches.push(fastHyenasTwo({ seed, configuration }));
 
 	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {
 		patches.push(skipDragon);
