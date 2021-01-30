@@ -1,5 +1,5 @@
 {
-	"name": "kh2fm-randomizer",
+	"name": "kh2fm-randomizer-website",
 	"version": "0.4.2",
 	"private": true,
 	"homepage": "https://randomizer.valaxor.com",
@@ -11,7 +11,7 @@
 		"copy-to-clipboard": "^3.3.1",
 		"downloadjs": "^1.4.7",
 		"firebase": "^8.2.4",
-		"kh2fm-randomizer": "file:lib\\kh2fm-randomizer",
+		"kh2fm-randomizer": "file:lib/kh2fm-randomizer",
 		"lodash": "^4.17.20",
 		"query-string": "^6.13.8",
 		"react": "^17.0.1",
