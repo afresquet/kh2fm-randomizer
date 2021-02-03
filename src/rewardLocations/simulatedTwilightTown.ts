@@ -1,8 +1,8 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { replaceableRewardTypes } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { GameMode } from "../types/configuration/enums";
+import { LocationName } from "../types/LocationName";
+import { replaceableRewardTypes } from "../types/Reward";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 export const simulatedTwilightTownRewardLocations: RewardLocation[] = [
 	{

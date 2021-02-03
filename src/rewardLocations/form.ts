@@ -1,8 +1,8 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { RewardType } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { GameMode } from "../types/configuration/enums";
+import { LocationName } from "../types/LocationName";
+import { RewardType } from "../types/Reward";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 const excludeType: RewardType[] = [RewardType.FORM, RewardType.TORN_PAGES];
 

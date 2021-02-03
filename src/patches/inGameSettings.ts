@@ -1,6 +1,6 @@
 import { createLine } from "../helpers/createLine";
-import { Configuration } from "../settings/Configuration";
-import { Toggle } from "../settings/enums";
+import { Configuration } from "../types/configuration/Configuration";
+import { Toggle } from "../types/configuration/enums";
 
 export const inGameSettings = (configuration: Configuration): string => {
 	let left = 4;

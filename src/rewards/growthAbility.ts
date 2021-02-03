@@ -1,4 +1,4 @@
-import { RewardType } from "./Reward";
+import { RewardType } from "../types/Reward";
 
 export const growthAbilityRewards = {
 	HIGH_JUMP_ONE: {
