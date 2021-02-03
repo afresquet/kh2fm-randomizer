@@ -1,7 +1,7 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { GameMode } from "../types/configuration/enums";
+import { LocationName } from "../types/LocationName";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 export const absentSilhouettesRewardLocations: RewardLocation[] = [
 	{

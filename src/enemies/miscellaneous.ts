@@ -1,4 +1,4 @@
-import { EnemyType } from "./Enemy";
+import { EnemyType } from "../types/Enemy";
 
 export const miscellaneous = {
 	DEMYX_WATER_CLONE: {

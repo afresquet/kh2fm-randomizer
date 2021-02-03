@@ -1,6 +1,6 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { LocationName } from "../types/LocationName";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 export const donaldRewardLocations: RewardLocation[] = [
 	{

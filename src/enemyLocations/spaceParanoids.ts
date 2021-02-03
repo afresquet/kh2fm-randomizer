@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 	{

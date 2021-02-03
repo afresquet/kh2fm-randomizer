@@ -1,15 +1,12 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"outDir": "build/dist",
-		"module": "esnext",
-		"target": "es5",
-		"lib": ["es6", "dom", "esnext.asynciterable"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "declaration": true,
+		"outDir": "./dist",
 		"sourceMap": true,
-		"allowJs": true,
-		"jsx": "react",
 		"moduleResolution": "node",
-		"rootDir": "src",
+		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
@@ -20,20 +17,11 @@
 		"skipLibCheck": true,
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"strict": true,
 		"resolveJsonModule": true,
 		"isolatedModules": true,
-		"noEmit": true,
-		"downlevelIteration": true
-	},
-	"exclude": [
-		"node_modules",
-		"build",
-		"scripts",
-		"acceptance-tests",
-		"webpack",
-		"jest",
-		"src/setupTests.ts"
-	],
-	"include": ["src"]
+    "downlevelIteration": true,
+		"noFallthroughCasesInSwitch": true,
+  },
+	"include": ["src", "src/__tests__/index.test.ts", "src/index.ts"],
+	"exclude": ["node_modules", "src/**/*.test.ts", "dist"]
 }

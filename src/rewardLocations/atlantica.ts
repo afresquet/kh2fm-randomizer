@@ -1,9 +1,9 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
-import { Reward } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { GameMode } from "../types/configuration/enums";
+import { LocationName } from "../types/LocationName";
+import { Reward } from "../types/Reward";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 const exclude: Reward[] = [
 	...Object.values(formRewards),

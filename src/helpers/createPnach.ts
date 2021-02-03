@@ -1,4 +1,4 @@
-import { Enemy, EnemyType } from "../enemies/Enemy";
+import { Configuration, Seed } from "..";
 import { bosses, enemies, enemiesMap } from "../enemyLocations";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
@@ -22,14 +22,13 @@ import { shorterDay5 } from "../patches/shorterDay5";
 import { skipDragon } from "../patches/skipDragon";
 import { startingAP } from "../patches/startingAP";
 import { superbossRetry } from "../patches/superbossRetry";
-import { Seed } from "../seed/Seed";
-import { Configuration } from "../settings/Configuration";
 import {
 	Leveling,
 	Multiplier,
 	RandomizingAction,
 	Toggle,
-} from "../settings/enums";
+} from "../types/configuration/enums";
+import { Enemy, EnemyType } from "../types/Enemy";
 import { createLine } from "./createLine";
 import { shuffle } from "./shuffle";
 
@@ -44,21 +43,13 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(shorterDay5);
 	}
 
-	if (configuration.gameMode.goa.fasterOogie === Toggle.ON) {
-		patches.push(fasterOogie);
-	}
+	patches.push(fasterOogie({ seed, configuration }));
 
-	if (configuration.gameMode.goa.fasterPresents === Toggle.ON) {
-		patches.push(fasterPresents);
-	}
+	patches.push(fasterPresents({ seed, configuration }));
 
-	if (configuration.gameMode.goa.earlyLionDash === Toggle.ON) {
-		patches.push(earlyLionDash);
-	}
+	patches.push(earlyLionDash({ seed, configuration }));
 
-	if (configuration.gameMode.goa.fastHyenasTwo === Toggle.ON) {
-		patches.push(fastHyenasTwo);
-	}
+	patches.push(fastHyenasTwo({ seed, configuration }));
 
 	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {
 		patches.push(skipDragon);
