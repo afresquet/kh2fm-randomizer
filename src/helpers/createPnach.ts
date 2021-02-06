@@ -2,7 +2,7 @@ import { Configuration, Seed } from "..";
 import { bosses, enemies, enemiesMap } from "../enemyLocations";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
-import { fasterTwilightThorn } from "../patches/fasterTwilightThorn"
+import { fasterTwilightThorn } from "../patches/fasterTwilightThorn";
 import { fasterOogie } from "../patches/fasterOogie";
 import { fasterPresents } from "../patches/fasterPresents";
 import { fastHyenasTwo } from "../patches/fastHyenasTwo";
@@ -47,7 +47,9 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(shorterDay5);
 	}
 
-	patches.push(fasterTwilightThorn({ seed, configuration}));
+	if (configuration.gameMod.goa.fasterTwilightThorn === Toggle.ON) {
+		patches.push(fasterTwilightThorn);
+	}
 
 	patches.push(fasterOogie({ seed, configuration }));
 
@@ -57,11 +59,17 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	patches.push(fastHyenasTwo({ seed, configuration }));
 
-	patches.push(fasterMCP({ seed, configuration}));
+	if (configuration.gameMod.goa.fasterMCP === Toggle.ON) {
+		patches.push(fasterMCP);
+	}
 
-	patches.push(fasterABlusteryRescue({ seed, configuration}));
+	if (configuration.gameMod.goa.fasterABlusteryRescue === Toggle.ON) {
+		patches.push(fasterABlusteryRescue);
+	}
 
-	patches.push(fasterHunnySlider({ seed, configuration}));
+	if (configuration.gameMod.goa.fasterHunnySlider === Toggle.ON) {
+		patches.push(fasterHunnySlider);
+	}
 
 	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {
 		patches.push(skipDragon);

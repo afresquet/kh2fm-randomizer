@@ -114,8 +114,9 @@ patch=1,EE,E1030007,extended,2032EF06
 patch=1,EE,1036E5CE,extended,00000000
 patch=1,EE,1032EF0C,extended,0000806C
 patch=1,EE,1032EF1E,extended,00000000
+`;
 
-
+export const removeMaxGrowthAbilities = `
 //Remove High Jump MAX 1
 patch=1,EE,E1010006,extended,0032EE26
 patch=1,EE,1036E5A8,extended,00000061
