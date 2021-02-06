@@ -31,8 +31,8 @@ import {
 	Multiplier,
 	RandomizingAction,
 	Toggle,
-} from "../types/configuration/enums";
-import { Enemy, EnemyType } from "../types/Enemy";
+} from "../settings/enums";
+import { Enemy, EnemyType } from "../enemies";
 import { createLine } from "./createLine";
 import { shuffle } from "./shuffle";
 
