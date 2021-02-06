@@ -1,4 +1,4 @@
-export const fasterABlusteryRescue = `
+export const fasterHunnySlider = `
 //Faster Hunny Slider 1
 patch=1,EE,E0040709,extended,0032BAE0
 patch=1,EE,E0030039,extended,0032BAE8

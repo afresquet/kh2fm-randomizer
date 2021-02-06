@@ -2,9 +2,13 @@ import { Configuration, Seed } from "..";
 import { bosses, enemies, enemiesMap } from "../enemyLocations";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
+import { fasterTwilightThorn } from "../patches/fasterTwilightThorn";
 import { fasterOogie } from "../patches/fasterOogie";
 import { fasterPresents } from "../patches/fasterPresents";
 import { fastHyenasTwo } from "../patches/fastHyenasTwo";
+import { fasterMCP } from "../patches/fasterMCP";
+import { fasterABlusteryRescue } from "../patches/fasterABlusteryRescue";
+import { fasterHunnySlider } from "../patches/fasterHunnySlider";
 import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
@@ -43,6 +47,8 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(shorterDay5);
 	}
 
+	patches.push(fasterTwilightThorn({ seed, configuration }));
+
 	patches.push(fasterOogie({ seed, configuration }));
 
 	patches.push(fasterPresents({ seed, configuration }));
@@ -50,6 +56,12 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 	patches.push(earlyLionDash({ seed, configuration }));
 
 	patches.push(fastHyenasTwo({ seed, configuration }));
+
+	patches.push(fasterMCP({ seed, configuration }));
+
+	patches.push(fasterABlusteryRescue({ seed, configuration }));
+
+	patches.push(fasterHunnySlider({ seed, configuration }));
 
 	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {
 		patches.push(skipDragon);
