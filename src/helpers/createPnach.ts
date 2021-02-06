@@ -31,8 +31,8 @@ import {
 	Multiplier,
 	RandomizingAction,
 	Toggle,
-} from "../settings/enums";
-import { Enemy, EnemyType } from "../enemies";
+} from "../types/configuration/enums";
+import { Enemy, EnemyType } from "../types/Enemy";
 import { createLine } from "./createLine";
 import { shuffle } from "./shuffle";
 
@@ -47,7 +47,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(shorterDay5);
 	}
 
-	if (configuration.gameMod.goa.fasterTwilightThorn === Toggle.ON) {
+	if (configuration.gameMode.goa.fasterTwilightThorn === Toggle.ON) {
 		patches.push(fasterTwilightThorn);
 	}
 
@@ -59,15 +59,15 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	patches.push(fastHyenasTwo({ seed, configuration }));
 
-	if (configuration.gameMod.goa.fasterMCP === Toggle.ON) {
+	if (configuration.gameMode.goa.fasterMCP === Toggle.ON) {
 		patches.push(fasterMCP);
 	}
 
-	if (configuration.gameMod.goa.fasterABlusteryRescue === Toggle.ON) {
+	if (configuration.gameMode.goa.fasterABlusteryRescue === Toggle.ON) {
 		patches.push(fasterABlusteryRescue);
 	}
 
-	if (configuration.gameMod.goa.fasterHunnySlider === Toggle.ON) {
+	if (configuration.gameMode.goa.fasterHunnySlider === Toggle.ON) {
 		patches.push(fasterHunnySlider);
 	}
 

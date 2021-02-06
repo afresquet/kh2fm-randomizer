@@ -1,10 +1,10 @@
-import { Enemy, EnemyType } from "../enemies/Enemy";
+import { Enemy, EnemyType } from "../types/Enemy";
+import { EnemyLocation } from "../types/EnemyLocation";
 import { absentSilhouettesEnemyLocations } from "./absentSilhouettes";
 import { agrabahEnemyLocations } from "./agrabah";
 import { beastsCastleEnemyLocations } from "./beastsCastle";
 import { cavernOfRemembranceEnemyLocations } from "./cavernOfRemembrance";
 import { disneyCastleEnemyLocations } from "./disneyCastle";
-import { EnemyLocation } from "./EnemyLocation";
 import { halloweenTownEnemyLocations } from "./halloweenTown";
 import { hollowBastionEnemyLocations } from "./hollowBastion";
 import { landOfDragonsEnemyLocations } from "./landOfDragons";

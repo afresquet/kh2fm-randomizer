@@ -1,3 +1,6 @@
+/**
+ * @description Creates a cheat code string.
+ */
 export const createLine = (
 	address: string,
 	digit: string,

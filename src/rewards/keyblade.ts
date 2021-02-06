@@ -1,4 +1,4 @@
-import { RewardType } from "./Reward";
+import { RewardType } from "../types/Reward";
 
 export const keybladeRewards = {
 	KINGDOM_KEY: {

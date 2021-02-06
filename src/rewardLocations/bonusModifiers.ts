@@ -1,7 +1,7 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { Reward } from "../rewards/Reward";
-import { RewardLocationType } from "./RewardLocation";
+import { LocationName } from "../types/LocationName";
+import { Reward } from "../types/Reward";
+import { RewardLocationType } from "../types/RewardLocation";
 
 export const bonusModifiersRewardLocations: {
 	type: RewardLocationType;

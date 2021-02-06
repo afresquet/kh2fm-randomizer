@@ -1,5 +1,5 @@
 import { Rewards } from "../rewards";
-import { Reward } from "../rewards/Reward";
+import { Reward } from "../types/Reward";
 
 export interface Level {
 	level: number;

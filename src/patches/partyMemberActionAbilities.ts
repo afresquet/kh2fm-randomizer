@@ -1,9 +1,9 @@
-import { RewardLocationType } from "../rewardLocations/RewardLocation";
 import { Rewards } from "../rewards";
-import { Reward } from "../rewards/Reward";
 import { shieldRewards } from "../rewards/shield";
 import { staffRewards } from "../rewards/staff";
-import { Seed } from "../seed/Seed";
+import { Reward } from "../types/Reward";
+import { RewardLocationType } from "../types/RewardLocation";
+import { Seed } from "../types/Seed";
 
 const abilities = {
 	[Rewards.DONALD_FIRE.name]: {
