@@ -1,14 +1,10 @@
-import { Enemy, EnemyType } from "../enemies/Enemy";
+import { Configuration, Seed } from "..";
 import { bosses, enemies, enemiesMap } from "../enemyLocations";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
-import { fasterTwilightThorn } from "../patches/fasterTwilightThorn";
 import { fasterOogie } from "../patches/fasterOogie";
 import { fasterPresents } from "../patches/fasterPresents";
 import { fastHyenasTwo } from "../patches/fastHyenasTwo";
-import { fasterMCP } from "../patches/fasterMCP";
-import { fasterABlusteryRescue } from "../patches/fasterABlusteryRescue";
-import { fasterHunnySlider } from "../patches/fasterHunnySlider";
 import { formEXPPatch } from "../patches/formEXP";
 import {
 	formKeybladesAbilities,
@@ -26,14 +22,13 @@ import { shorterDay5 } from "../patches/shorterDay5";
 import { skipDragon } from "../patches/skipDragon";
 import { startingAP } from "../patches/startingAP";
 import { superbossRetry } from "../patches/superbossRetry";
-import { Seed } from "../seed/Seed";
-import { Configuration } from "../settings/Configuration";
 import {
 	Leveling,
 	Multiplier,
 	RandomizingAction,
 	Toggle,
-} from "../settings/enums";
+} from "../types/configuration/enums";
+import { Enemy, EnemyType } from "../types/Enemy";
 import { createLine } from "./createLine";
 import { shuffle } from "./shuffle";
 
@@ -48,37 +43,13 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 		patches.push(shorterDay5);
 	}
 
-	if (configuration.gameMode.goa.fasterTwilightThorn === Toggle.ON) {
-		patches.push(fasterTwilightThorn);
-	}
+	patches.push(fasterOogie({ seed, configuration }));
 
-	if (configuration.gameMode.goa.fasterOogie === Toggle.ON) {
-		patches.push(fasterOogie);
-	}
+	patches.push(fasterPresents({ seed, configuration }));
 
-	if (configuration.gameMode.goa.fasterPresents === Toggle.ON) {
-		patches.push(fasterPresents);
-	}
+	patches.push(earlyLionDash({ seed, configuration }));
 
-	if (configuration.gameMode.goa.earlyLionDash === Toggle.ON) {
-		patches.push(earlyLionDash);
-	}
-
-	if (configuration.gameMode.goa.fastHyenasTwo === Toggle.ON) {
-		patches.push(fastHyenasTwo);
-	}
-
-	if (configuration.gameMode.goa.fasterMCP === Toggle.ON) {
-		patches.push(fasterMCP);
-	}
-
-	if (configuration.gameMode.goa.fasterABlusteryRescue === Toggle.ON) {
-		patches.push(fasterABlusteryRescue);
-	}
-
-	if (configuration.gameMode.goa.fasterHunnySlider === Toggle.ON) {
-		patches.push(fasterHunnySlider);
-	}
+	patches.push(fastHyenasTwo({ seed, configuration }));
 
 	if (configuration.gameMode.goa.skipDragon === Toggle.ON) {
 		patches.push(skipDragon);
