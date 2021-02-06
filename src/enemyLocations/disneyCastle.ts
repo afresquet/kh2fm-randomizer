@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const disneyCastleEnemyLocations: EnemyLocation[] = [
 	{
@@ -9,7 +9,7 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		description: "Escort Queen Minnie Part I",
 		world: "0C",
 		room: "02",
-		eventGroup: ["02","02","01"],
+		event: "02",
 		enemies: [
 			{
 				enemy: Enemies.SHADOW,
@@ -218,23 +218,7 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.DISNEY_CASTLE,
 		description: "Lingering Will Boss Fight",
-		maxSize: 4443212, // Larxene
-		world: "0C",
-		room: "07",
-		event: "43",
-		enemies: [
-			{
-				enemy: Enemies.LINGERING_WILL,
-				value: "11C556E0",
-			},
-		],
-	},
-	{
-		type: EnemyLocationType.BOSS_FIGHT,
-		location: LocationName.DISNEY_CASTLE,
-		description: "Lingering Will Boss Fight",
-		maxSize: 4443212, // Larxene
-		world: "0C",
+		world: "0A",
 		room: "07",
 		event: "49",
 		enemies: [
