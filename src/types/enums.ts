@@ -1,29 +1,29 @@
 export enum GameMode {
-	BASE_GAME = "Base Game",
-	GOA_MOD = "Garden of Assemblage Mod",
+	BASE_GAME = "BASE_GAME",
+	GOA_MOD = "GOA_MOD",
 }
 
 export enum Leveling {
-	LEVEL_ONE,
-	LEVEL_FIFTY,
-	LEVEL_NINETY_NINE,
+	LEVEL_ONE = "LEVEL_ONE",
+	LEVEL_FIFTY = "LEVEL_FIFTY",
+	LEVEL_NINETY_NINE = "LEVEL_NINETY_NINE",
 }
 
 export enum RandomizingAction {
-	VANILLA,
-	REPLACE,
-	RANDOMIZE,
+	VANILLA = "VANILLA",
+	REPLACE = "REPLACE",
+	RANDOMIZE = "RANDOMIZE",
 }
 
 export enum Toggle {
-	OFF,
-	ON,
+	OFF = "OFF",
+	ON = "ON",
 }
 
 export enum Multiplier {
-	ONE,
-	TWO,
-	THREE,
-	FOUR,
-	FIVE,
+	ONE = "ONE",
+	TWO = "TWO",
+	THREE = "THREE",
+	FOUR = "FOUR",
+	FIVE = "FIVE",
 }

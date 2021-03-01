@@ -3,6 +3,13 @@ import { formEXP } from "../miscellaneous/formEXP";
 import { Configuration } from "../types/configuration/Configuration";
 import { Multiplier } from "../types/enums";
 
+const values = {
+	[Multiplier.TWO]: 2,
+	[Multiplier.THREE]: 3,
+	[Multiplier.FOUR]: 4,
+	[Multiplier.FIVE]: 5,
+};
+
 export const formEXPPatch = (configuration: Configuration): string => {
 	const codes: string[] = [];
 
@@ -15,7 +22,7 @@ export const formEXPPatch = (configuration: Configuration): string => {
 	] as const) {
 		if (setting !== Multiplier.ONE) {
 			for (const level of levels) {
-				const exp = Math.ceil(level.required / (setting + 1));
+				const exp = Math.ceil(level.required / (values[setting] + 1));
 
 				codes.push(createLine(level.value, exp.toString(16)));
 			}

@@ -3,7 +3,12 @@ import { levels } from "../rewardLocations/levels";
 import { Configuration } from "../types/configuration/Configuration";
 import { Multiplier } from "../types/enums";
 
-const dividers = [1, 1.5, 2, 3, 5];
+const dividers = {
+	[Multiplier.TWO]: 1.5,
+	[Multiplier.THREE]: 2,
+	[Multiplier.FOUR]: 3,
+	[Multiplier.FIVE]: 5,
+};
 
 export function* expMultiplier(
 	configuration: Configuration
