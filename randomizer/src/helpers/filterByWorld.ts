@@ -30,19 +30,18 @@ const defaultRejectCallback = (world: RandomizingAction) =>
 /**
  * @description Returns a filter function for arrays of RewardLocations, which filters them by world based off the rejectCallback that is passed, by default it rejects if it's not set to Randomize.
  */
-export const filterByWorld = (
-	configuration: Configuration,
-	rejectCallback = defaultRejectCallback
-) => (location: RewardLocation): boolean => {
-	const world =
-		location.gameMode?.[configuration.gameMode.mode]?.world ||
-		location.location;
+export const filterByWorld =
+	(configuration: Configuration, rejectCallback = defaultRejectCallback) =>
+	(location: RewardLocation): boolean => {
+		const world =
+			location.gameMode?.[configuration.gameMode.mode]?.world ||
+			location.location;
 
-	for (const [worldName, locationName] of worlds) {
-		if (world === locationName) {
-			return !rejectCallback(configuration.worlds[worldName]);
+		for (const [worldName, locationName] of worlds) {
+			if (world === locationName) {
+				return !rejectCallback(configuration.worlds[worldName]);
+			}
 		}
-	}
 
-	return false;
-};
+		return false;
+	};

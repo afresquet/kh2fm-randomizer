@@ -1,0 +1,23 @@
+{
+	"name": "kh2fm-randomizer",
+	"version": "1.0.0",
+	"description": "KH2FM Randomizer Seed Generator",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "jest --watch"
+	},
+	"author": "Alvaro Fresquet",
+	"license": "MIT",
+	"dependencies": {
+		"@types/seedrandom": "^3.0.2",
+		"seedrandom": "^3.0.5"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.4.1",
+		"jest": "^27.5.1",
+		"ts-jest": "^27.1.4",
+		"typescript": "^4.6.3"
+	}
+}
