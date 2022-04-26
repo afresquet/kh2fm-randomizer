@@ -1,5 +1,5 @@
 import { Divider, Typography } from "antd";
-import { bosses, Experimental } from "kh2fm-randomizer";
+import { Experimental } from "kh2fm-randomizer";
 import { useContext } from "react";
 import { SeedContext } from "../../context/seed";
 import { useValueMapper } from "../../hooks/useValueMapper";
@@ -10,10 +10,6 @@ interface Setting extends SettingSliderProps {
 }
 
 export const experimentalSettings: Setting[] = [
-	{
-		key: "bosses",
-		title: "Randomize Bosses",
-	},
 	{
 		key: "superbossRetry",
 		help: "After dying, hold L2+R2+Select while pressing on Continue to load back into the fight",
@@ -60,18 +56,6 @@ export const TabPaneExperimental: React.FC = () => {
 						{...props}
 					/>
 				))}
-			</div>
-
-			<Divider />
-
-			<div>
-				<Typography>Current boss fights in the pool:</Typography>
-
-				<ul>
-					{bosses.map(boss => (
-						<li key={boss.description}>{boss.description}</li>
-					))}
-				</ul>
 			</div>
 		</div>
 	);
