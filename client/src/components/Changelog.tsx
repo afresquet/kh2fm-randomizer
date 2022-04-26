@@ -9,7 +9,10 @@ const versions: {
 }[] = [
 	{
 		version: "0.5.0",
-		changes: ["Added lua format as a download option"],
+		changes: [
+			"Added lua format as a download option",
+			"Changed the theme to dark mode",
+		],
 	},
 	{
 		version: "0.4.2",

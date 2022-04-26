@@ -1,5 +1,5 @@
 import { BackTop, Layout } from "antd";
-import "antd/dist/antd.min.css";
+import "antd/dist/antd.dark.min.css";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { About } from "./components/About";
 import { Changelog } from "./components/Changelog";
