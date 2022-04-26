@@ -34,7 +34,7 @@ export const Seed: React.FC = () => {
 				<Tabs
 					activeKey={activeKey}
 					onTabClick={onTabClick}
-					style={{ padding: "0 16px 16px", backgroundColor: "white" }}
+					style={{ padding: "0 16px 16px", backgroundColor: "#1f1f1f" }}
 					tabBarExtraContent={
 						<>
 							<ModalPresets />
