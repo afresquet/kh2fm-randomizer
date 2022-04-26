@@ -33,16 +33,14 @@ export const TabPaneExperimental: React.FC = () => {
 			</p>
 
 			<p>
-				If you encounter bugs or problems please provide feedback about them,
-				feel free to{" "}
-				<Typography.Link href="https://twitter.valaxor.com" target="_blank">
-					tweet at me
-				</Typography.Link>{" "}
-				or{" "}
-				<Typography.Link href="https://discord.gg/GcJR7Fv" target="_blank">
+				If you encounter bugs or problems please{" "}
+				<Typography.Link
+					href="https://discord.com/invite/KH2FMRando"
+					target="_blank"
+				>
 					join the Rando Discord server
-				</Typography.Link>
-				.
+				</Typography.Link>{" "}
+				and provide your feedback.
 			</p>
 
 			<Divider />
