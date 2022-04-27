@@ -73,7 +73,12 @@ export const createFile = (
 		patches.push(removeLevel99Abilities[file]);
 	}
 
-	if (configuration.include.growthAbilities !== RandomizingAction.VANILLA) {
+	if (
+		(file === File.pnach &&
+			configuration.include.growthAbilities !== RandomizingAction.VANILLA) ||
+		(file === File.lua &&
+			configuration.include.growthAbilities === RandomizingAction.VANILLA)
+	) {
 		patches.push(removeGrowthAbilities[file]);
 	}
 
@@ -98,6 +103,10 @@ export const createFile = (
 	patches.push(inGameSettings(configuration, file));
 
 	patches.push(...partyMemberActionAbilities(seed, file));
+
+	patches.push(
+		file === File.pnach ? "// Random rewards" : "\n\t--Random rewards\n"
+	);
 
 	return seed.reduce((result, item, index, array) => {
 		return (

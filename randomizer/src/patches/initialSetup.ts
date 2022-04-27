@@ -20,7 +20,7 @@ function _OnInit()
 		Btl0 = 0x1CE5D80
 	elseif ENGINE_TYPE == 'BACKEND' then
 		Platform = 'PC'
-		Now  = 0x0714DB8 - 0x56450E
+		Now  = 0x0714DB8 - 0x56454E
 		Save = 0x09A7070 - 0x56450E
 		Sys3 = 0x2A59DB0 - 0x56450E
 		Btl0 = 0x2A74840 - 0x56450E

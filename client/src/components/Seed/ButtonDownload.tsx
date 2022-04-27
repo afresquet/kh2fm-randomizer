@@ -49,7 +49,9 @@ export const ButtonDownload: React.FC = () => {
 						<Menu.Item key="FAF99301.pnach">
 							PS2 CrazyCatz's/Sora6645's Rev Final (FAF99301.pnach)
 						</Menu.Item>
-						<Menu.Item key="seed.lua">PC (seed.lua)</Menu.Item>
+						<Menu.Item key={`randomizer (${name}).lua`}>
+							PC (randomizer.lua)
+						</Menu.Item>
 					</Menu>
 				}
 				disabled={!seed}

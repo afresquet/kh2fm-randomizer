@@ -22,21 +22,5 @@ patch=1,EE,0032DE39,extended,0000007D
 patch=1,EE,0032DE3C,extended,00000017
 patch=1,EE,0032DEC4,extended,0000001E
 `,
-	[File.lua]: `
-	--Shorter Day 5
-	if ReadShort(Now+0) == 0x0B02 and ReadShort(Now+8) == 0x0C then
-		WriteShort(Save+0x034C,0x02)
-		WriteShort(Save+0x0350,0x0D)
-		WriteShort(Save+0x0356,0x13)
-		WriteShort(Save+0x0358,0x03)
-		WriteShort(Save+0x035C,0x01)
-		WriteShort(Save+0x03E8,0x03)
-		WriteShort(Save+0x03EC,0x00)
-		WriteByte(Save+0x2394,0x1E)
-		WriteShort(Save+0x2110,0x00)
-		WriteByte(Save+0x1CDD,ReadByte(Save+0x1CDD)|0xC0)
-		WriteByte(Save+0x1CDE,ReadByte(Save+0x1CDE)|0x07)
-		WriteByte(Save+0x1CEF,ReadByte(Save+0x1CEF)|0x80)
-	end
-`,
+	[File.lua]: "",
 };

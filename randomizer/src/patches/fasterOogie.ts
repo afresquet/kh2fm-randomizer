@@ -25,18 +25,5 @@ patch=1,EE,E0020037,extended,0032BAE8
 patch=1,EE,E0010173,extended,01C6C4EC
 patch=1,EE,11C6C4F0,extended,00000000
 `,
-	[File.lua]: `
-	--Oogie Boogie HP Barrier Removal
-	if ReadShort(Now+0) == 0x090E and ReadShort(Now+8) == 0x37 then
-		if Platform == 'PS2' then
-			WriteInt(0x1C6C4F0,0)
-			WriteInt(0x1C6C288,0)
-			WriteInt(0x1C6C020,0)
-		elseif Platform == 'PC' then
-			WriteInt(0x2A209E8-0x56450E,0)
-			WriteInt(0x2A20770-0x56450E,0)
-			WriteInt(0x2A204F8-0x56450E,0)
-		end
-	end
-`,
+	[File.lua]: "",
 };

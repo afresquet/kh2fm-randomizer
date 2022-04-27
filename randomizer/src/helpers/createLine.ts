@@ -1,9 +1,9 @@
 import { File } from "../types/File";
 
 const files: [string, number, number][] = [
-	["Save", 0x032bb30, 0x10fc0],
-	["Sys3", 0x1ccb300, 0x1aa68],
-	["Btl0", 0x1ce5d80, 0x354d0],
+	["Save", 0x032bb30, 0x10fc0], // Save file
+	["Sys3", 0x1ccb300, 0x1aa68], // 03system.bin
+	["Btl0", 0x1ce5d80, 0x354d0], // 00battle.bin
 ];
 
 function offsetLocation(location: string): string {

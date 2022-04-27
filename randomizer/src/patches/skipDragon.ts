@@ -12,14 +12,5 @@ patch=1,EE,1032BAE0,extended,00001712
 patch=1,EE,2032BAE4,extended,00540054
 patch=1,EE,1032BAE8,extended,00000054
 `,
-	[File.lua]: `
-	--Skip Dragon Xemnas
-	if ReadShort(Now+0) == 0x1D12 then
-		if Platform == 'PS2' then
-			WriteInt(0x1C4A648,0x5C)
-		elseif Platform == 'PC' then
-			WriteInt(0x29DEAD8-0x56450E,0x5C)
-		end
-	end
-`,
+	[File.lua]: "",
 };
