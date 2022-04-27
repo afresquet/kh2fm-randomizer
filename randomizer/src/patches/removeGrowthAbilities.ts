@@ -116,7 +116,7 @@ patch=1,EE,1032EF1E,extended,00000000
 		.reduce(
 			(acc, location) =>
 				acc + createLine(location.value, location.reward.value, File.lua),
-			""
+			"\t--Set Vanilla Growth Abilities\n"
 		),
 };
 
