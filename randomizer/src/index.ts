@@ -1,6 +1,6 @@
 export { bosses, enemies, enemiesMap, enemyLocations } from "./enemyLocations";
+export { createFile } from "./helpers/createFile";
 export { createLine } from "./helpers/createLine";
-export { createPnach } from "./helpers/createPnach";
 export { createSeed } from "./logic/createSeed";
 export * as patches from "./patches";
 export type { Configuration } from "./types/configuration/Configuration";
@@ -22,4 +22,5 @@ export type { Settings } from "./types/configuration/Settings";
 export { defaultWorlds } from "./types/configuration/Worlds";
 export type { Worlds } from "./types/configuration/Worlds";
 export type { Enemy, EnemyType } from "./types/Enemy";
+export { File } from "./types/File";
 export type { Seed, SeedItem } from "./types/Seed";

@@ -9,13 +9,7 @@ interface Setting extends SettingSliderProps {
 	key: keyof Experimental;
 }
 
-export const experimentalSettings: Setting[] = [
-	{
-		key: "superbossRetry",
-		help: "After dying, hold L2+R2+Select while pressing on Continue to load back into the fight",
-		title: "Retry on Superbosses",
-	},
-];
+export const experimentalSettings: Setting[] = [];
 
 export const TabPaneExperimental: React.FC = () => {
 	const { experimental } = useContext(SeedContext);

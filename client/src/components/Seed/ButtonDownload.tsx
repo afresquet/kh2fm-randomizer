@@ -1,7 +1,7 @@
 import { Button, Dropdown, Menu } from "antd";
 import { MenuProps } from "antd/lib/menu";
 import downloadjs from "downloadjs";
-import { createPnach } from "kh2fm-randomizer";
+import { createFile, File } from "kh2fm-randomizer";
 import { useCallback, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { SeedContext } from "../../context/seed";
@@ -22,7 +22,9 @@ export const ButtonDownload: React.FC = () => {
 
 	const download = useCallback<NonNullable<MenuProps["onClick"]>>(
 		async event => {
-			const pnach = createPnach(seed!, configuration);
+			const file = event.key.endsWith(".pnach") ? File.pnach : File.lua;
+
+			const pnach = createFile(seed!, configuration, file);
 
 			downloadjs(pnach, event.key as string, "application/octet-stream");
 			navigate(urlWithParams);
@@ -39,14 +41,15 @@ export const ButtonDownload: React.FC = () => {
 					<Menu onClick={download}>
 						<Menu.Item disabled>Choose a language patch</Menu.Item>
 						<Menu.Item key="F266B00B.pnach">
-							Xeeynamo's Rev 5/Japanese (F266B00B.pnach)
+							PS2 Xeeynamo's Rev 5/Japanese (F266B00B.pnach)
 						</Menu.Item>
 						<Menu.Item key="B7398B17.pnach">
-							Sora6645's Rev 6 (B7398B17.pnach)
+							PS2 Sora6645's Rev 6 (B7398B17.pnach)
 						</Menu.Item>
 						<Menu.Item key="FAF99301.pnach">
-							CrazyCatz's/Sora6645's Rev Final (FAF99301.pnach)
+							PS2 CrazyCatz's/Sora6645's Rev Final (FAF99301.pnach)
 						</Menu.Item>
+						<Menu.Item key="seed.lua">PC (seed.lua)</Menu.Item>
 					</Menu>
 				}
 				disabled={!seed}
