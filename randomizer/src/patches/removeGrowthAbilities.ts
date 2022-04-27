@@ -173,7 +173,7 @@ patch=1,EE,1032EF1E,extended,00000000
 	elseif WisdmLv == 5 or WisdmLv == 6 then
 		WriteShort(Save+0x3334,0x8064)
 	elseif WisdmLv == 7 then
-		WriteShort(Save+0x3334,0x8065
+		WriteShort(Save+0x3334,0x8065)
 	end
 
 	LimitLv = ReadByte(Save+0x3366)
