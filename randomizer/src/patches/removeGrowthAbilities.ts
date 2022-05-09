@@ -1,4 +1,10 @@
-export const removeGrowthAbilities = `
+import { createLine } from "../helpers/createLine";
+import { formRewardLocations } from "../rewardLocations/form";
+import { File } from "../types/File";
+import { Patch } from "../types/Patch";
+
+export const removeGrowthAbilities: Patch = {
+	[File.pnach]: `
 //Remove High Jump LV1
 patch=1,EE,E0030102,extended,0032EE26
 patch=1,EE,1036E5A2,extended,00000000
@@ -104,9 +110,18 @@ patch=1,EE,E0030105,extended,0032EF06
 patch=1,EE,1036E5CE,extended,00000000
 patch=1,EE,1032EF0C,extended,0000806C
 patch=1,EE,1032EF1E,extended,00000000
-`;
+`,
+	[File.lua]: formRewardLocations
+		.filter((_, index) => index % 2 !== 0)
+		.reduce(
+			(acc, location) =>
+				acc + createLine(location.value, location.reward.value, File.lua),
+			"\t--Set Vanilla Growth Abilities\n"
+		),
+};
 
-export const removeMaxGrowthAbilities = `
+export const removeMaxGrowthAbilities: Patch = {
+	[File.pnach]: ` 
 //Remove High Jump MAX 1
 patch=1,EE,E0010106,extended,0032EE26
 patch=1,EE,1036E5A8,extended,00000061
@@ -142,4 +157,6 @@ patch=1,EE,1036E5D0,extended,0000006D
 patch=1,EE,E0020107,extended,0032EF06
 patch=1,EE,1032EF0C,extended,0000806D
 patch=1,EE,1032EF1E,extended,00000000
-`;
+`,
+	[File.lua]: "",
+};

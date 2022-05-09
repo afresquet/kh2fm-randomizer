@@ -1,5 +1,5 @@
 import { Configuration } from "..";
-import { RandomizingAction } from "../types/configuration/enums";
+import { RandomizingAction, Toggle } from "../types/configuration/enums";
 import { LocationName } from "../types/LocationName";
 import { RewardLocation } from "../types/RewardLocation";
 
@@ -23,6 +23,14 @@ export const worlds: [string, LocationName][] = [
 	["twtnw", LocationName.TWTNW],
 ];
 
+const exceptions = [
+	"Kingdom Key",
+	"Fatal Crest",
+	"FAKE",
+	"Detection Saber",
+	"Edge of Ultima",
+];
+
 // TODO: add better rejectCallback handling
 const defaultRejectCallback = (world: RandomizingAction) =>
 	world !== RandomizingAction.RANDOMIZE;
@@ -33,6 +41,14 @@ const defaultRejectCallback = (world: RandomizingAction) =>
 export const filterByWorld =
 	(configuration: Configuration, rejectCallback = defaultRejectCallback) =>
 	(location: RewardLocation): boolean => {
+		if (exceptions.includes(location.description)) {
+			return true;
+		}
+
+		if (location.description === "Ultima Weapon") {
+			return configuration.include.ultimaWeapon === Toggle.ON;
+		}
+
 		const world =
 			location.gameMode?.[configuration.gameMode.mode]?.world ||
 			location.location;

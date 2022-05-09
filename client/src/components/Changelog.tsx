@@ -1,15 +1,32 @@
-import { Button, Card, Divider, Modal, Space, Switch } from "antd";
+import { Button, Card, Divider, Modal, Space, Switch, Typography } from "antd";
 import { useCallback } from "react";
 import { useToggle } from "../hooks/useToggle";
 
 const versions: {
 	version: string;
-	changes: string[];
-	hotfixes?: string[];
+	changes: React.ReactNode[];
+	hotfixes?: React.ReactNode[];
 }[] = [
 	{
 		version: "0.5.0",
-		changes: ["Added lua format as a download option"],
+		changes: [
+			<>
+				Added lua format as a download option, thank you{" "}
+				<Typography.Link href="https://github.com/1234567890num">
+					1234567890num
+				</Typography.Link>{" "}
+				for your converter &lt;3
+			</>,
+			<>
+				Removed the experimental bosses option, thank you{" "}
+				<Typography.Link href="https://github.com/snelson3">
+					Thundrio
+				</Typography.Link>{" "}
+				for your work on it &lt;3
+			</>,
+			"Removed retry on bosses experimental option",
+			"Changed the theme to dark mode",
+		],
 	},
 	{
 		version: "0.4.2",
@@ -313,15 +330,15 @@ export const Changelog: React.FC = () => {
 					}
 				>
 					<ul>
-						{changes.map(change => (
-							<li key={change}>{change}</li>
+						{changes.map((change, i) => (
+							<li key={`change-${i}`}>{change}</li>
 						))}
 					</ul>
 
 					{hotfixes && (
 						<ul>
-							{hotfixes.map(hotfix => (
-								<li key={hotfix}>(Hotfix) {hotfix}</li>
+							{hotfixes.map((hotfix, i) => (
+								<li key={`hotfix-${i}`}>(Hotfix) {hotfix}</li>
 							))}
 						</ul>
 					)}

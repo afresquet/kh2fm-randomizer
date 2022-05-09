@@ -6,7 +6,7 @@ export const About: React.FC = () => {
 			style={{
 				margin: "0 auto",
 				maxWidth: 1200,
-				backgroundColor: "white",
+				backgroundColor: "#1f1f1f",
 				padding: 24,
 			}}
 		>

@@ -43,6 +43,18 @@ export const GoAModModalDownload: React.FC = () => {
 					You will need to download the 'Randomizer Build' in order for the
 					randomizer to work.
 				</p>
+
+				<p>
+					If you are playing on PC with the Lua version, you can download{" "}
+					<Typography.Link href="https://github.com/1234567890num">
+						Num's
+					</Typography.Link>{" "}
+					GoA by{" "}
+					<Typography.Link href="https://github.com/1234567890num/Garden-of-Assemblage-Mod-Lua">
+						clicking this link
+					</Typography.Link>
+					, going to releases and download the file <code>GoA.RAM.lua</code>
+				</p>
 			</Modal>
 		</>
 	);

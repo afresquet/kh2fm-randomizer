@@ -1,4 +1,8 @@
-export const shorterDay5 = `
+import { File } from "../types/File";
+import { Patch } from "../types/Patch";
+
+export const shorterDay5: Patch = {
+	[File.pnach]: `
 //Shorter Day 5
 patch=1,EE,E0100B02,extended,0032BAE0
 patch=1,EE,E00F0032,extended,0032BAE2
@@ -17,4 +21,6 @@ patch=1,EE,1032DC40,extended,00000000
 patch=1,EE,0032DE39,extended,0000007D
 patch=1,EE,0032DE3C,extended,00000017
 patch=1,EE,0032DEC4,extended,0000001E
-`;
+`,
+	[File.lua]: "",
+};
