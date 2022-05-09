@@ -6,6 +6,7 @@ export { fastHyenasTwo } from "./fastHyenasTwo";
 export { formEXPPatch } from "./formEXP";
 export { formKeybladesAbilities, formKeybladesStats } from "./formKeyblades";
 export { inGameSettings } from "./inGameSettings";
+export { initialSetup } from "./initialSetup";
 export { levelOneEXP } from "./levelOneEXP";
 export { partyMemberActionAbilities } from "./partyMemberActionAbilities";
 export {
@@ -16,4 +17,3 @@ export { removeLevel99Abilities } from "./removeLevel99Abilities";
 export { shorterDay5 } from "./shorterDay5";
 export { skipDragon } from "./skipDragon";
 export { startingAP } from "./startingAP";
-export { superbossRetry } from "./superbossRetry";

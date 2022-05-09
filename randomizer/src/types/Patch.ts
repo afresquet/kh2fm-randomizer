@@ -1,7 +1,6 @@
-import { Configuration } from "./configuration/Configuration";
-import { Seed } from "./Seed";
+import { File } from "./File";
 
-export type Patch = (parameters: {
-	seed: Seed;
-	configuration: Configuration;
-}) => string;
+export interface Patch {
+	[File.pnach]: string;
+	[File.lua]: string;
+}

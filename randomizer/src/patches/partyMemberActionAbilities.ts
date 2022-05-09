@@ -1,6 +1,8 @@
+import { createLine } from "../helpers/createLine";
 import { Rewards } from "../rewards";
 import { shieldRewards } from "../rewards/shield";
 import { staffRewards } from "../rewards/staff";
+import { File } from "../types/File";
 import { Reward } from "../types/Reward";
 import { RewardLocationType } from "../types/RewardLocation";
 import { Seed } from "../types/Seed";
@@ -42,8 +44,13 @@ const weaponRewards: Reward[] = [
 ];
 
 export function* partyMemberActionAbilities(
-	seed: Seed
+	seed: Seed,
+	file: File
 ): IterableIterator<string> {
+	yield file === File.pnach
+		? "// Party Member Action Abilities\n"
+		: "\t-- Party Member Action Abilities";
+
 	const weapons = seed.filter(value => {
 		if (
 			value.location.type !== RewardLocationType.STAFF &&
@@ -69,7 +76,11 @@ export function* partyMemberActionAbilities(
 
 		const ability = weapon.reward.value.substring(1);
 
-		yield `
+		if (file === File.lua) {
+			yield createLine(ap, "", file, false);
+			yield createLine(slot, "", file);
+		} else {
+			yield `
 patch=1,EE,E003${weaponDigit},extended,0${member}
 patch=1,EE,E0020${ability},extended,0${weaponAbilityAddress}
 patch=1,EE,${slot},extended,00008${ability}
@@ -78,5 +89,6 @@ patch=1,EE,E002${weaponDigit},extended,1${member}
 patch=1,EE,E0010${ability},extended,0${weaponAbilityAddress}
 patch=1,EE,${slot},extended,00000000
 `;
+		}
 	}
 }

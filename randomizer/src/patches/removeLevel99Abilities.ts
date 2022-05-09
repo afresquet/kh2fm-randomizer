@@ -1,7 +1,10 @@
+import { createLine } from "../helpers/createLine";
 import { level50delete, levels } from "../rewardLocations/levels";
+import { File } from "../types/File";
+import { Patch } from "../types/Patch";
 
-export const removeLevel99Abilities = level50delete.reduce(
-	(patch, levelToDelete) => {
+const lines = (file: File) =>
+	level50delete.reduce((result, levelToDelete) => {
 		const level = levels.find(level => level.level === levelToDelete)!;
 
 		const line = [
@@ -9,12 +12,14 @@ export const removeLevel99Abilities = level50delete.reduce(
 			level.abilities.staff.value,
 			level.abilities.shield.value,
 		].reduce(
-			(previous, current) =>
-				`${previous}patch=1,EE,${current},extended,00000000\n`,
+			(acc, current) => `${acc}${createLine(current, "00000000", file)}`,
 			""
 		);
 
-		return `${patch}${line}`;
-	},
-	""
-);
+		return `${result}${line}`;
+	}, "");
+
+export const removeLevel99Abilities: Patch = {
+	[File.pnach]: lines(File.pnach),
+	[File.lua]: lines(File.lua),
+};

@@ -35,6 +35,13 @@ export const TabPaneGameModeSettings: React.FC = () => {
 
 			<Divider />
 
+			<div
+				style={{ display: "grid", placeContent: "center", marginBottom: 24 }}
+			>
+				Note: if you are playing with the Lua version, these QoL features are
+				already applied to GoA and will be ignored here.
+			</div>
+
 			<div className="tab-pane">
 				<SettingSlider
 					title="Shorter Day 5 (Simulated Twilight Town)"

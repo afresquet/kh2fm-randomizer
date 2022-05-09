@@ -24,6 +24,7 @@ const versions: {
 				</Typography.Link>{" "}
 				for your work on it &lt;3
 			</>,
+			"Removed retry on bosses experimental option",
 			"Changed the theme to dark mode",
 		],
 	},

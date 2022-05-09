@@ -1,12 +1,8 @@
-import { Toggle } from "../types/configuration/enums";
+import { File } from "../types/File";
 import { Patch } from "../types/Patch";
 
-export const fasterPresents: Patch = ({ configuration }) => {
-	if (configuration.gameMode.goa.fasterPresents === Toggle.OFF) {
-		return "";
-	}
-
-	return `
+export const fasterPresents: Patch = {
+	[File.pnach]: `
 //Fast Gift Wrapping
 patch=1,EE,11CA2E78,extended,00004C58
 patch=1,EE,21CA2E98,extended,6D2E4C58
@@ -17,5 +13,6 @@ patch=1,EE,21CA2EFC,extended,00746573
 patch=1,EE,11CA2F38,extended,00004C58
 patch=1,EE,21CA2F58,extended,6D2E4C58
 patch=1,EE,21CA2F5C,extended,00746573
-`;
+`,
+	[File.lua]: "",
 };
