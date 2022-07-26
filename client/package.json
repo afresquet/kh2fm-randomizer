@@ -1,6 +1,6 @@
 {
 	"name": "kh2fm-randomizer-website",
-	"version": "0.4.2",
+	"version": "0.5.1",
 	"private": true,
 	"homepage": "https://randomizer.valaxor.com",
 	"dependencies": {
@@ -16,7 +16,8 @@
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
 		"react-router-dom": "^6.3.0",
-		"react-scripts": "^5.0.1"
+		"react-scripts": "^5.0.1",
+		"typepipe": "file:../../typepipe"
 	},
 	"devDependencies": {
 		"@testing-library/jest-dom": "^5.16.4",
