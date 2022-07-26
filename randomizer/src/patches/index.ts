@@ -9,6 +9,7 @@ export { inGameSettings } from "./inGameSettings";
 export { initialSetup } from "./initialSetup";
 export { levelOneEXP } from "./levelOneEXP";
 export { partyMemberActionAbilities } from "./partyMemberActionAbilities";
+export { partyMemberWeapons } from "./partyMemberWeapons";
 export {
 	removeGrowthAbilities,
 	removeMaxGrowthAbilities,

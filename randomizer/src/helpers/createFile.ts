@@ -1,5 +1,5 @@
 import { Configuration, Seed } from "..";
-import { initialSetup } from "../patches";
+import { initialSetup, partyMemberWeapons } from "../patches";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";
 import { fasterOogie } from "../patches/fasterOogie";
@@ -103,6 +103,10 @@ export const createFile = (
 	patches.push(inGameSettings(configuration, file));
 
 	patches.push(...partyMemberActionAbilities(seed, file));
+
+	if (file === File.lua) {
+		patches.push(partyMemberWeapons[file]);
+	}
 
 	patches.push(
 		file === File.pnach ? "// Random rewards" : "\n\t--Random rewards\n"
