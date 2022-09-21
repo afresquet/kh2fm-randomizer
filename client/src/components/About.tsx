@@ -15,21 +15,30 @@ export const About: React.FC = () => {
 			<Divider />
 
 			<p>
+				Note: This randomizer is no longer maintained, for an actively
+				maintained and up to date project check out{" "}
+				<Typography.Link href="https://www.kh2rando.com/" target="_blank">
+					www.kh2rando.com
+				</Typography.Link>
+				, it also contains information about setting up to play rando on the PC
+				port of KH2FM. Support their work!
+			</p>
+
+			<p>
 				This randomizer takes the rewards from the game and places them randomly
 				somewhere else. There is logic in place to prevent locking yourself out,
 				so every seed is beatable.
 			</p>
 
 			<p>
-				Currently it supports the{" "}
+				It supports the{" "}
 				<Typography.Link
 					href="https://docs.google.com/document/d/1GYjEnrM_TIk7qyO75clPLYD-_nP5wTR7K6SE-Wn-QCg/edit"
 					target="_blank"
 				>
 					Garden of Assemblage mod
 				</Typography.Link>{" "}
-				by Sonicshadowsilver2, support for the base game will come in the
-				future.
+				by Sonicshadowsilver2 for pnach seeds.
 			</p>
 
 			<p>
