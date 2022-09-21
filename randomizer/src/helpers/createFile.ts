@@ -104,9 +104,7 @@ export const createFile = (
 
 	patches.push(...partyMemberActionAbilities(seed, file));
 
-	if (file === File.lua) {
-		patches.push(partyMemberWeapons[file]);
-	}
+	patches.push(partyMemberWeapons[file]);
 
 	patches.push(
 		file === File.pnach ? "// Random rewards" : "\n\t--Random rewards\n"

@@ -1,6 +1,6 @@
 {
 	"name": "kh2fm-randomizer",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"description": "KH2FM Randomizer Seed Generator",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",

@@ -8,9 +8,13 @@ const versions: {
 	hotfixes?: React.ReactNode[];
 }[] = [
 	{
+		version: "0.5.2",
+		changes: ["Applied last change in 0.5.1 for pnach seeds as well"],
+	},
+	{
 		version: "0.5.1",
 		changes: [
-			"Giving party member weapons on lua seeds for second visits compatibility with Lua GoA.",
+			"Giving party member weapons on lua seeds for second visits compatibility with Lua GoA",
 		],
 	},
 	{

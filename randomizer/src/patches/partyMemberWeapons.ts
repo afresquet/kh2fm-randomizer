@@ -2,7 +2,20 @@ import { File } from "../types/File";
 import { Patch } from "../types/Patch";
 
 export const partyMemberWeapons: Patch = {
-	[File.pnach]: "",
+	[File.pnach]: `
+//Give Party Member Weapons
+patch=1,EE,0032F0E3,extended,00000001
+patch=1,EE,0032F0E4,extended,00000001
+patch=1,EE,0032F0E5,extended,00000001
+patch=1,EE,0032F0E6,extended,00000001
+patch=1,EE,0032F173,extended,00000001
+patch=1,EE,0032F179,extended,00000001
+patch=1,EE,0032F17A,extended,00000001
+patch=1,EE,0032F0DE,extended,00000001
+patch=1,EE,0032F0DF,extended,00000001
+patch=1,EE,0032F0F0,extended,00000001
+patch=1,EE,0032F0F2,extended,00000001
+`,
 	[File.lua]: `
 	--Start With Party Member Weapons
 	WriteByte(Save + 0x35B3, 0x00000001)    --Beast's Claw
