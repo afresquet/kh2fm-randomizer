@@ -1,17 +1,17 @@
 pub trait Modification {
-    fn address(&self) -> Option<u32>;
-    fn value(&self) -> Option<u32>;
+    fn address(&self) -> u32;
+    fn value(&self) -> u32;
 
     fn to_pnach_line(&self) -> Option<String> {
-        let address = self.address()?;
-        let value = self.value()?;
+        let address = self.address();
+        let value = self.value();
 
         Some(format!("patch=1,EE,{address:0>8X},extended,{value:0>8X}"))
     }
 
     fn to_lua_line(&self) -> Option<String> {
-        let address = format!("{:0>8X}", self.address()?);
-        let value = self.value()?;
+        let address = format!("{:0>8X}", self.address());
+        let value = self.value();
 
         let method = match address.chars().next().unwrap() {
             '0' => "WriteByte",
@@ -54,12 +54,12 @@ mod tests {
     struct Test;
 
     impl Modification for Test {
-        fn address(&self) -> Option<u32> {
-            Some(1234)
+        fn address(&self) -> u32 {
+            1234
         }
 
-        fn value(&self) -> Option<u32> {
-            Some(6789)
+        fn value(&self) -> u32 {
+            6789
         }
     }
 

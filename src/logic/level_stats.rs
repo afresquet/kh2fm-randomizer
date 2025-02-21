@@ -1,12 +1,8 @@
-use std::collections::HashSet;
+use rand::{distr::StandardUniform, prelude::*};
 
-use lazy_static::lazy_static;
-use rand::{distributions::Standard, prelude::*};
-use strum::{EnumIter, IntoEnumIterator};
+use crate::{modification::Modification, seed::Seed};
 
-use crate::{modification::Modification, seed::SeedRng};
-
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct LevelUpStats {
     level: u8,
     ap: u8,
@@ -16,11 +12,11 @@ pub struct LevelUpStats {
 }
 
 impl LevelUpStats {
-    pub fn from_seed(seed: &'_ str) -> LevelUpStatsIterator {
+    pub fn from_seed(seed: Seed) -> LevelUpStatsIterator {
         LevelUpStatsIterator::new(seed)
     }
 
-    fn increase(&mut self, stat: &Stat) {
+    fn increase(&mut self, stat: Stat) {
         match stat {
             Stat::Ability => self.ap += 2,
             Stat::Defense => self.def += 1,
@@ -46,33 +42,28 @@ const LEVEL_UP_ADDRESS_OFFSET: u32 = 0x21D0B69C;
 const RADIX: u32 = 16;
 
 impl Modification for LevelUpStats {
-    fn address(&self) -> Option<u32> {
-        Some(LEVEL_UP_ADDRESS_OFFSET + self.level as u32 * RADIX)
+    fn address(&self) -> u32 {
+        LEVEL_UP_ADDRESS_OFFSET + self.level as u32 * RADIX
     }
 
-    fn value(&self) -> Option<u32> {
-        let hex = [self.ap, self.def, self.mp, self.str]
-            .map(|stat| format!("{:0>2X}", stat))
-            .join("");
-        u32::from_str_radix(&hex, RADIX).ok()
+    fn value(&self) -> u32 {
+        u32::from_be_bytes([self.ap, self.def, self.mp, self.str])
     }
 }
 
 #[derive(Debug)]
-pub struct LevelUpStatsIterator<'a> {
-    seed: &'a str,
+pub struct LevelUpStatsIterator {
+    seed: Seed,
     stats: LevelUpStats,
 }
 
-lazy_static! {
-    static ref DOUBLE_STAT_LEVELS: HashSet<u8> = HashSet::from_iter([
-        3, 5, 6, 8, 11, 13, 16, 18, 19, 21, 24, 29, 35, 37, 40, 45, 51, 55, 57, 61, 63, 67, 69, 71,
-        75, 77, 79, 81, 83, 87, 89, 91, 95, 97,
-    ]);
-}
+const DOUBLE_STAT_LEVELS: [u8; 34] = [
+    3, 5, 6, 8, 11, 13, 16, 18, 19, 21, 24, 29, 35, 37, 40, 45, 51, 55, 57, 61, 63, 67, 69, 71, 75,
+    77, 79, 81, 83, 87, 89, 91, 95, 97,
+];
 
-impl<'a> LevelUpStatsIterator<'a> {
-    fn new(seed: &'a str) -> Self {
+impl LevelUpStatsIterator {
+    fn new(seed: Seed) -> Self {
         Self {
             seed,
             stats: Default::default(),
@@ -82,23 +73,27 @@ impl<'a> LevelUpStatsIterator<'a> {
     fn level_up(&mut self) {
         self.stats.level += 1;
 
-        let mut seed = SeedRng::new(format!("Seed {} - Level {}", self.seed, self.stats.level));
+        let seed = self.seed.variant(self.stats.level);
+        let mut rng = seed.rng();
 
-        let stat = seed.rng().gen::<Stat>();
-        self.stats.increase(&stat);
+        let stat = rng.random::<Stat>();
+        self.stats.increase(stat);
 
         if DOUBLE_STAT_LEVELS.contains(&self.stats.level) {
-            let stat = stat.others().choose(seed.rng()).unwrap();
-            self.stats.increase(&stat);
+            let stat = stat
+                .others()
+                .choose(&mut rng)
+                .expect("`others` does not return an empty iterator");
+            self.stats.increase(stat);
         }
     }
 }
 
-impl<'a> Iterator for LevelUpStatsIterator<'a> {
+impl Iterator for LevelUpStatsIterator {
     type Item = LevelUpStats;
 
     fn next(&mut self) -> Option<Self::Item> {
-        if self.stats.level == 99 {
+        if self.stats.level >= 99 {
             return None;
         }
 
@@ -108,7 +103,7 @@ impl<'a> Iterator for LevelUpStatsIterator<'a> {
     }
 }
 
-#[derive(Debug, PartialEq, EnumIter)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 enum Stat {
     Ability,
     Defense,
@@ -117,14 +112,24 @@ enum Stat {
 }
 
 impl Stat {
-    fn others(&self) -> impl Iterator<Item = Self> + '_ {
+    fn iter() -> impl Iterator<Item = Self> {
+        [Stat::Ability, Stat::Defense, Stat::Magic, Stat::Strength].into_iter()
+    }
+
+    fn others(&self) -> impl Iterator<Item = Self> + use<'_> {
         Self::iter().filter(move |s| s != self)
     }
 }
 
-impl Distribution<Stat> for Standard {
+impl Distribution<Stat> for StandardUniform {
     fn sample<R: Rng + ?Sized>(&self, rng: &mut R) -> Stat {
-        Stat::iter().choose(rng).unwrap()
+        match rng.random_range(0u8..4) {
+            0 => Stat::Ability,
+            1 => Stat::Defense,
+            2 => Stat::Magic,
+            3 => Stat::Strength,
+            4.. => unreachable!("only 4 stat variants"),
+        }
     }
 }
 
@@ -138,11 +143,11 @@ mod tests {
             level: 2,
             ..Default::default()
         };
-        assert_eq!(level_up.address(), Some(0x21D0B6BC));
+        assert_eq!(level_up.address(), 0x21D0B6BC);
         level_up.level = 50;
-        assert_eq!(level_up.address(), Some(0x21D0B9BC));
+        assert_eq!(level_up.address(), 0x21D0B9BC);
         level_up.level = 99;
-        assert_eq!(level_up.address(), Some(0x21D0BCCC));
+        assert_eq!(level_up.address(), 0x21D0BCCC);
     }
 
     macro_rules! set_stats {
@@ -157,10 +162,17 @@ mod tests {
     #[test]
     fn level_up_value() {
         let mut level_up = LevelUpStats::default();
-        assert_eq!(level_up.value(), Some(0x00020602));
+        assert_eq!(level_up.value(), 0x00020602);
         set_stats!(level_up, 50);
-        assert_eq!(level_up.value(), Some(0x32323232));
+        assert_eq!(level_up.value(), 0x32323232);
         set_stats!(level_up, 255);
-        assert_eq!(level_up.value(), Some(0xFFFFFFFF));
+        assert_eq!(level_up.value(), 0xFFFFFFFF);
+    }
+
+    #[test]
+    fn level_up_iterator() {
+        let seed = Seed::new(123);
+        let result = LevelUpStats::from_seed(seed).collect::<Vec<_>>();
+        assert_eq!(result.len(), 98);
     }
 }
