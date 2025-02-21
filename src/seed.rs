@@ -1,48 +1,34 @@
-use rand::{rngs::StdRng, SeedableRng};
+use std::hash::{DefaultHasher, Hash, Hasher};
 
-#[derive(Debug)]
-pub struct SeedRng(StdRng);
+use rand::{SeedableRng, rngs::StdRng};
 
-impl SeedRng {
-    pub fn new(seed: impl Into<Seed>) -> Self {
-        let Seed(seed) = seed.into();
-        Self(StdRng::seed_from_u64(seed))
+#[derive(Debug, Clone, Copy)]
+pub struct Seed {
+    value: u64,
+}
+
+impl Seed {
+    pub fn new<T: Hash>(value: T) -> Self {
+        Self::from(value)
     }
 
-    pub fn rng(&mut self) -> &mut StdRng {
-        &mut self.0
+    pub fn rng(&self) -> StdRng {
+        StdRng::seed_from_u64(self.value)
+    }
+
+    pub fn variant<T: Hash>(&self, value: T) -> Self {
+        let mut other = Self::from(value);
+        other.value = other.value.wrapping_add(self.value);
+        other
     }
 }
 
-use std::{
-    collections::hash_map::DefaultHasher,
-    hash::{Hash, Hasher},
-};
-
-pub(crate) struct Seed(u64);
-
-impl From<u64> for Seed {
-    fn from(value: u64) -> Self {
-        Self(value)
-    }
-}
-
-impl From<&str> for Seed {
-    fn from(value: &str) -> Self {
+impl<T: Hash> From<T> for Seed {
+    fn from(value: T) -> Self {
         let mut hasher = DefaultHasher::new();
         value.hash(&mut hasher);
-        Self(hasher.finish())
-    }
-}
-
-impl From<String> for Seed {
-    fn from(value: String) -> Self {
-        Self::from(&*value)
-    }
-}
-
-impl From<&String> for Seed {
-    fn from(value: &String) -> Self {
-        Self::from(&**value)
+        Self {
+            value: hasher.finish(),
+        }
     }
 }
