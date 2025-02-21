@@ -1,7 +1,9 @@
+use crate::seed::Seed;
+
 #[derive(Debug)]
-pub struct Configuration<'a> {
+pub struct Configuration {
     // Settings
-    seed: &'a str,
+    seed: Seed,
     game_mode: GameMode,
     critical_mode: bool,
     leveling: Leveling,

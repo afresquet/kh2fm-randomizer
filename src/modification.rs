@@ -1,50 +1,42 @@
+use std::fmt::Write;
+
 pub trait Modification {
     fn address(&self) -> u32;
     fn value(&self) -> u32;
 
-    fn to_pnach_line(&self) -> Option<String> {
+    fn to_pnach_line<T: Write>(&self, output: &mut T) -> std::fmt::Result {
         let address = self.address();
         let value = self.value();
 
-        Some(format!("patch=1,EE,{address:0>8X},extended,{value:0>8X}"))
+        writeln!(output, "patch=1,EE,{address:08X},extended,{value:08X}")
     }
 
-    fn to_lua_line(&self) -> Option<String> {
-        let address = format!("{:0>8X}", self.address());
+    fn to_lua_line<T: Write>(&self, output: &mut T) -> std::fmt::Result {
+        let address = self.address();
         let value = self.value();
 
-        let method = match address.chars().next().unwrap() {
-            '0' => "WriteByte",
-            '1' => "WriteShort",
-            '2' => "WriteInt",
+        match address >> 28 {
+            0x0 => write!(output, "WriteByte(")?,
+            0x1 => write!(output, "WriteShort(")?,
+            0x2 => write!(output, "WriteInt(")?,
             _ => unreachable!(),
-        };
-
-        let address = offset_address(&address);
-
-        Some(format!("{method}({address}, 0x{value:0>8X})"))
-    }
-}
-
-const FILES: [(&str, u32, u32); 3] = [
-    ("Save", 0x032BB30, 0x10FC0), // Save file
-    ("Sys3", 0x1CCB300, 0x1AA68), // 03system.bin
-    ("Btl0", 0x1CE5D80, 0x354D0), // 00battle.bin
-];
-
-fn offset_address(address: &str) -> String {
-    let address = u32::from_str_radix(&address[1..], 16).unwrap();
-
-    for (file, offset, size) in FILES {
-        match address.checked_sub(offset) {
-            Some(address) if address < size => {
-                return format!("{file} + 0x{address:0>5X}");
-            }
-            _ => (),
         }
-    }
 
-    format!("0x{address:0>8X}")
+        let address = address & 0x0FFF_FFFF;
+
+        if address.wrapping_sub(0x032BB30) < 0x10FC0 {
+            // Save file
+            write!(output, "Save + ")?
+        } else if address.wrapping_sub(0x1CCB300) < 0x1AA68 {
+            // 03system.bin
+            write!(output, "Sys3 + ")?
+        } else if address.wrapping_sub(0x1CE5D80) < 0x354D0 {
+            // 00battle.bin
+            write!(output, "Btl0 + ")?
+        }
+
+        writeln!(output, "0x{address:08X}, 0x{value:08X})")
+    }
 }
 
 #[cfg(test)]
@@ -65,17 +57,18 @@ mod tests {
 
     #[test]
     fn pnach_line() {
+        let mut result = String::new();
+        Test.to_pnach_line(&mut result).unwrap();
         assert_eq!(
-            Test.to_pnach_line(),
-            Some("patch=1,EE,000004D2,extended,00001A85".to_string())
+            result,
+            "patch=1,EE,000004D2,extended,00001A85\n".to_string()
         );
     }
 
     #[test]
     fn lua_line() {
-        assert_eq!(
-            Test.to_lua_line(),
-            Some("WriteByte(0x000004D2, 0x00001A85)".to_string())
-        );
+        let mut result = String::new();
+        Test.to_lua_line(&mut result).unwrap();
+        assert_eq!(result, "WriteByte(0x000004D2, 0x00001A85)\n".to_string());
     }
 }
