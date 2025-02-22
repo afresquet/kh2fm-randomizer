@@ -1,0 +1,12 @@
+[package]
+name = "randomizer-macros"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.93"
+syn = { version = "2.0.98", features = ["extra-traits"] }
+quote = "1.0.38"
